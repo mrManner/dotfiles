@@ -93,6 +93,7 @@ let mapleader=","
 
 nnoremap ½ :tabprevious<CR>
 nnoremap ° :tabprevious<CR>
+nnoremap ± :tabprevious<CR>
 nnoremap § :tabnext<CR>
 
 nnoremap <C-J> <C-W><C-J>
