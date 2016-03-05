@@ -1,0 +1,39 @@
+[core]
+        editor = nano
+        pager = less -iNQ --shift 3
+        excludesfile = ~/.gitignore
+
+[help]
+        autocorrect = 10
+[github]
+        user = mrManner
+
+[hub]
+        protocol = ssh
+
+[user]
+        email = johan@mrmanner.eu
+        name = mrmanner
+        signingkey = 51282268
+[push]
+        default = matching
+
+[merge]
+        conflictstyle = diff3
+
+[color]
+        branch = auto
+        grep = auto
+        status = auto
+        ui = auto
+
+[alias]
+        s = status
+        st = status
+        cm = commit -m 
+        ca = commit -a
+        lg = log --oneline --graph --decorate
+        cb = checkout -b 
+        co = checkout
+        ct = checkout --track 
+        a = add
