@@ -4,7 +4,7 @@
         excludesfile = ~/.gitignore
 
 [help]
-        autocorrect = 10
+        autocorrect = 30
 [github]
         user = mrManner
 
