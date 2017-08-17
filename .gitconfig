@@ -18,6 +18,8 @@
 [push]
         default = matching
 
+[commit]
+				gpgsign = true
 [merge]
         conflictstyle = diff3
 
@@ -37,3 +39,9 @@
         co = checkout
         ct = checkout --track 
         a = add
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f
+[ghi]
+	token = !security find-internet-password -a mrManner -s github.com -l 'ghi token' -w

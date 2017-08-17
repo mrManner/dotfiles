@@ -14,24 +14,49 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-scripts/vim-airline'
-Plugin 'vim-scripts/characterize.vim'
-Plugin 'airblade/vim-gitgutter'
+" UI 
+Plugin 'git@github.com:vim-airline/vim-airline'
+Plugin 'git@github.com:vim-airline/vim-airline-themes'
+Plugin 'kien/ctrlp.vim'															" Find files fuzzily
+Plugin 'airblade/vim-gitgutter'											" Show git status per line
+" Utils
+Plugin 'vim-scripts/characterize.vim'								" Info on characters
+Plugin 'git@github.com:vim-scripts/gitignore.git'		" Auto set wildignore
+Plugin 'git@github.com:mtth/scratch.vim.git'				" gs is your friend
+" Misc syntax
 Plugin 'vim-scripts/tex-syntax'
-Plugin 'vim-scripts/unicode.vim'
-Plugin 'reedes/vim-pencil'
-Plugin 'reedes/vim-colors-pencil'
-Plugin 'tpope/vim-markdown'
-Plugin 'kien/ctrlp.vim'
 Plugin 'adimit/prolog.vim'
+Plugin 'git@github:mrk21/yaml-vim.git'
+" HTML 
+Plugin 'git@github:mattn/emmet-vim.git'							" Write html the lazy way
+Plugin 'git@github:othree/html5.vim.git'
+" Javascript
+Plugin 'git@github:pangloss/vim-javascript.git'
+Plugin 'git@github.com:mxw/vim-jsx'
+Plugin 'git@github:kchmck/vim-coffee-script.git'
+" Python 
 Plugin 'nvie/vim-flake8'
-Plugin 'mattn/emmet-vim'
-Plugin 'git@github.com:pbrisbin/vim-colors-off.git'
-Plugin 'git@github.com:andreasvc/vim-256noir.git'
-Plugin 'git@github.com:exu/pgsql.vim.git'
-Plugin 'git@github.com:zeis/vim-kolor.git'
+" SQL
+Plugin 'git@github:exu/pgsql.vim.git'
+" Haskell
+Plugin 'git@github.com:raichoo/haskell-vim.git'
+Plugin 'git@github.com:eagletmt/ghcmod-vim.git'
+Plugin 'git@github.com:eagletmt/neco-ghc.git'
+Plugin 'git@github.com:godlygeek/tabular.git'
+Plugin 'git@github.com:enomsg/vim-haskellConcealPlus.git'
+Plugin 'git@github.com:Shougo/vimproc.vim.git'
+" God knows
+Plugin 'vim-scripts/unicode.vim'
+" Writing
+Plugin 'reedes/vim-pencil'
+Plugin 'tpope/vim-markdown'
+" Colors
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'git@github:pbrisbin/vim-colors-off.git'
+Plugin 'git@github:andreasvc/vim-256noir.git'
+Plugin 'git@github.com:chriskempson/base16-vim'
+Plugin 'git@github:zeis/vim-kolor.git'
 
 call vundle#end()            " required
 
@@ -74,8 +99,8 @@ set softtabstop=4	" number of spaces when editing
 " More visuals
 set showmatch           " brackets
 set colorcolumn=80
-" set cursorline
 
+set shiftwidth=2
  
 " ================================= SEARCH ====================================
 
@@ -89,8 +114,6 @@ nnoremap <leader><space> :nohlsearch<CR>
 " === Leader shortcuts ===
 let mapleader=","
 
-nnoremap ½ :tabprevious<CR>
-nnoremap ° :tabprevious<CR>
 nnoremap ± :tabprevious<CR>
 nnoremap § :tabnext<CR>
 
@@ -110,7 +133,11 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 
-" ================================= AUTOGROUPS ================================
+" ================================= FILE TYPES ================================
+
+" Coffee Script
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
 
 " =================================== BACKUP ==================================
 
@@ -120,3 +147,17 @@ set backupdir=~/.vim-tmp,~/.tmp,.
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,.
 set writebackup
+
+
+" =================================== HASKELL==================================
+
+let g:haskell_enable_quantification = 1
+let g:haskell_enable_recursivedo = 1
+let g:haskell_enable_arrowsyntax = 1
+let g:haskell_enable_pattern_synonyms = 1
+let g:haskell_enable_typeroles = 1
+let g:haskell_enable_static_pointers = 1
+
+
+" =================================== JSX =====================================
+
