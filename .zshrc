@@ -1,5 +1,6 @@
 # Much of this comes from https://github.com/spicycode/ze-best-zsh-config
 
+source .zshsecrets  # Let's not publish the API keys on Github
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
@@ -92,5 +93,3 @@ function extract {
   fi
 }
 
-# added by travis gem
-[ -f /Users/jmanner/.travis/travis.sh ] && source /Users/jmanner/.travis/travis.sh
