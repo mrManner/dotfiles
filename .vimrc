@@ -26,18 +26,18 @@ Plugin 'git@github.com:mtth/scratch.vim.git'				" gs is your friend
 " Misc syntax
 Plugin 'vim-scripts/tex-syntax'
 Plugin 'adimit/prolog.vim'
-Plugin 'git@github:mrk21/yaml-vim.git'
+Plugin 'git@github.com:mrk21/yaml-vim.git'
 " HTML 
-Plugin 'git@github:mattn/emmet-vim.git'							" Write html the lazy way
-Plugin 'git@github:othree/html5.vim.git'
+Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
+Plugin 'git@github.com:othree/html5.vim.git'
 " Javascript
-Plugin 'git@github:pangloss/vim-javascript.git'
+Plugin 'git@github.com:pangloss/vim-javascript.git'
 Plugin 'git@github.com:mxw/vim-jsx'
-Plugin 'git@github:kchmck/vim-coffee-script.git'
+Plugin 'git@github.com:kchmck/vim-coffee-script.git'
 " Python 
 Plugin 'nvie/vim-flake8'
 " SQL
-Plugin 'git@github:exu/pgsql.vim.git'
+Plugin 'git@github.com:exu/pgsql.vim.git'
 " Haskell
 Plugin 'git@github.com:raichoo/haskell-vim.git'
 Plugin 'git@github.com:eagletmt/ghcmod-vim.git'
@@ -53,10 +53,10 @@ Plugin 'tpope/vim-markdown'
 " Colors
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'reedes/vim-colors-pencil'
-Plugin 'git@github:pbrisbin/vim-colors-off.git'
-Plugin 'git@github:andreasvc/vim-256noir.git'
+Plugin 'git@github.com:pbrisbin/vim-colors-off.git'
+Plugin 'git@github.com:andreasvc/vim-256noir.git'
 Plugin 'git@github.com:chriskempson/base16-vim'
-Plugin 'git@github:zeis/vim-kolor.git'
+Plugin 'git@github.com:zeis/vim-kolor.git'
 
 call vundle#end()            " required
 
