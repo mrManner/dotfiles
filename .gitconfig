@@ -14,11 +14,13 @@
 [user]
         email = johan@mrmanner.eu
         name = mrmanner
+		signingkey = FB9489D05D525596BE7DC2A101AB26D16F3A1713
 [push]
         default = matching
-
+[gpg]
+		program = /usr/local/MacGPG2/bin/gpg2
 [commit]
-		gpgsign = false
+		gpgsign = true
 [merge]
         conflictstyle = diff3
 
