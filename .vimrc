@@ -1,7 +1,6 @@
 " Mostly harmless. StolEN from everywhere. Jag tar avstånd.
 set shell=/bin/bash
 set nocompatible
-set shell=/bin/bash
 
 " ================================== PLUGINS ==================================
 
