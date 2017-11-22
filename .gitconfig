@@ -12,14 +12,14 @@
         protocol = ssh
 
 [user]
-        email = johan@mrmanner.eu
+        email = johan.manner@scouterna.se
         name = mrmanner
-        signingkey = 51282268
+		signingkey = whatever
 [push]
         default = matching
 
 [commit]
-				gpgsign = true
+				gpgsign = false
 [merge]
         conflictstyle = diff3
 

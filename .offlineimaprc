@@ -1,0 +1,24 @@
+[general]
+accounts = Scouterna
+pythonfile = /home/jmanner/.dotfiles/.offlineimap.py
+
+[Account Scouterna]
+localrepository = Scouterna-Local
+remoterepository = Scouterna-Remote
+
+[Repository Scouterna-Local]
+type = Maildir
+localfolders = /home/jmanner/.mail/scouterna
+
+[Repository Scouterna-Remote]
+type = IMAP
+auth_mechanisms = PLAIN, LOGIN
+remoteuser = johan.manner@scouterna.se
+remotepasseval = get_keepass_pw("/keybase/private/o0/pwd.kdbx", 
+								title="Office365",
+								username="johan.manner@scouterna.se")
+remotehost = outlook.office365.com
+remoteport = 993
+realdelete = yes
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-bundle.crt
