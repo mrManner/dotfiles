@@ -12,7 +12,7 @@
         protocol = ssh
 
 [user]
-        email = johan.manner@scouterna.se
+        email = johan@mrmanner.eu
         name = mrmanner
 		signingkey = whatever
 [push]
