@@ -22,3 +22,12 @@ remoteport = 993
 realdelete = yes
 ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-bundle.crt
+folderfilter = lambda folder: folder not in ['Contacts',
+                                            'Calendar',
+                                            'Junk Email',
+                                            'Journal',
+                                            'Notes',
+                                            'RSS-feeds',
+                                            'Tasks',
+                                            'Deleted Items',
+                                            ]
