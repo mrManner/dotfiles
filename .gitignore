@@ -1,7 +1,7 @@
 # My own stuff
 .zshsecrets
 
-
+# Vim things
 .vim/bundle
 *.swp
 
@@ -27,6 +27,10 @@
 *.rar
 *.tar
 *.zip
+
+# Tool config #
+###############
+*.tags
   
 # Logs and databases #
 ######################
