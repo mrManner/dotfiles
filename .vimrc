@@ -19,10 +19,14 @@ Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'															" Find files fuzzily
 Plugin 'airblade/vim-gitgutter'											" Show git status per line
+Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
 " Utils
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
 Plugin 'git@github.com:vim-scripts/gitignore.git'		" Auto set wildignore
 Plugin 'git@github.com:mtth/scratch.vim.git'				" gs is your friend
+Plugin 'git@github.com:majutsushi/tagbar.git'
+Plugin 'git@github.com:sbdchd/neoformat.git'
+Plugin 'git@github.com:Raimondi/delimitMate.git'
 " Misc syntax
 Plugin 'vim-scripts/tex-syntax'
 Plugin 'adimit/prolog.vim'
@@ -30,6 +34,8 @@ Plugin 'git@github.com:mrk21/yaml-vim.git'
 " HTML 
 Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
 Plugin 'git@github.com:othree/html5.vim.git'
+" Java
+Plugin 'git@github.com:artur-shaik/vim-javacomplete2.git'
 " Javascript
 Plugin 'git@github.com:pangloss/vim-javascript.git'
 Plugin 'git@github.com:mxw/vim-jsx'
@@ -132,6 +138,10 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+
+" ================================ PLUGIN CONF ================================
+let delimitMate_offByDefault = 1
+
 
 " ================================= FILE TYPES ================================
 
