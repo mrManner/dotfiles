@@ -1,5 +1,5 @@
 # Environment variables for zsh
-export PATH=$PATH":$HOME/bin:/usr/local/bin"
+export PATH=$PATH":$HOME/bin:/usr/local/bin:/opt/local/bin:$HOME/.cabal/bin"
 
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33'
