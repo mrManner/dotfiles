@@ -1,3 +1,5 @@
+fundle plugin 'tuvistavie/fish-ssh-agent'
+
 # I like sudo !!
 
 . ~/.config/fish/gnupg.fish

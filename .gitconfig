@@ -12,13 +12,16 @@
         protocol = ssh
 
 [user]
-        email = johan@mrmanner.eu
-        name = mrmanner
+        email = johan.manner@scouterna.se
+        name = Johan Manner
+		signingkey  = C34D23EFB16E648A53E854D29CCEB8DD1086F687
 [push]
         default = matching
 
 [commit]
-		gpgsign = false
+		gpgsign = true
+[gpg]
+	program = /usr/bin/gpg2
 [merge]
         conflictstyle = diff3
 
