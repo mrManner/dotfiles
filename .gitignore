@@ -31,6 +31,7 @@
 # Tool config #
 ###############
 *.tags
+tags
   
 # Logs and databases #
 ######################
