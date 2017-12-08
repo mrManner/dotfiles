@@ -1,4 +1,5 @@
 " Mostly harmless. StolEN from everywhere. Jag tar avstånd.
+set shell=/usr/bin/bash
 set nocompatible
 set shell=/bin/bash
 
