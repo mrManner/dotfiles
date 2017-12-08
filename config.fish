@@ -1,5 +1,3 @@
-set PATH /Users/jmanner/bin /opt/local/bin /opt/local/sbin $PATH
-
 # I like sudo !!
 
 function sudo
