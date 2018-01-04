@@ -14,12 +14,14 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-" UI 
+" UI
 Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'															" Find files fuzzily
-Plugin 'airblade/vim-gitgutter'											" Show git status per line
 Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
+" Git
+Plugin 'airblade/vim-gitgutter'											" Show git status per line
+Plugin 'tpope/vim-fugitive'
 " Utils
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
 Plugin 'git@github.com:vim-scripts/gitignore.git'		" Auto set wildignore
@@ -31,14 +33,14 @@ Plugin 'git@github.com:Raimondi/delimitMate.git'
 Plugin 'vim-scripts/tex-syntax'
 Plugin 'adimit/prolog.vim'
 Plugin 'git@github.com:mrk21/yaml-vim.git'
-" HTML 
+" HTML
 Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
 Plugin 'git@github.com:othree/html5.vim.git'
 " Javascript
 Plugin 'git@github.com:pangloss/vim-javascript.git'
 Plugin 'git@github.com:mxw/vim-jsx'
 Plugin 'git@github.com:kchmck/vim-coffee-script.git'
-" Python 
+" Python
 Plugin 'nvie/vim-flake8'
 " SQL
 Plugin 'git@github.com:exu/pgsql.vim.git'
@@ -85,20 +87,46 @@ set colorcolumn=80
 highlight colorcolumn ctermbg=234 ctermfg=11
 
 try
-	Tcolorscheme 256_noir
-catch /^Vim\%((\a+)\)\=:E492/
-endtry	
-try
-	colo 256_noir
+	colorscheme 256_noir
 catch /^Vim\%((\a\+)\)\=:E185/
 	colo koehler
 endtry
+try
+	Tcolorscheme 256_noir
+catch /^Vim\%((\a+)\)\=:E492/
+endtry
 
+highlight ColorColumn ctermbg=235 ctermfg=11
+highlight colorcolumn ctermbg=235 ctermfg=11
 au VimEnter * NoMatchParen
+
+"  Rainbow parenthesis
+
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+let g:rbpt_loadcmd_toggle = 0
+
+au VimEnter * RainbowParenthesesActivate
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-au BufReadPost * RainbowParenthesesActivate
 
 
 " =================================== UNDO ====================================
@@ -111,7 +139,7 @@ set tabstop=4		" visual spaces/tab char
 set softtabstop=4	" number of spaces when editing
 set shiftwidth=4
 set autoindent
- 
+
 set backspace=0
 set encoding=utf-8
 setglobal fileencoding=utf-8
@@ -127,10 +155,15 @@ nnoremap <leader><space> :nohlsearch<CR>
 " ================================ KEYMAPPING =================================
 
 " === Leader shortcuts ===
+<<<<<<< HEAD
 let mapleader=","
 			
 nnoremap ± :tabprevious<CR>
 nnoremap § :tabnext<CR>
+nnoremap ~ :tabprevious<CR>
+nnoremap ` :tabnext<CR>
+let mapleader="\\"
+nnoremap <leader>c :Gcommit<CR>
 
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 inoremap <F9> <C-O>za
