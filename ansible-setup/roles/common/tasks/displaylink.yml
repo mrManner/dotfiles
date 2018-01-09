@@ -1,0 +1,33 @@
+---
+- name: Install dependencies
+  dnf:
+    name: "{{ item }}"
+    state: present
+  with_items:
+      - rpm-build
+      - libdrm-devel
+      - kernel-devel
+      - kernel-headers
+      - dkms
+  become: true
+
+- name: Set up directories
+  file:
+    path: /opt/displaylink-rpm/
+    state: directory
+    owner: root
+    group: root
+  become: true
+
+- name: Get displaylink source
+  git:
+    repo: https://github.com/displaylink-rpm/displaylink-rpm.git
+    dest: /opt/displaylink-rpm/
+  become: true
+
+- name: Build displaylink drivers, if needed
+  command: make
+  args:
+    chdir: /opt/displaylink-rpm
+    creates: /opt/displaylink-rpm/x86_64/
+  become: true

@@ -1,0 +1,62 @@
+---
+- name: DNF update
+  dnf: 
+    name: "*"
+    state: latest
+  become: true
+
+- name: Install basic tools
+  dnf:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - libselinux-python
+    - fish
+    - keepassxc
+    - python2-pip
+    - python3-pip
+    - vim
+    - powerline-fonts
+    - curl
+    - hub
+    - mosh
+    - thunderbird
+    - thunderbird-enigmail
+    - gnome-shell-extension-pomodoro
+    - gnome-shell-extension-openweather
+    - gnome-shell-extension-launch-new-instance
+    - gnome-shell-extension-freon
+    - gnome-shell-extension-pidgin
+    - gnome-shell-extension-dash-to-dock
+    - dnf-plugins-core
+  become: true
+
+- name: Copy dotfiles
+  copy:
+    src: "{{ role_path }}/files/dotfiles/{{ item }}"
+    dest: "{{ ansible_env.HOME }}"
+  with_items:
+    - .vimrc
+    - vim
+    - .gitconfig
+    - .gitignore
+
+- name: Install Vundle
+  git:
+    repo: https://github.com/VundleVim/Vundle.vim.git
+    dest: "{{ ansible_env.HOME }}/.vim/bundle/Vundle.vim"
+
+- name: Use fish shell
+  user:
+    name: jmanner
+    shell: /usr/bin/fish
+  become: true
+
+- name: Install Keybase
+  dnf:
+    name: 'https://prerelease.keybase.io/keybase_amd64.rpm'
+    state: present
+  become: true
+
+- include: displaylink.yml
+- include: containers.yml
