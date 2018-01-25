@@ -1,5 +1,7 @@
 # I like sudo !!
 
+. ~/.config/fish/gnupg.fish
+
 function sudo
     if test "$argv" = !!
         eval command sudo $history[1]
