@@ -1,5 +1,5 @@
 " Mostly harmless. StolEN from everywhere. Jag tar avstånd.
-set shell=/usr/bin/bash
+set shell=/bin/bash
 set nocompatible
 set shell=/bin/bash
 
@@ -53,11 +53,12 @@ Plugin 'vim-scripts/unicode.vim'
 Plugin 'reedes/vim-pencil'
 Plugin 'tpope/vim-markdown'
 " Colors
+Plugin 'git@github.com:andreasvc/vim-256noir.git'
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
 Plugin 'reedes/vim-colors-pencil'
-Plugin 'git@github.com:andreasvc/vim-256noir.git'
 Plugin 'git@github.com:zeis/vim-kolor.git'
 Plugin 'git@github.com:noah/vim256-color.git'
+Plugin 'git@github.com:pbrisbin/vim-colors-off.git'
 
 call vundle#end()            " required
 
@@ -81,8 +82,6 @@ set scrolloff=12        " I hate looking at the last rows of the window...
 set term=screen-256color
 set t_Co=256
 set background=dark
-set colorcolumn=80
-highlight colorcolumn ctermbg=234 ctermfg=11
 
 try
 	Tcolorscheme 256_noir
@@ -93,6 +92,9 @@ try
 catch /^Vim\%((\a\+)\)\=:E185/
 	colo koehler
 endtry
+
+set colorcolumn=80
+highlight colorcolumn ctermbg=234 ctermfg=11
 
 au VimEnter * NoMatchParen
 au Syntax * RainbowParenthesesLoadRound
