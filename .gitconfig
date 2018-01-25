@@ -44,3 +44,4 @@
 	clean = git-lfs clean %f
 [ghi]
 	token = !security find-internet-password -a mrManner -s github.com -l 'ghi token' -w
+	pager = less -X -F -R
