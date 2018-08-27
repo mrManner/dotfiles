@@ -2,6 +2,8 @@
         editor = vim
         pager = less -iNQ --shift 3
         excludesfile = ~/.gitignore
+	autocrlf = true
+	fileMode = false
 
 [help]
         autocorrect = 30
@@ -12,13 +14,14 @@
         protocol = ssh
 
 [user]
-        email = johan@mrmanner.eu
+        email = johan.manner@scouterna.se
         name = mrmanner
+		signingkey = 85886278
 [push]
         default = matching
 
 [commit]
-		gpgsign = false
+		gpgsign = true
 [merge]
         conflictstyle = diff3
 
