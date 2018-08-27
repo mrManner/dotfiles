@@ -19,12 +19,14 @@ Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'															" Find files fuzzily
 Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
+Plugin 'nightsense/carbonized'
+Plugin 'albertorestifo/github.vim'
+Plugin 'owickstrom/vim-colors-paramount'
 " Git
 Plugin 'airblade/vim-gitgutter'											" Show git status per line
 Plugin 'tpope/vim-fugitive'
 " Utils
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
-Plugin 'git@github.com:vim-scripts/gitignore.git'		" Auto set wildignore
 Plugin 'git@github.com:mtth/scratch.vim.git'				" gs is your friend
 Plugin 'git@github.com:majutsushi/tagbar.git'
 Plugin 'git@github.com:sbdchd/neoformat.git'
@@ -46,6 +48,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'git@github.com:exu/pgsql.vim.git'
 " Haskell
 Plugin 'git@github.com:raichoo/haskell-vim.git'
+Plugin 'Twinside/vim-haskellFold'
 Plugin 'git@github.com:eagletmt/neco-ghc.git'
 Plugin 'git@github.com:enomsg/vim-haskellConcealPlus.git'
 Plugin 'git@github.com:Shougo/vimproc.vim.git'
@@ -83,19 +86,17 @@ set scrolloff=12        " I hate looking at the last rows of the window...
 
 set term=screen-256color
 set t_Co=256
-set background=dark
+set background=light
 
 try
-	colorscheme 256_noir
+	colorscheme pencil
 catch /^Vim\%((\a\+)\)\=:E185/
 	colo koehler
 endtry
 try
-	Tcolorscheme 256_noir
+	Tcolorscheme pencil
 catch /^Vim\%((\a+)\)\=:E492/
 endtry
-
-set colorcolumn=80
 
 au VimEnter * NoMatchParen
 
@@ -220,6 +221,6 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Airline
 let g:airline_powerline_fonts = 1
 set laststatus=2 " actually show it
-let g:airline_theme = 'monochrome'
+let g:airline_theme = 'pencil'
 set noshowmode
 set fillchars+=stl:\ ,stlnc:\
