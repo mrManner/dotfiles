@@ -15,7 +15,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 " UI
-Plugin 'ap/vim-css-color'
 Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'															" Find files fuzzily
@@ -38,6 +37,7 @@ Plugin 'adimit/prolog.vim'
 Plugin 'git@github.com:mrk21/yaml-vim.git'
 " HTML
 Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
+Plugin 'ap/vim-css-color'
 Plugin 'git@github.com:othree/html5.vim.git'
 " Javascript
 Plugin 'git@github.com:pangloss/vim-javascript.git'
@@ -49,7 +49,6 @@ Plugin 'nvie/vim-flake8'
 Plugin 'git@github.com:exu/pgsql.vim.git'
 " Haskell
 Plugin 'git@github.com:raichoo/haskell-vim.git'
-Plugin 'Twinside/vim-haskellFold'
 Plugin 'git@github.com:eagletmt/neco-ghc.git'
 Plugin 'git@github.com:enomsg/vim-haskellConcealPlus.git'
 Plugin 'git@github.com:Shougo/vimproc.vim.git'
@@ -85,17 +84,17 @@ set wildmenu		    " visual autocompletion of commands
 set lazyredraw		    " less drawing, more speed
 set scrolloff=12        " I hate looking at the last rows of the window...
 
-set term=screen-256color
+set term=xterm-256color
 set t_Co=256
 set background=light
 
 try
-	colorscheme pencil
+	colorscheme bubblegum-256-light
 catch /^Vim\%((\a\+)\)\=:E185/
 	colo koehler
 endtry
 try
-	Tcolorscheme pencil
+	Tcolorscheme bubblegum-256-light
 catch /^Vim\%((\a+)\)\=:E492/
 endtry
 
@@ -225,3 +224,4 @@ set laststatus=2 " actually show it
 let g:airline_theme = 'pencil'
 set noshowmode
 set fillchars+=stl:\ ,stlnc:\
+>>>>>>> Color scheme that works with wsl-term
