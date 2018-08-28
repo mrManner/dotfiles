@@ -224,4 +224,3 @@ set laststatus=2 " actually show it
 let g:airline_theme = 'pencil'
 set noshowmode
 set fillchars+=stl:\ ,stlnc:\
->>>>>>> Color scheme that works with wsl-term
