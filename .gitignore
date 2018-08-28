@@ -4,6 +4,8 @@
 # Vim things
 .vim/bundle
 *.swp
+.netrwhist
+vim/bundle
 
 # Compiled source #
 ###################
