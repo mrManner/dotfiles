@@ -9,3 +9,5 @@ function sudo
         command sudo $argv
     end
 end
+
+set PATH $GOPATH/bin $PATH

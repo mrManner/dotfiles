@@ -34,6 +34,8 @@ Plugin 'git@github.com:Raimondi/delimitMate.git'
 Plugin 'vim-scripts/tex-syntax'
 Plugin 'adimit/prolog.vim'
 Plugin 'git@github.com:mrk21/yaml-vim.git'
+" Golang
+Plugin 'fatih/vim-go'
 " HTML
 Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
 Plugin 'git@github.com:othree/html5.vim.git'
@@ -150,6 +152,7 @@ set incsearch		" search as characters are entered
 set hlsearch		" highlight matches
 " remove highlights from previous search:
 nnoremap <leader><space> :nohlsearch<CR>
+set grepprg=ag\ --nogroup\ --nocolor
 
 " ================================ KEYMAPPING =================================
 
@@ -160,6 +163,7 @@ nnoremap ± :tabprevious<CR>
 nnoremap § :tabnext<CR>
 nnoremap ~ :tabprevious<CR>
 nnoremap ` :tabnext<CR>
+nnoremap <leader>` ~
 let mapleader="\\"
 nnoremap <leader>c :Gcommit<CR>
 
@@ -178,13 +182,7 @@ nnoremap <C-H> <C-W><C-H>
 
 map <F8> :TagbarToggle<CR>
 
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
-
-" ================================ PLUGIN CONF ================================
-
+nnoremap <Leader>* :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " ================================= FILE TYPES ================================
 
@@ -214,8 +212,12 @@ let g:haskell_enable_static_pointers = 1
 
 " ================================ PLUGIN CONF ================================
 
-" ctrl-p (use git ls-files to exclude everything in .gitignore)
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
 
 " Airline
 let g:airline_powerline_fonts = 1

@@ -1,4 +1,4 @@
-set guifont=Noto\ Mono\ for\ Powerline\ 12
+set guifont=FiraMonoForPowerline-Regular
 colo pencil
 set background=light
 AirlineTheme pencil
