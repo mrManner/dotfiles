@@ -19,18 +19,11 @@ Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'															" Find files fuzzily
 Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
-Plugin 'nightsense/carbonized'
-Plugin 'albertorestifo/github.vim'
-Plugin 'owickstrom/vim-colors-paramount'
 " Git
-Plugin 'airblade/vim-gitgutter'											" Show git status per line
 Plugin 'tpope/vim-fugitive'
 " Utils
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
-Plugin 'git@github.com:mtth/scratch.vim.git'				" gs is your friend
-Plugin 'git@github.com:majutsushi/tagbar.git'
-Plugin 'git@github.com:sbdchd/neoformat.git'
-Plugin 'git@github.com:Raimondi/delimitMate.git'
+Plugin 'mileszs/ack.vim'
 " Misc syntax
 Plugin 'vim-scripts/tex-syntax'
 Plugin 'adimit/prolog.vim'
@@ -38,9 +31,9 @@ Plugin 'git@github.com:mrk21/yaml-vim.git'
 " HTML
 Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
 Plugin 'git@github.com:othree/html5.vim.git'
+Plugin 'hail2u/vim-css3-syntax'
 " Javascript
 Plugin 'git@github.com:pangloss/vim-javascript.git'
-Plugin 'git@github.com:mxw/vim-jsx'
 Plugin 'git@github.com:kchmck/vim-coffee-script.git'
 " Python
 Plugin 'nvie/vim-flake8'
@@ -52,18 +45,14 @@ Plugin 'Twinside/vim-haskellFold'
 Plugin 'git@github.com:eagletmt/neco-ghc.git'
 Plugin 'git@github.com:enomsg/vim-haskellConcealPlus.git'
 Plugin 'git@github.com:Shougo/vimproc.vim.git'
-" God knows
-Plugin 'vim-scripts/unicode.vim'
 " Writing
 Plugin 'reedes/vim-pencil'
-Plugin 'tpope/vim-markdown'
 " Colors
-Plugin 'git@github.com:andreasvc/vim-256noir.git'
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'git@github.com:zeis/vim-kolor.git'
-Plugin 'git@github.com:noah/vim256-color.git'
-Plugin 'git@github.com:pbrisbin/vim-colors-off.git'
+Plugin 'git@github.com:pgdouyon/vim-yin-yang.git'
+Plugin 'git@github.com:vim-scripts/bw.vim.git'
 
 call vundle#end()            " required
 
@@ -74,6 +63,7 @@ syntax enable
 " Specifics
 au BufRead,BufNewFile *.md set filetype=markdown " .md is Makrdown
 
+set tags=./tags;,tags;
 
 " ==================================== UI =====================================
 
@@ -89,12 +79,12 @@ set t_Co=256
 set background=light
 
 try
-	colorscheme pencil
+	colorscheme bw
 catch /^Vim\%((\a\+)\)\=:E185/
 	colo koehler
 endtry
 try
-	Tcolorscheme pencil
+	Tcolorscheme bw
 catch /^Vim\%((\a+)\)\=:E492/
 endtry
 
@@ -152,6 +142,9 @@ set hlsearch		" highlight matches
 " remove highlights from previous search:
 nnoremap <leader><space> :nohlsearch<CR>
 
+set grepprg=ag\ --vimgrep\ $*
+set grepformat=%f:%l:%c:%m
+
 " ================================ KEYMAPPING =================================
 
 " === Leader shortcuts ===
@@ -187,6 +180,8 @@ let g:ctrlp_prompt_mappings = {
 " ================================ PLUGIN CONF ================================
 
 
+nmap <silent> <C-t> :CtrlPTag<cr>
+
 " ================================= FILE TYPES ================================
 
 " Coffee Script
@@ -221,6 +216,13 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Airline
 let g:airline_powerline_fonts = 1
 set laststatus=2 " actually show it
-let g:airline_theme = 'pencil'
+let g:airline_theme = 'monochrome'
 set noshowmode
 set fillchars+=stl:\ ,stlnc:\
+
+" ag instead of ack
+let g:ackprg = 'ag --vimgrep --smart-case'                                                   
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
