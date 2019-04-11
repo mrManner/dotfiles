@@ -1,8 +1,8 @@
 # ================================== Paths =====================================
 
-set folder              =   ~/.mail                     # Teh mailbox
-set alias_file          =   ~/.mutt/alias
-source ~/.mutt/alias
+set folder              =   ~/mail                     # Teh mailbox
+set alias_file          =   ~/contacts.txt
+source ~/contacts.txt
 set mailcap_path        =   ~/.mutt/mailcap             # Filetypes
 set tmpdir              =   ~/.mutt/temp
 set signature           =   ~/.mutt/sig
@@ -97,27 +97,6 @@ set editor = "vim"
 macro index O "<shell-escape>offlineimap<enter>"           "run offlineimap to sync all mail"
 macro index o "<shell-escape>offlineimap -qf INBOX<enter>" "run offlineimap to sync inbox"
 
-
-# Sidebar patch 
-set sidebar_delim       = '  |  '
-set sidebar_visible     = yes
-set sidebar_width       = 45
-set sidebar_shortpath   = yes
-mailboxes   +mrmanner.eu/INBOX \
-            +kfum.se/INBOX \
-            +kth.se/INBOX \
-            +mrmanner.eu/devscout \
-            +mrmanner.eu/lists.Climate.RGE-COP \
-            +mrmanner.eu/lists.Climate.YOUNGO \
-            +mrmanner/eu/lists.Climate.YOUNGO.Intersessionals \
-            +mrmanner.eu/lists.computers.fedora-desktop \
-            +mrmanner.eu/lists.computers.python \
-            +mrmanner.eu/lists.computers.fedora-users \
-            +mrmanner.eu/news
-bind index,pager <down>   sidebar-next
-bind index,pager <up>     sidebar-prev
-bind index,pager <right>  sidebar-open
-
 # SMTP
 
 set from     = "johan@mrmanner.eu"
@@ -143,29 +122,3 @@ set pgp_timeout = 3000
 set crypt_autosign = yes
 set crypt_replyencrypt = yes
 set pgp_verify_sig = yes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
