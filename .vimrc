@@ -76,7 +76,7 @@ set scrolloff=12        " I hate looking at the last rows of the window...
 
 set term=screen-256color
 set t_Co=256
-set background=light
+set background=dark
 
 try
 	colorscheme bw
@@ -226,3 +226,31 @@ cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
+
+
+" ================================ FUNCTIONS ================================
+
+function! Fixflowed()
+	" save cursor position
+	let pos = getpos(".")
+	" add spaces to the end of every line
+	silent! %s/\([^]> :]\)\ze\n>[> ]*[^> ]/\1 /g
+	" remove extraneous spaces
+	silent! %s/ \+\ze\n[> ]*$//
+	" make sure there's only ONE space at the end of each line
+	silent! %s/ \{2,}$/ /
+	" fix the wockas spacing from the text
+	silent! %s/^[> ]*>\ze[^> ]/& /
+	" compress the wockas
+	while search('^>\+ >', 'w') > 0
+	  s/^>\+\zs >/>/
+	endwhile
+	" restore the original cursor location
+	call setpos('.',pos)
+endfunction
+
+
+function! Fixindented()
+	remove spaces at end of indented lines
+	silent! %s/^\s.*\zs \+$//
+endfunction
