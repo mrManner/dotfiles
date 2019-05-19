@@ -25,9 +25,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
 Plugin 'mileszs/ack.vim'
 " Misc syntax
+Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-scripts/tex-syntax'
 Plugin 'adimit/prolog.vim'
 Plugin 'git@github.com:mrk21/yaml-vim.git'
+" Go
+Plugin 'fatih/vim-go'
 " HTML
 Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
 Plugin 'git@github.com:othree/html5.vim.git'
@@ -92,25 +95,26 @@ au VimEnter * NoMatchParen
 
 "  Rainbow parenthesis
 
-let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
-    \ ]
 
+"let g:rbpt_colorpairs = [
+"   \ ['brown',       'RoyalBlue3'],
+"   \ ['Darkblue',    'SeaGreen3'],
+"   \ ['darkgray',    'DarkOrchid3'],
+"   \ ['darkgreen',   'firebrick3'],
+"   \ ['darkcyan',    'RoyalBlue3'],
+"   \ ['darkred',     'SeaGreen3'],
+"   \ ['darkmagenta', 'DarkOrchid3'],
+"   \ ['brown',       'firebrick3'],
+"   \ ['gray',        'RoyalBlue3'],
+"   \ ['black',       'SeaGreen3'],
+"   \ ['darkmagenta', 'DarkOrchid3'],
+"   \ ['Darkblue',    'firebrick3'],
+"   \ ['darkgreen',   'RoyalBlue3'],
+"   \ ['darkcyan',    'SeaGreen3'],
+"   \ ['darkred',     'DarkOrchid3'],
+"   \ ['red',         'firebrick3'],
+"   \ ]
+"
 let g:rbpt_loadcmd_toggle = 0
 
 au VimEnter * RainbowParenthesesActivate
@@ -149,13 +153,13 @@ set grepformat=%f:%l:%c:%m
 
 " === Leader shortcuts ===
 let mapleader="\\"
+
+noremap <leader>* :Ack <cword><cr>
 			
 nnoremap ± :tabprevious<CR>
 nnoremap § :tabnext<CR>
 nnoremap ~ :tabprevious<CR>
 nnoremap ` :tabnext<CR>
-let mapleader="\\"
-nnoremap <leader>c :Gcommit<CR>
 
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 inoremap <F9> <C-O>za
@@ -170,7 +174,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-map <F8> :TagbarToggle<CR>
 
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
@@ -216,7 +219,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Airline
 let g:airline_powerline_fonts = 1
 set laststatus=2 " actually show it
-let g:airline_theme = 'monochrome'
+let g:airline_theme = 'atomic'
 set noshowmode
 set fillchars+=stl:\ ,stlnc:\
 
@@ -226,3 +229,13 @@ cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
+
+
+" syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ["standard"]
+let g:syntastic_enable_highlighting = 0
+
