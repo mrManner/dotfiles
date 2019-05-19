@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>newsbeuter - Exported Feeds</title>
+  </head>
+  <body>
+    <outline type="rss" xmlUrl="http://dotearth.blogs.nytimes.com/feed/" htmlUrl="http://dotearth.blogs.nytimes.com" title="Dot Earth"/>
+    <outline type="rss" xmlUrl="http://www.earthinbrackets.org/category/climate-change/feed/" htmlUrl="http://www.earthinbrackets.org" title="Earth in Brackets &#xBB; Climate Change"/>
+    <outline type="rss" xmlUrl="http://blogg.miljodep.se/feed/" htmlUrl="http://blogg.miljodep.se" title="Milj&#xF6;- och energidepartementets blogg"/>
+    <outline type="rss" xmlUrl="http://expressen.se/rss/ledare/" htmlUrl="http://www.expressen.se/" title="Expressen: Ledare"/>
+    <outline type="rss" xmlUrl="http://www.gp.se/1.872491" htmlUrl="http://www.gp.se/1.872491" title="GP - Ledare"/>
+    <outline type="rss" xmlUrl="http://www.dn.se/ledare-rss" htmlUrl="http://www.dn.se/ledare/rss" title="Ledare - Ledare - hem"/>
+    <outline type="rss" xmlUrl="http://www.aftonbladet.se/ledare/rss.xml" htmlUrl="http://www.aftonbladet.se/ledare/" title=""/>
+    <outline type="rss" xmlUrl="http://www.svd.se/opinion/ledarsidan/?service=rss" htmlUrl="http://www.svd.se/" title="SvD - Ledare"/>
+    <outline type="rss" xmlUrl="http://www.sydsvenskan.se/rss.xml?type=section&amp;id=1700" htmlUrl="http://www.sydsvenskan.se/" title="Sydsvenskan - Huvudledare"/>
+    <outline type="rss" xmlUrl="http://feeds.boingboing.net/boingboing/iBag" htmlUrl="http://boingboing.net" title="Boing Boing"/>
+    <outline type="rss" xmlUrl="http://feeds.gawker.com/io9/full" htmlUrl="http://io9.com" title="io9"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/rss/finance_and_economics_rss.xml" htmlUrl="http://www.economist.com" title="The Economist: Finance and economics"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/sections/business-finance/rss.xml" htmlUrl="http://www.economist.com/sections/business-finance/rss.xml" title="Business and finance"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/sections/markets-data/rss.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/fastcompany/headlines" htmlUrl="http://www.fastcompany.com//www.fastcompany.com" title="Fast Company"/>
+    <outline type="rss" xmlUrl="http://freakonomics.blogs.nytimes.com/feed/" htmlUrl="http://freakonomics.com" title="Freakonomics"/>
+    <outline type="rss" xmlUrl="http://ftalphaville.ft.com/blog/feed/" htmlUrl="http://ftalphaville.ft.com" title="FT Alphaville"/>
+    <outline type="rss" xmlUrl="http://feeds.harvardbusiness.org/harvardbusiness/" htmlUrl="http://hbr.org" title="HBR.org"/>
+    <outline type="rss" xmlUrl="http://dealbook.nytimes.com/feed/" htmlUrl="http://www.nytimes.com/pages/business/dealbook/index.html?partner=rss&amp;emc=rss" title="NYT &gt; DealBook"/>
+    <outline type="rss" xmlUrl="http://qz.com/feed/" htmlUrl="http://qz.com" title="Quartz"/>
+    <outline type="rss" xmlUrl="http://www.guardian.co.uk/rssfeed/0,,1,00.xml" htmlUrl="http://www.theguardian.com/uk" title="Network Front | The Guardian"/>
+    <outline type="rss" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/InternationalHome.xml" htmlUrl="http://www.nytimes.com/pages/international/index.html?partner=rss&amp;emc=rss" title="NYT &gt; International Home"/>
+    <outline type="rss" xmlUrl="http://www.europeanvoice.com/feed/" htmlUrl="http://www.politico.eu" title="POLITICO"/>
+    <outline type="rss" xmlUrl="http://thinkprogress.org/feed/" htmlUrl="http://thinkprogress.org" title="ThinkProgress"/>
+    <outline type="rss" xmlUrl="http://rss.time.com/web/time/rss/top/index.xml" htmlUrl="http://time.com" title="TIME"/>
+    <outline type="rss" xmlUrl="http://www.newrepublic.com/taxonomy/term/17538/feed" htmlUrl="http://www.newrepublic.com/tags/politics" title="The New Republic - Politics"/>
+    <outline type="rss" xmlUrl="http://www.newrepublic.com/taxonomy/term/59892/feed" htmlUrl="http://www.newrepublic.com/tags/tech" title="The New Republic - Tech"/>
+    <outline type="rss" xmlUrl="http://www.newrepublic.com/taxonomy/term/65822/feed" htmlUrl="http://www.newrepublic.com/tags/qed" title="The New Republic - QED"/>
+    <outline type="rss" xmlUrl="http://www.vice.com/rss" htmlUrl="http://www.vice.com" title="VICE RSS Feed"/>
+    <outline type="rss" xmlUrl="http://www.vox.com/rss/index.xml" htmlUrl="http://www.vox.com/" title="Vox -  All"/>
+    <outline type="rss" xmlUrl="http://www.nytimes.com/services/xml/rss/nyt/InternationalOpinion.xml" htmlUrl="http://www.nytimes.com/pages/opinion/international/index.html?partner=rss&amp;emc=rss" title="NYT &gt; International Opinion"/>
+    <outline type="rss" xmlUrl="http://opinionator.blogs.nytimes.com/feed/" htmlUrl="http://opinionator.blogs.nytimes.com" title="Opinionator"/>
+    <outline type="rss" xmlUrl="http://www.project-syndicate.org/ps.rss" htmlUrl="https://www.project-syndicate.org/rss" title="Project Syndicate RSS-Feed"/>
+    <outline type="rss" xmlUrl="http://blog.svd.se/ihogermarginalen/feed/" htmlUrl="http://blog.svd.se/ihogermarginalen" title="I h&#xF6;germarginalen"/>
+    <outline type="rss" xmlUrl="http://blog.svd.se/ledarbloggen/feed/" htmlUrl="http://blog.svd.se/ledarbloggen" title="Ledarbloggen"/>
+    <outline type="rss" xmlUrl="http://politism.se/feed/" htmlUrl="http://www.politism.se" title="Politism"/>
+    <outline type="rss" xmlUrl="http://feeds.arstechnica.com/arstechnica/index/" htmlUrl="http://arstechnica.com" title="Ars Technica"/>
+    <outline type="rss" xmlUrl="http://bits.blogs.nytimes.com/feed/" htmlUrl="http://bits.blogs.nytimes.com" title="Bits"/>
+    <outline type="rss" xmlUrl="http://feeds.gawker.com/lifehacker/vip" htmlUrl="http://lifehacker.com" title="Lifehacker"/>
+    <outline type="rss" xmlUrl="http://jeremykun.wordpress.com/feed/" htmlUrl="http://jeremykun.com" title="Math &#x2229; Programming"/>
+    <outline type="rss" xmlUrl="http://www.technologyreview.com/rss/rss.aspx" htmlUrl="http://www.technologyreview.com/stream/?sort=recent" title="New on MIT Technology Review"/>
+    <outline type="rss" xmlUrl="http://feeds2.feedburner.com/thenextweb" htmlUrl="http://thenextweb.com" title="The Next Web"/>
+    <outline type="rss" xmlUrl="http://open.blogs.nytimes.com/feed/" htmlUrl="http://open.blogs.nytimes.com" title="Open"/>
+    <outline type="rss" xmlUrl="http://www.readwriteweb.com/rss.xml" htmlUrl="http://readwrite.com" title="ReadWrite"/>
+    <outline type="rss" xmlUrl="http://rss.slashdot.org/Slashdot/slashdot" htmlUrl="http://slashdot.org/" title="Slashdot"/>
+    <outline type="rss" xmlUrl="http://www.theverge.com/rss/full.xml" htmlUrl="http://www.theverge.com/" title="The Verge -  All Posts"/>
+    <outline type="rss" xmlUrl="http://feeds.wired.com/wired/index" htmlUrl="http://www.wired.com" title="WIRED"/>
+    <outline type="rss" xmlUrl="http://www.wired.com/category/threatlevel/feed/" htmlUrl="http://www.wired.com" title="WIRED &#xBB; Threat Level"/>
+    <outline type="rss" xmlUrl="http://harvardlawreview.org/feed/" htmlUrl="http://harvardlawreview.org" title="Harvard Law Review"/>
+    <outline type="rss" xmlUrl="http://www.svd.se/?service=rss" htmlUrl="http://www.svd.se/" title="SvD"/>
+    <outline type="rss" xmlUrl="http://www.ft.com/rss/home/europe" htmlUrl="http://www.ft.com/home/europe" title="Europe homepage"/>
+    <outline type="rss" xmlUrl="http://www.ft.com/rss/companies/technology" htmlUrl="http://www.ft.com/companies/technology" title="Technology"/>
+    <outline type="rss" xmlUrl="http://www.ft.com/rss/companies/oil-gas" htmlUrl="http://www.ft.com/companies/oil-gas" title="Oil &amp; Gas"/>
+    <outline type="rss" xmlUrl="http://www.ft.com/rss/companies/financial-services" htmlUrl="http://www.ft.com/companies/financial-services" title="Financial services company news - FT.com"/>
+    <outline type="rss" xmlUrl="http://www.ft.com/rss/companies/banks" htmlUrl="http://www.ft.com/companies/banks" title="Banks and banking industry news - FT.com"/>
+    <outline type="rss" xmlUrl="http://www.ft.com/rss/comment/opinion" htmlUrl="http://www.ft.com/comment/opinion" title="Opinion"/>
+    <outline type="rss" xmlUrl="https://firstlook.org/theintercept/feed/?rss" htmlUrl="https://firstlook.org/theintercept" title="The Intercept"/>
+    <outline type="rss" xmlUrl="http://www.monde-diplomatique.fr/rss/" htmlUrl="http://www.monde-diplomatique.fr/" title="Le Monde diplomatique"/>
+    <outline type="rss" xmlUrl="http://tidningensyre.se/feed/" htmlUrl="http://tidningensyre.se" title="Syre - gr&#xF6;nt nyhetsmagasin"/>
+    <outline type="rss" xmlUrl="http://bubb.la/rss/nyheter" htmlUrl="http://bubb.la/" title="bubb.la"/>
+    <outline type="rss" xmlUrl="http://supermiljobloggen.se/feed" htmlUrl="http://supermiljobloggen.se" title="Supermilj&#xF6;bloggen - Oberoende milj&#xF6;v&#xE4;nlig"/>
+    <outline type="rss" xmlUrl="http://unfccc.int/tools_xml/headlines_rss.xml" htmlUrl="http://unfccc.int/press/news_room/items/2768.php" title="Climate Change Headlines"/>
+    <outline type="rss" xmlUrl="http://unfccc.int/tools_xml/docs_rss.xml" htmlUrl="http://unfccc.int/documentation/documents/advanced_search/items/3594.php" title="UNFCCC latest documents"/>
+    <outline type="rss" xmlUrl="http://unfccc.int/tools_xml/communications_rss.xml" htmlUrl="http://unfccc.int/essential_background/library/items/3599.php" title="UNFCCC Latest National Communications"/>
+    <outline type="rss" xmlUrl="http://www.buzzfeed.com/index.xml" htmlUrl="http://www.buzzfeed.com" title="BuzzFeed Index - Latest"/>
+    <outline type="rss" xmlUrl="http://www.forbes.com/real-time/feed2/" htmlUrl="http://www.forbes.com/real-time/" title="Forbes Real Time"/>
+    <outline type="rss" xmlUrl="http://www.spiegel.de/schlagzeilen/tops/index.rss" htmlUrl="http://www.spiegel.de" title="SPIEGEL ONLINE - Schlagzeilen"/>
+    <outline type="rss" xmlUrl="http://feeds.reuters.com/reuters/environment" htmlUrl="http://www.reuters.com" title="Reuters: Environment"/>
+    <outline type="rss" xmlUrl="http://feeds.reuters.com/reuters/businessNews" htmlUrl="http://www.reuters.com" title="Reuters: Business News"/>
+    <outline type="rss" xmlUrl="http://feeds.reuters.com/reuters/companyNews" htmlUrl="http://www.reuters.com" title="Reuters: Company News"/>
+    <outline type="rss" xmlUrl="http://eur-lex.europa.eu/EN/display-feed.rss?rssId=163" htmlUrl="http://eur-lex.europa.eu/homepage.html" title="All case-law"/>
+    <outline type="rss" xmlUrl="http://eur-lex.europa.eu/EN/display-feed.rss?rssId=162" htmlUrl="http://eur-lex.europa.eu/homepage.html" title="All Parliament and Council legislation"/>
+    <outline type="rss" xmlUrl="http://www.bloombergview.com/rss" htmlUrl="http://www.bloombergview.com" title="Bloomberg View"/>
+    <outline type="rss" xmlUrl="http://www.bloomberg.com/politics/feeds/site.xml" htmlUrl="http://www.bloomberg.com/feeds/politics/news.rss" title="Bloomberg.com news"/>
+    <outline type="rss" xmlUrl="http://www.engadget.com/rss.xml" htmlUrl="http://www.engadget.com" title="Engadget RSS Feed"/>
+    <outline type="rss" xmlUrl="http://www.newyorker.com/feed/news" htmlUrl="http://www.newyorker.com/news" title="The New Yorker: News"/>
+    <outline type="rss" xmlUrl="http://www.newyorker.com/feed/culture" htmlUrl="http://www.newyorker.com/culture" title="The New Yorker: Culture"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/IeeeSpectrumFullText" htmlUrl="http://spectrum.ieee.org" title="IEEE Spectrum Recent Content full text"/>
+    <outline type="rss" xmlUrl="http://www.theguardian.com/environment/rss" htmlUrl="http://www.theguardian.com/environment" title="Environment | The Guardian"/>
+    <outline type="rss" xmlUrl="http://csdl.computer.org/rss/computer.xml" htmlUrl="http://www.computer.org" title="Computer"/>
+    <outline type="rss" xmlUrl="http://csdl.computer.org/rss/cise.xml" htmlUrl="http://www.computer.org" title="Computing in Science &amp; Engineering"/>
+    <outline type="rss" xmlUrl="http://csdl.computer.org/rss/internet.xml" htmlUrl="http://www.computer.org" title="IEEE Internet Computing"/>
+    <outline type="rss" xmlUrl="http://csdl.computer.org/rss/security.xml" htmlUrl="http://www.computer.org" title="IEEE Security &amp; Privacy"/>
+    <outline type="rss" xmlUrl="http://csdl.computer.org/rss/tpami.xml" htmlUrl="http://www.computer.org" title="IEEE Transactions on Pattern Analysis and Machine Intelligence"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/sections/leaders/rss.xml" htmlUrl="http://www.economist.com/sections/leaders/rss.xml" title="Leaders"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/topics/european-union/index.xml" htmlUrl="http://www.economist.com/topics/european-union" title="European Union"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/topics/computer-technology/index.xml" htmlUrl="http://www.economist.com/topics/computer-technology" title="Computer Technology"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/topics/environmental-problems-and-protection/index.xml" htmlUrl="http://www.economist.com/topics/environmental-problems-and-protection" title="Environmental Issues and Protection"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/sections/leaders/rss.xml" htmlUrl="http://www.economist.com/sections/leaders/rss.xml" title="Leaders"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/topics/european-union/index.xml" htmlUrl="http://www.economist.com/topics/european-union" title="European Union"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/topics/computer-technology/index.xml" htmlUrl="http://www.economist.com/topics/computer-technology" title="Computer Technology"/>
+    <outline type="rss" xmlUrl="http://www.economist.com/topics/environmental-problems-and-protection/index.xml" htmlUrl="http://www.economist.com/topics/environmental-problems-and-protection" title="Environmental Issues and Protection"/>
+  </body>
+</opml>
