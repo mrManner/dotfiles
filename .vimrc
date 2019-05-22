@@ -173,9 +173,9 @@ nnoremap <C-H> <C-W><C-H>
 map <F8> :TagbarToggle<CR>
 
 let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
+			\ 'AcceptSelection("e")': ['<c-t>'],
+			\ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+			\ }
 
 " ================================ PLUGIN CONF ================================
 
@@ -243,7 +243,7 @@ function! Fixflowed()
 	silent! %s/^[> ]*>\ze[^> ]/& /
 	" compress the wockas
 	while search('^>\+ >', 'w') > 0
-	  s/^>\+\zs >/>/
+		s/^>\+\zs >/>/
 	endwhile
 	" restore the original cursor location
 	call setpos('.',pos)
@@ -251,6 +251,7 @@ endfunction
 
 
 function! Fixindented()
-	remove spaces at end of indented lines
+"	remove spaces at end of indented lines
 	silent! %s/^\s.*\zs \+$//
 endfunction
+
