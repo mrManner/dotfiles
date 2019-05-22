@@ -49,7 +49,6 @@ set sort_re                                # thread based on regex
 set reply_regexp = "^(([RrSs][EeVv]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
 
 # Index keybindings
-bind index gg       first-entry
 bind index G        last-entry
 bind index R        group-reply
 bind index <tab>    sync-mailbox
@@ -74,8 +73,6 @@ auto_view text/html
 # Pager Key Bindings ---------------------------------
 bind pager k  previous-line
 bind pager j  next-line
-bind pager gg top
-bind pager G  bottom
 
 bind pager R  group-reply
 
@@ -100,9 +97,6 @@ set forward_quote                    # include message in forwards
 
 set editor = "vim"
 
-# Sync email
-macro index O "<shell-escape>offlineimap<enter>"           "run offlineimap to sync all mail"
-macro index o "<shell-escape>offlineimap -qf INBOX<enter>" "run offlineimap to sync inbox"
 
 
 # SMTP
@@ -132,3 +126,12 @@ set pgp_replysign          # now crypt_replysign
 set pgp_replysignencrypted # now crypt_replysignencrypted
 set pgp_show_unusable=no
 set pgp_use_gpg_agent
+#
+# GPG
+source ~/.gpg.muttrc
+set pgp_use_gpg_agent = yes
+set pgp_sign_as = 51282268
+set pgp_timeout = 3000
+set crypt_autosign = yes
+set crypt_replyencrypt = yes
+set pgp_verify_sig = yes
