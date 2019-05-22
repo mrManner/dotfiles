@@ -150,7 +150,7 @@ set grepformat=%f:%l:%c:%m
 
 " === Leader shortcuts ===
 let mapleader="\\"
-			
+
 nnoremap ± :tabprevious<CR>
 nnoremap § :tabnext<CR>
 nnoremap ~ :tabprevious<CR>
@@ -222,7 +222,7 @@ set noshowmode
 set fillchars+=stl:\ ,stlnc:\
 
 " ag instead of ack
-let g:ackprg = 'ag --vimgrep --smart-case'                                                   
+let g:ackprg = 'ag --vimgrep --smart-case'
 cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
