@@ -5,6 +5,7 @@ set alias_file          =   ~/contacts.txt
 source ~/contacts.txt
 source ~/.mutt/mailboxes
 source ~/.mutt/gpg.rc
+source ~/dotfiles/mutt-colors-solarized-light-16.muttrc
 set mailcap_path        =   ~/.mutt/mailcap             # Filetypes
 set tmpdir              =   ~/.mutt/temp
 set signature           =   ~/.mutt/scoutsig
