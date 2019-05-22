@@ -1,23 +1,30 @@
 # ================================== Paths =====================================
 
-set folder              =   ~/.mail                     # Teh mailbox
-set alias_file          =   ~/.mutt/alias
-source ~/.mutt/alias
+set folder              =   ~/mail                     # Teh mailbox
+set alias_file          =   ~/contacts.txt
+source ~/contacts.txt
+source ~/.mutt/mailboxes
+source ~/.mutt/gpg.rc
+source ~/dotfiles/mutt-colors-solarized-light-16.muttrc
 set mailcap_path        =   ~/.mutt/mailcap             # Filetypes
 set tmpdir              =   ~/.mutt/temp
-set signature           =   ~/.mutt/sig
+set signature           =   ~/.mutt/scoutsig
 
 # ================================= Basics =====================================
-source ~/.mutt-solarized.muttrc
 set wait_key = no           # Something something "shut up, mutt"?
 set mbox_type = Maildir
+unset move					# Don't automatically move emails out of the inbox
+							# (I can do that)
 set timeout = 3             # Idle time before scanning (what?)
 set mail_check = 0          # Minimum time between scans
-unset move                  # Gmail does this?
 set delete                  # Don't ask
 unset confirmappend         # Just do
-set pipe_decode
-set thorough_search
+folder-hook . "exec collapse-all" # Collapse all threads by default
+
+set text_flowed
+set reflow_space_quotes
+set reflow_text
+set reflow_wrap = 78
 
 # ================================= Status bar =================================
 
@@ -27,23 +34,22 @@ set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)
 
 # ================================== Accounts ==================================
 
-set spoolfile = "+mrmanner.eu/INBOX"
-alternates hi@mrmanner.eu hej@mrmanner.eu cop@mrmanner.eu admin@mrmanner.eu johan.manner@kfum.se johan.manner@km.scout.se jmanner@kth.se
+set spoolfile = "+scouterna.se/INBOX"
+alternates johan.manner@scouterna.se jmanner@kth.se johan@mrmanner.eu
 
-set mbox        =   "+mrmanner.eu/archive"
-set postponed   =   "+mrmanner.eu/drafts"
+set postponed   =   "+scouterna.se/Drafts"
 
 # Index View Options ---------------------------------
 set date_format = "%m/%d"
-set index_format = "[%Z]  %D  %-20.20F  %s"
+set index_format = "[%Z]  %D  %-25.25L  %s"
 set sort = threads                         # like gmail
-set sort_aux = reverse-last-date-received  # like gmail
+set strict_threads = yes                   # stop guessing threads
+set sort_aux = last-date-received  # like gmail
 set uncollapse_jump                        # don't collapse on an unread message
 set sort_re                                # thread based on regex
 set reply_regexp = "^(([RrSs][EeVv]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
 
 # Index keybindings
-bind index gg       first-entry
 bind index G        last-entry
 bind index R        group-reply
 bind index <tab>    sync-mailbox
@@ -63,12 +69,11 @@ macro index M "<save-message>" "move a message to a mailbox"
 
 set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
 alternative_order text/plain text/enriched text/html
+auto_view text/html
 
 # Pager Key Bindings ---------------------------------
 bind pager k  previous-line
 bind pager j  next-line
-bind pager gg top
-bind pager G  bottom
 
 bind pager R  group-reply
 
@@ -93,48 +98,36 @@ set forward_quote                    # include message in forwards
 
 set editor = "vim"
 
-# Sync email
-macro index O "<shell-escape>offlineimap<enter>"           "run offlineimap to sync all mail"
-macro index o "<shell-escape>offlineimap -qf INBOX<enter>" "run offlineimap to sync inbox"
 
-
-# Sidebar patch 
-set sidebar_delim       = '  |  '
-set sidebar_visible     = yes
-set sidebar_width       = 45
-set sidebar_shortpath   = yes
-mailboxes   +mrmanner.eu/INBOX \
-            +kfum.se/INBOX \
-            +kth.se/INBOX \
-            +mrmanner.eu/devscout \
-            +mrmanner.eu/lists.Climate.RGE-COP \
-            +mrmanner.eu/lists.Climate.YOUNGO \
-            +mrmanner/eu/lists.Climate.YOUNGO.Intersessionals \
-            +mrmanner.eu/lists.computers.fedora-desktop \
-            +mrmanner.eu/lists.computers.python \
-            +mrmanner.eu/lists.computers.fedora-users \
-            +mrmanner.eu/news
-bind index,pager <down>   sidebar-next
-bind index,pager <up>     sidebar-prev
-bind index,pager <right>  sidebar-open
 
 # SMTP
 
-set from     = "johan@mrmanner.eu"
-set sendmail = "/usr/local/bin/msmtp -a mrmanner"
+set from     = "johan.manner@scouterna.se"
+set sendmail = "/usr/local/bin/msmtp"
 set sendmail_wait = 0
-unset record
 
-macro generic "<esc>1" ":set from='Johan Manner <johan@mrmanner.eu>'"
-macro generic "<esc>2" ":set from='Johan Manner <johan.manner@kfum.se>'"
-macro generic "<esc>3" ":set from='Johan Manner <jmanner@kth.se>'"
+macro generic "<esc>1" ":set from='Johan Manner <johan@mrmanner.eu>':set signature = .mutt/sig<enter>"
+macro generic "<esc>2" ":set from='Johan Manner <johan.manner@scouterna.se>':set signature = .mutt/scoutsig<enter>"
+macro generic "<esc>3" ":set from='Johan Manner <jmanner@kth.se>'<enter>:unset signature<enter>"
+macro generic "<esc>4" ":set from='Johan Manner <johan.manner@gmail.com>'<enter>:unset signature<enter>"
 
-send-hook . 'unset record'
-send-hook '~f johan.manner@kfum.se' 'set record="=kfum.se/Sent Items"'
+macro compose "<esc>1" '<esc>f^UJohan Manner <johan@mrmanner.eu><enter>'
+macro compose "<esc>2" '<esc>f^UJohan Manner <johan.manner@scouterna.se><enter>'
+macro compose "<esc>3" '<esc>f^UJohan Manner <jmanner@kth.se><enter>'
+macro compose "<esc>4" '<esc>f^UJohan Manner <johan.manner@gmail.com><enter>'
+
+folder-hook . set record="^"
+send2-hook '~f johan.manner@scouterna.se' 'set sendmail="msmtp -a scouterna"'
 send2-hook '~f johan@mrmanner.eu' 'set sendmail="msmtp -a mrmanner"'
-send2-hook '~f johan.manner@kfum.se' 'set sendmail="msmtp -a kfum"'
+send2-hook '~f johan.manner@gmail.com' 'set sendmail="msmtp -a gmail"'
 send2-hook '~f jmanner@kth.se' 'set sendmail="msmtp -a kth"'
 
+set pgp_replyencrypt       # now crypt_replyencrypt
+set pgp_replysign          # now crypt_replysign
+set pgp_replysignencrypted # now crypt_replysignencrypted
+set pgp_show_unusable=no
+set pgp_use_gpg_agent
+#
 # GPG
 source ~/.gpg.muttrc
 set pgp_use_gpg_agent = yes
@@ -143,29 +136,3 @@ set pgp_timeout = 3000
 set crypt_autosign = yes
 set crypt_replyencrypt = yes
 set pgp_verify_sig = yes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

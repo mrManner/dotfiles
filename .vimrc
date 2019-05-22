@@ -53,6 +53,7 @@ Plugin 'reedes/vim-pencil'
 " Colors
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
 Plugin 'reedes/vim-colors-pencil'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'git@github.com:zeis/vim-kolor.git'
 Plugin 'git@github.com:pgdouyon/vim-yin-yang.git'
 Plugin 'git@github.com:vim-scripts/bw.vim.git'
@@ -82,20 +83,18 @@ set t_Co=256
 set background=light
 
 try
-	colorscheme bw
+	colorscheme solarized
 catch /^Vim\%((\a\+)\)\=:E185/
 	colo koehler
 endtry
 try
-	Tcolorscheme bw
+	Tcolorscheme solarized
 catch /^Vim\%((\a+)\)\=:E492/
 endtry
 
 au VimEnter * NoMatchParen
 
 "  Rainbow parenthesis
-
-
 "let g:rbpt_colorpairs = [
 "   \ ['brown',       'RoyalBlue3'],
 "   \ ['Darkblue',    'SeaGreen3'],
@@ -176,9 +175,9 @@ nnoremap <C-H> <C-W><C-H>
 
 
 let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
+			\ 'AcceptSelection("e")': ['<c-t>'],
+			\ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+			\ }
 
 " ================================ PLUGIN CONF ================================
 
@@ -219,17 +218,16 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Airline
 let g:airline_powerline_fonts = 1
 set laststatus=2 " actually show it
-let g:airline_theme = 'atomic'
+let g:airline_theme = 'solarized'
 set noshowmode
 set fillchars+=stl:\ ,stlnc:\
 
 " ag instead of ack
-let g:ackprg = 'ag --vimgrep --smart-case'                                                   
+let g:ackprg = 'ag --vimgrep --smart-case'
 cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
-
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
@@ -239,3 +237,30 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ["standard"]
 let g:syntastic_enable_highlighting = 0
 
+
+" ================================ FUNCTIONS ================================
+
+function! Fixflowed()
+	" save cursor position
+	let pos = getpos(".")
+	" add spaces to the end of every line
+	silent! %s/\([^]> :]\)\ze\n>[> ]*[^> ]/\1 /g
+	" remove extraneous spaces
+	silent! %s/ \+\ze\n[> ]*$//
+	" make sure there's only ONE space at the end of each line
+	silent! %s/ \{2,}$/ /
+	" fix the wockas spacing from the text
+	silent! %s/^[> ]*>\ze[^> ]/& /
+	" compress the wockas
+	while search('^>\+ >', 'w') > 0
+		s/^>\+\zs >/>/
+	endwhile
+	" restore the original cursor location
+	call setpos('.',pos)
+endfunction
+
+
+function! Fixindented()
+"	remove spaces at end of indented lines
+	silent! %s/^\s.*\zs \+$//
+endfunction
