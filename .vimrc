@@ -50,6 +50,7 @@ Plugin 'reedes/vim-pencil'
 " Colors
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
 Plugin 'reedes/vim-colors-pencil'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'git@github.com:zeis/vim-kolor.git'
 Plugin 'git@github.com:pgdouyon/vim-yin-yang.git'
 Plugin 'git@github.com:vim-scripts/bw.vim.git'
@@ -76,15 +77,15 @@ set scrolloff=12        " I hate looking at the last rows of the window...
 
 set term=screen-256color
 set t_Co=256
-set background=dark
+set background=light
 
 try
-	colorscheme bw
+	colorscheme solarized
 catch /^Vim\%((\a\+)\)\=:E185/
 	colo koehler
 endtry
 try
-	Tcolorscheme bw
+	Tcolorscheme solarized
 catch /^Vim\%((\a+)\)\=:E492/
 endtry
 
@@ -216,7 +217,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Airline
 let g:airline_powerline_fonts = 1
 set laststatus=2 " actually show it
-let g:airline_theme = 'monochrome'
+let g:airline_theme = 'solarized'
 set noshowmode
 set fillchars+=stl:\ ,stlnc:\
 
