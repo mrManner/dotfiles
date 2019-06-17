@@ -21,7 +21,7 @@
 [commit]
 		gpgsign = true
 [gpg]
-	program = /usr/bin/gpg2
+		program = /usr/bin/gpg2
 [merge]
         conflictstyle = diff3
 
