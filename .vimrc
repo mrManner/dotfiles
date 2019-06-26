@@ -1,7 +1,6 @@
 " Mostly harmless. StolEN from everywhere. Jag tar avstånd.
 set shell=/bin/bash
 set nocompatible
-set shell=/bin/bash
 
 " ================================== PLUGINS ==================================
 
@@ -78,19 +77,11 @@ set wildmenu		    " visual autocompletion of commands
 set lazyredraw		    " less drawing, more speed
 set scrolloff=12        " I hate looking at the last rows of the window...
 
-set term=screen-256color
-set t_Co=256
+set term=xterm
+set t_Co=16
 set background=light
 
-try
-	colorscheme solarized
-catch /^Vim\%((\a\+)\)\=:E185/
-	colo koehler
-endtry
-try
-	Tcolorscheme solarized
-catch /^Vim\%((\a+)\)\=:E492/
-endtry
+colorscheme default
 
 au VimEnter * NoMatchParen
 
