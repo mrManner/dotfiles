@@ -1,3 +1,5 @@
+fundle install 'danhper/fish-ssh-agent'
+
 # I like sudo !!
 
 . ~/.config/fish/gnupg.fish
@@ -9,3 +11,5 @@ function sudo
         command sudo $argv
     end
 end
+
+fundle init
