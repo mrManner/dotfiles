@@ -1,4 +1,4 @@
-fundle install 'danhper/fish-ssh-agent'
+fundle plugin 'danhper/fish-ssh-agent'
 
 # I like sudo !!
 
