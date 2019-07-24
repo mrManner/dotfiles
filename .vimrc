@@ -52,6 +52,8 @@ Plugin 'git@github.com:enomsg/vim-haskellConcealPlus.git'
 Plugin 'git@github.com:Shougo/vimproc.vim.git'
 " Writing
 Plugin 'reedes/vim-pencil'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 " Colors
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
 Plugin 'reedes/vim-colors-pencil'
@@ -86,12 +88,12 @@ set t_Co=16
 set background=light
 
 try
-	colorscheme default
+	colorscheme solarized
 catch /^Vim\%((\a\+)\)\=:E185/
-	colo koehler
+	colo default
 endtry
 try
-	Tcolorscheme default
+	Tcolorscheme solarized
 catch /^Vim\%((\a+)\)\=:E492/
 endtry
 
