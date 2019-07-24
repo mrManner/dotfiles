@@ -15,7 +15,7 @@ end
 end
 
 if not set -q -x GPG_AGENT_INFO
-gpg-agent --daemon >/dev/null
+gpg-agent --daemon --allow-preset-passphrase >/dev/null
 end
 
 if test -f ~/.gpg-agent-info
