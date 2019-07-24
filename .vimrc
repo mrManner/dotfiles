@@ -32,6 +32,8 @@ Plugin 'git@github.com:mrk21/yaml-vim.git'
 Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
 Plugin 'git@github.com:othree/html5.vim.git'
 Plugin 'hail2u/vim-css3-syntax'
+" Mail
+Plugin 'neomutt/neomutt.vim' " Make vim work with neomutt (like with mutt)
 " Javascript
 Plugin 'git@github.com:pangloss/vim-javascript.git'
 Plugin 'git@github.com:kchmck/vim-coffee-script.git'
@@ -74,18 +76,19 @@ set showcmd		        " show command in bottom bar
 set wildmenu		    " visual autocompletion of commands
 set lazyredraw		    " less drawing, more speed
 set scrolloff=12        " I hate looking at the last rows of the window...
+let g:solarized_termtrans =   1
 
-set term=screen-256color
-set t_Co=256
+set term=screen
+set t_Co=16
 set background=light
 
 try
-	colorscheme solarized
+	colorscheme default
 catch /^Vim\%((\a\+)\)\=:E185/
 	colo koehler
 endtry
 try
-	Tcolorscheme solarized
+	Tcolorscheme default
 catch /^Vim\%((\a+)\)\=:E492/
 endtry
 
