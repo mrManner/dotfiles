@@ -1,8 +1,11 @@
 set -gx PATH /home/jmanner/go/bin $PATH
 
-# I like sudo !!
-
 . ~/.config/fish/gnupg.fish
+
+fundle install 'danhper/fish-ssh-agent'
+fundle init
+
+# I like sudo !!
 
 function sudo
     if test "$argv" = !!
@@ -11,3 +14,4 @@ function sudo
         command sudo $argv
     end
 end
+
