@@ -1,3 +1,5 @@
+set -gx PATH /home/jmanner/go/bin $PATH
+
 # I like sudo !!
 
 . ~/.config/fish/gnupg.fish
