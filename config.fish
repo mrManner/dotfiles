@@ -2,7 +2,7 @@ set -gx PATH /home/jmanner/go/bin $PATH
 
 . ~/.config/fish/gnupg.fish
 
-fundle install 'danhper/fish-ssh-agent'
+fundle plugin 'danhper/fish-ssh-agent'
 fundle init
 
 # I like sudo !!
