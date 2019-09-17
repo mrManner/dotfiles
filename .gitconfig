@@ -1,47 +1,44 @@
 [core]
-        editor = vim
-        pager = less -iNQ --shift 3
-        excludesfile = ~/.gitignore
+	editor = vim
+	pager = less -iNQ --shift 3
+	excludesfile = ~/.gitignore
 
 [help]
-        autocorrect = 30
+	autocorrect = 30
 [github]
-        user = mrManner
+	user = mrManner
 
 [hub]
-        protocol = ssh
+	protocol = ssh
 
 [user]
-        email = johan@mrmanner.eu
-        name = mrmanner
+	email = johan@mrmanner.eu
+	name = mrmanner
 [push]
-        default = matching
+	default = matching
 
 [commit]
-		gpgsign = false
+	gpgsign = false
 [merge]
-        conflictstyle = diff3
+	conflictstyle = diff3
 
 [color]
-        branch = auto
-        grep = auto
-        status = auto
-        ui = auto
+	branch = auto
+	grep = auto
+	status = auto
+	ui = auto
 
 [alias]
-        s = status
-        st = status
-        cm = commit -m 
-        ca = commit -a
-        lg = log --oneline --graph --decorate
-        cb = checkout -b 
-        co = checkout
-        ct = checkout --track 
-        a = add
+	s = status
+	st = status
+	cm = commit -m 
+	ca = commit -a
+	lg = log --oneline --graph --decorate
+	cb = checkout -b 
+	co = checkout
+	ct = checkout --track 
+	a = add
 [filter "lfs"]
 	smudge = git-lfs smudge %f
 	required = true
 	clean = git-lfs clean %f
-[ghi]
-	token = !security find-internet-password -a mrManner -s github.com -l 'ghi token' -w
-	pager = less -X -F -R
