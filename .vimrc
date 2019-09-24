@@ -198,9 +198,9 @@ autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 " move backups to /tmp
 set backup
-set backupdir=~/.vim-tmp,~/.tmp,.
+set backupdir=/tmp
 set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,.
+set directory=/tmp
 set writebackup
 
 
