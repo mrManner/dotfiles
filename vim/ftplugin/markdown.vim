@@ -1,6 +1,2 @@
-try
-	Tcolorscheme pencil
-catch /^Vim\%((\a+)\)\=:E492/
-endtry	
-PencilHard
+	call pencil#init()
 set backspace=0
