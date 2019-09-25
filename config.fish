@@ -1,9 +1,10 @@
+. ~/.config/fish/gnupg.fish
+set -gx PATH /home/jmanner/go/bin $PATH
+
 fundle plugin 'danhper/fish-ssh-agent'
+fundle init
 
 # I like sudo !!
-
-. ~/.config/fish/gnupg.fish
-
 function sudo
     if test "$argv" = !!
         eval command sudo $history[1]
@@ -12,4 +13,3 @@ function sudo
     end
 end
 
-fundle init
