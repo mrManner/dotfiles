@@ -54,6 +54,7 @@ Plugin 'git@github.com:Shougo/vimproc.vim.git'
 Plugin 'reedes/vim-pencil'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'junegunn/goyo.vim'
 " Colors
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
 Plugin 'reedes/vim-colors-pencil'
@@ -61,7 +62,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'git@github.com:zeis/vim-kolor.git'
 Plugin 'git@github.com:pgdouyon/vim-yin-yang.git'
 Plugin 'git@github.com:vim-scripts/bw.vim.git'
-
+" Orgmode
+Plugin 'jceb/vim-orgmode'
 call vundle#end()            " required
 
 " ============================= SYNTAX & FILE TYPES ===========================
@@ -87,15 +89,6 @@ set term=screen
 set t_Co=16
 set background=light
 
-try
-	colorscheme solarized
-catch /^Vim\%((\a\+)\)\=:E185/
-	colo default
-endtry
-try
-	Tcolorscheme solarized
-catch /^Vim\%((\a+)\)\=:E492/
-endtry
 
 au VimEnter * NoMatchParen
 
