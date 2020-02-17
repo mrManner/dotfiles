@@ -96,7 +96,6 @@ let g:solarized_termtrans =   1
 set term=screen
 set t_Co=16
 
-
 au VimEnter * NoMatchParen
 
 "  Rainbow parenthesis
