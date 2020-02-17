@@ -24,6 +24,9 @@ Plugin 'tpope/vim-fugitive'
 " Utils
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
 Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-abolish'
+Plugin 'neomake/neomake'
 " Misc syntax
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-scripts/tex-syntax'
@@ -50,6 +53,9 @@ Plugin 'Twinside/vim-haskellFold'
 Plugin 'git@github.com:eagletmt/neco-ghc.git'
 Plugin 'git@github.com:enomsg/vim-haskellConcealPlus.git'
 Plugin 'git@github.com:Shougo/vimproc.vim.git'
+" PHP
+Plugin 'StanAngeloff/php.vim'
+Plugin 'stephpy/vim-php-cs-fixer'
 " Writing
 Plugin 'reedes/vim-pencil'
 Plugin 'godlygeek/tabular'
