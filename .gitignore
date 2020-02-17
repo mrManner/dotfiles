@@ -49,6 +49,7 @@ tags
 ehthumbs.db
 Thumbs.db
 .config/fish/fish_variables
+.config/fish/functions/fundle.fish
 .config/fish/fundle/danhper/fish-ssh-agent/
 .config/gcloud/
 .config/gtk-2.0/
