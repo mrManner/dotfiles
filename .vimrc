@@ -19,11 +19,17 @@ Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'															" Find files fuzzily
 Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
+" Bazel
+Plugin 'google/vim-maktaba'
+Plugin 'bazelbuild/vim-bazel'
 " Git
 Plugin 'tpope/vim-fugitive'
 " Utils
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
 Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-abolish'
+Plugin 'neomake/neomake'
 " Misc syntax
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-scripts/tex-syntax'
@@ -42,18 +48,20 @@ Plugin 'git@github.com:pangloss/vim-javascript.git'
 Plugin 'git@github.com:kchmck/vim-coffee-script.git'
 " Python
 Plugin 'nvie/vim-flake8'
-" SQL
-Plugin 'git@github.com:exu/pgsql.vim.git'
 " Haskell
 Plugin 'git@github.com:raichoo/haskell-vim.git'
 Plugin 'Twinside/vim-haskellFold'
 Plugin 'git@github.com:eagletmt/neco-ghc.git'
 Plugin 'git@github.com:enomsg/vim-haskellConcealPlus.git'
 Plugin 'git@github.com:Shougo/vimproc.vim.git'
+" PHP
+Plugin 'StanAngeloff/php.vim'
+Plugin 'stephpy/vim-php-cs-fixer'
 " Writing
 Plugin 'reedes/vim-pencil'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'junegunn/goyo.vim'
 " Colors
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
 Plugin 'reedes/vim-colors-pencil'
@@ -61,10 +69,12 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'git@github.com:zeis/vim-kolor.git'
 Plugin 'git@github.com:pgdouyon/vim-yin-yang.git'
 Plugin 'git@github.com:vim-scripts/bw.vim.git'
-
+" Orgmode
+Plugin 'jceb/vim-orgmode'
 call vundle#end()            " required
 
 " ============================= SYNTAX & FILE TYPES ===========================
+set ffs=unix,mac,dos
 filetype plugin indent on
 syntax enable
 
@@ -85,17 +95,7 @@ let g:solarized_termtrans =   1
 
 set term=screen
 set t_Co=16
-set background=light
 
-try
-	colorscheme solarized
-catch /^Vim\%((\a\+)\)\=:E185/
-	colo default
-endtry
-try
-	Tcolorscheme solarized
-catch /^Vim\%((\a+)\)\=:E492/
-endtry
 
 au VimEnter * NoMatchParen
 
@@ -215,6 +215,10 @@ let g:haskell_enable_typeroles = 1
 let g:haskell_enable_static_pointers = 1
 
 
+" ==================================== YAML ===================================
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " ================================ PLUGIN CONF ================================
 
 " ctrl-p (use git ls-files to exclude everything in .gitignore)
@@ -241,6 +245,10 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ["standard"]
 let g:syntastic_enable_highlighting = 0
+
+" sqlformat
+let g:sqlfmt_command = "sqlformat"
+let g:sqlfmt_options = "-r -k upper --indent_width 2 --indent_columns"
 
 
 " ================================ FUNCTIONS ================================

@@ -12,4 +12,4 @@ set foldlevelstart=10	" open most folds by default
 set foldnestmax=10	" maximum 10 nested folds
 set foldmethod=indent	" fold based on indent level (good for python!)
 
-
+let g:syntastic_python_checkers = ['flake8', 'python']
