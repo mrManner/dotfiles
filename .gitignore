@@ -48,3 +48,9 @@ tags
 .Trashes
 ehthumbs.db
 Thumbs.db
+.config/fish/fish_variables
+.config/fish/fundle/danhper/fish-ssh-agent/
+.config/gcloud/
+.config/gtk-2.0/
+.config/hub
+.config/proxy/proxy.pac
