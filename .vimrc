@@ -58,19 +58,19 @@ Plugin 'git@github.com:Shougo/vimproc.vim.git'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'stephpy/vim-php-cs-fixer'
 " Writing
-Plugin 'reedes/vim-pencil'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'junegunn/goyo.vim'
 " Colors
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
-Plugin 'reedes/vim-colors-pencil'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'git@github.com:zeis/vim-kolor.git'
 Plugin 'git@github.com:pgdouyon/vim-yin-yang.git'
 Plugin 'git@github.com:vim-scripts/bw.vim.git'
-" Orgmode
-Plugin 'jceb/vim-orgmode'
+" wiki
+Plugin 'vimwiki/vimwiki'
+Plugin 'mattn/calendar-vim'
+
 call vundle#end()            " required
 
 " ============================= SYNTAX & FILE TYPES ===========================
@@ -226,7 +226,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Airline
 let g:airline_powerline_fonts = 1
 set laststatus=2 " actually show it
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'monochrome'
 set noshowmode
 set fillchars+=stl:\ ,stlnc:\
 
@@ -276,3 +276,10 @@ function! Fixindented()
 "	remove spaces at end of indented lines
 	silent! %s/^\s.*\zs \+$//
 endfunction
+
+
+let g:vimwiki_list = [
+			\{'path': '~/wiki','syntax': 'markdown', 'ext': '.md'},
+			\]
+au FileType vimwiki set syntax=markdown
+au FileType vimwiki set nowrap

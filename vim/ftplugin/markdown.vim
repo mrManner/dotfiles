@@ -1,5 +1,4 @@
 syntax match Comment /\%^---\_.\{-}---$/
-call pencil#init()
 setlocal backspace=0
 setlocal autoindent
 setlocal colorcolumn=0
