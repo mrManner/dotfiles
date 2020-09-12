@@ -54,7 +54,7 @@ Thumbs.db
 .config/fish/functions/fundle.fish
 .config/fish/fundle
 .config/gcloud/
-.config/gtk-2.0/
+.config/gtk-2.0
 .config/hub
 .config/proxy/proxy.pac
 .config/configstore
@@ -62,6 +62,7 @@ Thumbs.db
 fish_variables
 *fish_variables
 .config/nvm
+.config/gh/config.yml.bak
 .config/gh/hosts.yml
 .config/gh/state.yml
 .config/htop/htoprc
