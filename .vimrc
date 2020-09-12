@@ -24,6 +24,7 @@ Plugin 'google/vim-maktaba'
 Plugin 'bazelbuild/vim-bazel'
 " Git
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 " Utils
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
 Plugin 'mileszs/ack.vim'
