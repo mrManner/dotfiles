@@ -19,6 +19,7 @@ Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'															" Find files fuzzily
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'roblillack/vim-bufferlist'
 " Bazel
 Plugin 'google/vim-maktaba'
 Plugin 'bazelbuild/vim-bazel'
@@ -160,10 +161,10 @@ let mapleader="\\"
 
 noremap <leader>* :Ack <cword><cr>
 			
-nnoremap ± :tabprevious<CR>
-nnoremap § :tabnext<CR>
-nnoremap ~ :tabprevious<CR>
-nnoremap ` :tabnext<CR>
+nnoremap ± :bprevious<CR>
+nnoremap § :bnext<CR>
+nnoremap ~ :bprevious<CR>
+nnoremap ` :bnext<CR>
 
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 inoremap <F9> <C-O>za
@@ -178,10 +179,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+map <C-b> :call BufferList()<CR>
 
+nmap <silent> ; :CtrlPBuffer<cr>
 let g:ctrlp_prompt_mappings = {
-			\ 'AcceptSelection("e")': ['<c-t>'],
-			\ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+			\ 'AcceptSelection("t")': ['<c-t>'],
+			\ 'AcceptSelection("e")': ['<cr>', '<2-LeftMouse>'],
 			\ }
 
 " ================================ PLUGIN CONF ================================
@@ -237,6 +240,9 @@ cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
+
+command Q bdelete
+:cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Q' : 'q')<CR>
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
