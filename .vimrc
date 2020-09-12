@@ -37,6 +37,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-scripts/tex-syntax'
 Plugin 'adimit/prolog.vim'
 Plugin 'git@github.com:mrk21/yaml-vim.git'
+Plugin 'hashivim/vim-terraform'
 " Go
 Plugin 'fatih/vim-go'
 " HTML
