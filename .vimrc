@@ -253,6 +253,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["standard"]
+let g:syntastic_sh_checkers = ["shellcheck", "shfmt"]
 let g:syntastic_enable_highlighting = 1
 
 " sqlformat
