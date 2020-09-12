@@ -6,6 +6,7 @@ set -gax PATH (go env GOPATH)/bin
 set -gax PATH ~/.local/bin 
 
 fundle plugin 'danhper/fish-ssh-agent'
+fundle plugin 'jorgebucaran/nvm.fish'
 fundle init
 
 # I like sudo !!
