@@ -17,8 +17,8 @@ Plugin 'gmarik/Vundle.vim'
 " UI
 Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
-Plugin 'kien/ctrlp.vim'															" Find files fuzzily
 Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
+Plugin 'ctrlpvim/ctrlp.vim'															" Find files fuzzily
 " Bazel
 Plugin 'google/vim-maktaba'
 Plugin 'bazelbuild/vim-bazel'
