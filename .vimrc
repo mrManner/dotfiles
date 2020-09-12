@@ -288,9 +288,14 @@ function! Fixindented()
 	silent! %s/^\s.*\zs \+$//
 endfunction
 
+let wiki = {}
+let wiki.path = '~/wiki/'
+let wiki.syntax = 'markdown'
+let wiki.ext = '.md'
+let g:vimwiki_list = [wiki]
 
-let g:vimwiki_list = [
-			\{'path': '~/wiki','syntax': 'markdown', 'ext': '.md'},
-			\]
 au FileType vimwiki set syntax=markdown
 au FileType vimwiki set nowrap
+let g:vim_markdown_fenced_languages = ['python', 'coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
+let g:vim_markdown_conceal_code_blocks = 0
+
