@@ -226,12 +226,24 @@ cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
 
 " syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ["standard"]
 let g:syntastic_enable_highlighting = 0
+
+let g:syntastic_css_checkers = ["csslint", "mixedindentlint"]
+let g:syntastic_dockerfile_checkers = ["dockerfile_lint"]
+let g:syntastic_go_checkers = ["golint", "go"]
+let g:syntastic_javascript_checkers = ["standard", "mixedindentlint"]
+let g:syntastic_json_checkers = ["jsonlint", "mixedindentlint"]
+let g:syntastic_python_checkers = ["bandit", "flake8"]
+let g:syntastic_python_bandit_args = '-r'
+let g:syntastic_yaml_checkers = ["yamllint"]
 
 " sqlformat
 let g:sqlfmt_command = "sqlformat"
