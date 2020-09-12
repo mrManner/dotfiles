@@ -25,6 +25,7 @@ Plugin 'bazelbuild/vim-bazel'
 " Git
 Plugin 'tpope/vim-fugitive'
 " Utils
+Plugin 'noahfrederick/vim-skeleton'
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-commentary'
