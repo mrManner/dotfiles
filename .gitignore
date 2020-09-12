@@ -52,7 +52,7 @@ Thumbs.db
 # Misc
 .config/fish/fish_variables
 .config/fish/functions/fundle.fish
-.config/fish/fundle/danhper/fish-ssh-agent/
+.config/fish/fundle
 .config/gcloud/
 .config/gtk-2.0/
 .config/hub
