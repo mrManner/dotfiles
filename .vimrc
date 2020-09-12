@@ -177,6 +177,9 @@ nmap <silent> <C-t> :CtrlPTag<cr>
 " Coffee Script
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
+" JSON
+autocmd FileType json setl tabstop=2 sts=2 shiftwidth=2 expandtab
+autocmd FileType javascript setl tabstop=2 sts=2 shiftwidth=2 expandtab
 autocmd FileType svelte setl tabstop=2 sts=2 shiftwidth=2
 
 " =================================== BACKUP ==================================
