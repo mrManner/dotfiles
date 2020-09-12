@@ -182,16 +182,15 @@ nnoremap <C-H> <C-W><C-H>
 
 map <C-b> :call BufferList()<CR>
 
+nmap <silent> <C-P> :CtrlP .<CR>
+nmap <silent> <C-u> :CtrlPUndo<CR>
+nmap <silent> <C-t> :CtrlPTag<cr>
 nmap <silent> ; :CtrlPBuffer<cr>
+let g:ctrlp_map = "<C-_>"
 let g:ctrlp_prompt_mappings = {
 			\ 'AcceptSelection("t")': ['<c-t>'],
 			\ 'AcceptSelection("e")': ['<cr>', '<2-LeftMouse>'],
 			\ }
-
-" ================================ PLUGIN CONF ================================
-
-
-nmap <silent> <C-t> :CtrlPTag<cr>
 
 " ================================= FILE TYPES ================================
 
@@ -226,7 +225,8 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " ================================ PLUGIN CONF ================================
 
 " ctrl-p (use git ls-files to exclude everything in .gitignore)
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_extensions = ['dir', 'undo', 'line', 'changes', 'bookmarkdir']
 
 " Airline
 let g:airline_powerline_fonts = 1
