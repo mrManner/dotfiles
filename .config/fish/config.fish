@@ -19,3 +19,6 @@ function sudo
     end
 end
 
+
+set -x YVM_DIR /usr/local/opt/yvm
+[ -r $YVM_DIR/yvm.fish ]; and source $YVM_DIR/yvm.fish
