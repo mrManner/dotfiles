@@ -46,6 +46,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'neomutt/neomutt.vim' " Make vim work with neomutt (like with mutt)
 " Javascript
 Plugin 'git@github.com:pangloss/vim-javascript.git'
+Plugin 'evanleck/vim-svelte'
 Plugin 'git@github.com:kchmck/vim-coffee-script.git'
 " Python
 Plugin 'nvie/vim-flake8'
@@ -194,6 +195,7 @@ nmap <silent> <C-t> :CtrlPTag<cr>
 " Coffee Script
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
+autocmd FileType svelte setl tabstop=2 sts=2 shiftwidth=2
 
 " =================================== BACKUP ==================================
 
