@@ -1,11 +1,13 @@
 . ~/.config/fish/gnupg.fish
-
-set -gx PATH $PATH ~/.local/bin $PATH 
-set -gx PATH $PATH (go env GOPATH) 
-set -gx PATH $PATH ~/projekt/tink-backend/bazel-bin/src/tink-integration-eidas-secrets-service/tink_secret_utils
 . ~/software/google-cloud-sdk/path.fish.inc
 
+set -gpx PATH /usr/local/bin
+set -gax PATH (go env GOPATH)/bin 
+set -gax PATH ~/.local/bin 
+
 fundle plugin 'danhper/fish-ssh-agent'
+fundle plugin 'jorgebucaran/nvm.fish'
+fundle plugin 'cideM/fish-yvm'
 fundle init
 
 # I like sudo !!
@@ -17,3 +19,6 @@ function sudo
     end
 end
 
+
+set -x YVM_DIR /usr/local/opt/yvm
+[ -r $YVM_DIR/yvm.fish ]; and source $YVM_DIR/yvm.fish

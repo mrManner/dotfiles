@@ -17,13 +17,15 @@ Plugin 'gmarik/Vundle.vim'
 " UI
 Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
-Plugin 'kien/ctrlp.vim'															" Find files fuzzily
-Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
+Plugin 'ctrlpvim/ctrlp.vim'															" Find files fuzzily
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'roblillack/vim-bufferlist'
 " Bazel
 Plugin 'google/vim-maktaba'
 Plugin 'bazelbuild/vim-bazel'
 " Git
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 " Utils
 Plugin 'noahfrederick/vim-skeleton'
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
@@ -36,6 +38,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-scripts/tex-syntax'
 Plugin 'adimit/prolog.vim'
 Plugin 'git@github.com:mrk21/yaml-vim.git'
+Plugin 'hashivim/vim-terraform'
 " Go
 Plugin 'fatih/vim-go'
 " HTML
@@ -98,6 +101,8 @@ let g:solarized_termtrans =   1
 set term=screen
 set t_Co=16
 
+colo solarized
+
 au VimEnter * NoMatchParen
 
 "  Rainbow parenthesis
@@ -143,10 +148,10 @@ let mapleader="\\"
 
 noremap <leader>* :Ack <cword><cr>
 			
-nnoremap ± :tabprevious<CR>
-nnoremap § :tabnext<CR>
-nnoremap ~ :tabprevious<CR>
-nnoremap ` :tabnext<CR>
+nnoremap ± :bprevious<CR>
+nnoremap § :bnext<CR>
+nnoremap ~ :bprevious<CR>
+nnoremap ` :bnext<CR>
 
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 inoremap <F9> <C-O>za
@@ -161,16 +166,17 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+map <C-b> :call BufferList()<CR>
 
-let g:ctrlp_prompt_mappings = {
-			\ 'AcceptSelection("e")': ['<c-t>'],
-			\ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-			\ }
-
-" ================================ PLUGIN CONF ================================
-
-
+nmap <silent> <C-P> :CtrlP .<CR>
+nmap <silent> <C-u> :CtrlPUndo<CR>
 nmap <silent> <C-t> :CtrlPTag<cr>
+nmap <silent> ; :CtrlPBuffer<cr>
+let g:ctrlp_map = "<C-_>"
+let g:ctrlp_prompt_mappings = {
+			\ 'AcceptSelection("t")': ['<c-t>'],
+			\ 'AcceptSelection("e")': ['<cr>', '<2-LeftMouse>'],
+			\ }
 
 " ================================= FILE TYPES ================================
 
@@ -209,7 +215,8 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " ================================ PLUGIN CONF ================================
 
 " ctrl-p (use git ls-files to exclude everything in .gitignore)
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_extensions = ['dir', 'undo', 'line', 'changes', 'bookmarkdir']
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -225,6 +232,9 @@ cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
 
+command Q bdelete
+:cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Q' : 'q')<CR>
+
 " syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -232,9 +242,9 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_enable_highlighting = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_enable_highlighting = 1
 
 let g:syntastic_css_checkers = ["csslint", "mixedindentlint"]
 let g:syntastic_dockerfile_checkers = ["dockerfile_lint"]
@@ -243,6 +253,7 @@ let g:syntastic_javascript_checkers = ["standard", "mixedindentlint"]
 let g:syntastic_json_checkers = ["jsonlint", "mixedindentlint"]
 let g:syntastic_python_checkers = ["bandit", "flake8"]
 let g:syntastic_python_bandit_args = '-r'
+let g:syntastic_sh_checkers = ["shellcheck", "shfmt"]
 let g:syntastic_yaml_checkers = ["yamllint"]
 
 " sqlformat
@@ -277,9 +288,14 @@ function! Fixindented()
 	silent! %s/^\s.*\zs \+$//
 endfunction
 
+let wiki = {}
+let wiki.path = '~/wiki/'
+let wiki.syntax = 'markdown'
+let wiki.ext = '.md'
+let g:vimwiki_list = [wiki]
 
-let g:vimwiki_list = [
-			\{'path': '~/wiki','syntax': 'markdown', 'ext': '.md'},
-			\]
 au FileType vimwiki set syntax=markdown
 au FileType vimwiki set nowrap
+let g:vim_markdown_fenced_languages = ['python', 'coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
+let g:vim_markdown_conceal_code_blocks = 0
+
