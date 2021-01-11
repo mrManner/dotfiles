@@ -48,6 +48,8 @@ Plugin 'git@github.com:othree/html5.vim.git'
 Plugin 'hail2u/vim-css3-syntax'
 " Mail
 Plugin 'neomutt/neomutt.vim' " Make vim work with neomutt (like with mutt)
+" C
+Plugin 'https://github.com/justmao945/vim-clang.git'
 " Javascript
 Plugin 'git@github.com:pangloss/vim-javascript.git'
 Plugin 'evanleck/vim-svelte'
@@ -249,8 +251,9 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_enable_highlighting = 1
 
+let g:syntastic_c_checkers = ["clang_check", "clang_tidy", "flawfinder", "sparse", "mixedindentlint"]
 let g:syntastic_css_checkers = ["csslint", "mixedindentlint"]
-let g:syntastic_dockerfile_checkers = ["dockerfile_lint"]
+let g:syntastic_dockerfile_checkers = ["hadolint"]
 let g:syntastic_go_checkers = ["golint", "go"]
 let g:syntastic_javascript_checkers = ["standard", "mixedindentlint"]
 let g:syntastic_json_checkers = ["jsonlint", "mixedindentlint"]
