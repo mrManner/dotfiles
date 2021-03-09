@@ -1,0 +1,68 @@
+# My own stuff
+.zshsecrets
+
+# Vim things
+.vim/bundle
+*.swp
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+ 
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Tool config #
+###############
+*.tags
+tags
+  
+# Logs and databases #
+######################
+*.log
+*.sqlite
+*.db
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Misc
+.config/fish/fish_variables
+.config/fish/functions/fundle.fish
+.config/fish/fundle
+.config/gcloud/
+.config/gtk-2.0
+.config/hub
+.config/proxy/proxy.pac
+.config/configstore
+.config/configstore/
+fish_variables
+*fish_variables
+.config/nvm
+.config/gh/config.yml.bak
+.config/gh/hosts.yml
+.config/gh/state.yml
+.config/htop/htoprc
