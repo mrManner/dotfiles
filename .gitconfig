@@ -33,8 +33,10 @@
 	st = status
 	cm = commit -m 
 	ca = commit -a
+	amend = commit --amend
 	lg = log --oneline --graph --decorate
 	cb = checkout -b 
+	feat = checkout -b
 	co = checkout
 	ct = checkout --track 
 	a = add
