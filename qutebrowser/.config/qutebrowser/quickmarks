@@ -1,0 +1,4 @@
+github https://github.com/login
+s https://start.duckduckgo.com/
+docker-install https://docs.docker.com/install/linux/docker-ce/fedora/
+pinboard-save javascript:if(document.getSelection)%7Bs=document.getSelection();%7Delse%7Bs=;%7D;document.location=https://pinboard.in/add?next=same&url=+encodeURIComponent(location.href)+&description=+encodeURIComponent(s)+&title=+encodeURIComponent(document.title)
