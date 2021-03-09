@@ -87,6 +87,8 @@ syntax enable
 " Specifics
 au BufRead,BufNewFile *.md set filetype=markdown " .md is Makrdown
 
+":autocmd BufWritePost *.c silent !indent -linux -brf <afile> && rm <afile>~
+
 set tags=./tags;,tags;
 
 " ==================================== UI =====================================
