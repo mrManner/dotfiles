@@ -3,12 +3,12 @@
 set folder              =   ~/mail                     # Teh mailbox
 set alias_file          =   ~/contacts.txt
 source ~/contacts.txt
-source ~/.mutt/mailboxes
-source ~/.mutt/gpg.rc
-source ~/dotfiles/mutt-colors-solarized-light-16.muttrc
-set mailcap_path        =   ~/.mutt/mailcap             # Filetypes
-set tmpdir              =   ~/.mutt/temp
-set signature           =   ~/.mutt/scoutsig
+source ~/.config/mutt/mailboxes
+source ~/.config/mutt/gpg.rc
+source ~/.config/mutt/mutt-colors-solarized-light-16.muttrc
+set mailcap_path        =   ~/.config/mutt/mailcap             # Filetypes
+set tmpdir              =   ~/.config/mutt/temp
+set signature           =   ~/.config/mutt/scoutsig
 
 # ================================= Basics =====================================
 set wait_key = no           # Something something "shut up, mutt"?
@@ -132,7 +132,7 @@ set pgp_show_unusable=no
 set pgp_use_gpg_agent
 #
 # GPG
-source ~/.gpg.muttrc
+source ~/.config/mutt/.gpg.muttrc
 set pgp_use_gpg_agent = yes
 set pgp_sign_as = 51282268
 set pgp_timeout = 3000
