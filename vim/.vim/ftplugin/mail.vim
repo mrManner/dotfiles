@@ -1,7 +1,11 @@
 PencilOff
 setlocal fo=atcrqn1w
-setl tw=72
+setlocal tw=72
+setlocal comments+=nb:>
 
-autocmd Filetype mail command! Fixq call Fixflowed()
+map <silent> <leader>m {gq}<Bar>:echo "Rewrapped paragraph"<CR>
+
+
 autocmd Filetype mail autocmd BufWritePre <buffer> call Fixindented()
+autocmd Filetype mail command! Fixq call Fixflowed()
 
