@@ -1,0 +1,14 @@
+{
+    "saved": {
+        "none": "tag:inbox and tag:unread"
+    },
+    "history": {
+        "none": "tag:inbox tag:-keep",
+        "none": "tag:inbox not tag:keep",
+        "none": "tag:sent",
+        "none": "from:Santhosh K",
+        "none": "from:info@scouterna.se",
+        "none": "*",
+        "none": "instagram"
+    }
+}
