@@ -50,19 +50,17 @@ ehthumbs.db
 Thumbs.db
 
 # Misc
-.config/fish/fish_variables
-.config/fish/functions/fundle.fish
-.config/fish/fundle
+fish/.config/fish/fish_variables
+fish/.config/fish/functions/fundle.fish
+fish/.config/fish/fundle
 .config/gcloud/
 .config/gtk-2.0
 .config/hub
 .config/proxy/proxy.pac
 .config/configstore
 .config/configstore/
-fish_variables
-*fish_variables
 .config/nvm
-.config/gh/config.yml.bak
-.config/gh/hosts.yml
-.config/gh/state.yml
+gh/.config/gh/config.yml.bak
+gh/.config/gh/hosts.yml
+gh/.config/gh/state.yml
 .config/htop/htoprc
