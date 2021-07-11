@@ -50,6 +50,7 @@ ehthumbs.db
 Thumbs.db
 
 # Misc
+aerc/.config/aerc/accounts.conf
 fish/.config/fish/fish_variables
 fish/.config/fish/functions/fundle.fish
 fish/.config/fish/fundle

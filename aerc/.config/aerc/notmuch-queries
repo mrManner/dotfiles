@@ -1,0 +1,4 @@
+ledarlistan=thread:{to:ledarlistan@orbyscoutkar.se}
+corona=corona
+inbox=tag:inbox and not tag:archived
+sent=from:"/johan(.manner)?@(mrmanner.eu|scouterna.se|orbyscoutkar.se|gmail.com)/"
