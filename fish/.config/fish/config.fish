@@ -1,5 +1,5 @@
 . ~/.config/fish/gnupg.fish
-set -gx PATH /home/jmanner/go/bin $PATH
+set -gx PATH /home/jmanner/.local/bin /home/jmanner/go/bin $PATH
 
 fundle plugin 'danhper/fish-ssh-agent'
 fundle plugin 'jorgebucaran/nvm.fish'
