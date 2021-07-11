@@ -17,7 +17,9 @@ Plugin 'gmarik/Vundle.vim'
 " UI
 Plugin 'git@github.com:vim-airline/vim-airline'
 Plugin 'git@github.com:vim-airline/vim-airline-themes'
-Plugin 'ctrlpvim/ctrlp.vim'															" Find files fuzzily
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'lifepillar/vim-mucomplete'
+" Find files fuzzily
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'roblillack/vim-bufferlist'
 " Bazel
@@ -40,6 +42,7 @@ Plugin 'adimit/prolog.vim'
 Plugin 'git@github.com:mrk21/yaml-vim.git'
 Plugin 'hashivim/vim-terraform'
 Plugin 'earthly/earthly.vim'
+Plugin 'lifepillar/pgsql.vim'
 " Go
 Plugin 'fatih/vim-go'
 " HTML
@@ -48,6 +51,7 @@ Plugin 'git@github.com:othree/html5.vim.git'
 Plugin 'hail2u/vim-css3-syntax'
 " Mail
 Plugin 'neomutt/neomutt.vim' " Make vim work with neomutt (like with mutt)
+Plugin 'adborden/vim-notmuch-address'
 " C
 Plugin 'https://github.com/justmao945/vim-clang.git'
 " Javascript
@@ -69,6 +73,7 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'junegunn/goyo.vim'
+Plugin 'reedes/vim-pencil'
 " Colors
 Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
 Plugin 'altercation/vim-colors-solarized'
@@ -118,6 +123,14 @@ au VimEnter * RainbowParenthesesActivate
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+
+set completeopt+=menuone
+set completeopt+=noinsert
+set shortmess+=c   " Shut off completion messages
+set belloff+=ctrlg " If Vim beeps during completion
+au FileType mail setlocal completeopt=menuone,noselect,noinsert
+let g:mucomplete#chains = { 'mail': [ 'user', 'ulti' ]}
 
 
 " =================================== UNDO ====================================
@@ -237,7 +250,7 @@ cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
 
-command Q bdelete
+command! Q bdelete
 :cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Q' : 'q')<CR>
 
 " syntastic
@@ -265,6 +278,9 @@ let g:syntastic_yaml_checkers = ["yamllint"]
 " sqlformat
 let g:sqlfmt_command = "sqlformat"
 let g:sqlfmt_options = "-r -k upper --indent_width 2 --indent_columns"
+
+" postgres
+let g:sql_type_default = 'pgsql'
 
 
 " ================================ FUNCTIONS ================================
