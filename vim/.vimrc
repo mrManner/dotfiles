@@ -265,7 +265,7 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_enable_highlighting = 1
 
 let g:syntastic_c_checkers = ["clang_check", "clang_tidy", "flawfinder", "sparse", "mixedindentlint"]
-let g:syntastic_css_checkers = ["csslint", "mixedindentlint"]
+let g:syntastic_css_checkers = ["mixedindentlint"]
 let g:syntastic_dockerfile_checkers = ["hadolint"]
 let g:syntastic_go_checkers = ["golint", "go"]
 let g:syntastic_javascript_checkers = ["standard", "mixedindentlint"]
