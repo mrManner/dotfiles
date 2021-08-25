@@ -1,0 +1,6 @@
+#!/bin/bash
+notmuch tag +mrmanner 'path:mrmanner.eu/**'
+notmuch tag +gmail 'path:gmail.com/**'
+notmuch tag +scouterna 'path:scouterna.se/**'
+notmuch tag +orby 'path:orbyscoutkar.se/**'
+notmuch tag +robinson +orbysupport 'to:robinson@orbyscoutkar.se'
