@@ -200,3 +200,4 @@
 # thread_index.tag=+ # Edit tags for thread, default: +
 # thread_index.edit_draft=E # Edit first message marked as draft or last message in thread as new, default: E
 # toggle queue (this command is its own inverse)
+thread_index.run(hooks::toggle new %1, hooks::toggle new %1)=v
