@@ -93,8 +93,8 @@
             "dokument"
         ],
         "attachment_directory": "~",
-        "markdown_processor": "mmark -html",
-        "markdown_on": "false"
+		"markdown_processor": "cmark --unsafe",
+        "markdown_on": "true"
     },
     "mail": {
         "reply": {
