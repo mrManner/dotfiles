@@ -28,7 +28,7 @@
             "save_sent_to": "\/home\/jmanner\/.local\/var\/mail\/mrmanner.eu\/Sent\/cur\/",
             "additional_sent_tags": "mrmanner",
             "save_drafts_to": "\/home\/jmanner\/.local\/var\/mail\/mrmanner.eu\/Drafts\/cur\/",
-            "signature_separate": "true",
+            "signature_separate": "false",
             "signature_file": "~/.config/signatures/mrmanner.txt",
             "signature_file_markdown": "~/.config/signatures/mrmanner.md",
             "signature_default_on": "true",
