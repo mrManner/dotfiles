@@ -1,6 +1,14 @@
 #!/bin/bash
+
+# Always tag depending on receiving account
 notmuch tag +mrmanner 'path:mrmanner.eu/**'
 notmuch tag +gmail 'path:gmail.com/**'
 notmuch tag +scouterna 'path:scouterna.se/**'
 notmuch tag +orby 'path:orbyscoutkar.se/**'
+
+# Specific tags
 notmuch tag +robinson +orbysupport 'to:robinson@orbyscoutkar.se'
+
+# Mute stuff
+notmuch tag -inbox -new +deleted 'from:*1b - Allmän'
+notmuch tag -inbox -new +deleted 'subject:Ny intresseanmälan på jamboree.se'
