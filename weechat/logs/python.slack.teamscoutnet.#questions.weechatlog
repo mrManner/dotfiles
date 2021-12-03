@@ -1,0 +1,244 @@
+2021-03-14 19:13:13	tom.lantz	@russ no need to answer today but tomorrow if possible.
+2021-03-14 19:13:13		How do I supply questionnaire ID in the project API for getting questionnaire data?
+2021-03-14 19:13:13		See for example https://min.speiding.no/activities/view/2108#project_tabmenu_tab_api_pane
+2021-03-14 19:13:30	tom.lantz	where I only get:
+2021-03-14 19:13:30		*{*"forms": *[]*,
+2021-03-14 19:13:30		"messages": *[*"Supply a form_id to retrieve questions for that form"
+2021-03-14 19:13:30		*]*
+2021-03-14 19:13:30		*}*
+2021-03-14 19:15:40	tom.lantz	I have managed to get the participants on a sheet i google from the participant API and I suppose the last "node" under participant is the ID to be supplied to get the questions for that participant but I have no Idea how to send that...
+2021-03-14 19:16:45	tom.lantz	If this helps: https://docs.google.com/spreadsheets/d/1p94u7IytyTprjHIYw3gJJYVymPk9p8dfAgd3bWWoris/edit#gid=0 (shared with russmonkey...)
+2021-03-14 19:19:13	tom.lantz	tried https://min.speiding.no/api/project/get/questions?id=2108&key=aef8ceba5181606ca55ae9f5ad4d4bab42a3c761&form_id=70e55de1&pretty=1 but no luck...
+2021-03-14 19:25:43	tom.lantz	Ahaaaa, I need to include the answers in API....
+2021-03-14 19:25:46	tom.lantz	:stuck_out_tongue:
+2021-03-14 19:32:03	tom.lantz	Now I only get numbers=numbers should it not be numbers="answer"?
+2021-03-14 19:33:23	russ	That API link is just for getting the questions (not the answers) - e.g. https://min.speiding.no/api/project/get/questions?id=2108&key=aef8ceba5181606ca55ae9f5ad4d4bab42a3c761&form_id=5537&pretty=1
+2021-03-14 19:36:48	tom.lantz	okay, and then use the values to populate what they actually answered...
+2021-03-14 19:37:26	russ	Yeah you have the values in the "questions" bit of the other API
+2021-03-14 19:38:15	tom.lantz	thanks :slightly_smiling_face:
+2021-03-14 19:38:54	russ	It only looks weird because both of the questions are "choices" - so you need to match the ID to the correct choice. If they had been text answers you would of course just see the text
+2021-03-14 19:39:08	tom.lantz	yep
+2021-03-14 19:41:03	tom.lantz	Basically gonna have to use the questions API to make a "key" to translate the number=numbers...
+2021-03-14 19:41:03		Have you maybe done something like this already @Carl @mrmanner @aroste??? (no need to answer on a sunday)
+2021-03-14 19:41:31	russ	Where is the number=numbers thing you are referring to?
+2021-03-14 19:41:47	tom.lantz	if you look in the sheet in column V
+2021-03-14 19:42:22	tom.lantz	I assuming that is the question ID and the answer ID
+2021-03-14 19:42:28	russ	Yep
+2021-03-14 19:43:26	tom.lantz	Then I need to get those values "translated" in the script somehow if I want to continue the row with the answers for that participant
+2021-03-14 19:44:19	tom.lantz	But maybe I am thinking totally wrong... a lot of new ground for me this...
+2021-03-14 19:44:57	russ	Yep, or get another version of the API from the system that already has "human readable" columns. But beware, the number of columns can change
+2021-03-14 19:45:16	tom.lantz	Where is that version?
+2021-03-14 19:45:23	russ	Doesn't exist yet
+2021-03-14 19:45:31	tom.lantz	should not be a problem with the columns...
+2021-03-14 19:45:52	russ	It's meant to be used by "machines" that read the json and do some own programming - the output isn't really ready to "drop in" to a spreadsheet
+2021-03-14 19:48:06	tom.lantz	ok, but I could use the same script to basically use the API for questions and write a key to another sheet and then use a ridiculous amount of IF statements to translate the questionID=answerID
+2021-03-14 19:48:45	russ	But we could add a parameter like "column_based=true" or something to the url, then we could just send you it the same way it looks in the other reports.
+2021-03-14 19:49:11	russ	Yeah you could do that I guess - I have no idea how flexible Google sheets are with stuff like that
+2021-03-14 19:49:35	tom.lantz	They probably gonna break if there is over 50K of calls or something like that.
+2021-03-14 19:50:04	tom.lantz	how hard is adding that parameter?
+2021-03-14 19:50:10	russ	It gets more complicated when you factor in other question types too, like contact fields, body selectors, role member selectors, etc
+2021-03-14 19:51:10	russ	Not hard at all, basically just the existing report but in json format instead of xls
+2021-03-14 19:52:08	tom.lantz	would it be a new one that then needs to be connected to the other through membership number or something like that?
+2021-03-14 19:52:22	tom.lantz	and of course one per questionaire....
+2021-03-14 19:54:25	tom.lantz	Or am I missunderstanding?
+2021-03-14 19:55:03	russ	Not sure what that refers to, to be honest
+2021-03-14 19:55:51	tom.lantz	would the new API just spit out the "questions: answer" per participant?
+2021-03-14 19:56:25	russ	Whatever you want... Can be the same as what's there now but instead of the questions: {} bit it just continues down with all the questions and answers
+2021-03-14 19:57:52	tom.lantz	that would be the best, the use of this as I see it is getting the reports "live" into a spreadsheet for easier overview.
+2021-03-14 19:58:15	tom.lantz	Will be really handy for the 100+ Agenda 2021 camps
+2021-03-14 19:58:26	russ	Or just be able to get the existing reports as csv/xls directly with an API key
+2021-03-14 19:58:33	russ	Rather than using the json API
+2021-03-14 19:58:41	russ	If it's just going to be direct column/row mapping
+2021-03-14 19:58:51	tom.lantz	Basically yeah
+2021-03-14 19:59:41	tom.lantz	The need is to have "live" reports.
+2021-03-14 20:00:22	tom.lantz	Gonna think a little bit on this and write a ticket tomorrow...
+2021-03-24 10:54:32	tom.lantz	How hard would it be to temporary  populate the "Kallenavn" fields on member profiles with random IKEA names and make it show up on profile pages as a middle name? (asking for 1. april comitee)
+2021-03-24 11:16:28	russ	Haha pretty easy I guess :smile:
+2021-03-24 11:17:14	russ	Maybe don't even need to need with the database if it's just for the profile page... Can just look up a random name when it loads and display it
+2021-03-24 12:37:44	tom.lantz	awesome :slightly_smiling_face:
+2021-03-24 12:52:13	tom.lantz	How hard to get it to stick on the profile for a day? cookies?
+2021-03-24 12:52:26	tom.lantz	if not messing with the DB that is.
+2021-03-24 13:28:26	russ	Yeah can just be stored in the user session or something - randomly assigned when they log in
+2021-04-06 11:22:00	tom.lantz	@russ How does the project registration confirmation works with the "sender field"?
+2021-04-06 11:22:00		Does the system says it is sending on behalf of the sender or is it just putting the sender as the one to send replies on the confirmation to?
+2021-04-06 11:27:00	russ	Which mail is this? Notification to project admin when someone registers? Or a different one?
+2021-04-06 11:29:24	tom.lantz	The notification that is edited in its own tab on the project
+2021-04-06 11:30:13	tom.lantz	Not notification... the syummary that is sent to all who registers individually (if the mail is turned on for the project that is..)
+2021-04-06 12:13:47	tom.lantz	@russ ping?
+2021-04-06 15:00:00	russ	"from" is a system sender address (it has to be because of spam/etc)
+2021-04-06 15:00:00		reply-to is the specified "sender" from the form
+2021-04-06 15:00:51	russ	The "from" name could be specified, but the address has to be one within a domain we control
+2021-04-06 15:02:11	russ	(currently for that one it's mailto:noreply@speiding.no (noreply@speiding.no))
+2021-04-06 15:03:10	russ	A future enhancement could be to tie-in to the mailing list catch-all and add forwarding addresses, so the "from" could be "mailto:my-project@min.speiding.no (my-project@min.speiding.no)" or something and we just forward that to whoever should get it
+2021-04-06 18:41:49	tom.lantz	thanks, we have alot of groups and members that are getting @speiding.no addresses so if one of those would be added maybe we could just make the sender that automatically?
+2021-04-06 18:42:33	russ	Yep, could be a domain match - if it's one of the supported domains then we can set the mail "from"
+2021-04-06 19:36:43	tom.lantz	And that would not require any extra setup apart from adding it to the system?
+2021-04-06 19:56:02	russ	Nope, can just match it with current config
+2021-04-06 20:06:14	tom.lantz	Nice!
+2021-04-07 14:13:46	Carl	There should be about 28 adresses of the type Scout hall adress that is missing coordinates. Could you get me a list of those groups so I can fix that for them?
+2021-04-12 09:27:29	tom.lantz	Ping here @russ (questions from friday)
+2021-04-12 11:03:45	russ	No, I don't think we've added a workflow for that, since project invoices are created manually to start with, and we would need a different email template I guess too. It shouldn't be too difficult to add an "email" option under print admin. We also haven't added this as an option on profiles yet, although the backend supports it.
+2021-04-12 11:03:45		| https://teamscoutnet.slack.com/archives/C0R7DGSKE/p1617956796000800
+2021-04-12 11:03:45		| Tom: @russ Do we now have support for sending invoices for projects registrations via email/PDF?
+2021-04-12 11:03:45		| Posted in #questions | Apr 09, 2021 [:+1:1]
+2021-04-12 11:04:07	russ	The only way to do this (currently) is to remove the link between the template and the new project, that would make it just a "normal" project with everything open, but any inherited settings from the template would be lost (although most if not all should be copied). We could add some way to override this on a field-level, but it gets complicated since the templates are supposed to have a kind of "master" control over the "spawned" projects.
+2021-04-12 11:04:07		| https://teamscoutnet.slack.com/archives/C0R7DGSKE/p1617957255001400
+2021-04-12 11:04:07		| Tom: @russ can you open up locked down/hidden setting fields in projects that are made by a template??
+2021-04-12 11:04:07		| Posted in #questions | Apr 09, 2021 [:+1:1] [ Thread: ef4 Replies: 2 ]
+2021-04-12 11:10:25	russ	Looks like they registered for the project after leaving their groups - I guess this is due to the ssno match finding their profiles. In this case I think they should get the active non-member status, and be treated just like anyone else who had registered for the event, and didn't have a membership.
+2021-04-12 11:10:25		https://teamscoutnet.slack.com/archives/C0R7DGSKE/p1617871789001800
+2021-04-12 11:10:25		| Carl Bjelksjö: Two examples : 3184096
+2021-04-12 11:10:25		| 3302647
+2021-04-12 11:10:25		| Posted in #questions | Apr 08, 2021 [ Thread: a12 Replies: 3 ]
+2021-04-12 17:11:25	Carl	@russ Can you take a look at the reply to e-mail.
+2021-04-12 17:11:25		3184330 was added yesterday and his group has a email_membership mailto:intresse@stbscout.se (intresse@stbscout.se)
+2021-04-12 17:11:25		I thought we added that as a reply to?
+2021-04-12 17:11:25		https://ticket.custard.no/issues/28969
+2021-04-12 17:11:25		| CustardLabs Projects
+2021-04-12 17:11:25		| Redmine
+2021-04-12 20:10:14	russ	Did he get something else instead?
+2021-04-12 20:12:47	russ	Unfortunately the logs don't contain that level of detail (just the to/from address) so I can't check without seeing the mail and headers
+2021-05-07 11:43:05	Carl	Is it possible to create a project voucher that covers some but not all of a project fee? @russ @mrmanner
+2021-05-07 13:17:07	mrmanner	Quite sure I’ve done that, yes. Isn’t there a value thingy on the create voucher interface?
+2021-05-07 13:17:47	Carl	No only a dropdown to chose one of the fees
+2021-05-07 13:18:20	mrmanner	Or maybe it’s not, and we made some workaround. You could probably have a voucher for the fee, but add a mandatory add-on product that covers the “base price”? :thinking_face:
+2021-05-07 13:19:11	mrmanner	Although having a voucher with a specified monetary value that’s not connected to a specific fee would make sense. 
+2021-05-07 13:19:11		I really thought we did that for -17, but maybe not. 
+2021-05-07 13:19:43	Carl	I think I will order it if we don't have it
+2021-05-07 13:31:46	russ	Looks like the vouchers are grouped in batches, and each batch is connected to one or more fees, but there is no "value" column or anything to store a partial amount
+2021-05-07 13:32:33	russ	If a member tries to claim a voucher, it just checks they are registered under one of the accepted fees, and then the voucher covers it
+2021-05-07 13:32:36	Carl	Our user case is that we want to give a discount to some particpants and not make it to obvious that we have done it
+2021-05-07 13:33:59	russ	Yep, I guess it _shouldn't_ be too tricky to use a discount percentage or fixed amount
+2021-05-07 13:34:41	russ	Another option would be to give those members a "product" that has a negative value, but it depends who you are hiding it from I guess - as project admins would see that
+2021-05-07 13:36:01	russ	But being able to dish out "X Kr off the camp or save X%" vouchers would be a nice feature anyway. Todays vouchers are more like "tickets" than vouchers, they are all or nothing.
+2021-05-07 13:36:33	Carl	yaeh it's for members that are given support to participate
+2021-05-07 13:36:40	Carl	så we want them to have the full fee
+2021-05-07 13:19:43	Carl	I think I will order it if we don't have it
+2021-05-07 13:31:46	russ	Looks like the vouchers are grouped in batches, and each batch is connected to one or more fees, but there is no "value" column or anything to store a partial amount
+2021-05-07 13:32:33	russ	If a member tries to claim a voucher, it just checks they are registered under one of the accepted fees, and then the voucher covers it
+2021-05-07 13:32:36	Carl	Our user case is that we want to give a discount to some particpants and not make it to obvious that we have done it
+2021-05-07 13:33:59	russ	Yep, I guess it _shouldn't_ be too tricky to use a discount percentage or fixed amount
+2021-05-07 13:34:41	russ	Another option would be to give those members a "product" that has a negative value, but it depends who you are hiding it from I guess - as project admins would see that
+2021-05-07 13:36:01	russ	But being able to dish out "X Kr off the camp or save X%" vouchers would be a nice feature anyway. Todays vouchers are more like "tickets" than vouchers, they are all or nothing.
+2021-05-07 13:36:33	Carl	yaeh it's for members that are given support to participate
+2021-05-07 13:36:40	Carl	så we want them to have the full fee
+2021-05-11 14:36:31	tom.lantz	How hard would it be to change the mailto url:s in Min speiding to open in new tab? Really handy for us mailclientinbrowserusers
+2021-05-11 14:48:13	russ	weird Chrome doesn't automatically do that for you, but it wouldn't be hard to fix (edited)
+2021-05-11 15:10:58	tom.lantz	Yup, should be done by chrome (it should know what a "mailto:...." is. When setting chrome and gmail as standard browser and default email it says that it "opens a new tab" in the guide artichle but nope, still opens in the same tab as the source.
+2021-05-28 11:50:51	Carl	I have noticed that a lot of the reports:cvMembersByEntriesReport never finishes in the task schedule but the report is downloadble when I try. (edited)
+2021-05-28 12:24:23	russ	Yeah that's a weird one
+2021-05-28 11:50:51	Carl	I have noticed that a lot of the reports:cvMembersByEntriesReport never finishes in the task schedule but the report is downloadble when I try. (edited)
+2021-05-28 12:24:23	russ	Yeah that's a weird one
+2021-06-14 09:55:49	Carl	Should CV entries move when merging duplicate profiles?
+2021-06-14 10:04:03	tom.lantz	Yes
+2021-06-14 10:05:33	russ	Was that a business or technical question?
+2021-06-14 10:06:00	russ	Because I'm not sure if that is implemented, to be honest...
+2021-06-14 10:06:54	Carl	technical obvisously we want it to be so :slightly_smiling_face:
+2021-06-14 10:09:33	russ	Yeah I don't think the manual entries for CV were such a big thing when it was implemented, so I think we missed that
+2021-06-14 10:09:54	russ	The ones linked to projects maybe work...
+2021-06-15 09:48:08	Carl	If a member is in multiple groups should they appear in the Police check reports even tough they don't have a leader role in one of the groups? Example 3187129 and Märsta Scoutkår.
+2021-06-15 09:49:03	russ	Shouldn't do... Must be a role somewhere, or "force police check"
+2021-06-15 10:10:05	Carl	I checked no roles and no force PC
+2021-06-15 12:27:14	russ	She is a unit (Troop) leader - according to your settings (https://scoutnet.se/admin/edit/permission/PoliceCheckRequired) unit leaders require PC
+2021-06-15 12:28:30	russ	The PC requirement is a global check - so the report doesn't (normally) check if they need a PC in _this_ group... I think. Maybe depends on the report.
+2021-06-15 13:42:55	Carl	yeah thats true but the troop role is in another group so that's why I'm asking
+2021-07-03 23:17:06	EirikUlltangBirkeland	@russ: Can you see what I did right before or right after adding Helga to Hålogaland?
+2021-07-03 23:18:13	EirikUlltangBirkeland	As far as I remember, I was adding more info to the districts so that it would show up in the district overview on http://speiding.no (speiding.no) (through the API)
+2021-07-03 23:19:26	EirikUlltangBirkeland	(I am very sure that I did not use the function to add her as a direct member in Hålogaland krets, so I think there must be something else trigging this.)
+2021-07-03 23:25:47	russ	ergh there are a lot of database tables to look through :smile:
+2021-07-03 23:27:13	EirikUlltangBirkeland	Yeah :slightly_smiling_face:
+2021-07-03 23:27:59	EirikUlltangBirkeland	I don't know how they are organised, but can you maybe look in the same table?
+2021-07-03 23:28:38	EirikUlltangBirkeland	I guess that I might have been editing other districts, added phone numbers to districts, e.g.
+2021-07-03 23:31:10	EirikUlltangBirkeland	I have tried to do various changes in n1, but I haven’t been able to recreate it yet…
+2021-07-03 23:31:14	russ	You added/updated the email for district 22 at around the same time
+2021-07-03 23:31:58	russ	In fact the time is so close that it does raise eyebrows
+2021-07-03 23:32:17	russ	2021-04-01 01:39:12 vs 2021-04-01 01:39:11
+2021-07-03 23:32:29	EirikUlltangBirkeland	But you’re saying that Helga was already district leader from before?
+2021-07-03 23:33:02	russ	Yes
+2021-07-03 23:33:18	EirikUlltangBirkeland	> 2021-04-01 01:39:12 vs 2021-04-01 01:39:11
+2021-07-03 23:33:18		I am quite sure that this means that it was the saving of the district edit page that triggered this membership in some kind of way
+2021-07-03 23:33:41	EirikUlltangBirkeland	Or at least saving *something* on the district edit page
+2021-07-03 23:34:38	russ	The district role was added 2021-02-06 16:01:15.000
+2021-07-03 23:34:49	EirikUlltangBirkeland	Okay.
+2021-07-03 23:34:56	EirikUlltangBirkeland	By me or someone else?
+2021-07-03 23:35:50	russ	By you
+2021-07-03 23:35:50		It wouldn't surprise me that there is some kind of leader lookup/relation loading that is causing a "new" membership object to be created "automagically"
+2021-07-03 23:38:16	EirikUlltangBirkeland	Yeah, I think it must be something like that
+2021-07-03 23:40:20	EirikUlltangBirkeland	Very annoying that I’m not able to recreate it :sweat_smile:
+2021-07-03 23:40:33	EirikUlltangBirkeland	Have been trying all sorts of edits to the district page
+2021-07-03 23:40:49	russ	In fact... The reason you haven't been able to recreate it, is https://ticket.custard.no/issues/29770
+2021-07-03 23:41:36	russ	Had the exact same revelations/discussins with Carl 5 months ago :smile:
+2021-07-03 23:42:13	EirikUlltangBirkeland	I actually do remember that, but I didn’t remember that it was fixed :slightly_smiling_face:
+2021-07-03 23:42:21	EirikUlltangBirkeland	Thanks!
+2021-07-03 23:42:39	russ	Your release cycle is somewhat slower... So you would only have experienced the fix more recently
+2021-07-03 23:42:58	russ	Even though the fix was committed 5 months ago
+2021-07-03 23:43:21	EirikUlltangBirkeland	Hm … Before or after 1 April? :sweat_smile:
+2021-07-03 23:43:50	russ	14th April to be precise :smile:
+2021-07-03 23:44:15	russ	So not 5 months ago... That's just when the ticket opened
+2021-07-03 23:44:17	russ	Oh well
+2021-07-03 23:44:29	EirikUlltangBirkeland	Okay, problem solved, then, I guess! :smile:
+2021-07-03 23:44:45	russ	Ticket #29977 is probably ok with just point 1 then - removing all the rogue direct members
+2021-07-03 23:44:54	russ	The second point is probably a non-issue?
+2021-07-03 23:45:16	russ	I mean... It's quite a specific process (normally) to add someone as a direct member
+2021-07-03 23:45:30	EirikUlltangBirkeland	Yes, I was about to write the same.
+2021-07-03 23:47:45	EirikUlltangBirkeland	What do you think about this one?
+2021-07-03 23:47:45		https://ticket.custard.no/issues/29975
+2021-07-03 23:48:16	EirikUlltangBirkeland	Is it worth doing, or is it better to add checks to make sure that these errors don’t occur in the first place?
+2021-09-08 14:51:35	tom.lantz	@russ would the storage problem in this ticket (https://ticket.custard.no/issues/30026) also affect mails about new members and such from the system?
+2021-09-08 14:51:35	         	| CustardLabs Projects
+2021-09-08 14:51:35	         	| Redmine
+2021-09-08 15:58:26	russ	It might have during that specific time period, if the disk was completely full, yes (edited) [:+1:1]
+2021-09-08 15:59:13	russ	The error message from postfix implied that if there's not enough space to send its maximum message size, then it would not process the message
+2021-09-08 15:59:29	russ	(makes sense, otherwise it could fail half way through)
+2021-09-29 11:18:35	russ	Yes that's one of the standard endpoints on the project api tab
+2021-09-29 11:19:27	russ	Or, questions at least... Not sure about answers actually - isn't that included in the member list?
+2021-09-29 16:24:40	Carl	can scoutnets e-mail lists handle HTML-messages?
+2021-09-29 16:25:43	russ	Yes, we get all sorts of weird and wonderful messages with graphics and attachments and all sorts [:+1:1]
+2021-09-29 16:31:29	Carl	ok nice because someone has issues with pictures converting to dat files
+2021-09-29 16:31:42	Carl	can that be related to that they havent given an alias to the list
+2021-09-29 16:32:08	russ	If the email is getting through, then it shouldn't be an issue with aliases
+2021-09-29 16:32:57	russ	Haven't heard of that kind of issue with pictures before, so it's likely something specific to what that member is doing that is causing it
+2021-09-29 16:33:21	Carl	Jag tänkte använda Scoutnets erbjudande att hålla e-postlistor uppdaterade.
+2021-09-29 16:33:21	    	Jag har blivit klokare sedan jag skrev till dig sist men har ett annat bekymmer.
+2021-09-29 16:33:21	    	Inklistrade bilder blir win.dat-filer.
+2021-09-29 16:33:21	    	 
+2021-09-29 16:33:21	    	Så här går det till just nu:
+2021-09-29 16:33:21	    	Jag skriver ett e-brev adresserat till mailto:scouter@horbyscout.se (scouter@horbyscout.se). (Skickas från Outlook 2016.)
+2021-09-29 16:33:21	    	Denna adress är kopplad till Google suite. När e-brevet landar där, vidarebefordras det direkt till mailto:60f7c8174e810@lists.scouterna.se (60f7c8174e810@lists.scouterna.se).
+2021-09-29 16:33:21	    	Adressaterna får meddelande men bilder försvinner och det dyker upp en win.dat-fil istället.
+2021-09-29 16:33:21	    	Som du förstår är jag inte helt nöjd.
+2021-09-29 16:33:21	    	 
+2021-09-29 16:33:21	    	Det jag kommit fram till efter lite tester är följande:
+2021-09-29 16:33:21	    	När jag skickar e-brevet till en annan google-adress mailto:inge@horbyscout.se (inge@horbyscout.se) fungerar det bra. (Er sändlista är INTE inblandad.)
+2021-09-29 16:33:21	    	Jag misstänker att när Google vidarebefordrar e-post så behandlas de inte på samma sätt.
+2021-09-29 16:33:21	    	När jag skickar direkt till er ”scoutnet-lista” blir det inte någon win.dat-fil men bilderna blir bilagor istället. (Meddelandet går INTE över Google-adressen.)
+2021-09-29 16:33:21	    	Så jag blir ganska konfunderad.
+2021-09-29 16:33:21	    	 
+2021-09-29 16:33:21	    	Kan du bringa något ljus på problemet, tro?
+2021-09-29 16:33:21	    	Kan inte er sändlista handskas med HTML-meddelanden?
+2021-09-29 16:33:21	    	Min ambition är att ett HTML-meddelanden ska komma fram som de skickas.
+2021-09-29 16:33:21	    	Jag bifogar det meddelande som jag har bekymmer med.
+2021-09-29 16:33:23	russ	Maybe the images they are using in the first place are an unusual format, or their mail client in doing something weird with them?
+2021-09-29 16:34:52	russ	Weird, so he only gets the issue when the mail is forwarded via G-Suite
+2021-09-29 16:35:07	russ	But when sending directly to the list address it is fine
+2021-09-29 16:35:37	Carl	no the pictures becomes attachments and he wants them to be in the email
+2021-09-29 16:36:12	russ	But only when using the forwarding alias, right?
+2021-09-29 16:36:38	russ	Oh, no they end up as attachments
+2021-09-29 16:37:25	russ	Is he sending from Outlook?
+2021-09-29 16:37:32	Carl	yes
+2021-09-29 16:37:49	russ	Yeah it's Outlook sending the email as RTF (not html)
+2021-09-29 16:37:53	russ	"Rich text format"
+2021-09-29 16:38:06	Carl	ok can you see that in the log?
+2021-09-29 16:38:15	Carl	or is it an eduacted guess?
+2021-09-29 16:38:42	russ	No but others who report this kind of thing online have said it - and the only reason for there to be a winmail.dat file at all is if it has come from an RTF email
+2021-09-29 16:39:06	russ	Example: https://blog.gimm.io/how-to-fix-winmail-dat-attachments-in-outlook/
+2021-09-29 16:39:06	    	| How to Fix Winmail.dat Attachments in Outlook - Gimmio
+2021-09-29 16:39:06	    	| How to permanently fix the common winmail.dat problem when sending emails in Outlook. Here's a step-by-step guide on how you can avoid this problem forever.
+2021-09-29 16:39:06	    	| https://blog.gimm.io/wp-content/uploads/2019/06/how-to-fix-winmail-dat-attachments-in-outlook.png
+2021-09-29 16:39:06	    	| Written by: Gordan Banjac
+2021-09-29 16:39:06	    	| Est. reading time: 6 minutes
+2021-09-29 16:40:27	russ	I'm not sure if we could fix our mail system to "understand" rich text format and forward the mails properly, but it's a bit strange I haven't heard about this issue before now
+2021-09-29 16:41:40	russ	It could be that we just need to add a correct header so the recipient knows it's an RTF email, then it would work fine
+2021-09-29 16:42:32	russ	It could also be his Exchange server that is doing it - it's not 100% that it is coming from his mail client (Outlook)
+2021-09-29 16:48:58	russ	If this is a widespread issue, we could use something like this: https://github.com/henck/rtf-html-php to convert the emails if they are RTF, then we can send them as normal. The problem is that our system does not forward emails "as is" - it creates a new mail and copies the content from the incoming one, and we've never implemented anything to try and understand the rtf attachment (it's never come up).
+2021-09-29 16:53:32	Carl	ok no I think it's ok at the moment

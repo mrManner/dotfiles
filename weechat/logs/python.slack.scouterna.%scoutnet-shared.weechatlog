@@ -1,0 +1,12 @@
+2021-05-19 19:16:56	mrmanner*	@Carl/ @russ Do we have a regular user acct for demo2 I can use?
+2021-05-19 19:17:14	mrmanner*	Nothing fancy needed, as long as it can log in 
+2021-05-19 23:25:19	russ*	Sandra Svensson [3397896] now has your email address... Go nuts.
+2021-05-19 23:36:29	mrmanner*	Thank you!
+2021-10-12 20:00:02	PetterSandholdt(Linköping)	Hi
+2021-10-12 20:00:02	                          	Is there a way to find out what the id (that i call registration_id bellow)  is?
+2021-10-12 20:00:02	                          	I have an activity with an id and a form with a form_id and want to link to the view of the responses, which has the url:
+2021-10-12 20:00:02	                          	https://scoutnet.se/activities/<activity_id>/registration_summary/for/<registration_id>/form/<form_id>
+2021-10-12 20:00:02	                          	I can get all the responses using the url bellow, but is it possible to figure out the registration_id as well? (why is it not the member_id?)
+2021-10-12 20:00:02	                          	https://scoutnet.se/api/project/get/participants?id=<activity_id>&key=<key>
+2021-10-12 22:03:43	russ*	[eff] Ah I see the participant list indexes by member number... Cleanest is probably to change the URL to use member numbers then - it's much more common than user ID in URLs.
+2021-10-12 22:06:03	russ*	[eff] Although that said... It seems a lot of the project/activity URLs do use user ID... For now maybe it's best just to add it as a value in the get/participants response for now

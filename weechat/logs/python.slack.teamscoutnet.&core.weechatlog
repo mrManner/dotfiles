@@ -1,0 +1,169 @@
+2021-03-12 11:42:21	tom.lantz	@russ Can I add a Teamwork addon to this slack channel or will that affect everyone? https://teamscoutnet.slack.com/apps/A5N150HNJ-teamwork
+2021-03-12 12:01:15	russ	No idea :grin:
+2021-03-12 12:02:23	russ	You could always use #nsf or a new channel if it gets noisy in here I guess?
+2021-03-14 19:10:28	tom.lantz	okay, gonna try it  and see :slightly_smiling_face:
+2021-03-14 19:10:28	tom.lantz	okay, gonna try it  and see :slightly_smiling_face:
+2021-03-15 11:47:00	tom.lantz	@russ Can you release to prod so that we can test the reminder today? (asap)
+2021-03-15 12:07:04	russ	Release to prod to test? :thinking_face:
+2021-03-15 12:07:30	russ	I've got one more exam to take, then I'll be back at "the office"
+2021-03-15 14:59:42	russ	@tom.lantz what is it you want released? Your prod is a few versions behind now - you ready to go all the way to latest?
+2021-03-15 16:16:45	russ	Have released to n1 - obviously a bit out of date but you can still test with some 2020 reminders perhaps (remember to add the new templates). Or if you want to just go straight for prod just let me know.
+2021-03-16 01:13:16	tom.lantz	I looked through the tickets and you can go straight for prod.
+2021-03-16 09:20:59	russ	Done
+2021-03-16 15:58:11	Carl	@tom.lantz Did you add a ticket for who could see the police check info?
+2021-03-17 10:55:13	tom.lantz	Nope...
+2021-03-17 10:55:24	Carl	Ok then I'll do that! [:pray:1]
+2021-03-18 12:28:03	tom.lantz	@russ could we maybe create a channel for the new design?
+2021-03-18 12:32:03	russ	Sure - #design
+2021-03-24 11:32:44	Carl	Exciting day! A lot of new updates to be relased :smile:
+2021-03-24 11:33:50	russ	:grimacing:
+2021-03-31 11:20:46	Carl	What do you guys think of hiding the previous member list so that that group admin only can see current and last year and list older then that is for super admin only? @russ @tom.lantz
+2021-03-31 11:24:51	russ	Would be fine by me
+2021-03-31 11:25:30	Carl	And after that it's time to get some kind of script to clean really old info
+2021-03-31 11:25:32	Carl	:stuck_out_tongue:
+2021-03-31 11:27:11	russ	:grimacing:
+2021-04-01 10:18:07	Carl	1 st question regarding our "aprils fools bug" :smile: (edited)
+2021-04-01 10:24:08	Edwin	Muahah
+2021-04-01 10:25:39	Carl	this is kind of a test to check how active our users are :stuck_out_tongue:
+2021-04-01 10:26:28	Edwin	Haha yeah, and how willingly they are to report bugs :smile:
+2021-04-01 10:33:43	Carl	Second
+2021-04-01 10:37:29	Edwin	I have to admit though.. I opened my local environment this morning and when I saw "3441645 Welcome, Edwin _SONGESAND_ Kortman!", I was confused for a split second.
+2021-04-01 12:58:53	mrmanner	@Carl did you announce the IKEA co-op https://speiding.no/nyhetsarkiv/ikea-og-norges-speiderforbund-er-nye-samarbeidspartnere (like the norwegians did), or is this yet another step of the secret corrupt commercialisation of the scout movement controlled by Stockholm??! (edited)
+2021-04-01 13:00:04	Carl	Hehe it's more like the what have we been hacked kind of thing :stuck_out_tongue:
+2021-04-01 13:00:23	Carl	maybe I should put out something on Scouternas E-tjänst facebook page
+2021-04-01 13:01:07	mrmanner	Sådana är dom, Scouterna AB... [:v:1] [ Thread: 536 Replies: 3 Subscribed ]
+2021-04-01 13:04:21	Carl	But then again I think the chock value of not having a press release is kind of fun also! [:raised_hands::skin-tone-3:1]
+2021-04-01 13:05:28	Carl	I have gotten three bug reports so far
+2021-04-01 13:06:30	Carl	Fourth :stuck_out_tongue:
+2021-04-01 13:09:19	Carl	Wouldn't it be neat to be able to post custom messages under Important messages on the start page?
+2021-04-01 13:11:35	russ	I wonder what possible "bug" people can think of here... I mean, unintentionally displaying items from the IKEA catalogue, complete with hover-descriptions...
+2021-04-01 13:12:21	russ	Maybe people think it's like an accidental "Loren ipsum" development deployment or something, testing nicknames that shouldn't have gone to production
+2021-04-01 13:12:30	Carl	Hehe all four have asked if we are hacked acctually but they are suspicious for aprils fool at the same time
+2021-04-01 13:12:54	mrmanner	It's the new hacker group Soldiers of Ingvar
+2021-04-01 13:15:12	russ	You can change the welcome text that's ok the same page, if you want to add something there
+2021-04-01 13:16:31	Carl	Yeah I might add something there about us trying out the new scout name module in cooperation with IKEA :slightly_smiling_face:
+2021-04-07 13:05:20	russ	Has the meeting started?
+2021-04-07 13:05:32	russ	"*When the meeting starts, we'll let people know you're waiting."*
+2021-04-07 13:14:54	russ	@here
+2021-04-07 13:28:09	russ	Ok false alarm - the meeting is not today - I still have the invite from Kristin in my calendar :weary:
+2021-04-07 13:28:21	tom.lantz	aha.... no it is on friday.
+2021-04-07 13:28:48	tom.lantz	teams.....
+2021-04-07 13:29:04	russ	I'm going to take a nap now, I haven't done any work this morning because it's hard to start something if I know I'll be interrupted later :laughing:
+2021-04-07 13:29:14	russ	Did you send a new invite?
+2021-04-07 13:29:32	russ	I only have a calendar invite and Teams link for today, nothing for Friday
+2021-04-07 13:29:39	tom.lantz	Yes, can send it again.
+2021-04-07 13:29:56	russ	Hang on I'll see if I can find it
+2021-04-07 13:30:11	tom.lantz	ops, sent
+2021-04-07 13:30:28	russ	Ah of course it's in my gmail folder
+2021-04-07 13:30:32	tom.lantz	But teams invites are a pain to share in google...
+2021-04-07 13:30:56	tom.lantz	@Edwin did you receive the invite?
+2021-04-07 13:32:01	tom.lantz	By pain I mean in my calendar I can share it nad nothing out of the ordinary happens except from that when I look at the invited people in the calendar the ones I sent are not there...
+2021-04-07 13:32:33	russ	Yeah I probably missed this because I don't really use gmail... must have accidentally "read" it before I clicked to accept the invite
+2021-04-07 13:32:58	tom.lantz	@Carl Did you get it?
+2021-04-07 13:33:48	russ	I don't see carl on the Attendee list in the invites
+2021-04-07 13:58:34	Edwin	Hmm, no I got one for today but no invitation was updated e-mail. I don't have a calendar attached to that e-mail address so I have to add them manually anyway
+2021-04-07 13:59:18	russ	So you just updated it after the discussion in #design didn't you, like a savage
+2021-04-07 14:00:02	Edwin	I have to admit it felt a little wrong to move it manually [:muppet_swedish_chef:1]
+2021-04-07 14:09:14	tom.lantz	I don't see you in the attendee list Russ even though I sent it 20 min ago, as I wrote above I cannot see who the invitation was sent to...
+2021-04-07 14:09:14		Maybe I just share the time and URL here...
+2021-04-07 14:09:22	tom.lantz	#savage
+2021-04-07 14:09:50	tom.lantz	Designpresentasjon: visuelt uttrykk
+2021-04-07 14:09:50		Fredag, 9. april*⋅*13:00–14:30
+2021-04-07 14:09:50		Microsoft Teams meeting
+2021-04-07 14:09:50		Bli med fra datamaskin eller mobilapp
+2021-04-07 14:09:50		Klikk her for å bli med på møtet<https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDFlZDIzYjMtM2EzMS00YWZhLTkwNTgtNGFhYTgwODk5NWY4%40thread.v2/0?context=%7b%22Tid%22%3a%225ea11a65-8c39-4ab0-a76d-4106f8be2b47%22%2c%22Oid%22%3a%22d0670842-6c2f-4629-9ff4-a597870f4338%22%7d>
+2021-04-07 14:09:50		Finn ut mer<https://aka.ms/JoinTeamsMeeting> | Møtealternativer<https://teams.microsoft.com/meetingOptions/?organizerId=d0670842-6c2f-4629-9ff4-a597870f4338&tenantId=5ea11a65-8c39-4ab0-a76d-4106f8be2b47&threadId=19_meeting_MDFlZDIzYjMtM2EzMS00YWZhLTkwNTgtNGFhYTgwODk5NWY4@thread.v2&messageId=0&language=nb-NO>
+2021-04-07 14:09:50		| Join conversation
+2021-04-07 14:09:50		| https://statics.teams.microsoft.com/hashedassets-launcher/favicon/favicon-96x96.png
+2021-04-07 14:09:50		| Join a meeting in Teams
+2021-04-07 14:09:50		| If your school, work, or organization uses Teams to enable working remotely, learn about different ways you can connect to a meeting from any device.
+2021-04-07 14:09:50		| https://support.office.com/SocImages/SOC_SharingImage_720x405.png
+2021-04-07 15:29:01	russ	Weird, I see this list:
+2021-04-07 15:29:01		```     Andrea Kristine Lysgaard <andrea-kristine.lysgaard@antidiffer.no>
+2021-04-07 15:29:01		    mailto:trine@studionetting.no (trine@studionetting.no)
+2021-04-07 15:29:01		    mailto:tom.lantz@speiding.no (tom.lantz@speiding.no) <tom.lantz@speiding.no>
+2021-04-07 15:29:01		    Eirik Ulltang Birkeland <eirik@speiding.no>
+2021-04-07 15:29:01		    mailto:russmonkey@gmail.com (russmonkey@gmail.com) <russ@custard.no>```
+2021-04-07 15:29:08	russ	Guess it's all a bit funky
+2021-04-07 15:37:43	Edwin	:thinking_face: I'm not even in there
+2021-04-13 16:43:44	Carl	I just thought I would give you guys a sneak peak of another project I've been working on.
+2021-04-13 16:43:44		https://scoutstuga.se/
+2021-04-13 16:43:44		It's our new site with listings of scout cabins, scout halls and campsites.
+2021-04-13 16:43:44		We just started adding listings so there's only three att the moment.
+2021-04-13 16:43:44		The login for users is of course with ScoutID (connected to Scoutnet). :-)
+2021-04-13 16:43:44		| Scoutstuga
+2021-04-13 16:43:44		| Web site created using create-react-app
+2021-04-13 18:53:10	russ	Can I stay in those? :smile:
+2021-04-13 18:53:35	russ	I'm a member according to Scoutnet... :wink:
+2021-04-13 18:54:00	Carl	You don’t need to log in that is only for owners 
+2021-04-13 18:54:18	russ	Yeah I was thinking of the cabins...
+2021-04-13 18:54:32	russ	Although I'm not sure I need 30 beds :smile:
+2021-04-13 18:54:38	Carl	It’s up to the owners
+2021-04-13 18:54:59	russ	:sunglasses:
+2021-04-21 12:07:52	tom.lantz	Good luck today @russ :)
+2021-04-21 12:48:15	russ	Cheers :grin::the_horns::skin-tone-2:
+2021-04-21 12:49:29	russ	It's just photo and fingerprint though, my application is already approved... Stupid Brexit... I'll be back in November for the same thing but citizenship...
+2021-04-21 12:07:52	tom.lantz	Good luck today @russ :)
+2021-04-21 12:48:15	russ	Cheers :grin::the_horns::skin-tone-2:
+2021-04-21 12:49:29	russ	It's just photo and fingerprint though, my application is already approved... Stupid Brexit... I'll be back in November for the same thing but citizenship...
+2021-04-29 11:11:36	Carl	On projects group registration. If someone quits their membership. Is their registration to the project removed as well?
+2021-04-29 11:19:53	russ	We've been backwards and forwards on this so many times I'm not sure any more
+2021-04-29 11:20:09	Carl	I can't find them on the lists so I guess they are gone :stuck_out_tongue:
+2021-04-29 11:20:42	russ	I think they might still show in the reports? Or is that the list you mean?
+2021-04-29 11:20:54	russ	Maybe we only did it that way for individuals...
+2021-04-29 11:20:55	Carl	maybe I'll check those to!
+2021-04-29 11:21:34	russ	I know they should stay on the lists if they attended, at least
+2021-04-29 11:22:00	russ	And I'm pretty sure individual registrations stay too, so that project leaders can see who they "lost"
+2021-04-29 12:06:02	tom.lantz	If I remember correctly: group registrations that are marked as attended via checkin/checkout does not dissapear. If they do, something has been changed. There should also be a checkpoint when a project is finalized.
+2021-06-08 15:35:41	Carl	I have and idea regarding project registration development that I want to test on you.
+2021-06-08 15:35:41		This is for our national jamboree.
+2021-06-08 15:35:41		What if we create a project template for the groups.
+2021-06-08 15:35:41		This template contains a section with questions that the group can't edit.
+2021-06-08 15:35:41		These questions are somehow connected to a group registration form for our Jamboree so the information provided is transfereded.
+2021-06-08 15:35:41		This way groups can ask their own question and groups that wants to use paper registration (and then let a leader do all typing) can do that.
+2021-06-08 17:17:15	russ	Yeah that's an interesting idea - wouldn't be too difficult to create a link between the two projects so the questions could be copied over. Kind of like letting the groups do their own bulk-registration, but with all the "required" questions linked up and ready to transfer
+2021-08-26 10:27:59	Carl	Does anyone know why we call events projects in Scoutnet? Is that in line with UK Scouting lingo or something?
+2021-08-26 10:47:22	russ	Kind of hard to find a name that covers everything that could be created I guess... Camp, hike, course, trip, jamboree, etc. It should really be more of an internal thing... I've tried to change a lot of the more recent stuff so it shows the actual type instead, but it's hard for example when creating a new "thing"
+2021-08-26 10:47:56	russ	Same problem with "bodies"... Could just as well be called "group/district/etc."
+2021-08-26 10:48:25	Carl	bodies the best translation I found in swedish is organisationsled :rolling_on_the_floor_laughing:
+2021-08-26 10:49:13	Carl	ok but in that case I think I'll ask you to rename the project type Projekt to Arrangemang or something.
+2021-08-26 10:52:00	russ	Yeah, could just as well be arrangement in English too
+2021-08-26 10:52:09	Carl	or event?
+2021-08-26 10:53:11	russ	I think arrangement is less specific. A course for example isn't really an event, but could be an arrangement
+2021-08-26 10:53:23	Carl	ok!
+2021-08-26 10:53:34	russ	So arrangement would be a good generic term
+2021-08-26 10:54:06	Carl	in swedish scouting we use arrangemang like a umbrella word for events, camps, hikes, sleepovers, day trips, coursers etc
+2021-08-26 11:02:10	russ	Yeah in hindsight that would have been a better word. It was a non-native developer that picked it way back when we started :grin:
+2021-08-26 10:27:59	Carl	Does anyone know why we call events projects in Scoutnet? Is that in line with UK Scouting lingo or something?
+2021-08-26 10:47:22	russ	Kind of hard to find a name that covers everything that could be created I guess... Camp, hike, course, trip, jamboree, etc. It should really be more of an internal thing... I've tried to change a lot of the more recent stuff so it shows the actual type instead, but it's hard for example when creating a new "thing"
+2021-08-26 10:47:56	russ	Same problem with "bodies"... Could just as well be called "group/district/etc."
+2021-08-26 10:48:25	Carl	bodies the best translation I found in swedish is organisationsled :rolling_on_the_floor_laughing:
+2021-08-26 10:49:13	Carl	ok but in that case I think I'll ask you to rename the project type Projekt to Arrangemang or something.
+2021-08-26 10:52:00	russ	Yeah, could just as well be arrangement in English too
+2021-08-26 10:52:09	Carl	or event?
+2021-08-26 10:53:11	russ	I think arrangement is less specific. A course for example isn't really an event, but could be an arrangement
+2021-08-26 10:53:23	Carl	ok!
+2021-08-26 10:53:34	russ	So arrangement would be a good generic term
+2021-08-26 10:54:06	Carl	in swedish scouting we use arrangemang like a umbrella word for events, camps, hikes, sleepovers, day trips, coursers etc
+2021-08-26 11:02:10	russ	Yeah in hindsight that would have been a better word. It was a non-native developer that picked it way back when we started :grin:
+2021-08-26 10:27:59	Carl	Does anyone know why we call events projects in Scoutnet? Is that in line with UK Scouting lingo or something?
+2021-08-26 10:47:22	russ	Kind of hard to find a name that covers everything that could be created I guess... Camp, hike, course, trip, jamboree, etc. It should really be more of an internal thing... I've tried to change a lot of the more recent stuff so it shows the actual type instead, but it's hard for example when creating a new "thing"
+2021-08-26 10:47:56	russ	Same problem with "bodies"... Could just as well be called "group/district/etc."
+2021-08-26 10:48:25	Carl	bodies the best translation I found in swedish is organisationsled :rolling_on_the_floor_laughing:
+2021-08-26 10:49:13	Carl	ok but in that case I think I'll ask you to rename the project type Projekt to Arrangemang or something.
+2021-08-26 10:52:00	russ	Yeah, could just as well be arrangement in English too
+2021-08-26 10:52:09	Carl	or event?
+2021-08-26 10:53:11	russ	I think arrangement is less specific. A course for example isn't really an event, but could be an arrangement
+2021-08-26 10:53:23	Carl	ok!
+2021-08-26 10:53:34	russ	So arrangement would be a good generic term
+2021-08-26 10:54:06	Carl	in swedish scouting we use arrangemang like a umbrella word for events, camps, hikes, sleepovers, day trips, coursers etc
+2021-08-26 11:02:10	russ	Yeah in hindsight that would have been a better word. It was a non-native developer that picked it way back when we started :grin:
+2021-09-09 10:02:04	tom.lantz	So... with ref. the double booking from our side. Could we move the meeting in sweden from tues-web to mon-tues the same week?
+2021-09-09 11:11:17	russ	Works for me
+2021-10-07 11:34:30	tom.lantz	@russ* on the meeting next week It would be good with a presentation of Future and how the status is with implementing it. I would also like to take some time to talk about the designs so far to be sure that we are on the same page.
+2021-10-10 22:08:42	russ	Hi peeps! Bad news, I was supposed to fly this evening but have decided not to - I have a sore throat and pretty bad cough. Have taken a home Covid test which is negative but I am not in any fit state to travel, and pretty much have no voice :disappointed:
+2021-10-10 22:08:42	    	Had a sore throat the last few days but thought it would have cleared up by today. The only possibility now is if I feel better tomorrow (and am not coughing so much) I will be able to fly tomorrow evening and join you on Tuesday.
+2021-10-10 22:08:42	    	This sucks, have flights and hotel booked (non-refundable) and it would of course been nice to all catch up in person.
+2021-10-11 06:15:42	tom.lantz	That sucks. Hope you get better and are able to come this evening. I suppose Scouterna have some digital setup so that you can attend through that. I am checked in and waiting at the gate.
+2021-10-11 09:52:57	tom.lantz	Let us know when you are awake if you are fit for some meet-action.
+2021-10-11 15:39:29	tom.lantz	@russ* How do you feel? will you join us tomorrow here in stlhm? If not, are you able to attend a video meeting today or tomorrow or are you to ill?

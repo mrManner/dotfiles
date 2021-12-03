@@ -1,0 +1,488 @@
+2021-10-13 00:31:16	-->	mrmanner (~jmanner@user/mrmanner) has joined ##econometrics
+2021-10-13 00:31:16	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-13 00:31:16	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-13 00:31:16	--	Channel ##econometrics: 91 nicks (2 ops, 2 voices, 87 normals)
+2021-10-13 00:31:18	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-13 00:34:58	-->	bitdex (~bitdex@gateway/tor-sasl/bitdex) has joined ##econometrics
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:03	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined ##econometrics
+2021-10-13 00:42:03	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-13 00:42:03	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-13 00:42:03	--	Channel ##econometrics: 92 nicks (2 ops, 2 voices, 88 normals)
+2021-10-13 00:42:36	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-13 00:45:58	-->	dude12312414 (~test@gateway/tor-sasl/dude12312414) has joined ##econometrics
+2021-10-13 00:55:21	-->	lxlldr (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##econometrics
+2021-10-13 00:56:49	<--	lxlldr (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Client Quit)
+2021-10-13 00:57:03	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##econometrics
+2021-10-13 00:58:48	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Client Quit)
+2021-10-13 00:59:00	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##econometrics
+2021-10-13 00:59:02	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Client Quit)
+2021-10-13 00:59:15	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##econometrics
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:06:35	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Quit: Quit)
+2021-10-13 01:11:28	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##econometrics
+2021-10-13 01:28:59	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Remote host closed the connection)
+2021-10-13 01:29:49	<--	palasso (~palasso@user/palasso) has quit (Remote host closed the connection)
+2021-10-13 02:05:03	<--	bitdex (~bitdex@gateway/tor-sasl/bitdex) has quit (Ping timeout: 276 seconds)
+2021-10-13 02:06:43	-->	bitdex (~bitdex@gateway/tor-sasl/bitdex) has joined ##econometrics
+2021-10-13 02:32:25	<--	drogas (~drogas@jump2.jet.uk) has quit (Quit: Connection closed)
+2021-10-13 02:51:14	-->	db (uid18678@id-18678.helmsley.irccloud.com) has joined ##econometrics
+2021-10-13 03:43:16	-->	MickOfRivia (~Thunderbi@94.252.38.56) has joined ##econometrics
+2021-10-13 03:47:17	astroo-	bye people
+2021-10-13 03:47:51	louipc	astroo-:
+2021-10-13 03:47:58	astroo-	bye
+2021-10-13 03:48:01	louipc	bye
+2021-10-13 03:52:19	<--	MickOfRivia (~Thunderbi@94.252.38.56) has quit (Quit: MickOfRivia)
+2021-10-13 04:26:42	<--	kevin-oculus (~tomys@c188-149-14-10.bredband.tele2.se) has quit (Ping timeout: 268 seconds)
+2021-10-13 04:32:23	<--	voltage_ (voltage@user/voltage) has quit (Quit: Leaving)
+2021-10-13 04:32:31	-->	Atque (~Atque@user/atque) has joined ##econometrics
+2021-10-13 04:58:53	<--	TXDillo (~Kurt@136.49.102.16) has quit (Ping timeout: 264 seconds)
+2021-10-13 05:01:35	<--	FreeRangeDillo (~Kurt@136.49.102.16) has quit (Quit: zzzzzzzzzzzzzzzzz)
+2021-10-13 05:29:50	<--	peetaur (~peter@204.237.2.79) has quit (Quit: Konversation terminated!)
+2021-10-13 05:56:10	ern	;;tlast
+2021-10-13 05:56:11	+gribble	56299.78
+2021-10-13 06:04:52	<--	Metamorphosis (uid451146@user/metamorphosis) has quit (Quit: Connection closed for inactivity)
+2021-10-13 06:18:41	Brie	;;nethash
+2021-10-13 06:18:42	+gribble	144568490.527
+2021-10-13 06:34:38	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Quit: THE RAM IS TOO DAMN HIGH)
+2021-10-13 06:42:19	<--	Cashlin (~hp@user/cashlin) has quit (Quit: Konversation terminated!)
+2021-10-13 06:44:47	-->	Metamorphosis (uid451146@user/metamorphosis) has joined ##econometrics
+2021-10-13 06:47:24	dispersed	*cr btc eth link knc algo
+2021-10-13 06:47:25	+DrFockIt	dispersed: Algorand: $1.74 (+3.3%) Bitcoin: $56135.77 (-1.5%) Ethereum: $3504.23 (+0.1%) Kyber Network Crystal v2: $1.68 (+3.2%) Chainlink: $24.99 (+1.4%) (Δ24h)
+2021-10-13 07:13:33	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##econometrics
+2021-10-13 08:03:24	-->	benin03693230163 (~benin@183.82.29.30) has joined ##econometrics
+2021-10-13 21:22:52	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:23	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined ##econometrics
+2021-10-13 21:23:23	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-13 21:23:23	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-13 21:23:23	--	Channel ##econometrics: 93 nicks (2 ops, 2 voices, 89 normals)
+2021-10-13 21:23:54	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-13 21:24:07	<--	monkey_ (~user@181.114.17.106) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:25:14	@apotheon	enablers are the reason papi can't behave like a human being
+2021-10-13 21:35:56	PapiTheBull_	lol nice
+2021-10-13 21:36:40	PapiTheBull_	apotheon, lol just because you don't find papi tasteful, doesn't mean I'm uncivilized 
+2021-10-13 21:37:01	PapiTheBull_	papi more of a human than you or general rmah will ever be ok!? lolll i kid
+2021-10-13 21:37:27	PapiTheBull_	.crypto btc eth doge
+2021-10-13 21:37:28	mrfinance	PapiTheBull_: BTCBitcoin: 57009.18000 +2.20% , ETHEthereum: 3524.08000 +0.76% , DOGEDogecoin: 0.22940 +2.14% 
+2021-10-13 21:37:45	PapiTheBull_	all green everywhere
+2021-10-13 21:38:57	PapiTheBull_	.bonds
+2021-10-13 21:39:00	mrfinance	PapiTheBull_: 2 year: 0.37% , 5 year: 1.08% , 10 year: 1.55% , 30 year: 2.04% 
+2021-10-13 21:44:10	-->	monkey_ (~user@181.114.17.106) has joined ##econometrics
+2021-10-13 21:50:58	PapiTheBull_	https://www.bls.gov/news.release/archives/cpi_10132021.htm
+2021-10-13 21:50:59	+DrFockIt	PapiTheBull_: ^ www.bls.gov: 'Consumer Price Index News Release'
+2021-10-13 22:03:05	-->	Metamorphosis (uid451146@user/metamorphosis) has joined ##econometrics
+2021-10-13 22:03:43	<--	monkey_ (~user@181.114.17.106) has quit (Ping timeout: 252 seconds)
+2021-10-13 22:07:28	PapiTheBull_	.spy
+2021-10-13 22:07:31	PapiTheBull_	.q spy
+2021-10-13 22:07:32	mrfinance	PapiTheBull_: spy: 435.21 +0.37% SPDR S&P 500  P/E: 3.02
+2021-10-13 22:07:48	PapiTheBull_	.q zn=f
+2021-10-13 22:07:49	mrfinance	PapiTheBull_: zn=f: 131.33 +0.14% 10-Year T-Note Futures,Dec-2021 (ZN=F)
+2021-10-13 22:08:08	PapiTheBull_	.metals
+2021-10-13 22:08:14	mrfinance	PapiTheBull_: Gold: 1793.00 +1.92% , Silver: 23.07 +2.45% , Platinum: 1019.90 +0.81% , Copper: 4.49 +3.83% , PALLADIUM: 2104.50 +2.77% , Aluminum: 3041.00 -2.27% , HOT ROLLED STEEL MIDWEST: 1894.00 -0.26% 
+2021-10-13 22:10:29	-->	twomoon (~twomoon@ip72-199-58-150.sd.sd.cox.net) has joined ##econometrics
+2021-10-13 22:14:16	twomoon	https://www.youtube.com/watch?v=YkVKsEc4TXY
+2021-10-13 22:14:17	+DrFockIt	twomoon: ^ YouTube: 'Lyn Alden: All Analysts Are WRONG, A Supply Chain Crash Is Coming!'
+2021-10-13 22:14:33	nb-ben	.q INTC
+2021-10-13 22:14:35	mrfinance	nb-ben: INTC: 52.26 +0.17% Intel Corporation  Div: 2.66% P/E: 11.61
+2021-10-13 22:14:36	twomoon	starting to get worried about runaway inflation
+2021-10-13 22:15:16	PapiTheBull_	lollll twomoon my stan
+2021-10-13 22:15:25	PapiTheBull_	u ran away last time like a little mouse
+2021-10-13 22:15:34	PapiTheBull_	we were playing 1 on 1 remember? lolll
+2021-10-16 12:32:07	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:33	-->	mrmanner (~jmanner@185.224.57.161) has joined ##econometrics
+2021-10-16 12:32:33	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-16 12:32:33	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-16 12:32:33	--	Channel ##econometrics: 86 nicks (5 ops, 2 voices, 79 normals)
+2021-10-16 12:32:51	<--	Atque (~Atque@user/atque) has quit (Ping timeout: 276 seconds)
+2021-10-16 12:33:08	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-16 12:50:04	-->	Guest69 (~Guest69@90.196.109.174) has joined ##econometrics
+2021-10-16 12:58:55	dispersed	we should be grateful that people like Papi exist
+2021-10-16 12:59:19	dispersed	they are proof of wisdom in the sense that without stupidity, wisdom would be pretty pointless
+2021-10-16 12:59:53	dispersed	+ he likes cheeseburgers, which I share with him, rather would have 'em vegan cheese nowadays
+2021-10-16 13:00:50	dispersed	+r makes sense if it works, but it does make it harder for a really casual user to join, because identifying isn't automatic in all clients
+2021-10-16 13:01:21	dispersed	I wonder if Papi is a criminal with a botnet or some corrupt sysadmin at google who has access to too many machines
+2021-10-16 13:01:55	@nb-ben	probably just has a vpn
+2021-10-16 13:02:13	@nb-ben	anyway this is what most channels which experience this problem do
+2021-10-16 13:02:18	dispersed	ouch, so collateral damage if anyone uses that same vpn
+2021-10-16 13:02:33	@nb-ben	like, registered only and forward unregistered to a help channel
+2021-10-16 13:03:28	dispersed	invite only could work if there was some kind of autoinvite, like reverse-forwarding
+2021-10-16 13:03:33	dispersed	hmh, nope
+2021-10-16 13:03:47	dispersed	when you say something out loud, you notice how dumb it is ,p
+2021-10-16 13:04:12	dispersed	well anyway, a kind of whitelisting
+2021-10-16 13:04:33	dispersed	you could whitelist people in normal times, but just temporarily not-auto-invite them in Papi times
+2021-10-16 13:05:14	dispersed	I wonder if 'whitelist' is PC anymore, is there a better term
+2021-10-16 13:05:22	@nb-ben	breaking the channel to deal with an individual kind of means they won
+2021-10-16 13:07:10	dispersed	exactly, +r _slightly_ breaks it, unless it improves quality otherwise
+2021-10-16 13:08:24	dispersed	moriarty had a weird way to improve quality, just randomly kick people 
+2021-10-16 13:09:35	dispersed	ppl like papi could be directed to mental health services as well
+2021-10-16 13:09:49	dispersed	dunno if that's insulting but
+2021-10-16 13:10:00	dispersed	it is what it is
+2021-10-16 13:10:29	dispersed	like, if he acts in a similar way in other areas of life, it's bound to suck for him as well
+2021-10-16 13:10:55	dispersed	and if he invests with that attitude, he's probably not very successful either
+2021-10-16 13:11:41	-->	benin (~benin@183.82.25.86) has joined ##econometrics
+2021-10-16 13:13:00	dispersed	and he's clearly seeking attention
+2021-10-16 13:13:08	dispersed	basically needs a psychotherapist
+2021-10-16 13:13:13	dispersed	or meds
+2021-10-16 13:14:11	dispersed	there was a guy terrorizing a channel, where the teams was depression, he has borderline personality and was open about it
+2021-10-16 13:14:19	dispersed	*theme not teams lol
+2021-10-16 13:14:39	dispersed	he would join with multiple nicknames that would join their forces to annoy some helpless depressed person
+2021-10-16 13:15:38	dispersed	multiple dark triad traits, sadistic, narcissistic, and able to act on it I suppose
+2021-10-16 13:16:56	dispersed	sad fucks
+2021-10-16 13:17:36	dispersed	papi could just be a maniac
+2021-10-16 13:17:48	dispersed	he isn't _that_ evil, just persistent
+2021-10-16 13:18:43	@nb-ben	I personally didn't have any issues with him while we were interacting besides the power games/insults with the ops, no idea about other stuff he's done before or why he was banned in the first place though
+2021-10-16 13:20:15	dispersed	I didn't have a lot of problem with him either, he didn't target me, actually tried to somehow be friendly with me, but I noticed that if I try even slightest critique, he turns sour pretty quick
+2021-10-16 13:20:29	dispersed	so he has traits that he's unable to adjust
+2021-10-16 13:20:43	dispersed	like if you say "uh, could you calm down a bit" he'll just get worse and so on
+2021-10-16 13:22:33	dispersed	e.g. I asked him how much he slept last night, he would reply basically that I shouldn't care
+2021-10-16 13:22:41	dispersed	and tried to insult me about caring
+2021-10-16 13:22:59	dispersed	I don't really care, I was just curious what kind of problem he has
+2021-10-16 13:23:44	dispersed	maybe he's an alcoholic, that would explain a lot
+2021-10-17 18:14:39	-->	jmanner (~jmanner@185.224.57.161) has joined ##econometrics
+2021-10-17 18:14:39	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-17 18:14:39	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-17 18:14:39	--	Channel ##econometrics: 85 nicks (3 ops, 2 voices, 80 normals)
+2021-10-17 18:15:11	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-17 18:19:03	-->	jmanner (~jmanner@user/mrmanner) has joined ##econometrics
+2021-10-17 18:19:03	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-17 18:19:03	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-17 18:19:03	--	Channel ##econometrics: 85 nicks (3 ops, 2 voices, 80 normals)
+2021-10-17 18:19:37	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-17 18:30:39	-->	jmanner (~jmanner@user/mrmanner) has joined ##econometrics
+2021-10-17 18:30:39	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-17 18:30:39	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-17 18:30:39	--	Channel ##econometrics: 85 nicks (3 ops, 2 voices, 80 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:31:07	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-17 18:38:28	<--	voltage_ (voltage@user/voltage) has quit (Quit: Leaving)
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:44	-->	mrmanner (~jmanner@user/mrmanner) has joined ##econometrics
+2021-10-17 19:45:44	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-17 19:45:44	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-17 19:45:44	--	Channel ##econometrics: 84 nicks (3 ops, 2 voices, 79 normals)
+2021-10-17 19:46:13	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-17 19:46:29	Plazma	https://cdn.discordapp.com/attachments/709928146518147114/899288802550497321/image0.jpg
+2021-10-17 19:46:33	-->	flyback (~flyback@2601:540:8201:1e60::5706) has joined ##econometrics
+2021-10-17 20:02:59	-->	peetaur2 (~peter@204.237.2.79) has joined ##econometrics
+2021-10-17 20:03:00	--	peetaur2 is now known as peetaur
+2021-10-17 20:10:21	-->	Zion (~Zion@2607:ff28:b003::4aad) has joined ##econometrics
+2021-10-17 20:10:21	<--	Zion (~Zion@2607:ff28:b003::4aad) has left ##econometrics
+2021-10-17 20:12:59	@apotheon	I wonder what it takes for someone to consider a software dev "educated" rather than "self-taught".  Is it okay if the person took one programming class and got a degree in art history?
+2021-10-17 20:13:14	<--	palasso (~palasso@user/palasso) has quit (Remote host closed the connection)
+2021-10-17 20:13:39	@apotheon	What about someone who completed all the degree requirements for a CompSci degree *except* the general ed requirements (e.g. some health class).
+2021-10-17 20:13:45	@apotheon	s/.$/?/
+2021-10-17 20:14:05	@apotheon	What if someone got a degree that requires a lot of math but never did anything programming-related?
+2021-10-17 20:14:16	@apotheon	What about coding boot camps?
+2021-10-17 20:15:06	@apotheon	How 'bout we ignore all that and hire based on the person?
+2021-10-17 20:15:26	@apotheon	It's not like a degree is proof you learned anything substantive about the topic of your major.
+2021-10-17 20:20:01	-->	palasso (~palasso@user/palasso) has joined ##econometrics
+2021-10-17 20:33:10	<--	benin (~benin@183.82.25.86) has quit (Ping timeout: 252 seconds)
+2021-10-30 12:09:25	-->	jmanner (~jmanner@user/mrmanner) has joined ##econometrics
+2021-10-30 12:09:25	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-30 12:09:25	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-30 12:09:25	--	Channel ##econometrics: 77 nicks (1 op, 2 voices, 74 normals)
+2021-10-30 12:09:58	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined ##econometrics
+2021-10-30 12:10:54	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-30 12:10:54	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-30 12:10:54	--	Channel ##econometrics: 77 nicks (1 op, 2 voices, 74 normals)
+2021-10-30 12:11:29	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:57:21	dispersed	*cr btc eth algo link
+2021-10-30 12:57:22	+DrFockIt	dispersed: Algorand: $1.84 (-1.1%) Bitcoin: $61801.82 (+1.6%) Ethereum: $4344.64 (+0.5%) Chainlink: $30.37 (-1.6%) (Δ24h)
+2021-10-30 13:05:12	-->	Atque (~Atque@user/atque) has joined ##econometrics
+2021-10-30 13:32:34	<--	AbleBacon (~AbleBacon@user/AbleBacon) has quit (Read error: Connection reset by peer)
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:36	-->	mrmanner (~jmanner@user/mrmanner) has joined ##econometrics
+2021-10-30 17:07:36	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-30 17:07:36	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-30 17:07:36	--	Channel ##econometrics: 84 nicks (1 op, 2 voices, 81 normals)
+2021-10-30 17:08:08	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-30 17:49:32	<--	db (uid18678@id-18678.helmsley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-30 22:21:17	--	irc: disconnected from server
+2021-10-30 22:21:48	-->	mrmanner (~jmanner@user/mrmanner) has joined ##econometrics
+2021-10-30 22:21:48	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-10-30 22:21:48	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-10-30 22:21:48	--	Channel ##econometrics: 86 nicks (1 op, 2 voices, 83 normals)
+2021-10-30 22:22:17	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-10-30 22:29:01	-->	shibboleth (~shibbolet@user/shibboleth) has joined ##econometrics
+2021-12-01 23:20:55	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined ##econometrics
+2021-12-01 23:20:55	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-12-01 23:20:55	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-01 23:20:55	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-12-01 23:20:55	--	Channel ##econometrics: 94 nicks (4 ops, 2 voices, 88 normals)
+2021-12-01 23:21:39	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-12-01 23:22:00	--	Mode ##econometrics [+jnt 3:5]
+2021-12-01 23:22:00	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined ##econometrics
+2021-12-01 23:23:00	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-12-01 23:23:00	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-01 23:23:00	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-12-01 23:23:00	--	Channel ##econometrics: 94 nicks (4 ops, 2 voices, 88 normals)
+2021-12-01 23:23:13	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-12-01 23:23:14	--	Mode ##econometrics [+jnt 3:5]
+2021-12-01 23:23:14	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-12-01 23:38:57	-->	ruzu (realname) (~ruzu@107-179-252-71.cpe.teksavvy.com) has joined ##econometrics
+2021-12-01 23:44:48	@apotheon	lsrtl: nice headline
+2021-12-01 23:44:54	@apotheon	oops
+2021-12-01 23:44:58	@apotheon	lsrtl: not you, sorry
+2021-12-01 23:45:02	@apotheon	LibertyDillo: nice headline
+2021-12-01 23:45:48	@Plazma	hahaha
+2021-12-01 23:45:52	@Plazma	fuck lsrtl tho
+2021-12-01 23:45:59	@Plazma	mr dildo is an acceptable person
+2021-12-01 23:46:02	@Plazma	but rickyrick is a cunt
+2021-12-01 23:46:12	LibertyDillo	pretty sure it was a tongue in cheek jab at USD being fiat where BTC isn't ;)
+2021-12-01 23:46:25	LibertyDillo	lol @ Mr. Dildo
+2021-12-01 23:46:44	LibertyDillo	Is that like Steely Dan?
+2021-12-01 23:47:17	@Plazma	haha
+2021-12-01 23:47:19	@Plazma	fuck steely dan
+2021-12-01 23:47:24	@Plazma	and the dave matthews band
+2021-12-01 23:48:37	 *	LibertyDillo likes the album Aja :)
+2021-12-01 23:49:05	<--	Guest664 (~savio@177.12.48.155) has quit (Quit: Leaving)
+2021-12-01 23:49:13	@Plazma	i forgot all this time LibertyDillo was a person
+2021-12-01 23:51:20	-->	lsrtl_ [lsrtl] (realname) (~lsrtl@user/lsrtl) has joined ##econometrics
+2021-12-01 23:53:39	<--	lsrtl (~lsrtl@user/lsrtl) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:54:32	LibertyDillo	the way I post articles, I can imagine people thinking I'm a bot
+2021-12-01 23:54:57	@Plazma	i do the same thing with memes on discord
+2021-12-01 23:55:30	@Plazma	because while it does not fill the void inside of me, it does help a small part of it feel whole, if only for a moment
+2021-12-02 00:00:18	-->	tomys_ (realname) (~tomys@c188-149-14-10.bredband.tele2.se) has joined ##econometrics
+2021-12-02 00:03:27	<--	kevin-oculus (~tomys@c188-149-14-10.bredband.tele2.se) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:24:30	-->	Codaraxis_ [Codaraxis] (realname) (~Codaraxis@user/codaraxis) has joined ##econometrics
+2021-12-02 00:28:26	<--	Codaraxis__ (~Codaraxis@user/codaraxis) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:37:17	<--	rickyrick (~rickyrick@d23-16-13-108.bchsia.telus.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:39:02	-->	rickyrick (rickyrick) (~rickyrick@d23-16-13-108.bchsia.telus.net) has joined ##econometrics
+2021-12-02 00:39:02	--	rickyrick has identified as rickyrick
+2021-12-02 00:42:07	<--	palasso (~palasso@user/palasso) has quit (Remote host closed the connection)
+2021-12-02 01:16:48	-->	db [db] (say my name) (uid18678@id-18678.helmsley.irccloud.com) has joined ##econometrics
+2021-12-02 02:10:03	-->	dude12312414 [dude12312414] (test) (~test@gateway/tor-sasl/dude12312414) has joined ##econometrics
+2021-12-02 02:11:23	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Remote host closed the connection)
+2021-12-02 02:56:59	<--	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:03:35	<--	ruzu (~ruzu@107-179-252-71.cpe.teksavvy.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:39:21	<--	lsrtl_ (~lsrtl@user/lsrtl) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:47:27	astroo-	bye people
+2021-12-02 03:49:14	<--	peetaur (~peter@204.237.2.79) has quit (Quit: Konversation terminated!)
+2021-12-02 03:49:47	<--	rickyrick (~rickyrick@d23-16-13-108.bchsia.telus.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:14:40	-->	rickyrick (rickyrick) (~rickyrick@S0106bc3e07341783.vf.shawcable.net) has joined ##econometrics
+2021-12-02 04:14:41	--	rickyrick has identified as rickyrick
+2021-12-02 04:29:01	<--	rickyrick (~rickyrick@S0106bc3e07341783.vf.shawcable.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:42:31	<--	FreeRangeDillo (~Kurt@2605:a601:ab5c:7100:5ab0:35ff:fef3:5f64) has quit (Quit: zzzzzzzzzzzzzzzzz)
+2021-12-02 04:44:31	<--	LibertyDillo (~Kurt@136.49.102.16) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:53:52	Brie	astroo-: Bye
+2021-12-02 05:19:16	<--	voltage_ (voltage@user/voltage) has quit (Quit: Leaving)
+2021-12-02 05:24:13	-->	Elzington_ [Elzington] (realname) (~Elzington@static-68-235-44-10.cust.tzulo.com) has joined ##econometrics
+2021-12-02 05:26:35	<--	Elzington (~Elzington@static-68-235-44-76.cust.tzulo.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:51:18	-->	rickyrick (rickyrick) (~rickyrick@d23-16-13-108.bchsia.telus.net) has joined ##econometrics
+2021-12-02 05:51:19	--	rickyrick has identified as rickyrick
+2021-12-02 06:26:09	-->	twomoon (Sean) (~twomoon@ip72-199-116-21.sd.sd.cox.net) has joined ##econometrics
+2021-12-02 06:26:09	--	twomoon has identified as twomoon
+2021-12-02 07:27:35	<--	tomys_ (~tomys@c188-149-14-10.bredband.tele2.se) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:29:24	<--	AbleBacon (~AbleBacon@user/AbleBacon) has quit (Read error: Connection reset by peer)
+2021-12-02 07:40:25	<--	audiobirb (~audio@user/audio) has quit (Ping timeout: 252 seconds)
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:58	-->	mrmanner (mrmanner@98.128.201.128) has joined ##econometrics
+2021-12-02 08:09:58	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-02 08:09:58	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-12-02 08:09:58	--	Channel ##econometrics: 85 nicks (4 ops, 2 voices, 79 normals)
+2021-12-02 08:01:29	noobly	is anyone here
+2021-12-02 08:02:51	skipper	yes noob ly sir
+2021-12-02 08:03:06	noobly	this is totally off topic, but my grandpa lived through the great depression and was telling me a crisis, which he won't live through, is on the horizon, snd he advised stocking up on seeds, preservable food, and land if i could afford it
+2021-12-02 08:03:35	noobly	now I know there's supply chain issues, but my gut tells famine is problem of the past
+2021-12-02 08:03:46	noobly	but this would also be historically inaccurate
+2021-12-02 08:04:17	skipper	okay
+2021-12-02 08:04:18	noobly	so, at what point do you actually allocate funds to longing calories and preservation?
+2021-12-02 08:04:51	skipper	not sure
+2021-12-02 08:05:07	noobly	has your certainty decreased in the last two years?
+2021-12-02 08:06:08	noobly	Is this a risk we may be facing in the next 2 years?
+2021-12-02 08:07:35	skipper	noobly: you asking anyone here advise to invest somewhere /something
+2021-12-02 08:08:11	noobly	skipper: yes, investing into personal food nd supplies for the purpose of self preservation
+2021-12-02 08:08:27	skipper	noobly: I wont do it
+2021-12-02 08:08:30	skipper	but you can try
+2021-12-02 08:09:32	noobly	I've never done it either, but I completely rely on national or globalized supply chains to feed me
+2021-12-02 08:09:59	noobly	Ive been under the impression that this risk is waning personally
+2021-12-02 08:10:02	skipper	Imagine the situation 
+2021-12-02 08:10:12	skipper	durinf famine if no one ot food except you
+2021-12-02 08:10:17	skipper	you will be in danger
+2021-12-02 08:10:32	skipper	people attac you for your food
+2021-12-02 08:10:39	noobly	correct
+2021-12-02 08:10:44	skipper	unless you live alone
+2021-12-02 08:10:58	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-12-02 08:11:11	skipper	and safe it is not wise to have them
+2021-12-02 08:11:27	noobly	but I'd rather be on the defense than the offense, and I'm wondering if the need to be defensive is growing or shrinking
+2021-12-02 08:11:33	skipper	but who really knows if it is wise or not untill one tries
+2021-12-02 08:13:03	noobly	That rational may lead you to investing into bomb-proof shelters and such that never realize their opportunity cost though
+2021-12-02 08:13:15	skipper	time to go
+2021-12-02 08:13:20	skipper	see you later
+2021-12-02 08:13:25	noobly	noooo
+2021-12-02 08:14:01	noobly	c ya thuogh
+2021-12-02 08:18:56	-->	Atque [Atque] (Atque) (~Atque@user/atque) has joined ##econometrics
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:15	-->	mrmanner (mrmanner@90.235.13.15) has joined ##econometrics
+2021-12-02 21:03:15	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-02 21:03:15	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-12-02 21:03:15	--	Channel ##econometrics: 95 nicks (4 ops, 2 voices, 89 normals)
+2021-12-02 08:57:14	Inge	noobly: during wwII my grandpa grew tobacco plants in the back yard - since tobacco was universally desired it was easy to trade for anything else. Not sure what equates to that today. But I do note that much higher energy prices has an impact on production of fertilizers which has a huge impact on crop yields ...
+2021-12-02 08:57:52	Inge	Most countries have really complex dependencies on international travel and imports of stuff we take for granted.
+2021-12-02 09:12:49	noobly	Inge: when does it become appropriate to allocate funds to food?
+2021-12-02 09:15:37	Inge	Heh. in Feb 2020 I was concerned about a possible disruption of supply chains, so I just bought a little more of dry and canned goods whenever I went to the store, so we had some buffer. But in reality it never got bad (except for a few days of toilet paper shortage, because people are stupid)
+2021-12-02 09:17:35	Inge	I guess you need to look at your threat model. Like having food for a few weeks would offset a short term disturbance - but most people won't be that prepared, so either supply lines get restored or chaos within a week or two ... and if society crumbles, just stocking up canned food is not going to cut it
+2021-12-02 09:17:40	nb-ben	if you're right about that one time out of 10, it's worth the 9 other times when you were wrong
+2021-12-02 09:18:10	Inge	like a nuclear bunker migh help you survive the initial fallout, but then what?
+2021-12-02 09:18:20	nb-ben	and if you buy canned food then you can eat over the year anyway
+2021-12-02 09:18:48	Inge	yeah I slowly whittled down the extra flour / rice / canned goods etc.. that I had stocked up on
+2021-12-02 09:18:57	nb-ben	Inge: do you play League of Legends?
+2021-12-02 09:19:32	Inge	no
+2021-12-02 09:19:43	nb-ben	Inge: in the first 4-5 minutes of the game, that's where you have the most agency, because everyone starts out at an equal level
+2021-12-02 09:19:58	Inge	I know starcraft better - but it is kind of similar I guess
+2021-12-02 09:20:09	nb-ben	Inge: if you do bad within that time-frame, then you're at a disadvantage for the rest of the game
+2021-12-02 09:20:43	nb-ben	Inge: but if you took the opportunity within these few minutes to get a lead, then you have more opportunity later to keep that lead
+2021-12-02 09:21:19	Inge	sure, if any kind of lead makes sense after surviving the initial event :D
+2021-12-02 09:21:22	nb-ben	Inge: just because you can't predict how things will go after the shortages doesn't mean that there isn't a significant importance to prepare for the thing you can prepare for
+2021-12-02 09:21:56	nb-ben	Inge: like, if you're really hungry and weak after a few weeks of shortages, whatever comes next will be a lot harder to deal with
+2021-12-02 09:22:04	Inge	oh absolutely
+2021-12-02 09:22:32	Inge	I see our govt wants all households to have self sufficiency for 3 days. Heh. not much compared to what e.g. many Americans prepare for
+2021-12-02 09:23:03	nb-ben	also I think investing into a bunker and everything depends on a person's situation
+2021-12-02 09:23:51	nb-ben	I mean, imagine that you have more than enough money to retire and do everything you want to do, maybe accumulating even more money doesn't make much sense to you than it does to build that underground bunker
+2021-12-02 09:24:10	Inge	prepper attitudes seem to often neglect the power of a community in common preparation. 
+2021-12-02 09:25:41	nb-ben	involving more brains in things increases the surface for failure and manipulation and such
+2021-12-02 09:26:17	nb-ben	you can always choose to share, but you can't unshare without consequences
+2021-12-02 11:09:31	Brie	;;nethash
+2021-12-02 11:09:33	+gribble	157781128.445
+2021-12-02 17:18:57	FreeRangeDillo	No $4,500 Electric Car For You! - https://www.ericpetersautos.com/2021/12/01/no-4500-electric-car-for-you/
+2021-12-02 17:18:59	+DrFockIt	FreeRangeDillo: ^ www.ericpetersautos.com: 'No $4,500 Electric Car For You! - EPautos - Libertarian Car Talk'
+2021-12-02 18:38:32	Brie	Maybe i put sauna on?
+2021-12-02 20:57:38	disperse1	*cr btc eth algo link
+2021-12-02 20:57:38	+DrFockIt	disperse1: Algorand: $1.91 (-3.3%) Bitcoin: $56716.70 (-1.3%) Ethereum: $4493.82 (-3.5%) Chainlink: $24.73 (-4.8%) (Δ24h)
+2021-12-02 21:04:25	--	irc: disconnected from server
+2021-12-02 21:04:44	-->	mrmanner (mrmanner@90.235.13.15) has joined ##econometrics
+2021-12-02 21:04:44	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-02 21:04:44	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-12-02 21:04:44	--	Channel ##econometrics: 95 nicks (4 ops, 2 voices, 89 normals)
+2021-12-02 21:05:26	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:26	-->	mrmanner (mrmanner@90.235.13.15) has joined ##econometrics
+2021-12-02 21:11:26	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-02 21:11:26	--	Topic set by OPK (~OPK@user/opk) on tis, 01 jun 2021 11:15:59
+2021-12-02 21:11:27	--	Channel ##econometrics: 95 nicks (4 ops, 2 voices, 89 normals)
+2021-12-02 21:11:57	--	Channel created on ons, 19 maj 2021 15:58:50
+2021-12-02 21:28:50	-->	mrmanner (mrmanner@90.235.13.15) has joined ##econometrics
+2021-12-02 21:28:50	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:44	-->	mrmanner (mrmanner@98.128.201.128) has joined ##econometrics
+2021-12-02 21:50:44	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-02 21:59:58	-->	twomoon (Sean) (~twomoon@ip72-199-116-21.sd.sd.cox.net) has joined ##econometrics
+2021-12-02 21:59:58	--	twomoon has identified as twomoon
+2021-12-02 22:00:05	-->	benin [benin] (benin) (~benin@183.82.179.164) has joined ##econometrics
+2021-12-02 22:01:49	-->	mallkrampus [mallkrampus] (realname) (~mallkramp@172.93.207.236) has joined ##econometrics
+2021-12-02 22:02:30	@Plazma	oh man my farts smell like sharts but it's dry, i'm so alone
+2021-12-02 22:02:34	@Plazma	rickyrick: plz halp
+2021-12-02 22:09:51	--	Malvolio has unidentified
+2021-12-02 22:09:51	<--	Malvolio (~Malvolio@user/malvolio) has quit (Killed (tantalum.libera.chat (Nickname regained by services)))
+2021-12-02 22:10:50	<--	benin (~benin@183.82.179.164) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-02 22:11:09	-->	benin [benin] (benin) (~benin@183.82.179.164) has joined ##econometrics
+2021-12-02 22:14:33	-->	Malvolio [Malvolio] (Malvolio) (~Malvolio@user/malvolio) has joined ##econometrics
+2021-12-02 22:53:37	-->	Iamthehuman1 [Iamthehuman] (jukeboksid) (~noname@user/iamthehuman) has joined ##econometrics
+2021-12-02 23:21:16	<--	benin (~benin@183.82.179.164) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-02 23:30:24	-->	benin [benin] (benin) (~benin@183.82.179.164) has joined ##econometrics
+2021-12-02 23:35:33	<--	benin (~benin@183.82.179.164) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-02 23:37:47	astroo-	hello people
+2021-12-02 23:48:23	-->	ruzu (realname) (~ruzu@107-179-252-71.cpe.teksavvy.com) has joined ##econometrics
+2021-12-03 00:01:56	--	spynxic has identified as spynxic
+2021-12-03 00:35:31	-->	Kaylah [Kaylah] ([https://web.libera.chat] Kaylah) (~Kaylah@ptr-eit6u3gpspvt6v7zo0k.18120a2.ip6.access.telenet.be) has joined ##econometrics
+2021-12-03 00:39:18	<--	palasso (~palasso@user/palasso) has quit (Remote host closed the connection)
+2021-12-03 00:40:36	--	NoImNotNineVolt has identified as NoImNotNineVolt
+2021-12-03 00:46:32	<--	Kaylah (~Kaylah@ptr-eit6u3gpspvt6v7zo0k.18120a2.ip6.access.telenet.be) has quit (Quit: Client closed)
+2021-12-03 01:16:41	<--	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has quit (Quit: WeeChat 3.3)
+2021-12-03 01:28:27	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Quit: THE RAM IS TOO DAMN HIGH)
+2021-12-03 01:36:31	db	*cr ada
+2021-12-03 01:36:32	+DrFockIt	db: Cardano: $1.70 (+10.0%) (Δ24h)
+2021-12-03 01:46:07	<--	audio (~audio@user/audio) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:21:16	--	irc: disconnected from server
+2021-12-03 12:21:31	-->	mrmanner (mrmanner@90.235.13.15) has joined ##econometrics
+2021-12-03 12:21:31	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-03 03:07:22	@Plazma	oy goyim
+2021-12-03 03:07:28	@Plazma	kabbalh
+2021-12-03 03:07:31	@Plazma	shallom
+2021-12-03 03:07:34	@Plazma	allah ackbare
+2021-12-03 03:51:07	astroo-	bye people
+2021-12-03 04:12:18	LibertyDillo	'Wolf of Wall Street' Jordan Belfort Warns About Investing in Dogecoin and Shiba Inu Cryptocurrencies - https://news.bitcoin.com/wolf-of-wall-street-jordan-belfort-warns-investing-in-dogecoin-shiba-inu-cryptocurrencies/
+2021-12-03 04:12:19	+DrFockIt	LibertyDillo: ^ news.bitcoin.com: ''Wolf of Wall Street' Jordan Belfort Warns About Investing in Dogecoin and Shiba Inu Cryptocurrencies – News Bitcoin News'
+2021-12-03 04:21:07	db	so glad we were warned
+2021-12-03 04:22:29	db	without reading the article, I wonder what he thinks about Bitcoin, and whether it is fundamentally different from DOGE and SHIB?
+2021-12-03 04:28:25	LibertyDillo	Have you seen the movie The Wolf Of Wall Street with Di Caprio?
+2021-12-03 04:28:40	LibertyDillo	Not sure I'd take his advice either ;)
+2021-12-03 04:38:58	db	yes, but it's a movie. 
+2021-12-03 04:39:20	LibertyDillo	true
+2021-12-03 04:40:08	LibertyDillo	perhaps a famous fraudster is giving good advice, who knows
+2021-12-03 04:49:34	db	I guess a scammer knows when he sees a scam, no?
+2021-12-03 05:19:11	@apotheon	I think that he probably just sees the same thing most mainstream Wall Street people see when they look at something like Dogecoin.
+2021-12-03 05:21:54	db	he's probably missing the "intrinsic value", although I for one don't really understand the relevance of the "intrinsic value" of, say, GME, or TSLA (is that company *really worth that much, intrinsically?*)
+2021-12-03 05:22:45	db	I mean does it even matter. people are throwing their money at it, that's what counts.
+2021-12-03 05:22:59	db	will it ever change?
+2021-12-03 05:49:24	OPK	Plazma -itus stop stinkin up da joint
+2021-12-03 05:50:15	OPK	bloody sold my cardano lastnight 10c short of the top bc i wanted to go to bed... stupid
+2021-12-03 05:50:25	db	*cr ada
+2021-12-03 05:50:26	+DrFockIt	db: Cardano: $1.68 (+9.6%) (Δ24h)
+2021-12-03 05:50:39	db	hi OPK how are you?
+2021-12-03 05:50:43	OPK	got up to 1.76
+2021-12-03 05:50:49	db	ok
+2021-12-03 05:50:53	OPK	yeh im ok mate, yourself?
+2021-12-03 05:51:32	OPK	need to make a quik run to the shops, brb
+2021-12-03 05:54:24	db	I'm fine thanks
+2021-12-03 06:36:17	OPK	ok, have coffee, ready to do some damage
+2021-12-03 06:40:22	OPK	db hook me up with a local girl so i can move to thailand :P
+2021-12-03 06:44:56	db	you don't need a local girl to move to thailand. and once you're here you can just use tinder.
+2021-12-03 06:45:15	skipper	tinder useful?
+2021-12-03 06:45:34	db	I met my wife on tinder 
+2021-12-03 06:45:45	db	"useful" err, well it works ;)
+2021-12-03 06:45:45	skipper	db: nice
+2021-12-03 07:59:45	OPK	bahhh yeh tinder works, has for me in the past but haven’t met the right woman yet
+2021-12-03 08:00:42	OPK	aussie women are like a hybrid, theyre not normal lol
+2021-12-03 08:02:11	OPK	*cr GSX
+2021-12-03 08:02:12	+DrFockIt	OPK: Gold Secured Currency: $0.0333 (-1.1%) (Δ24h)
+2021-12-03 08:02:49	OPK	*cr GXChain
+2021-12-03 08:02:49	+DrFockIt	OPK: 400: Invalid value for "symbol": "GXCHAIN"
+2021-12-03 08:04:08	OPK	that crap is up like 430%
+2021-12-03 08:12:46	disperse1	I'm not sure about this 'wolf of wall street' but IIRC he was warning about the 2008 crash early on too, but DYOR
+2021-12-03 08:13:08	disperse1	so the movie character on coke is a parody
+2021-12-03 08:15:15	dispersed	good tip about moving to thailand, too bad I found my gf in real life, didn't use tinder out of some kind of aversion towards the "format" so to speak
+2021-12-03 08:16:06	dispersed	and there is a somewhat negligible chance I would have even liked the person on tinder to be honest
+2021-12-03 08:16:12	dispersed	maybe if they wrote really well
+2021-12-03 08:16:44	dispersed	would be interesting to study whether people's actual matches would be on tinder, if someone could think of a study pan
+2021-12-03 08:16:47	dispersed	plan
+2021-12-03 08:17:03	dispersed	(she did use tinder but didn't find a good match there either)
+2021-12-03 08:19:18	db	yeah well I would usually go straight to "let's meet over a beer", and not chat much.
+2021-12-03 08:20:12	db	I met multiple alcoholics that way.
+2021-12-03 08:20:14	db	:D
+2021-12-03 08:49:42	dispersed	would be dangerous for me, those types (unstable etc.) see me as an easy victim
+2021-12-03 08:50:08	dispersed	because I'm not a white knight or whatever, but they think if you scratch the surface, you could find one
+2021-12-03 08:50:30	dispersed	and then just never stop mind fucking ever worse
+2021-12-03 08:53:42	dispersed	people's close, long-term relations tend to be over 90% positive etc., but online you have so many potentially bad ones you need to be conservative
+2021-12-03 08:54:08	dispersed	they should teach in schools that people are social predators
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:52	-->	mrmanner (mrmanner@90.235.13.15) has joined ##econometrics
+2021-12-03 12:22:52	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-03 12:37:35	<--	mallkrampus (~mallkramp@172.93.207.238) has quit (Ping timeout: 256 seconds)
+2021-12-03 12:59:07	<--	Iamthehuman1 (~noname@user/iamthehuman) has quit (Quit: Konversation terminated!)
+2021-12-03 13:00:04	-->	lsrtl_ [lsrtl] (realname) (~lsrtl@user/lsrtl) has joined ##econometrics
+2021-12-03 13:02:31	<--	lsrtl__ (~lsrtl@user/lsrtl) has quit (Ping timeout: 256 seconds)
+2021-12-03 13:03:05	-->	lsrtl__ [lsrtl] (realname) (~lsrtl@user/lsrtl) has joined ##econometrics
+2021-12-03 13:05:33	<--	lsrtl_ (~lsrtl@user/lsrtl) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:36	-->	mrmanner (mrmanner@98.128.201.128) has joined ##econometrics
+2021-12-03 20:17:36	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-03 14:34:37	@Plazma	https://newschannel20.com/news/nation-world/trans-collegiate-swimmer-breaks-womens-records-after-competing-as-male-for-three-seasons
+2021-12-03 14:34:39	+DrFockIt	Plazma: ^ newschannel20.com: 'Trans collegiate swimmer breaks women's records after competing as male for three seasons | WICS'
+2021-12-03 15:36:41	@Plazma	some truck fucking criminals here - https://allthatsinteresting.com/emily-grover
+2021-12-03 15:36:42	+DrFockIt	Plazma: ^ allthatsinteresting.com: 'Florida Teen Faces 16 Years For Allegedly Rigging Homecoming Election'
+2021-12-03 15:41:16	dude12312414	lol why does that warrant jail time
+2021-12-03 15:45:06	@Plazma	because laws you heathen
+2021-12-03 15:45:20	@Plazma	though i would guess becauset he hacking
+2021-12-03 15:54:25	dude12312414	yeah i guess the "hacking" must be what alarmed them. But it's such a silly "crime" i don't really see why anyone cares besides school officials
+2021-12-03 17:12:24	@Plazma	https://cdn.discordapp.com/attachments/511737830637174795/916152500078407730/mtEWGzLPPkbncHU82.mp4
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:45	-->	mrmanner (mrmanner@98.128.201.128) has joined ##econometrics
+2021-12-03 20:19:45	--	Topic for ##econometrics is "Welcome to  ##econometrics.. All aspects of Finance, Quant, Econometrics, Global Markets including Stock, Commodities and of course CryptoCurrency. https://en.wikipedia.org/wiki/Econometrics"
+2021-12-03 20:45:57	-->	rvalue [rvalue] (ZNC - https://znc.in) (~rvalue@user/rvalue) has joined ##econometrics

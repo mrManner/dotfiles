@@ -1,0 +1,1214 @@
+2021-10-13 00:29:28	-->	mrmanner (~jmanner@user/mrmanner) has joined #lobsters
+2021-10-13 00:29:28	--	Topic for #lobsters is "https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission."
+2021-10-13 00:29:28	--	Topic set by c355e3b (sid212298@lobsters/developer/c355e3b) on tis, 20 jul 2021 12:23:52
+2021-10-13 00:29:28	--	Channel #lobsters: 578 nicks (1 op, 1 voice, 576 normals)
+2021-10-13 00:29:29	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-13 00:31:51	+mockturtle	The problem with macros [lisp plt] (ianthehenry) https://lobste.rs/s/d0hogq
+2021-10-13 00:41:13	<--	tryless (~tryless@213.128.163.221) has quit (Ping timeout: 250 seconds)
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:03	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #lobsters
+2021-10-13 00:42:03	--	Topic for #lobsters is "https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission."
+2021-10-13 00:42:03	--	Topic set by c355e3b (sid212298@lobsters/developer/c355e3b) on tis, 20 jul 2021 12:23:52
+2021-10-13 00:42:03	--	Channel #lobsters: 577 nicks (1 op, 1 voice, 575 normals)
+2021-10-13 00:42:34	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-13 00:43:03	<--	pe (~p@user/pe) has left #lobsters
+2021-10-13 00:44:58	<--	tex (~super@user/dix) has quit (Ping timeout: 252 seconds)
+2021-10-13 00:45:01	<--	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 00:51:36	-->	martian67 (~martian67@user/martian67) has joined #lobsters
+2021-10-13 00:52:53	-->	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has joined #lobsters
+2021-10-13 01:00:06	-->	tryless (~tryless@213.128.163.221) has joined #lobsters
+2021-10-13 01:00:26	-->	analbleeding (6bbd1e16@67.205.143.82) has joined #lobsters
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:04:13	<--	mahmutov_ (~mahmutov@5.176.41.106) has quit (Ping timeout: 252 seconds)
+2021-10-13 01:07:16	<--	bauruine (~stefan@2001:8e0:146d:dead:1087:12c:7183:506e) has quit (Remote host closed the connection)
+2021-10-13 01:10:00	-->	dialtone_ (~dialtone@135-180-109-31.fiber.dynamic.sonic.net) has joined #lobsters
+2021-10-13 01:13:01	<--	dialtone (~dialtone@135-180-109-31.fiber.dynamic.sonic.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 01:13:52	<--	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 01:13:53	+mockturtle	The Fundamentals of Testing with Persistence Layers [databases dotnet testing] (matklad) https://lobste.rs/s/q7yaj4
+2021-10-13 01:15:09	-->	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has joined #lobsters
+2021-10-13 01:15:58	analbleeding	mockturtle: how are you?
+2021-10-13 01:18:22	-->	mestre (~mestre@191.177.175.57) has joined #lobsters
+2021-10-13 01:20:07	<--	tryless (~tryless@213.128.163.221) has quit (Ping timeout: 265 seconds)
+2021-10-13 01:25:22	<--	analbleeding (6bbd1e16@67.205.143.82) has left #lobsters (The Lounge - https://thelounge.chat)
+2021-10-13 01:29:41	-->	tryless (~tryless@213.128.163.221) has joined #lobsters
+2021-10-13 01:30:04	<--	tryless (~tryless@213.128.163.221) has quit (Read error: Connection reset by peer)
+2021-10-13 01:40:14	<--	mestre (~mestre@191.177.175.57) has quit (Quit: leaving)
+2021-10-13 01:40:28	-->	mestre (~mestre@191.177.175.57) has joined #lobsters
+2021-10-13 01:40:39	imode	interesting nick.
+2021-10-13 01:41:11	dvn	imode: actually the opposite
+2021-10-13 01:41:34	dimadima	:/
+2021-10-13 01:41:43	 *	dimadima passes the westcort
+2021-10-13 01:43:25	imode	dvn: lol.
+2021-10-13 01:44:39	<--	jjonah (~jjonah@p200300d5d7058900dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-10-13 01:53:33	<--	hexa- (~hexa-@juno.lossy.network) has quit (Quit: WeeChat 3.1)
+2021-10-13 01:54:18	<--	rbasak (~robie@ubuntu/member/rbasak) has quit (Ping timeout: 260 seconds)
+2021-10-13 01:54:56	-->	hexa- (~hexa-@juno.lossy.network) has joined #lobsters
+2021-10-13 02:06:54	-->	det (~det@23.96.202.209) has joined #lobsters
+2021-10-13 02:07:34	-->	rbasak (~robie@ubuntu/member/rbasak) has joined #lobsters
+2021-10-13 02:09:16	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 02:10:26	dsc_	I have an application where users may submit markdown content that will be rendered to markdown
+2021-10-13 02:10:37	dsc_	uhh, I mean, that will be rendered to HTML*
+2021-10-13 02:11:06	dsc_	any advice on libraries (Go/Python/Rust/Whatever) that can do this conversion in a safe manner (disable javascript stuff)
+2021-10-13 02:11:43	technomancy	if that's the only requirement you can use any language you want
+2021-10-13 02:12:09	technomancy	probably not forth
+2021-10-13 02:12:15	technomancy	but like basically anything else
+2021-10-13 02:12:27	<--	mestre (~mestre@191.177.175.57) has quit (Quit: leaving)
+2021-10-13 02:12:41	dsc_	ill narrow it down: I'm using Python :P
+2021-10-13 02:13:09	technomancy	never used python in my life so I'll shut up now
+2021-10-13 02:13:26	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 245 seconds)
+2021-10-13 02:14:00	dsc_	I was basically raised by a Python
+2021-10-13 02:14:17	technomancy	that must have been difficult for the python
+2021-10-13 02:14:30	technomancy	raising a child without having arms and legs
+2021-10-13 02:14:42	dsc_	meh, I'm low maintenance
+2021-10-13 02:14:52	dsc_	(except when I am searching for markdown converters)
+2021-10-13 02:15:37	dsc_	tell me, what is your language of choice
+2021-10-13 02:15:54	technomancy	I'm the lead developer of https://fennel-lang.org
+2021-10-13 02:15:55	+mockturtle	[ the Fennel programming language ] - fennel-lang.org
+2021-10-13 02:16:05	technomancy	you should totally use it for your next project![1]
+2021-10-13 02:16:22	technomancy	1 - provided your next project is a game for the upcoming Lisp Game Jam
+2021-10-13 02:16:39	ngoldbaum	https://python-markdown.github.io/ ?
+2021-10-13 02:16:39	+mockturtle	[ Python-Markdown — Python-Markdown 3.3.4 documentation ] - python-markdown.github.io
+2021-10-13 02:17:25	dsc_	this looks very scary technomancy
+2021-10-13 02:17:42	technomancy	but dsc_ you must not fear
+2021-10-13 02:17:46	technomancy	fear is the mind killer
+2021-10-13 02:18:04	kline	dsc_, pandoc?
+2021-10-13 02:18:12	ignaloidas	dsc_, sourcehut uses mistletoe and some html post-processing to make sure nothing gets out
+2021-10-13 02:18:16	ignaloidas	https://git.sr.ht/~sircmpwn/core.sr.ht/tree/master/item/srht/markdown.py
+2021-10-13 02:18:17	+mockturtle	[ ~sircmpwn/core.sr.ht: srht/markdown.py - sourcehut git ] - git.sr.ht
+2021-10-13 02:19:26	technomancy	oh yeah pandoc is what I used to make https://fennel-lang.org but I only use it at build time not at runtime
+2021-10-13 02:19:27	+mockturtle	[ the Fennel programming language ] - fennel-lang.org
+2021-10-13 02:24:03	<--	drocan (~drocan@user/drocan) has quit (Quit: ZNC 1.7.5+deb4 - https://znc.in)
+2021-10-13 02:24:07	-->	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has joined #lobsters
+2021-10-13 02:24:18	-->	drocan (~drocan@yigitsever.com) has joined #lobsters
+2021-10-13 02:26:25	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 02:26:37	-->	Chillfox (~chillfox@138.80.14.16) has joined #lobsters
+2021-10-13 02:27:32	<--	unmanbearpig (~unmanbear@user/unmanbearpig) has quit (Remote host closed the connection)
+2021-10-13 02:27:55	-->	unmanbearpig (~unmanbear@user/unmanbearpig) has joined #lobsters
+2021-10-13 02:31:07	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:34:54	<--	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 02:36:30	dsc_	ill try that sourcehut one first. Thanks!
+2021-10-13 02:44:43	-->	resistite|laptop (~resistite@86.106.121.160) has joined #lobsters
+2021-10-13 02:45:41	<--	ur5us (~ur5us@2406:e002:6c21:1b01:1d94:5568:cc90:9ee2) has quit (Ping timeout: 264 seconds)
+2021-10-13 02:46:21	<--	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has quit (Ping timeout: 245 seconds)
+2021-10-13 02:49:43	-->	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has joined #lobsters
+2021-10-13 02:49:58	-->	ur5us (~ur5us@2406:e002:6c21:1b01:ce4e:6cc3:39c7:6cf2) has joined #lobsters
+2021-10-13 02:57:50	-->	vaillancourtmax (~vaillanco@modemcable251.6-83-70.mc.videotron.ca) has joined #lobsters
+2021-10-13 02:58:16	-->	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has joined #lobsters
+2021-10-13 02:59:29	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 03:03:51	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 245 seconds)
+2021-10-13 03:06:37	-->	bpmedley (~bpmedley@2600:1700:e2c:8410:98c3:6174:8ff5:a406) has joined #lobsters
+2021-10-13 03:11:13	+mockturtle	Encoding Events for Neural Networks [games ai] (djsumdog) https://lobste.rs/s/1w1gbe
+2021-10-13 03:29:43	-->	z3t0 (~z3t0@146.71.14.98) has joined #lobsters
+2021-10-13 03:35:25	<--	fro (fro@humpty.dance) has quit (Quit: EPIC5-2.1.6[1981] - amnesiac : Are we there yet?)
+2021-10-13 04:15:22	+mockturtle	It's Ada Lovelace Day! Learn the Ada programming language in 2021 [devops programming osdev] (jaypatelani) https://lobste.rs/s/qjagtj
+2021-10-13 04:25:43	<--	resistite|laptop (~resistite@86.106.121.160) has quit (Ping timeout: 265 seconds)
+2021-10-13 04:25:43	<--	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 04:32:23	<--	voltage_ (voltage@user/voltage) has quit (Quit: Leaving)
+2021-10-13 04:40:54	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 04:44:05	<--	vaillancourtmax (~vaillanco@modemcable251.6-83-70.mc.videotron.ca) has quit (Ping timeout: 265 seconds)
+2021-10-13 04:45:19	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:56:59	+mockturtle	Circular Harmonics [math] (soulcutter) https://lobste.rs/s/81atrw
+2021-10-13 05:02:25	<--	dk86 (~deivislk@2804:14d:2ca1:1564:ddbf:3cd9:a9db:e6d5) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:02:55	<--	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:15:38	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 05:20:31	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 245 seconds)
+2021-10-13 05:26:01	+mockturtle	Interface ergonomics: automation isn't just about time saved [programming] (calvin) https://lobste.rs/s/ab8v1y
+2021-10-13 05:27:36	+mockturtle	Tiny ELF Files: Revisited in 2021 [assembly] (calvin) https://lobste.rs/s/x9xxe2
+2021-10-13 05:35:25	<--	harrigan (~harrigan@162.43.194.138) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:38:43	-->	harrigan (~harrigan@162.43.194.138) has joined #lobsters
+2021-10-13 05:45:49	<--	harrigan (~harrigan@162.43.194.138) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:50:10	-->	harrigan (~harrigan@135.129.248.8) has joined #lobsters
+2021-10-13 06:08:04	<--	drobilla (~user@104-195-158-248.cpe.teksavvy.com) has quit (Read error: Connection reset by peer)
+2021-10-13 06:14:15	-->	bontaq (~user@ool-45779fe5.dyn.optonline.net) has joined #lobsters
+2021-10-13 06:19:41	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 06:19:55	<--	af (~af@awalgarg.me) has quit (Ping timeout: 265 seconds)
+2021-10-13 06:24:52	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 252 seconds)
+2021-10-13 06:27:46	<--	ur5us (~ur5us@2406:e002:6c21:1b01:ce4e:6cc3:39c7:6cf2) has quit (Ping timeout: 260 seconds)
+2021-10-13 06:28:14	-->	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has joined #lobsters
+2021-10-13 06:38:04	<--	timj2 (~timj@user/timj) has quit (Ping timeout: 252 seconds)
+2021-10-13 06:38:19	rb	youtube broke
+2021-10-13 06:38:24	rb	the prophecy is true
+2021-10-13 06:38:49	rb	at least, the youtube frontpage right now shows the "skeletons" to me, not loading anything but those placeholders
+2021-10-13 06:38:54	rb	from 2 different IPs
+2021-10-13 06:39:07	<--	timj (~timj@user/timj) has quit (Ping timeout: 265 seconds)
+2021-10-13 06:39:07	<--	danderson (~dave@tailscale/danderson) has quit (Quit: WeeChat 3.3)
+2021-10-13 06:39:32	rb	https://downdetector.com/status/youtube/
+2021-10-13 06:39:56	-->	timj2 (~timj@user/timj) has joined #lobsters
+2021-10-13 06:39:59	dsc_	works fine here rb
+2021-10-13 06:40:04	rb	huh
+2021-10-13 06:40:24	-->	danderson (~dave@tailscale/danderson) has joined #lobsters
+2021-10-13 06:40:38	rb	what I get when I connect from US or Europe: https://i.imgur.com/9SkBLux.png
+2021-10-13 06:40:44	rb	let me try with a blink-based browser
+2021-10-13 06:41:23	rb	nope, still dead for me
+2021-10-13 06:42:03	dsc_	give me a YouTube ID and ill provide you the transcription
+2021-10-13 06:42:08	rb	heh
+2021-10-13 06:42:10	dsc_	:P
+2021-10-13 06:42:30	rb	anyways, the prophecy holds true
+2021-10-13 06:42:34	rb	Microsoft is next
+2021-10-13 06:42:48	rb	Facebook went down, then Amazon got hacked. Now a Google property broke
+2021-10-13 06:42:50	rb	MAN remain
+2021-10-13 06:43:40	companion_cube	hey stop it
+2021-10-13 06:43:40	dsc_	hack the planet!!
+2021-10-13 06:43:43	companion_cube	I'm watching netflix!
+2021-10-13 06:43:48	companion_cube	don't jinx it
+2021-10-13 06:44:37	rb	i'm watching locally saved mkv's and no amount of giant corpo going down will stop me
+2021-10-13 06:44:49	dsc_	+1
+2021-10-13 06:47:36	<--	loc (~loc@174-045-102-241.res.spectrum.com) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:48:07	-->	loc (~loc@174-045-102-241.res.spectrum.com) has joined #lobsters
+2021-10-13 06:50:40	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 06:52:54	companion_cube	rb: that's the technologist equivalent of preppers :p
+2021-10-13 06:53:01	rb	hoarders
+2021-10-13 06:53:22	rb	data hoarders even
+2021-10-13 06:53:23	companion_cube	it's like building a bunker and stuffing it with bean cans
+2021-10-13 06:53:26	<--	loc (~loc@174-045-102-241.res.spectrum.com) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:53:47	rb	*gestures to RAID array* here i've got every TV show that has been aired in the last decade
+2021-10-13 06:54:08	-->	timj (~timj@user/timj) has joined #lobsters
+2021-10-13 06:54:33	-->	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has joined #lobsters
+2021-10-13 06:55:06	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:57:06	imode	rb: if you have recordings of shit like cartoon network, toonami and nickelodeon I will PAY for that shit.
+2021-10-13 06:57:13	rb	sadly no
+2021-10-13 06:57:41	imode	old VHS recordings of those are worth their weight in gold.
+2021-10-13 06:58:40	imode	from like the late 90's to early 00's.
+2021-10-13 07:00:10	dsc_	companion_cube: i prep both food and data :P
+2021-10-13 07:03:03	-->	af (~af@awalgarg.me) has joined #lobsters
+2021-10-13 07:11:49	-->	vaginaldischarge (b9dc66f8@67.205.143.82) has joined #lobsters
+2021-10-13 07:14:39	-->	loc (~loc@174-045-102-241.res.spectrum.com) has joined #lobsters
+2021-10-13 07:14:52	-->	poww0wmus1c (~poww0wmus@gateway/tor-sasl/poww0wmus1c) has joined #lobsters
+2021-10-13 07:15:58	-->	Maple (uid10029@user/maple) has joined #lobsters
+2021-10-13 07:17:14	-->	Maple_ (~Maple@user/maple) has joined #lobsters
+2021-10-13 07:19:34	-->	EnchanterTim (~weechat@thestonedapes.com) has joined #lobsters
+2021-10-13 07:24:47	EnchanterTim	Hi
+2021-10-13 07:24:51	EnchanterTim	What's this community about?
+2021-10-13 07:25:36	vaginaldischarge	EnchanterTim: how are you?
+2021-10-13 07:26:45	<--	JordiGH (~jordi@user/jordigh) has quit (Ping timeout: 268 seconds)
+2021-10-13 07:31:34	<--	Maple_ (~Maple@user/maple) has quit (Quit: WeeChat 3.3)
+2021-10-13 07:33:55	dmc	🦞
+2021-10-13 07:37:36	<--	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has quit (Ping timeout: 245 seconds)
+2021-10-13 07:46:30	<--	chenghiz_ (uid349735@id-349735.ilkley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-13 07:49:44	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 07:52:00	rb	EnchanterTim: fun in computing of course
+2021-10-13 07:52:05	rb	(and occasional jaded whining)
+2021-10-13 07:53:59	+mockturtle	IoT Hacking and Rickrolling My High School District [security] (dailymorn) https://lobste.rs/s/fcvbfm
+2021-10-13 07:54:31	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:59:08	-->	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has joined #lobsters
+2021-10-13 08:00:54	-->	rhn_mk1 (~rhn@user/rhn) has joined #lobsters
+2021-10-13 08:03:38	-->	MerchantOfVenice (~patrick@user/merchantofvenice) has joined #lobsters
+2021-10-13 08:05:06	<--	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has quit (Ping timeout: 245 seconds)
+2021-10-13 08:06:04	<--	af (~af@awalgarg.me) has quit (Ping timeout: 252 seconds)
+2021-10-13 08:06:39	-->	atw (~user@dynamic-089-014-041-169.89.14.pool.telefonica.de) has joined #lobsters
+2021-10-13 08:07:11	-->	af (~af@awalgarg.me) has joined #lobsters
+2021-10-13 08:09:05	<--	poww0wmus1c (~poww0wmus@gateway/tor-sasl/poww0wmus1c) has quit (Quit: leaving)
+2021-10-13 08:12:35	-->	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has joined #lobsters
+2021-10-13 08:18:13	<--	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has quit (Ping timeout: 252 seconds)
+2021-10-13 08:34:10	-->	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has joined #lobsters
+2021-10-13 08:34:53	-->	tex (~super@user/dix) has joined #lobsters
+2021-10-13 08:39:48	<--	AviKav (~AviKav@pool-71-191-176-243.washdc.fios.verizon.net) has quit (Remote host closed the connection)
+2021-10-13 08:40:05	<--	reno (~reno@2600:1700:7aa1:d630:55c1:ebe4:9f83:d16c) has quit (Ping timeout: 260 seconds)
+2021-10-13 08:40:06	-->	AviKav (~AviKav@pool-71-191-176-243.washdc.fios.verizon.net) has joined #lobsters
+2021-10-13 08:40:57	<--	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has quit (Remote host closed the connection)
+2021-10-13 08:41:47	<--	vaginaldischarge (b9dc66f8@67.205.143.82) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-13 08:44:35	<--	samythemany (~samythema@gateway/tor-sasl/samythemany) has quit (Quit: Bridge terminating on SIGTERM)
+2021-10-13 08:44:35	<--	threenp1 (~threenp@gateway/tor-sasl/threenp) has quit (Quit: Bridge terminating on SIGTERM)
+2021-10-13 08:47:19	<--	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 08:48:19	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-13 21:22:52	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:22	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #lobsters
+2021-10-13 21:23:22	--	Topic for #lobsters is "https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission."
+2021-10-13 21:23:22	--	Topic set by c355e3b (sid212298@lobsters/developer/c355e3b) on tis, 20 jul 2021 12:23:52
+2021-10-13 21:23:23	--	Channel #lobsters: 582 nicks (1 op, 1 voice, 580 normals)
+2021-10-13 21:23:52	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-13 21:29:27	af	Is there a tl;dr for that "problem with macros" article
+2021-10-13 21:29:39	river	yeah the sjamaan comments
+2021-10-13 21:30:03	af	Is there a tl;dr for those? :P
+2021-10-13 21:30:13	river	scheme macros are good
+2021-10-13 21:30:16	af	cool
+2021-10-13 21:30:35	shapr	af: it's a realllly fun read
+2021-10-13 21:30:43	shapr	at least, if you like lots of motivation and narrative
+2021-10-13 21:32:11	shapr	and the comments add even more excitement
+2021-10-13 21:32:38	af	yea it seems fun
+2021-10-13 21:32:45	af	ah fuck it I'll read it
+2021-10-13 21:32:47	kline	what if you just want to know what the problem with macros is
+2021-10-13 21:32:58	af	kline: my man
+2021-10-13 21:33:10	river	there is no problem, blog author misunderstood
+2021-10-13 21:33:21	af	kline: oh by the way, I meant to ask, is there a libera server hosted in India?
+2021-10-13 21:33:22	kline	ok; clickbait
+2021-10-13 21:33:28	kline	af, why?
+2021-10-13 21:33:36	af	kline: just curious
+2021-10-13 21:33:39	af	I live there :P
+2021-10-13 21:33:39	river	yall really are busy
+2021-10-13 21:34:17	kline	no, theres no indian server
+2021-10-13 21:34:26	-->	anon16_ (~anon16_@user/anon16) has joined #lobsters
+2021-10-13 21:34:33	shapr	kline: problem is lack of documentation according to the post
+2021-10-13 21:34:45	af	if I donate my teensy ARM vps would you take it and put one up
+2021-10-13 21:34:59	kline	no
+2021-10-13 21:35:05	af	sad
+2021-10-13 21:35:15	kline	teensy arm vps wont survive, sadly
+2021-10-13 21:35:48	af	how big does a server need to be
+2021-10-13 21:36:43	kline	mostly the issue is going to be your tiny vps provider deciding the network abuse our servers receive and the subsequent impact on your neighbours isnt worth keeping your $2/mo instance around for
+2021-10-13 21:37:06	shapr	true that
+2021-10-13 21:37:22	af	what if I told you my vps provider is fucking Oracle
+2021-10-13 21:37:38	river	fuck!
+2021-10-13 21:37:42	shapr	I can see IRC user count going down, but EFNet and all those others were not fun when the ircwarriors were active
+2021-10-13 21:40:04	kline	af, our minimum requirements are 2 core, 4GB ram, 20GB disk, be able to burst network nicely (who doesnt have 1Gbit though) but importantly your provider needs to be able to swallow 100G floods and not decide your account is a net-loss and terminate your contract
+2021-10-13 21:40:29	kline	if you want it to be an ircd, i think it needs to be a modern 64 bit x86 processor for some of the speedup intrinsics we use
+2021-10-13 21:41:38	<--	river (~river@tilde.team/user/river) has quit (Quit: Leaving)
+2021-10-13 21:41:58	kline	AVX2 i think it is
+2021-10-13 21:42:16	af	kline: woah, while I certainly can't do that and hardly expected much while asking, those are fairly modest requirements compared to what I imagined it must be like
+2021-10-13 21:42:35	<--	rogersm (~rogersm@90.166.177.48) has quit (Quit: Leaving...)
+2021-10-13 21:43:05	af	that's like a small laptop somewhere in an ISPs rack
+2021-10-13 21:43:10	kline	for bystanders, we dont expect your server to stay on while getting flooded, we just dont want your account terminated because your provider says you're not worth the impact to their rack
+2021-10-13 21:43:22	kline	yeah, my phone is more powerful
+2021-10-13 21:43:25	<--	anon16_ (~anon16_@user/anon16) has quit (Quit: Quit)
+2021-10-13 21:44:05	kline	requirements are modest because irc is simple, the equivalent matrix server for us would be prohibitively expensive
+2021-10-13 21:46:38	af	okay I read half way through the post and it looks wrong
+2021-10-13 21:46:58	af	like day-3-at-lisp-camp wrong
+2021-10-13 21:47:10	shapr	I never got to day two :-(
+2021-10-13 21:47:18	--	fkr_ is now known as fkr
+2021-10-13 21:47:27	af	that's a nice nick
+2021-10-13 21:49:37	-->	graudre (~graudre@2607:fea8:560:7f20:200e:dd94:3958:8f38) has joined #lobsters
+2021-10-13 21:51:34	rb	HHMMMm
+2021-10-13 21:52:39	af	> This got me thinking a lot about lisp macros, and about this problem of scoping
+2021-10-13 21:52:39	af	"problem"
+2021-10-13 21:52:45	af	this post is pure nostalgia I swear
+2021-10-13 21:53:44	rb	i have come to like dynamic scoping in restricted applications
+2021-10-13 21:53:51	-->	atw` (~user@dynamic-089-014-041-169.89.14.pool.telefonica.de) has joined #lobsters
+2021-10-13 21:54:08	technomancy	af: to be fair the author does repeatedly emphasize they are new to the topic and have no idea what they're talking about
+2021-10-13 21:54:19	af	technomancy: Oh I'm not complaining at all
+2021-10-13 21:54:23	af	I'm glad they wrote this
+2021-10-13 21:55:06	<--	atw (~user@dynamic-089-014-041-169.89.14.pool.telefonica.de) has quit (Ping timeout: 245 seconds)
+2021-10-13 21:56:34	riv	scope is everything
+2021-10-13 21:56:42	af	well said
+2021-10-13 21:57:58	<--	wowi4242 (~wowi42@5.30.23.58) has quit (Quit: WeeChat 3.2)
+2021-10-13 22:12:11	af	man that was actually a rollercoaster
+2021-10-13 22:12:13	af	nice
+2021-10-13 22:12:52	<--	thardin (~thardin@h-79-136-39-105.A258.priv.bahnhof.se) has quit (Read error: Connection reset by peer)
+2021-10-13 22:13:04	af	I think I've been through similar right-wrong-right-wrong phases with several concepts in software development language agnostically
+2021-10-13 22:13:32	af	(un)fortunately I'm too lazy to write such blogposts
+2021-10-13 22:14:22	technomancy	it's all over the place but I enjoyed it
+2021-10-13 22:15:25	af	does anyone remember how css-in-js or html-in-js used to be a crime at one point?
+2021-10-13 22:15:30	-->	YellowSuB (~YellowSuB@user/yellowsub) has joined #lobsters
+2021-10-13 22:15:37	riv	we should go back to that being a crime
+2021-10-16 12:32:07	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:33	-->	mrmanner (~jmanner@185.224.57.161) has joined #lobsters
+2021-10-16 12:32:33	--	Topic for #lobsters is "https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission."
+2021-10-16 12:32:33	--	Topic set by c355e3b (sid212298@lobsters/developer/c355e3b) on tis, 20 jul 2021 12:23:52
+2021-10-16 12:32:33	--	Channel #lobsters: 573 nicks (1 op, 0 voices, 572 normals)
+2021-10-16 12:33:06	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-16 12:34:50	<--	mahmutov_ (~mahmutov@176.30.248.35) has quit (Ping timeout: 268 seconds)
+2021-10-16 12:42:11	<--	reno (~reno@2600:1700:7aa1:d630:6125:27ac:f323:e7db) has quit (Ping timeout: 245 seconds)
+2021-10-16 12:56:43	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-16 13:02:00	-->	jjonah (~jjonah@p200300d5d7058900dea632fffeb3342f.dip0.t-ipconnect.de) has joined #lobsters
+2021-10-16 13:07:41	-->	gthm (~gthm@ip-213-127-57-210.ip.prioritytelecom.net) has joined #lobsters
+2021-10-16 13:19:14	<--	river (~river@tilde.team/user/river) has quit (Quit: Leaving)
+2021-10-16 13:22:54	-->	cdown (~cdown@163.114.131.1) has joined #lobsters
+2021-10-17 18:14:39	-->	jmanner (~jmanner@185.224.57.161) has joined #lobsters
+2021-10-17 18:14:39	--	Topic for #lobsters is "https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission."
+2021-10-17 18:14:39	--	Topic set by c355e3b (sid212298@lobsters/developer/c355e3b) on tis, 20 jul 2021 12:23:52
+2021-10-17 18:14:39	--	Channel #lobsters: 575 nicks (1 op, 1 voice, 573 normals)
+2021-10-17 18:15:09	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-17 18:19:03	-->	jmanner (~jmanner@user/mrmanner) has joined #lobsters
+2021-10-17 18:19:03	--	Topic for #lobsters is "https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission."
+2021-10-17 18:19:03	--	Topic set by c355e3b (sid212298@lobsters/developer/c355e3b) on tis, 20 jul 2021 12:23:52
+2021-10-17 18:19:03	--	Channel #lobsters: 575 nicks (1 op, 1 voice, 573 normals)
+2021-10-17 18:19:34	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-17 18:30:39	-->	jmanner (~jmanner@user/mrmanner) has joined #lobsters
+2021-10-17 18:30:39	--	Topic for #lobsters is "https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission."
+2021-10-17 18:30:39	--	Topic set by c355e3b (sid212298@lobsters/developer/c355e3b) on tis, 20 jul 2021 12:23:52
+2021-10-17 18:30:39	--	Channel #lobsters: 574 nicks (1 op, 1 voice, 572 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:40	-->	pyrorock (~Dont@46.136.247.98) has joined #lobsters
+2021-10-17 18:31:06	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-17 18:34:58	+mockturtle	Optimization without Inlining [c++ performance] (raymii) https://lobste.rs/s/hcodzl
+2021-10-17 18:38:28	<--	voltage_ (voltage@user/voltage) has quit (Quit: Leaving)
+2021-10-17 18:39:49	<--	pyrorock (~Dont@46.136.247.98) has quit (Read error: Connection reset by peer)
+2021-10-17 18:41:50	-->	pyrorock (~Dont@46.136.247.98) has joined #lobsters
+2021-10-17 18:48:07	<--	sliced (~sliced@PC-91-201-17-116.tvk-net.pl) has quit (Ping timeout: 252 seconds)
+2021-10-17 18:48:44	+mockturtle	Scene at MIT: Margaret Hamilton’s Apollo code [historical] (susam) https://lobste.rs/s/iz8woh
+2021-10-17 18:49:08	-->	dk86 (~deivislk@2804:14d:2ca1:1564:ca9b:f8d9:593b:9e69) has joined #lobsters
+2021-10-17 18:50:14	+mockturtle	Scene at MIT: Margaret Hamilton’s Apollo code (2016) [historical] (susam) https://lobste.rs/s/hpuzbn
+2021-10-17 18:50:14	<--	pyrorock (~Dont@46.136.247.98) has quit (Read error: Connection reset by peer)
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:44	-->	mrmanner (~jmanner@user/mrmanner) has joined #lobsters
+2021-10-17 19:45:44	--	Topic for #lobsters is "https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission."
+2021-10-17 19:45:44	--	Topic set by c355e3b (sid212298@lobsters/developer/c355e3b) on tis, 20 jul 2021 12:23:52
+2021-10-17 19:45:44	--	Channel #lobsters: 577 nicks (1 op, 1 voice, 575 normals)
+2021-10-17 19:45:51	-->	CaryHartline (~CaryHartl@2603-8080-6a0e-8d88-d584-6e57-f98b-0941.res6.spectrum.com) has joined #lobsters
+2021-10-17 19:46:10	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-17 19:46:52	<--	CaryHartline (~CaryHartl@2603-8080-6a0e-8d88-d584-6e57-f98b-0941.res6.spectrum.com) has quit (Client Quit)
+2021-10-17 19:56:16	-->	douglascorrea_io (~douglasco@200.146.85.128.static.gvt.net.br) has joined #lobsters
+2021-10-17 20:00:14	-->	CaryHartline (~CaryHartl@2603-8080-6a0e-8d88-d584-6e57-f98b-0941.res6.spectrum.com) has joined #lobsters
+2021-10-17 20:16:45	-->	Ilyu (~quassel@166.215.82.79.rev.sfr.net) has joined #lobsters
+2021-10-17 20:17:26	<--	pyrorock (~Dont@46.136.247.98) has quit (Read error: Connection reset by peer)
+2021-10-17 20:20:35	-->	pyrorock (~Dont@46.136.247.98) has joined #lobsters
+2021-10-17 20:27:24	<--	pja (~pja@217.155.153.10) has quit (Read error: Connection reset by peer)
+2021-10-17 20:27:44	<--	pyrorock (~Dont@46.136.247.98) has quit (Read error: Connection reset by peer)
+2021-10-17 20:27:50	+mockturtle	A short overview of DNS [networking] (calvin) https://lobste.rs/s/8lgrpg
+2021-10-17 20:29:56	-->	pyrorock (~Dont@46.136.247.98) has joined #lobsters
+2021-10-17 20:31:30	-->	blindguard (~blindguar@2a02:908:1864:c200::2612) has joined #lobsters
+2021-10-17 20:33:42	-->	Alleria (~textual@user/alleria) has joined #lobsters
+2021-10-17 20:35:58	<--	river (~river@tilde.team/user/river) has quit (Quit: Leaving)
+2021-10-17 20:36:53	-->	pja (~pja@217.155.153.10) has joined #lobsters
+2021-10-17 20:38:30	amirouche	v.v.v
+2021-10-17 20:38:31	+mockturtle	(v)_00_(v)
+2021-10-17 20:44:04	-->	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has joined #lobsters
+2021-10-17 20:46:44	-->	southclaws (~quassel@212.82.81.237) has joined #lobsters
+2021-10-17 20:48:15	+mockturtle	Learn to create Ethereum Tokens (ERC20) with Python [python] (rasulkireev) https://lobste.rs/s/xievoc
+2021-10-17 20:52:00	<--	southclaws (~quassel@212.82.81.237) has quit (Ping timeout: 260 seconds)
+2021-10-17 20:59:27	imode	self-promo and crypto? damn.
+2021-10-17 21:03:39	phytyca	just need rust and we got a hat trick
+2021-10-17 21:05:32	<--	pja (~pja@217.155.153.10) has quit (Read error: Connection reset by peer)
+2021-10-17 21:05:38	-->	pja_ (~pja@2a02:8010:6098:0:e65f:1ff:fe1f:660f) has joined #lobsters
+2021-10-17 21:11:57	+mockturtle	include-what-you-use - A tool for use with clang to analyze #includes in C and C++ source files [c c++ performance] (snej) https://lobste.rs/s/72s5ky
+2021-10-17 21:12:32	-->	spacebyte (~spacebyte@a94-132-168-30.cpe.netcabo.pt) has joined #lobsters
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #lobsters
+2021-10-30 12:09:24	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-10-30 12:09:24	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-10-30 12:09:25	--	Channel #lobsters: 580 nicks (1 op, 1 voice, 578 normals)
+2021-10-30 12:09:56	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #lobsters
+2021-10-30 12:10:54	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-10-30 12:10:54	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-10-30 12:10:54	--	Channel #lobsters: 580 nicks (1 op, 1 voice, 578 normals)
+2021-10-30 12:11:27	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:16:45	-->	blindguard (~blindguar@2a02:908:1864:c200::2612) has joined #lobsters
+2021-10-30 12:17:38	-->	noxim (~noxim@user/noxim) has joined #lobsters
+2021-10-30 12:25:34	<--	bontaq (~user@ool-45779fe5.dyn.optonline.net) has quit (Remote host closed the connection)
+2021-10-30 12:27:46	<--	noxim (~noxim@user/noxim) has quit (Quit: Client closed)
+2021-10-30 12:35:27	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #lobsters
+2021-10-30 12:35:46	-->	andrhua (~andrhua@31.134.187.8) has joined #lobsters
+2021-10-30 12:39:54	-->	poww0wmus1c (~poww0wmus@gateway/tor-sasl/poww0wmus1c) has joined #lobsters
+2021-10-30 12:40:01	-->	awalvie (~opus@user/awalvie) has joined #lobsters
+2021-10-30 12:54:01	<--	Ilyu (~quassel@166.215.82.79.rev.sfr.net) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:09:41	<--	awalvie (~opus@user/awalvie) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:17:49	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has joined #lobsters
+2021-10-30 13:19:26	-->	awalvie (~opus@user/awalvie) has joined #lobsters
+2021-10-30 13:20:45	<--	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:22:00	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has joined #lobsters
+2021-10-30 13:25:17	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:31:01	-->	pnoud (~pnoud@user/pnoud) has joined #lobsters
+2021-10-30 13:35:33	<--	pnoud (~pnoud@user/pnoud) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:39:02	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has joined #lobsters
+2021-10-30 13:41:43	<--	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:45:20	-->	jjonah (~jjonah@p200300d5d7058900dea632fffeb3342f.dip0.t-ipconnect.de) has joined #lobsters
+2021-10-30 13:45:23	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:d418:453f:8e01:9edf) has joined #lobsters
+2021-10-30 13:48:05	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has quit (Ping timeout: 246 seconds)
+2021-10-30 13:48:31	<--	bauruine (~stefan@2001:8e0:146d:dead:8df4:fcd0:c9ca:51c0) has quit (Remote host closed the connection)
+2021-10-30 13:48:41	<--	andrhua (~andrhua@31.134.187.8) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:53:26	-->	kogepan (~kogepan@user/kogepan) has joined #lobsters
+2021-10-30 13:53:51	<--	poww0wmus1c (~poww0wmus@gateway/tor-sasl/poww0wmus1c) has quit (Ping timeout: 276 seconds)
+2021-10-30 13:54:09	-->	poww0wmus1c (~poww0wmus@gateway/tor-sasl/poww0wmus1c) has joined #lobsters
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:35	-->	mrmanner (~jmanner@user/mrmanner) has joined #lobsters
+2021-10-30 17:07:35	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-10-30 17:07:35	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-10-30 17:07:36	--	Channel #lobsters: 584 nicks (1 op, 1 voice, 582 normals)
+2021-10-30 17:08:06	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-30 17:09:00	-->	varjag (~user@2a02:2121:283:4033:c018:db4:ccfd:fea5) has joined #lobsters
+2021-10-30 17:09:06	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #lobsters
+2021-10-30 17:11:46	<--	zer0bitz_ (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 252 seconds)
+2021-10-30 17:17:23	<--	JordiGH (~jordi@user/jordigh) has quit (Ping timeout: 246 seconds)
+2021-10-30 17:21:07	<--	blahblah441 (~blahblah4@86.106.143.37) has quit (Quit: byeeeee)
+2021-10-30 17:21:29	-->	blahblah441 (~blahblah4@86.106.143.37) has joined #lobsters
+2021-10-30 17:21:46	<--	gwozniak (~user@dslc74.ody.ca) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:22:24	-->	JordiGH (~jordi@user/jordigh) has joined #lobsters
+2021-10-30 17:22:31	pushcx	...how am I supposed to debug anything if stackoverflow is down.
+2021-10-30 17:23:41	+mockturtle	Avendish: Declarative, non-intrusive, compile-time C++ reflection [api art c++] (jcelerier) https://lobste.rs/s/dtl4p7
+2021-10-30 17:24:01	c355E3B	pushcx: by hoarding your .bash_history
+2021-10-30 17:24:38	pushcx	funny you should mention it, I am debugging nonsense that's split between my .bashrc, .bash_profile, .profile, and .xprofile
+2021-10-30 17:26:59	pushcx	I wonder how much time would've been saved worldwide if .bashrc and .bash_profile had been named something like .bash_any and .bash_interactive.
+2021-10-30 17:27:57	c355E3B	oh fun
+2021-10-30 17:29:01	c355E3B	I am currently trying to write automation to pave over the fact that concourse builds are slow and inflexable
+2021-10-30 17:29:07	c355E3B	it is not going well
+2021-10-30 17:31:07	pushcx	What's concourse?
+2021-10-30 17:31:29	c355E3B	https://concourse-ci.org/
+2021-10-30 17:31:29	+mockturtle	[ Concourse CI ] - concourse-ci.org
+2021-10-30 17:32:06	-->	pnoud (~pnoud@user/pnoud) has joined #lobsters
+2021-10-30 17:35:29	riv	hmmm
+2021-10-30 17:35:33	riv	its been like 3 hours
+2021-10-30 17:35:39	riv	and i have made very little progress with vscode
+2021-10-30 17:35:55	dimadima	there should be a .ci tld
+2021-10-30 17:35:58	pushcx	Setting up vscode, or progress on a project using vscode?
+2021-10-30 17:36:12	pushcx	dimadima: there is https://en.wikipedia.org/wiki/.ci
+2021-10-30 17:36:13	+mockturtle	[ .ci - Wikipedia ] - en.wikipedia.org
+2021-10-30 17:36:34	c355E3B	Cote dIvore iirc
+2021-10-30 17:36:45	c355E3B	(I realize I don't have the accents right, I'm very bad a french)
+2021-10-30 17:36:46	<--	pnoud (~pnoud@user/pnoud) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:36:58	dimadima	well, then
+2021-10-30 17:37:54	pushcx	One of the nerdier things I did was add all the country code TLDs to this Anki deck: https://ankiweb.net/shared/info/2109889812  It is not super-practical, but it is really satisfying to always recognize country codes.
+2021-10-30 17:37:54	+mockturtle	[ Ultimate Geography v5.0 - AnkiWeb ] - ankiweb.net
+2021-10-30 17:38:49	dimadima	they must be protective of their TLD then
+2021-10-30 17:39:36	dimadima	nice anki
+2021-10-30 17:43:37	vito	concourse's domain used to be concourse.ci but the registrar lost the ownership one day so we bailed
+2021-10-30 17:43:52	-->	nocarb (~nocarb@2001:8f8:1125:97dc::1000) has joined #lobsters
+2021-10-30 17:46:45	pushcx	I fear that for 'lobste.rs', the Republic of Serbia being kind of a politically active place for the last century. I have lobsters.dev as a backup but it would be quite a blow to lose our domain.
+2021-10-30 17:47:44	mouseghost	there goes all rust toolchain
+2021-10-30 17:51:12	 *	ngoldbaum searches for an archduke to take care of
+2021-10-30 17:51:29	-->	chenghiz_ (uid349735@id-349735.ilkley.irccloud.com) has joined #lobsters
+2021-10-30 17:53:36	Church	c355E3B: So I too am having to read an email rfc today
+2021-10-30 17:53:40	Church	I don't like this
+2021-10-30 17:58:55	-->	nmeum (~nmeum@barium.8pit.net) has joined #lobsters
+2021-10-30 17:59:27	--	gerard_ is now known as gerard
+2021-10-30 18:00:54	technomancy	822 or 2822?
+2021-10-30 18:01:42	dimadima	RFCs are meant to be broken
+2021-10-30 18:02:42	kline	just comments innit
+2021-10-30 18:03:00	kline	basically a web forum for internet protocol roleplay
+2021-10-30 22:21:17	--	irc: disconnected from server
+2021-10-30 22:21:48	-->	mrmanner (~jmanner@user/mrmanner) has joined #lobsters
+2021-10-30 22:21:48	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-10-30 22:21:48	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-10-30 22:21:48	--	Channel #lobsters: 585 nicks (1 op, 1 voice, 583 normals)
+2021-10-30 22:22:15	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-10-30 22:22:49	onicosta[m]	> like, really, every new programmer doesn't understand blackslashes?
+2021-10-30 22:22:49	onicosta[m]	blackslash is going to be my next username
+2021-10-30 22:26:35	iDrougge	My neighbouring team is trying to make another team understand that if you write \\n, you will get \n on the screen.
+2021-10-30 22:27:48	riv	how is that going?
+2021-10-30 22:32:10	<--	pythagoreanist (~delta@fat.pig.sg) has quit (Remote host closed the connection)
+2021-12-01 23:20:53	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #lobsters
+2021-12-01 23:20:53	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-12-01 23:20:53	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-01 23:20:53	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-12-01 23:20:54	--	Channel #lobsters: 601 nicks (1 op, 1 voice, 599 normals)
+2021-12-01 23:21:37	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-12-01 23:21:56	--	Mode #lobsters [+cntz]
+2021-12-01 23:21:56	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #lobsters
+2021-12-01 23:23:07	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-12-01 23:23:07	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-01 23:23:07	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-12-01 23:23:07	--	Channel #lobsters: 601 nicks (1 op, 1 voice, 599 normals)
+2021-12-01 23:23:15	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-12-01 23:23:48	--	Mode #lobsters [+cntz]
+2021-12-01 23:23:48	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-12-01 23:26:47	<--	hub (~hub@user/hub) has quit (Quit: WeeChat 2.8)
+2021-12-01 23:30:33	<--	Alleria (~textual@user/alleria) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-01 23:33:59	<--	varjag (~user@ti0040a400-5479.bb.online.no) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:37:48	<--	aminestriker (~Guest50@ip72-197-160-217.sd.sd.cox.net) has quit (Quit: Client closed)
+2021-12-01 23:38:26	<--	dvn (~dvn@bnc.janky.solutions) has quit (Excess Flood)
+2021-12-01 23:40:27	-->	dvn [dvn] (dvn) (~dvn@bnc.janky.solutions) has joined #lobsters
+2021-12-01 23:51:26	<--	raj (uid72176@user/raj) has quit (Quit: Connection closed for inactivity)
+2021-12-01 23:52:10	<--	MerchantOfVenice (~patrick@user/merchantofvenice) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:52:10	<--	mahmutov (~mahmutov@5.176.7.214) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:01:48	-->	spacebyte [spacebyte] (realname) (~spacebyte@a94-132-168-30.cpe.netcabo.pt) has joined #lobsters
+2021-12-02 00:05:16	<--	seschwar (~seschwar@user/seschwar) has quit (Quit: :wq)
+2021-12-02 00:06:37	<--	blindguard (~blindguar@2a02:908:1864:c200::12) has quit (Quit: Konversation terminated!)
+2021-12-02 00:09:59	-->	rickybob [rickybob] (rick) (rickybob@gateway/vpn/protonvpn/rickybob) has joined #lobsters
+2021-12-02 00:15:21	<--	rhn (~rhn@user/rhn) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:19:41	<--	kogepan (~kogepan@user/kogepan) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:23:22	-->	jjonah (jjonah) (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has joined #lobsters
+2021-12-02 00:25:39	<--	w1ntermute (~w1ntermut@dslb-002-201-217-078.002.201.pools.vodafone-ip.de) has quit (Quit: Konversation terminated!)
+2021-12-02 00:35:28	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-02 00:36:13	<--	mestre (~mestre@191.177.175.57) has quit (Quit: Lost terminal)
+2021-12-02 00:37:09	<--	poww0wmus1c (~poww0wmus@gateway/tor-sasl/poww0wmus1c) has quit (Quit: leaving)
+2021-12-02 00:38:15	-->	Vyrus (Fullname) (~Username@208-122-122-82.t3com.net) has joined #lobsters
+2021-12-02 00:42:42	<--	Vyrus (~Username@208-122-122-82.t3com.net) has left #lobsters (Closing Window)
+2021-12-02 00:49:56	<--	spacebyte (~spacebyte@a94-132-168-30.cpe.netcabo.pt) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:51:36	<--	sam_ (~sam@gentoo/developer/sam) has quit (Ping timeout: 245 seconds)
+2021-12-02 00:54:04	-->	lowfi (realname) (~lowfi@159.196.17.52) has joined #lobsters
+2021-12-02 00:54:05	--	lowfi has identified as lowfi
+2021-12-02 00:54:04	<--	lowfi (~lowfi@159.196.17.52) has quit (Changing host)
+2021-12-02 00:54:04	-->	lowfi [lowfi] (realname) (~lowfi@user/lowfi) has joined #lobsters
+2021-12-02 00:54:46	<--	Seirdy (~Seirdy@sourcehut/user/seirdy) has quit (Quit: exiting 3.3)
+2021-12-02 00:55:17	-->	Seirdy [Seirdy] (Seirdy) (~Seirdy@sourcehut/user/seirdy) has joined #lobsters
+2021-12-02 00:56:19	<--	zer0bitz (~zer0bitz@dsl-hkibng32-54fbfb-173.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-12-02 00:58:21	<--	supersandro2000 (~supersand@i5C756CE4.versanet.de) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-02 01:00:30	-->	sam_ [sam_] (sam <sam AT cmpct.info> (0x1F3D03348DB1A3E2)) (~sam@gentoo/developer/sam) has joined #lobsters
+2021-12-02 01:16:17	-->	paulpr0 (Paul) (~paul@185.86.10.6) has joined #lobsters
+2021-12-02 01:20:47	-->	drobilla [drobilla] (unknown) (~user@104-195-158-248.cpe.teksavvy.com) has joined #lobsters
+2021-12-02 01:21:38	-->	rhn [rhn] (rhn) (~rhn@user/rhn) has joined #lobsters
+2021-12-02 01:44:22	<--	smoking_gnu47 (~smoking_g@50-203-38-10-static.hfc.comcastbusiness.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:44:55	--	paulpr0 has identified as paulpr0
+2021-12-02 01:51:16	+mockturtle	Making a Minimal sRGB ICC Profile Part 1: Trim the Fat; Abuse the Spec - PhotoSauce Blog [graphics] (premysl) https://lobste.rs/s/kzmqno
+2021-12-02 01:53:33	<--	tex (~super@user/dix) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:54:39	<--	paulpr0 (~paul@185.86.10.6) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:00:22	+mockturtle	What Makes sRGB a Special Color Space? - PhotoSauce Blog [graphics] (premysl) https://lobste.rs/s/36zac5
+2021-12-02 02:02:23	kline	bruh thats colour theory, not computing
+2021-12-02 02:03:09	imode	grafix
+2021-12-02 02:03:32	pe	And that's why I hate posting in places where you have to tag.
+2021-12-02 02:03:51	pe	There's always some kline.
+2021-12-02 02:04:14	-->	zzznilzzz (Will) (~zzznilzzz@160.19.4.85) has joined #lobsters
+2021-12-02 02:04:23	kline	imode, i thought graphics was like shaders, etc
+2021-12-02 02:04:30	kline	not literally "this is how a colour space works"
+2021-12-02 02:04:45	imode	I mean, this article is "how do we deal with color on computers".
+2021-12-02 02:04:47	kline	it mentions some integer sizes but only i think because ultimately its quantised
+2021-12-02 02:04:53	imode	not computer-agnostic color theory.
+2021-12-02 02:07:13	pe	It keeps getting worse https://github.com/saucecontrol/compact-icc-profiles#display-p3
+2021-12-02 02:07:14	+mockturtle	[ GitHub - saucecontrol/Compact-ICC-Profiles: Minimal ICC Profiles intended for embedding in image files ] - github.com
+2021-12-02 02:07:17	pe	Just let me die.
+2021-12-02 02:10:42	-->	MerchantOfVenice [MerchantOfVenice] (Patrick) (~patrick@user/merchantofvenice) has joined #lobsters
+2021-12-02 02:13:16	-->	rashkov [rashkov] (rashkov) (uid168508@id-168508.lymington.irccloud.com) has joined #lobsters
+2021-12-02 02:15:45	-->	smoking_gnu47 (Moist Von Lipwig) (~smoking_g@c-71-205-186-218.hsd1.co.comcast.net) has joined #lobsters
+2021-12-02 02:19:14	pe	I wonder if there's a convenient blacklist of wannabe sRGB ICC profiles.
+2021-12-02 02:21:30	pe	So awful https://ninedegreesbelow.com/photography/linux-icc-profiles.html
+2021-12-02 02:21:32	+mockturtle	[ Survey of Free/libre RGB working space profiles ] - ninedegreesbelow.com
+2021-12-02 02:24:13	-->	martian67 [martian67] (martian67) (~martian67@user/martian67) has joined #lobsters
+2021-12-02 02:24:31	-->	jmw [jmw] (Textual User) (~jmw@user/jmw) has joined #lobsters
+2021-12-02 02:24:55	pe	Entirely new dimensions of depression over software.
+2021-12-02 02:25:03	<--	martian67| (~martian67@user/martian67) has quit (Remote host closed the connection)
+2021-12-02 02:28:34	<--	smoking_gnu47 (~smoking_g@c-71-205-186-218.hsd1.co.comcast.net) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-02 02:28:54	-->	smoking_gnu47 (Moist Von Lipwig) (~smoking_g@c-71-205-186-218.hsd1.co.comcast.net) has joined #lobsters
+2021-12-02 02:30:06	<--	zzznilzzz (~zzznilzzz@160.19.4.85) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-02 02:30:46	-->	symgryph (Thomas) (~symgryph@68-93-137-145.lightspeed.rlghnc.sbcglobal.net) has joined #lobsters
+2021-12-02 02:31:06	<--	symgryph (~symgryph@68-93-137-145.lightspeed.rlghnc.sbcglobal.net) has quit (Remote host closed the connection)
+2021-12-02 02:35:06	-->	cturtle [cturtle] (yourname) (~cturtle@136.36.54.211) has joined #lobsters
+2021-12-02 02:43:26	<--	cdown (~cdown@163.114.131.1) has quit (Quit: https://chrisdown.name)
+2021-12-02 02:43:40	-->	cdown [cdown] (Chris Down <https://chrisdown.name>) (~cdown@163.114.131.1) has joined #lobsters
+2021-12-02 02:56:29	<--	timj (~timj@user/timj) has quit (Quit: Leaving.)
+2021-12-02 02:56:59	<--	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:00:34	<--	BSaboia (~bsaboia@177.37.198.35) has quit (Quit: This computer has gone to sleep)
+2021-12-02 03:01:01	<--	smoking_gnu47 (~smoking_g@c-71-205-186-218.hsd1.co.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:06:47	<--	kn100 (~kn100@wireguard/tunneler/kn100) has quit (Quit: https://kn100.me :))
+2021-12-02 03:07:22	-->	kn100 [kn100] (kn100) (~kn100@wireguard/tunneler/kn100) has joined #lobsters
+2021-12-02 03:14:14	<--	kn100 (~kn100@wireguard/tunneler/kn100) has quit (Quit: https://kn100.me :))
+2021-12-02 03:14:35	-->	kn100 [kn100] (kn100) (~kn100@wireguard/tunneler/kn100) has joined #lobsters
+2021-12-02 03:16:35	pe	It's almost winter, right. Lots of time to read.
+2021-12-02 03:33:17	<--	rhn (~rhn@user/rhn) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:37:07	+mockturtle	UNIX Wars – The Battle for Standards [unix historical] (dasm) https://lobste.rs/s/skzljo
+2021-12-02 03:46:29	<--	cturtle (~cturtle@136.36.54.211) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:51:00	-->	cturtle [cturtle] (yourname) (~cturtle@136.36.54.211) has joined #lobsters
+2021-12-02 03:52:42	-->	smoking_gnu47 (Moist Von Lipwig) (~smoking_g@c-71-205-186-218.hsd1.co.comcast.net) has joined #lobsters
+2021-12-02 03:55:50	<--	rickybob (rickybob@gateway/vpn/protonvpn/rickybob) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:57:17	+mockturtle	Yamaha DX7 reverse-engineering, part III: Inside the log-sine ROM [hardware reversing historical] (calvin) https://lobste.rs/s/9wwt7v
+2021-12-02 03:58:50	-->	mhw0 [mhw0] (mhw0) (~mhw0@gateway/tor-sasl/mhw0) has joined #lobsters
+2021-12-02 04:05:13	<--	cturtle (~cturtle@136.36.54.211) has quit (Quit: cturtle)
+2021-12-02 04:05:27	-->	solocshaw [solocshaw] (solocshaw) (~Thunderbi@gateway/vpn/pia/solocshaw) has joined #lobsters
+2021-12-02 04:15:38	<--	xkuru (~xkuru@user/xkuru) has quit (Read error: Connection reset by peer)
+2021-12-02 04:17:39	-->	xkuru [xkuru] (realname) (~xkuru@user/xkuru) has joined #lobsters
+2021-12-02 04:19:00	<--	xkuru (~xkuru@user/xkuru) has quit (Read error: Connection reset by peer)
+2021-12-02 04:25:26	<--	strugee (~strugee@strugee.net) has quit (Quit: ZNC - http://znc.in)
+2021-12-02 04:32:17	-->	strugee [strugee] (AJ Jordan) (~strugee@strugee.net) has joined #lobsters
+2021-12-02 04:33:00	<--	rashkov (uid168508@id-168508.lymington.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-02 04:46:15	<--	smoking_gnu47 (~smoking_g@c-71-205-186-218.hsd1.co.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:54:09	-->	ejones (Unknown) (~jones@167.88.120.129) has joined #lobsters
+2021-12-02 05:00:28	<--	JordiGH (~jordi@user/jordigh) has quit (Ping timeout: 268 seconds)
+2021-12-02 05:07:19	<--	mhw0 (~mhw0@gateway/tor-sasl/mhw0) has quit (Remote host closed the connection)
+2021-12-02 05:07:39	-->	mhw0 [mhw0] (mhw0) (~mhw0@gateway/tor-sasl/mhw0) has joined #lobsters
+2021-12-02 05:11:14	--	MelMalik is now known as AmyMalik
+2021-12-02 05:13:30	-->	raj [raj] (raj) (uid72176@user/raj) has joined #lobsters
+2021-12-02 05:19:16	<--	voltage_ (voltage@user/voltage) has quit (Quit: Leaving)
+2021-12-02 05:55:49	-->	cturtle [cturtle] (yourname) (~cturtle@136.36.54.211) has joined #lobsters
+2021-12-02 05:57:16	<--	cturtle (~cturtle@136.36.54.211) has quit (Client Quit)
+2021-12-02 06:06:28	<--	doug (~doug@mish.horph.com) has quit (Ping timeout: 268 seconds)
+2021-12-02 06:07:05	<--	HappyMan (~HappyMan@user/happyman) has quit (Quit: HappyMan)
+2021-12-02 06:09:42	-->	rickybob [rickybob] (rick) (rickybob@gateway/vpn/protonvpn/rickybob) has joined #lobsters
+2021-12-02 06:09:47	-->	HappyMan [HappyMan] (HappyMan) (~HappyMan@user/happyman) has joined #lobsters
+2021-12-02 06:14:37	<--	rickybob (rickybob@gateway/vpn/protonvpn/rickybob) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:18:17	<--	hedy (hedy@tilde.team) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:21:17	<--	kaivai (~kaivai@user/kaivai) has quit (Quit: ZNC - https://znc.in)
+2021-12-02 06:22:04	-->	doug [ddoug] (doug) (~doug@mish.horph.com) has joined #lobsters
+2021-12-02 06:22:19	<--	strugee (~strugee@strugee.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:22:40	-->	strugee_ [strugee] (AJ Jordan) (~strugee@strugee.net) has joined #lobsters
+2021-12-02 06:22:51	-->	kaivai [kaivai] (ZNC - https://znc.in) (~kaivai@user/kaivai) has joined #lobsters
+2021-12-02 06:25:17	<--	rany (~rany@user/rany) has quit (Remote host closed the connection)
+2021-12-02 06:25:30	-->	rany [rany] (rany) (~rany@user/rany) has joined #lobsters
+2021-12-02 06:35:27	-->	Gerry_ [Gerry] (gerry) (~gerry@fosdem/staff/gerry) has joined #lobsters
+2021-12-02 06:36:11	<--	Gerry (~gerry@fosdem/staff/gerry) has quit (Read error: Connection reset by peer)
+2021-12-02 06:39:22	<--	jmw (~jmw@user/jmw) has quit (Quit: jmw)
+2021-12-02 06:42:57	<--	timj2 (~timj@user/timj) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:42:57	--	beto has identified as beto
+2021-12-02 06:42:57	<--	beto (~beto@104.238.138.27) has quit (Changing host)
+2021-12-02 06:42:57	-->	beto [beto] (Beto) (~beto@user/beto) has joined #lobsters
+2021-12-02 06:44:27	-->	timj2 [timj] (Tim Janik) (~timj@user/timj) has joined #lobsters
+2021-12-02 06:45:34	-->	g0d0h0 (john) (~doe@184-75-138-166.resi.cgocable.ca) has joined #lobsters
+2021-12-02 06:46:04	g0d0h0	hi
+2021-12-02 06:47:14	g0d0h0	weird link.. a guy used a 400$ scanner to scan his body for radio frequencies and found bio technology in a human being https://www.youtube.com/watch?v=E1ZqRhe4lZE
+2021-12-02 06:47:16	+mockturtle	[ Radio fréquences stable et ciblées dans un être humain / Stable & precise radio frequencies in human ] - www.youtube.com
+2021-12-02 06:47:24	g0d0h0	oups sorry wrong chan
+2021-12-02 06:49:14	<--	g0d0h0 (~doe@184-75-138-166.resi.cgocable.ca) has left #lobsters
+2021-12-02 06:50:49	-->	hedy (hedy) (hedy@tilde.team) has joined #lobsters
+2021-12-02 06:55:34	rb	lolwtf
+2021-12-02 06:58:49	<--	lazr (~lazr@45.76.248.123) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:59:55	-->	dlew^ (...) (~dlew@68.101.58.90) has joined #lobsters
+2021-12-02 07:16:18	martian67	uh huh'
+2021-12-02 07:21:03	gerikson	lolwut
+2021-12-02 07:24:17	<--	asterism (~leodavinc@59.91.76.100) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:24:22	-->	leodavinci (...) (~leodavinc@59.98.230.254) has joined #lobsters
+2021-12-02 07:24:23	--	leodavinci has identified as leodavinci
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:57	-->	mrmanner (mrmanner@98.128.201.128) has joined #lobsters
+2021-12-02 08:09:57	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-02 08:09:57	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-12-02 08:09:57	--	Channel #lobsters: 583 nicks (1 op, 1 voice, 581 normals)
+2021-12-02 08:10:01	+mockturtle	Getting BTP resource GUIDs with the btp CLI – part 2 – JSON and jq | SAP Blogs [programming] (qmacro) https://lobste.rs/s/7iskgr
+2021-12-02 08:10:46	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-12-02 08:20:32	-->	sliced (Unknown) (~sliced@pc-91-201-17-116.tvk-net.pl) has joined #lobsters
+2021-12-02 08:26:48	-->	varjag (Eugene) (~user@ti0040a400-5479.bb.online.no) has joined #lobsters
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:13	-->	mrmanner (mrmanner@90.235.13.15) has joined #lobsters
+2021-12-02 21:03:13	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-02 21:03:13	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-12-02 21:03:13	--	Channel #lobsters: 598 nicks (1 op, 1 voice, 596 normals)
+2021-12-02 08:35:11	ols	g0d0h0 what was the right channel for that because I want to be there lol
+2021-12-02 08:37:25	wink	lol
+2021-12-02 08:52:48	+mockturtle	Programing languages characterised by their attitude towards pointers [plt] (Moonchild) https://lobste.rs/s/d9oygj
+2021-12-02 09:32:58	rb	python, perl etc. don't worry about it
+2021-12-02 09:39:14	pe	I have a hard time looking at those languages and not seeing C.
+2021-12-02 09:40:21	pe	Or whatever implementation language lies beneath.
+2021-12-02 09:41:08	pe	Maybe it's just the deformation of having worked in the sausage factory.
+2021-12-02 09:42:39	pe	> The longest word in Danish that is also valid base64 is “undervisningsdifferentiering”.
+2021-12-02 09:42:41	pe	The more you know.
+2021-12-02 10:09:27	+mockturtle	Endianness, API Design, and Polymorphism in Rust [rust] (freddyb) https://lobste.rs/s/y2oy6z
+2021-12-02 10:15:40	varjag	it's a compound word so this is only a conjecture!
+2021-12-02 10:23:31	gerikson	don't know enough danish but you can proabbly fit in something like "responsible
+2021-12-02 10:23:44	gerikson	undervisningsdifferentieringsansvarig
+2021-12-02 10:25:44	wink	I bet German wins, you only need the longest word without [äöüß]
+2021-12-02 10:29:16	jjuran	Needs to be a multiple of four characters, also
+2021-12-02 10:52:05	epilys	ηλεκτροεγκεφαλογραφήματος
+2021-12-02 10:52:09	epilys	αλληλοεξουδετερωνόμασταν
+2021-12-02 10:53:13	epilys	I bet these are not valid base64
+2021-12-02 10:54:39	martian67	i wonder about recursive base64
+2021-12-02 10:55:01	epilys	https://chaos.social/system/cache/media_attachments/files/107/374/173/404/432/895/original/63988ab5ccbe7495.jpeg
+2021-12-02 10:55:09	epilys	I wonder about this
+2021-12-02 10:55:29	martian67	whats the longest chain of meaningful statements that can be recursed
+2021-12-02 11:32:55	gthm	epilys: re img: thanks I hate it
+2021-12-02 11:35:49	pe	Pure evil.
+2021-12-02 11:47:08	pe	I have the same webcam.
+2021-12-02 11:47:13	pe	It gives me an Apple notch.
+2021-12-02 11:47:45	pe	Just about covers my i3 bar.
+2021-12-02 11:48:45	epilys	file it down
+2021-12-02 11:51:48	pe	I alse have the new notched MBP, it makes my experience consistent. :^)
+2021-12-02 11:52:58	pe	*also
+2021-12-02 11:56:35	mhw0	pe: have you found a better PDF viewer ?
+2021-12-02 11:58:48	pe	mhw0: solving it would probably require a major time investment in rewriting the "compositor" of some PDF engine.
+2021-12-02 12:08:33	+mockturtle	Avy can do anything [emacs] (ane) https://lobste.rs/s/kqq604
+2021-12-02 12:36:29	+mockturtle	Qt Creator 6 released [c++] (raymii) https://lobste.rs/s/jdq4bf
+2021-12-02 12:53:30	Arsen	very neat
+2021-12-02 13:54:43	+mockturtle	Impossible Silences [culture] (unhammer) https://lobste.rs/s/zqjlnp
+2021-12-02 13:55:03	pe	I hope they haven't created new bugs in Qt Creator.
+2021-12-02 13:55:18	pe	It's been annoying to wait for fixes this last major.
+2021-12-02 13:55:43	pe	*It was
+2021-12-02 13:56:38	pe	epilys: ideal for tracking stock prices https://www.bugemos.com/?q=node/435
+2021-12-02 13:56:40	+mockturtle	[ Plošně rozšiřitelný | Buridanův geneticky modifikovaný osel ] - www.bugemos.com
+2021-12-02 13:57:00	epilys	pe,  hahaha
+2021-12-02 13:57:19	amazigh	hey v.v.v
+2021-12-02 13:57:20	epilys	mirror it and ideal for tracking rising temperatures
+2021-12-02 13:57:22	amazigh	oops!
+2021-12-02 13:57:56	amazigh	With git, do you know if it is doable to clone a repository as bare, then checkout from the same bare repo mulitple trees?
+2021-12-02 13:59:02	pe	You can clone from the bare, but working trees... maybe.
+2021-12-02 13:59:53	pe	It's not obvious to me what you want to achieve.
+2021-12-02 14:00:14	amazigh	basically what fossil does, let me explain
+2021-12-02 14:01:27	amazigh	I want to deduplicate git history, so that I can git checkout /path/to/BARE-REPO COMMIT ./INSIDE/WORK-DIRECTORY-ONE/
+2021-12-02 14:01:54	amazigh	hence avoid to have multiple times the same repo, while still having access to multiple branches
+2021-12-02 14:02:38	pe	You want to deduplicate the object tree.
+2021-12-02 14:02:46	amazigh	The repository I deal with, is large ~2G, if any time I need to checkout another tree, git clone the whole thing, it becomes unweavy
+2021-12-02 14:02:48	rbasak	Maybe "git worktree" is that you want?
+2021-12-02 14:03:30	rbasak	It's also possible to clone locally without needing to copy everything by referring to the clone.
+2021-12-02 14:03:33	rbasak	(like a symlink)
+2021-12-02 14:03:40	gthm	I'd look into git worktree
+2021-12-02 14:03:51	rbasak	git clone --reference
+2021-12-02 14:04:04	gthm	or if you want very slow read-only checkouts, you could use this terrible FUSE things I wrote once
+2021-12-02 14:04:10	rbasak	So you could make a local "master" clone, and then use git clone --reference against it for all the others, and you'd only be storing the repo once.
+2021-12-02 14:04:38	 *	amazigh looking at git worktree
+2021-12-02 14:05:24	rbasak	Even if you don't use --reference, I think by default hardlinks are used for a local clone, so that doesn't use duplicate space either.
+2021-12-02 14:09:53	rb	ooh worktree
+2021-12-02 14:09:57	rb	i should use that more
+2021-12-02 14:10:08	rb	i need to commit some fixes into the main branch while still working on a design overhaul
+2021-12-02 14:12:48	varjag	looking at this new rust embedded os thing and not hating it tbh
+2021-12-02 14:25:54	amazigh	ty all git worktree is what I need :)
+2021-12-02 14:28:47	pe	My development style is a bunch of WIP commits on master and pushing finished middle commits after rebasing. At least all the WIPs are forced to build fine. :^)
+2021-12-02 14:31:50	amazigh	so do i
+2021-12-02 14:32:00	amazigh	except when master is stable
+2021-12-02 14:32:15	amazigh	then i rely on a feature branch, but that is rare on my own projects
+2021-12-02 14:32:20	+mockturtle	Compose Multiplatform 1.0 is going live! | The Kotlin Blog [release] (dayanruben) https://lobste.rs/s/vbqyop
+2021-12-02 14:42:39	epilys	git commit --fixup=...
+2021-12-02 14:42:47	epilys	and then git rebase --autosquash
+2021-12-02 14:48:50	gthm	I wrote some scripts a while back to try to lean into the gitlab merge request workflow some parts of work want to do using git worktree
+2021-12-02 14:49:55	gthm	the idea was to have a dir with the various master/trunk/main branches checked out, with git hooks to prevent me from committing changes to them, and a cronjob that pulled them regularly so I could have local code search
+2021-12-02 14:50:19	gthm	and then scripts that were wrappers around git-worktree to create and checkout local dev branches in another dir
+2021-12-02 14:50:46	gthm	so I could "see" all the local things I had going on my looking in that directory and wouldn't forget about stuff in progress as easily
+2021-12-02 14:51:18	gthm	it worked fine, but then lockdowns and stuff happened I honestly I haven't recovered from any of that
+2021-12-02 14:51:31	gthm	s/I/and I/
+2021-12-02 14:51:48	gthm	eh you get it
+2021-12-02 15:13:07	+mockturtle	Cocoa Culture [mac culture audio historical objectivec transcript] (calvin) https://lobste.rs/s/0subb0
+2021-12-02 15:57:15	+mockturtle	FerretDB: A truly Open Source MongoDB alternative [go databases] (palash25) https://lobste.rs/s/illi2p
+2021-12-02 15:59:30	+mockturtle	Essential Truths Everyone Should Know about Performance in a Large Managed Codebase (2013) [video dotnet performance] (dbremner) https://lobste.rs/s/ywkro1
+2021-12-02 16:15:46	Teckla	VSQ (Vitamin String Quartet) was #1 for me again this year, according to Spotify.
+2021-12-02 16:15:49	Teckla	Anyone else have Spotify, with some Spotify Wrapped results?
+2021-12-02 16:25:17	wink	I used it for 8h, so no.
+2021-12-02 16:25:35	wink	I have an account which I sometimes use to pre-listen to an album before buying the CD
+2021-12-02 16:25:50	wink	something that could also be done on youtube
+2021-12-02 16:26:06	+mockturtle	Encryption Does Not Equal Invisibility – Detecting Anomalous TLS Certificates with the Half-Space-Trees Algorithm [cryptography] (calvin) https://lobste.rs/s/i7oqvb
+2021-12-02 16:28:24	dvn	f*ck Spotify™
+2021-12-02 16:51:12	amazigh	Is it possible with posix to know where the current process' associate program is localed?
+2021-12-02 16:51:24	amazigh	s/localed/located/
+2021-12-02 16:52:19	amazigh	in the filesystem without relying on PATH.
+2021-12-02 16:52:35	amazigh	say an user install my program at  /opt/awesome/bin/frob
+2021-12-02 16:52:46	amazigh	then somewhere they do /opt/awesome/bin/frob
+2021-12-02 16:53:12	amazigh	how does the frob process knows it is in /opt/awesome/bin/
+2021-12-02 16:53:30	amazigh	given it is not necessarly in PATH
+2021-12-02 16:55:36	varjag	doubt it
+2021-12-02 16:55:37	amazigh	I am too lazy
+2021-12-02 16:55:38	+mockturtle	Announcing Rust 1.57.0 [rust] (itamarst) https://lobste.rs/s/vjyhls
+2021-12-02 16:55:41	amazigh	https://stackoverflow.com/a/606057/140837
+2021-12-02 16:55:42	+mockturtle	[ How do I get the path of a process in Unix / Linux ] - stackoverflow.com
+2021-12-02 16:56:38	varjag	yeah procfs is the easiest but it's not portable
+2021-12-02 16:57:12	amazigh	there is /proc/self/exe
+2021-12-02 16:57:27	varjag	this is procfs
+2021-12-02 16:57:33	varjag	as said, not portable
+2021-12-02 16:57:37	amazigh	that seems to give a portable solution : https://stackoverflow.com/a/625523/140837
+2021-12-02 16:57:38	+mockturtle	[ How do I get the path of a process in Unix / Linux ] - stackoverflow.com
+2021-12-02 16:58:16	varjag	well you asked for posix and the solution ain't posix :)
+2021-12-02 16:59:36	amazigh	even the last link?
+2021-12-02 16:59:44	amazigh	what would be the posix way?
+2021-12-02 16:59:47	varjag	there's a bunch of historical unixes where this won't even compile, too
+2021-12-02 17:00:22	varjag	getcwd() is this side of millennium
+2021-12-02 17:01:09	varjag	there is no posix way
+2021-12-02 17:01:33	varjag	at least none am aware of
+2021-12-02 17:02:49	amazigh	the side of millenium?
+2021-12-02 17:03:13	c355E3B	iirc the only thing close is the contract on argv
+2021-12-02 17:03:28	c355E3B	but that means you can do shit like symlinks
+2021-12-02 17:03:45	varjag	there's no guarantee you'll have full path in argv
+2021-12-02 17:04:23	c355E3B	hence saying close
+2021-12-02 17:05:59	varjag	right
+2021-12-02 17:12:03	+mockturtle	The big idea around unikernels [devops culture] (eyberg) https://lobste.rs/s/dsek0y
+2021-12-02 17:16:17	amazigh	\o/
+2021-12-02 17:17:10	amazigh	i will try argv too
+2021-12-02 17:22:04	+mockturtle	Result builders in Swift [swift] (napkindrawing) https://lobste.rs/s/mjuftc
+2021-12-02 17:22:14	raj	hi
+2021-12-02 17:31:48	feoh	technomancy: You know I was thinking about our discussion yesterday around programming languages and the environments they present to the user at development time. Specifically around your excellent points about Racket and SLIME for LISP-like langs, and I wonder - do you think being so tightly coupled to a particular environment hurts adoption for
+2021-12-02 17:31:48	feoh	these languages?
+2021-12-02 17:52:06	technomancy	feoh: well it certainly did for smalltalk
+2021-12-02 17:52:25	technomancy	but I think for Racket and CL there are plenty of other more important factors overshadowing that one
+2021-12-02 17:53:18	amazigh	i like the idea of unikernels
+2021-12-02 17:53:27	amazigh	it sounds so... fast!1
+2021-12-02 17:53:36	+mockturtle	Jumping the air gap: 15 years of nation-state effort [pdf security] (lattera) https://lobste.rs/s/waahpl
+2021-12-02 17:58:00	companion_cube	technomancy: do you think clojure is the lisp that got the closest to widespread adoption?
+2021-12-02 17:59:47	technomancy	companion_cube: I guess there's a couple ways to frame it. if you're talking about Industry then yeah definitely; if you're talking about "helped the most people accomplish their computing goals" then no, I'd say elisp.
+2021-12-02 18:00:00	companion_cube	heh
+2021-12-02 18:00:07	companion_cube	elisp is forced on people though
+2021-12-02 18:00:21	technomancy	uhhh
+2021-12-02 18:00:22	companion_cube	if emacs offered a choice between elisp and scheme, I don't imagine anyone would pick elisp
+2021-12-02 18:00:39	companion_cube	or *gasp* if emacs had config in javascript :D
+2021-12-02 18:00:42	technomancy	sure but if you don't like it you can pick another editor with a different language; it's not like JS which has a monopoly
+2021-12-02 18:02:13	technomancy	all that means is that people don't pick elisp on the strength of the language but the strength of the runtime, which is also true of Clojure for many people
+2021-12-02 18:05:26	rb	just write a lua compatibility layer in elisp
+2021-12-02 18:05:33	rb	if neovim can do it so can you
+2021-12-02 18:05:38	technomancy	someone did build an emacs fork that can be configured in JS btw, but they mostly got laughed out of town
+2021-12-02 18:06:11	rb	you mean emacs-ng?
+2021-12-02 18:06:17	technomancy	yeah
+2021-12-02 18:06:37	rb	seems like it's still pretty active idk
+2021-12-02 18:06:44	rb	it's definitely more niche though
+2021-12-02 18:07:26	technomancy	well, they're definitely not looking to appeal to existing emacs users
+2021-12-02 18:07:59	rb	true
+2021-12-02 18:09:29	companion_cube	neovim didn't do that, rb :D
+2021-12-02 18:09:59	rb	it's configurable with lua no? i didn't mean that neovim's lua config layer is written in vimscript
+2021-12-02 18:10:08	rb	at least i didn't intend to mean
+2021-12-02 18:20:46	feoh	I agree Clojure benefits from being a JVM language quite a bit IMO
+2021-12-02 18:21:37	+mockturtle	RISC-V International Ratifies 15 New Specifications, Opening Up New Possibilities for RISC-V Designs [scaling hardware assembly] (ethoh) https://lobste.rs/s/zluisa
+2021-12-02 18:21:40	feoh	technomancy: I think VS code being written in and as such utterly configurable by JS is a big selling point
+2021-12-02 18:22:13	technomancy	feoh: I'm so far outside the target market for VS code that I have to just take statements like that on faith =)
+2021-12-02 18:22:46	feoh	It's a really nice editor. It falls short of offering the kind of deep ecosystem emacs does but IMO that's a matter of time and maturity.
+2021-12-02 18:23:52	+mockturtle	fast-check: How it works [testing] (dpercy) https://lobste.rs/s/erw4a4
+2021-12-02 18:25:12	wink	feoh: I don't think JS is what drove so many people to write good plugins. It's just... it's not vimL (terrible) or eclipse's plugin model (terrible even for Java programmers), etc.pp
+2021-12-02 18:25:29	wink	it surely helped, but the fact that that it didn' actively discourage you was a thing
+2021-12-02 18:25:33	companion_cube	rb: yeah, I meant they're replacing vimscript with lua slowly ,but they're not enmulating one in the other
+2021-12-02 18:26:04	feoh	wink: Yeah absolutely. Where adoption is concerned being the thing people already know and are using for other things is HUGE
+2021-12-02 18:26:15	feoh	It's why despite all the hate Electron is so big
+2021-12-02 18:26:24	feoh	(Across every axis :) )
+2021-12-02 18:27:03	iDrougge	"people"
+2021-12-02 18:27:14	feoh	Homo-sapiens :)
+2021-12-02 18:27:31	feoh	Or other life forms capable of interacting with a computer on the prime material plane.
+2021-12-02 18:27:46	iDrougge	Homo javascriptens
+2021-12-02 18:30:52	companion_cube	it's fun to bash on javascript, but its users are people  :p
+2021-12-02 18:35:23	+mockturtle	Haiku ported to RISC-V [osdev] (sanxiyn) https://lobste.rs/s/clg7gd
+2021-12-02 18:37:52	rb	cool!
+2021-12-02 18:38:58	companion_cube	how to be sure no one else will help you fix your system 😂
+2021-12-02 18:41:04	sam_	lol
+2021-12-02 18:45:05	rb	bleedingest of edges
+2021-12-02 18:45:07	wrl	implying that anybody was helping fix haiku as it stands
+2021-12-02 18:48:12	companion_cube	we have a person on #ocaml who tries to use it on haiku, and it's a mess
+2021-12-02 18:48:13	+mockturtle	The curse of scalable technology [practices programming] (spookylukey) https://lobste.rs/s/eugugj
+2021-12-02 19:15:02	jjuran	Hansen Hsu's name sounds familiar.  Did he work at Microsoft?
+2021-12-02 19:22:45	+mockturtle	Tutorial for parsing with nom 5 [programming rust] (river) https://lobste.rs/s/vgfi6q
+2021-12-02 19:32:41	+mockturtle	Tvix: We are rewriting Nix [unix] (adisbladis) https://lobste.rs/s/ypwgwp
+2021-12-02 19:39:14	technomancy	Tuvix was murdered!
+2021-12-02 19:41:09	riv	:rewriting nix in...?
+2021-12-02 19:41:57	riv	oh they're reimplementing nix but faster?
+2021-12-02 19:44:04	rb	rewriting nix because...?
+2021-12-02 19:44:35	riv	its inefficient
+2021-12-02 19:47:06	ngoldbaum	technomancy: kate mulgrew has @justicefortuvix blocked on twitter and i love that joke
+2021-12-02 19:47:24	technomancy	bahaha
+2021-12-02 19:47:38	technomancy	love it
+2021-12-02 19:48:12	companion_cube	they didn't say if they're rewriting Nix in rust!
+2021-12-02 19:57:44	gthm	anything else would be immoral
+2021-12-02 19:59:49	gthm	but that certainly is a wildly ambitious goal to tackle long build times of the things that presumably make the company money
+2021-12-02 20:10:57	epilys	beating the rusty dead horse
+2021-12-02 20:23:25	Church	Huh tvix looks interesting
+2021-12-02 20:56:47	indigo	https://p.hagelb.org/tuvix.gif
+2021-12-02 20:57:35	+mockturtle	How Does NTP Work? [networking] (fs111) https://lobste.rs/s/wsrwnx
+2021-12-02 21:04:25	--	irc: disconnected from server
+2021-12-02 21:04:42	-->	mrmanner (mrmanner@90.235.13.15) has joined #lobsters
+2021-12-02 21:04:42	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-02 21:04:42	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-12-02 21:04:42	--	Channel #lobsters: 598 nicks (1 op, 1 voice, 596 normals)
+2021-12-02 21:05:10	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-12-02 21:05:30	riv	haha
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:22	-->	mrmanner (mrmanner@90.235.13.15) has joined #lobsters
+2021-12-02 21:11:22	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-02 21:11:22	--	Topic set by Church (~aleph@pool-98-116-232-112.nycmny.fios.verizon.net) on ons, 27 okt 2021 04:55:37
+2021-12-02 21:11:22	--	Channel #lobsters: 598 nicks (1 op, 1 voice, 596 normals)
+2021-12-02 21:11:33	--	Channel created on ons, 19 maj 2021 15:50:50
+2021-12-02 21:28:50	-->	mrmanner (mrmanner@90.235.13.15) has joined #lobsters
+2021-12-02 21:28:50	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #lobsters
+2021-12-02 21:50:44	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-02 21:35:27	+mockturtle	Apache Arrow DataFusion 6.0.0 Release [databases rust] (houqp) https://lobste.rs/s/m26nlk
+2021-12-02 21:52:28	-->	dvn [dvn] (dvn) (~dvn@bnc.janky.solutions) has joined #lobsters
+2021-12-02 21:55:51	<--	rhn (~rhn@user/rhn) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:05:48	<--	ziglef (~ziglef@56.118.114.89.rev.vodafone.pt) has quit (Quit: Leaving)
+2021-12-02 22:16:40	<--	jess (~jess@libera/staff/jess) has quit
+2021-12-02 22:17:03	<--	bauruine (~stefan@2001:8e0:146d:dead:34ea:d4a8:75e6:b7c4) has quit (Ping timeout: 250 seconds)
+2021-12-02 22:23:05	+mockturtle	Ideal monitor rotation for programmers [linux] (cadey) https://lobste.rs/s/as3oou
+2021-12-02 22:24:09	wink	^ easy: panel to the front
+2021-12-02 22:24:14	varjag	so i installed rust and a bunch of dependencies and built that hubris thing
+2021-12-02 22:24:26	varjag	now to find that stm32f4 board we had someplace
+2021-12-02 22:24:31	riv	fun!
+2021-12-02 22:25:03	varjag	what's incredible is how 2k sloc of rust compiles to like 2mb code
+2021-12-02 22:25:15	riv	lol
+2021-12-02 22:25:26	riv	does it have tcp?
+2021-12-02 22:25:30	riv	i couldn't figure this out
+2021-12-02 22:25:32	varjag	that's like, a factor of 1000x!
+2021-12-02 22:25:36	varjag	i don't think so
+2021-12-02 22:25:42	riv	that's interesting
+2021-12-02 22:25:45	riv	so this is really for micros
+2021-12-02 22:25:55	riv	just chatting over spi etc.
+2021-12-02 22:25:57	epilys	dependencies?
+2021-12-02 22:26:03	varjag	it's an interesting concept but bit green
+2021-12-02 22:26:17	varjag	can see in project structure they haven't done this much before
+2021-12-02 22:26:36	varjag	nothing big tho
+2021-12-02 22:27:05	varjag	epilys: to install crossplatform rust you get to download like petabyte of shit
+2021-12-02 22:27:10	varjag	(exaggerating)
+2021-12-02 22:27:31	epilys	I meant re: 2k sloc, does that include dependencies?
+2021-12-02 22:28:00	companion_cube	also, templates
+2021-12-02 22:28:04	varjag	ah, no
+2021-12-02 22:28:17	varjag	ythat's the os code itself
+2021-12-02 22:28:58	epilys	companion_cube, monomorphization
+2021-12-02 22:29:08	companion_cube	yeah
+2021-12-02 22:29:31	varjag	it doesn't appear to use much libraries, if any
+2021-12-02 22:30:17	varjag	my previous rust build was servo in like 2018
+2021-12-02 22:30:24	varjag	it segfaulted
+2021-12-02 22:37:52	-->	poww0wmus1c [poww0wmus1c] (poww0wmus1c) (~poww0wmus@gateway/tor-sasl/poww0wmus1c) has joined #lobsters
+2021-12-02 22:40:26	-->	xkuru [xkuru] (realname) (~xkuru@user/xkuru) has joined #lobsters
+2021-12-02 22:45:31	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-02 22:47:32	<--	blindguard (~blindguar@2a02:908:1864:c200::12) has quit (Quit: Konversation terminated!)
+2021-12-02 22:53:43	-->	jjonah (jjonah) (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has joined #lobsters
+2021-12-02 22:55:17	gwozniak	varjag: is that debug or optimized? 2mb optimized for 2k sloc is pretty terrible
+2021-12-02 22:55:40	gwozniak	if optimized, I mean
+2021-12-02 22:58:44	varjag	it's an embedded os targeting an
+2021-12-02 22:58:53	varjag	microcontroller
+2021-12-02 22:59:00	varjag	not sure what's there to build in debug
+2021-12-02 22:59:23	varjag	ok i looked it ain't debug supposedly
+2021-12-02 22:59:40	varjag	there is a separate dir for debug artifacts
+2021-12-02 23:06:15	<--	reneeontheweb (~reneeonth@2601:246:900:bba0:24af:7434:db2:6599) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:16:54	<--	JordiGH (~jordi@user/jordigh) has quit (Ping timeout: 268 seconds)
+2021-12-02 23:18:03	<--	martian67 (~martian67@user/martian67) has quit (Ping timeout: 276 seconds)
+2021-12-02 23:22:18	-->	martian67 [martian67] (martian67) (~martian67@user/martian67) has joined #lobsters
+2021-12-02 23:31:05	-->	BSaboia [BSaboia] (Bruno Saboia) (~bsaboia@177.37.198.35) has joined #lobsters
+2021-12-02 23:45:51	<--	kogepan (~kogepan@user/kogepan) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:46:34	<--	andrhua (~andrhua@31.134.187.8) has quit (Remote host closed the connection)
+2021-12-02 23:46:35	<--	varjag (~user@ti0040a400-5479.bb.online.no) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:48:27	<--	seschwar (~seschwar@user/seschwar) has quit (Quit: :wq)
+2021-12-02 23:56:56	-->	varjag (Eugene) (~user@ti0040a400-5479.bb.online.no) has joined #lobsters
+2021-12-03 00:01:37	<--	mahmutov (~mahmutov@5.176.7.214) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:02:16	-->	smoking_gnu47 (Moist Von Lipwig) (~smoking_g@c-71-205-186-218.hsd1.co.comcast.net) has joined #lobsters
+2021-12-03 00:02:21	<--	varjag (~user@ti0040a400-5479.bb.online.no) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:09:08	<--	lexik (~lexik@171.25.222.230) has quit (Read error: Connection reset by peer)
+2021-12-03 00:09:31	-->	lexik (lexik) (~lexik@171.25.222.230) has joined #lobsters
+2021-12-03 00:11:17	-->	MerchantOfVenice [MerchantOfVenice] (Patrick) (~patrick@user/merchantofvenice) has joined #lobsters
+2021-12-03 00:13:15	+mockturtle	My VR Hell on NixOS [linux graphics] (cadey) https://lobste.rs/s/npofl0
+2021-12-03 00:18:58	<--	lexik (~lexik@171.25.222.230) has quit (Quit: No Ping reply in 180 seconds.)
+2021-12-03 00:21:33	-->	lexik (lexik) (~lexik@171.25.222.230) has joined #lobsters
+2021-12-03 00:26:31	Xe	this has taken _so_ long to troubleshoot
+2021-12-03 00:34:15	<--	smoking_gnu47 (~smoking_g@c-71-205-186-218.hsd1.co.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:35:13	-->	JordiGH (Jordi Gutiérrez Hermoso) (~jordi@fencepost.gnu.org) has joined #lobsters
+2021-12-03 00:35:14	--	JordiGH has identified as JordiGH
+2021-12-03 00:35:14	<--	JordiGH (~jordi@fencepost.gnu.org) has quit (Changing host)
+2021-12-03 00:35:14	-->	JordiGH [JordiGH] (Jordi Gutiérrez Hermoso) (~jordi@user/jordigh) has joined #lobsters
+2021-12-03 00:42:00	<--	JordiGH (~jordi@user/jordigh) has quit (Ping timeout: 268 seconds)
+2021-12-03 00:51:11	<--	poww0wmus1c (~poww0wmus@gateway/tor-sasl/poww0wmus1c) has quit (Quit: leaving)
+2021-12-03 00:52:59	wink	I have a video here and i want to send the audio through soundhound or something to get th esong
+2021-12-03 00:53:02	wink	why is this so damn hard
+2021-12-03 00:53:09	wink	(if it was yt I could use yt-dl)
+2021-12-03 00:53:42	wink	oh it can do reddit :P
+2021-12-03 00:57:18	-->	Guest86 ([https://web.libera.chat] Guest86) (~Guest86@185.247.174.56) has joined #lobsters
+2021-12-03 01:01:09	<--	Guest86 (~Guest86@185.247.174.56) has quit (Client Quit)
+2021-12-03 01:02:06	wink	play loud through headphones, let phone use shazam. I feel dirty but it worked
+2021-12-03 01:02:40	kline	wink, im honestly surprised this isnt already something people have solved
+2021-12-03 01:03:08	wink	yeah. just getting audacity to not record the mic but the whole audio... ugh
+2021-12-03 01:03:15	wink	audio and video are terrible
+2021-12-03 01:07:23	wink	phew. now if only I understood anything. video https://www.youtube.com/watch?v=cVDdTqL3mtY which seems to be some tik tok thing (there are more versions), but the English version of the vietnamese page on that phrase is about a painting https://en.wikipedia.org/wiki/Along_the_River_During_the_Qingming_Festival
+2021-12-03 01:07:23	+mockturtle	[ Along the River During the Qingming Festival - Wikipedia ] - en.wikipedia.org
+2021-12-03 01:07:57	wink	so it looks like it's a techno remix of as song version of a poem about/accompanying a painting
+2021-12-03 01:07:59	<--	SirRippovMaple34 (~SirRippov@ns527547.ip-192-99-37.net) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-03 01:08:05	wink	how many levels of meta do you want? yes.
+2021-12-03 01:08:34	-->	SirRippovMaple34 (Sir Rippov the Maple) (~SirRippov@ns527547.ip-192-99-37.net) has joined #lobsters
+2021-12-03 01:14:53	<--	tumdum (~tumdum@2a02:a317:e445:9d00:dd93:9eaf:e81f:63f4) has quit (Remote host closed the connection)
+2021-12-03 01:15:11	-->	tumdum (realname) (~tumdum@2a02:a317:e445:9d00:a780:72a0:111d:7af8) has joined #lobsters
+2021-12-03 01:16:41	<--	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has quit (Quit: WeeChat 3.3)
+2021-12-03 01:21:18	<--	SirRippovMaple34 (~SirRippov@ns527547.ip-192-99-37.net) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-03 01:22:02	-->	SirRippovMaple34 (Sir Rippov the Maple) (~SirRippov@ns527547.ip-192-99-37.net) has joined #lobsters
+2021-12-03 01:25:13	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-03 01:28:33	-->	JordiGH (Jordi Gutiérrez Hermoso) (~jordi@fencepost.gnu.org) has joined #lobsters
+2021-12-03 01:28:34	--	JordiGH has identified as JordiGH
+2021-12-03 01:28:34	<--	JordiGH (~jordi@fencepost.gnu.org) has quit (Changing host)
+2021-12-03 01:28:34	-->	JordiGH [JordiGH] (Jordi Gutiérrez Hermoso) (~jordi@user/jordigh) has joined #lobsters
+2021-12-03 01:33:48	<--	JordiGH (~jordi@user/jordigh) has quit (Ping timeout: 268 seconds)
+2021-12-03 01:34:53	<--	tumdum (~tumdum@2a02:a317:e445:9d00:a780:72a0:111d:7af8) has quit (Remote host closed the connection)
+2021-12-03 01:38:25	-->	tumdum (realname) (~tumdum@2a02:a317:e445:9d00:a780:72a0:111d:7af8) has joined #lobsters
+2021-12-03 01:40:03	<--	tumdum (~tumdum@2a02:a317:e445:9d00:a780:72a0:111d:7af8) has quit (Remote host closed the connection)
+2021-12-03 01:40:16	-->	tumdum (realname) (~tumdum@2a02:a317:e445:9d00:a780:72a0:111d:7af8) has joined #lobsters
+2021-12-03 01:41:12	<--	BSaboia (~bsaboia@177.37.198.35) has quit (Quit: This computer has gone to sleep)
+2021-12-03 01:48:51	-->	varjag (Eugene) (~user@ti0040a400-5479.bb.online.no) has joined #lobsters
+2021-12-03 01:50:20	<--	raj (uid72176@user/raj) has quit (Quit: Connection closed for inactivity)
+2021-12-03 01:53:02	<--	tumdum (~tumdum@2a02:a317:e445:9d00:a780:72a0:111d:7af8) has quit (Read error: Connection reset by peer)
+2021-12-03 01:53:11	-->	tumdum (realname) (~tumdum@2a02:a317:e445:9d00:a780:72a0:111d:7af8) has joined #lobsters
+2021-12-03 12:21:16	--	irc: disconnected from server
+2021-12-03 12:21:30	-->	mrmanner (mrmanner@90.235.13.15) has joined #lobsters
+2021-12-03 12:21:30	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-03 01:57:11	+mockturtle	Jim Hugunin - Story of Jython (2002) [python programming] (andyc) https://lobste.rs/s/wgsc1i
+2021-12-03 05:11:51	+mockturtle	Some guidelines for writing web scrapers [programming] (calvin) https://lobste.rs/s/0cc8ko
+2021-12-03 05:28:43	jj5_	the word 'meta' is tainted forever :(
+2021-12-03 05:37:17	pe	Just like the old verb of facebook https://p.janouch.name/a/3e469df5.jpg
+2021-12-03 05:42:02	Guest1555	I used to like the word 'meta'
+2021-12-03 05:43:46	pe	Personally, it was too meta for me.
+2021-12-03 05:44:11	pe	Oh no, I have found a JPEG 2000 ISO PDF, licensed to someone.
+2021-12-03 05:44:22	pe	I expect the police to show up any second.
+2021-12-03 05:45:34	pe	> Copying and networking prohibited.
+2021-12-03 05:45:34	pe	And now I have to stay alone. :(
+2021-12-03 05:59:03	+mockturtle	Writing Simple Python GUIs for your Command-Line-Phobe Coworkers [python] (hwayne) https://lobste.rs/s/qcrsdx
+2021-12-03 06:32:30	+mockturtle	The skyline problem (2014) [compsci] (indigo) https://lobste.rs/s/nzlbam
+2021-12-03 10:10:04	gthm	v.v.v
+2021-12-03 10:10:04	+mockturtle	(\/)_00_(\/)
+2021-12-03 10:10:16	amazigh	v.v.v
+2021-12-03 10:10:16	+mockturtle	V_!_!_V
+2021-12-03 10:24:47	+mockturtle	Diacritical Marks in Unicode [programming] (freddyb) https://lobste.rs/s/jkay7p
+2021-12-03 10:46:58	+mockturtle	Simplicity is worth paying for: Dev Tool Time with Roger Peppé [video practices] (jmiven) https://lobste.rs/s/ijlfgf
+2021-12-03 11:34:18	epilys	has anyone here published a printed programming book? I'm looking for publishers that might be interested in a foss/cc book I'm working on
+2021-12-03 11:47:06	pe	What about?
+2021-12-03 11:54:01	epilys	https://github.com/epilys/bitmappers-companion
+2021-12-03 11:54:02	+mockturtle	[ GitHub - epilys/bitmappers-companion: zine/book about bitmap drawing algorithms and math with code examples in Rust ] - github.com
+2021-12-03 11:56:49	pe	Looks nice.
+2021-12-03 12:03:47	+mockturtle	[CVE-2021-42008] Exploiting A 16-Year-Old Vulnerability In The Linux 6pack Driver [security] (crazyloglad) https://lobste.rs/s/qrnvnr
+2021-12-03 12:06:18	epilys	pe, thanks! :)
+2021-12-03 12:21:41	-->	timj [timj] (timj) (~timj@user/timj) has joined #lobsters
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:51	-->	mrmanner (mrmanner@90.235.13.15) has joined #lobsters
+2021-12-03 12:22:51	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-03 12:33:30	thardin	bugs in old ham radio code, eh?
+2021-12-03 12:36:45	-->	BSaboia [BSaboia] (Bruno Saboia) (~bsaboia@187.18.140.125) has joined #lobsters
+2021-12-03 12:47:33	<--	_rs (~rs@user/rs/x-9937181) has quit (Remote host closed the connection)
+2021-12-03 12:50:35	<--	raj (uid72176@user/raj) has quit
+2021-12-03 12:52:53	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-03 12:53:09	-->	jjonah (jjonah) (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has joined #lobsters
+2021-12-03 12:53:13	-->	varjag (Eugene) (~user@188.95.247.249) has joined #lobsters
+2021-12-03 12:54:41	-->	supersandro20000 [supersandro2000] (Sandro) (~supersand@i5C75750C.versanet.de) has joined #lobsters
+2021-12-03 12:54:41	--	supersandro20000 is now known as supersandro2000
+2021-12-03 12:54:45	+mockturtle	Don't Make My Mistakes: Common Infrastructure Errors I've Made [devops] (maduggan) https://lobste.rs/s/5r5fsa
+2021-12-03 13:01:51	riv	ugh :/
+2021-12-03 13:02:05	riv	want to do a simple task with bash, so I google how to do it and I get all these wrong answers on stack overflow
+2021-12-03 13:02:08	riv	stack overflow kind of sucks
+2021-12-03 13:02:38	riv	it could be better
+2021-12-03 13:02:59	wink	everything involving humans could be better
+2021-12-03 13:03:41	varjag	diy then!
+2021-12-03 13:03:47	varjag	from man pages and first principles
+2021-12-03 13:04:31	varjag	like in prehistoric timeth
+2021-12-03 13:04:32	riv	uuuuuuuuffff
+2021-12-03 13:04:35	riv	thats actual work
+2021-12-03 13:04:49	riv	I wonder if you're right though
+2021-12-03 13:05:03	riv	maybe I should do that more, might actually learn programming instead of just copy pasting shit i dont understand
+2021-12-03 13:05:20	riv	i realized (re this stuff) that I don't really understand processes running in the background of a shell/shell script
+2021-12-03 13:05:49	riv	i guess they have the same stdout, but dont have stdin? and there's something about pty/ttys/controller terminals  that I don't know, but I know the words
+2021-12-03 13:06:43	wink	riv: I'm gonna point to https://github.com/nelhage/reptyr and advise some towels to dry your tears
+2021-12-03 13:06:43	+mockturtle	[ GitHub - nelhage/reptyr: Reparent a running program to a new terminal ] - github.com
+2021-12-03 13:07:04	wink	it seems to be kind of a mess
+2021-12-03 13:07:08	riv	<3 !!!!
+2021-12-03 13:07:18	riv	this is the thing I was trying to figure out how to wo lol
+2021-12-03 13:07:20	riv	do*
+2021-12-03 13:07:38	 *	wink used mind reading. it was super effective.
+2021-12-03 13:09:34	<--	kdc (~kdc@196.211.197.159) has quit (Quit: Leaving)
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:36	-->	mrmanner (mrmanner@98.128.201.128) has joined #lobsters
+2021-12-03 20:17:36	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-03 13:12:09	pe	Everything involving machines could be better.
+2021-12-03 13:12:20	pe	But machines involve humans, and humans involve machines.
+2021-12-03 13:13:15	 *	pe is apparently writing an Exiv2 clone
+2021-12-03 13:14:08	pe	I finally have a TIFF parser.
+2021-12-03 13:39:57	+mockturtle	tag suggestion: nix [meta] (fs111) https://lobste.rs/s/bv2nje
+2021-12-03 14:04:07	gerikson	``lobste.rs has tags for things that barely get used (like elm or dragonflybsd)''
+2021-12-03 14:04:11	gerikson	harsh
+2021-12-03 14:04:12	gerikson	but true
+2021-12-03 14:04:42	pe	:)
+2021-12-03 14:06:03	gerikson	maybe tags need to have a half-life
+2021-12-03 14:26:30	rtpg	Anyone know what is the user-friendliest "draw some shapes to a screen" library out there that isn't Javascript canvas? looking to have some fun in advent of code with maybe something like rust + imgui but not super sure what is bets
+2021-12-03 14:27:17	varjag	so good news, is i found that stm32 devboard
+2021-12-03 14:27:30	varjag	bad news, it has 512k flash
+2021-12-03 14:27:33	gerikson	bad news it was eaten by babby?
+2021-12-03 14:27:39	varjag	doesn't seem to be enough for this hubris thing
+2021-12-03 14:29:36	varjag	ok wait, "final.bin" is 188kb
+2021-12-03 14:29:59	varjag	those 2 megs had to be some object file data rust thingy
+2021-12-03 14:30:44	gerikson	it's a TIFF of a crab
+2021-12-03 14:30:44	varjag	gerikson: low nutritional content
+2021-12-03 14:31:10	varjag	i wonder if this board still works
+2021-12-03 14:31:25	varjag	think i got it handed out at computex 2010
+2021-12-03 14:36:26	pe	Did anyone say TIFF?
+2021-12-03 14:36:51	 *	pe just rewriting the tag tables from the spec to C
+2021-12-03 14:38:45	varjag	lol all stm32 has leadtime of billion years now
+2021-12-03 14:38:56	varjag	maybe i should list this board on ebay for the desperate
+2021-12-03 14:39:11	epilys	rtpg, minifb?
+2021-12-03 14:39:23	epilys	oh wait, you want shapes etc
+2021-12-03 14:39:53	epilys	I have a very primitive library for drawing basic shapes in minifb if you want to experiment with that
+2021-12-03 15:05:51	+mockturtle	Verneuil: S3-backed asynchronous replication for SQLite [release databases] (aleph) https://lobste.rs/s/rd4p7r
+2021-12-03 15:21:12	+mockturtle	Is “KAX17” performing de-anonymization Attacks against Tor Users? [security privacy] (williballenthin) https://lobste.rs/s/gpvw5m
+2021-12-03 15:21:34	wink	gerikson: maybe half-life needs a tag
+2021-12-03 15:42:53	+mockturtle	What are you doing this weekend? [programming ask] (caius) https://lobste.rs/s/yiomco
+2021-12-03 15:44:28	+mockturtle	Introducing CentOS Stream 9 [linux] (jzb) https://lobste.rs/s/pi7zs6
+2021-12-03 16:06:20	gerikson	to whom should one address mockturtle feature requests?
+2021-12-03 16:07:32	epilys	what doth you desire?
+2021-12-03 16:08:05	ngoldbaum	c355E3B iirc
+2021-12-03 16:08:33	c355E3B	that's correct
+2021-12-03 16:08:37	c355E3B	the code is on github btw
+2021-12-03 16:08:46	c355E3B	https://github.com/lobsters/lobstersbot
+2021-12-03 16:08:47	+mockturtle	[ GitHub - lobsters/lobstersbot: Lobsters IRC bot ] - github.com
+2021-12-03 16:18:15	gerikson	I'd like the domain from a submission to be shown, as well as the lobster.s link
+2021-12-03 16:18:40	riv	_1
+2021-12-03 16:18:41	riv	+1
+2021-12-03 16:18:55	riv	what made you want this btw?
+2021-12-03 16:19:11	gerikson	the ##hntop channel shows both submission URL and HN URL
+2021-12-03 16:20:16	riv	hehe
+2021-12-03 16:20:20	gerikson	riv: saves me a click
+2021-12-03 16:20:22	riv	remember freenode hntop
+2021-12-03 16:27:50	c355E3B	gerikson: are you on the current pr with the latest comment?
+2021-12-03 16:28:36	+mockturtle	Installing Qt via Conan Package Manager [c++] (raymii) https://lobste.rs/s/fokovx
+2021-12-03 16:30:08	gerikson	c355E3B: nope
+2021-12-03 16:30:43	c355E3B	Ok
+2021-12-03 16:32:00	c355E3B	I have to fly home in an hour, but if you open an issue on that repo I'll try to take xare of it when I've recovered from the time zone change
+2021-12-03 16:41:09	gerikson	thanks c355E3B ! I'll write something up
+2021-12-03 16:52:57	+mockturtle	Write better code with Swift Algorithms [swift] (napkindrawing) https://lobste.rs/s/otbjql
+2021-12-03 16:53:42	+mockturtle	Upgrading MySQL at Shopify [devops databases practices] (enpo) https://lobste.rs/s/g9zzld
+2021-12-03 17:14:50	riv	kinda weird (but useful) that shells do job control, youd think that would be delegated to a supervisor program
+2021-12-03 17:16:28	c355E3B	I mean, systemd shell would be a neat experiment
+2021-12-03 17:16:45	letoram	features evolving from where they are convenient to implement vs. where they make sense design wise ..
+2021-12-03 17:17:28	riv	hmm
+2021-12-03 17:17:57	letoram	with all the ugly semantics of file descriptors, passing and inheritance - shell at fork() time was by far the easiest
+2021-12-03 17:18:28	riv	i want to understand ..something about subprocesses
+2021-12-03 17:18:33	riv	but i dont even know how to ask it
+2021-12-03 17:18:42	riv	I guess I should start by reading about pty and tty
+2021-12-03 17:18:51	riv	once I get those clear I might be in a better position
+2021-12-03 17:18:59	c355E3B	I would start with execv (2)
+2021-12-03 17:19:06	riv	oh yeah
+2021-12-03 17:19:19	c355E3B	(I just got off of a six week project dealing with processes and monitoring at work)
+2021-12-03 17:19:32	riv	:D
+2021-12-03 17:20:02	letoram	it's deep hole ..
+2021-12-03 17:20:48	epilys	riv, try asking even if it's not clear, someone might know something
+2021-12-03 17:21:03	epilys	(I have written an terminal emulator)
+2021-12-03 17:21:06	epilys	:D
+2021-12-03 17:24:38	jjuran	I've written a Unix-like environment for classic Mac OS :-)
+2021-12-03 17:25:31	epilys	system 7?
+2021-12-03 17:25:51	jjuran	Yes
+2021-12-03 17:26:14	jjuran	It also runs to an extent in System 6 and earlier
+2021-12-03 17:26:23	epilys	awesome :)
+2021-12-03 17:26:44	epilys	always wanted to do some constraint programming in an old system like that but I don't want to work with emulators
+2021-12-03 17:27:02	jjuran	https://www.macrelix.org/screenshots/macrelix-6.0-before-gestalt.png :-)
+2021-12-03 17:27:43	epilys	Stop, my eyes perceive 1-bit as eye candy and get distracted
+2021-12-03 17:28:53	jjuran	Okay, fine https://www.macrelix.org/screenshots/macrelix-10.4-native.png
+2021-12-03 17:29:38	epilys	thanks, I hate that glassy look
+2021-12-03 17:39:00	+mockturtle	GitHub Availability Report: November 2021 [devops databases] (crstry) https://lobste.rs/s/iytlse
+2021-12-03 17:44:49	epilys	recompiling the entire latex document just because you made a small change is exhausting
+2021-12-03 17:46:36	dutchie	\includeonly
+2021-12-03 17:47:11	dutchie	i'd probably still be writing my thesis (with boatloads of TikZ diagrams) if i'd had to rebuild the whole thing each time instead of just the chapter i was working no
+2021-12-03 17:47:13	dutchie	on
+2021-12-03 17:51:10	epilys	unfortunately it irks me not to have the entire document at once
+2021-12-03 18:17:22	+mockturtle	Townscaper's rendering style in WebGL [reversing web graphics] (adamshaylor) https://lobste.rs/s/dkpixg
+2021-12-03 18:19:25	JordiGH	At this rate, looks like I'm doing Octave for AoC.
+2021-12-03 18:19:51	JordiGH	https://mathstodon.xyz/web/statuses/107383958054649517
+2021-12-03 18:19:52	+mockturtle	[ JordiGH (@JordiGH@mathstodon.xyz) ] - mathstodon.xyz
+2021-12-03 18:20:05	JordiGH	The hardest part so far has been "how do I count from 1 to 12 cyclically?"
+2021-12-03 18:31:52	doug	i prefer to do it cynically
+2021-12-03 18:37:06	jjuran	seismically
+2021-12-03 18:37:54	jjuran	You should try it, it's great
+2021-12-03 18:38:01	jjuran	It starts with an earthquake
+2021-12-03 18:39:43	+mockturtle	On Hubris and Humility: developing an OS for robustness in Rust Open Source Firmware Conference 2021 [rust osdev] (bcantrill) https://lobste.rs/s/fwwufs
+2021-12-03 18:44:01	ngoldbaum	JordiGH: the real question is how do you do it cynically
+2021-12-03 18:52:06	JordiGH	Was that the same joke in a row?
+2021-12-03 19:00:01	ngoldbaum	oh darn i can read
+2021-12-03 19:00:15	ngoldbaum	scatalogically
+2021-12-03 19:07:04	jjuran	clinically
+2021-12-03 19:15:12	riv	thats me done with aoc, i just cant do it......
+2021-12-03 19:18:01	cb	i can only do aoc when i'm like unemployed and have nothing better to do
+2021-12-03 19:18:17	cb	otherwise i program for my job and for when i wanna work on a hobby thing
+2021-12-03 19:27:33	c355E3B	Sap Concour is magic
+2021-12-03 19:33:42	epilys	riv, is today's difficult?
+2021-12-03 19:33:51	riv	kinda
+2021-12-03 19:34:00	epilys	lemme see
+2021-12-03 19:34:03	riv	its a lot of words
+2021-12-03 19:36:12	epilys	seems like a matrix transpose + popcnt and check if the sum of 1s is more than half
+2021-12-03 19:38:10	riv	oh wow thats a great idea
+2021-12-03 19:38:14	riv	i didnt think of that
+2021-12-03 19:38:26	maskd	cb: same, I find it so hard to do programming in my spare time when I also do it as part of my job
+2021-12-03 19:38:31	riv	maybe il solve it now lol
+2021-12-03 19:39:02	maskd	I've been doing the problems so far because they're short and simple but I'll probably drop out when they really get going
+2021-12-03 19:40:13	epilys	they seem like great material for learning new languages
+2021-12-03 19:40:18	epilys	or for writing your own languages
+2021-12-03 19:40:20	epilys	:p
+2021-12-03 19:40:41	wink	depends
+2021-12-03 19:41:02	wink	really frustrating if you have to look up every line
+2021-12-03 19:41:38	epilys	I like that tbh
+2021-12-03 19:41:39	wink	but if you already used it for, say, a week, then it's good to get practive
+2021-12-03 19:41:55	epilys	I feel nostalgia for all the days I spent on rust std's docs
+2021-12-03 19:49:35	cb	maskd: i like programming in my spare time but only when i feel like it
+2021-12-03 19:49:42	cb	like i need the motivation
+2021-12-03 19:49:54	cb	and for me interview questions but for "fun" don't do it
+2021-12-03 19:50:12	cb	last aoc i did (2017) i found the difficulty curve really random
+2021-12-03 19:50:38	gerikson	there's usually a spike on weekends
+2021-12-03 20:03:00	shapr	friend of mine went from being a structural engineer to building a website for bridge nerds. Is this post on-topic for lobsters? https://mclare.blog/posts/building-bridge-watch
+2021-12-03 20:03:01	+mockturtle	[ Building Bridge.watch - Blog by MClare ] - mclare.blog
+2021-12-03 20:03:52	shapr	The result is a really cool website if you like infrastructure things https://bridge.watch/
+2021-12-03 20:03:52	+mockturtle	[ Bridge.watch ] - bridge.watch
+2021-12-03 20:04:10	shapr	I helped with several of the stuck points, so I'm biased
+2021-12-03 20:07:45	shapr	Xe: do you know of a rust cookie cutter for nixos?
+2021-12-03 20:08:14	Xe	?
+2021-12-03 20:08:26	wink	cb: there are several FAQ entries about the difficulty curve and I guess they let the 5? beta testers rate them or look at their times
+2021-12-03 20:11:14	cb	i know day 5 kicked me in the dick because it only made sense if you were a numbers nerd
+2021-12-03 20:11:17	cb	and i am not
+2021-12-03 20:11:40	wink	yeah, well. most people are not very good with all topics
+2021-12-03 20:12:08	+mockturtle	PlusCal Tutorial [formalmethods] (hwayne) https://lobste.rs/s/kszbwj
+2021-12-03 20:12:10	wink	but as usual I have a sample size of one, and I think most were doable
+2021-12-03 20:12:22	wink	and by that I mean, if you have enough time. that's the problem
+2021-12-03 20:13:27	gerikson	I give mysefl a couple "jail free" cards each year
+2021-12-03 20:13:28	gerikson	like
+2021-12-03 20:13:33	gerikson	"this looks boring AF"
+2021-12-03 20:13:39	gerikson	or "I don't have time for this "
+2021-12-03 20:13:42	cb	i gave myself cheat days
+2021-12-03 20:13:49	cb	"fuck this one"
+2021-12-03 20:14:10	wink	yeah. realistically I spent too much time both years. but it was fun
+2021-12-03 20:15:38	wink	and as I've said often I have zero intention of finishing during the year. it's only fun because you can talk about it with lots of people doing it on the same day
+2021-12-03 20:15:48	wink	and it's fine to have it timeboxed to a month :P
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:32	-->	mrmanner (mrmanner@98.128.201.128) has joined #lobsters
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #lobsters
+2021-12-03 20:19:44	--	Topic for #lobsters is ""https://lobste.rs is a computing-focused community centered around link aggregation and discussion. mockturtle is the channel bot, see https://lobste.rs/chat for more. Don't publish channel logs without participants' permission.""
+2021-12-03 20:21:04	Church	shapr: Define cookie cutter?
+2021-12-03 20:21:11	Church	As in builder?
+2021-12-03 20:22:54	-->	Ilyu [Ilyu] (etienne) (~quassel@166.215.82.79.rev.sfr.net) has joined #lobsters
+2021-12-03 20:28:43	ngoldbaum	a template
+2021-12-03 20:29:08	ngoldbaum	e.g. https://cookiecutter.readthedocs.io/en/1.7.2/
+2021-12-03 20:29:08	+mockturtle	[ Cookiecutter: Better Project Templates — cookiecutter 1.7.2 documentation ] - cookiecutter.readthedocs.io
+2021-12-03 20:29:40	-->	resistite [resistite] (resistite) (~resistite@86.106.121.175) has joined #lobsters
+2021-12-03 20:35:57	<--	Ilyu (~quassel@166.215.82.79.rev.sfr.net) has quit (Read error: Connection reset by peer)
+2021-12-03 20:46:44	+mockturtle	I had some time and I made an AI-generated podcast to help you sleep [show audio ai] (stavros) https://lobste.rs/s/xo8xtp
+2021-12-03 20:47:07	<--	rickybob (uid410295@id-410295.helmsley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-03 20:47:44	<--	mahmutov (~mahmutov@5.176.7.214) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:49:37	gerikson	dat Reddit title style
+2021-12-03 20:53:23	indigo	Does anyone remember a post about splitting code into modules? Specifically, how some modules can be compiled together vs. in different services, and the sort of spectrum between? It had a JS slider at the bottom where you could play with the various dimensions of modularity
+2021-12-03 20:56:13	-->	w1ntermute (w1ntermute) (~w1ntermut@dslb-002-201-217-078.002.201.pools.vodafone-ip.de) has joined #lobsters
+2021-12-03 20:58:36	jjuran	cb: 2017 Day 5?  Gah, I hated that one.
+2021-12-03 20:59:20	cb	yuuuup
+2021-12-03 20:59:31	jjuran	I think it's one of those where there's an optimization trick, but the only way you can possibly discover it is by analyzing your input
+2021-12-03 20:59:44	indigo	Oh, found it https://jesseduffield.com/Beyond-Coupling-And-Cohesion/
+2021-12-03 20:59:44	+mockturtle	[ Beyond Coupling and Cohesion: Strategies For Un-F*cking Yourself ] - jesseduffield.com
+2021-12-03 21:03:50	+mockturtle	Putting container updates on a diet (2020) [unix devops] (andyc) https://lobste.rs/s/lwxmil

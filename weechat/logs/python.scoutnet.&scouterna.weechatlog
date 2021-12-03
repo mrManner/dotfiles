@@ -1,0 +1,42 @@
+2021-10-13 13:29:32	Carl	@russ* can you see wo emptied all the info on these three and then try to restore as much as possible please?
+2021-10-13 13:29:32	    	3329472
+2021-10-13 13:29:32	    	3370622
+2021-10-13 13:29:32	    	3330378
+2021-10-13 20:38:09	Carl	@russ* can you check why these trackers got a discount. My guess is that they moved troops after september 1st. Am I right?
+2021-10-13 20:38:09	    	3345366
+2021-10-13 20:38:09	    	3347455
+2021-10-13 20:38:09	    	3347478
+2021-10-13 20:38:09	    	3347503
+2021-10-13 20:38:09	    	3347515
+2021-10-13 20:38:09	    	3349353
+2021-10-13 20:38:09	    	3352026
+2021-10-13 20:38:09	    	3355139
+2021-10-13 20:38:09	    	3355439
+2021-10-13 20:38:09	    	3357015
+2021-10-15 13:21:34	Carl	@russ* sorry to stress you but just reminding you about these two questions above
+2021-12-02 11:37:31	Carl	@russ* Do you want me to whitelist a test server IP for HR import uploads?
+2021-12-02 11:51:03	russ	Maybe not necessary unless you really want to try from a specific test server. I already got it working from my PC by tunneling via the scoutnet server...
+2021-12-02 11:51:19	russ	So there are already files in the staging folder
+2021-12-02 11:51:32	Carl	aha neat
+2021-12-02 11:52:22	Carl	then it should be possible to test :slightly_smiling_face:
+2021-12-02 11:52:43	Carl	I'm going to ask you to add Övriga Scoutföreningar in the HR-import as well så the employes can be added :_) [:+1::skin-tone-2:(@russ*)]
+2021-12-02 15:14:14	Carl	@russ* Have you sent new files to Totara after the fix?
+2021-12-02 15:17:05	russ	yes
+2021-12-02 15:17:11	Carl	great thanks!
+2021-12-02 15:17:45	Carl	Regarding the next ticket https://ticket.custard.no/issues/30134
+2021-12-02 15:17:45	    	I put in a deadline but it's really as soon as possible (but not in urgent/immediately mode) :slightly_smiling_face: (edited)
+2021-12-02 15:17:45	    	| CustardLabs Projects
+2021-12-02 15:17:45	    	| Redmine
+2021-12-02 20:55:09	Carl	@russ* regarding the latest deploy Is the HR-import live somehow?
+2021-12-02 20:55:46	russ	No - not unless someone runs the task manually from the command line
+2021-12-03 20:24:00	Carl	Hi! According to 3091807 there is something wrong with the API an email lists.
+2021-12-03 20:24:00	    	I tried to aslk him to be more specific. Can you understand what is wrong by looking att his emails?
+2021-12-03 20:24:00	    	Hej,
+2021-12-03 20:24:00	    	Sitter och implementerar gsuite synk mellan scoutnet och google. Har ett problem att det ligger värden i API:et som inte finns mail listan som den ska skapas ifrån
+2021-12-03 20:24:00	    	Tex i mail listan så är användaren borta men när går in i apiet för att se vad som skickas så har jag värden som inte finns kvar. Det har skett även åt andra hållet att den har inte har skickat till scoutnet api:et
+2021-12-03 20:24:00	    	Hej Carl,
+2021-12-03 20:24:00	    	Få be om ursäkt om jag var otydlig. Problemet jag har är följande. Jag skapar en mail lista i Scoutnet och uppdatera den och när jag tittar på den i scoutnet så är den uppdaterade. Men om jag tittar på den i apiet så ser jag att den inte har uppdaterat sig. Så summan är att den får fel information ifrån scoutnet
+2021-12-03 20:24:00	    	Hej,
+2021-12-03 20:24:00	    	Det har varit på ett antal olika listor men den som jag kommer ihåg kallar vi upptäckare torsdag. Det som händer är att vi uppdaterar i systemet och detta genomförs men går inte över till apiet.
+2021-12-03 20:24:00	    	Mvh Sebastian Nilsson
+2021-12-03 20:24:00	    	https://www.scoutnet.se/api/group/customlists?id=1302&key=77b8326ab26aeaf779cd2da8d95e159f75bd73c8&pretty=1&list_id=8355

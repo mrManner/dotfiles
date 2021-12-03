@@ -1,0 +1,96 @@
+2021-03-10 23:00:49	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-03-10 23:00:49		| CPU Utilization Percent has returned to an acceptable level
+2021-03-10 23:00:49		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-10 23:00:49		| IP: 46.101.128.10
+2021-03-10 23:00:49		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-11 00:00:17	Grafana :]	[OK] Infrastructure Namespace Volumes Full in Week Based on Daily Use Rate Alert
+2021-03-11 00:00:17		| [OK] Infrastructure Namespace Volumes Full in Week Based on Daily Use Rate Alert (http://localhost:3000/d/8ff_W1PMk/k8s-storage-volumes-cluster?tab=alert&viewPanel=45&orgId=1)
+2021-03-11 00:00:17		| Grafana v7.4.0 | Today at 00:00
+2021-03-11 00:36:49	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-03-11 00:36:49		| CPU Utilization Percent is currently at 9.07%, below setting of 20.00% for the last 1h
+2021-03-11 00:36:49		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-11 00:36:49		| IP: 46.101.128.10
+2021-03-11 00:36:49		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-11 03:30:16	Grafana :]	[OK] User Namespace Volumes Full in Week Based on Daily Use Rate Alert
+2021-03-11 03:30:16		| [OK] User Namespace Volumes Full in Week Based on Daily Use Rate Alert (http://localhost:3000/d/8ff_W1PMk/k8s-storage-volumes-cluster?tab=alert&viewPanel=40&orgId=1)
+2021-03-11 03:30:16		| Grafana v7.4.0 | Today at 03:30
+2021-03-13 09:48:47	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-03-13 09:48:47		| CPU Utilization Percent has returned to an acceptable level
+2021-03-13 09:48:47		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-13 09:48:47		| IP: 46.101.128.10
+2021-03-13 09:48:47		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-13 15:10:47	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-03-13 15:10:47		| CPU Utilization Percent is currently at 13.01%, below setting of 20.00% for the last 1h
+2021-03-13 15:10:47		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-13 15:10:47		| IP: 46.101.128.10
+2021-03-13 15:10:47		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-13 16:02:49	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-03-13 16:02:49		| CPU Utilization Percent has returned to an acceptable level
+2021-03-13 16:02:49		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-13 16:02:49		| IP: 46.101.128.10
+2021-03-13 16:02:49		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-13 17:32:49	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-03-13 17:32:49		| CPU Utilization Percent is currently at 15.29%, below setting of 20.00% for the last 1h
+2021-03-13 17:32:49		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-13 17:32:49		| IP: 46.101.128.10
+2021-03-13 17:32:49		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-14 09:28:47	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-03-14 09:28:47		| CPU Utilization Percent has returned to an acceptable level
+2021-03-14 09:28:47		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-14 09:28:47		| IP: 46.101.128.10
+2021-03-14 09:28:47		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-14 11:44:49	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-03-14 11:44:49		| CPU Utilization Percent is currently at 13.87%, below setting of 20.00% for the last 1h
+2021-03-14 11:44:49		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-14 11:44:49		| IP: 46.101.128.10
+2021-03-14 11:44:49		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-15 07:34:47	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-03-15 07:34:47		| CPU Utilization Percent has returned to an acceptable level
+2021-03-15 07:34:47		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-15 07:34:47		| IP: 46.101.128.10
+2021-03-15 07:34:47		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-15 15:12:49	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-03-15 15:12:49		| CPU Utilization Percent is currently at 17.39%, below setting of 20.00% for the last 1h
+2021-03-15 15:12:49		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-15 15:12:49		| IP: 46.101.128.10
+2021-03-15 15:12:49		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-18 07:32:49	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-03-18 07:32:49		| CPU Utilization Percent has returned to an acceptable level
+2021-03-18 07:32:49		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-18 07:32:49		| IP: 46.101.128.10
+2021-03-18 07:32:49		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-03-18 09:06:49	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-03-18 09:06:49		| CPU Utilization Percent is currently at 16.15%, below setting of 20.00% for the last 1h
+2021-03-18 09:06:49		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-03-18 09:06:49		| IP: 46.101.128.10
+2021-03-18 09:06:49		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-04-06 13:33:10	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-04-06 13:33:10		| CPU Utilization Percent has returned to an acceptable level
+2021-04-06 13:33:10		| Droplet: https://cloud.digitalocean.com/droplets/231091117 (hydrogen-83gh8?i=9307b9)
+2021-04-06 13:33:10		| IP: 206.81.26.125
+2021-04-06 13:33:10		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-04-07 10:15:10	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-04-07 10:15:10		| CPU Utilization Percent is currently at 17.38%, below setting of 20.00% for the last 1h
+2021-04-07 10:15:10		| Droplet: https://cloud.digitalocean.com/droplets/231091117 (hydrogen-83gh8?i=9307b9)
+2021-04-07 10:15:10		| IP: 206.81.26.125
+2021-04-07 10:15:10		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-04-29 12:12:05	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-04-29 12:12:05		| CPU Utilization Percent has returned to an acceptable level
+2021-04-29 12:12:05		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-04-29 12:12:05		| IP: 46.101.128.10
+2021-04-29 12:12:05		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-04-29 16:48:03	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-04-29 16:48:03		| CPU Utilization Percent is currently at 18.33%, below setting of 20.00% for the last 1h
+2021-04-29 16:48:03		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-04-29 16:48:03		| IP: 46.101.128.10
+2021-04-29 16:48:03		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-04-29 20:14:03	DigitalOcean :]	| :sunglasses: Monitor resolved: CPU is running low
+2021-04-29 20:14:03		| CPU Utilization Percent has returned to an acceptable level
+2021-04-29 20:14:03		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-04-29 20:14:03		| IP: 46.101.128.10
+2021-04-29 20:14:03		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)
+2021-04-30 06:52:03	DigitalOcean :]	| :rotating_light: Monitor triggered: CPU is running low
+2021-04-30 06:52:03		| CPU Utilization Percent is currently at 12.13%, below setting of 20.00% for the last 1h
+2021-04-30 06:52:03		| Droplet: https://cloud.digitalocean.com/droplets/232488956 (hydrogen-88gzb?i=9307b9)
+2021-04-30 06:52:03		| IP: 46.101.128.10
+2021-04-30 06:52:03		| https://cloud.digitalocean.com/monitors/936db1f6-04d3-491a-a009-591617b4d666?i=9307b9 (Edit monitor settings)

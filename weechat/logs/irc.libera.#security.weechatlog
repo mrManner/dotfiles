@@ -1,0 +1,1528 @@
+2021-10-13 00:08:10	-->	mrmanner (~jmanner@user/mrmanner) has joined #security
+2021-10-13 00:08:10	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-13 00:08:10	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-13 00:08:10	--	Channel #security: 675 nicks (0 ops, 0 voices, 675 normals)
+2021-10-13 00:08:12	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-13 00:09:47	-->	tkob (tkob@2607:5300:60:21b::1) has joined #security
+2021-10-13 00:10:43	<--	yans (~yans@213-225-10-206.nat.highway.a1.net) has quit (Quit: Ammmm...)
+2021-10-13 00:11:35	<--	PortableDave (~portabled@194-223-17-29.tpgi.com.au) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 00:12:10	-->	nx_ (~nitronix@5.29.23.150) has joined #security
+2021-10-13 00:12:30	Apachez	utf8?
+2021-10-13 00:12:35	Apachez	there is even utf16 :D
+2021-10-13 00:13:18	ajak	8 and 16 there indicate bits, so they're not 128 bit
+2021-10-13 00:21:12	-->	PortableDave (~portabled@194-223-17-29.tpgi.com.au) has joined #security
+2021-10-13 00:22:18	<--	Dixcy (~Dixcy@user/dixcy) has quit (Quit: Ping timeout (120 seconds))
+2021-10-13 00:22:44	-->	g00fy7 (~g00fy@user/g00fy) has joined #security
+2021-10-13 00:24:18	-->	Dixcy (~Dixcy@46-10-131-176.ip.btc-net.bg) has joined #security
+2021-10-13 00:24:50	-->	chasmo77 (~chas77@71.63.241.168) has joined #security
+2021-10-13 00:31:50	Hash	UTF 32 as well
+2021-10-13 00:31:55	Hash	4 bytes
+2021-10-13 00:32:18	Hash	But nothing uses 64 AFAIK.
+2021-10-13 00:32:28	Hash	https://en.wikipedia.org/wiki/UTF-32
+2021-10-13 00:32:28	secbot	^ UTF-32 is a fixed-length encoding used to encode Unicode code points that uses exactly 32 bits per code point. UTF-32 is a fixed-length encoding, in contrast to all other Unicode transformation formats, which are variable-length encodings.
+2021-10-13 00:33:20	Hash	The main use of UTF-32 is in internal APIs where the data is single code points or glyphs, rather than strings of characters.
+2021-10-13 00:33:54	Hash	https://en.wikipedia.org/wiki/Comparison_of_Unicode_encodings#Storage_utilization
+2021-10-13 00:33:55	secbot	^ Comparison of Unicode encodings - Wikipedia
+2021-10-13 00:34:41	sartan	you know they could just actually be the isp-generated plaintext credentials
+2021-10-13 00:36:11	<--	Nspace (~Nspace@user/nspace) has quit (Quit: Nspace)
+2021-10-13 00:37:15	-->	Nspace (~Nspace@user/nspace) has joined #security
+2021-10-13 00:37:31	<--	Pickchea (~private@user/pickchea) has quit (Quit: Leaving)
+2021-10-13 00:39:19	-->	p0indexter (~alpha@user/p0indexter) has joined #security
+2021-10-13 00:40:01	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-10-13 00:41:15	<--	Dixcy (~Dixcy@46-10-131-176.ip.btc-net.bg) has quit (Quit: Client closed)
+2021-10-13 00:41:28	-->	Dixcy (~Dixcy@46-10-131-176.ip.btc-net.bg) has joined #security
+2021-10-13 00:41:37	--	irc: disconnected from server
+2021-10-13 00:42:01	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #security
+2021-10-13 00:42:01	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-13 00:42:01	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-13 00:42:01	--	Channel #security: 677 nicks (0 ops, 0 voices, 677 normals)
+2021-10-13 00:42:08	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-13 00:42:14	-->	fikran (~fikran@user/fikran) has joined #security
+2021-10-13 00:42:40	<--	Dixcy (~Dixcy@46-10-131-176.ip.btc-net.bg) has quit (Changing host)
+2021-10-13 00:42:40	-->	Dixcy (~Dixcy@user/dixcy) has joined #security
+2021-10-13 00:43:13	-->	moberg (~moberg@luke.millenniumfalcon.org) has joined #security
+2021-10-13 00:44:58	<--	tex (~super@user/dix) has quit (Ping timeout: 252 seconds)
+2021-10-13 00:45:58	-->	dude12312414 (~test@gateway/tor-sasl/dude12312414) has joined #security
+2021-10-13 00:52:48	-->	analbleeding (6bbd1e16@67.205.143.82) has joined #security
+2021-10-13 00:55:15	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 00:58:09	<--	analbleeding (6bbd1e16@67.205.143.82) has left #security (The Lounge - https://thelounge.chat)
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:02:23	-->	CodePoint (~CodePoint@2600:1700:3070:3790:cced:c365:caec:cb99) has joined #security
+2021-10-13 01:03:29	-->	tinyweasel (~tinywease@vmi677552.contaboserver.net) has joined #security
+2021-10-13 01:03:51	tinyweasel	maybe not the right place, but I need some help trying to determine this hashing algorithm (it's binary encoded; for realvnc v4 under NT 4)
+2021-10-13 01:04:52	tinyweasel	https://i.imgur.com/fo8qcJY.png
+2021-10-13 01:04:55	tinyweasel	the password is "root"
+2021-10-13 01:05:10	tinyweasel	Ideally, I want to know the hashing algorithm so I can automate the process of entering the new password, etc
+2021-10-13 01:05:22	Hash	Looks like windows
+2021-10-13 01:05:25	Hash	You're in the registry
+2021-10-13 01:05:33	Hash	So I'm guessing a windows password
+2021-10-13 01:05:42	tinyweasel	no, no, it's for realvnc v4, though
+2021-10-13 01:05:46	Hash	What hashing alrogithm that version of windows uses?
+2021-10-13 01:05:50	Hash	Oh right right you just said so
+2021-10-13 01:05:55	Hash	My bad. I use linux.
+2021-10-13 01:06:02	tinyweasel	yeah, same
+2021-10-13 01:06:25	Hash	doesn't realvnc allow you to select your hashing alrogithm?
+2021-10-13 01:06:35	tinyweasel	nope, v4 doesn't seem to let me
+2021-10-13 01:07:09	Hash	https://www.realvnc.com/media/documents/vncconnect-security-whitepaper.pdf
+2021-10-13 01:07:13	Hash	Let's see if this has any info
+2021-10-13 01:07:30	tinyweasel	https://i.imgur.com/ZfWOKxO.png
+2021-10-13 01:07:50	Hash	Your RealVNC account credentials are stored securely, using bcrypt hashes with a random salt. If you choose to delete
+2021-10-13 01:07:51	tinyweasel	v4 is early 2000s, possibly 1990s
+2021-10-13 01:08:00	Hash	Hmm
+2021-10-13 01:08:19	Hash	I still think they are using bcrypt
+2021-10-13 01:08:22	Hash	forever.
+2021-10-13 01:08:32	Hash	I could be wrong, but bcrypt supports many hashes
+2021-10-13 01:08:42	Hash	if realvnc foss?
+2021-10-13 01:08:48	Hash	one can just look at the source no
+2021-10-13 01:09:20	-->	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has joined #security
+2021-10-13 01:09:41	tinyweasel	no, it's closed source, I think
+2021-10-13 01:09:51	tinyweasel	might just use sysinternals and see if I can see the API calls
+2021-10-13 01:10:08	tinyweasel	remmina doesn't actually play nice with realvnc v4
+2021-10-13 01:10:13	Hash	Perhaps
+2021-10-13 01:10:20	tinyweasel	I had to use some old ultr@vnc version
+2021-10-13 01:10:26	Hash	Could dump out any dlls to see exported functions
+2021-10-13 01:10:29	Hash	Might shed light
+2021-10-13 01:10:54	<--	TheSilentLink (~TheSilent@user/thesilentlink) has quit (Ping timeout: 260 seconds)
+2021-10-13 01:10:55	Hash	Of course, there is always ghidra, you can dump the function list and see alls to external libs
+2021-10-13 01:11:01	Hash	calls*
+2021-10-13 01:11:09	Hash	That's how I hack Diablo 2
+2021-10-13 01:11:21	tinyweasel	hmm
+2021-10-13 01:11:26	-->	TheSilentLink (~TheSilent@user/thesilentlink) has joined #security
+2021-10-13 01:11:29	tinyweasel	and then just do DLL injection? :)
+2021-10-13 01:11:30	Hash	https://gitlab.com/hashborgir/d2tweaks-hash ghidra has been very useful in reversing
+2021-10-13 01:11:31	secbot	^ Hash Borgir / d2tweaks-hash · GitLab
+2021-10-13 01:11:41	Hash	Anyway
+2021-10-13 01:11:49	Hash	Not dll injection
+2021-10-13 01:12:00	Hash	You're trying to see what hasing algo was used
+2021-10-13 01:12:15	tinyweasel	yeah
+2021-10-13 01:12:19	Hash	Then you can use the same hashing fucntion (and use whatever salt you found) to make a new password
+2021-10-13 01:12:39	tinyweasel	might be easier to tell it to use NT 4 auth, then just set the password with net user
+2021-10-13 01:12:53	Hash	if that's possible, that's best.
+2021-10-13 01:12:58	Hash	Das Bestas
+2021-10-13 01:13:19	tinyweasel	https://serverfault.com/questions/131049/remotely-set-vnc-service-password
+2021-10-13 01:13:20	tinyweasel	hmm
+2021-10-13 01:13:20	secbot	^ remote desktop - Remotely set VNC service password - Server Fault
+2021-10-13 01:16:23	tinyweasel	well, gonna give vncpwd a go, it seems
+2021-10-13 01:16:29	ajak	es ist die beste :p
+2021-10-13 01:16:57	tinyweasel	better yet, the source is available
+2021-10-13 01:17:03	Hash	Cool
+2021-10-13 01:17:17	tinyweasel	yep, it decoded it
+2021-10-13 01:17:19	tinyweasel	issue solved
+2021-10-13 01:17:21	Hash	Nice
+2021-10-13 01:17:34	Hash	Great success!
+2021-10-13 01:17:43	tinyweasel	yeah, probably should've just looked it up
+2021-10-13 01:18:42	Hash	https://github.com/jeroennijhof/vncpwd Nice tool
+2021-10-13 01:18:42	secbot	^ GitHub - jeroennijhof/vncpwd: VNC Password Decrypter
+2021-10-13 01:19:06	tinyweasel	ha, yeah, I grabbed it from some altervista site
+2021-10-13 01:19:20	Hash	altavista is still around, no fucking way
+2021-10-13 01:19:32	tinyweasel	https://aluigi.altervista.org/
+2021-10-13 01:19:33	secbot	^ Luigi Auriemma
+2021-10-13 01:19:35	Hash	Oh it goes to search.yahoo.com
+2021-10-13 01:19:39	Hash	Oh altervista.
+2021-10-13 01:19:40	tinyweasel	yep
+2021-10-13 01:23:34	<--	Dixcy (~Dixcy@user/dixcy) has quit (Quit: Client closed)
+2021-10-13 01:26:44	-->	Slumlord (~Slumlord@159.48.53.112) has joined #security
+2021-10-13 01:27:01	<--	Slumlord (~Slumlord@159.48.53.112) has quit (Remote host closed the connection)
+2021-10-13 01:29:35	<--	s1gyn (~s1gyn@user/s1gyn) has quit (Quit: WeeChat 3.0.1)
+2021-10-13 01:31:21	-->	CodePoint_ (~CodePoint@107-208-128-79.lightspeed.tukrga.sbcglobal.net) has joined #security
+2021-10-13 01:34:16	<--	CodePoint (~CodePoint@2600:1700:3070:3790:cced:c365:caec:cb99) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:36:21	<--	CodePoint_ (~CodePoint@107-208-128-79.lightspeed.tukrga.sbcglobal.net) has quit (Quit: CodePoint_)
+2021-10-13 01:38:45	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 01:41:57	<--	tinyweasel (~tinywease@vmi677552.contaboserver.net) has quit (Remote host closed the connection)
+2021-10-13 01:42:52	-->	richard_h (~richard@2406:e001:8:a900:6e62:6dff:fe05:ae29) has joined #security
+2021-10-13 01:45:21	<--	p0indexter (~alpha@user/p0indexter) has quit (Quit: ars longa vita brevis)
+2021-10-13 01:47:08	<--	signofzeta (~signofzet@user/signofzeta) has quit (Quit: WeeChat 3.3)
+2021-10-13 01:49:49	<--	zro (~zro@user/zro) has quit (Quit: WeeChat 3.3)
+2021-10-13 01:50:46	sartan	ask jeeves
+2021-10-13 01:52:25	-->	georgios (~georgios@user/georgios) has joined #security
+2021-10-13 01:53:33	<--	hexa- (~hexa-@juno.lossy.network) has quit (Quit: WeeChat 3.1)
+2021-10-13 01:54:31	<--	Nspace (~Nspace@user/nspace) has quit (Quit: Nspace)
+2021-10-13 01:54:56	-->	hexa- (~hexa-@juno.lossy.network) has joined #security
+2021-10-13 01:55:19	<--	Kharon (uid511277@user/cypris) has quit (Quit: Connection closed for inactivity)
+2021-10-13 01:55:26	-->	gco (~gco@2601:647:5a00:524:647e:1ab3:64de:66d1) has joined #security
+2021-10-13 01:57:16	-->	horseface (~horseface@user/horseface) has joined #security
+2021-10-13 01:59:23	-->	Nspace (~Nspace@user/nspace) has joined #security
+2021-10-13 02:00:27	<--	georgios (~georgios@user/georgios) has quit (Quit: Konversation terminated!)
+2021-10-13 02:00:27	<--	redstarcomrade (uid99592@user/redstarcomrade) has quit (Quit: Connection closed for inactivity)
+2021-10-13 02:04:31	-->	vvv (~vvv@user/vvv) has joined #security
+2021-10-13 02:06:05	linext_	is https://software.informer.com/ a safe place to get software?
+2021-10-13 02:06:06	secbot	^ Software Informer - Windows software downloads and editorial reviews
+2021-10-13 02:19:14	<--	Kraig (uid454603@id-454603.uxbridge.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-13 02:20:52	<--	gco (~gco@2601:647:5a00:524:647e:1ab3:64de:66d1) has quit (Quit: ZZZzzz…)
+2021-10-13 02:21:50	<--	AsenMx (~AsenMx@78.90.248.234) has quit (Ping timeout: 260 seconds)
+2021-10-13 02:24:03	<--	drocan (~drocan@user/drocan) has quit (Quit: ZNC 1.7.5+deb4 - https://znc.in)
+2021-10-13 02:24:18	-->	drocan (~drocan@yigitsever.com) has joined #security
+2021-10-13 02:26:04	-->	chenqisu1 (~xirndc@183.217.201.186) has joined #security
+2021-10-13 02:26:39	--	chenqisu1 is now known as chenqisu12
+2021-10-13 02:27:32	<--	unmanbearpig (~unmanbear@user/unmanbearpig) has quit (Remote host closed the connection)
+2021-10-13 02:27:55	-->	unmanbearpig (~unmanbear@user/unmanbearpig) has joined #security
+2021-10-13 02:34:37	mats1	youre better off using something like chocolatey, linext_
+2021-10-13 02:34:52	flyback	DAMMit the phone lines didn't work
+2021-10-13 02:34:55	flyback	*CANUCKED*
+2021-10-13 02:35:05	 *	flyback rubs sartan against the nics
+2021-10-13 02:40:10	<--	nx_ (~nitronix@5.29.23.150) has quit (Ping timeout: 260 seconds)
+2021-10-13 02:42:37	-->	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has joined #security
+2021-10-13 02:44:52	<--	boB_K7IQ (~boB_K7IQ@152.44.147.180) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:49:49	-->	idanoo (~idanoomtr@2001:470:69fc:105::b575) has joined #security
+2021-10-13 02:49:52	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:50:05	<--	ElPresidente (~ElPreside@2605:a601:55be:bb00:b4ee:8306:9589:1945) has quit (Ping timeout: 260 seconds)
+2021-10-13 02:51:21	<--	gitly (~gitly@85.255.234.91) has quit (Ping timeout: 245 seconds)
+2021-10-13 02:51:35	-->	fikran (~fikran@user/fikran) has joined #security
+2021-10-13 02:53:26	-->	gitly (~gitly@85.255.237.21) has joined #security
+2021-10-13 02:55:51	<--	zskwrel_ (~gadfly@72-46-61-50.lnk.ne.static.allophone.net) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-10-13 02:56:38	-->	zskwrel (~gadfly@72-46-61-50.lnk.ne.static.allophone.net) has joined #security
+2021-10-13 03:00:30	<--	hirogen (~hirogen@user/hirogen) has quit (Remote host closed the connection)
+2021-10-13 03:02:45	<--	Candido_ruminant (~candidoru@2804:14d:baa1:954e::f851) has quit (Quit: Leaving)
+2021-10-13 03:09:39	-->	idkfa (~idkfa@user/idkfa) has joined #security
+2021-10-13 03:09:59	-->	redstarcomrade (uid99592@user/redstarcomrade) has joined #security
+2021-10-13 03:14:01	<--	SEP (~stephenle@71-135-151-245.lightspeed.frokca.sbcglobal.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 03:16:56	<--	demirok (~bell@user/demirok) has quit (Quit: Leaving.)
+2021-10-13 03:28:32	-->	MickOfRivia (~Thunderbi@94.252.38.56) has joined #security
+2021-10-13 03:29:15	<--	`Tim (~zenguin@user/zenguin) has quit (Quit: Leaving)
+2021-10-13 03:31:09	-->	elkclone (~elkclone@node-1w7jr9ppwkd0ztmvqjxj47kf9.ipv6.telus.net) has joined #security
+2021-10-13 03:31:09	<--	elkclone (~elkclone@node-1w7jr9ppwkd0ztmvqjxj47kf9.ipv6.telus.net) has quit (Changing host)
+2021-10-13 03:31:09	-->	elkclone (~elkclone@user/elkclone) has joined #security
+2021-10-13 03:31:57	elkclone	Evening Gentlemen
+2021-10-13 03:32:46	-->	boB_K7IQ (~boB_K7IQ@c-24-19-3-104.hsd1.wa.comcast.net) has joined #security
+2021-10-13 03:36:06	-->	opcode (~nathan@user/opcode) has joined #security
+2021-10-13 03:36:47	-->	vaginaldischarge (b9dc66fb@67.205.143.82) has joined #security
+2021-10-13 03:42:55	<--	vaginaldischarge (b9dc66fb@67.205.143.82) has left #security (The Lounge - https://thelounge.chat)
+2021-10-13 03:45:45	-->	SEP (~stephenle@71-135-151-245.lightspeed.frokca.sbcglobal.net) has joined #security
+2021-10-13 03:48:26	<--	Alhazred (~Alhazred@s91904425.blix.com) has quit (Ping timeout: 245 seconds)
+2021-10-13 03:50:10	-->	gco (~gco@2601:647:5a00:524:647e:1ab3:64de:66d1) has joined #security
+2021-10-13 03:50:20	-->	Alhazred (~Alhazred@86.106.74.37) has joined #security
+2021-10-13 03:50:28	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #security
+2021-10-13 03:50:34	<--	SEP (~stephenle@71-135-151-245.lightspeed.frokca.sbcglobal.net) has quit (Ping timeout: 265 seconds)
+2021-10-13 03:50:46	-->	giacomo-c (~giacomo@107.13.177.67) has joined #security
+2021-10-13 03:50:58	<--	giacomo (giacomo@gateway/vpn/protonvpn/giacomo) has quit (Ping timeout: 260 seconds)
+2021-10-13 03:51:13	<--	Nspace (~Nspace@user/nspace) has quit (Quit: Nspace)
+2021-10-13 03:52:19	<--	MickOfRivia (~Thunderbi@94.252.38.56) has quit (Quit: MickOfRivia)
+2021-10-13 03:52:45	<--	cpluspunch (~znc@66.115.147.182) has quit (Ping timeout: 250 seconds)
+2021-10-13 03:52:47	sartan	aww, ida free doesn't support .net assemblies =(
+2021-10-13 03:53:18	<--	herman (~herman@2603:9000:8500:baa0:a076:cb0c:2912:87dc) has quit (Ping timeout: 260 seconds)
+2021-10-13 03:53:31	-->	cpluspunch (~znc@104.200.132.249) has joined #security
+2021-10-13 03:54:07	cursey	i've never had an urge to even attempt to use IDA for .net assemblies. there are .net specific tools that are good enough.
+2021-10-13 03:54:22	Hash	I tried IDA when doing Diablo 2 engine hacking
+2021-10-13 03:54:31	Hash	Didn't jive with me.
+2021-10-13 03:55:16	<--	horseface (~horseface@user/horseface) has quit (Ping timeout: 252 seconds)
+2021-10-13 03:57:55	sartan	cursey: any suggestions? ILSpy gave me a bit of info but not too much.  I'm just trying to find some data constructs for a video game to write a data analysis tool for it
+2021-10-13 03:58:09	sartan	It gave me a bunch of stuff but nothign quite usable
+2021-10-13 03:58:30	Hash	I wonder if Resource Hacker might give some stuff?
+2021-10-13 03:58:35	cursey	it's been a while since i've reversed a .net assembly but i always used dnSpy
+2021-10-13 03:59:06	--	moose`` is now known as moose
+2021-10-13 04:00:03	Hash	I don't see anything as good as Reflector
+2021-10-13 04:00:19	Hash	If it does the job, maybe worth the cost.
+2021-10-13 04:01:31	cursey	is the game you're looking into obfuscated? even when .net assemblies were obfuscated i was able to glean enough from dnSpy output to do what i needed to
+2021-10-13 04:01:46	cursey	just took some more time
+2021-10-13 04:01:57	sartan	it's not no
+2021-10-13 04:04:05	sartan	i'm able to grab a bunch of json and read some simple headers, but i can't quite look at the item references i need, only pointers to them. i was wondering if there were other packed resources in the binary hiding on me
+2021-10-13 04:04:11	sartan	dnspy found a few more things than ilspy
+2021-10-13 04:04:34	-->	ElPresidente (~ElPreside@2605:a601:55be:bb00:b4ee:8306:9589:1945) has joined #security
+2021-10-13 04:07:16	 *	Roey high-fives sartan
+2021-10-13 04:07:24	sartan	hey roey
+2021-10-13 04:07:48	Roey	:D
+2021-10-13 04:10:57	<--	Roey (~Roey@user/Roey) has quit (Quit: Client exiting)
+2021-10-13 04:10:58	Hash	Roey: hey where you been
+2021-10-13 04:11:02	Hash	oh there he goes again
+2021-10-13 04:11:05	Hash	hehe
+2021-10-13 04:14:18	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #security
+2021-10-13 04:28:15	<--	gco (~gco@2601:647:5a00:524:647e:1ab3:64de:66d1) has quit (Quit: ZZZzzz…)
+2021-10-13 04:32:42	-->	Atque (~Atque@user/atque) has joined #security
+2021-10-13 04:35:39	-->	pnill (~pnill@ip170.ip-54-39-37.net) has joined #security
+2021-10-13 04:37:35	<--	dogbert2 (~Bill@ip68-105-189-91.lv.lv.cox.net) has quit (Remote host closed the connection)
+2021-10-13 04:37:51	-->	dogbert2 (~Bill@ip68-105-189-91.lv.lv.cox.net) has joined #security
+2021-10-13 04:48:00	-->	SEP (~stephenle@71-135-151-245.lightspeed.frokca.sbcglobal.net) has joined #security
+2021-10-13 04:52:11	<--	SEP (~stephenle@71-135-151-245.lightspeed.frokca.sbcglobal.net) has quit (Ping timeout: 245 seconds)
+2021-10-13 04:52:56	<--	spanishsunrise (uid393013@id-393013.hampstead.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-13 04:53:06	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 04:58:51	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 245 seconds)
+2021-10-13 05:00:49	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 05:00:56	-->	fikran (~fikran@user/fikran) has joined #security
+2021-10-13 05:03:04	<--	akimbo (~akimbo@customer-145-40-27-9.stosn.net) has quit (Remote host closed the connection)
+2021-10-13 05:03:13	<--	idkfa (~idkfa@user/idkfa) has quit (Quit: Leaving)
+2021-10-13 05:03:30	sartan	nice.. i found disassembled code that contains the data i want. it's not in a very helpful usable format but maybe i can write a parser on it as text and do some funky lookup stuff
+2021-10-13 05:03:49	<--	ElPresidente (~ElPreside@2605:a601:55be:bb00:b4ee:8306:9589:1945) has quit (Ping timeout: 250 seconds)
+2021-10-13 05:03:55	sartan	only 52 thousand lines of case statements
+2021-10-13 05:04:26	-->	gravy (~gravy@220-245-7-7.static.tpgi.com.au) has joined #security
+2021-10-13 05:04:50	-->	akimbo (~akimbo@customer-145-40-27-9.stosn.net) has joined #security
+2021-10-13 05:10:00	<--	ShiftyLogic (~shiftylog@66.115.147.138) has quit (Remote host closed the connection)
+2021-10-13 05:12:36	<--	machinedgod (~machinedg@135-23-192-217.cpe.pppoe.ca) has quit (Ping timeout: 245 seconds)
+2021-10-13 05:22:50	flyback	damn
+2021-10-13 05:22:55	flyback	I just realized
+2021-10-13 05:23:12	flyback	that some of these hackers that bring down tech support etc scams
+2021-10-13 05:23:13	flyback	are fucked
+2021-10-13 05:23:18	flyback	thx to this twitch hack
+2021-10-13 05:24:08	flyback	this could literally get dangerous
+2021-10-13 05:24:22	flyback	as personal address etc to mail a bomb to etc are out there
+2021-10-13 05:24:29	flyback	not good :/
+2021-10-13 05:25:50	Joanna	sartan: that’s a lot of case statements:)
+2021-10-13 05:26:39	-->	zensei_ (~zensei@user/zensei) has joined #security
+2021-10-13 05:26:55	<--	zensei (zensei@user/zensei) has quit (Killed (NickServ (GHOST command used by zensei_!~zensei@user/zensei)))
+2021-10-13 05:26:57	--	zensei_ is now known as zensei
+2021-10-13 05:27:46	flyback	what a mess
+2021-10-13 05:30:07	flyback	some of those scammers would love to get revenge
+2021-10-13 05:38:54	<--	promeys (~Promeys@gateway/tor-sasl/promey) has quit (Ping timeout: 276 seconds)
+2021-10-13 05:48:48	MadCamel	they generally don't concern themselves with anything but profit
+2021-10-13 05:49:01	MadCamel	scammers = ferengi
+2021-10-13 05:49:57	-->	coldblackcoffee (~Thunderbi@user/coldblackcoffee) has joined #security
+2021-10-13 05:52:25	<--	shark (~lemonade@user/sh4rk) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-10-13 05:53:16	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #security
+2021-10-13 06:02:59	<--	laurell82 (~laurell@user/laurell) has quit (Quit: Ping timeout (120 seconds))
+2021-10-13 06:03:13	-->	laurell82 (~laurell@user/laurell) has joined #security
+2021-10-13 06:05:06	<--	portalrat (~portalrat@user/portalrat) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:05:25	Joanna	MadCamel: is there a new scam?
+2021-10-13 06:05:26	-->	portalrat (~portalrat@user/portalrat) has joined #security
+2021-10-13 06:06:44	<--	vvv (~vvv@user/vvv) has left #security (Leaving.)
+2021-10-13 06:06:44	<--	coldblackcoffee (~Thunderbi@user/coldblackcoffee) has quit (Ping timeout: 265 seconds)
+2021-10-13 06:15:10	<--	PortableDave (~portabled@194-223-17-29.tpgi.com.au) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 06:21:48	<--	kish` (~aqua@user/aqua) has quit (Remote host closed the connection)
+2021-10-13 06:22:21	-->	kish` (~aqua@user/aqua) has joined #security
+2021-10-13 06:29:46	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 06:34:38	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Quit: THE RAM IS TOO DAMN HIGH)
+2021-10-13 06:49:59	-->	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has joined #security
+2021-10-13 06:51:38	-->	bugtrial6 (bugtrial@gateway/vpn/protonvpn/bugtrial) has joined #security
+2021-10-13 06:52:17	<--	WishBoy (~WishBoy@user/wishboy) has quit
+2021-10-13 06:52:49	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #security
+2021-10-13 06:53:01	<--	bugtrial (bugtrial@gateway/vpn/protonvpn/bugtrial) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:53:02	--	bugtrial6 is now known as bugtrial
+2021-10-13 06:54:37	-->	PortableDave (~portabled@194-223-17-29.tpgi.com.au) has joined #security
+2021-10-13 06:55:02	--	Hash is now known as LordOfThePings
+2021-10-13 06:57:38	-->	gco (~gco@2601:647:5a00:524:647e:1ab3:64de:66d1) has joined #security
+2021-10-13 06:58:40	--	LordOfThePings is now known as EnchanterTim
+2021-10-13 07:04:44	-->	BOKALDO (~BOKALDO@user/bokaldo) has joined #security
+2021-10-13 07:08:19	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:08:46	-->	vaginaldischarge (b9dc66f8@67.205.143.82) has joined #security
+2021-10-13 07:10:18	-->	fikran (~fikran@user/fikran) has joined #security
+2021-10-13 07:12:08	Apachez	https://www.bleepingcomputer.com/news/security/study-reveals-android-phones-constantly-snoop-on-their-users/
+2021-10-13 07:13:11	vaginaldischarge	Apachez: how are you?
+2021-10-13 07:20:03	-->	CatCow (~wtf_over@c-73-96-109-206.hsd1.or.comcast.net) has joined #security
+2021-10-13 07:27:41	-->	stoneware (~stoneware@user/stoneware) has joined #security
+2021-10-13 07:32:18	-->	ElectronApps (~ElectronA@user/electronapps) has joined #security
+2021-10-13 07:41:00	-->	Doraemon (~NeoCron@p200300c4cf1964009b5b3ef502cc8e57.dip0.t-ipconnect.de) has joined #security
+2021-10-13 07:43:17	<--	NeoCron (~NeoCron@p200300c4cf195d00df9b3d9f9a455325.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2021-10-13 07:44:09	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 07:50:07	<--	spacelord (~spacelord@user/acid-king/x-4783339) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:51:09	<--	ravan__ (~ravan@user/ravan) has quit (Quit: Leaving)
+2021-10-13 07:51:45	-->	ravan__ (~ravan@user/ravan) has joined #security
+2021-10-13 07:51:51	<--	ravan__ (~ravan@user/ravan) has quit (Read error: Connection reset by peer)
+2021-10-13 07:52:29	-->	AquaL1te (~AquaL1te@user/aqual1te) has joined #security
+2021-10-13 08:00:17	-->	standardrat (~standardr@196.30.99.2) has joined #security
+2021-10-13 08:00:37	<--	laurell82 (~laurell@user/laurell) has quit (Ping timeout: 252 seconds)
+2021-10-13 08:02:26	-->	sulex (~sulex@user/sulex) has joined #security
+2021-10-13 08:03:01	-->	sjottelsplak (~Thunderbi@user/sjottelsplak) has joined #security
+2021-10-13 08:09:12	-->	spacelord (~spacelord@user/acid-king/x-4783339) has joined #security
+2021-10-13 08:12:12	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #security
+2021-10-13 08:12:17	-->	manti7 (~manti7@176.10.104.94) has joined #security
+2021-10-13 08:12:48	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Client Quit)
+2021-10-13 08:13:18	-->	laurell82 (~laurell@user/laurell) has joined #security
+2021-10-13 08:13:21	-->	BiggieSmalls (~BiggieSma@user/biggiesmalls) has joined #security
+2021-10-13 08:13:59	<--	cpluspunch (~znc@104.200.132.249) has quit (Ping timeout: 265 seconds)
+2021-10-13 08:14:20	-->	cpluspunch (~znc@104.200.132.106) has joined #security
+2021-10-13 08:15:22	-->	stunder (~stunder@47-146-54-100.lsan.ca.frontiernet.net) has joined #security
+2021-10-13 08:18:48	<--	sjottelsplak (~Thunderbi@user/sjottelsplak) has quit (Quit: Signing off!)
+2021-10-13 08:20:03	-->	sjottelsplak (~Thunderbi@user/sjottelsplak) has joined #security
+2021-10-13 08:34:53	-->	tex (~super@user/dix) has joined #security
+2021-10-13 08:37:39	<--	GNUmoon (~GNUmoon@gateway/tor-sasl/gnumoon) has quit (Ping timeout: 276 seconds)
+2021-10-13 08:40:57	<--	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has quit (Remote host closed the connection)
+2021-10-13 08:41:47	<--	vaginaldischarge (b9dc66f8@67.205.143.82) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-13 08:42:04	-->	ShiftyLogic (~shiftylog@66.115.147.138) has joined #security
+2021-10-13 08:43:11	-->	Kraig (uid454603@id-454603.uxbridge.irccloud.com) has joined #security
+2021-10-13 08:44:39	-->	AnpMoot (~kuballe@anyone.tjorn.se) has joined #security
+2021-10-13 08:45:43	<--	elkclone (~elkclone@user/elkclone) has quit (Ping timeout: 252 seconds)
+2021-10-13 08:45:45	<--	HyN0X (~HyNoX@37.160.17.121) has quit (Ping timeout: 265 seconds)
+2021-10-13 08:46:43	<--	ShiftyLogic (~shiftylog@66.115.147.138) has quit (Ping timeout: 265 seconds)
+2021-10-13 08:47:22	-->	HyN0X (~HyNoX@37.161.128.146) has joined #security
+2021-10-13 21:22:51	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:17	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #security
+2021-10-13 21:23:18	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-13 21:23:18	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-13 21:23:18	--	Channel #security: 680 nicks (0 ops, 0 voices, 680 normals)
+2021-10-13 21:23:26	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-13 21:23:36	mathu	ajak: because gadgets end in returns? i don't see how new frames would be created for the ROP gadgets
+2021-10-13 21:23:58	mathu	you overwrite a return address to initiate the ROP chain, but you can't generate new call instructions or whatever
+2021-10-13 21:24:38	ajak	you can't generate new call instructions yes, and new frames won't be created, no
+2021-10-13 21:25:05	mathu	so, when each gadget runs its ret instruction, the stack pointer gets moved
+2021-10-13 21:25:14	mathu	right?
+2021-10-13 21:25:33	ajak	as i understand it when you get control of the return address you jmp (or whatever) into the address at the return address, then when that code ret's it ret's to the next pointer on the stack
+2021-10-13 21:26:38	-->	ben1_ (~ben1@88.236.166.182) has joined #security
+2021-10-13 21:27:01	<--	ben1_ (~ben1@88.236.166.182) has left #security
+2021-10-13 21:27:09	mathu	doesn't ret move the stack pointer itself though?
+2021-10-13 21:27:14	ajak	well, to try to avoid mincing words, what RET does is pop the address at the top of the stack and jmp to it
+2021-10-13 21:27:23	ajak	sounds right
+2021-10-13 21:27:57	mathu	i'm aching for lack of an ability to quickly playground this like most of my other programming questions :v
+2021-10-13 21:28:42	-->	Scarecr0w (scarecr0w@user/scarecr0w) has joined #security
+2021-10-13 21:29:45	<--	shabius (~shabius@2a0e:1c80:2:1021::1001) has quit (Read error: Connection reset by peer)
+2021-10-13 21:30:18	MadCamel	you really just have to get good with a debugger so you can watch things in action
+2021-10-13 21:30:23	-->	shabius (~shabius@2a0e:1c80:2:1021::1001) has joined #security
+2021-10-13 21:30:30	ajak	yes
+2021-10-13 21:30:32	ajak	i have used pwndbg
+2021-10-13 21:31:56	mathu	so i write my first gadget's address to the stack, and then when my current function returns, i ret and jump to the gadget. my gadget will presumably pop its own locals off the stack and then ret, which requires that i've written another gadget's return address to an earlier location in the stack depending on how much my first gadget pops. i might be able to choose gadgets that call to create more stack
+2021-10-13 21:32:02	mathu	frames if... they also contain bugs to let me overwrite the return addresses they push? so i think there has to be a depth limit to ROP chains based on how many stack frames deep you were at the start
+2021-10-13 21:32:08	<--	gitly2 (~gitly@85.255.234.86) has quit (Ping timeout: 246 seconds)
+2021-10-13 21:32:25	mathu	and setting up your ROP chains is a destructive operation; you have to overwrite parts of previous stack frames to set up. right?
+2021-10-13 21:33:01	<--	demirok (~bell@user/demirok) has quit (Quit: Leaving.)
+2021-10-13 21:33:02	-->	semeion (~semeion@user/semeion) has joined #security
+2021-10-13 21:33:14	ajak	yeah buffer overflows are generally destructive
+2021-10-13 21:33:32	ajak	sometimes you can be lucky and set things back up so that the program continues but it's rarely a real concern
+2021-10-13 21:34:08	<--	kish` (~aqua@user/aqua) has quit (Quit: Leaving)
+2021-10-13 21:34:21	-->	gitly2 (~gitly@85.255.233.120) has joined #security
+2021-10-13 21:34:26	-->	kish` (~aqua@user/aqua) has joined #security
+2021-10-13 21:36:40	mathu	gotcha. a page online suggested ROP was good not just because it works around DEP but because it avoids smashing the stack, and i just couldn't think of how that could be possible
+2021-10-13 21:36:47	mathu	looks like i was right :)
+2021-10-13 21:36:50	mathu	thanks for confirming!
+2021-10-13 21:37:16	ajak	well i'm a moron
+2021-10-13 21:37:57	ajak	maybe i'm wrong, but i'd think that any overflow can destroy things that something else might expect to be there
+2021-10-13 21:38:23	-->	stoneware (~stoneware@user/stoneware) has joined #security
+2021-10-13 21:38:25	<--	semeion (~semeion@user/semeion) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:38:42	ajak	this would be demonstrated by the fact that if you don't figure out a way to cleanly exit your overflow will segfault the program or similar
+2021-10-13 21:40:11	<--	grobi (~grobi@user/grobi) has quit (Quit: baby i'm bored ♞▀▄▀▄♝▀)
+2021-10-13 21:40:27	--	dodo__ is now known as dodo
+2021-10-13 21:42:16	<--	rickybob (rickybob@gateway/vpn/protonvpn/rickybob) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:43:39	<--	bn_work (uid268505@id-268505.uxbridge.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-13 21:43:55	<--	___nick___ (~quassel@cpc68286-cdif17-2-0-cust533.5-1.cable.virginm.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:44:06	<--	yans (~yans@2a02:8388:4504:1780:b5be:e9d1:8106:a961) has quit (Quit: chaos is the only true answer)
+2021-10-13 21:44:24	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 21:46:49	-->	Pickchea (~private@user/pickchea) has joined #security
+2021-10-13 21:47:06	<--	Alhazred (~Alhazred@s91904425.blix.com) has quit (Quit: leaving)
+2021-10-13 21:47:07	<--	mooff (mooff@awful.cooking) has quit (Remote host closed the connection)
+2021-10-13 21:47:59	-->	ShiftyLogic (~shiftylog@66.115.147.138) has joined #security
+2021-10-13 21:49:37	-->	graudre (~graudre@2607:fea8:560:7f20:200e:dd94:3958:8f38) has joined #security
+2021-10-13 21:49:43	<--	mithrin (~mithrin@stip-static-62.213-81-207.telecom.sk) has quit (Ping timeout: 265 seconds)
+2021-10-13 21:49:52	-->	semeion (~semeion@user/semeion) has joined #security
+2021-10-13 21:52:19	<--	ravan (~ravan@user/ravan) has quit (Quit: Leaving)
+2021-10-13 21:53:05	-->	mithrin (~mithrin@stip-static-62.213-81-207.telecom.sk) has joined #security
+2021-10-13 21:54:02	-->	herman (~herman@2603:9000:8500:baa0:28f8:d2:914b:459e) has joined #security
+2021-10-13 21:56:01	<--	semeion (~semeion@user/semeion) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:56:29	<--	ShiftyLogic (~shiftylog@66.115.147.138) has quit (Ping timeout: 265 seconds)
+2021-10-13 21:56:32	-->	fcinq (~irc@proxy.cloud-in.space) has joined #security
+2021-10-13 21:57:05	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Remote host closed the connection)
+2021-10-13 21:57:15	-->	milkt_ (~debian@gateway/tor-sasl/milkt) has joined #security
+2021-10-13 21:57:58	<--	wowi4242 (~wowi42@5.30.23.58) has quit (Quit: WeeChat 3.2)
+2021-10-13 21:59:33	<--	Deimeneus (~deimeneus@2a05:4f46:c1a:aa00:44e5:3917:a998:79fb) has quit (Quit: Leaving)
+2021-10-13 22:01:33	-->	hirogen (~hirogen@user/hirogen) has joined #security
+2021-10-13 22:02:08	<--	kish` (~aqua@user/aqua) has quit (Remote host closed the connection)
+2021-10-13 22:02:14	-->	_inky (~inky_@141.136.76.213) has joined #security
+2021-10-13 22:04:25	-->	redstarcomrade (uid99592@user/redstarcomrade) has joined #security
+2021-10-13 22:08:12	<--	chipox (~chipox@86.107.21.135) has quit (Quit: Leaving)
+2021-10-13 22:08:58	-->	semeion (~semeion@user/semeion) has joined #security
+2021-10-13 22:10:00	-->	mooff (mooff@awful.cooking) has joined #security
+2021-10-13 22:10:49	<--	mooff (mooff@awful.cooking) has quit (Remote host closed the connection)
+2021-10-13 22:11:21	<--	Lucanis (~Lucanis@user/lucanis) has quit (Ping timeout: 245 seconds)
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:32	-->	mrmanner (~jmanner@185.224.57.161) has joined #security
+2021-10-16 12:32:32	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-16 12:32:32	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-16 12:32:32	--	Channel #security: 664 nicks (0 ops, 0 voices, 664 normals)
+2021-10-16 12:32:34	-->	fcinq (~irc@network.g33k.host) has joined #security
+2021-10-16 12:32:40	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-16 12:32:40	-->	me-sudoer-dentne (~me-sudoer@2405:204:53ab:d5ed:583f:8b00:175b:9f05) has joined #security
+2021-10-16 12:32:51	<--	Atque (~Atque@user/atque) has quit (Ping timeout: 276 seconds)
+2021-10-16 12:36:24	-->	ravan (~ravan@user/ravan) has joined #security
+2021-10-16 12:38:34	<--	Haxxa (~Haxxa@122-199-44-32.ip4.superloop.com) has quit (Quit: Haxxa flies away.)
+2021-10-16 12:41:01	-->	Haxxa (~Haxxa@122-199-44-32.ip4.superloop.com) has joined #security
+2021-10-16 12:50:11	<--	fcinq (~irc@network.g33k.host) has quit (Ping timeout: 264 seconds)
+2021-10-16 12:50:21	<--	Haxxa (~Haxxa@122-199-44-32.ip4.superloop.com) has quit (Ping timeout: 265 seconds)
+2021-10-16 12:54:47	<--	voids (~x@user/voids) has quit (Ping timeout: 268 seconds)
+2021-10-16 12:55:49	<--	redstarcomrade (uid99592@user/redstarcomrade) has quit (Quit: Connection closed for inactivity)
+2021-10-16 13:02:05	<--	lind{at}yahoo (uid486956@tinside.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-16 13:05:33	-->	darksun (~darksun@user/darksun) has joined #security
+2021-10-16 13:06:01	-->	voids (~x@102.209.19.93.rev.sfr.net) has joined #security
+2021-10-16 13:07:31	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Quit: Laa shay'a waqi'un moutlaq bale kouloun moumkine)
+2021-10-16 13:10:00	<--	voids (~x@102.209.19.93.rev.sfr.net) has quit (Changing host)
+2021-10-16 13:10:00	-->	voids (~x@user/voids) has joined #security
+2021-10-16 13:11:52	-->	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has joined #security
+2021-10-16 13:14:58	-->	Lord_of_Life_ (~Lord@user/lord-of-life/x-2819915) has joined #security
+2021-10-16 13:16:21	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Ping timeout: 245 seconds)
+2021-10-16 13:16:22	--	Lord_of_Life_ is now known as Lord_of_Life
+2021-10-16 13:18:47	<--	Lazenca (~lazenca@user/lazenca) has quit (Remote host closed the connection)
+2021-10-16 13:20:31	<--	ElectronApps (~ElectronA@user/electronapps) has quit (Remote host closed the connection)
+2021-10-16 13:22:30	-->	Lord_of_Life_ (~Lord@user/lord-of-life/x-2819915) has joined #security
+2021-10-16 13:23:11	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Ping timeout: 264 seconds)
+2021-10-16 13:23:33	-->	Haxxa (~Haxxa@122-199-44-183.ip4.superloop.com) has joined #security
+2021-10-17 18:14:37	-->	jmanner (~jmanner@185.224.57.161) has joined #security
+2021-10-17 18:14:37	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-17 18:14:37	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-17 18:14:38	--	Channel #security: 669 nicks (0 ops, 0 voices, 669 normals)
+2021-10-17 18:14:43	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-17 18:15:05	-->	kept (~kept@user/kept) has joined #security
+2021-10-17 18:16:33	<--	KaosTheory (~KaosTheor@152.206.232.196) has quit (Quit: Quit)
+2021-10-17 18:19:01	-->	jmanner (~jmanner@user/mrmanner) has joined #security
+2021-10-17 18:19:01	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-17 18:19:01	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-17 18:19:02	--	Channel #security: 669 nicks (0 ops, 0 voices, 669 normals)
+2021-10-17 18:19:09	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-17 18:30:35	-->	jmanner (~jmanner@user/mrmanner) has joined #security
+2021-10-17 18:30:35	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-17 18:30:35	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-17 18:30:35	--	Channel #security: 668 nicks (0 ops, 0 voices, 668 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:40	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-17 18:36:58	-->	BrianG61UK (~BrianG61U@2a02:8010:66b7:dddd:9c85:c026:9683:a8d4) has joined #security
+2021-10-17 18:38:15	-->	lobboazul (~LobboAzul@190.239.71.11) has joined #security
+2021-10-17 18:39:41	-->	KaosTheory (~KaosTheor@152.206.208.196) has joined #security
+2021-10-17 18:40:02	<--	machinedgod (~machinedg@24.105.81.50) has quit (Ping timeout: 268 seconds)
+2021-10-17 18:40:41	-->	clarjon1 (~clarjon1@user/clarjon1) has joined #security
+2021-10-17 18:43:11	-->	zippy (~quassel@user/zippy) has joined #security
+2021-10-17 18:48:57	<--	drathir_tor (~drathir@wireguard/tunneler/drathir) has quit (Ping timeout: 276 seconds)
+2021-10-17 18:50:55	-->	drathir_tor (~drathir@wireguard/tunneler/drathir) has joined #security
+2021-10-17 18:50:56	<--	lobboazul (~LobboAzul@190.239.71.11) has quit (Read error: Connection reset by peer)
+2021-10-17 18:51:52	-->	lobboazul (~LobboAzul@181.176.121.57) has joined #security
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:42	-->	mrmanner (~jmanner@user/mrmanner) has joined #security
+2021-10-17 19:45:42	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-17 19:45:42	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-17 19:45:42	--	Channel #security: 674 nicks (0 ops, 0 voices, 674 normals)
+2021-10-17 19:45:51	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-17 19:46:34	-->	flyback (~flyback@2601:540:8201:1e60::5706) has joined #security
+2021-10-17 19:49:15	<--	ska (~ska@user/ska) has quit (Ping timeout: 265 seconds)
+2021-10-17 19:54:41	<--	zensei (zensei@user/zensei) has quit (Ping timeout: 245 seconds)
+2021-10-17 19:55:30	<--	hirogen (~hirogen@cpc120260-heme13-2-0-cust3.9-1.cable.virginm.net) has quit (Changing host)
+2021-10-17 19:55:30	-->	hirogen (~hirogen@user/hirogen) has joined #security
+2021-10-17 19:57:59	-->	brutex (~brutex@user/brutex) has joined #security
+2021-10-17 19:58:25	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-17 20:01:34	-->	laurell822 (~laurell@user/laurell) has joined #security
+2021-10-17 20:02:23	-->	brutex_ (~brutex@user/brutex) has joined #security
+2021-10-17 20:02:27	--	brutex is now known as Guest302
+2021-10-17 20:02:29	<--	Haxxa (~Haxxa@122.199.45.224) has quit (Quit: Haxxa flies away.)
+2021-10-17 20:02:38	--	brutex_ is now known as brutex
+2021-10-17 20:02:45	-->	ska (~ska@user/ska) has joined #security
+2021-10-17 20:03:16	<--	Guest302 (~brutex@user/brutex) has quit (Ping timeout: 265 seconds)
+2021-10-17 20:03:37	<--	laurell822 (~laurell@user/laurell) has quit (Read error: Connection reset by peer)
+2021-10-17 20:03:47	-->	ben1_ (~ben1@88.236.166.182) has joined #security
+2021-10-17 20:04:10	<--	ben1_ (~ben1@88.236.166.182) has left #security
+2021-10-17 20:05:02	-->	Haxxa (~Haxxa@122.199.45.224) has joined #security
+2021-10-17 20:05:16	-->	laurell822 (~laurell@user/laurell) has joined #security
+2021-10-17 20:07:01	-->	zensei (zensei@user/zensei) has joined #security
+2021-10-17 20:07:33	-->	sch1z0_c0d3 (~anarkiddy@156.67.18.13) has joined #security
+2021-10-17 20:07:53	<--	dp (dp@user/dp) has quit (Quit: Reconnecting)
+2021-10-17 20:08:09	-->	dp (dp@user/dp) has joined #security
+2021-10-17 20:08:46	-->	Nact (~l@host-85-27-120-251.dynamic.voo.be) has joined #security
+2021-10-17 20:11:48	<--	WishBoy (~WishBoy@user/wishboy) has quit
+2021-10-17 20:13:34	<--	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-17 20:14:02	<--	dp (dp@user/dp) has left #security
+2021-10-17 20:15:15	-->	daz0r (~stefan@85.186.48.141) has joined #security
+2021-10-17 20:18:28	<--	BOKALDO (~BOKALDO@user/bokaldo) has quit (Quit: Leaving)
+2021-10-17 20:20:32	-->	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has joined #security
+2021-10-17 20:24:03	-->	PsyZeus (~TheLight@user/psyzeus) has joined #security
+2021-10-17 20:25:26	<--	wbg (~wbg@user/wbg) has quit (Ping timeout: 252 seconds)
+2021-10-17 20:27:25	<--	Haxxa (~Haxxa@122.199.45.224) has quit (Quit: Haxxa flies away.)
+2021-10-17 20:27:56	-->	Haxxa (~Haxxa@122.199.45.224) has joined #security
+2021-10-17 20:31:31	-->	blindguard (~blindguar@2a02:908:1864:c200::2612) has joined #security
+2021-10-17 20:32:48	<--	electr0n (~electr0n@about/security/founder/electr0n) has quit (Quit: WeeChat 3.3)
+2021-10-17 20:33:17	-->	Alleria (~textual@user/alleria) has joined #security
+2021-10-17 20:39:15	-->	darksun (~darksun@user/darksun) has joined #security
+2021-10-17 20:43:06	-->	machinedgod (~machinedg@24.105.81.50) has joined #security
+2021-10-17 20:43:45	<--	Haxxa (~Haxxa@122.199.45.224) has quit (Quit: Haxxa flies away.)
+2021-10-17 20:45:00	-->	Haxxa (~Haxxa@122.199.45.224) has joined #security
+2021-10-17 20:51:23	<--	h4zel (~hazel@user/h4zel) has quit (Ping timeout: 268 seconds)
+2021-10-17 20:55:07	<--	brutex (~brutex@user/brutex) has quit (Remote host closed the connection)
+2021-10-17 20:59:31	<--	Haxxa (~Haxxa@122.199.45.224) has quit (Quit: Haxxa flies away.)
+2021-10-17 20:59:34	<--	laurell822 (~laurell@user/laurell) has quit (Read error: Connection reset by peer)
+2021-10-17 21:00:15	-->	laurell822 (~laurell@user/laurell) has joined #security
+2021-10-17 21:04:41	<--	laurell822 (~laurell@user/laurell) has quit (Read error: Connection reset by peer)
+2021-10-17 21:05:12	-->	laurell822 (~laurell@user/laurell) has joined #security
+2021-10-17 21:09:42	-->	Haxxa (~Haxxa@122.199.45.224) has joined #security
+2021-10-17 21:11:41	-->	mikey__ (~mikey__@cpe-167-100-16-236.mt-rushmore.net) has joined #security
+2021-10-17 21:11:57	-->	WishBoy (~WishBoy@user/wishboy) has joined #security
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #security
+2021-10-30 12:09:24	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-30 12:09:24	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-30 12:09:24	--	Channel #security: 681 nicks (0 ops, 0 voices, 681 normals)
+2021-10-30 12:09:30	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #security
+2021-10-30 12:10:54	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-30 12:10:54	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-30 12:10:54	--	Channel #security: 681 nicks (0 ops, 0 voices, 681 normals)
+2021-10-30 12:11:00	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:12:23	<--	fcinq (~irc@network.g33k.host) has quit (Ping timeout: 264 seconds)
+2021-10-30 12:13:16	-->	n9nes (~n9nes@213-47-110-35.cable.dynamic.surfer.at) has joined #security
+2021-10-30 12:13:16	<--	n9nes (~n9nes@213-47-110-35.cable.dynamic.surfer.at) has quit (Changing host)
+2021-10-30 12:13:16	-->	n9nes (~n9nes@user/n9nes) has joined #security
+2021-10-30 12:16:45	-->	blindguard (~blindguar@2a02:908:1864:c200::2612) has joined #security
+2021-10-30 12:17:38	-->	noxim (~noxim@user/noxim) has joined #security
+2021-10-30 12:20:58	<--	indux (~Thunderbi@2a02:2454:4e8:6700:d832:c882:f977:7ff4) has quit (Quit: indux)
+2021-10-30 12:21:17	-->	indux (~Thunderbi@2a02:2454:4e8:6700:d832:c882:f977:7ff4) has joined #security
+2021-10-30 12:24:37	-->	tesseract (~tesseract@user/tesseract) has joined #security
+2021-10-30 12:26:13	<--	piou (~piou@24.20.201.77.rev.sfr.net) has quit (Changing host)
+2021-10-30 12:26:13	-->	piou (~piou@user/piou) has joined #security
+2021-10-30 12:27:46	<--	noxim (~noxim@user/noxim) has quit (Quit: Client closed)
+2021-10-30 12:28:18	-->	wootehfoot (~wootehfoo@user/wootehfoot) has joined #security
+2021-10-30 12:30:39	-->	tech_exorcist (txrcst@user/tech-exorcist/x-0447479) has joined #security
+2021-10-30 12:32:46	relipse	is AnonymousFox stuff any good
+2021-10-30 12:32:49	-->	laurell82212 (~laurell@user/laurell) has joined #security
+2021-10-30 12:33:02	<--	laurell8221 (~laurell@user/laurell) has quit (Read error: Connection reset by peer)
+2021-10-30 12:33:02	--	laurell82212 is now known as laurell8221
+2021-10-30 12:35:27	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #security
+2021-10-30 12:42:21	-->	dna44 (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has joined #security
+2021-10-30 12:45:34	<--	secbot_ (~limnoria@thestonedapes.com) has quit (Quit: Limnoria 2021.10.18)
+2021-10-30 12:45:53	-->	secbot (~limnoria@thestonedapes.com) has joined #security
+2021-10-30 12:46:00	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 268 seconds)
+2021-10-30 12:46:38	<--	pycurious (~Adium@user/pycurious) has quit (Quit: Leaving.)
+2021-10-30 12:47:46	-->	fikran (~fikran@user/fikran) has joined #security
+2021-10-30 12:48:33	-->	Yonle (~Yonle@user/yonle) has joined #security
+2021-10-30 12:50:35	<--	Yonle (~Yonle@user/yonle) has quit (Client Quit)
+2021-10-30 12:50:59	-->	Yonle (~Yonle@user/yonle) has joined #security
+2021-10-30 12:52:37	<--	kulesh (kulesh@46.138.249.44) has quit (Read error: Connection reset by peer)
+2021-10-30 12:52:44	<--	portalrat_ (~portalrat@user/portalrat) has quit (Ping timeout: 265 seconds)
+2021-10-30 12:55:30	-->	kulesh (kulesh@46.138.249.44) has joined #security
+2021-10-30 12:55:47	<--	SallyAhaj (~SallyAhaj@user/sallyahaj) has quit (Quit: Leaving)
+2021-10-30 13:02:50	-->	ShiftyLogic (~shiftylog@66.115.146.16) has joined #security
+2021-10-30 13:03:20	-->	ShiftyLo_ (~shiftylog@66.115.146.16) has joined #security
+2021-10-30 13:04:55	-->	Atque (~Atque@user/atque) has joined #security
+2021-10-30 13:08:01	-->	crackerjack (~crackerja@pear.bnc4free.com) has joined #security
+2021-10-30 13:08:25	<--	ShiftyLogic (~shiftylog@66.115.146.16) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:08:32	<--	ShiftyLo_ (~shiftylog@66.115.146.16) has quit (Ping timeout: 246 seconds)
+2021-10-30 13:10:54	<--	HyN0X (~HyNoX@151.37.63.68) has quit (Read error: Connection reset by peer)
+2021-10-30 13:12:20	<--	horseface (~horseface@user/horseface) has quit (Quit: Leaving)
+2021-10-30 13:12:26	-->	pagios (~pagios@life.is-a.beauty) has joined #security
+2021-10-30 13:14:15	-->	twizzlstix (~twizzlsti@has.arrived.and.is.ready-to.party) has joined #security
+2021-10-30 13:15:43	-->	horseface (~horseface@user/horseface) has joined #security
+2021-10-30 13:15:58	-->	HyN0X (~HyNoX@151.37.16.91) has joined #security
+2021-10-30 13:17:11	<--	Yonle (~Yonle@user/yonle) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:17:49	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has joined #security
+2021-10-30 13:19:24	<--	drathir_tor (~drathir@wireguard/tunneler/drathir) has quit (Ping timeout: 276 seconds)
+2021-10-30 13:19:35	-->	portalrat_ (~portalrat@user/portalrat) has joined #security
+2021-10-30 13:19:54	<--	spare (~gzxsdvs3n@user/spareproject) has quit (Remote host closed the connection)
+2021-10-30 13:20:28	-->	spare (~gzxsdvs3n@user/spareproject) has joined #security
+2021-10-30 13:20:45	<--	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:22:00	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has joined #security
+2021-10-30 13:22:29	-->	riderjj (~riderjj@is.here.for-some.fun) has joined #security
+2021-10-30 13:24:16	-->	pycurious (~Adium@user/pycurious) has joined #security
+2021-10-30 13:25:17	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:27:55	-->	drathir_tor (~drathir@wireguard/tunneler/drathir) has joined #security
+2021-10-30 13:30:46	-->	me-sudoer-dentne (~me-sudoer@2409:4071:2281:6748:766d:ae06:6724:cf09) has joined #security
+2021-10-30 13:30:59	<--	critr (~critr@50-1-165-103.dsl.dynamic.fusionbroadband.com) has quit (Quit: .)
+2021-10-30 13:31:21	-->	Neojack (~Neojack@pear.bnc4free.com) has joined #security
+2021-10-30 13:33:42	-->	brutex (~openface@user/brutex) has joined #security
+2021-10-30 13:35:39	<--	drathir_tor (~drathir@wireguard/tunneler/drathir) has quit (Ping timeout: 276 seconds)
+2021-10-30 13:36:52	-->	st327 (~st327@user/st327) has joined #security
+2021-10-30 13:39:02	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has joined #security
+2021-10-30 13:41:43	<--	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:42:05	<--	idontknow (~idontknow@2a02:168:4bd7:0:a0c7:8bad:ecf0:76fb) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:45:23	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:d418:453f:8e01:9edf) has joined #security
+2021-10-30 13:45:44	-->	idontknow (~idontknow@212.51.156.39) has joined #security
+2021-10-30 13:45:51	<--	pycurious (~Adium@user/pycurious) has quit (Quit: Leaving.)
+2021-10-30 13:47:37	-->	Oarbonyeb8 (~Oarbonyeb@182-54.dynamonet.fi) has joined #security
+2021-10-30 13:48:05	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has quit (Ping timeout: 246 seconds)
+2021-10-30 13:48:20	-->	BrianD (~root@pool-108-44-160-12.clppva.fios.verizon.net) has joined #security
+2021-10-30 13:51:17	-->	s0mbra (jd@gateway/vpn/protonvpn/s0mbra) has joined #security
+2021-10-30 13:51:21	-->	drathir_tor (~drathir@wireguard/tunneler/drathir) has joined #security
+2021-10-30 17:07:05	--	irc: disconnected from server
+2021-10-30 17:07:33	-->	mrmanner (~jmanner@user/mrmanner) has joined #security
+2021-10-30 17:07:33	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-30 17:07:33	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-30 17:07:33	--	Channel #security: 699 nicks (0 ops, 0 voices, 699 normals)
+2021-10-30 17:07:38	<--	ElectronApps (~ElectronA@user/electronapps) has quit (Remote host closed the connection)
+2021-10-30 17:07:40	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-30 17:07:44	Joanna	ww86: sounds like an annoying situation if your activities are being intercepted I hope you find a way to stop it.
+2021-10-30 17:08:07	ww86	It is indeed a rather annoying situation, don't think I can put an end to it. But thanks for that anyway.
+2021-10-30 17:08:38	Joanna	I didn’t know cia website had online forms ..
+2021-10-30 17:08:42	minall	ajak: That's another thing, is like come on, if you would been compromised, a lot of worse things would happend. So this sound more like a troll virus you got in your system
+2021-10-30 17:09:06	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #security
+2021-10-30 17:09:30	minall	ww86: 1. Try another OS in the same computer with a USB Live, with that you assure that it is not a virus, or that the network is the culprit
+2021-10-30 17:09:49	minall	2. Try in another network, with that you assure if your network is compromised
+2021-10-30 17:09:53	Joanna	ww86: what operating system is this happening on ?
+2021-10-30 17:10:00	ww86	Windows 10, and earlier Debian
+2021-10-30 17:10:25	Joanna	Win 10 is definitely spyware
+2021-10-30 17:10:47	ajak	immaterial to the problem at hand
+2021-10-30 17:11:15	-->	dna44 (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has joined #security
+2021-10-30 17:11:43	minall	ww86: So, you already tried another OS. Your phone does the same right?
+2021-10-30 17:11:46	<--	zer0bitz_ (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 252 seconds)
+2021-10-30 17:11:55	ww86	I could describe some events that have taken place along the way, but this would take quite a long time.
+2021-10-30 17:12:31	ww86	Currently I don't have a smartphone, so I download the mp3 files on my PC and then copy them onto a MicroSD card, which I put into my phone. @ minall
+2021-10-30 17:13:15	<--	HyN0X (~HyNoX@151.37.16.91) has quit (Ping timeout: 265 seconds)
+2021-10-30 17:14:09	minall	You need to do a test to check if the computer or the network is the one that's compromised. Grab any friend laptop or phone and try to download the same mp3 as you did. If the mp3 cames out modified, your network is compromised
+2021-10-30 17:15:05	-->	HyN0X (~HyNoX@151.37.36.9) has joined #security
+2021-10-30 17:15:54	<--	minall (~minall@186.69.200.119) has quit (Quit: minall)
+2021-10-30 17:16:00	-->	kadavul (~vazha@103.165.21.156) has joined #security
+2021-10-30 17:16:19	-->	minall (~minall@186.69.200.119) has joined #security
+2021-10-30 17:16:19	<--	minall (~minall@186.69.200.119) has quit (Remote host closed the connection)
+2021-10-30 17:16:38	-->	minall (~minall@186.69.200.119) has joined #security
+2021-10-30 17:17:30	ww86	Whether or not you find this credible, my experience is that the Finnish society has lots of civilians who have ended up being part of the Russians' contact networks and will do their bidding. This most certainly extends to all telephone companies in the country.
+2021-10-30 17:17:52	<--	mithrin (~mithrin@bband-dyn73.95-103-249.t-com.sk) has quit (Quit: Leaving)
+2021-10-30 17:18:29	ww86	Thus, I feel that trying to do some laborious test on another machine, it wouldn't be conclusive, and even if it was successful as a test, wouldn't ease my current situation.
+2021-10-30 17:18:39	Joanna	ww86: are you involved in anything political ?
+2021-10-30 17:18:45	<--	Yonle (~Yonle@user/yonle) has quit (Remote host closed the connection)
+2021-10-30 17:18:58	ww86	Other than writing about this topic, no. But that's already quite political, isn't it?
+2021-10-30 17:19:04	ajak	no
+2021-10-30 17:19:12	-->	Yonle (~Yonle@user/yonle) has joined #security
+2021-10-30 17:20:00	Joanna	I don’t know much about Finland Russia relations..
+2021-10-30 17:20:12	ww86	For an example, I have joined 2 groups on facebook called "maanpuolustus" (Defense) and "Pysäytetään suomettuminen" (Opposed to Finlandisation), and I also have a blog on Uusi Suomi (A finnish paper with online blog platform). On those I've  written somewhat about Russian espionage. You may rule that as apolitical if you want.
+2021-10-30 17:20:22	-->	dogbert2 (~Bill@ip68-105-189-91.lv.lv.cox.net) has joined #security
+2021-10-30 17:20:30	ww86	I am not a member of a political party and don't engage in that sort of thing
+2021-10-30 17:20:31	-->	Auron (Auron956@user/auron) has joined #security
+2021-10-30 17:20:32	-->	portalrat (~portalrat@user/portalrat) has joined #security
+2021-10-30 17:21:17	<--	minall (~minall@186.69.200.119) has quit (Client Quit)
+2021-10-30 17:21:34	-->	minall (~minall@186.69.200.119) has joined #security
+2021-10-30 17:21:40	<--	minall (~minall@186.69.200.119) has quit (Remote host closed the connection)
+2021-10-30 17:21:44	Joanna	Maybe someone didn’t like your articles for whatever reason..
+2021-10-30 17:21:56	-->	minall (~minall@186.69.200.119) has joined #security
+2021-10-30 17:22:17	-->	qubes (~qubes@193.32.127.218) has joined #security
+2021-10-30 17:22:18	ajak	anyone skilled enough to target you would've just stolen your passwords or something and in general done stuff more quietly
+2021-10-30 17:22:46	Joanna	What is Finlandisation ?
+2021-10-30 17:22:53	ww86	This can be a factor in how this case has progressed. I've had 2 hypotheses related to why the Russians started to mess with me in the first place, and I don't know if either of them is correct. The first one is that it was related to my blog, and the second is that it has to do with my brother, who is in a fairly influential position.
+2021-10-30 17:23:36	ajak	so you're hypothesizing why the russians have gone after you (and your mp3s)
+2021-10-30 17:23:42	ajak	do you have evidence that it actually is russia?
+2021-10-30 17:24:01	ww86	Finladisation, or "Finlandzierung", the word comes from German. It refers to the political state of our country during the Cold War, in which the KGB got a major grip from the political life of our country. This is characterized by a situation, where politicians and people elsewhere in the society, were engaging in self-censorship and abstained
+2021-10-30 17:24:02	ww86	from being critical of the Soviet Union.
+2021-10-30 17:24:54	ww86	Ajak, other than there being one Estonian-Russian guy who told me in person that "We are going to kill you" and by deductive reasoning based on circumstantial factors - Such that the only source of such influence in our society can be Russia.
+2021-10-30 17:25:19	-->	takamatsu (~takamatsu@user/takamatsu) has joined #security
+2021-10-30 17:25:22	ww86	Then, no. But a lot of elements about the methods check out.
+2021-10-30 17:25:41	ajak	we're not talking about "influence in your society", we're talking about your weird experiences with computers
+2021-10-30 17:26:13	ww86	Unfortunately this harassment problem is not limited to just online, which is why the events in person corroborate that it is the Russians
+2021-10-30 17:26:15	Joanna	If you wrote about russian espionage of course they would be mad at you :)
+2021-10-30 17:27:04	<--	brutex (~openface@user/brutex) has quit (Quit: disconnecting.)
+2021-10-30 17:27:06	tomreyn	what's generally known in europe is that finland is rather worried about the influence russia has on the country, and, as it seems, for good reasons. generally, russia is doing an info war on europe since putin got angry about the nato's continued progress towards the east, and into former UdSSR countries.
+2021-10-30 17:27:09	ajak	they might not like it sure but there are bigger fish to care about than some guy that wrote something in finland
+2021-10-30 17:27:55	ww86	Ajak, okay. You're entitled to holding such a belief about how the Russians go about their business, but do you actually know anything about the topic, such as what kind of people are typically targeted?
+2021-10-30 17:28:13	ajak	you're right i don't know anything about the topic
+2021-10-30 17:28:28	ajak	you're asserting something and asking for help, i'm questioning the assertion
+2021-10-30 17:28:41	-->	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has joined #security
+2021-10-30 17:28:41	<--	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has quit (Changing host)
+2021-10-30 17:28:41	-->	wroathe (~wroathe@user/wroathe) has joined #security
+2021-10-30 17:29:04	ajak	you're assuming it's x when it could be any other letter of the alphabet (english or finnish ;))
+2021-10-30 17:29:43	ww86	Okay. You don't have to find what I'm saying credible. I'd just have to laboriously describe extensive accounts of things that happened over the course of this problem. Can we just pretend or consider it as a thought-experiment, from the perspective, "assuming it was true that I was trolled by the Russians, then..." ... What could I do in that
+2021-10-30 17:29:43	ww86	case?
+2021-10-30 17:29:50	Joanna	ww86: if you have people in person threatening to kill you that is a much bigger problem than garbled mp3 files I think..
+2021-10-30 17:30:06	ajak	state sponsored hackers have better things to do than "troll" people
+2021-10-30 17:30:36	ajak	especially if state agents have come into physical contact with you, like Joanna says
+2021-10-30 17:30:39	ww86	Joanna, that event is more complicated than what I let you know about it. But it still goes into this case, and I have told the Finnish counter-intelligence about this incident. I suspect they can't do anything about it, and so far apparently haven't.
+2021-10-30 17:30:53	ajak	they wouldn't tell you if they did :p
+2021-10-30 17:31:43	Joanna	Can’t your brother help if he has influence?
+2021-10-30 17:31:46	tomreyn	ww86: maybe you could just share one of the garbled mp3 files? maybe this could convince people here.
+2021-10-30 17:31:59	<--	minall (~minall@186.69.200.119) has quit (Quit: minall)
+2021-10-30 17:32:06	ajak	lol, garbled mp3's really aren't evidence of anything
+2021-10-30 17:32:18	-->	minall (~minall@186.69.200.119) has joined #security
+2021-10-30 17:32:43	ww86	I'm not looking forward to convince people first and foremost. If I wanted to that then I would choose a different method, tomreyn. But I suppose that would be a valid thing to attempt...
+2021-10-30 17:32:48	Joanna	What does mp3 file sound like and does it happen to all mp3 files the same ?
+2021-10-30 17:34:31	ww86	The edits are such that if you take the transcript of what is said, it is intact. Like if I download a lecture, and write down each word and speaker, none of those things have changed. But instead it's things like how the people in the file are saying things, such as laborious breathing sounds, smacking sounds of the mouth, over-pronouncing some
+2021-10-30 17:34:32	ww86	sounds like the "s" or things of that sort. There's probably a reason for doing it in that particular manner.
+2021-10-30 17:35:11	ww86	...My guess is that for someone to look into it, they'd need to be able to do more than look at such a transcript. Which would take time and resources.
+2021-10-30 17:35:59	ww86	The overall result is regardless, that they're annoying to listen to. And it's kind of difficult to put your finger on what it is exactly that's wrong with them, since they're things of that sort.
+2021-10-30 17:36:12	Joanna	Are the extra sounds added or the original sounds distorted do you think?
+2021-10-30 17:36:47	ww86	I think it's original sounds distorted, more likely anyway. It's hard to tell for sure if something like that is extra or not.
+2021-10-30 17:36:59	<--	Mathisen (mathisen@about/windows/staff/mathisen) has quit (Ping timeout: 264 seconds)
+2021-10-30 17:37:20	<--	minall (~minall@186.69.200.119) has quit (Quit: minall)
+2021-10-30 17:37:33	ww86	I'll have a cigarette & coffee ->
+2021-10-30 17:37:38	-->	minall (~minall@186.69.200.119) has joined #security
+2021-10-30 17:37:41	<--	qubes (~qubes@193.32.127.218) has quit (Ping timeout: 268 seconds)
+2021-10-30 17:37:42	-->	Mathisen (mathisen@about/windows/staff/mathisen) has joined #security
+2021-10-30 17:38:18	<--	kadavul (~vazha@103.165.21.156) has quit (Ping timeout: 268 seconds)
+2021-10-30 17:39:16	Joanna	Sounds like a lot of trouble .. not sure how to solve
+2021-10-30 17:39:22	tomreyn	ww86: all of this doesn't really seem convincing to me. but we can also not rule it out entirely. so just recommendations then. you're saying you're worried about isp's in finland working against their users' interests. you should then be using a vpn service, ideally one you setup yourself and that's hosted by an organization and at a location that is outside of russians + finlands stronger influence, i.e. sweden or norway should work, i guess.
+2021-10-30 17:40:31	<--	rsx (~dummy@ppp-188-174-154-78.dynamic.mnet-online.de) has quit (Quit: rsx)
+2021-10-30 17:40:38	<--	dodocrypto (~dodocrypt@user/dodocrypto) has quit (Quit: Leaving)
+2021-10-30 17:40:39	ww86	Alright, you don't have to believe me. But at least you can see that it could be done, if someone wanted to do it that way, could you not, Tomreyn?
+2021-10-30 17:40:44	tomreyn	you should replace the router / network access devices,  you should do bios updates on all of your computers at the same time as replacing the router.
+2021-10-30 17:40:48	Joanna	tomreyn: I’ve heard stories about the stazi sneaking into homes and messing with stuff to get family members to accuse and fight with eachother so who knows..
+2021-10-30 17:41:06	ajak	people with evidence know
+2021-10-30 17:41:13	ww86	Joanna, that method is called "Zersetsung" by the way, and also, STASI was controlled by the Russians
+2021-10-30 17:41:25	Joanna	Indeed
+2021-10-30 17:41:30	tomreyn	you should reinstall the operating systems on all computers (that means reinstalling android /resetting ios on mobile devices)
+2021-10-30 17:42:26	Joanna	I didn’t know it had a name !! Most of my knowledge of stazi came from the lives of others movie so can guarantee how accurate it is..
+2021-10-30 17:43:17	kulesh	АХТУНГ АХТУНГ
+2021-10-30 17:43:23	kulesh	АЛАРМ
+2021-10-30 17:43:26	tomreyn	zersetzung just means disruptiveness, which is a standard tactic of every secret service, i would think
+2021-10-30 17:43:30	kulesh	...
+2021-10-30 17:43:43	Joanna	tomreyn: cointelpro also
+2021-10-30 17:44:05	ww86	STASI was founded by the NKVD after Soviet Union took over East-Germany and Germany was split. NKVD is the Stalin era predecessor of the KGB. They appointed two directors, Erich Mielke and Markus Wolf to head the STASI, both of whom were presumably on NKVD payroll before the appointment. Additionally there were liaison officers of the  (later) KGB
+2021-10-30 17:44:06	ww86	placed within STASI to keep things under control.
+2021-10-30 17:44:33	tomreyn	ww86: did you see the recommendations above? are you interested in those?
+2021-10-30 17:44:41	ww86	Zersetsung means "biodegradation", which was a specific method used by the STASI, in which the goal was to drive a person mad, or disable their political or otherwise unwanted activities, while maintaining plausible deniability, tomreyn
+2021-10-30 17:44:56	<--	vvv (~vvv@user/vvv) has left #security (Leaving.)
+2021-10-30 17:45:12	tomreyn	ww86: oh, ok, i guess hthis goes further then
+2021-10-30 17:45:31	<--	AquaL1te (~AquaL1te@user/aqual1te) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:45:48	ww86	tomreyn I'll at least try reinstalling android on my smartphone if I take it into use again. I could try reinstalling windows on this computer as well
+2021-10-30 17:45:54	ajak	well, this seems to be more pontificating rather than discussing security or computters
+2021-10-30 17:46:04	--	Mode #security [+o lacroix] by ChanServ
+2021-10-30 17:46:07	--	Mode #security [+b *!*@46.138.249.44] by lacroix
+2021-10-30 17:46:07	<--	Yonle (~Yonle@user/yonle) has quit (Ping timeout: 265 seconds)
+2021-10-30 17:46:15	tomreyn	ww86: "try"? you don't seem to be very serious about this.
+2021-10-30 17:46:19	-->	qubes (~qubes@193.32.127.224) has joined #security
+2021-10-30 17:46:25	Joanna	I’ve also read the gulag archipelago. So I have some ideas which may or may not be accurate
+2021-10-30 17:46:25	<--	lacroix has kicked kulesh (spam)
+2021-10-30 17:46:31	--	Mode #security [-o lacroix] by lacroix
+2021-10-30 17:46:47	<--	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has quit (Ping timeout: 260 seconds)
+2021-10-30 17:47:16	-->	Yonle (~Yonle@user/yonle) has joined #security
+2021-10-30 17:47:42	ww86	tomreyn, I'm not feeling very optimistic of my chances of suddenly getting away from these troubles... But I've taken note of what you said, updating BIOS, replacing network devices, reinstalling android and operating system
+2021-10-30 17:48:32	Joanna	tomreyn: if I had angered a bunch of Russians that want to kill me I don’t think I’d be focused on garbled mp3 files either..
+2021-10-30 17:48:54	tomreyn	Joanna: but then that's the first thing we were told
+2021-10-30 17:50:23	Joanna	Who cares about the mp3 he should be moving to a new location that they don’t know about
+2021-10-30 17:50:26	tomreyn	ww86: if someone targets you then all these measures won't last for long, but they'll temporarily make a difference, and you'll notice that.
+2021-10-30 17:51:21	<--	horseface (~horseface@user/horseface) has quit (Quit: Leaving)
+2021-10-30 17:51:39	ww86	Joanna, I suspect my best chance of actually easing the situation would be to try and move to a country like the UK or the US, which are better at fending off the Russian intelligence agencies than Finland is. But anyway let's not get into that for now.
+2021-10-30 17:51:53	ww86	Do you want to hear one laborious account of an incident that took place during this whole affair?
+2021-10-30 17:52:03	ww86	It'll take like a couple of pages worth of text to explain
+2021-10-30 17:52:14	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #security
+2021-10-30 17:52:15	ww86	but not really related to cyber security overall
+2021-10-30 17:53:38	-->	ravan (~ravan@user/ravan) has joined #security
+2021-10-30 17:53:39	Joanna	I think if you are being harassed by people they aren’t going to stop even if you redo your computer system to be secure.
+2021-10-30 17:54:13	Joanna	It’s a symptom of a larger problem
+2021-10-30 17:54:39	ww86	I think so too.
+2021-10-30 17:55:59	Joanna	ww86: what made you want to anger the Russians to begin with ?
+2021-10-30 17:56:00	<--	insight[m] (~insightha@2001:470:69fc:105::1:263f) has left #security
+2021-10-30 17:56:34	Joanna	Did you not think they would react or ?
+2021-10-30 17:57:47	tomreyn	the idea of 'resetting devices' was really just to get an indication of whether they're a target. if there is someone trying to constantly harass them, and including through IT measures, then they'd want to reestablish their access to these systems, which involves new measures on their part, and would decrease their access level until then. and it's a cheap/free measure that you can pull off in a day.
+2021-10-30 17:58:04	-->	gera_ (~gera@62.192.246.134) has joined #security
+2021-10-30 17:58:16	<--	gera_ (~gera@62.192.246.134) has quit (Remote host closed the connection)
+2021-10-30 17:58:35	tomreyn	the other measures which could actually solve the problems take a lot more effort, such as moving away.
+2021-10-30 17:59:19	ww86	Joanna I wasn't really looking to annoy the Russians in the first place. It's more like what I did was overall rather benign, and I think I might've been targeted for recruitment or something along those lines. But things got complicated
+2021-10-30 18:00:09	Joanna	If the Russians are mad at him for accusing them of spying they will probably keep going until he takes down all the things they don’t like right ?
+2021-10-30 18:00:36	Joanna	Oh
+2021-10-30 18:01:14	ww86	...However as I got deeper into this problem I started also somewhat actively opposing the Russians influence by means of espionage in this country. But that didn't make things any easier >_>
+2021-10-30 18:02:26	Joanna	So the Russians tried to recruit you and you said no and started complaining about them online ?
+2021-10-30 22:21:16	--	irc: disconnected from server
+2021-10-30 22:21:44	-->	mrmanner (~jmanner@user/mrmanner) has joined #security
+2021-10-30 22:21:45	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | hashsecurity.net coming soon."
+2021-10-30 22:21:45	--	Topic set by electr0n (~electr0n@about/security/founder/electr0n) on tor, 02 sep 2021 22:47:43
+2021-10-30 22:21:45	--	Channel #security: 698 nicks (0 ops, 0 voices, 698 normals)
+2021-10-30 22:21:49	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-10-30 22:25:01	<--	JustAnotherOne_ (~textual@2001:980:dd66:1:6486:b382:fdf5:b10) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-10-30 22:25:20	<--	horseface (~horseface@user/horseface) has quit (Quit: Leaving)
+2021-10-30 22:28:03	-->	horseface (~horseface@user/horseface) has joined #security
+2021-10-30 22:29:01	-->	shibboleth (~shibbolet@user/shibboleth) has joined #security
+2021-10-30 22:31:14	<--	horseface (~horseface@user/horseface) has quit (Client Quit)
+2021-10-30 22:31:25	-->	horseface (~horseface@user/horseface) has joined #security
+2021-12-01 23:20:40	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #security
+2021-12-01 23:20:44	--	Topic set by ajak (~ajak@gentoo/developer/ajak) on tor, 25 nov 2021 21:05:01
+2021-12-01 23:20:44	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-01 23:20:44	--	Topic set by ajak (~ajak@gentoo/developer/ajak) on tor, 25 nov 2021 21:05:01
+2021-12-01 23:20:44	--	Channel #security: 702 nicks (0 ops, 0 voices, 702 normals)
+2021-12-01 23:21:09	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #security
+2021-12-01 23:23:11	--	Topic set by ajak (~ajak@gentoo/developer/ajak) on tor, 25 nov 2021 21:05:01
+2021-12-01 23:23:11	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-01 23:23:11	--	Topic set by ajak (~ajak@gentoo/developer/ajak) on tor, 25 nov 2021 21:05:01
+2021-12-01 23:23:11	--	Channel #security: 702 nicks (0 ops, 0 voices, 702 normals)
+2021-12-01 23:23:23	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-12-01 23:24:08	--	Mode #security [+nptCc]
+2021-12-01 23:24:08	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-12-01 23:26:47	<--	hub (~hub@user/hub) has quit (Quit: WeeChat 2.8)
+2021-12-01 23:27:04	<--	manti7 (~manti7@176.10.104.94) has quit (Quit: WeeChat 3.3)
+2021-12-01 23:29:02	-->	dna1 (dna) (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has joined #security
+2021-12-01 23:29:21	-->	ska [ska] (skatinator) (~ska@user/ska) has joined #security
+2021-12-01 23:30:33	<--	Alleria (~textual@user/alleria) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-01 23:35:11	-->	rustycl0ck [rustycl0ck] (ircuser) (~ircuser@gateway/tor-sasl/rustycl0ck) has joined #security
+2021-12-01 23:35:44	<--	pmercado_ (~pmercado@186.107.61.96) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:36:54	-->	SymbioticFemale [SymbioticFemale] (Unknown) (~Symbiotic@gateway/tor-sasl/symbioticfemale) has joined #security
+2021-12-01 23:37:00	tesseract	which one is more secure? debian stable or rhel?
+2021-12-01 23:37:33	spare	how goods the user running it ?
+2021-12-01 23:38:01	tesseract	careful
+2021-12-01 23:38:51	spare	default configs arent ever secure so would be an exercise for the user imo
+2021-12-01 23:39:42	<--	Burgundy (~yomon@79.115.213.171) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:39:46	tesseract	which one is more secure by default?
+2021-12-01 23:40:05	ajak	when you're choosing a distribution based on its security you're not choosing which one has more secure configuration by default; you're choosing which one has a better security posture
+2021-12-01 23:41:29	ajak	imo they're both the kinds of distros to hold on to ancient software and patch into oblivion (and that can lead to unique vulnerabilities that aren't in other distros)
+2021-12-01 23:41:32	tesseract	but one of them is more secure than another by default
+2021-12-01 23:41:33	spare	none of them really do anything by default
+2021-12-01 23:41:46	spare	they pull the exact same upstream
+2021-12-01 23:42:33	tesseract	spare: what distro do you use?
+2021-12-01 23:42:53	-->	immibis_ (realname) (~hexchat@62.156.144.218) has joined #security
+2021-12-01 23:42:53	--	immibis_ has identified as immibis
+2021-12-01 23:42:55	tesseract	if you use any
+2021-12-01 23:42:57	spare	gentoo but ive butchered it beyond recognition compared to most distro
+2021-12-01 23:43:04	<--	immibis (~hexchat@62.156.144.218) has quit (Read error: Connection reset by peer)
+2021-12-01 23:43:31	ajak	hey, that's a good one!
+2021-12-01 23:43:43	ajak	it shouldn't need much butchering thouhg
+2021-12-01 23:44:16	spare	been using it as a chroot to build liveusbs for a while its a static image without a package manager in it
+2021-12-01 23:44:29	NeoWakeUp	just learn arch and learn how an os is built from ground up
+2021-12-01 23:44:31	tesseract	ajak: which disrro do you use?
+2021-12-01 23:44:58	ajak	gentoo
+2021-12-01 23:45:17	ajak	NeoWakeUp: gentoo starts you from lower than arch
+2021-12-01 23:45:19	spare	flipped to umask 0077 to remove the default other read fail but doing that bricks systemd so most of the changes arent even transferable
+2021-12-01 23:45:30	tesseract	NeoWakeUp: i used arch for aa long time
+2021-12-01 23:46:07	tesseract	more precisely parabola
+2021-12-01 23:46:16	-->	Joanna [joanna] (Joanna) (uid57472@id-57472.lymington.irccloud.com) has joined #security
+2021-12-01 23:46:29	spare	ive only boot ephemeral initramfs images for a good 8ish years now : /
+2021-12-01 23:46:45	tesseract	but later i switched to debian stable
+2021-12-01 23:46:47	spare	no persistence for you
+2021-12-01 23:48:11	ajak	debian stable is fine
+2021-12-01 23:48:21	spare	plug in usb remove after init and theres no way to retain access without targeting firmware
+2021-12-01 23:48:38	spare	cuts out an obsurd number of people
+2021-12-01 23:48:58	tesseract	ajak: yes. quite boring though lol
+2021-12-01 23:49:13	<--	drathir_tor (~drathir@wireguard/tunneler/drathir) has quit (Remote host closed the connection)
+2021-12-01 23:49:21	ajak	spare: also makes your computer painful to use
+2021-12-01 23:49:30	ajak	tesseract: boring is good for an operating system
+2021-12-01 23:49:38	-->	drathir_tor [drathir] (drathir87) (~drathir@wireguard/tunneler/drathir) has joined #security
+2021-12-01 23:50:01	spare	onion address is in nick string + realname and the entire build scripts hosted over tor if anyone cares most people bail when they figure out it only supports static kernels ^_^
+2021-12-01 23:51:16	spare	it is horrifically reduced to the point that adding anything to it is work but its been 'finished' for a while so dont really notice anything
+2021-12-01 23:52:10	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:52:11	<--	richterbyron (~Rheanna@218.78.79.129) has quit (Remote host closed the connection)
+2021-12-01 23:52:28	spare	if you want secure stuff most people recomend qubes for persistence or tails for ephemeral provided your after anonminity
+2021-12-01 23:52:38	<--	mdemo (~mdemo@user/mdemo22) has quit (Quit: The Lounge - https://thelounge.github.io)
+2021-12-01 23:52:45	<--	SymbioticFemale (~Symbiotic@gateway/tor-sasl/symbioticfemale) has quit (Ping timeout: 276 seconds)
+2021-12-01 23:52:54	spare	but rolling your own is always going to beat something targetted at a wider audience
+2021-12-01 23:53:54	-->	richterbyron (purple) (~Rheanna@218.78.94.61) has joined #security
+2021-12-01 23:53:55	tesseract	i also want comfort
+2021-12-01 23:53:58	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #security
+2021-12-01 23:54:13	tesseract	i can't bother with qubes
+2021-12-01 23:54:23	<--	sulex (~sulex@user/sulex) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:54:27	spare	you can avoid watering hole attacks just by being different because they write malware to target the highest rate of return for targetted stuff probably want something everyone uses so you arent alone when dealing with failure
+2021-12-01 23:54:36	tesseract	and its performance.
+2021-12-01 23:55:49	spare	it is pretty good tho watched a talk on someone that set it up for a newspapers client facing support they force load any attachments into an ephemeral vm but then thats paid support for your use case not self maintaining
+2021-12-01 23:56:33	spare	pretty much any help desk or people opening emails get full burner vms for anything sent in
+2021-12-01 23:56:51	spare	massively increases barrier to entry in terms of o day costs
+2021-12-01 23:58:21	<--	dna1 (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:58:43	-->	electr0n [electr0n] (electr0n) (~electr0n@about/security/founder/electr0n) has joined #security
+2021-12-01 23:59:01	<--	HyN0X (~HyNoX@151.43.31.13) has quit (Quit: Lost terminal)
+2021-12-02 00:00:15	-->	HyN0X [HyN0X] (HyN0X) (~HyNoX@151.43.31.13) has joined #security
+2021-12-02 00:00:46	-->	cpluspunch_ [cpluspunch] (ZNC - https://znc.in) (~znc@104.200.132.245) has joined #security
+2021-12-02 00:02:01	<--	rustycl0ck (~ircuser@gateway/tor-sasl/rustycl0ck) has quit (Remote host closed the connection)
+2021-12-02 00:02:14	-->	rustycl0ck [rustycl0ck] (ircuser) (~ircuser@gateway/tor-sasl/rustycl0ck) has joined #security
+2021-12-02 00:02:56	<--	cpluspunch (~znc@104.200.132.221) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:05:15	<--	bindu (~bindu@user/bindu) has quit (Quit: Leaving)
+2021-12-02 00:05:32	-->	bindu [bindu] (bindu) (~bindu@user/bindu) has joined #security
+2021-12-02 00:06:28	<--	cvmn (~caveman@gateway/tor-sasl/caveman) has quit (Quit: the #end of the abyss)
+2021-12-02 00:06:37	<--	blindguard (~blindguar@2a02:908:1864:c200::12) has quit (Quit: Konversation terminated!)
+2021-12-02 00:07:49	-->	SymbioticFemale [SymbioticFemale] (Unknown) (~Symbiotic@gateway/tor-sasl/symbioticfemale) has joined #security
+2021-12-02 00:09:36	-->	sulex [sulex] (sulex) (~sulex@user/sulex) has joined #security
+2021-12-02 00:13:20	-->	freakynl [freakynl] (Unknown) (~freaky@user/freakynl) has joined #security
+2021-12-02 00:15:21	<--	sulex (~sulex@user/sulex) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:20:34	-->	sulex [sulex] (sulex) (~sulex@user/sulex) has joined #security
+2021-12-02 00:25:55	<--	cliff (~cperry@user/cliff) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:26:17	<--	electr0n (~electr0n@about/security/founder/electr0n) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:26:45	<--	tesseract (~tesseract@user/tesseract) has quit (Quit: tesseract)
+2021-12-02 00:28:07	-->	electr0n [electr0n] (electr0n) (~electr0n@about/security/founder/electr0n) has joined #security
+2021-12-02 00:28:55	-->	skippy8 (Skippy) (~skippy8@tm1.hostlace.com) has joined #security
+2021-12-02 00:29:38	<--	skippy8 (~skippy8@tm1.hostlace.com) has quit (Client Quit)
+2021-12-02 00:30:42	<--	sulex (~sulex@user/sulex) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:35:56	-->	sulex [sulex] (sulex) (~sulex@user/sulex) has joined #security
+2021-12-02 00:37:30	<--	viq|w (~viq@user/viq) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:39:10	-->	viq|w [viq] (viq) (~viq@user/viq) has joined #security
+2021-12-02 00:40:17	<--	KillerPrix83 (~Soporte-I@190.214.121.13) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:41:52	-->	KillerPrix83 (U-DESKTOP-A3UO4O9\Soporte-Innytec) (~Soporte-I@190.214.120.81) has joined #security
+2021-12-02 00:41:56	<--	richterbyron (~Rheanna@218.78.94.61) has quit (Remote host closed the connection)
+2021-12-02 00:42:14	<--	sulex (~sulex@user/sulex) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:43:44	-->	richterbyron (purple) (~Rheanna@218.78.79.129) has joined #security
+2021-12-02 00:47:14	-->	vysn [vysn] (vysn) (~vysn@user/vysn) has joined #security
+2021-12-02 00:49:22	-->	sdfgsdfg [sdfgsdfg] (sdfgsdfg) (~sdfgsdfg@user/sdfgsdfg) has joined #security
+2021-12-02 00:51:36	<--	sam_ (~sam@gentoo/developer/sam) has quit (Ping timeout: 245 seconds)
+2021-12-02 00:54:04	-->	lowfi (realname) (~lowfi@159.196.17.52) has joined #security
+2021-12-02 00:54:05	--	lowfi has identified as lowfi
+2021-12-02 00:54:04	<--	lowfi (~lowfi@159.196.17.52) has quit (Changing host)
+2021-12-02 00:54:04	-->	lowfi [lowfi] (realname) (~lowfi@user/lowfi) has joined #security
+2021-12-02 00:54:24	<--	KillerPrix83 (~Soporte-I@190.214.120.81) has quit (Quit: luego regreso.)
+2021-12-02 00:54:46	<--	Seirdy (~Seirdy@sourcehut/user/seirdy) has quit (Quit: exiting 3.3)
+2021-12-02 00:55:17	-->	Seirdy [Seirdy] (Seirdy) (~Seirdy@sourcehut/user/seirdy) has joined #security
+2021-12-02 00:56:19	<--	zer0bitz (~zer0bitz@dsl-hkibng32-54fbfb-173.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-12-02 00:59:28	-->	sam_ [sam_] (sam <sam AT cmpct.info> (0x1F3D03348DB1A3E2)) (~sam@gentoo/developer/sam) has joined #security
+2021-12-02 01:01:57	<--	leftyfb (leftyfb@ubuntu/member/leftyfb) has left #security (Leaving)
+2021-12-02 01:02:47	-->	elkclone (elkclone) (~elkclone@node-1w7jr9ppwkd10q94an5xnzz1k.ipv6.telus.net) has joined #security
+2021-12-02 01:02:48	--	elkclone has identified as elkclone
+2021-12-02 01:02:47	<--	elkclone (~elkclone@node-1w7jr9ppwkd10q94an5xnzz1k.ipv6.telus.net) has quit (Changing host)
+2021-12-02 01:02:47	-->	elkclone [elkclone] (elkclone) (~elkclone@user/elkclone) has joined #security
+2021-12-02 01:09:34	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-12-02 01:12:53	-->	trevors [trevors] (trevors) (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has joined #security
+2021-12-02 01:13:02	<--	skapata (~Skapata@user/skapata) has quit (Ping timeout: 240 seconds)
+2021-12-02 01:14:00	<--	SymbioticFemale (~Symbiotic@gateway/tor-sasl/symbioticfemale) has quit (Ping timeout: 276 seconds)
+2021-12-02 01:14:31	-->	f2tmg [f2tmg] (realname) (~tmgspeed@88-104-34-84.dynamic.dsl.as9105.com) has joined #security
+2021-12-02 01:17:20	-->	skapata (Skapata Lambda 1337) (~Skapata@2804:14c:87b0:a6f9:e1ca:8d5a:1c5d:18a6) has joined #security
+2021-12-02 01:17:21	--	skapata has identified as skapata
+2021-12-02 01:17:20	<--	skapata (~Skapata@2804:14c:87b0:a6f9:e1ca:8d5a:1c5d:18a6) has quit (Changing host)
+2021-12-02 01:17:20	-->	skapata [skapata] (Skapata Lambda 1337) (~Skapata@user/skapata) has joined #security
+2021-12-02 01:26:20	<--	f2tmg (~tmgspeed@88-104-34-84.dynamic.dsl.as9105.com) has quit (Read error: Connection reset by peer)
+2021-12-02 01:29:18	Alhazred	seems like OSCP dropped buffer overflows for Active directory
+2021-12-02 01:33:23	-->	SymbioticFemale [SymbioticFemale] (Unknown) (~Symbiotic@gateway/tor-sasl/symbioticfemale) has joined #security
+2021-12-02 01:34:11	<--	HyN0X (~HyNoX@151.43.31.13) has quit (Read error: Connection reset by peer)
+2021-12-02 01:38:01	<--	topside (~topside@ip68-226-238-34.lf.br.cox.net) has quit (Read error: Connection reset by peer)
+2021-12-02 01:38:01	-->	HyN0X [HyN0X] (HyN0X) (~HyNoX@151.57.54.187) has joined #security
+2021-12-02 01:38:42	<--	SymbioticFemale (~Symbiotic@gateway/tor-sasl/symbioticfemale) has quit (Ping timeout: 276 seconds)
+2021-12-02 01:39:14	--	LarchOye has identified as LarchOye
+2021-12-02 01:39:25	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-12-02 01:40:52	<--	rinzewind (~rinzewind@user/rinzewind) has quit (Quit: leaving)
+2021-12-02 01:43:03	<--	led_belly (~led_belly@5.180.62.139) has quit (Remote host closed the connection)
+2021-12-02 01:43:50	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:46:14	<--	Libero (~Libero@130.43.23.56.dsl.dyn.forthnet.gr) has quit (Read error: Connection reset by peer)
+2021-12-02 01:46:28	<--	s1gyn (~s1gyn@user/s1gyn) has quit (Quit: WeeChat 3.0.1)
+2021-12-02 01:53:00	<--	TonyStone (~TonyStone@2603-7080-8607-c36a-9cdb-69bc-753b-1e50.res6.spectrum.com) has quit (Ping timeout: 268 seconds)
+2021-12-02 01:53:33	<--	tex (~super@user/dix) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:56:41	<--	hirogen (~hirogen@user/hirogen) has quit (Remote host closed the connection)
+2021-12-02 01:57:25	<--	NeoWakeUp (~raulc@user/neowakeup) has quit (Quit: leaving)
+2021-12-02 01:58:59	<--	eleventh (~eleventh@143.131.13.208) has quit (Read error: Connection reset by peer)
+2021-12-02 01:59:29	ilikeyou	not completely
+2021-12-02 01:59:33	-->	Villux [Villux] (realname) (~Villux@li338-244.members.linode.com) has joined #security
+2021-12-02 02:01:22	<--	Vilux (~Villux@li338-244.members.linode.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:01:26	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:03:19	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #security
+2021-12-02 02:03:27	-->	Jimmy_H [Jimmy_H] (realname) (~Jimmy_H@113.118.4.226) has joined #security
+2021-12-02 02:04:39	-->	chenqisu1 [chenqisu1] (realname) (~chenqisu1@183.217.200.156) has joined #security
+2021-12-02 02:07:09	<--	woodwose (~woodwose@user/woodwose) has quit (Remote host closed the connection)
+2021-12-02 02:07:28	-->	woodwose [woodwose] (woodwose) (~woodwose@user/woodwose) has joined #security
+2021-12-02 02:07:47	-->	critr [critr] (critr) (~critr@user/critr) has joined #security
+2021-12-02 02:10:03	-->	dude12312414 [dude12312414] (test) (~test@gateway/tor-sasl/dude12312414) has joined #security
+2021-12-02 02:11:15	<--	chenqisu1 (~chenqisu1@183.217.200.156) has quit (Quit: Leaving)
+2021-12-02 02:11:23	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Remote host closed the connection)
+2021-12-02 02:13:38	-->	chatcat_ [chatcat] (realname) (chatcat@gateway/vpn/airvpn/chatcat) has joined #security
+2021-12-02 02:14:14	-->	chatcat__ [chatcat] (realname) (chatcat@gateway/vpn/airvpn/chatcat) has joined #security
+2021-12-02 02:15:47	-->	TonyStone [TonyStone] (realname) (~TonyStone@cpe-74-76-51-197.nycap.res.rr.com) has joined #security
+2021-12-02 02:17:09	<--	chatcat (chatcat@gateway/vpn/airvpn/chatcat) has quit (Ping timeout: 250 seconds)
+2021-12-02 02:18:07	<--	chatcat_ (chatcat@gateway/vpn/airvpn/chatcat) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:18:21	-->	chatcat [chatcat] (realname) (chatcat@gateway/vpn/airvpn/chatcat) has joined #security
+2021-12-02 02:19:11	-->	chatcat_ [chatcat] (realname) (~chatcat@ip-24-53-119-61.user.start.ca) has joined #security
+2021-12-02 02:20:01	<--	chatcat__ (chatcat@gateway/vpn/airvpn/chatcat) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:23:25	<--	chatcat (chatcat@gateway/vpn/airvpn/chatcat) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:27:03	<--	spare (~javcl7zuf@user/spareproject) has quit (Remote host closed the connection)
+2021-12-02 02:31:54	<--	Auron (Auron956@user/auron) has quit (Remote host closed the connection)
+2021-12-02 02:31:54	-->	BrianG61UK [BrianG61UK] (Brian G. (in England)) (~BrianG61U@2a02:8010:66b7:dddd:d5f2:596d:2133:4501) has joined #security
+2021-12-02 02:33:01	<--	BrianG61UK (~BrianG61U@2a02:8010:66b7:dddd:d5f2:596d:2133:4501) has quit (Remote host closed the connection)
+2021-12-02 02:33:32	-->	BrianG61UK [BrianG61UK] (Brian G. (in England)) (~BrianG61U@2a02:8010:66b7:dddd:991a:b3a2:81ea:181a) has joined #security
+2021-12-02 02:34:08	-->	BrianG61UK_ [BrianG61UK] (Brian G. (in England)) (~BrianG61U@2a02:8010:66b7:dddd:d5f2:596d:2133:4501) has joined #security
+2021-12-02 02:34:08	-->	dohtem [dOhtem] (dohtem) (uid524096@user/dohtem) has joined #security
+2021-12-02 02:39:17	-->	trevors [trevors] (trevors) (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has joined #security
+2021-12-02 02:40:14	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Client Quit)
+2021-12-02 02:40:21	<--	Nex6 (~Nex6@cpe-45-51-244-112.socal.res.rr.com) has quit (Quit: Leaving)
+2021-12-02 02:41:10	-->	SymbioticFemale [SymbioticFemale] (Unknown) (~Symbiotic@gateway/tor-sasl/symbioticfemale) has joined #security
+2021-12-02 02:41:35	<--	gr1m (~gr1m@45.83.220.218) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:49:29	<--	machinedgod (~machinedg@135-23-192-217.cpe.pppoe.ca) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:53:29	-->	Douwd [Douwd] (Douwd) (~douwd@nexus.bsdpro.net) has joined #security
+2021-12-02 02:54:45	<--	SymbioticFemale (~Symbiotic@gateway/tor-sasl/symbioticfemale) has quit (Ping timeout: 276 seconds)
+2021-12-02 02:59:20	<--	gopar (~gopar@c-67-164-79-22.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2021-12-02 03:00:06	-->	gopar [gopar] (gopar) (~gopar@c-67-164-79-22.hsd1.ca.comcast.net) has joined #security
+2021-12-02 03:05:21	<--	gopar (~gopar@c-67-164-79-22.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:07:15	mats1	about time they changed the exam
+2021-12-02 03:07:26	mats1	they've been telegraphing adding ad for years
+2021-12-02 03:09:05	-->	SymbioticFemale [SymbioticFemale] (Unknown) (~Symbiotic@gateway/tor-sasl/symbioticfemale) has joined #security
+2021-12-02 03:12:01	<--	zulutango (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has quit (Remote host closed the connection)
+2021-12-02 03:12:01	<--	richterbyron (~Rheanna@218.78.79.129) has quit (Remote host closed the connection)
+2021-12-02 03:12:38	-->	zulutango [zulutango] (zulutango) (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has joined #security
+2021-12-02 03:14:38	-->	richterbyron (purple) (~Rheanna@218.78.67.149) has joined #security
+2021-12-02 03:17:08	-->	trevors [trevors] (trevors) (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has joined #security
+2021-12-02 03:22:15	<--	zulutango (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has quit (Remote host closed the connection)
+2021-12-02 03:22:21	Joanna	Hi everyone what’s new?
+2021-12-02 03:22:40	-->	zulutango [zulutango] (zulutango) (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has joined #security
+2021-12-02 03:26:57	-->	gopar [gopar] (gopar) (~gopar@c-67-164-79-22.hsd1.ca.comcast.net) has joined #security
+2021-12-02 03:30:46	-->	plankster_ [plankers] (plankster) (~plankster@user/plankers) has joined #security
+2021-12-02 03:31:13	Hydragyrum	mmm yes I've had this server up for like 20 minutes and already getting ssh bruteforcers attempting me
+2021-12-02 03:31:38	<--	plankster (~plankster@user/plankers) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:31:58	--	plankster_ is now known as plank
+2021-12-02 03:32:08	Hydragyrum	time to set up fail2ban
+2021-12-02 03:36:22	--	dogbert2 has identified as dogbert2
+2021-12-02 03:41:35	Joanna	Where are they coming from?
+2021-12-02 03:41:54	Joanna	Hydragyrum:
+2021-12-02 03:42:10	<--	ZedHedTed (~ZedHedTed@user/zedhedted) has quit (Remote host closed the connection)
+2021-12-02 03:49:13	-->	hqdruxn08__ [hqdruxn08] (realname) (~hqdruxn08@cpe-66-68-166-214.austin.res.rr.com) has joined #security
+2021-12-02 03:52:06	<--	nomn (nomn@user/nomn) has quit (Ping timeout: 260 seconds)
+2021-12-02 03:53:27	<--	hqdruxn08_ (~hqdruxn08@cpe-66-68-166-214.austin.res.rr.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:54:08	-->	nomn [nomn] (nomn) (nomn@user/nomn) has joined #security
+2021-12-02 03:57:00	Hydragyrum	 221.181.185.111
+2021-12-02 03:57:22	Hydragyrum	haven't bothered to do any checking on that yet
+2021-12-02 03:58:44	Hydragyrum	those are the only ones coming up with auth failure, there's some others with various errors of other sorts
+2021-12-02 04:04:05	-->	Alhazred_ [Alhazred] (Unknown) (~Alhazred@s91904425.blix.com) has joined #security
+2021-12-02 04:04:08	<--	Alhazred_ (~Alhazred@s91904425.blix.com) has quit (Client Quit)
+2021-12-02 04:06:33	<--	Alhazred (~Alhazred@s91904425.blix.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:07:08	Hydragyrum	and fail2ban set up, that was way too easy lol
+2021-12-02 04:07:59	-->	fcinq [fcinq] (fcinq) (~irc@46.105.34.51) has joined #security
+2021-12-02 04:08:09	critr	always feel suspicious when things go too well.
+2021-12-02 04:09:21	ajak	well it's really not hard to setup
+2021-12-02 04:10:00	Hydragyrum	yeah I'm happy to discover things that are actually that easy to set up and have them work
+2021-12-02 04:10:31	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:12:40	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #security
+2021-12-02 04:15:38	<--	xkuru (~xkuru@user/xkuru) has quit (Read error: Connection reset by peer)
+2021-12-02 04:17:39	-->	xkuru [xkuru] (realname) (~xkuru@user/xkuru) has joined #security
+2021-12-02 04:18:29	<--	sdfgsdfg (~sdfgsdfg@user/sdfgsdfg) has quit (Quit: ZzzZ)
+2021-12-02 04:19:00	<--	xkuru (~xkuru@user/xkuru) has quit (Read error: Connection reset by peer)
+2021-12-02 04:37:43	<--	Lucanis (~Lucanis@user/lucanis) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:37:50	-->	Lucanis [Lucanis] (realname) (~Lucanis@user/lucanis) has joined #security
+2021-12-02 04:37:59	<--	trevors (~trevors@c-65-96-171-157.hsd1.ma.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-12-02 04:39:59	<--	critr (~critr@user/critr) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:47:50	<--	immibis_ (~hexchat@62.156.144.218) has quit (Remote host closed the connection)
+2021-12-02 04:48:35	-->	immibis_ (realname) (~hexchat@62.156.144.218) has joined #security
+2021-12-02 04:48:35	--	immibis_ has identified as immibis
+2021-12-02 04:49:33	<--	fcinq (~irc@46.105.34.51) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:51:57	<--	richterbyron (~Rheanna@218.78.67.149) has quit (Remote host closed the connection)
+2021-12-02 04:54:02	-->	richterbyron (purple) (~Rheanna@101.89.150.168) has joined #security
+2021-12-02 04:57:05	<--	Guest40 (~Guest40@cpebc4dfb43f283-cmbc4dfb43f280.cpe.net.cable.rogers.com) has quit (Quit: Client closed)
+2021-12-02 05:01:20	-->	horseface [horseface] (horseface) (~horseface@user/horseface) has joined #security
+2021-12-02 05:02:03	-->	bytehackr (Sandipan Roy) (~Sandipan@43.252.250.77) has joined #security
+2021-12-02 05:02:03	--	bytehackr has identified as bytehackr
+2021-12-02 05:03:53	-->	Guest14 ([https://web.libera.chat] Guest14) (~Guest14@pool-96-253-74-73.rcmdva.fios.verizon.net) has joined #security
+2021-12-02 05:07:39	-->	on^ (...) (~on@68.101.58.90) has joined #security
+2021-12-02 05:09:57	<--	SymbioticFemale (~Symbiotic@gateway/tor-sasl/symbioticfemale) has quit (Ping timeout: 276 seconds)
+2021-12-02 05:11:36	<--	woodwose (~woodwose@user/woodwose) has quit (Quit: syl)
+2021-12-02 05:11:51	-->	woodwose [woodwose] (woodwose) (~woodwose@user/woodwose) has joined #security
+2021-12-02 05:16:28	-->	SymbioticFemale [SymbioticFemale] (Unknown) (~Symbiotic@gateway/tor-sasl/symbioticfemale) has joined #security
+2021-12-02 05:21:42	-->	fstd_ (fstd) (~fstd@xdsl-81-173-139-70.nc.de) has joined #security
+2021-12-02 05:22:18	<--	SymbioticFemale (~Symbiotic@gateway/tor-sasl/symbioticfemale) has quit (Ping timeout: 276 seconds)
+2021-12-02 05:24:14	-->	Elzington_ [Elzington] (realname) (~Elzington@static-68-235-44-10.cust.tzulo.com) has joined #security
+2021-12-02 05:24:59	<--	fstd (~fstd@xdsl-87-79-98-69.nc.de) has quit (Ping timeout: 265 seconds)
+2021-12-02 05:26:27	<--	Guest14 (~Guest14@pool-96-253-74-73.rcmdva.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:26:35	<--	Elzington (~Elzington@static-68-235-44-76.cust.tzulo.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:28:13	<--	horseface (~horseface@user/horseface) has quit (Ping timeout: 268 seconds)
+2021-12-02 05:30:24	-->	gco [gco] (Greg) (~gco@2601:647:5a00:223:11e0:2996:dd48:558a) has joined #security
+2021-12-02 05:31:00	-->	Burgundy [Burgundy] (yomon) (~yomon@79.115.213.171) has joined #security
+2021-12-02 05:34:08	<--	HyN0X (~HyNoX@151.57.54.187) has quit (Read error: Connection reset by peer)
+2021-12-02 05:34:20	-->	gh057 [gh057] (realname) (gh057@gateway/vpn/protonvpn/gh057) has joined #security
+2021-12-02 05:34:28	-->	led_belly [led_belly] (led_belly) (~led_belly@5.180.62.222) has joined #security
+2021-12-02 05:38:06	-->	HyN0X [HyN0X] (HyN0X) (~HyNoX@151.57.54.16) has joined #security
+2021-12-02 05:40:31	<--	pepee (~pepee@user/pepee) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:41:58	<--	richterbyron (~Rheanna@101.89.150.168) has quit (Remote host closed the connection)
+2021-12-02 05:44:22	-->	SymbioticFemale [SymbioticFemale] (Unknown) (~Symbiotic@gateway/tor-sasl/symbioticfemale) has joined #security
+2021-12-02 05:44:48	-->	richterbyron (purple) (~Rheanna@218.78.105.67) has joined #security
+2021-12-02 05:45:57	<--	Joanna (uid57472@id-57472.lymington.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-02 05:48:16	<--	gopar (~gopar@c-67-164-79-22.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2021-12-02 05:50:10	<--	gco (~gco@2601:647:5a00:223:11e0:2996:dd48:558a) has quit (Quit: ZZZzzz…)
+2021-12-02 05:58:31	<--	DarkFeather (~DarkFeath@147-219-058-070.res.spectrum.com) has quit (Quit: See you soon)
+2021-12-02 06:06:15	-->	gopar [gopar] (gopar) (~gopar@c-67-164-79-22.hsd1.ca.comcast.net) has joined #security
+2021-12-02 06:08:19	<--	on^ (~on@68.101.58.90) has quit (Remote host closed the connection)
+2021-12-02 06:13:18	-->	dlew^ (...) (~dlew@68.101.58.90) has joined #security
+2021-12-02 06:14:51	<--	funabashi (funabashi@185.52.0.236) has quit (Ping timeout: 250 seconds)
+2021-12-02 06:15:44	Seirdy	i just disable password logins
+2021-12-02 06:15:49	-->	funabashi (Unknown) (funabashi@185.52.0.236) has joined #security
+2021-12-02 06:16:55	-->	osi [frigor] (Peter Osogovetz) (~osi@5.53.148.124) has joined #security
+2021-12-02 06:18:00	-->	NeoWakeUp [NeoWakeUp] (NeoWakeUp) (~raulc@user/neowakeup) has joined #security
+2021-12-02 06:19:17	Seirdy	if you tend to connect from the same IP addresses, just selectively enable addresses/ranges.
+2021-12-02 06:19:56	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:19:59	-->	pyook [puke] (realname) (~puke@user/puke) has joined #security
+2021-12-02 06:19:59	--	puke has unidentified
+2021-12-02 06:19:59	--	puke is now known as Guest8593
+2021-12-02 06:19:59	<--	Guest8593 (~puke@user/puke) has quit (Killed (strontium.libera.chat (Nickname regained by services)))
+2021-12-02 06:19:59	--	pyook is now known as puke
+2021-12-02 06:20:09	Seirdy	another thing you can do is edit your ssh_config to only support the configs that you need; e.g., only the cipher that you use.
+2021-12-02 06:20:17	<--	funabashi (funabashi@185.52.0.236) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:20:28	Seirdy	those three basically replaced fail2ban for me.
+2021-12-02 06:21:13	<--	richterbyron (~Rheanna@218.78.105.67) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:22:01	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #security
+2021-12-02 06:22:16	-->	richterbyron (purple) (~Rheanna@218.78.105.67) has joined #security
+2021-12-02 06:22:52	Seirdy	seriously though, strong ssh keys and 2fa basically make password logins mostly obsolete.
+2021-12-02 06:23:31	<--	gh057 (gh057@gateway/vpn/protonvpn/gh057) has quit (Quit: Leaving)
+2021-12-02 06:27:45	-->	HyNoX [HyN0X] (HyN0X) (~HyNoX@151.57.54.16) has joined #security
+2021-12-02 06:28:21	-->	funabashi (Unknown) (funabashi@185.52.0.236) has joined #security
+2021-12-02 06:28:34	<--	HyNoX (~HyNoX@151.57.54.16) has quit (Client Quit)
+2021-12-02 06:30:15	<--	`Tim (~zenguin@user/zenguin) has quit (Quit: Leaving)
+2021-12-02 06:32:02	<--	richterbyron (~Rheanna@218.78.105.67) has quit (Remote host closed the connection)
+2021-12-02 06:33:25	-->	richterbyron (purple) (~Rheanna@218.78.99.237) has joined #security
+2021-12-02 06:34:24	Hash	Nice
+2021-12-02 06:34:34	Hash	Seirdy: that's a good idea
+2021-12-02 06:34:46	-->	HyNoX [HyN0X] (HyN0X) (~HyNoX@151.57.54.16) has joined #security
+2021-12-02 06:34:47	Hash	I only use key based ssh login. I don't use passwords at all there.
+2021-12-02 06:34:57	<--	HyNoX (~HyNoX@151.57.54.16) has quit (Client Quit)
+2021-12-02 06:35:04	Hash	Also, run ssh on a non standard port, for extra osbscurity
+2021-12-02 06:35:24	Hash	and perhaps even lock down your ssh to your user/subnet/isp IP/netowrk or few of them
+2021-12-02 06:35:43	Hash	My servers can only be logged into from my home ipv4 and my home /64 ipv6
+2021-12-02 06:36:09	Seirdy	nonstandard ports are not a good security measure. it might save you some headache but it shouldn't be what makes the difference.
+2021-12-02 06:36:19	Hash	And in case someone find outs your non standard port, redirect fail2ban on that port.
+2021-12-02 06:36:34	Hash	That's a false ideation within the security world.
+2021-12-02 06:36:42	Hash	Obscurity is absolutely security.
+2021-12-02 06:36:54	Hash	I give this analogy/argument quite often and it makes sense to people.
+2021-12-02 06:37:09	Hash	The best defense in nature is camoflague. Concealment.
+2021-12-02 06:37:25	Hash	To hide in plain sight. If predetors cannot even tell you're there, they can't do anything.
+2021-12-02 06:37:44	Hash	Obviously it wont' deter a targeted attack, but bots looking for 22 open, it will absolutely thwart that.
+2021-12-02 06:37:49	Seirdy	yes but port scanning is like the first thing an attacker will do if they notice
+2021-12-02 06:37:58	Hash	So obscurity isn't security sure. But it does add to it and it's a large part of it.
+2021-12-02 06:38:44	Seirdy	port scanning is kind of standard practice even for bots. service enumeration and scanning comes first, then exploitation.
+2021-12-02 06:38:54	Hash	Correct
+2021-12-02 06:39:00	Hash	Use port knocking or firewall.
+2021-12-02 06:39:09	Hash	Change port too, why not. Doesn't make my life harder.
+2021-12-02 06:39:22	Hash	But it does lessen the noise in logs.
+2021-12-02 06:39:29	Seirdy	so you shouldn't count on it for anything. do it if you feel like but don't tell yourself that you're doing anything more than buying time.
+2021-12-02 06:40:01	Hash	I as a man of science cannot buy into blanket statements like that.
+2021-12-02 06:40:01	Seirdy	we already have better solutions out there
+2021-12-02 06:40:19	Hash	Every since I started adding obscurity to my seucirty models, I've noticed a fraction of the noise I used to get in my logs.
+2021-12-02 06:40:44	Hash	Once again, it should not be relied upon as a sole means of security.
+2021-12-02 06:41:15	Seirdy	yes they'll clean out the low hanging fruit. so will more effective solutions. the difference is that an actual threat will just hop over the half-measures like they aren't even there.
+2021-12-02 06:41:18	Hash	It adds and embellishes. It deters some people. What %, we can't say.
+2021-12-02 06:41:31	Hash	Seirdy | yes they'll clean out the low hanging fruit <- That!
+2021-12-02 06:41:36	Hash	You found the words for me!
+2021-12-02 06:41:38	Hash	:)
+2021-12-02 06:41:59	Hash	You're right.
+2021-12-02 06:42:29	Hash	It is also a good idea to give them less targets. If someone is determined, you can't really stop that. But just passserbys, you want to hide from them.
+2021-12-02 06:42:34	Seirdy	you can either clear the low hanging fruit without actually solving the problem, or just fix the problem. if the obscurity makes any meaningful difference it means that you haven't locked things down
+2021-12-02 06:42:37	Hash	You don't want to be visible to everyone.
+2021-12-02 06:42:49	Hash	Even innature camoflauge only works against certain perdators and not all predators.
+2021-12-02 06:43:02	Hash	We can see through a lot of camoflauge designed for other predators.
+2021-12-02 06:43:12	Hash	Likewise in security.
+2021-12-02 06:43:28	Seirdy	look at it this way: you can either nuke a fort, nuke a fort then drop a grenade, or just drop a grenade. why would you even bother with a grenade when you have the nuke? sure it'll take care of low-hanging fruit, but *why*?
+2021-12-02 06:43:31	Hash	You hide from some predators, but not all. And the ones you do hide from, is less nuisance. So it's a good thing.
+2021-12-02 06:43:58	Seirdy	security isn't a game of predator and prey. we're talking about literal machines here.
+2021-12-02 06:44:04	Hash	I'm not sure I can agree to that analogy.
+2021-12-02 06:44:12	Hash	Nukes are bad due to fallout and health reasons.
+2021-12-02 06:44:22	Hash	You not only damage your apponent, you damage yourself.
+2021-12-02 06:44:28	 *	Seirdy sighs
+2021-12-02 06:44:33	Hash	Perhaps a different analogy would be more useful.
+2021-12-02 06:44:44	Seirdy	look you know what i mean. you either solve the problem or you just delay solving it.
+2021-12-02 06:45:00	Seirdy	if you lock down your ssh configs it won't matter that everyone can see your port
+2021-12-02 06:45:04	Hash	I advise sprinkling obscuity into your security model.
+2021-12-02 06:45:10	Hash	It helps.
+2021-12-02 06:45:28	CoJaBo	Seirdy: If the nuke's a dud, you might still get a kill with the grenade :P
+2021-12-02 06:45:35	Seirdy	i'd only advise changing your port because if you notice that doing so makes a significant difference, you'd know you've failed
+2021-12-02 06:45:38	Hash	CoJaBo: also excellent point.
+2021-12-02 06:45:51	CoJaBo	Offense in depth.
+2021-12-02 06:46:17	Hash	Seirdy: right now my server has 443/80/25 open. And 25 doesn't advertise AUTH.
+2021-12-02 06:46:29	Hash	22 isn't visible to anyonle.
+2021-12-02 06:46:44	Hash	Runa  -p1-65536 and you still won't find anything.
+2021-12-02 06:46:50	Hash	Use port knockking or firewalls.
+2021-12-02 06:47:00	Hash	Try not to leave 22 open unless you want needlessly huge logs.
+2021-12-02 06:47:12	Hash	Also, Personal Computing.
+2021-12-02 06:47:19	Hash	Personal. Do what thou wilt shall be the whole of the law.
+2021-12-02 06:48:22	Hash	The only noise I have now is in exim logs, people trying the AUTH command when it's not advertised, to protocol errors.
+2021-12-02 06:48:44	Hash	No way to kill SMTP noise. Can kill all other noise but that damn SMTP wont' shut up. People won't stop! Haha
+2021-12-02 06:49:19	Hash	They are trying to AUTH on 25 and AUTH is only advertised on SSL, not STARTLS even.
+2021-12-02 06:49:29	Hash	STARTTLS is only for MTA to MTA communication.
+2021-12-02 06:50:54	Seirdy	or you could just not log events you find useless.
+2021-12-02 06:51:16	Seirdy	those bruteforce attempts are only an issue if they increase your load, since you shouldn't be bruteforceable
+2021-12-02 06:51:29	Seirdy	and you're using fail2ban so that'll fix that
+2021-12-02 06:51:54	Seirdy	what are you protecting yourself from?
+2021-12-02 06:54:09	Seirdy	try bruteforcing yourself. it's a fun exercise. see what actually works.
+2021-12-02 06:54:25	<--	HyN0X (~HyNoX@151.57.54.16) has quit (Remote host closed the connection)
+2021-12-02 06:56:30	-->	HyN0X [HyN0X] (HyN0X) (~HyNoX@151.57.54.16) has joined #security
+2021-12-02 06:57:29	-->	DarkFeather (DarkFeather) (~DarkFeath@147-219-058-070.res.spectrum.com) has joined #security
+2021-12-02 06:57:29	--	DarkFeather has identified as DarkFeather
+2021-12-02 06:57:35	Hash	That's a great idea too
+2021-12-02 06:57:38	Hash	Thank you
+2021-12-02 07:00:01	<--	HyN0X (~HyNoX@151.57.54.16) has quit (Remote host closed the connection)
+2021-12-02 07:01:04	<--	DarkFeather (~DarkFeath@147-219-058-070.res.spectrum.com) has quit (Client Quit)
+2021-12-02 07:01:19	-->	DarkFeather (DarkFeather) (~DarkFeath@147-219-058-070.res.spectrum.com) has joined #security
+2021-12-02 07:01:19	--	DarkFeather has identified as DarkFeather
+2021-12-02 07:02:00	-->	HyN0X [HyN0X] (HyN0X) (~HyNoX@151.57.54.16) has joined #security
+2021-12-02 07:04:11	-->	sdfgsdfg [sdfgsdfg] (sdfgsdfg) (~sdfgsdfg@user/sdfgsdfg) has joined #security
+2021-12-02 07:15:09	<--	Xaldafax (~xaldafax@cpe-198-72-160-101.socal.res.rr.com) has quit (Quit: Bye...)
+2021-12-02 07:25:28	-->	HyNoX [HyN0X] (HyN0X) (~HyNoX@151.57.54.16) has joined #security
+2021-12-02 07:29:41	-->	ElectronApps [ElectronApps] (Electron) (~ElectronA@user/electronapps) has joined #security
+2021-12-02 07:29:42	<--	GNUmoon (~GNUmoon@gateway/tor-sasl/gnumoon) has quit (Ping timeout: 276 seconds)
+2021-12-02 07:29:42	<--	HyNoX (~HyNoX@151.57.54.16) has quit (Client Quit)
+2021-12-02 07:30:04	-->	HyNoX [HyN0X] (HyN0X) (~HyNoX@151.57.54.16) has joined #security
+2021-12-02 07:35:58	<--	HyNoX (~HyNoX@151.57.54.16) has quit (Quit: leaving)
+2021-12-02 07:39:42	<--	dogbert2 (~Bill@ip68-105-189-91.lv.lv.cox.net) has quit (Remote host closed the connection)
+2021-12-02 07:39:57	-->	dogbert2 (realname) (~Bill@ip68-105-189-91.lv.lv.cox.net) has joined #security
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:57	-->	mrmanner (mrmanner@98.128.201.128) has joined #security
+2021-12-02 08:09:57	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-02 08:09:57	--	Topic set by ajak (~ajak@gentoo/developer/ajak) on tor, 25 nov 2021 21:05:01
+2021-12-02 08:09:57	--	Channel #security: 686 nicks (0 ops, 0 voices, 686 normals)
+2021-12-02 07:48:51	NeoWakeUp	quick question, trying to learn how network's but at the same time learning c++, am i wasting my time in learning how to program or the basics of programming when i should be putting all my attention on security and networking?
+2021-12-02 07:50:00	mnemon	no, knowing how the programs work will help a lot with understanding the other bits
+2021-12-02 07:52:35	NeoWakeUp	mnemon: okay perfect thank you! i heard someone mention "try bruteforcing yourself" wich i've never tried since im obv. still new but it caught my attention lol
+2021-12-02 08:00:27	rudi_s	Any idea what "bruteforcing yourself" is supposed to mean?
+2021-12-02 08:02:43	NeoWakeUp	rudi_s: cracking my own networks password? excuse a noob like myself im still learning all this
+2021-12-02 08:10:51	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-12-02 08:12:18	rudi_s	NeoWakeUp: Could be, just wanted mention that it's not obvious what it means.
+2021-12-02 08:12:38	rudi_s	And if you chose proper passwords you'll never have to do that because you know they can't be (realistically) brute-forced.
+2021-12-02 08:12:55	rudi_s	(Using a password manager is an important step because it reduces the number of passwords you have to remember.)
+2021-12-02 08:14:40	NeoWakeUp	rudi_s: well all my password's are in a password manager YES and they are all generated by the grattes pass word manager in my opinion "PASS" By Gnu, and is encrypted with my gpg key
+2021-12-02 08:16:18	-->	chenqisu1 [chenqisu1] (realname) (~chenqisu1@183.217.200.156) has joined #security
+2021-12-02 08:17:45	rudi_s	Sounds good (don't know grattes though)
+2021-12-02 08:18:01	tomreyn	i think that was meant to be "greatest"
+2021-12-02 08:18:14	NeoWakeUp	yeah sorry for the typo
+2021-12-02 08:18:20	-->	Atque [Atque] (Atque) (~Atque@user/atque) has joined #security
+2021-12-02 08:18:22	tomreyn	and '"PASS" By Gnu' would then be the software
+2021-12-02 08:18:37	tomreyn	written by a gnu
+2021-12-02 08:18:58	NeoWakeUp	tomreyn: Yes indeed
+2021-12-02 08:19:58	tomreyn	you know what is Gnu is? https://en.wikipedia.org/wiki/Wildebeest
+2021-12-02 08:19:59	websec	^ Wildebeest, also called gnu, are antelopes of the genus Connochaetes and native to Eastern and Southern Africa. They belong to the family Bovidae, which includes true antelopes, cattle, goats, sheep, and other even-toed horned ungulates.
+2021-12-02 08:22:13	tomreyn	i meant to write: You know what *a* Gnu is?
+2021-12-02 08:22:27	rudi_s	Oh, right
+2021-12-02 08:22:28	tomreyn	I'm sure you were referring to https://www.passwordstore.org/ though.
+2021-12-02 08:22:29	websec	^ Pass: The Standard Unix Password Manager
+2021-12-02 08:23:14	NeoWakeUp	I actually have never looked that up before but i mean GNU free software movement
+2021-12-02 08:23:22	NeoWakeUp	tomreyn: Yes
+2021-12-02 08:23:27	NeoWakeUp	websec: Yes
+2021-12-02 08:23:47	-->	GNUmoon [GNUmoon] (realname) (~GNUmoon@gateway/tor-sasl/gnumoon) has joined #security
+2021-12-02 08:23:55	tomreyn	there's another
+2021-12-02 08:24:24	NeoWakeUp	it encrypts the passwords files with your gpg private key
+2021-12-02 08:24:44	NeoWakeUp	tomreyn: which is?
+2021-12-02 08:24:59	tomreyn	GNUmoon ;)
+2021-12-02 08:28:46	<--	p0indexter (~alpha@user/p0indexter) has quit (Quit: ars longa vita brevis)
+2021-12-02 08:29:32	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 256 seconds)
+2021-12-02 08:29:37	-->	horseface [horseface] (horseface) (~horseface@user/horseface) has joined #security
+2021-12-02 21:02:57	--	irc: disconnected from server
+2021-12-02 21:03:13	-->	mrmanner (mrmanner@90.235.13.15) has joined #security
+2021-12-02 21:03:14	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-02 21:03:14	--	Topic set by ajak (~ajak@gentoo/developer/ajak) on tor, 25 nov 2021 21:05:01
+2021-12-02 21:03:14	--	Channel #security: 711 nicks (0 ops, 0 voices, 711 normals)
+2021-12-02 08:33:33	tomreyn	NeoWakeUp: I should explain this properly. While Gnu is an animal, and I'm not sure what you read, or what made you say '"PASS" By Gnu', the "pass" software is written by Jason A. Donenfeld (who is also known for a bunch of other great software, incl. wireguard), and is licensed under the (GNU) GPLv2.0. Here, "GNU" refers to the 'GNU Project' (https://www.gnu.org/), which developed this software license.
+2021-12-02 08:37:20	NeoWakeUp	tomreyn: if im being honest before using or downloading a software i always check the license if the license is not under GPLv2.0. i search for alternatives with the license under GPLv2.0.
+2021-12-02 16:07:34	spreadsheet	hello channel; what is the best Youtube alternative, given the recent dislikes removal? I mean, w/r/t to instructional videos
+2021-12-02 16:17:07	critr	will relativistic zero-knowledge proof supercede elliptic-curve cryptography? https://www.sciencedaily.com/releases/2021/11/211103140105.htm https://www.nature.com/articles/s41586-021-03998-y https://en.wikipedia.org/wiki/Zero-knowledge_proof
+2021-12-02 16:17:08	websec	^ Securing data transfers with relativity: New way to secure data transfers based on the physical principle of relativity -- ScienceDaily
+2021-12-02 16:32:03	catbeard	i just use magic-wormhole these days
+2021-12-02 19:21:21	Seirdy	catbeard: i use https://github.com/psanford/wormhole-william. i like having a statically-linked binary for this, as it makes solving the "recipient hasn't installed womhole" problem easier to solve.
+2021-12-02 19:21:30	Seirdy	also has a mobile app if you're into that sorta thing
+2021-12-02 19:22:44	Seirdy	it's compatible with magic-wormhole too. looks like magic-wormhole's devs are doing a RIIR over at https://github.com/magic-wormhole/magic-wormhole.rs which I find odd since wormhole-william already works so well
+2021-12-02 19:22:44	websec	^ GitHub - magic-wormhole/magic-wormhole.rs: NOT FUNCTIONAL YET. Slowly porting magic-wormhole to Rust. See wiki for game plan.
+2021-12-02 19:26:15	Seirdy	rudi_s: "bruteforcing yourself" means exactly what it sounds like: launching a brute-force attack against your own machines. we were discussing ways to harden a server's ssh configs to resist brute-force attacks and i disagreed with the merit of some methods; i suggested an experimental approach as an alternative to both of our speculations.
+2021-12-02 19:28:09	rudi_s	Seirdy: I see, thanks. Personally I don't think brute force is really necessary as you can just configure it to withstand a possible brute-force. Also many issues won't be identified by an experiment and only be configuring the hosts securely.
+2021-12-02 19:28:45	Seirdy	agreed, the reason i brought it up was to demonstrate that certain simple measures are sufficient.
+2021-12-02 19:30:50	rudi_s	Yeah, that's true
+2021-12-02 19:48:53	catbeard	just use ssh keys with a ssh certificate CA
+2021-12-02 19:48:56	catbeard	e.g. smallstep.com
+2021-12-02 19:49:12	catbeard	and disable password auth, disable remote root login
+2021-12-02 19:51:14	MadCamel	or make sure the ssh private key is 2-factor secure - smartcard suggested - and allow remote root login. then remove the suid bit from all binaries on the remote machine. this reduces attack surface.
+2021-12-02 19:57:29	Seirdy	yes disable passwords login, disable root login, enable 2fa. I'd personally rather use dnssec to store pubkeys: https://blog.cloudflare.com/flexible-secure-ssh-with-dnssec/
+2021-12-02 19:57:30	websec	^ Flexible, secure SSH with DNSSEC
+2021-12-02 19:59:05	MadCamel	neat
+2021-12-02 20:30:32	rudi_s	I like remote root login (with keys) and see no reason to deactivate it for security reasons.
+2021-12-02 20:38:15	MadCamel	yep. it's not like the service wouldn't be running anyway. and it's unlikely disabling root login would prevent any type of exploit.
+2021-12-02 20:41:15	MadCamel	Just have to keep the key secure. Using sudo or su to get to root it's key+password on the remote system. Something you have, something you know. Root keys can meet that requirement as well. Just don't leave them sitting unencrypted in ssh-agent and use agent forwarding or anything silly..
+2021-12-02 20:42:23	MadCamel	It's amazing the inertia that's behind a lot of bad/useless practices.
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:40	-->	mrmanner (mrmanner@90.235.13.15) has joined #security
+2021-12-02 21:04:40	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-02 21:04:40	--	Topic set by ajak (~ajak@gentoo/developer/ajak) on tor, 25 nov 2021 21:05:01
+2021-12-02 21:04:40	--	Channel #security: 713 nicks (0 ops, 0 voices, 713 normals)
+2021-12-02 21:04:58	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-12-02 21:07:41	<--	r-g (~r-g@195-154-105-157.rev.poneytelecom.eu) has quit (Quit: r-g)
+2021-12-02 21:08:33	-->	skapata (Skapata Lambda 1337) (~Skapata@2804:14c:87b0:a6f9:5d0a:d7eb:30c:e02b) has joined #security
+2021-12-02 21:08:34	--	skapata has identified as skapata
+2021-12-02 21:08:33	<--	skapata (~Skapata@2804:14c:87b0:a6f9:5d0a:d7eb:30c:e02b) has quit (Changing host)
+2021-12-02 21:08:33	-->	skapata [skapata] (Skapata Lambda 1337) (~Skapata@user/skapata) has joined #security
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:22	-->	mrmanner (mrmanner@90.235.13.15) has joined #security
+2021-12-02 21:11:23	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-02 21:11:23	--	Topic set by ajak (~ajak@gentoo/developer/ajak) on tor, 25 nov 2021 21:05:01
+2021-12-02 21:11:23	--	Channel #security: 712 nicks (0 ops, 0 voices, 712 normals)
+2021-12-02 21:11:33	--	Channel created on ons, 19 maj 2021 15:43:11
+2021-12-02 21:21:23	<--	cpluspunch_ (~znc@104.200.132.245) has quit (Ping timeout: 252 seconds)
+2021-12-02 21:23:55	<--	dohtem (uid524096@user/dohtem) has quit (Quit: Connection closed for inactivity)
+2021-12-02 21:28:50	-->	mrmanner (mrmanner@90.235.13.15) has joined #security
+2021-12-02 21:28:50	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #security
+2021-12-02 21:50:44	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-02 21:51:46	-->	tesseract [tesseract] (tesseract) (~tesseract@user/tesseract) has joined #security
+2021-12-02 21:58:25	<--	s0mbra (~jd@45.8.17.52) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:00:37	-->	s0mbra [s0mbra] (jd) (~jd@45.8.17.52) has joined #security
+2021-12-02 22:01:21	<--	GNUmoon (~GNUmoon@gateway/tor-sasl/gnumoon) has quit (Ping timeout: 276 seconds)
+2021-12-02 22:01:51	<--	tercaL (~tercaL@user/tercal) has quit (Quit: halt -p)
+2021-12-02 22:02:05	<--	runlevel_0 (~nyarlatho@user/runlevel-0/x-6929182) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:08:19	<--	dna1 (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:09:48	<--	technonerd (~techno@user/technonerd) has quit (Ping timeout: 276 seconds)
+2021-12-02 22:09:51	--	Malvolio has unidentified
+2021-12-02 22:09:51	<--	Malvolio (~Malvolio@user/malvolio) has quit (Killed (tantalum.libera.chat (Nickname regained by services)))
+2021-12-02 22:10:53	<--	yans (~yans@2a02:8388:4504:1780:b5be:e9d1:8106:a961) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:11:35	-->	technonerd [technonerd] (techno) (~techno@user/technonerd) has joined #security
+2021-12-02 22:12:54	-->	sdfgsdfg [sdfgsdfg] (sdfgsdfg) (~sdfgsdfg@user/sdfgsdfg) has joined #security
+2021-12-02 22:14:33	-->	Malvolio [Malvolio] (Malvolio) (~Malvolio@user/malvolio) has joined #security
+2021-12-02 22:15:06	-->	dohtem [dOhtem] (dohtem) (uid524096@user/dohtem) has joined #security
+2021-12-02 22:16:40	<--	jess (~jess@libera/staff/jess) has quit
+2021-12-02 22:19:19	-->	richard_h (purple) (~richard@2406:e001:8:a900:6e62:6dff:fe05:ae29) has joined #security
+2021-12-02 22:19:19	--	richard_h has identified as richard_h
+2021-12-02 22:20:59	-->	SJrX [SJr] (Steve) (~sjr@S0106302303dfb018.vf.shawcable.net) has joined #security
+2021-12-02 22:23:04	-->	dna1 (dna) (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has joined #security
+2021-12-02 22:23:27	<--	caveman (~caveman@gateway/tor-sasl/caveman) has quit (Ping timeout: 276 seconds)
+2021-12-02 22:28:29	<--	rufito (~phil@181.42.53.33) has quit (Remote host closed the connection)
+2021-12-02 22:28:42	<--	Paul84 (~Username@user/paul84) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-12-02 22:32:04	-->	vimart [vimart] (vimart) (~vimart@239.218-30-62.static.virginmediabusiness.co.uk) has joined #security
+2021-12-02 22:32:34	tmberg	Does: nc -vvz -u 135.181.136.158 11335  work for you?
+2021-12-02 22:33:16	vimart	Hi guys
+2021-12-02 22:33:16	<--	Narrat (~omnius@p200300df5f14e29206ea56fffe2e7cdc.dip0.t-ipconnect.de) has quit (Quit: They say a little knowledge is a dangerous thing, but it's not one half so bad as a lot of ignorance.)
+2021-12-02 22:33:27	-->	Hashida (realname) (~DaSH@ro2.flokinet.is) has joined #security
+2021-12-02 22:33:28	catbeard	rofl rspamd
+2021-12-02 22:33:36	catbeard	nice one tmberg
+2021-12-02 22:35:50	<--	Hashida (~DaSH@ro2.flokinet.is) has quit (Remote host closed the connection)
+2021-12-02 22:36:05	<--	dna1 (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:36:19	-->	Hashida (realname) (~DaSH@ro2.flokinet.is) has joined #security
+2021-12-02 22:36:33	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:37:17	<--	raffaele_ (~raffaele@ip-80-113-98-4.ip.prioritytelecom.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:40:26	-->	xkuru [xkuru] (realname) (~xkuru@user/xkuru) has joined #security
+2021-12-02 22:40:52	<--	Hashida (~DaSH@ro2.flokinet.is) has quit (Client Quit)
+2021-12-02 22:43:53	-->	Itaru (realname) (~DaSH@ro2.flokinet.is) has joined #security
+2021-12-02 22:46:13	<--	vimart (~vimart@239.218-30-62.static.virginmediabusiness.co.uk) has quit (Quit: WeeChat 2.8)
+2021-12-02 22:47:32	<--	blindguard (~blindguar@2a02:908:1864:c200::12) has quit (Quit: Konversation terminated!)
+2021-12-02 22:47:59	-->	dna1 (dna) (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has joined #security
+2021-12-02 22:49:23	<--	machinedgod (~machinedg@135-23-192-217.cpe.pppoe.ca) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:53:39	<--	dna1 (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:55:46	-->	GNUmoon [GNUmoon] (realname) (~GNUmoon@gateway/tor-sasl/gnumoon) has joined #security
+2021-12-02 22:56:57	<--	rinzewind (~rinzewind@user/rinzewind) has quit (Quit: leaving)
+2021-12-02 22:57:51	-->	dna1 (dna) (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has joined #security
+2021-12-02 23:03:18	-->	raffaele_ (realname) (~raffaele@ip-80-113-98-4.ip.prioritytelecom.net) has joined #security
+2021-12-02 23:04:45	<--	sdfgsdfg (~sdfgsdfg@user/sdfgsdfg) has quit (Quit: ZzzZ)
+2021-12-02 23:05:53	<--	dna1 (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:06:59	-->	dna1 (dna) (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has joined #security
+2021-12-02 23:10:23	-->	Joanna [joanna] (Joanna) (uid57472@id-57472.lymington.irccloud.com) has joined #security
+2021-12-02 23:11:05	-->	plankster_ [plankers] (plankster) (~plankster@user/plankers) has joined #security
+2021-12-02 23:11:23	<--	plankster (~plankster@user/plankers) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:14:08	--	plankster_ is now known as plank
+2021-12-02 23:16:20	<--	Burgundy (~yomon@79.115.213.171) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:17:31	<--	dna1 (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:17:52	-->	caveman [caveman] (caveman) (~caveman@gateway/tor-sasl/caveman) has joined #security
+2021-12-02 23:26:41	<--	manti7 (~manti7@176.10.104.94) has quit (Quit: WeeChat 3.3)
+2021-12-02 23:27:31	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:28:04	-->	Itaru (realname) (~DaSH@ro2.flokinet.is) has joined #security
+2021-12-02 23:34:54	-->	vis [vis] (realname) (~vis@gateway/tor-sasl/vis) has joined #security
+2021-12-02 23:35:01	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:35:48	<--	BUSY (~BUSY@user/busy) has quit (Remote host closed the connection)
+2021-12-02 23:36:17	-->	blyat-73 (realname) (~hjgkjhgkj@46.235.96.249) has joined #security
+2021-12-02 23:36:50	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #security
+2021-12-02 23:45:17	<--	led_belly (~led_belly@5.180.62.222) has quit (Remote host closed the connection)
+2021-12-02 23:46:56	<--	rya (~ry@user/rya) has quit (Remote host closed the connection)
+2021-12-02 23:55:25	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Remote host closed the connection)
+2021-12-02 23:59:22	-->	synaps3 [synaps3] (realname) (~void@user/synaps3) has joined #security
+2021-12-02 23:59:38	<--	Jimmy_H (~Jimmy_H@113.118.4.226) has quit (Read error: Connection reset by peer)
+2021-12-02 23:59:57	-->	Jimmy_H (realname) (~Jimmy_H@113.118.4.226) has joined #security
+2021-12-02 23:59:57	--	Jimmy_H has identified as Jimmy_H
+2021-12-03 00:02:08	-->	vimart [vimart] (vimart) (~vimart@239.218-30-62.static.virginmediabusiness.co.uk) has joined #security
+2021-12-03 00:05:46	<--	caveman (~caveman@gateway/tor-sasl/caveman) has quit (Quit: caveman)
+2021-12-03 00:09:08	<--	lexik (~lexik@171.25.222.230) has quit (Read error: Connection reset by peer)
+2021-12-03 00:09:31	-->	lexik (lexik) (~lexik@171.25.222.230) has joined #security
+2021-12-03 00:09:41	-->	caveman [caveman] (caveman) (~caveman@gateway/tor-sasl/caveman) has joined #security
+2021-12-03 00:10:10	-->	dna1 (dna) (~dna@47-220-190-100.gtwncmkt04.res.dyn.suddenlink.net) has joined #security
+2021-12-03 00:11:55	<--	cliff (~cperry@user/cliff) has quit (Ping timeout: 256 seconds)
+2021-12-03 00:18:58	<--	lexik (~lexik@171.25.222.230) has quit (Quit: No Ping reply in 180 seconds.)
+2021-12-03 00:20:18	-->	machinedgod [machinedgod] (John) (~machinedg@24.105.81.50) has joined #security
+2021-12-03 00:21:33	-->	lexik (lexik) (~lexik@171.25.222.230) has joined #security
+2021-12-03 00:26:48	tmberg	catbeard: Huh?
+2021-12-03 00:27:19	catbeard	158.136.181.135.in-addr.arpa domain name pointer mail.rspamd.net.
+2021-12-03 00:27:37	catbeard	i assume you were trying to trick us into blacklisting ourselves on a honeyport
+2021-12-03 00:28:00	catbeard	or are you just trying to determine if it's only you that can't send datagrams to that UDP port with nc -u
+2021-12-03 00:28:16	catbeard	i don't think you'd get confirmation with -z but i could be mistaken
+2021-12-03 00:28:42	-->	led_belly [led_belly] (led_belly) (~led_belly@5.180.62.219) has joined #security
+2021-12-03 00:29:49	catbeard	-z is for connectivity checks for scripting mainly useful for TCP where there's acknowledgement (SYN/ACK)
+2021-12-03 00:29:53	<--	synaps3 (~void@user/synaps3) has quit (Quit: Leaving)
+2021-12-03 00:30:29	tmberg	catbeard: Nah. No trick. I would never do such a thing.
+2021-12-03 00:30:31	catbeard	UDP isn't guaranteed to be delivered, but if you're having with a service on rspamd's mail server that you're actually using, you should probably get in touch with rspamd
+2021-12-03 00:30:33	catbeard	;)
+2021-12-03 00:31:08	tmberg	catbeard: I was told it was blocked by me.
+2021-12-03 00:31:26	catbeard	could be an egress policy or upstream egress block
+2021-12-03 00:32:19	catbeard	if they have no record it hitting, it's possible it didn't get sent fully, even if your system allowed outbound UDP on 11335, upstream might have an egress filter that needs exemption
+2021-12-03 00:32:34	catbeard	either that or rspamd port or ip acl preventing you from sending traffic
+2021-12-03 00:32:46	catbeard	on their mailserver
+2021-12-03 00:33:48	tmberg	catbeard: Nah. All is fine now. ( Although I removed that perticular "thing" either way. )
+2021-12-03 00:34:15	tmberg	nc -vz -u 135.181.136.158 11335
+2021-12-03 00:34:20	tmberg	Works fine.
+2021-12-03 00:34:39	tmberg	So..
+2021-12-03 00:34:40	catbeard	that's the same command
+2021-12-03 00:34:45	catbeard	just less verbosity
+2021-12-03 00:34:59	tmberg	But nvm.
+2021-12-03 00:35:06	catbeard	maybe temporary problem then
+2021-12-03 00:35:09	tmberg	yes. But i installed ncat.
+2021-12-03 00:35:24	catbeard	i like ncat better honestly because --ssl
+2021-12-03 00:35:25	ilikeyou	chasing too much v is always trouble
+2021-12-03 00:35:37	tmberg	And it worked.
+2021-12-03 00:35:48	-->	namkeleser ([https://web.libera.chat] namkeleser) (~namkelese@101.175.102.188) has joined #security
+2021-12-03 00:36:23	tmberg	Both ways.
+2021-12-03 00:36:28	catbeard	ilikeyou: more often than not i'm doing strace -s socket -s 4096 ncat --ssl rather than MOAR VERBOSITY
+2021-12-03 00:36:34	catbeard	-e socket
+2021-12-03 00:37:08	tmberg	Some timeout setting or so. But i do not like seeing errors. Im "allergic" to that. :-)
+2021-12-03 00:37:28	catbeard	tmberg: ah, higher timeouts needed, probably a latency issue, check ping to that ip from your box doing the nc
+2021-12-03 00:38:03	catbeard	maybe try a mtr then a regular traceroute as well
+2021-12-03 00:38:18	catbeard	see if there's any discrepancies or repeated * * * lines
+2021-12-03 00:38:37	tmberg	catbeard: Nah.
+2021-12-03 00:39:08	tmberg	catbeard: You can forget it. Delete it from your brain. Thanks for your help though! :)
+2021-12-03 00:39:13	catbeard	lol
+2021-12-03 00:39:15	catbeard	np
+2021-12-03 00:41:19	<--	machinedgod (~machinedg@24.105.81.50) has quit (Ping timeout: 256 seconds)
+2021-12-03 00:41:27	<--	tesseract (~tesseract@user/tesseract) has quit (Quit: tesseract)
+2021-12-03 00:47:05	<--	raffaele_ (~raffaele@ip-80-113-98-4.ip.prioritytelecom.net) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:50:09	-->	raffaele_ (realname) (~raffaele@ip-80-113-98-4.ip.prioritytelecom.net) has joined #security
+2021-12-03 00:53:31	-->	Lazenca [Lazenca] (...) (~lazenca@user/lazenca) has joined #security
+2021-12-03 00:59:47	<--	namkeleser (~namkelese@101.175.102.188) has quit (Quit: Client closed)
+2021-12-03 01:00:02	<--	Libero (~Libero@130.43.23.56.dsl.dyn.forthnet.gr) has quit (Read error: Connection reset by peer)
+2021-12-03 01:04:05	-->	BUSY [BUSY] (realname) (~BUSY@user/busy) has joined #security
+2021-12-03 01:07:47	<--	gopar (~gopar@c-67-164-79-22.hsd1.ca.comcast.net) has quit
+2021-12-03 01:09:51	<--	technonerd (~techno@user/technonerd) has quit (Ping timeout: 276 seconds)
+2021-12-03 01:13:37	<--	BrianG61UK (~BrianG61U@2a02:8010:66b7:dddd:991a:b3a2:81ea:181a) has quit (Read error: Connection reset by peer)
+2021-12-03 01:13:45	-->	technonerd [technonerd] (techno) (~techno@user/technonerd) has joined #security
+2021-12-03 01:15:31	-->	BrianG61UK [BrianG61UK] (Brian G. (in England)) (~BrianG61U@2a02:8010:66b7:dddd:991a:b3a2:81ea:181a) has joined #security
+2021-12-03 01:17:58	-->	hirogen [hirogen] (...) (~hirogen@user/hirogen) has joined #security
+2021-12-03 01:20:01	-->	anyone [jengelh] (-) (~filler@a4.inai.de) has joined #security
+2021-12-03 01:26:41	-->	machinedgod [machinedgod] (John) (~machinedg@24.105.81.50) has joined #security
+2021-12-03 01:28:27	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Quit: THE RAM IS TOO DAMN HIGH)
+2021-12-03 01:29:21	-->	chenqisu1 [chenqisu1] (realname) (~chenqisu1@183.217.200.156) has joined #security
+2021-12-03 01:33:17	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:34:17	<--	HyN0X (~HyNoX@rm-19-52-210.service.infuturo.it) has quit (Read error: Connection reset by peer)
+2021-12-03 01:35:11	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #security
+2021-12-03 01:38:05	-->	HyN0X [HyN0X] (HyN0X) (~HyNoX@na-19-85-133.service.infuturo.it) has joined #security
+2021-12-03 01:39:47	<--	Milos (~Milos@user/milos) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-12-03 01:40:33	-->	Milos [Milos] (realname) (~Milos@user/milos) has joined #security
+2021-12-03 01:42:25	<--	dogbert2 (~Bill@ip68-105-189-91.lv.lv.cox.net) has quit (Remote host closed the connection)
+2021-12-03 01:42:41	-->	dogbert2 (realname) (~Bill@ip68-105-189-91.lv.lv.cox.net) has joined #security
+2021-12-03 01:46:29	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:48:02	-->	incog (null) (~ayy@pool-108-46-169-14.nycmny.fios.verizon.net) has joined #security
+2021-12-03 01:49:06	<--	Telcoguy (~quassel@83-215-44-12.bruck.dyn.salzburg-online.at) has quit (Remote host closed the connection)
+2021-12-03 12:21:16	--	irc: disconnected from server
+2021-12-03 12:21:31	-->	mrmanner (mrmanner@90.235.13.15) has joined #security
+2021-12-03 12:21:31	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-03 07:02:08	betterOn1	hi.
+2021-12-03 07:02:27	betterOn1	there are hundreds of hostname:port pairs to check if they are available or not
+2021-12-03 07:03:07	betterOn1	if port is open or not.. is there any ready application to do this?
+2021-12-03 07:04:06	catbeard	betterOn1: nmap, or if you don't want send traffic and just search by target info, shodan.io
+2021-12-03 07:06:28	ajak	i think maybe masscan could work too
+2021-12-03 07:06:33	ajak	if it's *really* a lot
+2021-12-03 07:06:50	catbeard	or python's scanless module
+2021-12-03 07:07:05	catbeard	ajak: ya but why massscan when shodan.io basically does that already
+2021-12-03 07:07:20	catbeard	and you don't have to fire bullets, just 1 to another target
+2021-12-03 07:07:35	catbeard	also private firehose for asn ❤
+2021-12-03 07:08:15	catbeard	I have a module call Sensor that I use to extract open ports
+2021-12-03 07:09:24	betterOn1	i'l check python's scanless module, because in fact, i need some more info about each connection and need to make some parsing on url
+2021-12-03 07:09:39	betterOn1	thank you :)
+2021-12-03 07:09:54	catbeard	still in dev so far but the basic idea - https://kopy.io/K0oFu#qjLbH5n9ivhFin
+2021-12-03 07:09:54	websec	^ kopy
+2021-12-03 07:10:30	dodo	betterOn1: more info?
+2021-12-03 07:11:09	catbeard	however the caveats of relying on a proxied port scan should be obvious
+2021-12-03 07:11:21	betterOn1	dodo: some url use subdomain and i need to get their ip number to report exactly as i want(in specific format)
+2021-12-03 07:11:33	catbeard	but has the advantage of obscuring the origin of the scan
+2021-12-03 07:12:25	dodo	betterOn1: domain-ip mapping is not necessarily 1:1
+2021-12-03 07:13:55	betterOn1	it is required to prepare a report
+2021-12-03 07:14:14	catbeard	betterOn1: sounds like just doing a hostname lookup / dig
+2021-12-03 07:14:24	catbeard	maybe censys search for the CN
+2021-12-03 07:17:02	catbeard	securitytrails a/cname history for it as a precaution for due diligence
+2021-12-03 07:24:30	betterOn1	catbeard: thank you. sorry i'm on an online meeting.. i'll check them all :)
+2021-12-03 07:29:41	betterOn1	dodo: i got what you mean right now :) they are all intranet hostnames, maybe there are a few hostnames resolve to multiple ip but they are 1:1 usually
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:52	-->	mrmanner (mrmanner@90.235.13.15) has joined #security
+2021-12-03 12:22:52	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-03 12:34:04	<--	pfg[m] (~professio@2001:470:69fc:105::1:418a) has left #security
+2021-12-03 12:34:53	<--	dohtem (uid524096@user/dohtem) has quit (Quit: Connection closed for inactivity)
+2021-12-03 12:39:53	<--	fcinq (~irc@46.105.34.51) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:42:37	-->	Trieste_ [pilgrim] (T) (T@user/pilgrim) has joined #security
+2021-12-03 12:43:11	<--	Trieste (T@user/pilgrim) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:46:00	--	Trieste_ is now known as Trieste
+2021-12-03 12:49:34	-->	sjmulder [sjmulder] (realname) (~sjmulder@2a02-a443-33e5-1-d382-e0bc-4d31-d1c5.fixed6.kpn.net) has joined #security
+2021-12-03 12:50:03	<--	_inky (~inky_@188.115.224.238) has quit (Ping timeout: 256 seconds)
+2021-12-03 12:54:46	<--	chipox (~chipox@86.106.136.218) has quit (Quit: Leaving)
+2021-12-03 12:55:15	-->	chipox [chipox] (realname) (~chipox@178-175-131-101.static.as43289.net) has joined #security
+2021-12-03 12:59:13	<--	yamchah2 (~yamchah2@user/yamchah2) has quit (Remote host closed the connection)
+2021-12-03 12:59:34	-->	yamchah2 [yamchah2] (yamchah2) (~yamchah2@user/yamchah2) has joined #security
+2021-12-03 13:03:30	-->	Leonarbro [Leonarbro] (Leonarbro DaVinci) (~Leonet@user/leonarbro) has joined #security
+2021-12-03 13:04:50	-->	_inky [inky] (inky, from the tape) (~inky_@31.7.162.99) has joined #security
+2021-12-03 13:07:01	<--	shad (~shad@user/shad) has quit (Ping timeout: 252 seconds)
+2021-12-03 13:08:34	<--	_flood (flooded@gateway/vpn/protonvpn/flood/x-43489060) has quit (Remote host closed the connection)
+2021-12-03 13:09:34	<--	kdc (~kdc@196.211.197.159) has quit (Quit: Leaving)
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:36	-->	mrmanner (mrmanner@98.128.201.128) has joined #security
+2021-12-03 20:17:36	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-03 18:24:57	tesseract	what does companies that use rhel do? do they take compatible hardware and use it 10 years without changing it?
+2021-12-03 18:25:31	tesseract	i learnt that rhel doesn't support major release update
+2021-12-03 18:25:47	tesseract	so, they suck with it 10 years or they will reinstall it
+2021-12-03 18:25:53	tesseract	anyone knows about this?
+2021-12-03 18:29:09	ajak	redhat is famous for offering paid support for rhel too
+2021-12-03 18:29:33	s1gyn	They do backports of security and bug fixes though
+2021-12-03 18:29:37	tomreyn	a general statement will be difficult for anyone not working in the proper department at redhat. i (not redhat) would guess that many customers run the hardware until Redhat EOL, others will replace it once, or twice, during the lifetime.
+2021-12-03 18:30:54	tesseract	tomreyn: but it will support only old hardware
+2021-12-03 18:31:05	tomreyn	running outdated hardware can get quite expensive in terms of energy efficiency, so there will be some urge to replace it occasionally. less so with moore's law no longer applying as much.
+2021-12-03 18:31:50	s1gyn	I've never heard of lack of support for server hardware being an issue
+2021-12-03 18:32:08	s1gyn	just lack of latest version of <whatever>
+2021-12-03 18:32:23	s1gyn	Maybe desktop
+2021-12-03 18:32:59	tesseract	for example rhel 7 or 8 will support intel 13th gen hardware? i guess no
+2021-12-03 18:33:01	tomreyn	i'm sure they take good care of covering most recent server hardware even with the old kernel versions
+2021-12-03 18:33:33	s1gyn	You could ask on #rhel there are redhat employees on that channel
+2021-12-03 18:34:08	tesseract	s1gyn: will do
+2021-12-03 18:35:04	tomreyn	you could look into how / when they introduced epyc support, this will have been a major undertaking, not easily applied to old kernels, i guess
+2021-12-03 18:35:39	tomreyn	but then, none of this is about security, or is it?
+2021-12-03 18:35:49	 *	ajak points to topic
+2021-12-03 18:35:53	ajak	offtopic is ok :P
+2021-12-03 18:36:54	ajak	new processors are still on the same ISA so they should be at a minimum able to run the older binaries
+2021-12-03 18:37:01	tesseract	i asked here because i thought people who works big companies here
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #security
+2021-12-03 20:19:44	--	Topic for #security is "Welcome to Computer, Network & Physical #Security | Off-topic is allowed; on-topic comes first"
+2021-12-03 20:21:14	--	Guest776 has identified as zerosum
+2021-12-03 20:21:14	<--	Guest776 (~zerosum@162.255.139.2) has quit (Changing host)
+2021-12-03 20:21:14	-->	Guest776 [zerosum] (zerosum) (~zerosum@user/zerosum) has joined #security
+2021-12-03 20:21:53	<--	fcinq (~irc@46.105.34.51) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:23:51	--	kish` is now known as Tesla
+2021-12-03 20:33:33	<--	bongobrown (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has quit (Quit: Leaving)
+2021-12-03 20:33:52	-->	bongobrown [bongobrown] (realname) (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has joined #security
+2021-12-03 20:34:38	-->	puke [puke] (realname) (~puke@user/puke) has joined #security
+2021-12-03 20:41:09	<--	Klotz (~Klotzoman@gateway/tor-sasl/klotz) has quit (Ping timeout: 276 seconds)
+2021-12-03 20:41:19	-->	Klotz [Klotz] (Klotzomancer) (~Klotzoman@gateway/tor-sasl/klotz) has joined #security
+2021-12-03 20:44:53	<--	dohtem (uid524096@user/dohtem) has quit (Quit: Connection closed for inactivity)
+2021-12-03 20:46:59	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Quit: Laa shay'a waqi'un moutlaq bale kouloun moumkine)
+2021-12-03 20:59:15	-->	Tob_ (realname) (~tob@212.7.232.140) has joined #security
+2021-12-03 20:59:50	<--	bongobrown (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has quit (Quit: Leaving)
+2021-12-03 21:01:06	-->	hellstabber [hellstabber] ([https://web.libera.chat] hellstabber) (~hellstabb@178.233.16.12) has joined #security
+2021-12-03 21:02:33	<--	_inky (~inky_@5.77.176.222) has quit (Ping timeout: 256 seconds)

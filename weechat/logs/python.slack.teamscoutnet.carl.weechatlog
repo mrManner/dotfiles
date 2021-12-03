@@ -1,0 +1,29 @@
+2021-03-11 17:37:53	mrmanner	Jag tror det funkade
+2021-03-11 17:38:02	mrmanner	kan inte logga in med `admin` iallafall
+2021-03-11 17:38:07	Carl	ja!
+2021-03-11 17:38:14	mrmanner	hm, fuck
+2021-03-11 17:38:28	mrmanner	jag tappade bort det nya lösenordet :sweat_smile:
+2021-03-11 17:38:28	Carl	vadå?
+2021-03-11 17:38:39	mrmanner	hade det i urklipp
+2021-03-11 17:38:47	mrmanner	och kopierade en annan sak på vägen...
+2021-03-11 17:38:56	Carl	aja då får jag använda S1 på kvällen scoutsnack
+2021-03-11 17:39:05	Carl	måste bara hitta fyra medlemmar med väldigt vanliga namn
+2021-03-11 17:39:36	mrmanner	jag samtycker till att användas som demonstrationsexemplar vid behov
+2021-03-11 17:39:39	mrmanner	Barba Mamma också
+2021-03-11 17:39:52	Carl	fel ålder
+2021-03-11 17:39:52	mrmanner	hela Barbafamiljen till och med, om de kan göra nytta
+2021-03-11 17:39:54	mrmanner	ah...
+2021-03-11 17:40:02	Carl	men det kanske går kan kolla!
+2021-03-11 18:05:51	Carl	har bytt namn och ålder på typ alla "medlemmar" i testkår
+2021-03-11 18:06:05	Carl	verkar precis räcka till en patrull :crossed_fingers:
+2021-03-11 18:07:48	mrmanner	Perfekt 
+2021-03-11 18:08:00	Carl	barbapatrullen :wink:
+2021-06-08 14:09:47	Carl	Om vi kunde mecka till Scoutnet och ScoutID på något vis så skulle vi kunna visa visa supportartiklar bara för inloggade användare och utifrån vissa egenskaper. Är det något vi kan titta på för framtiden måntro? Dvs at man bli inloggad i ScoutID samtidigt som man loggar in i Scoutnet.
+2021-06-08 14:12:15	mrmanner	Hm, det börjar verkligen låta som oAuth-jobb det där. I så fall låter vi ScoutID hantera auktorisering även åt Scoutnet, men jag kan tänka mig att det är en ganska stor apparat att byta ut.
+2021-06-08 14:12:28	mrmanner	Dock en väldigt rimlig grej att lösa till Scoutnet 5, oavsett
+2021-06-08 14:12:41	mrmanner	eller vad nu versionsnumret är på next-gen
+2021-06-08 14:12:45	Carl	5
+2021-06-08 14:12:58	Carl	Scoutnet TNG :nerd_face:
+2021-06-09 11:01:21	Carl	Russ verkade ju tycka iden var intressant med arrangemangskopplingen. Var det något mer förutom det och lättare att delta i annan kår än sin ordinarie som vi skulle fixa?
+2021-06-09 11:01:29	Carl	Jag kommer inte ihåg :-S
+2021-06-09 11:08:26	mrmanner	Inte jag heller, på rak arm 

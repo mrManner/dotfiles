@@ -1,0 +1,255 @@
+2021-03-11 18:08:04	russ	ergh
+2021-03-11 18:08:12	Carl	i managed
+2021-03-11 18:08:21	Carl	i renamed and reaged all members in testkår on s1
+2021-03-11 18:08:27	Carl	that works :tada:
+2021-03-11 18:08:38	russ	ok!
+2021-03-11 18:09:01	Carl	but we lost the new password to demo  :stuck_out_tongue:
+2021-03-11 18:12:03	russ	I changed the admin email to yours
+2021-03-11 18:15:40	russ	Manage to get a new password?
+2021-03-11 18:17:02	Carl	yes thank you!
+2021-03-26 13:44:10	tom.lantz	@russ https://ticket.custard.no/issues/29854
+2021-03-26 13:44:10		I am off and am away between 15.00 today and maybe 21.00 but can be reached on private phone (40496058)
+2021-03-26 13:44:10		Immediate status is mainly for finding out how big of an error this is!
+2021-03-26 13:46:13	russ	I suspect someone just made reminders using "all" and typed the reminder text assuming membership...
+2021-03-26 13:46:28	russ	So it's created reminders for overdue project invoices too
+2021-03-26 13:46:48	russ	I can find out which ones
+2021-03-26 13:49:02	russ	There are 39 invoices that are "project" invoices which have that same due date, so are probably also affected
+2021-03-26 13:50:27	russ	```10100913236,10100887707,10100914635,10100914601,10100914626,10100914593,10100861794,10100915881,10100915935,10100916007,10100867043,10100915863,10100915868,10100915880,10100915917,10100915952,10100915967,10100914077,10100939270,10100915939,10100862271,10100892290,10100914135,10100915987,10100913157,10100934920,10100914145,10100887441,10100887988,10100913058,10100914129,10100914149,10100932318,10100932353,10100932338,10100932342,10100932344,10100932349,10100934919```
+2021-03-26 13:51:59	russ	Paste that into the invoice list page to see them all
+2021-03-26 14:00:28	russ	They are "just" reminders, so I could just delete them all and you can contact to tell them to ignore?
+2021-03-26 14:15:21	tom.lantz	Best to delete them as soon as possible maybe? since then it will not get registered as paid
+2021-03-26 14:15:40	tom.lantz	And send me and brede a list with email/contact info?
+2021-03-26 14:15:47	russ	Deleting the reminders doesn't affect the underlying invoice at all, it's more for how it "looks"
+2021-03-26 14:16:32	tom.lantz	ok, but as long as we have a  list it is traceable
+2021-03-26 14:16:34	russ	The only affect they have, is that they show up under "reminders" on the invoice, and the due date has changed to 31st March
+2021-03-26 14:17:05	tom.lantz	Can you see how they are printed?`looks like the group one  was as paper
+2021-03-26 14:17:20	tom.lantz	since the PDF I got from them is a scan
+2021-03-26 14:17:21	russ	If I delete them, and set the due date back to what it was, it will "clean up" but also they will be picked up again later if someone generates project reminders
+2021-03-26 14:17:29	tom.lantz	ok
+2021-03-26 14:17:49	tom.lantz	could you also send the a list with emails and contact info (phone..)?
+2021-03-26 14:17:51	russ	Most likely all printed, since I don't think the emailing thing supports project invoices anyway
+2021-03-26 14:17:58	tom.lantz	ok
+2021-03-26 14:20:25	russ	Think I'm going to remove the "all" option from that interface. I don't think it's very common to do project and membership invoices at the same time anyway - and if someone wants to, they can just run it twice [:+1:1]
+2021-03-26 14:22:39	tom.lantz	Very much agree [:+1:1]
+2021-03-26 13:44:10	tom.lantz	@russ https://ticket.custard.no/issues/29854
+2021-03-26 13:44:10		I am off and am away between 15.00 today and maybe 21.00 but can be reached on private phone (40496058)
+2021-03-26 13:44:10		Immediate status is mainly for finding out how big of an error this is!
+2021-03-26 13:46:13	russ	I suspect someone just made reminders using "all" and typed the reminder text assuming membership...
+2021-03-26 13:46:28	russ	So it's created reminders for overdue project invoices too
+2021-03-26 13:46:48	russ	I can find out which ones
+2021-03-26 13:49:02	russ	There are 39 invoices that are "project" invoices which have that same due date, so are probably also affected
+2021-03-26 13:50:27	russ	```10100913236,10100887707,10100914635,10100914601,10100914626,10100914593,10100861794,10100915881,10100915935,10100916007,10100867043,10100915863,10100915868,10100915880,10100915917,10100915952,10100915967,10100914077,10100939270,10100915939,10100862271,10100892290,10100914135,10100915987,10100913157,10100934920,10100914145,10100887441,10100887988,10100913058,10100914129,10100914149,10100932318,10100932353,10100932338,10100932342,10100932344,10100932349,10100934919```
+2021-03-26 13:51:59	russ	Paste that into the invoice list page to see them all
+2021-03-26 14:00:28	russ	They are "just" reminders, so I could just delete them all and you can contact to tell them to ignore?
+2021-03-26 14:15:21	tom.lantz	Best to delete them as soon as possible maybe? since then it will not get registered as paid
+2021-03-26 14:15:40	tom.lantz	And send me and brede a list with email/contact info?
+2021-03-26 14:15:47	russ	Deleting the reminders doesn't affect the underlying invoice at all, it's more for how it "looks"
+2021-03-26 14:16:32	tom.lantz	ok, but as long as we have a  list it is traceable
+2021-03-26 14:16:34	russ	The only affect they have, is that they show up under "reminders" on the invoice, and the due date has changed to 31st March
+2021-03-26 14:17:05	tom.lantz	Can you see how they are printed?`looks like the group one  was as paper
+2021-03-26 14:17:20	tom.lantz	since the PDF I got from them is a scan
+2021-03-26 14:17:21	russ	If I delete them, and set the due date back to what it was, it will "clean up" but also they will be picked up again later if someone generates project reminders
+2021-03-26 14:17:29	tom.lantz	ok
+2021-03-26 14:17:49	tom.lantz	could you also send the a list with emails and contact info (phone..)?
+2021-03-26 14:17:51	russ	Most likely all printed, since I don't think the emailing thing supports project invoices anyway
+2021-03-26 14:17:58	tom.lantz	ok
+2021-03-26 14:20:25	russ	Think I'm going to remove the "all" option from that interface. I don't think it's very common to do project and membership invoices at the same time anyway - and if someone wants to, they can just run it twice [:+1:1]
+2021-03-26 14:22:39	tom.lantz	Very much agree [:+1:1]
+2021-03-26 13:44:10	tom.lantz	@russ https://ticket.custard.no/issues/29854
+2021-03-26 13:44:10		I am off and am away between 15.00 today and maybe 21.00 but can be reached on private phone (40496058)
+2021-03-26 13:44:10		Immediate status is mainly for finding out how big of an error this is!
+2021-03-26 13:46:13	russ	I suspect someone just made reminders using "all" and typed the reminder text assuming membership...
+2021-03-26 13:46:28	russ	So it's created reminders for overdue project invoices too
+2021-03-26 13:46:48	russ	I can find out which ones
+2021-03-26 13:49:02	russ	There are 39 invoices that are "project" invoices which have that same due date, so are probably also affected
+2021-03-26 13:50:27	russ	```10100913236,10100887707,10100914635,10100914601,10100914626,10100914593,10100861794,10100915881,10100915935,10100916007,10100867043,10100915863,10100915868,10100915880,10100915917,10100915952,10100915967,10100914077,10100939270,10100915939,10100862271,10100892290,10100914135,10100915987,10100913157,10100934920,10100914145,10100887441,10100887988,10100913058,10100914129,10100914149,10100932318,10100932353,10100932338,10100932342,10100932344,10100932349,10100934919```
+2021-03-26 13:51:59	russ	Paste that into the invoice list page to see them all
+2021-03-26 14:00:28	russ	They are "just" reminders, so I could just delete them all and you can contact to tell them to ignore?
+2021-03-26 14:15:21	tom.lantz	Best to delete them as soon as possible maybe? since then it will not get registered as paid
+2021-03-26 14:15:40	tom.lantz	And send me and brede a list with email/contact info?
+2021-03-26 14:15:47	russ	Deleting the reminders doesn't affect the underlying invoice at all, it's more for how it "looks"
+2021-03-26 14:16:32	tom.lantz	ok, but as long as we have a  list it is traceable
+2021-03-26 14:16:34	russ	The only affect they have, is that they show up under "reminders" on the invoice, and the due date has changed to 31st March
+2021-03-26 14:17:05	tom.lantz	Can you see how they are printed?`looks like the group one  was as paper
+2021-03-26 14:17:20	tom.lantz	since the PDF I got from them is a scan
+2021-03-26 14:17:21	russ	If I delete them, and set the due date back to what it was, it will "clean up" but also they will be picked up again later if someone generates project reminders
+2021-03-26 14:17:29	tom.lantz	ok
+2021-03-26 14:17:49	tom.lantz	could you also send the a list with emails and contact info (phone..)?
+2021-03-26 14:17:51	russ	Most likely all printed, since I don't think the emailing thing supports project invoices anyway
+2021-03-26 14:17:58	tom.lantz	ok
+2021-03-26 14:20:25	russ	Think I'm going to remove the "all" option from that interface. I don't think it's very common to do project and membership invoices at the same time anyway - and if someone wants to, they can just run it twice [:+1:1]
+2021-03-26 14:22:39	tom.lantz	Very much agree [:+1:1]
+2021-03-26 13:44:10	tom.lantz	@russ https://ticket.custard.no/issues/29854
+2021-03-26 13:44:10		I am off and am away between 15.00 today and maybe 21.00 but can be reached on private phone (40496058)
+2021-03-26 13:44:10		Immediate status is mainly for finding out how big of an error this is!
+2021-03-26 13:46:13	russ	I suspect someone just made reminders using "all" and typed the reminder text assuming membership...
+2021-03-26 13:46:28	russ	So it's created reminders for overdue project invoices too
+2021-03-26 13:46:48	russ	I can find out which ones
+2021-03-26 13:49:02	russ	There are 39 invoices that are "project" invoices which have that same due date, so are probably also affected
+2021-03-26 13:50:27	russ	```10100913236,10100887707,10100914635,10100914601,10100914626,10100914593,10100861794,10100915881,10100915935,10100916007,10100867043,10100915863,10100915868,10100915880,10100915917,10100915952,10100915967,10100914077,10100939270,10100915939,10100862271,10100892290,10100914135,10100915987,10100913157,10100934920,10100914145,10100887441,10100887988,10100913058,10100914129,10100914149,10100932318,10100932353,10100932338,10100932342,10100932344,10100932349,10100934919```
+2021-03-26 13:51:59	russ	Paste that into the invoice list page to see them all
+2021-03-26 14:00:28	russ	They are "just" reminders, so I could just delete them all and you can contact to tell them to ignore?
+2021-03-26 14:15:21	tom.lantz	Best to delete them as soon as possible maybe? since then it will not get registered as paid
+2021-03-26 14:15:40	tom.lantz	And send me and brede a list with email/contact info?
+2021-03-26 14:15:47	russ	Deleting the reminders doesn't affect the underlying invoice at all, it's more for how it "looks"
+2021-03-26 14:16:32	tom.lantz	ok, but as long as we have a  list it is traceable
+2021-03-26 14:16:34	russ	The only affect they have, is that they show up under "reminders" on the invoice, and the due date has changed to 31st March
+2021-03-26 14:17:05	tom.lantz	Can you see how they are printed?`looks like the group one  was as paper
+2021-03-26 14:17:20	tom.lantz	since the PDF I got from them is a scan
+2021-03-26 14:17:21	russ	If I delete them, and set the due date back to what it was, it will "clean up" but also they will be picked up again later if someone generates project reminders
+2021-03-26 14:17:29	tom.lantz	ok
+2021-03-26 14:17:49	tom.lantz	could you also send the a list with emails and contact info (phone..)?
+2021-03-26 14:17:51	russ	Most likely all printed, since I don't think the emailing thing supports project invoices anyway
+2021-03-26 14:17:58	tom.lantz	ok
+2021-03-26 14:20:25	russ	Think I'm going to remove the "all" option from that interface. I don't think it's very common to do project and membership invoices at the same time anyway - and if someone wants to, they can just run it twice [:+1:1]
+2021-03-26 14:22:39	tom.lantz	Very much agree [:+1:1]
+2021-03-26 13:44:10	tom.lantz	@russ https://ticket.custard.no/issues/29854
+2021-03-26 13:44:10		I am off and am away between 15.00 today and maybe 21.00 but can be reached on private phone (40496058)
+2021-03-26 13:44:10		Immediate status is mainly for finding out how big of an error this is!
+2021-03-26 13:46:13	russ	I suspect someone just made reminders using "all" and typed the reminder text assuming membership...
+2021-03-26 13:46:28	russ	So it's created reminders for overdue project invoices too
+2021-03-26 13:46:48	russ	I can find out which ones
+2021-03-26 13:49:02	russ	There are 39 invoices that are "project" invoices which have that same due date, so are probably also affected
+2021-03-26 13:50:27	russ	```10100913236,10100887707,10100914635,10100914601,10100914626,10100914593,10100861794,10100915881,10100915935,10100916007,10100867043,10100915863,10100915868,10100915880,10100915917,10100915952,10100915967,10100914077,10100939270,10100915939,10100862271,10100892290,10100914135,10100915987,10100913157,10100934920,10100914145,10100887441,10100887988,10100913058,10100914129,10100914149,10100932318,10100932353,10100932338,10100932342,10100932344,10100932349,10100934919```
+2021-03-26 13:51:59	russ	Paste that into the invoice list page to see them all
+2021-03-26 14:00:28	russ	They are "just" reminders, so I could just delete them all and you can contact to tell them to ignore?
+2021-03-26 14:15:21	tom.lantz	Best to delete them as soon as possible maybe? since then it will not get registered as paid
+2021-03-26 14:15:40	tom.lantz	And send me and brede a list with email/contact info?
+2021-03-26 14:15:47	russ	Deleting the reminders doesn't affect the underlying invoice at all, it's more for how it "looks"
+2021-03-26 14:16:32	tom.lantz	ok, but as long as we have a  list it is traceable
+2021-03-26 14:16:34	russ	The only affect they have, is that they show up under "reminders" on the invoice, and the due date has changed to 31st March
+2021-03-26 14:17:05	tom.lantz	Can you see how they are printed?`looks like the group one  was as paper
+2021-03-26 14:17:20	tom.lantz	since the PDF I got from them is a scan
+2021-03-26 14:17:21	russ	If I delete them, and set the due date back to what it was, it will "clean up" but also they will be picked up again later if someone generates project reminders
+2021-03-26 14:17:29	tom.lantz	ok
+2021-03-26 14:17:49	tom.lantz	could you also send the a list with emails and contact info (phone..)?
+2021-03-26 14:17:51	russ	Most likely all printed, since I don't think the emailing thing supports project invoices anyway
+2021-03-26 14:17:58	tom.lantz	ok
+2021-03-26 14:20:25	russ	Think I'm going to remove the "all" option from that interface. I don't think it's very common to do project and membership invoices at the same time anyway - and if someone wants to, they can just run it twice [:+1:1]
+2021-03-26 14:22:39	tom.lantz	Very much agree [:+1:1]
+2021-04-27 11:44:13	Carl	@russ which are the codes for genders? They have removed the field for some reason so just want to know before I answer them
+2021-04-27 11:57:15	Carl	I'ts 0 = unknown, 1 = male, 2 = female, 3 = other right?
+2021-04-27 12:08:24	Edwin	Correct, though I think 0 is also other as we don't have anyone labeled as 3 but we do have some members labeled with 0 (edited)
+2021-06-04 09:33:33	tom.lantz	Urgent that this is fixed ASAP: https://ticket.custard.no/issues/29950
+2021-06-04 09:33:33		We have mails pouring in with questions on why the link is not working.
+2021-06-04 09:34:56	tom.lantz	It also looks like this is emails that are sent to people that quitted a long time ago... why is that? See the ticket for some more details and things that needs to be fixed ASAP!
+2021-06-04 09:51:01	tom.lantz	Got 50 emails this morning and keeps counting so if you could look at this pronto :slightly_smiling_face: :slightly_smiling_face:
+2021-06-04 09:58:49	tom.lantz	changed link to %survey_link4927% hope this is correct?
+2021-06-04 09:59:48	tom.lantz	Edwin and Russ are not online! @Carl do you have a similar link ID in your emails so that you possibly can confirm that %survey_link4927% is correct?
+2021-06-04 10:00:16	tom.lantz	ping @russ and @Edwin
+2021-06-04 10:05:34	Carl	We haven't started using those yet
+2021-06-04 10:27:09	tom.lantz	ok
+2021-06-04 10:36:43	russ	Hmm I didn't know that link had changed
+2021-06-04 10:38:28	tom.lantz	me neither.
+2021-06-04 10:38:41	tom.lantz	Did I change it back to the correct one?
+2021-06-04 10:39:18	russ	Don't know, need to check...
+2021-06-04 10:40:20	tom.lantz	Also a correction email needs to be sent out Asap, getting bombarded here... Looks like the system have had alot of emails that was not triggered so would be nice to know how m any that was sent out...
+2021-06-04 11:23:19	russ	This is the most confusing issue I've dealt with in a while...
+2021-06-04 11:23:41	tom.lantz	what happened?
+2021-06-04 11:24:06	russ	Still trying to figure it out [:+1:1]
+2021-06-04 11:24:36	russ	Two things:
+2021-06-04 11:24:36		• Why were some people excluded before, and only got an email now
+2021-06-04 11:24:36		• Why doesn't the survey link convert properly
+2021-06-04 11:24:36		 [:weary:1]
+2021-06-04 11:27:06	tom.lantz	I changed the link from %survey_link%4927% to %survey_link4927% on prod a fex hours ago
+2021-06-04 11:27:53	tom.lantz	Why some people where exclided before I have no Idea.... But we have not gotten alot of answers for some time...
+2021-06-04 11:30:54	russ	Could be the whole thing just wasn't working then - so these are correct (not duplicates)
+2021-06-04 11:31:18	russ	But we need to send out the correct link of course... I'll concentrate on checking that [:+1:1]
+2021-06-04 11:31:30	tom.lantz	O yes from what I have seen the emails are not dupos.
+2021-06-04 11:31:48	russ	It looked ok, so I'm still confused why it didn't work... Need to set it up so I can send myself some emails here
+2021-06-04 11:55:55	russ	Aaalright... fixed it. Grr.
+2021-06-04 11:56:21	russ	Do you want to temporarily update the template with some new text so the people who get the correct link now get some kind of "sorry, here's the correct link" message? (edited)
+2021-06-04 12:25:52	tom.lantz	Have updated the template sure that the link ID is correct? remember I changed it earlier today as mentioned above.
+2021-06-04 12:26:04	russ	Yeah I changed it back
+2021-06-04 12:26:10	tom.lantz	How many emails are we talking about?
+2021-06-04 12:26:20	russ	Couple of thousand
+2021-06-04 12:26:29	russ	People quit
+2021-06-04 12:26:40	russ	:man-facepalming::skin-tone-2:
+2021-06-04 12:27:04	tom.lantz	Do you know how far back?
+2021-06-04 12:27:07	russ	Didn't realise we hadn't been sending out links for this long... Need to release more often! [:+1:1]
+2021-06-04 12:28:03	tom.lantz	How far back in time I mean.
+2021-06-04 12:30:18	russ	Looks like the last one sent was December, from what I can tell
+2021-06-04 12:35:33	tom.lantz	That's a lot longer since the last release
+2021-06-04 12:40:03	russ	Yeah we released for April fools
+2021-06-04 12:43:00	russ	Not really sure when this was fixed... Since there was no specific issue about it, it has probably been fixed "by accident" when fixing something else
+2021-06-04 12:43:29	tom.lantz	Probably
+2021-06-04 12:43:50	russ	Maybe https://ticket.custard.no/issues/29901
+2021-06-04 12:43:50		| CustardLabs Projects
+2021-06-04 12:43:50		| Redmine
+2021-06-04 12:44:16	tom.lantz	Will you let me know when all corrections have been sent?
+2021-06-04 12:44:18	russ	I'd have to step back and load up some old releases to be sure
+2021-06-04 12:44:50	russ	They will be sent at 0300 tonight unless we trigger the task manually - it's one of the scheduled processes
+2021-06-04 12:51:42	russ	Did you change the survey link again?!
+2021-06-04 12:51:51	russ	%survey_link%4927% is correct... Good job I checked
+2021-06-04 12:52:14	russ	That would have been embarrassing :smile:
+2021-06-04 12:52:52	russ	"Sorry about the earlier mail, here's your working link: %B0Rken%" [:laughing:1]
+2021-06-04 12:54:11	tom.lantz	Did not change it again. Can you double check?
+2021-06-04 12:54:27	tom.lantz	I think we should trigger it manually
+2021-06-04 12:54:49	tom.lantz	To stop the flood of incoming mails
+2021-06-04 12:55:03	tom.lantz	Can you trigger?
+2021-06-04 12:58:36	russ	Tested with just one (to me) and the link looked ok, so sending to all now
+2021-06-04 12:58:52	tom.lantz	Super
+2021-06-04 13:01:11	russ	>> INFO      Found 2622 members to notify
+2021-06-04 13:01:13	russ	Done
+2021-06-04 13:01:27	tom.lantz	Super
+2021-06-04 13:01:30	tom.lantz	Thanks
+2021-06-04 13:02:42	russ	Now I'm going for a run
+2021-06-04 13:03:33	tom.lantz	Got a possible GDPR breach in the sites using the API for accessing the web page solution
+2021-06-04 13:03:58	tom.lantz	what info is that API containing?
+2021-06-04 13:04:28	russ	The one where they just authenticate?
+2021-06-04 13:04:38	tom.lantz	also the one on bli speider no (map)
+2021-06-04 13:04:49	tom.lantz	+ the auth one
+2021-06-04 13:05:52	tom.lantz	really a monday today...
+2021-06-04 13:06:42	russ	The map data one only contains body info... The auth one is really basic, but you can get profile info if you request it with a correct auth key
+2021-06-04 13:07:02	russ	Surely it's only a GDPR breach if someone other than the authenticated user accesses it?
+2021-06-04 13:07:17	russ	Maybe your web dev people are acting as middle-men and catching the data?
+2021-06-04 13:07:21	tom.lantz	Gonna send you the email from CoreTrek.
+2021-06-04 13:08:39	tom.lantz	The server company that Coretrek uses have warned them about a breach. See the mail.
+2021-06-04 13:09:43	tom.lantz	So basically we need to get details from CoreTrek on what they store on the servers from the API.
+2021-06-04 13:09:48	tom.lantz	Should we reset the keys?
+2021-06-04 13:10:28	russ	All the stuff that comes from the map API is public anyway (we show it on the map) so I don't get where the breach is
+2021-06-04 13:11:50	russ	It looks more like the actual sites (http://speiding.no (speiding.no)) have been compromised, this used to be really common with Wordpress sites and such
+2021-06-04 13:12:04	russ	I don't think this has anything to do with min.speiding?
+2021-06-04 13:12:58	russ	```Tirsdag 01.06.2021 ble vi oppmerksomme på en kompromittert webserver i vårt driftsmiljø.
+2021-06-04 13:12:58		Angrepet er av en slik karakter at vi ikke kan utelukke at data er lekket, selv om vi ikke finner konkrete tegn på at brukerinformasjon er på avveie, eller at innhold i filer er lastet ned. Angriperne har operert med forhøyede brukerrettigheter.```
+2021-06-04 13:13:41	tom.lantz	can I call?
+2021-06-04 13:13:59	tom.lantz	need to be sure about one thing
+2021-06-04 13:14:02	russ	Someone has logged in to the http://speiding.no (speiding.no) CMS with elevated privileges and done something that has been caught by some checker on the host server. Maybe they've found a "foreign" planted file or something - you really need to ask CoreTrek what actually happened
+2021-06-04 13:14:13	russ	Because the mail doesn't specify
+2021-06-04 13:14:37	tom.lantz	Will do but would like to double check with you also, dont have your nomber stored :S
+2021-06-04 13:14:44	tom.lantz	number.
+2021-06-04 13:14:55	russ	This doesn't seem to involve us though?
+2021-06-04 13:15:24	tom.lantz	"The auth one is really basic, but you can get profile info if you request it with a correct auth key!" is what I need to be sure about
+2021-06-04 13:15:37	russ	Where is that connected to the breach?
+2021-06-04 13:15:57	tom.lantz	the worpress websited are lokated on http://speiding.no (speiding.no)
+2021-06-04 13:15:57	russ	Can people get high level access to the "gruppesidene" via our auth api?
+2021-06-04 13:16:24	russ	It's much more likely this is a Wordpress attack
+2021-06-04 13:16:31	tom.lantz	I dont know that is what I would like to sparr with you
+2021-06-04 13:17:04	russ	I think you need to find out from them first though - I don't have access to any of those servers so would have no idea
+2021-06-04 13:19:10	tom.lantz	Ok, if a phone call is not okay I need to know why you wrote: "The auth one is really basic, but you can get profile info if you request it with a correct auth key" how would they get it? And waht info could they get based on what we know. I need this to be able to have some info in the talk with CoreTrek. I am calling them as we speak.
+2021-06-04 13:19:44	russ	I only said that because you asked about it - but I don't see how that is connected to a Wordpress breach on http://speiding.no (speiding.no)
+2021-06-04 13:19:55	russ	By basic - I mean it returns very little info
+2021-06-04 13:20:02	russ	Like, "yes you are authenticated"
+2021-06-04 13:20:03	tom.lantz	If they store the API and the key for example
+2021-06-04 13:20:35	russ	But does that connect to a Wordpress super admin user?
+2021-06-04 13:20:36	tom.lantz	if they only get "yes" with that info then it is no problem but if they could get names and stuff
+2021-06-04 13:20:50	russ	Like - can someone get http://speiding.no (speiding.no) admin rights via our auth api?
+2021-06-04 13:20:58	russ	I didn't think we went that far with it
+2021-06-04 13:21:28	tom.lantz	they can get access to the districts web pages admin sections
+2021-06-04 13:21:36	tom.lantz	that is what the auth API is used for
+2021-06-04 13:23:22	russ	Ok, find out what the actual breach is and we can take it from there
+2021-06-04 13:24:46	tom.lantz	Ok, websites for districts and groups are on another page.
+2021-06-04 13:24:49	tom.lantz	server
+2021-06-04 13:25:09	tom.lantz	so basically it is only public info that could have "leaked"
+2021-06-04 13:25:35	tom.lantz	Then we probably do not need to reset anything at our end.
+2021-06-04 13:30:33	russ	Was it a wordpress hack? I take it they keep it up to date? I've had those before, normally they get admin rights and plant a file on the system... Worse is when they insert a bunch of content (edited)
+2021-06-04 13:31:34	tom.lantz	Dont know yet. Will ask Caroline when she has followed it up. Hopefully there is not any content changed on the web page.
+2021-06-04 13:31:49	tom.lantz	sorry for the panic. Run time :slightly_smiling_face:
+2021-06-04 13:44:14	russ	Walking the dog now, she takes priority, as always :smile:
+2021-06-04 13:45:10	russ	No problem anyway, will always help/fix is we can, even if it's not our "fault" :smile:
+2021-06-04 13:45:57	russ	Hopefully there's nothing for you to clean up once they've moved the data. Most likely it's ok. (edited)
+2021-06-04 15:01:12	tom.lantz	Yes, talked with them again and nothing from Min soeiding
+2021-06-04 15:01:27	tom.lantz	nothing from Min speiding is a part of this. [:+1:1]
+2021-06-07 13:47:02	russ	Whoops
+2021-06-07 13:47:02	russ	Whoops
+2021-06-24 12:39:55	-->	@EirikUlltangBirkeland has joined the group by invitation from @russ

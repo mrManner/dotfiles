@@ -1,0 +1,205 @@
+2021-03-11 20:47:20	MartinGreen	Kan vi ta ett möte nästa torsdag kl. 19:00?
+2021-03-11 21:04:45	JohanManner	Jag har äventyrarmöte då, men jag tror inte jag behövs egentligen så ska försöka komma loss. Annars kanske vi kan synka lite snabbt innan Martin, antingen på torsdagen eller vilken kväll som i veckan?
+2021-03-11 21:05:19	JohanManner	Jag glömde återkoppla, vi missade ju att boka en tid i förra veckan :man-facepalming:
+2021-03-18 19:00:41	TorbjörnEinarsson	Har vi möte nu?
+2021-03-18 19:01:56	MartinGreen	Ja, jag kommer
+2021-03-18 19:02:11	MartinGreen	Håller på att ladda ner teams
+2021-03-29 17:20:43	TorbjörnEinarsson	Har vi ett möte ikväll? Kan inte hitta inbjudan [ Thread: e9c Replies: 2 ]
+2021-03-31 21:17:41	GitHub	| Pull request opened by dependabot[bot]
+2021-03-31 21:17:41		| dependabot[bot]: #140 Bump lxml from 4.6.2 to 4.6.3 (https://github.com/Scouterna/skojjt/pull/140)
+2021-03-31 21:17:41		| Bumps https://github.com/lxml/lxml (lxml) from 4.6.2 to 4.6.3.
+2021-03-31 21:17:41		| Changelog
+2021-03-31 21:17:41		| _Sourced from https://github.com/lxml/lxml/blob/master/CHANGES.txt (lxml's changelog)._
+2021-03-31 21:17:41		| > *4.6.3 (2021-03-21)*
+2021-03-31 21:17:41		| > *Bugs fixed*
+2021-03-31 21:17:41		| > 
+2021-03-31 21:17:41		| > • A vulnerability (https://github.com/advisories/GHSA-jq4v-f5q6-mjqq (CVE-2021-28957)) was discovered in the HTML Cleaner by Kevin Chung, which allowed JavaScript to pass through. The cleaner now removes the HTML5 `formaction` attribute.
+2021-03-31 21:17:41		| Commits
+2021-03-31 21:17:41		| • https://github.com/lxml/lxml/commit/a5f9cb52079dc57477c460dbe6ba0f775e14a999 (`a5f9cb5`) Prepare release of lxml 4.6.3.
+2021-03-31 21:17:41		| • https://github.com/lxml/lxml/commit/2d01a1ba8984e0483ce6619b972832377f208a0d (`2d01a1b`) Add HTML-5 "formaction" attribute to "defs.link_attrs" (https://github-redirect.dependabot.com/lxml/lxml/issues/316 (GH-316))
+2021-03-31 21:17:41		| • https://github.com/lxml/lxml/commit/e986a9cb5d54827c59aefa8803bc90954d67221e (`e986a9c`) Fix reference in docs.
+2021-03-31 21:17:41		| • See full diff in https://github.com/lxml/lxml/compare/lxml-4.6.2...lxml-4.6.3 (compare view)
+2021-03-31 21:17:41		| https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores (Dependabot compatibility score)
+2021-03-31 21:17:41		| Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+2021-03-31 21:17:41		| * * *
+2021-03-31 21:17:41		| Dependabot commands and options
+2021-03-31 21:17:41		| You can trigger Dependabot actions by commenting on this PR:
+2021-03-31 21:17:41		| • `@dependabot rebase` will rebase this PR
+2021-03-31 21:17:41		| • `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+2021-03-31 21:17:41		| • `@dependabot merge` will merge this PR after your CI passes on it
+2021-03-31 21:17:41		| • `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+2021-03-31 21:17:41		| • `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+2021-03-31 21:17:41		| • `@dependabot reopen` will reopen this PR if it is closed
+2021-03-31 21:17:41		| • `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+2021-03-31 21:17:41		| • `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+2021-03-31 21:17:41		| • `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+2021-03-31 21:17:41		| • `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+2021-03-31 21:17:41		| • `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+2021-03-31 21:17:41		| • `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+2021-03-31 21:17:41		| • `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+2021-03-31 21:17:41		| • `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+2021-03-31 21:17:41		| You can disable automated security fix PRs for this repo from the https://github.com/Scouterna/skojjt/network/alerts (Security Alerts page).
+2021-03-31 21:17:41		| Labels: dependencies
+2021-03-31 21:17:41		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Yesterday at 21:17
+2021-04-06 15:34:26	TorbjörnEinarsson	Vi behöver en ny inloggningsprocess när vi går över till Python 3. Vi använder just nu “Users API” som ej är supportat i Python3. Alternativen finns på https://cloud.google.com/appengine/docs/standard/python3/authenticating-users
+2021-04-06 15:34:26		Det enklaste ser ut att vara “Google Sign-In”, men vi behöver SAML för ScoutID, så det ser ut som att “Firebase Authentication” är bästa vägen framåt. Det står lite om SAML på https://cloud.google.com/identity-platform/docs/web/saml
+2021-04-06 15:34:26		Någon som kan kasta ett öga på detta?
+2021-04-06 15:34:26		| Authenticating Users  |  App Engine standard environment for Python 3
+2021-04-06 15:34:26		| https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png
+2021-04-06 15:34:26		| Signing in users with SAML  |  Identity Platform Documentation
+2021-04-06 15:34:26		| https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png [ Thread: c6a Replies: 2 ]
+2021-04-12 19:36:45	GitHub	| Pull request opened by mrManner
+2021-04-12 19:36:45		| mrManner: #141 add very basic continous deployment (https://github.com/Scouterna/skojjt/pull/141)
+2021-04-12 19:36:45		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Today at 19:36
+2021-04-12 19:40:23	GitHub	| Pull request closed by mrManner
+2021-04-12 19:40:23		| #141 add very basic continous deployment (https://github.com/Scouterna/skojjt/pull/141)
+2021-04-12 19:40:23		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Today at 19:36
+2021-04-12 19:40:32	GitHub	| Pull request opened by mrManner
+2021-04-12 19:40:32		| mrManner: #142 add very basic continous deployment (https://github.com/Scouterna/skojjt/pull/142)
+2021-04-12 19:40:32		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Today at 19:40
+2021-04-12 19:47:25	GitHub	| Pull request closed by mrManner
+2021-04-12 19:47:25		| #142 add very basic continous deployment (https://github.com/Scouterna/skojjt/pull/142)
+2021-04-12 19:47:25		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Today at 19:40
+2021-04-12 19:55:52	GitHub	| Pull request opened by mrManner
+2021-04-12 19:55:52		| mrManner: #143 Add basic CI/CD pipeline (https://github.com/Scouterna/skojjt/pull/143)
+2021-04-12 19:55:52		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Today at 19:55
+2021-04-12 19:56:07	GitHub	| Issue opened by tobbee
+2021-04-12 19:56:07		| tobbee: #144 Uppdatera lägerbidragsansökan för Stockholm (https://github.com/Scouterna/skojjt/issues/144)
+2021-04-12 19:56:07		| Uppdatera för att spegla årets blankett. Har fått blanketten som Word, men kommunen vill ha ifylld PDF.
+2021-04-12 19:56:07		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Today at 19:56
+2021-04-26 18:13:02	GitHub(Legacy)	:warning: *Action required - upgrade app for Scouterna* :warning:
+2021-04-26 18:13:02		GitHub app is built on https://api.slack.com/changelog/2021-03-workspace-apps-to-retire-in-august-2021 (Slack's workspace apps) which are now deprecated. The legacy GitHub app will stop working on *July 15, 2021.*
+2021-04-26 18:13:02		Don't worry, we have built a new version of GitHub-Slack integration. You can just upgrade the app and get back to your work.
+2021-04-26 18:13:02		_Learn more about this upgrade https://github.com/integrations/slack/blob/master/README.md#moving-away-from-the-legacy-workspace-app-model-in-slack (here)._
+2021-04-26 18:13:02		Upgrade App
+2021-04-26 18:13:02	GitHub(Legacy)	| martin-green: *https://github.com/Scouterna/skojjt/compare/7b49fc352e55...e3dba5587dee (1 new commit) pushed to https://github.com/Scouterna/skojjt/tree/GAE/master (`GAE/master`)*
+2021-04-26 18:13:02		| https://github.com/Scouterna/skojjt/commit/e3dba5587deeed83043161b3cb22c84f277594e3 (`e3dba558`) - Bump lxml from 4.6.2 to 4.6.3
+2021-04-26 18:13:02		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-04-26 18:13:40	GitHub(Legacy)	| Pull request closed by martin-green
+2021-04-26 18:13:40		| #140 Bump lxml from 4.6.2 to 4.6.3 (https://github.com/Scouterna/skojjt/pull/140)
+2021-04-26 18:13:40		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Mar 31, 2021
+2021-04-26 18:31:35	GitHub(Legacy)	GitHub app is successfully upgraded in your workspace :tada:
+2021-04-26 18:31:35		To receive notifications in your private channels, you need to invite the GitHub app `/invite @GitHub`
+2021-05-21 00:39:36	GitHub	Pull request opened by martin-green (edited)
+2021-05-21 00:39:36		| https://github.com/Scouterna/skojjt/pull/145 (#145 Convert Person from id based on personnr to member_no)
+2021-05-21 00:39:36		| Implemented add person to scoutnet queue to use the returned member_no.  
+2021-05-21 00:39:36		| Implemented a migration script  
+2021-05-21 00:39:36		| You can not add a "local person", using personnr. You have to use add to scoutnet queue to get a member id.  
+2021-05-21 00:39:36		| Added information on missing add to scoutnet queue api-key.  
+2021-05-21 00:39:36		| Lots of optimizations to make the conversion to run quickly.
+2021-05-21 00:39:36		| • Progress report nolonger stored in datastore. Using memcache to get better performance.
+2021-05-21 00:39:36		| • Progress reporting was O(N^2) for number of report items. A cursor is used to only update new lines.
+2021-05-21 00:39:36		| Moved admin utilities to new admin.py file
+2021-05-21 00:39:36		| Moved progress related utilities to progress.py
+2021-05-21 00:39:36		| Renamed importresult.html to progressreport.html
+2021-05-21 00:39:36		| Add a link to scout group after import is done
+2021-05-21 00:39:36		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Yesterday at 00:39
+2021-05-21 00:39:36		| Google Cloud Build: pr-test (skojjt-staging)
+2021-05-21 00:39:36		| :white_check_mark: No checks have passed
+2021-05-21 00:39:36		| 0/1 successful checks [ Thread: c83 Replies: 4 Subscribed ]
+2021-05-22 17:53:25	GitHub	| *https://github.com/Scouterna/skojjt/compare/e3dba5587dee...869f10f3414d (8 new commits) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/08b551f44e7d48e6bfd6b6641af3a548ac720e22 (08b551f4)` - add automated PR test pipeline
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/64f043a7df3ab3caeaf5755637a3ee5b6a33758b (64f043a7)` - add basic continous deploymet
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/531b36be5f669d7307837540ce1865090130dd3c (531b36be)` - change something to trigger build pipeline
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/abc55b2c1d74a2f1a1dd488cc7e2e23f34d03a97 (abc55b2c)` - pip freeze > requirements.txt
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/a30c19e62ad9b4d55fca2cfde974d5f3ca941fc1 (a30c19e6)` - Make tests run under Linux
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/8edc2bf771cf72f7d3e96ced9b70ab6a3e8c4f0e (8edc2bf7)` - CI: Disable tests until Google cloud deps are installed
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/03052b4ef33ea65df5b0917a27c5105fe2af413b (03052b4e)` - Merge branch 'GAE/master' into continousdeployment
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/869f10f3414ddca77b0dd4dd2b6ce2a4ddc14890 (869f10f3)` - Merge pull request #143 from mrManner/continousdeployment
+2021-05-22 17:53:25		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-05-22 17:53:26	GitHub	Pull request merged by martin-green
+2021-05-22 17:53:26		| https://github.com/Scouterna/skojjt/pull/143 (#143 Add basic CI/CD pipeline)
+2021-05-22 17:53:26		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Apr 12, 2021
+2021-05-22 17:53:25	GitHub	| *https://github.com/Scouterna/skojjt/compare/e3dba5587dee...869f10f3414d (8 new commits) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/08b551f44e7d48e6bfd6b6641af3a548ac720e22 (08b551f4)` - add automated PR test pipeline
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/64f043a7df3ab3caeaf5755637a3ee5b6a33758b (64f043a7)` - add basic continous deploymet
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/531b36be5f669d7307837540ce1865090130dd3c (531b36be)` - change something to trigger build pipeline
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/abc55b2c1d74a2f1a1dd488cc7e2e23f34d03a97 (abc55b2c)` - pip freeze > requirements.txt
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/a30c19e62ad9b4d55fca2cfde974d5f3ca941fc1 (a30c19e6)` - Make tests run under Linux
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/8edc2bf771cf72f7d3e96ced9b70ab6a3e8c4f0e (8edc2bf7)` - CI: Disable tests until Google cloud deps are installed
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/03052b4ef33ea65df5b0917a27c5105fe2af413b (03052b4e)` - Merge branch 'GAE/master' into continousdeployment
+2021-05-22 17:53:25		| `https://github.com/Scouterna/skojjt/commit/869f10f3414ddca77b0dd4dd2b6ce2a4ddc14890 (869f10f3)` - Merge pull request #143 from mrManner/continousdeployment
+2021-05-22 17:53:25		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-05-22 17:53:26	GitHub	Pull request merged by martin-green
+2021-05-22 17:53:26		| https://github.com/Scouterna/skojjt/pull/143 (#143 Add basic CI/CD pipeline)
+2021-05-22 17:53:26		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Apr 12, 2021
+2021-05-23 20:51:36	GitHub	Pull request opened by tobbee
+2021-05-23 20:51:36		| https://github.com/Scouterna/skojjt/pull/146 (#146 Ny mall med nya data för lägerbidragsansökan Stockholm 2021)
+2021-05-23 20:51:36		| Stockholm kräver att en ny mall används för 2021. Jag har fått den i Word-format och lagt in fält som kan fyllas i.  
+2021-05-23 20:51:36		| Den har lite andra fält och är tvåsidig, så det behövdes lite omskrivning.  
+2021-05-23 20:51:36		| Om man är mer än 25 scouter så kommer det att genereras fler sidor.  
+2021-05-23 20:51:36		| Tyvärr kommer även första sidan med fler gånger, men jag ser inget lätt sätt  
+2021-05-23 20:51:36		| att bli av med detta.  
+2021-05-23 20:51:36		| Kommunen vill helst ha in PDF, så man får göra en slutlig konvertering av Word till PDF själv.
+2021-05-23 20:51:36		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Today at 20:51
+2021-05-25 21:56:15	TorbjörnEinarsson	Låter lovande med både ndb och memcache substitut. Så du tycker att vi skippar steget med Google Sign in enligt beskrivning på https://cloud.google.com/appengine/docs/standard/python3/authenticating-users?
+2021-05-25 21:56:15		| Authenticating Users  |  App Engine standard environment for Python 3
+2021-05-25 21:56:15		| https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png
+2021-05-26 23:12:19	GitHub	| *https://github.com/Scouterna/skojjt/compare/33f35ff68d95...4a5dd3244726 (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-05-26 23:12:19		| `https://github.com/Scouterna/skojjt/commit/4a5dd324472643fc38802cc88a310807b3f9a9ab (4a5dd324)` - Remove random hack
+2021-05-26 23:12:19		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-05-26 23:14:01	GitHub	| *https://github.com/Scouterna/skojjt/compare/4a5dd3244726...989b0e6a76b8 (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-05-26 23:14:01		| `https://github.com/Scouterna/skojjt/commit/989b0e6a76b88eaa649451eb4efed9501bdc6384 (989b0e6a)` - Use stored import api key and id to make import easier in the main import form.
+2021-05-26 23:14:01		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-05-26 23:15:17	GitHub	| *https://github.com/Scouterna/skojjt/compare/989b0e6a76b8...79a6f8cf824a (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-05-26 23:15:17		| `https://github.com/Scouterna/skojjt/commit/79a6f8cf824af24178db1109594f836e68403505 (79a6f8cf)` - [WIP] request access
+2021-05-26 23:15:17		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-05-26 23:12:19	GitHub	| *https://github.com/Scouterna/skojjt/compare/33f35ff68d95...4a5dd3244726 (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-05-26 23:12:19		| `https://github.com/Scouterna/skojjt/commit/4a5dd324472643fc38802cc88a310807b3f9a9ab (4a5dd324)` - Remove random hack
+2021-05-26 23:12:19		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-05-26 23:14:01	GitHub	| *https://github.com/Scouterna/skojjt/compare/4a5dd3244726...989b0e6a76b8 (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-05-26 23:14:01		| `https://github.com/Scouterna/skojjt/commit/989b0e6a76b88eaa649451eb4efed9501bdc6384 (989b0e6a)` - Use stored import api key and id to make import easier in the main import form.
+2021-05-26 23:14:01		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-05-26 23:15:17	GitHub	| *https://github.com/Scouterna/skojjt/compare/989b0e6a76b8...79a6f8cf824a (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-05-26 23:15:17		| `https://github.com/Scouterna/skojjt/commit/79a6f8cf824af24178db1109594f836e68403505 (79a6f8cf)` - [WIP] request access
+2021-05-26 23:15:17		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-06-01 21:11:05	GitHub	| *https://github.com/Scouterna/skojjt/compare/79a6f8cf824a...79a7126efb48 (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-06-01 21:11:05		| `https://github.com/Scouterna/skojjt/commit/79a7126efb48a23978d28225bd33ed6425838a79 (79a7126e)` - Cleanup
+2021-06-01 21:11:05		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-06-15 21:38:10	GitHub	| *https://github.com/Scouterna/skojjt/compare/79a7126efb48...6522f83dd654 (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by martin-green*
+2021-06-15 21:38:10		| `https://github.com/Scouterna/skojjt/commit/6522f83dd654ece8fb00db48ce538684d7e94ce0 (6522f83d)` - Bugfix add person to waitinglist
+2021-06-15 21:38:10		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-06-24 22:07:11	GitHub	| *https://github.com/Scouterna/skojjt/compare/6522f83dd654...cf13025605d9 (6 new commits) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by tobbee*
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/cb0cb01863a557b13b52d5db67702a239575c568 (cb0cb018)` - New: handling of badges / märken
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/4ed301b6e64d7f0b94035e17faf5feba02a715b1 (4ed301b6)` - fix: restricted making and changing badges to admin/groupAdmin
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/526facc19e8abac9b4a3a14794842d39e7e21005 (526facc1)` - improvement: include img_url in json for badge_template
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/528db35160fe28e1da6db6ab7892cf9424bbc5e7 (528db351)` - fix: prevent double data when double clicking
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/735bb0ea1d168ba49cd7f6e27af129ac35aaa541 (735bb0ea)` - badges: bilder för A-, B- och C-skeppare
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/cf13025605d9c581ffc4c0873e2621864733d950 (cf130256)` - Merge pull request #136 from stgscout/new-badges
+2021-06-24 22:07:11		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-06-24 22:07:12	GitHub	Pull request merged by tobbee
+2021-06-24 22:07:12		| https://github.com/Scouterna/skojjt/pull/136 (#136 Märkestagning i Skojjt)
+2021-06-24 22:07:12		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Feb 04, 2021
+2021-06-24 22:07:11	GitHub	| *https://github.com/Scouterna/skojjt/compare/6522f83dd654...cf13025605d9 (6 new commits) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by tobbee*
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/cb0cb01863a557b13b52d5db67702a239575c568 (cb0cb018)` - New: handling of badges / märken
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/4ed301b6e64d7f0b94035e17faf5feba02a715b1 (4ed301b6)` - fix: restricted making and changing badges to admin/groupAdmin
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/526facc19e8abac9b4a3a14794842d39e7e21005 (526facc1)` - improvement: include img_url in json for badge_template
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/528db35160fe28e1da6db6ab7892cf9424bbc5e7 (528db351)` - fix: prevent double data when double clicking
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/735bb0ea1d168ba49cd7f6e27af129ac35aaa541 (735bb0ea)` - badges: bilder för A-, B- och C-skeppare
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/cf13025605d9c581ffc4c0873e2621864733d950 (cf130256)` - Merge pull request #136 from stgscout/new-badges
+2021-06-24 22:07:11		| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-06-24 22:07:12	GitHub	Pull request merged by tobbee
+2021-06-24 22:07:12		| https://github.com/Scouterna/skojjt/pull/136 (#136 Märkestagning i Skojjt)
+2021-06-24 22:07:12		| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Feb 04, 2021
+2021-06-24 22:07:11	GitHub	| *https://github.com/Scouterna/skojjt/compare/6522f83dd654...cf13025605d9 (6 new commits) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by tobbee*
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/cb0cb01863a557b13b52d5db67702a239575c568 (cb0cb018)` - New: handling of badges / märken
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/4ed301b6e64d7f0b94035e17faf5feba02a715b1 (4ed301b6)` - fix: restricted making and changing badges to admin/groupAdmin
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/526facc19e8abac9b4a3a14794842d39e7e21005 (526facc1)` - improvement: include img_url in json for badge_template
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/528db35160fe28e1da6db6ab7892cf9424bbc5e7 (528db351)` - fix: prevent double data when double clicking
+2021-06-24 22:07:11		| `https://github.com/Scouterna/skojjt/commit/735bb0ea1d168ba49cd7f6e2021-09-08 16:56:48	GitHub	| Issue closed by https://github.com/martin-green (martin-green)
+2021-09-08 16:56:48	      	| https://github.com/Scouterna/skojjt/issues/148 (#148 Bugg: Farligt att ta bort märke från avdelning)
+2021-09-08 16:56:48	      	| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Aug 30, 2021
+2021-09-08 16:57:01	GitHub	| Issue closed by https://github.com/martin-green (martin-green)
+2021-09-08 16:57:01	      	| https://github.com/Scouterna/skojjt/issues/147 (#147 Problem efter byte av termin)
+2021-09-08 16:57:01	      	| https://github.com/Scouterna/skojjt (Scouterna/skojjt) | Aug 21, 2021
+2021-09-27 19:52:53	GitHub	| https://github.com/Scouterna/skojjt/compare/7080e8511f60...019bd4471bd7 (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by https://github.com/martin-green (martin-green)
+2021-09-27 19:52:53	      	| `https://github.com/Scouterna/skojjt/commit/019bd4471bd72272c25d103fed99bb326463465d (019bd447)` - Display the raw fields in the user access list instead of the result of a function. Less confusing since the function 'isGroupAdmin' has lots of other conditions for actually giving access.
+2021-09-27 19:52:53	      	| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-09-27 19:56:54	GitHub	| https://github.com/Scouterna/skojjt/compare/019bd4471bd7...dec86d36f66f (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by https://github.com/martin-green (martin-green)
+2021-09-27 19:56:54	      	| `https://github.com/Scouterna/skojjt/commit/dec86d36f66f140d17a391f2a8990b19d8f3e371 (dec86d36)` - Fixed correct field for contact_alt_email in scoutnet import.
+2021-09-27 19:56:54	      	| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-09-27 19:58:50	GitHub	| https://github.com/Scouterna/skojjt/compare/dec86d36f66f...819ec7bf3253 (1 new commit) pushed  to `https://github.com/Scouterna/skojjt/tree/GAE/master (GAE/master)` by https://github.com/martin-green (martin-green)
+2021-09-27 19:58:50	      	| `https://github.com/Scouterna/skojjt/commit/819ec7bf325355ca69db3c3d29d8cabaaabddfa7 (819ec7bf)` - Added new data Kinds for data download.
+2021-09-27 19:58:50	      	| https://github.com/Scouterna/skojjt (Scouterna/skojjt)
+2021-10-11 19:04:19	TorbjörnEinarsson	@MartinGreen Kör vi något möte idag?
+2021-10-11 19:12:20	MartinGreen	Kan inte idag [:+1:1]

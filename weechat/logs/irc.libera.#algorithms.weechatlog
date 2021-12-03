@@ -1,0 +1,901 @@
+2021-10-13 00:19:57	-->	mrmanner (~jmanner@user/mrmanner) has joined #algorithms
+2021-10-13 00:19:57	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-13 00:19:57	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-13 00:19:57	--	Channel #algorithms: 173 nicks (1 op, 0 voices, 172 normals)
+2021-10-13 00:19:58	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-13 00:21:13	<--	Guest735 (~Guest7@148.64.18.230) has quit (Client Quit)
+2021-10-13 00:21:56	devcpu	hey guys
+2021-10-13 00:21:59	devcpu	https://plaster.tymoon.eu/view/2668
+2021-10-13 00:22:24	devcpu	sanity check, simple problem to find longest substring
+2021-10-13 00:22:45	devcpu	time complexity is not O(n^2) but O(2n), right?
+2021-10-13 00:25:11	hendursaga	I'm pretty sure it wouldn't involve multi-sets but rather tries, right??
+2021-10-13 00:29:14	devcpu	for input? a simple string, an array, no multi-sets or tries
+2021-10-13 00:29:40	<--	mike18 (~geri@217-149-167-230.nat.highway.telekom.at) has quit (Remote host closed the connection)
+2021-10-13 00:30:11	-->	mike18 (~geri@217-149-167-230.nat.highway.telekom.at) has joined #algorithms
+2021-10-13 00:30:36	<--	mike18 (~geri@217-149-167-230.nat.highway.telekom.at) has quit (Remote host closed the connection)
+2021-10-13 00:30:39	hendursaga	devcpu: sorry, that wasn't a reply to you
+2021-10-13 00:30:51	devcpu	hendursaga: no worries
+2021-10-13 00:31:08	-->	mike18 (~geri@217-149-167-230.nat.highway.telekom.at) has joined #algorithms
+2021-10-13 00:31:27	devcpu	and i should clraify the problem better: find longest substring of non-repeating characters in a string 
+2021-10-13 00:35:35	<--	mike18 (~geri@217-149-167-230.nat.highway.telekom.at) has quit (Ping timeout: 250 seconds)
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:02	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #algorithms
+2021-10-13 00:42:02	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-13 00:42:02	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-13 00:42:02	--	Channel #algorithms: 171 nicks (1 op, 0 voices, 170 normals)
+2021-10-13 00:42:26	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-13 00:48:02	<--	whatsupdoc (~whatsupdo@148.64.18.230) has quit (Quit: Client closed)
+2021-10-13 00:57:03	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined #algorithms
+2021-10-13 00:58:48	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Client Quit)
+2021-10-13 00:59:15	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined #algorithms
+2021-10-13 01:00:48	<--	smallville7123 (~smallvill@cpe-172-193-200-97.qld.foxtel.net.au) has quit (Remote host closed the connection)
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:02:55	-->	smallville7123 (~smallvill@cpe-172-193-200-97.qld.foxtel.net.au) has joined #algorithms
+2021-10-13 01:04:32	<--	smallville7123 (~smallvill@cpe-172-193-200-97.qld.foxtel.net.au) has quit (Client Quit)
+2021-10-13 01:06:20	<--	Koen (~Koen@61.192.201.77.rev.sfr.net) has quit (Quit: Leaving...)
+2021-10-13 01:06:35	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Quit: Quit)
+2021-10-13 01:17:59	<--	pulse (~pulse@user/pulse) has quit (Ping timeout: 246 seconds)
+2021-10-13 01:19:35	-->	seninha (~seninha@user/seninha) has joined #algorithms
+2021-10-13 01:20:35	-->	pulse (~pulse@user/pulse) has joined #algorithms
+2021-10-13 01:29:49	<--	palasso (~palasso@user/palasso) has quit (Remote host closed the connection)
+2021-10-13 01:36:41	<--	Posterdati (~posterdat@host-95-235-15-123.retail.telecomitalia.it) has quit (Ping timeout: 250 seconds)
+2021-10-13 01:37:21	<--	juliaEnv (~juliaEnv@ip-86-49-248-213.net.upcbroadband.cz) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-10-13 01:44:43	<--	PJBoy (~PJBoy@user/pjboy) has quit (Ping timeout: 268 seconds)
+2021-10-13 01:45:07	Juliu	hendursaga, what's a "vanity" number?
+2021-10-13 01:46:18	-->	i0e (~is0ke3@user/is0ke3) has joined #algorithms
+2021-10-13 01:49:55	-->	whatsupdoc (~whatsupdo@148.64.18.230) has joined #algorithms
+2021-10-13 01:50:38	Juliu	devcpu, your algorithm seems too complex for this task. Simply loop over all the characters of the string ones, and if a character is repeated, your current non-repeating-sequence ends. Simply return the length of the longest of those non-repeating substrings
+2021-10-13 01:52:25	<--	terencetao (~Shimon@bzq-84-108-229-161.cablep.bezeqint.net) has quit (Read error: Connection reset by peer)
+2021-10-13 01:52:41	-->	terencetao (~Shimon@bzq-84-108-229-161.cablep.bezeqint.net) has joined #algorithms
+2021-10-13 01:54:36	Juliu	Your algorithm does semething else. Maybe your discription (i.e. "substring of non-repeating characters") is a bit misleading
+2021-10-13 01:55:53	Juliu	The runtime of your algorithm is NOT O(n), since the search in the OrderedDict probably takes longer than O(1)
+2021-10-13 02:10:24	-->	jazzy2 (~jaziz@user/jaziz) has joined #algorithms
+2021-10-13 02:11:53	<--	jazzy2 (~jaziz@user/jaziz) has quit (Read error: Connection reset by peer)
+2021-10-13 02:13:06	-->	jazzy (~jaziz@user/jaziz) has joined #algorithms
+2021-10-13 02:13:40	<--	ZacSharp (~ZacSharp@user/zacsharp) has quit (Quit: ZacSharp)
+2021-10-13 02:13:42	<--	jazz-o-lantern (~jaziz@user/jaziz) has quit (Ping timeout: 268 seconds)
+2021-10-13 02:15:01	--	jazzy is now known as jazz-o-lantern
+2021-10-13 02:30:21	<--	seninha (~seninha@user/seninha) has quit (Remote host closed the connection)
+2021-10-13 02:30:41	devcpu	Juliu: thank you!
+2021-10-13 02:32:11	Juliu	You're welcome
+2021-10-13 02:49:56	-->	ferdna (~ferdna@user/ferdna) has joined #algorithms
+2021-10-13 02:50:58	<--	akaWolf (~akaWolf@akawolf.org) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:52:09	-->	akaWolf (~akaWolf@akawolf.org) has joined #algorithms
+2021-10-13 03:02:36	<--	cherim (~UserNick@host-217-197-197-182.rev.as20985.net) has quit (Read error: Connection reset by peer)
+2021-10-13 03:03:25	-->	cherim (~UserNick@host-217-197-197-182.rev.as20985.net) has joined #algorithms
+2021-10-13 03:06:41	-->	bpmedley (~bpmedley@2600:1700:e2c:8410:98c3:6174:8ff5:a406) has joined #algorithms
+2021-10-13 03:42:22	<--	whatsupdoc (~whatsupdo@148.64.18.230) has quit (Quit: Client closed)
+2021-10-13 03:50:28	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #algorithms
+2021-10-13 04:14:18	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #algorithms
+2021-10-13 04:25:05	Trashlord	Juliu: algorithm challenges? I solve Project Euler problems occasionally, but that's about it.
+2021-10-13 04:29:27	hendursaga	Juliu: you know of vanity license plates? where instead of some random combo of letters and numbers, it spells out a word like HUDSON?
+2021-10-13 04:31:14	Juliu	Challenge? No thanks. I have my head full with other things
+2021-10-13 04:31:47	Juliu	hendursaga, not really, but I can imagine
+2021-10-13 04:33:27	hendursaga	Juliu: https://en.wikipedia.org/wiki/Vanity_number
+2021-10-13 04:33:44	hendursaga	Also https://en.wikipedia.org/wiki/Phoneword
+2021-10-13 04:34:28	Juliu	Yes ok. So what is the problem?
+2021-10-13 04:37:54	Juliu	You have a phone number and you want to know a fitting word for it?
+2021-10-13 04:40:11	hendursaga	Yes, basically
+2021-10-13 04:40:28	hendursaga	Except it's a huge list of phone #'s
+2021-10-13 04:41:42	Juliu	Then you probably should convert your dictionary (i.e. list of possible words) into some search structure first
+2021-10-13 04:41:58	hendursaga	A trie, then?
+2021-10-13 04:42:28	Juliu	Yes, or a 10-ary search tree
+2021-10-13 04:42:42	Juliu	Which probably ends up being the same
+2021-10-13 04:44:13	hendursaga	Back to researching succinct data structures then..
+2021-10-13 04:44:50	Juliu	Sort your dictionary, then start with an empty graph, add a root node, add 10 nodes to the root node, one for each number in 0-9, split up your dictionary into all the words starting with a letter equivalent to a 0, to a 1, ... to a 9, assign those word lists to the nodes 0-9 and continue
+2021-10-13 04:46:09	Juliu	Once you reached the end of a word, add this word to a list of words for the particular node you are at
+2021-10-13 04:46:38	hendursaga	Almost reminds me of a T-9 keyboard..
+2021-10-13 04:47:29	Juliu	Then, to convert a number to a word, simply traverse down the tree until you reach the end of the number, and look at the stored words at the node you are at. If you reach the end (i.e. a leaf) of the tree before your number is over, or if the last node has no words stored, your conversion fails
+2021-10-13 04:48:20	Juliu	Seems pretty simple, don't you think?
+2021-10-13 04:48:41	hendursaga	I sure hope it scales!
+2021-10-13 04:50:05	Juliu	While creating the tree, you don't actually have to store all the words in a list or even in the nodes. Since all the words in your dictionary are sorted, just remembering the first and last index of the first and last word in the sequence should be enough
+2021-10-13 04:51:08	Juliu	But even splitting up 100'000 words into 10 groups, and then splitting these 10 groups up into 10 subgroups each, ... shouldn't take long
+2021-10-13 04:51:38	Juliu	Even if you really copy all the words in memory, it should be fast. And you only create this tree ones!
+2021-10-13 04:52:47	Juliu	I mean, 100'000 words of an average length of 10 with 1 byter per character is just about 1 MB. Not much to handle
+2021-10-13 04:53:06	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 04:54:44	Juliu	Now that I think about it, the idea of only remembering the indices does not work if you sort your dictionary in a traditional way. But you don't need that idea anyway
+2021-10-13 05:06:10	hendursaga	Hmmm, I'll see what I can cook up, thanks!
+2021-10-13 05:32:15	<--	pulse (~pulse@user/pulse) has quit (Read error: Connection reset by peer)
+2021-10-13 05:53:16	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #algorithms
+2021-10-13 06:14:32	<--	ferdna (~ferdna@user/ferdna) has quit (Quit: Leaving)
+2021-10-13 06:23:07	Juliu	hendursaga, here is my implementation:   https://wandbox.org/permlink/fHmz8TvMMNsO8sVN
+2021-10-13 06:26:28	Juliu	Slight improvement: In line 46 (evaluateTree) add a "&" infront of "node"
+2021-10-13 06:29:46	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 06:37:35	-->	fernand (~fernand@179.156.35.4) has joined #algorithms
+2021-10-13 06:42:28	--	fernand is now known as Fernanda
+2021-10-13 06:47:28	<--	lilgopher (~textual@2601:241:8000:38f0:91b6:1448:b1dc:d7cc) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 06:49:03	-->	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has joined #algorithms
+2021-10-13 06:49:58	-->	lilgopher (~textual@2601:241:8000:38f0:91b6:1448:b1dc:d7cc) has joined #algorithms
+2021-10-13 06:52:49	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #algorithms
+2021-10-13 06:57:19	<--	Fernanda (~fernand@179.156.35.4) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:04:49	-->	peterhil (~peterhil@dsl-hkibng32-54fb52-57.dhcp.inet.fi) has joined #algorithms
+2021-10-13 07:20:41	-->	vaginaldischarge (b9dc66f8@67.205.143.82) has joined #algorithms
+2021-10-13 07:35:27	-->	qbt (~qbt@user/edun) has joined #algorithms
+2021-10-13 07:35:51	<--	qbt (~qbt@user/edun) has left #algorithms
+2021-10-13 07:40:59	-->	Doraemon (~NeoCron@p200300c4cf1964009b5b3ef502cc8e57.dip0.t-ipconnect.de) has joined #algorithms
+2021-10-13 07:43:17	<--	NeoCron (~NeoCron@p200300c4cf195d00df9b3d9f9a455325.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2021-10-13 07:44:09	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 07:51:09	<--	ravan__ (~ravan@user/ravan) has quit (Quit: Leaving)
+2021-10-13 07:51:45	-->	ravan__ (~ravan@user/ravan) has joined #algorithms
+2021-10-13 07:51:51	<--	ravan__ (~ravan@user/ravan) has quit (Read error: Connection reset by peer)
+2021-10-13 07:53:44	<--	Juliu (~Juliu@2a02:810b:c640:3ec0:381c:cf89:9a:a735) has quit (Quit: Quit)
+2021-10-13 08:02:20	<--	soapsudsxx (~soapsudsx@141.193.188.134) has quit (Remote host closed the connection)
+2021-10-13 08:03:14	-->	qbt (~qbt@user/edun) has joined #algorithms
+2021-10-13 08:12:12	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #algorithms
+2021-10-13 08:12:48	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Client Quit)
+2021-10-13 08:16:24	-->	average (uid473595@user/average) has joined #algorithms
+2021-10-13 08:23:17	-->	stanrifkin (~stanrifki@p200300dbcf0df900c2682272fead6d9f.dip0.t-ipconnect.de) has joined #algorithms
+2021-10-13 08:24:15	stanrifkin	is there an #include like <bits/stdc++.h> for plain c?
+2021-10-13 08:30:31	<--	peterhil (~peterhil@dsl-hkibng32-54fb52-57.dhcp.inet.fi) has quit (Ping timeout: 250 seconds)
+2021-10-13 08:30:38	traxex	you can search your /usr/include or equivalent, I don't see anything similar
+2021-10-13 08:32:41	-->	exvicesindaco (~exvicio@user/exvicesindaco) has joined #algorithms
+2021-10-13 08:34:13	-->	exvicesindaco_ (~exvicio@host-87-5-90-251.retail.telecomitalia.it) has joined #algorithms
+2021-10-13 08:34:26	<--	exvicesindaco_ (~exvicio@host-87-5-90-251.retail.telecomitalia.it) has quit (Client Quit)
+2021-10-13 08:38:20	<--	exvicesindaco (~exvicio@user/exvicesindaco) has quit (Ping timeout: 260 seconds)
+2021-10-13 08:41:47	<--	vaginaldischarge (b9dc66f8@67.205.143.82) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-13 21:22:52	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:21	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #algorithms
+2021-10-13 21:23:21	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-13 21:23:21	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-13 21:23:21	--	Channel #algorithms: 173 nicks (1 op, 0 voices, 172 normals)
+2021-10-13 21:23:44	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-13 21:26:39	-->	pavonia (~user@user/siracusa) has joined #algorithms
+2021-10-13 21:28:42	-->	Scarecr0w (scarecr0w@user/scarecr0w) has joined #algorithms
+2021-10-13 21:38:25	<--	jab416171 (~jab416171@c-174-52-53-66.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:43:49	-->	jab416171 (~jab416171@c-67-161-208-101.hsd1.ut.comcast.net) has joined #algorithms
+2021-10-13 21:43:55	<--	___nick___ (~quassel@cpc68286-cdif17-2-0-cust533.5-1.cable.virginm.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:44:03	-->	whatsupdoc (~whatsupdo@148.64.18.24) has joined #algorithms
+2021-10-13 21:45:30	<--	bos20k (~bos20k@ool-4579e50d.dyn.optonline.net) has quit (Quit: Bye.)
+2021-10-13 21:51:10	<--	whatsupdoc (~whatsupdo@148.64.18.24) has quit (Quit: Client closed)
+2021-10-13 21:52:19	<--	ravan (~ravan@user/ravan) has quit (Quit: Leaving)
+2021-10-13 21:53:39	-->	whatsupdoc (~whatsupdo@148.64.18.24) has joined #algorithms
+2021-10-13 22:06:12	Juliu	Can someone please explain to lpapp why hashing does NOT improve the theoretical runtime since the requires space for the hash table was too large if it really did!? Thanks
+2021-10-13 22:07:53	<--	magla (~gelignite@55d4478c.access.ecotel.net) has quit (Quit: Stay safe!)
+2021-10-13 22:11:03	Juliu	A hash-table only improves the runtime if it has a size of O(2^n), and that is not feasable. All smaller hash-tables suffer from collisions and make them as fast as not using any hash-table, at least from a theoretical point of view
+2021-10-13 22:11:22	<--	oriba (~oriba@x4db7efa1.dyn.telefonica.de) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-10-13 22:13:09	Juliu	(n being the number of bits of the variable you want to hash, i.e. 32 bits for a 32-bit integer, resulting in a hash table of 2^32 entries, i.e. 4 GB of memory for the entries in the hash-table being just a bit in size)
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:33	-->	mrmanner (~jmanner@185.224.57.161) has joined #algorithms
+2021-10-16 12:32:33	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-16 12:32:33	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-16 12:32:33	--	Channel #algorithms: 169 nicks (1 op, 0 voices, 168 normals)
+2021-10-16 12:32:58	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-16 12:33:01	<--	mike18 (~geri@217-149-167-230.nat.highway.telekom.at) has quit (Ping timeout: 260 seconds)
+2021-10-16 12:35:06	<--	xiongxin_ (~quassel@113.116.33.28) has quit (Ping timeout: 245 seconds)
+2021-10-16 12:35:33	-->	PJBoy (~PJBoy@user/pjboy) has joined #algorithms
+2021-10-16 12:36:24	-->	ravan (~ravan@user/ravan) has joined #algorithms
+2021-10-16 12:47:25	<--	pavonia (~user@user/siracusa) has quit (Quit: Bye!)
+2021-10-16 12:54:47	<--	voids (~x@user/voids) has quit (Ping timeout: 268 seconds)
+2021-10-16 13:03:02	-->	smallvil_ (~smallvill@cpe-172-193-200-97.qld.foxtel.net.au) has joined #algorithms
+2021-10-16 13:05:02	-->	xiongxin (~quassel@113.116.32.200) has joined #algorithms
+2021-10-16 13:05:49	<--	smallville7123 (~smallvill@cpe-172-193-200-97.qld.foxtel.net.au) has quit (Ping timeout: 265 seconds)
+2021-10-16 13:06:00	-->	voids (~x@102.209.19.93.rev.sfr.net) has joined #algorithms
+2021-10-16 13:10:00	<--	voids (~x@102.209.19.93.rev.sfr.net) has quit (Changing host)
+2021-10-16 13:10:00	-->	voids (~x@user/voids) has joined #algorithms
+2021-10-16 13:22:25	-->	pulse (~pulse@user/pulse) has joined #algorithms
+2021-10-17 18:14:39	-->	jmanner (~jmanner@185.224.57.161) has joined #algorithms
+2021-10-17 18:14:39	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-17 18:14:39	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-17 18:14:39	--	Channel #algorithms: 172 nicks (1 op, 0 voices, 171 normals)
+2021-10-17 18:15:01	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined #algorithms
+2021-10-17 18:19:02	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-17 18:19:02	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-17 18:19:02	--	Channel #algorithms: 172 nicks (1 op, 0 voices, 171 normals)
+2021-10-17 18:19:26	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-17 18:21:48	-->	ferdna (~ferdna@user/ferdna) has joined #algorithms
+2021-10-17 18:30:36	-->	jmanner (~jmanner@user/mrmanner) has joined #algorithms
+2021-10-17 18:30:36	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-17 18:30:36	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-17 18:30:36	--	Channel #algorithms: 175 nicks (1 op, 0 voices, 174 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:57	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-17 18:33:00	Juliu	Hello
+2021-10-17 18:34:10	traxex	hi
+2021-10-17 18:34:22	Juliu	Hi traxex 
+2021-10-17 18:35:39	Juliu	The project I'm working on (which I have told you before) is making great advances lately, after not making any since a year :D
+2021-10-17 18:37:03	Juliu	And your solution with the bridges in a graph (I hope you remember) might give me a new way of thinking about something related to my project. Not that I didn't know about it before, but sometimes you just start thinking differently because of something you saw or read
+2021-10-17 18:38:25	traxex	cool :)
+2021-10-17 18:39:46	Juliu	Actually the late successes are not due to what you said, but more because of what someone else said. But what you said might come in hand now, since I'm a bit stuck again :D
+2021-10-17 18:39:59	Juliu	*handy
+2021-10-17 18:43:17	traxex	take a break and solve some other problems
+2021-10-17 18:50:39	Juliu	I still have not yet included an older idea of mine, so maybe that will help. The problem is that including different ideas into a single thing is sometimes not that easy
+2021-10-17 18:51:39	Juliu	For example I had to "unroll" a nice recursive algorithm I had before into something non-recursive, and that looks way less elegant than the recursive algorithm
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:43	-->	mrmanner (~jmanner@user/mrmanner) has joined #algorithms
+2021-10-17 19:45:43	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-17 19:45:43	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-17 19:45:43	--	Channel #algorithms: 175 nicks (1 op, 0 voices, 174 normals)
+2021-10-17 19:45:55	Juliu	Then I would always increase or decrease the position with the maximum value in the priority queue, so for example increase 5 by 3 so it reached 8, and then update the neighbors in the priority queue accordingly
+2021-10-17 19:46:03	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-17 19:46:32	cherim	You can write code easily, why not do it here? My solution was 12 lines (inside main()) I think
+2021-10-17 19:46:41	cherim	Then we can discuss whether it works or not
+2021-10-17 19:47:02	Juliu	I'm not really interested in that problem, that's why. But tell me your solution anyway
+2021-10-17 19:50:41	Juliu	It seems my solution is wrong anyway
+2021-10-17 19:50:47	cherim	Yes
+2021-10-17 19:51:43	Juliu	Maybe divide&conquer works
+2021-10-17 19:55:00	<--	twrk (~user@user/twrk) has quit (Remote host closed the connection)
+2021-10-17 19:56:05	-->	douglascorrea_io (~douglasco@200.146.85.128.static.gvt.net.br) has joined #algorithms
+2021-10-17 19:56:32	Juliu	If you have 3 8 5 6 5 as input, you can divide it like (3 8)(5 6 5), and then the max of (3 8) has to be <= the min of (5 6 5)
+2021-10-17 19:57:56	Juliu	And you could decrease the min of (3 8) or increase the max of (5 6 5), whichever needs less steps
+2021-10-17 19:58:12	cherim	Subproblems not independent though
+2021-10-17 19:58:15	Juliu	I meant decrease the max of (3 8) or increase the min of (5 6 5)
+2021-10-17 19:58:29	-->	twrk (~user@user/twrk) has joined #algorithms
+2021-10-17 19:59:40	Juliu	Bringing (3 8) into a weakly ordered sequence is independent from bringing (5 6 5) into a weakly ordered sequence
+2021-10-17 20:00:39	cherim	It doesn't have to be just ordered, it has to be all higher/lower than neighboring D&C parts
+2021-10-17 20:00:54	<--	jazzy (~jaziz@user/jaziz) has quit (Read error: Connection reset by peer)
+2021-10-17 20:01:02	Juliu	Yes, that is the other part I just explained
+2021-10-17 20:01:20	-->	jazzy (~jaziz@user/jaziz) has joined #algorithms
+2021-10-17 20:02:23	Juliu	cherim, what does your solution have as runtime?
+2021-10-17 20:02:30	cherim	O(NlogN)
+2021-10-17 20:03:23	Juliu	Yes, I'd have said as well that this should be the optimal runtime
+2021-10-17 20:03:38	cherim	So do you have a solution?
+2021-10-17 20:03:51	cherim	With D&C or else?
+2021-10-17 20:04:06	Juliu	Not a fully working one yet :)
+2021-10-17 20:04:36	Juliu	I meant the optimal runtime in general, not just with the D&C approach
+2021-10-17 20:13:14	<--	palasso (~palasso@user/palasso) has quit (Remote host closed the connection)
+2021-10-17 20:13:34	<--	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-17 20:19:13	Juliu	bbl
+2021-10-17 20:20:02	-->	palasso (~palasso@user/palasso) has joined #algorithms
+2021-10-17 20:57:15	-->	ZacSharp (~ZacSharp@user/zacsharp) has joined #algorithms
+2021-10-17 21:04:10	<--	fef (~thedawn@user/thedawn) has quit (Ping timeout: 276 seconds)
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #algorithms
+2021-10-30 12:09:24	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-30 12:09:24	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-30 12:09:24	--	Channel #algorithms: 168 nicks (1 op, 0 voices, 167 normals)
+2021-10-30 12:09:48	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #algorithms
+2021-10-30 12:10:54	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-30 12:10:54	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-30 12:10:54	--	Channel #algorithms: 168 nicks (1 op, 0 voices, 167 normals)
+2021-10-30 12:11:19	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:13:07	Juliu	There can only be one
+2021-10-30 12:13:28	Juliu	mike18, still alive?
+2021-10-30 12:14:56	mike18	yes :D
+2021-10-30 12:15:18	mike18	[[1,2,1],[2,3,7],[1,3,4],[2,1,2]]
+2021-10-30 12:15:25	mike18	just count src and dst
+2021-10-30 12:15:32	mike18	there are nodes: 1, 2, 3
+2021-10-30 12:15:44	mike18	that example expects -1 to be returned
+2021-10-30 12:15:45	Juliu	What about 4 ?
+2021-10-30 12:15:57	Juliu	Oh, forget that, I misread
+2021-10-30 12:16:37	mike18	4 is the weight :)
+2021-10-30 12:16:41	Juliu	mike18, can you show us the text where they give this example and the expected output?
+2021-10-30 12:16:46	mike18	its src, dst, weight
+2021-10-30 12:16:57	mike18	https://leetcode.com/problems/network-delay-time/
+2021-10-30 12:16:59	mike18	thats the task
+2021-10-30 12:17:11	mike18	and [[1,2,1],[2,3,7],[1,3,4],[2,1,2]] with -1 is a testcase
+2021-10-30 12:17:35	Juliu	mike18, I don't see this example there
+2021-10-30 12:19:48	traxex	is k=3 in that last one?
+2021-10-30 12:20:58	Juliu	I don't see where mike18 got this tast-case from, I don't see it anywhere
+2021-10-30 12:21:12	<--	PJBoy (~PJBoy@user/pjboy) has quit (Quit: Ping timeout: 252 seconds)
+2021-10-30 12:21:49	ksu	anyway, thanks for inspiration, Juliu and traxex, i will use inter_pares() for now
+2021-10-30 12:22:40	Juliu	You're welcome
+2021-10-30 12:25:53	-->	PJBoy (~PJBoy@user/pjboy) has joined #algorithms
+2021-10-30 12:28:18	-->	wootehfoot (~wootehfoo@user/wootehfoot) has joined #algorithms
+2021-10-30 12:35:27	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #algorithms
+2021-10-30 12:35:45	-->	furrymcgee (~devuan@cgn-89-1-209-97.nc.de) has joined #algorithms
+2021-10-30 12:58:08	-->	lpapp (~lpapp@ec2-15-161-137-233.eu-south-1.compute.amazonaws.com) has joined #algorithms
+2021-10-30 12:58:45	lpapp	hi, how do you specify the time complexity of an algo if it is kind of "unknown", like here: https://codility.com/media/train/4-Sorting.pdf We do not know the relation in counting sort between k and m
+2021-10-30 12:59:20	lpapp	they write n + k, but if n > k, this could be n + n, so I guess it is n + max(n, k) in a strict sense?
+2021-10-30 13:01:17	pavonia	It's usually the worst case complexity, so O(n + n) = O(n)
+2021-10-30 13:02:22	lpapp	pavonia: it is not guaranteed that n > k
+2021-10-30 13:02:27	lpapp	so, you cannot claim that for sure.
+2021-10-30 13:02:48	lpapp	if k < n, it is n+k, not 2n=n
+2021-10-30 13:03:09	pavonia	Do you want to know the exact complexity or complexity class?
+2021-10-30 13:04:35	pavonia	I guess complexity class it the wrong term. What is this O thingy called?
+2021-10-30 13:04:53	lpapp	as I wrote, time complexity
+2021-10-30 13:04:59	ksu	this is customarily written O(n + k)
+2021-10-30 13:05:14	lpapp	yes, it could be 2n
+2021-10-30 13:05:20	lpapp	depends on which one is greater
+2021-10-30 13:05:25	lpapp	I guess the doc is imprecise
+2021-10-30 13:05:31	ksu	and O(2n) = O(n), see the definition of big O
+2021-10-30 13:06:11	traxex	O(max(n,k)) is the same as O(n+k), but + is shorter
+2021-10-30 13:06:21	lpapp	yeah, likely, n + k is the best explanation
+2021-10-30 13:06:32	lpapp	yes
+2021-10-30 13:07:00	lpapp	thanks
+2021-10-30 13:07:16	-->	burakcank (~burakcank@has.arrived.and.is.ready-to.party) has joined #algorithms
+2021-10-30 13:10:00	pavonia	So if your algorithm has a runtime behavior of "t(n) = 2*n + 100", how do you call the two things "t(n)" and "O(t(n))"?
+2021-10-30 13:14:10	lpapp	6.5 here: https://codility.com/media/train/4-Sorting.pdf
+2021-10-30 13:14:23	lpapp	if you wanted the best runtime complexity, you would not use sorting for this, I guess?
+2021-10-30 13:14:28	traxex	pavonia: you could say 2*n+100 has order O(n)
+2021-10-30 13:14:38	lpapp	It is just for teaching sorting algos, but eventually, it has suboptimal runtime performance, right?
+2021-10-30 13:16:09	lpapp	(or perhaps if you cannot use extra memory)
+2021-10-30 13:17:33	<--	ChaiTRex (~ChaiTRex@user/chaitrex) has quit (Remote host closed the connection)
+2021-10-30 13:17:49	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has joined #algorithms
+2021-10-30 13:17:59	-->	ChaiTRex (~ChaiTRex@user/chaitrex) has joined #algorithms
+2021-10-30 13:19:49	traxex	lpapp: what's the optimal worst-case performance?
+2021-10-30 13:20:09	lpapp	O(n)?
+2021-10-30 13:20:38	lpapp	the solution they give is n*logn, so I guess it is only for educational purposes about sorting?
+2021-10-30 13:20:45	<--	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:21:46	lpapp	cherim: another inconvenience in C++ vs. python: sort(A.begin(), A.end()); vs. A.sort()
+2021-10-30 13:22:00	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has joined #algorithms
+2021-10-30 13:22:03	traxex	how do you do it in O(n) worst case?
+2021-10-30 13:22:14	traxex	don't tell me with a python dict
+2021-10-30 13:22:16	lpapp	+ #include <algorithm>, and + using namespace std; etc
+2021-10-30 13:22:25	lpapp	traxex: with unordered_map
+2021-10-30 13:22:44	traxex	that would be O(n^2) worst case for n values
+2021-10-30 13:22:51	lpapp	?
+2021-10-30 13:23:36	traxex	https://en.cppreference.com/w/cpp/container/unordered_map/insert
+2021-10-30 13:23:39	traxex	ctrl-f complexity
+2021-10-30 13:23:41	lpapp	you build an unordered_map<int, int>
+2021-10-30 13:23:46	lpapp	that is O(n)
+2021-10-30 13:24:00	lpapp	then after you built it, you get the size of it
+2021-10-30 13:24:07	lpapp	I cannot see how it is O(n^2)
+2021-10-30 13:24:45	lpapp	traxex: ah you mean when it is not amortised O(n)
+2021-10-30 13:24:53	lpapp	I do not think you have to worry about that to be honest
+2021-10-30 13:24:53	traxex	https://codeforces.com/blog/entry/62393
+2021-10-30 13:25:00	lpapp	but if you worry, you can use vector<int>
+2021-10-30 13:25:07	lpapp	it is definitely O(n)
+2021-10-30 13:25:09	traxex	how to solve it with vector in O(n)?
+2021-10-30 13:25:17	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:25:28	lpapp	traxex: preserve
+2021-10-30 13:25:54	lpapp	but even with unordered_map, the average case is amortised O(1)
+2021-10-30 13:26:02	traxex	that is why I asked about worst case
+2021-10-30 13:26:18	traxex	O(NlogN) worst case is better than O(N^2) worst case
+2021-10-30 13:26:29	lpapp	you will only get worse complexity when you have clashes, which is as likely as a brick falling on you
+2021-10-30 13:26:39	lpapp	yes, but that is not the point
+2021-10-30 13:26:54	traxex	it's trivial to generate inputs that clash
+2021-10-30 13:27:09	lpapp	good luck to that :)
+2021-10-30 13:27:14	lpapp	must be a pretty sucky hash
+2021-10-30 13:27:24	lpapp	oh, and by the way, it is wrong to say O(n) worst case
+2021-10-30 13:27:25	traxex	yes, the deafult implementation is
+2021-10-30 13:27:32	traxex	then go fix cppreference
+2021-10-30 13:27:37	traxex	they list O(n) as worst case
+2021-10-30 13:27:40	lpapp	you can use binary trees instead of linked list in the buckets
+2021-10-30 13:27:46	traxex	and empirically it is easy to exploit on common implementations
+2021-10-30 13:27:47	lpapp	which equals the worst case with sorting
+2021-10-30 13:27:53	lpapp	and the average _loads_ better.
+2021-10-30 13:28:32	traxex	yes, you could implement a solution that is sometimes O(n) and worst case O(NlogN)
+2021-10-30 13:28:40	lpapp	no
+2021-10-30 13:28:50	traxex	well, someone could
+2021-10-30 13:28:55	lpapp	99.999% O(n) and sometimes in every blue moon the same as sorting
+2021-10-30 13:29:16	lpapp	which can mean a huge speedup on large datasets.
+2021-10-30 13:29:40	traxex	"sometimes" is what worst case means
+2021-10-30 13:30:08	lpapp	so, are you saying time complexity wise O(n)/O(n*logn) is worse than always O(n*logn)
+2021-10-30 13:30:11	lpapp	that is what you seem to argue
+2021-10-30 13:30:15	lpapp	which is pretty bad imho
+2021-10-30 13:30:44	traxex	no, using unordered_map without any tricks is not O(NlogN)
+2021-10-30 13:30:58	lpapp	why do you have to use unordered_map?
+2021-10-30 13:31:00	lpapp	You do not have to.
+2021-10-30 13:31:05	traxex	well that's what you said you would do
+2021-10-30 13:31:08	lpapp	no
+2021-10-30 13:31:21	lpapp	and if I am honest, even unordered_map is better
+2021-10-30 13:31:32	traxex	ok
+2021-10-30 13:31:40	-->	seninha (~seninha@user/seninha) has joined #algorithms
+2021-10-30 13:31:44	traxex	we can get back to this whenever you're ready to start typing code
+2021-10-30 13:31:48	lpapp	because I would rather be 99.99999% a lot faster than 0.00001% faster.
+2021-10-30 13:31:53	traxex	instead of reading through solutions
+2021-10-30 13:32:08	traxex	I can hack your unordered_map solution for you
+2021-10-30 13:32:20	lpapp	I already did
+2021-10-30 13:32:31	lpapp	and it is faster all on inputs they wanted me to achieve this
+2021-10-30 13:32:34	lpapp	I mean _a lot_ faster
+2021-10-30 13:32:37	traxex	it would be unlikely to be faster than a sort though even in best case
+2021-10-30 13:32:42	traxex	the standard hash tables are so terrible
+2021-10-30 13:32:43	lpapp	lol
+2021-10-30 13:32:46	traxex	try it
+2021-10-30 13:32:47	lpapp	nice joke
+2021-10-30 13:32:49	traxex	I have benchmarked this
+2021-10-30 13:32:55	lpapp	I did, just written above ...
+2021-10-30 13:33:03	traxex	try sorting 1M integers
+2021-10-30 13:33:11	traxex	and then try putting them in unordered_map
+2021-10-30 13:33:15	traxex	tell me which one is faster
+2021-10-30 13:33:33	lpapp	under these circumstances, too, unordered_map was a lot faster
+2021-10-30 13:33:42	traxex	how much?
+2021-10-30 13:35:11	traxex	see page 45 if you refuse to time it or don't believe me https://cses.fi/book/book.pdf
+2021-10-30 13:38:58	-->	ScreamInBlue (~john@2a01:cb10:8273:b800:3d9e:6636:82b8:d646) has joined #algorithms
+2021-10-30 13:39:02	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has joined #algorithms
+2021-10-30 13:39:26	lpapp	seems to confirm my stance
+2021-10-30 13:40:06	traxex	yes, 2.3s is much faster than 0.9s
+2021-10-30 13:41:21	lpapp	The time complexity of the new algorithm is O(n).
+2021-10-30 13:41:28	lpapp	with unordered_map ^
+2021-10-30 13:41:41	lpapp	with sorting: The time complexity of sorting is O(nlogn), and the rest of the algorithm works in O(n) time, so the total time complexity is O(nlogn).
+2021-10-30 13:41:43	<--	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:42:52	traxex	you're happy to ignore common sense, codeforce, cppreference and earlier pages on this book that say O(n) is average and exploitable
+2021-10-30 13:42:53	lpapp	And that is the only thing I was saying, what they also claim above
+2021-10-30 13:42:58	traxex	and you ignore the actual timings
+2021-10-30 13:43:10	traxex	you said "a lot faster"
+2021-10-30 13:43:18	lpapp	yes, it is also faster in my case
+2021-10-30 13:43:30	lpapp	so, actually, that particular timing without any sort of context is out of context anyway
+2021-10-30 13:43:33	traxex	you will revolutionalize competitive programming once you start writing code
+2021-10-30 13:43:51	traxex	so much common knowledge will get overturned by your logic
+2021-10-30 13:44:04	lpapp	they confirm what I said
+2021-10-30 13:44:11	lpapp	I have no idea what you are talking about
+2021-10-30 13:44:19	traxex	I know you don't
+2021-10-30 13:44:25	lpapp	I was saying O(n) vs. O(logn * n)
+2021-10-30 13:44:30	lpapp	they confirm that, end of story.
+2021-10-30 13:44:55	lpapp	about the timing in practice, I do not get bogged down, the fact that it is faster for me in my context, that does not mean that it is faster in every context
+2021-10-30 13:45:01	lpapp	so, I do not debate that, unlike you.
+2021-10-30 13:45:14	<--	whatsupdoc (uid509081@id-509081.hampstead.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-30 13:45:15	lpapp	However, I did claim what they about the time complexity of the algorithm, and that is all to it.
+2021-10-30 13:45:22	lpapp	There is nothing revolutionary in this at all, really.
+2021-10-30 13:45:23	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:d418:453f:8e01:9edf) has joined #algorithms
+2021-10-30 13:45:55	traxex	unqualified "time complexity" normally means worst case
+2021-10-30 13:45:57	traxex	not expected or average
+2021-10-30 13:46:32	lpapp	this is of course nonsensical, otherwise unordered_map would have no use.
+2021-10-30 13:46:33	traxex	you can even sort in O(n) if you assume the input is nice
+2021-10-30 13:46:43	lpapp	in many many situations, but it does.
+2021-10-30 13:46:52	lpapp	no, you cannot assume that
+2021-10-30 13:46:59	lpapp	there is no assumption made in the PDF that I have sent you.
+2021-10-30 13:47:20	lpapp	I think you are twisting the use case to justify your point.
+2021-10-30 13:47:28	lpapp	I only linked a very specific task.
+2021-10-30 13:48:05	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has quit (Ping timeout: 246 seconds)
+2021-10-30 13:48:58	lpapp	the whole point of complexity estimation is not to get bogged down in contextual numbers.
+2021-10-30 13:49:19	lpapp	otherwise the whole complexity estimation would lose its purpose.
+2021-10-30 13:50:24	lpapp	(and by the way, I have never even talked about competitive programming fwiw)
+2021-10-30 13:50:56	traxex	a true O(n) solutions would be of interest there as well
+2021-10-30 13:51:04	traxex	that is more performant and a lot faster than sorting
+2021-10-30 13:52:43	-->	Koen (~Koen@2a01cb0407597a002dd8150842b19568.ipv6.abo.wanadoo.fr) has joined #algorithms
+2021-10-30 13:53:15	lpapp	I think it is a dangerous path to take
+2021-10-30 13:54:24	lpapp	to reject the use of unordered_map based on its "worst case", blue moon, complexity, because suddenly, you would slow down many many algorithms that unordered_maps speed up. Since with this dangerous idea, then you would suddenly end up with O(n^2) complexity for hashing n elements.
+2021-10-30 13:54:50	lpapp	(which admittedly would be denial of service for unordered_maps)
+2021-10-30 13:55:37	traxex	if you care about practical performance, the speed ups are not that great as shown in the pdf
+2021-10-30 13:55:48	traxex	if you care about theoretical performance, the worst case shouldn't be just ignored
+2021-10-30 13:56:25	lpapp	seems you are revolutionising computer science :)
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:34	-->	mrmanner (~jmanner@user/mrmanner) has joined #algorithms
+2021-10-30 17:07:35	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-30 17:07:35	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-30 17:07:35	--	Channel #algorithms: 177 nicks (1 op, 0 voices, 176 normals)
+2021-10-30 17:07:58	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-30 17:09:06	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #algorithms
+2021-10-30 17:11:46	<--	zer0bitz_ (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 252 seconds)
+2021-10-30 17:24:11	<--	Koen (~Koen@lfbn-idf2-1-325-70.w82-123.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2021-10-30 17:25:31	-->	average (uid473595@user/average) has joined #algorithms
+2021-10-30 17:29:41	<--	sm2n (~sm2n@user/sm2n) has quit (Remote host closed the connection)
+2021-10-30 17:30:00	-->	sm2n (~sm2n@user/sm2n) has joined #algorithms
+2021-10-30 17:43:57	-->	Koen_ (~Koen@2a01cb0407597a003103bdc82f93cfea.ipv6.abo.wanadoo.fr) has joined #algorithms
+2021-10-30 17:46:47	<--	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has quit (Ping timeout: 260 seconds)
+2021-10-30 17:52:14	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #algorithms
+2021-10-30 17:53:38	-->	ravan (~ravan@user/ravan) has joined #algorithms
+2021-10-30 17:53:38	<--	pull (~tcz@91.150.165.88) has quit (Quit: Czesc)
+2021-10-30 18:01:09	<--	useretail (~useretail@185.132.19.151) has quit (Read error: Connection reset by peer)
+2021-10-30 18:02:40	-->	useretail (~useretail@185.132.19.151) has joined #algorithms
+2021-10-30 18:03:52	<--	pulse (~pulse@user/pulse) has quit (Quit: pulse)
+2021-10-30 22:21:17	--	irc: disconnected from server
+2021-10-30 22:21:47	-->	mrmanner (~jmanner@user/mrmanner) has joined #algorithms
+2021-10-30 22:21:47	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-10-30 22:21:47	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-10-30 22:21:47	--	Channel #algorithms: 174 nicks (1 op, 0 voices, 173 normals)
+2021-10-30 22:22:07	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-10-30 22:29:04	lpapp	traxex: I started reading this handbook...
+2021-10-30 22:29:24	lpapp	are you a student or just competing professional
+2021-10-30 22:29:31	lpapp	this seems to target mostly students
+2021-10-30 22:29:32	traxex	just a hobbyist
+2021-12-01 23:20:45	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #algorithms
+2021-12-01 23:20:48	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-12-01 23:20:48	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-01 23:20:48	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-12-01 23:20:48	--	Channel #algorithms: 184 nicks (1 op, 0 voices, 183 normals)
+2021-12-01 23:21:29	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-12-01 23:21:40	--	Mode #algorithms [+nt]
+2021-12-01 23:21:40	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #algorithms
+2021-12-01 23:23:02	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-12-01 23:23:02	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-01 23:23:02	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-12-01 23:23:02	--	Channel #algorithms: 184 nicks (1 op, 0 voices, 183 normals)
+2021-12-01 23:23:13	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-12-01 23:23:20	--	Mode #algorithms [+nt]
+2021-12-01 23:23:20	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-12-01 23:29:30	-->	ZacSharp [ZacSharp] ([https://web.libera.chat] ZacSharp) (~ZacSharp@user/zacsharp) has joined #algorithms
+2021-12-01 23:41:19	<--	ecalogero (~ecalogero@151.31.147.196) has quit (Quit: Connection closed)
+2021-12-01 23:42:53	-->	immibis_ (realname) (~hexchat@62.156.144.218) has joined #algorithms
+2021-12-01 23:42:53	--	immibis_ has identified as immibis
+2021-12-01 23:43:04	<--	immibis (~hexchat@62.156.144.218) has quit (Read error: Connection reset by peer)
+2021-12-01 23:48:20	<--	nvmd (~nvmd@user/nvmd) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:49:05	<--	Guest664 (~savio@177.12.48.155) has quit (Quit: Leaving)
+2021-12-01 23:50:03	-->	nvmd [nvmd] (Pedro) (~nvmd@user/nvmd) has joined #algorithms
+2021-12-01 23:58:53	--	mike18_ has identified as geri
+2021-12-02 00:06:51	<--	mfiano (~mfiano@li1282-157.members.linode.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:19:09	<--	pulse (~pulse@user/pulse) has quit (Quit: Join a community of pillow knights at https://indiedevs.net/)
+2021-12-02 00:19:16	<--	nvmd (~nvmd@user/nvmd) has quit (Quit: Later, nerds.)
+2021-12-02 00:24:53	-->	soapsudsxx [soapsudsxx] (kristian) (~soapsudsx@209.221.40.158) has joined #algorithms
+2021-12-02 00:26:12	-->	Juliu (realname) (~Juliu@2a02:810b:c640:3ec0:ccd4:ae1b:4a40:e564) has joined #algorithms
+2021-12-02 00:42:07	<--	palasso (~palasso@user/palasso) has quit (Remote host closed the connection)
+2021-12-02 00:47:14	-->	vysn [vysn] (vysn) (~vysn@user/vysn) has joined #algorithms
+2021-12-02 00:49:34	<--	ZacSharp (~ZacSharp@user/zacsharp) has quit (Quit: ZacSharp)
+2021-12-02 00:50:56	<--	seninha (~seninha@user/seninha) has quit (Quit: Leaving)
+2021-12-02 00:51:20	-->	childlikempress [moon-child] (Moonchild) (~moon-chil@cardinal.elronnd.net) has joined #algorithms
+2021-12-02 00:51:26	<--	moon-child (~moon-chil@cardinal.elronnd.net) has quit (Remote host closed the connection)
+2021-12-02 00:52:06	--	childlikempress is now known as moon-child
+2021-12-02 00:56:19	<--	zer0bitz (~zer0bitz@dsl-hkibng32-54fbfb-173.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-12-02 01:00:34	<--	lilgopher (~textual@2601:241:8000:38f0:80d2:5d75:881a:25e6) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-02 01:00:50	-->	seninha [seninha] (realname) (~seninha@user/seninha) has joined #algorithms
+2021-12-02 01:12:01	<--	unixpro1970 (~unixpro19@c-73-181-185-205.hsd1.wa.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:16:42	causative	Say there is a set S of real numbers, and we want to find the median of it.  However, we don't have random access to S - all we can do is iterate over it in a nondeterministic order (nondeterministic because of multithreading). We want to minimize the number of passes over S needed on average, with only O(log |S|) (or even O(1)) additional space.
+2021-12-02 01:18:41	<--	mike18_ (~geri@71-220-52-187.mpls.qwest.net) has quit (Remote host closed the connection)
+2021-12-02 01:19:07	Juliu	Hello you too, causative 
+2021-12-02 01:19:08	-->	mike18 (mike18) (~geri@216.200.232.252) has joined #algorithms
+2021-12-02 01:19:10	causative	hi
+2021-12-02 01:20:03	Juliu	Does it have to be the median? The average would be so much easier
+2021-12-02 01:20:07	causative	it is also allowed to annotate the elements of S - but the annotations can only be accessed as we access the elements of S, i.e. in a nondeterministic order
+2021-12-02 01:20:10	causative	median, yes
+2021-12-02 01:20:37	Juliu	And you can't simply iterate over S and store it in some random access array?
+2021-12-02 01:20:44	causative	that's what I said
+2021-12-02 01:21:23	Juliu	Why can't you iterate over S and store it in an array?
+2021-12-02 01:22:10	causative	"with only O(log |S|) (or even O(1)) additional space."
+2021-12-02 01:22:23	Juliu	What doesn't answer my question of why, but ok
+2021-12-02 01:22:24	causative	(and the "annotation" exception just mentioned)
+2021-12-02 01:22:28	Juliu	*That
+2021-12-02 01:22:36	-->	unixpro1970 (unixpro1970) (~unixpro19@c-73-181-185-205.hsd1.wa.comcast.net) has joined #algorithms
+2021-12-02 01:22:36	--	unixpro1970 has identified as unixpro1970
+2021-12-02 01:26:46	asd	how would you even know the order of the set?
+2021-12-02 01:27:06	causative	it might be possible to store S in a separate array and find the median there, but for various reasons it would be nicer if this was not done
+2021-12-02 01:27:18	causative	I may end up doing that but first I'm thinking about this other option
+2021-12-02 01:28:03	causative	what do you mean "know the order of the set"?
+2021-12-02 01:28:41	Juliu	causative, you could use a binary search for the median: Let's say we know that the median is in the range [a, b]. We choose (a+b)/2 as the median, test how many elements from S are smaller and how many are larger than (a+b)/2, and if more are smaller we use [a, (a+b)/2] next, and if more are greater we use [(a+b)/2, b] next
+2021-12-02 01:29:06	causative	yes, that's one option
+2021-12-02 01:29:38	Juliu	You can easily find the initial a and b with 1 iteration over S
+2021-12-02 01:30:19	Juliu	So overall you will only need O(log( |S| )) many iterations to find the median, and only O(1) memory
+2021-12-02 01:30:53	causative	yes, that's more iterations than I'd like though
+2021-12-02 01:31:26	Juliu	You want less iterations than log(|S|) ? Wow. Good luck with that
+2021-12-02 01:32:39	causative	constant factors matter, and we aren't limited to storing only three elements
+2021-12-02 01:35:05	Juliu	You can easily divide [a, b] into k many intervals by using O(k) memory, and then test for each element in S in what interval its in. This way you will get a runtime of O(log_k(|S|)) and not just O(log_2(|S|))
+2021-12-02 01:39:02	Juliu	Of course O(log_k(|S|)) equals O(log_2(|S|)), but the constant factors are different
+2021-12-02 01:39:05	causative	not bad, still maybe there is something better, e.g. estimating where the median is and clustering our saved points around there
+2021-12-02 01:39:57	Juliu	You can use k = log(|S|) and get a runtime of O( log(|S|) / log(log(|S|)) )
+2021-12-02 01:40:48	Juliu	Well, sorry, that's not quite correct since then choosing what interval an elements falls into also takes more than constant time
+2021-12-02 01:41:49	asd	Juliu: this CP knowledge you have, is it applicable in general/normal programming? Is it worth the grind if you are trying to improve as a software developer?
+2021-12-02 01:42:18	Juliu	I'm not quite sure how the runtime for k = log(|S|) would be. Probably better than k = constant
+2021-12-02 01:42:47	Juliu	asd, how should I know, I don't have a job
+2021-12-02 01:43:05	asd	haha can't tell if you are memeing
+2021-12-02 01:43:07	causative	also we can optimize as we close in on the median by using the extra space to store all the elements
+2021-12-02 01:43:12	Juliu	asd, ?
+2021-12-02 01:43:50	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:43:58	Juliu	causative, not really, since |S| is arbitratily large when we concider big O runtimes
+2021-12-02 01:44:46	causative	we really want only a small number of passes over S, and S isn't too large
+2021-12-02 01:44:51	Juliu	If |[a,b]| gets smaller than O(|S|) then yes, sure
+2021-12-02 01:45:12	Juliu	causative, isn't log(|S|) quite small then?
+2021-12-02 01:46:14	<--	Libero (~Libero@130.43.23.56.dsl.dyn.forthnet.gr) has quit (Read error: Connection reset by peer)
+2021-12-02 01:46:15	asd	Juliu: nvm, i figured you presented enough knowledge to have worked with this for a long time. I was reflecting how hard I should pursue these CP problems. I find the problems interesting  but I have never encountered them in the wild
+2021-12-02 01:46:20	causative	actually on second thought log(|S|) additional space is probably too big, it should be O(1)
+2021-12-02 01:46:45	asd	*reflecting on how
+2021-12-02 01:46:46	causative	because with log(|S|) the extra space has to be allocated in a different place
+2021-12-02 01:47:36	-->	mike18_ (mike18) (~geri@71-220-52-187.mpls.qwest.net) has joined #algorithms
+2021-12-02 01:48:29	causative	and this isn't taking advantage of the annotations, which can be O(|S|) extra space but is not random access
+2021-12-02 01:48:36	Juliu	causative, then I suggest the k-nary search I talked about above, and use k = constant. Doesn't necessarily have to be k = 2
+2021-12-02 01:48:42	causative	O(1) annotations attached to each element
+2021-12-02 01:49:36	Juliu	asd, I have a PhD in computer science. But traxex and cherim are better than me when it comes to algorithms
+2021-12-02 01:51:21	<--	mike18 (~geri@216.200.232.252) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:51:31	Juliu	causative, if you iterate over S multiple times, do you get the elements of S in the same order in each iteration, or not?
+2021-12-02 01:51:38	causative	not necessarily
+2021-12-02 01:51:42	Juliu	I see
+2021-12-02 01:52:16	Juliu	How large is S ? You said not that large. How large is not that large?
+2021-12-02 01:53:09	causative	probably not more than a few hundred elements
+2021-12-02 01:53:43	Juliu	And you can't store a few hundert elements in memory??
+2021-12-02 01:55:19	Juliu	causative, are the values for the elements in S bounded by something? Are they maybe in between 0 and 1000 for example?
+2021-12-02 01:57:08	causative	they could be bounded, yes
+2021-12-02 01:57:27	causative	I mean you can always do a first pass to find out the bounds
+2021-12-02 01:57:38	Juliu	Btw, the constant 1000 is in O(1), so using 1000 memory is constant, and you would only need 1 iteration ;)
+2021-12-02 01:59:17	Juliu	If you don't like that, use a 10-nary search, so you only need 3 additional passes since 10^3 = 1000 > |S|
+2021-12-02 01:59:26	causative	it's a question of memory layout, S is neighbors of a node. All the nodes are contiguous in memory and the number of neighbors is not initially known. It would be preferable not to allocate node memory elsewhere
+2021-12-02 02:01:37	Juliu	You can double the allocated memory each time it gets exeeded. This is amortized as fast as allocating the full amount of memory at the beginning
+2021-12-02 02:02:23	Juliu	At least in big O notation. Of course it would be a constant factor of 2 slower
+2021-12-02 02:02:28	asd	thanks Juliu ill check with them what they think :)
+2021-12-02 02:02:38	Juliu	asd :)
+2021-12-02 02:03:06	causative	I'd have to double the allocated memory for *all* nodes for them to still fit contiguously and be the same size
+2021-12-02 02:03:37	causative	and that would be very difficult to code, as right now the nodes are simply structs, with fixed sizes
+2021-12-02 02:03:49	Juliu	causative, actually I was talking about RAM, not about the memory you store with your nodes
+2021-12-02 02:03:58	-->	asen (realname) (~asen@2408:821b:618:2ef0:ab85:814b:bf8f:a143) has joined #algorithms
+2021-12-02 02:04:28	Juliu	causative, a std::vector does this doubling of memory automatically, in case you are using C++
+2021-12-02 02:05:08	<--	asen (~asen@2408:821b:618:2ef0:ab85:814b:bf8f:a143) has quit (Remote host closed the connection)
+2021-12-02 02:05:20	-->	asen (realname) (~asen@2408:821b:618:2ef0:ab85:814b:bf8f:a143) has joined #algorithms
+2021-12-02 02:05:42	causative	the issue isn't how much memory total I'm using, it's the memory access pattern - if everything is contiguous the memory access pattern is better
+2021-12-02 02:06:20	Juliu	The memory inside a std::vector is continuous
+2021-12-02 02:06:54	Juliu	But it would not be for several consecutive nodes, if that's what you mean
+2021-12-02 02:06:59	causative	that is what I mean
+2021-12-02 02:08:33	causative	each pass over S would be a pass over every neighbor of every node in the graph - each neighbor set being another S
+2021-12-02 02:08:48	-->	tiago (realname) (~tiago@179.84.71.163) has joined #algorithms
+2021-12-02 02:08:58	Juliu	You can use a whole auto-doubling array/vector or a linked list for all the elements, where each element in the vector or list has the data plus a reference to the next element for that same node. So each time you add a new neighbor to a node, you add it to the end of the vector or list, and point this next-reference of the last neighbor for that node to the last element in the vector or list
+2021-12-02 02:10:28	<--	tiago (~tiago@179.84.71.163) has quit (Client Quit)
+2021-12-02 02:10:42	causative	I actually don't add neighbors individually, nodes come in blocks which are connected to other blocks according to a fixed connectivity pattern
+2021-12-02 02:11:21	-->	smallville7123 (smallville7123) (~smallvill@cpe-172-193-72-46.qld.foxtel.net.au) has joined #algorithms
+2021-12-02 02:11:21	--	smallville7123 has identified as smallville7123
+2021-12-02 02:11:29	causative	this saves me from needing anything like a linked list of neighbors
+2021-12-02 02:12:19	causative	it's better to iterate over contiguous memory than to jump around following pointers
+2021-12-02 02:12:52	Juliu	Anyway, I think I meantioned enough possibilities. |S| < 1000 is small enough to store everything in RAM while even still pretending it's constant. Otherwise a k-nary search is fast enough and only uses a non-cheated constant amount of RAM
+2021-12-02 02:19:17	causative	I'll probably just allocate a separate array and copy S over.  I was hoping there was some "cool" way to do it with only two or three passes, but I can't think of anything
+2021-12-02 02:21:20	Juliu	As I explained, there is a way to do it with 3 passes
+2021-12-02 02:21:25	Juliu	Or 2, or 1
+2021-12-02 02:22:39	causative	if you choose k elements, you can't assume they're evenly spaced, so you can't give any guarantee about the number of passes
+2021-12-02 02:22:51	causative	by chance they could all be way over on the left
+2021-12-02 02:23:46	causative	if there are thousands of nodes, a worst case like that is going to happen at least once, and because the architecture I'm working with is designed for passes over *all* the nodes, it's going to mean every node gets that worst case
+2021-12-02 02:27:14	Juliu	You do not choose k elements. You seperate the interval [a, b] into k subintervals of equal size, and then for each element of S find the subinterval it's in, and by that instead of doing a binary = 2-nary search, you do a k-nary search
+2021-12-02 02:27:23	<--	PJBoy (~PJBoy@user/pjboy) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:27:31	causative	the elements of S are floats, not ints
+2021-12-02 02:27:46	Juliu	Does not matter. A binary search also works for floats
+2021-12-02 02:28:22	causative	they could all, or almost all, be arbitrarily close together around one particular part of the range
+2021-12-02 02:28:33	Juliu	That also does not matter
+2021-12-02 02:28:58	Juliu	You find your initial boudarys a and b first anyway by doing 1 initial iteration over S
+2021-12-02 02:29:02	causative	if you're dividing the *range* into equal subintervals, that means it could take you quite a while to narrow it down
+2021-12-02 02:29:35	causative	like say there is one value at 0, one at 1000, and 200 values in the range (15.3, 15.7)
+2021-12-02 02:30:57	Juliu	If you have 1 small value and 1 large value in S, and all other values are very close together, then yes, it could take a bit longer. But the runtime is logarithmic and even the resolution of a float is limited
+2021-12-02 02:31:38	causative	but you're not going to be able to guarantee only three passes
+2021-12-02 02:32:01	causative	can't guarantee ten passes, if you do it that way
+2021-12-02 02:33:11	Juliu	You will only need 6 iterations to limit it down to the interval [12.5, 18.75] in a binary search. For a k-nary search it will be even faster
+2021-12-02 02:33:21	Juliu	I meant 7
+2021-12-02 02:34:07	-->	dohtem [dOhtem] (dohtem) (uid524096@user/dohtem) has joined #algorithms
+2021-12-02 02:34:16	Juliu	3 passes? Depends on your choice of k
+2021-12-02 02:34:48	Juliu	For k = |S| you will only need 1 pass (in addition to the initial pass that finds the first a and b)
+2021-12-02 02:35:38	Juliu	You are right, it depends on the distribution of the values in S. If you have any better idea, go for it
+2021-12-02 02:35:42	causative	10 passes is too many, and there's no limit on how close together the values might be
+2021-12-02 02:36:00	Juliu	I would simply iterate over S just 1 time, copy it into RAM, and then find the median there
+2021-12-02 02:36:12	causative	the two nearest the median could be separated by 0.000000001 while the rest of them are in a range of 0 to 1000
+2021-12-02 02:36:19	Juliu	Actually there is a limit since float's resulution is limited
+2021-12-02 02:37:03	causative	technically yes, but it would be like 50 passes to get there
+2021-12-02 02:37:16	Juliu	Even a small k like 2 (i.e. a binary search) narrows down the search space by half each time. So each iteration eliminated 1 bit, and float only has 32 bits
+2021-12-02 02:37:36	causative	ah, yeah, so more like 20 passes
+2021-12-02 02:37:39	causative	still too many
+2021-12-02 02:38:47	causative	no, wait, that's not right, it's a lot more than that, each pass only decreases the exponent by 1
+2021-12-02 02:39:57	causative	floating point exponent is 8 bits
+2021-12-02 02:40:21	causative	anyway, too many
+2021-12-02 02:40:57	Juliu	Yes, maybe 32 iterations for k=2.   16 iterations for k=4.   8 iterations for k=16.   4 iterations for k=256
+2021-12-02 02:41:28	causative	worst case would be 256+ iterations for k=2
+2021-12-02 02:41:33	Juliu	Nope
+2021-12-02 02:41:57	causative	if the initial range was the floating point maximum and you're trying to narrow it down to two values separated by an ulp
+2021-12-02 02:42:03	Juliu	Float only has 32 bits, so you can't have more than 2^32 different values represented as a float
+2021-12-02 02:42:49	causative	you're just dividing the range in two each time
+2021-12-02 02:42:52	Juliu	So you will never need more than 32 iterations in a binary search (maybe +1 to check that you are done)
+2021-12-02 02:45:30	causative	float maximum value is 3.4 * 10^38, float minimum positive value is 1.40130*10^−45
+2021-12-02 02:46:39	causative	log_2(3.4*10^38 / (1.4 * 10^-45)) = 277
+2021-12-02 02:46:40	Juliu	But you will also need O(k) time to decide in which of the k subarrays an element is in, so 32*2 or 16*4 is faster than 8*16 or 4*256
+2021-12-02 02:46:53	causative	so the worst case would be around 277 iterations for k=2
+2021-12-02 02:47:32	Juliu	causative, the number of different values a float is able to store is NOT   max_float / min_float
+2021-12-02 02:48:46	causative	a binary range search over floating point values does not eliminate half of all floating point values at every step, it ends up being lopsided
+2021-12-02 02:48:54	Juliu	But you might still be right for a different reason
+2021-12-02 02:49:17	Juliu	Yes, true. That is the real reason
+2021-12-02 02:56:00	-->	ferdna [ferdna] (realname) (~ferdna@user/ferdna) has joined #algorithms
+2021-12-02 02:56:59	<--	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:57:00	-->	Agatha_ (Agatha) (~agatha@50.38.41.156) has joined #algorithms
+2021-12-02 02:57:00	--	Agatha_ has identified as Agatha
+2021-12-02 02:57:00	<--	Agatha_ (~agatha@50.38.41.156) has quit (Changing host)
+2021-12-02 02:57:00	-->	Agatha_ [Agatha] (Agatha) (~agatha@user/agatha) has joined #algorithms
+2021-12-02 02:59:32	<--	Agatha (~agatha@user/agatha) has quit (Ping timeout: 240 seconds)
+2021-12-02 03:00:09	Juliu	277 is constant since it does not depend on |S|
+2021-12-02 03:00:41	causative	it's way too big
+2021-12-02 03:01:15	Juliu	Then copy S into RAM like every normal person would do
+2021-12-02 03:05:05	--	Agatha_ is now known as Agatha
+2021-12-02 03:11:11	causative	you'd have much better results with a quickselect type of approach, though still the worst case is not good
+2021-12-02 03:11:31	-->	i0e [is0ke3] (is0ke3) (~is0ke3@user/is0ke3) has joined #algorithms
+2021-12-02 03:12:01	<--	zulutango (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has quit (Remote host closed the connection)
+2021-12-02 03:12:38	-->	zulutango [zulutango] (zulutango) (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has joined #algorithms
+2021-12-02 03:13:06	Juliu	Btw, you could also "round" the interval, i.e. instead of using [a, b] in each iteration, use [x, y] instead, where x is the largest value equal or smaller then a in S, and y is the smallest value equal or larger than b in S. You can find those by just 1 additional iteration over S in each iteration of the binary search
+2021-12-02 03:14:10	Juliu	That way you should only need the runtimes I posted for the k-nary searches (times 2, since you need 1 additional iteration over S each time to "round" the interval borders)
+2021-12-02 03:18:03	Juliu	Might be wrong because this way the space is not necessarily halfed each time. Not sure
+2021-12-02 03:22:15	<--	zulutango (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has quit (Remote host closed the connection)
+2021-12-02 03:22:40	-->	zulutango [zulutango] (zulutango) (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has joined #algorithms
+2021-12-02 04:33:47	<--	i0e (~is0ke3@user/is0ke3) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:35:55	-->	i0e [is0ke3] (is0ke3) (~is0ke3@user/is0ke3) has joined #algorithms
+2021-12-02 04:47:50	<--	immibis_ (~hexchat@62.156.144.218) has quit (Remote host closed the connection)
+2021-12-02 04:48:11	<--	i0e (~is0ke3@user/is0ke3) has quit (Quit: WeeChat 3.3)
+2021-12-02 04:48:35	-->	immibis_ (realname) (~hexchat@62.156.144.218) has joined #algorithms
+2021-12-02 04:48:35	--	immibis_ has identified as immibis
+2021-12-02 04:50:32	-->	i0e [is0ke3] (is0ke3) (~is0ke3@user/is0ke3) has joined #algorithms
+2021-12-02 05:00:29	-->	whatsupdoc [whatsupdoc] (Victor) (uid509081@id-509081.hampstead.irccloud.com) has joined #algorithms
+2021-12-02 05:04:28	<--	mike18_ (~geri@71-220-52-187.mpls.qwest.net) has quit (Remote host closed the connection)
+2021-12-02 05:07:02	-->	mike18 (mike18) (~geri@71-220-52-187.mpls.qwest.net) has joined #algorithms
+2021-12-02 05:11:43	<--	mike18 (~geri@71-220-52-187.mpls.qwest.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:24:13	-->	Elzington_ [Elzington] (realname) (~Elzington@static-68-235-44-10.cust.tzulo.com) has joined #algorithms
+2021-12-02 05:24:37	ksu	causative: do binary search on binary numbers in this order: sign, exponent, mantissa
+2021-12-02 05:25:55	ksu	alternatively, once all elements are of the same sign, do binary search on their ieee-754 representation
+2021-12-02 05:26:35	<--	Elzington (~Elzington@static-68-235-44-76.cust.tzulo.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:31:49	Juliu	ksu, I had also thought about doing a binary search on the binary representation of a float ... aaaannd then gave up quickly :) Nice job!
+2021-12-02 05:34:44	Juliu	ksu, since IEEE 754 single and double precision floating point numbers (i.e. floats and doubles) are stored as sign, exponent, mantissa (in that order) anyway, and we have to compare the highest-valued bits first, can't we simply compare the binary representation of the floating point numbers in their natural order, starting with the highest bit (which is the sign bit) ?
+2021-12-02 05:35:27	Juliu	I don't mean compare, I mean doing a binary search in that order
+2021-12-02 05:38:48	ksu	ieee 754 sign bit is 0 for positive numbers, 1 for negative
+2021-12-02 05:39:11	-->	mike18 (mike18) (~geri@71-220-52-187.mpls.qwest.net) has joined #algorithms
+2021-12-02 05:39:43	ksu	so you need to special-case it (flipping for the purpose of search is enough, once you deal with nans)
+2021-12-02 05:40:29	ksu	erm, no, it isn't enough :)
+2021-12-02 05:40:52	Juliu	For a float f, you could simply work on -f if that is the only problem
+2021-12-02 05:41:30	ksu	yes
+2021-12-02 05:43:17	Juliu	I'm experimenting a bit and comparing two floats A and B, and A and B casted to int or unsigned int with the comparison operators < and <=
+2021-12-02 05:43:38	Juliu	Strangely I never get any difference
+2021-12-02 05:45:46	<--	mike18 (~geri@71-220-52-187.mpls.qwest.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:47:45	ksu	this is not an accident, the standard was specifically designed to be able to compare numbers of the same sign this way
+2021-12-02 05:50:36	Juliu	Oh no, I made a mistake. I used a simple cast, instead of reinterpreting the memory as int or unsigned int. Lol
+2021-12-02 05:51:49	Juliu	ksu, was it? Interesting
+2021-12-02 05:51:57	Juliu	Very nice actually
+2021-12-02 05:53:40	ksu	i agree
+2021-12-02 05:54:16	ksu	even if some other parts of the standard are insane :P
+2021-12-02 05:55:26	<--	rustyy (~rusty@d50-92-229-34.bchsia.telus.net) has quit (Quit: leaving)
+2021-12-02 05:55:53	-->	rustyy [rustyy] (rusty) (~rusty@d50-92-229-34.bchsia.telus.net) has joined #algorithms
+2021-12-02 06:06:42	Juliu	ksu, so for floats or double A and B it is guaranteed that (A op B) is equal to (c(A) op c(B)), where op is either ==, !=, <, <=, >, >=, and c(X) gives the binary representation (i.e. an unsigned integer) of -X  ?
+2021-12-02 06:10:00	Juliu	Does not seem to work, or at least not for -1 < -2 and also not for -2 < -1
+2021-12-02 06:15:51	Juliu	Somehow my code converts -1.0f to 1.0f and then to 00111111 10000000 00000000 00000000 as binary representation. Is that correct?
+2021-12-02 06:19:32	Juliu	And -2.0f gets converted to 2.0f and then to 01000000 00000000 00000000 00000000
+2021-12-02 06:26:01	Juliu	ksu, seems it does not work when both floating point numbers are negative in the beginning. So you might have been right and proper care has to be taken with the signs. (And maybe also if a number is +/-0, +/-inf, or +/-nan)
+2021-12-02 06:28:30	ksu	for A and B of the same sign, abs(A) op abs(B) is equal to c(A) op c(B), where c(X) is binary representation of X interpreted as little endian integer
+2021-12-02 06:29:19	ksu	and your conversions are correct
+2021-12-02 06:32:27	Juliu	That's not correct. -2 < -1 is true, but abs(-2) = 2  <  abs(-1) = 1 is false
+2021-12-02 06:34:37	ksu	abs(-2.0f) > abs(-1.0f) and 0xc0000000 > 0xbf800000
+2021-12-02 06:37:39	Juliu	What are those hex numbers=
+2021-12-02 06:37:41	Juliu	?
+2021-12-02 06:39:18	ksu	0xc0000000 is 0xb01000000_00000000_00000000_00000000, 0xbf800000 is 0xb00111111_10000000_00000000_00000000
+2021-12-02 06:40:20	ksu	erm, substitute 0xb with 0b :)
+2021-12-02 06:42:25	Juliu	And what are those numbers? Now I'm condused even more
+2021-12-02 06:42:51	ksu	you gave them yourself above :)
+2021-12-02 06:44:34	Juliu	No, my numbers were different ones. Look closely. Mine were representations of 1.0f and 2.0f. Your's are representations of -1.0f and -2.0f, I see
+2021-12-02 06:46:23	ksu	ah yes, sorry
+2021-12-02 06:48:17	Juliu	Oh, I understand why my code was wrong: If not both A and B are negative, then c(-A) < c(-B) is always the same as A < B, since if A and B are both positive, the sign bit doesn't matter. And if A and B have different signs, it's still correct since the sign bits of -A and -B make it so
+2021-12-02 06:49:10	Juliu	The only problem is when A and B are both negative, since then the result of the comparison is the wrong way
+2021-12-02 06:49:41	Juliu	Anyway, you are right, with special cases for the signs it's doable
+2021-12-02 06:50:41	Juliu	(And special cases for 0, inf, and nan)
+2021-12-02 06:51:59	ksu	nans do not have a sign, zeroes and infinities do not need special-casing here
+2021-12-02 06:53:55	Juliu	ksu,   https://wandbox.org/permlink/MtMXXiofxhVLEWBy
+2021-12-02 06:56:28	Juliu	Zero needs a special case since (c(-0.0f) == c(0.0f)) is false, but (-0.0f == 0.0f) is true, and they should both be true
+2021-12-02 06:57:20	<--	seninha (~seninha@user/seninha) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:59:16	Juliu	But it's still nice that you can compare positive numbers easily that way, and can even do a binary search over the 31 bits of a positive float
+2021-12-02 06:59:38	Juliu	(And with special cases also over all 32 or 64 bits)
+2021-12-02 07:02:04	-->	seninha [seninha] (realname) (~seninha@user/seninha) has joined #algorithms
+2021-12-02 07:02:44	<--	soapsudsxx (~soapsudsx@209.221.40.158) has quit (Remote host closed the connection)
+2021-12-02 07:03:33	-->	jazzy2 [jaziz] (jazzy3) (~jaziz@user/jaziz) has joined #algorithms
+2021-12-02 07:06:41	<--	jazzy (~jaziz@user/jaziz) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:08:31	<--	jazzy2 (~jaziz@user/jaziz) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:12:54	-->	jazzy [jaziz] (jazzy3) (~jaziz@user/jaziz) has joined #algorithms
+2021-12-02 07:15:36	<--	addem_ (~addem@2600:1700:1066:2a10::25) has quit (Remote host closed the connection)
+2021-12-02 07:17:03	-->	jazzy2 [jaziz] (jazzy3) (~jaziz@user/jaziz) has joined #algorithms
+2021-12-02 07:17:41	<--	jazzy (~jaziz@user/jaziz) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:20:15	-->	jazzy3 [jaziz] (jazzy3) (~jaziz@user/jaziz) has joined #algorithms
+2021-12-02 07:22:05	<--	jazzy2 (~jaziz@user/jaziz) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:28:31	<--	jazzy3 (~jaziz@user/jaziz) has quit (Read error: Connection reset by peer)
+2021-12-02 07:28:55	-->	jazzy3 [jaziz] (jazzy3) (~jaziz@user/jaziz) has joined #algorithms
+2021-12-02 07:43:05	<--	seninha (~seninha@user/seninha) has quit (Quit: Leaving)
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:52	-->	mrmanner (mrmanner@98.128.201.128) has joined #algorithms
+2021-12-02 08:09:52	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-02 08:09:52	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-12-02 08:09:52	--	Channel #algorithms: 178 nicks (1 op, 0 voices, 177 normals)
+2021-12-02 08:10:14	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-12-02 08:14:31	<--	i0e (~is0ke3@user/is0ke3) has quit (Ping timeout: 252 seconds)
+2021-12-02 08:16:39	-->	i0e [is0ke3] (is0ke3) (~is0ke3@user/is0ke3) has joined #algorithms
+2021-12-02 08:18:54	<--	seninha (~seninha@user/seninha) has quit (Quit: Leaving)
+2021-12-02 08:20:36	-->	jazzy [jaziz] (jazzy3) (~jaziz@user/jaziz) has joined #algorithms
+2021-12-02 08:22:35	<--	jazzy3 (~jaziz@user/jaziz) has quit (Ping timeout: 252 seconds)
+2021-12-02 08:24:38	<--	ferdna (~ferdna@user/ferdna) has quit (Quit: Leaving)
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:17	-->	mrmanner (mrmanner@90.235.13.15) has joined #algorithms
+2021-12-02 21:03:17	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-02 21:03:17	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-12-02 21:03:18	--	Channel #algorithms: 188 nicks (1 op, 0 voices, 187 normals)
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:47	-->	mrmanner (mrmanner@90.235.13.15) has joined #algorithms
+2021-12-02 21:04:47	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-02 21:04:47	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-12-02 21:04:48	--	Channel #algorithms: 188 nicks (1 op, 0 voices, 187 normals)
+2021-12-02 21:05:58	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:27	-->	mrmanner (mrmanner@90.235.13.15) has joined #algorithms
+2021-12-02 21:11:27	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-02 21:11:27	--	Topic set by susam on mån, 05 jul 2021 20:53:29
+2021-12-02 21:11:27	--	Channel #algorithms: 189 nicks (1 op, 0 voices, 188 normals)
+2021-12-02 21:12:02	--	Channel created on ons, 19 maj 2021 16:40:34
+2021-12-02 21:23:07	-->	ZacSharp [ZacSharp] ([https://web.libera.chat] ZacSharp) (~ZacSharp@user/zacsharp) has joined #algorithms
+2021-12-02 21:23:55	<--	dohtem (uid524096@user/dohtem) has quit (Quit: Connection closed for inactivity)
+2021-12-02 21:28:45	-->	mrmanner (mrmanner@90.235.13.15) has joined #algorithms
+2021-12-02 21:28:45	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-02 21:30:11	<--	ScreamInBlue_ (~john@2a01:cb10:8273:b800:f027:f9f6:1cf7:50c0) has quit (Ping timeout: 252 seconds)
+2021-12-02 21:50:37	--	irc: disconnected from server
+2021-12-02 21:50:46	-->	mrmanner (mrmanner@98.128.201.128) has joined #algorithms
+2021-12-02 21:50:46	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-02 21:56:58	<--	ZacSharp (~ZacSharp@user/zacsharp) has quit (Quit: Client closed)
+2021-12-02 22:02:28	<--	mike18_ (~geri@71-220-52-187.mpls.qwest.net) has quit (Remote host closed the connection)
+2021-12-02 22:02:55	-->	mike18 (mike18) (~geri@216.200.232.252) has joined #algorithms
+2021-12-02 22:05:01	<--	imp (~imp@192-141-191-227.alternativaip.net.br) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:05:41	-->	ZacSharp [ZacSharp] ([https://web.libera.chat] ZacSharp) (~ZacSharp@user/zacsharp) has joined #algorithms
+2021-12-02 22:05:54	-->	imp [imp] (imp) (~imp@192-141-191-227.alternativaip.net.br) has joined #algorithms
+2021-12-02 22:09:51	--	Malvolio has unidentified
+2021-12-02 22:09:51	<--	Malvolio (~Malvolio@user/malvolio) has quit (Killed (tantalum.libera.chat (Nickname regained by services)))
+2021-12-02 22:15:05	-->	dohtem [dOhtem] (dohtem) (uid524096@user/dohtem) has joined #algorithms
+2021-12-02 22:16:40	<--	jess (~jess@libera/staff/jess) has quit
+2021-12-02 22:17:09	-->	Malvolio [Malvolio] (Malvolio) (~Malvolio@user/malvolio) has joined #algorithms
+2021-12-02 22:25:45	-->	mike18_ (mike18) (~geri@71-220-52-187.mpls.qwest.net) has joined #algorithms
+2021-12-02 22:29:13	<--	mike18 (~geri@216.200.232.252) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:31:03	<--	torbjornsd (~torbjorns@213.158.35.13) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:32:05	-->	torbjornsd (realname) (~torbjorns@213.158.35.13) has joined #algorithms
+2021-12-02 22:49:17	<--	torbjornsd (~torbjorns@213.158.35.13) has quit (Quit: Leaving)
+2021-12-02 23:00:06	<--	seninha (~seninha@user/seninha) has quit (Quit: Leaving)
+2021-12-02 23:02:25	<--	qedders (~qedders@132.76.61.51) has quit (Remote host closed the connection)
+2021-12-02 23:08:52	-->	abrantesasf [abrantesasf] (abrantesasf) (~abrantesa@187.36.170.211) has joined #algorithms
+2021-12-02 23:10:34	-->	seninha [seninha] (realname) (~seninha@user/seninha) has joined #algorithms
+2021-12-02 23:17:52	-->	caveman [caveman] (caveman) (~caveman@gateway/tor-sasl/caveman) has joined #algorithms
+2021-12-02 23:23:41	<--	rnsanchez (~rnsanchez@2804:14d:8a81:94a4:8ccf:d40:d4e6:2ebe) has quit (Ping timeout: 268 seconds)
+2021-12-02 23:27:36	-->	rnsanchez [rnsanchez] (Ricardo Nabinger Sanchez) (~rnsanchez@2804:14d:8a81:94a4:8ccf:d40:d4e6:2ebe) has joined #algorithms
+2021-12-02 23:30:26	-->	ZacSharp20 [ZacSharp] ([https://web.libera.chat] ZacSharp) (~ZacSharp@user/zacsharp) has joined #algorithms
+2021-12-02 23:33:54	<--	ZacSharp (~ZacSharp@user/zacsharp) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:35:48	<--	BUSY (~BUSY@user/busy) has quit (Remote host closed the connection)
+2021-12-03 00:01:56	--	spynxic has identified as spynxic
+2021-12-03 00:05:46	<--	caveman (~caveman@gateway/tor-sasl/caveman) has quit (Quit: caveman)
+2021-12-03 00:08:19	<--	lilgopher (~textual@2601:241:8000:38f0:8143:8523:7b45:dec8) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-03 00:09:41	-->	caveman [caveman] (caveman) (~caveman@gateway/tor-sasl/caveman) has joined #algorithms
+2021-12-03 00:14:27	<--	Juliu (~Juliu@2a02:810b:c640:3ec0:e42e:1c87:feed:ec28) has quit (Quit: Leaving)
+2021-12-03 00:21:28	-->	soapsudsxx [soapsudsxx] (kristian) (~soapsudsx@209.221.40.158) has joined #algorithms
+2021-12-03 00:31:19	<--	pulse (~pulse@user/pulse) has quit (Quit: Join a community of rain shamans at https://indiedevs.net/)
+2021-12-03 00:31:48	<--	ZacSharp20 (~ZacSharp@user/zacsharp) has quit (Quit: ZacSharp20)
+2021-12-03 00:39:18	<--	palasso (~palasso@user/palasso) has quit (Remote host closed the connection)
+2021-12-03 01:00:02	<--	Libero (~Libero@130.43.23.56.dsl.dyn.forthnet.gr) has quit (Read error: Connection reset by peer)
+2021-12-03 01:04:05	-->	BUSY [BUSY] (realname) (~BUSY@user/busy) has joined #algorithms
+2021-12-03 01:16:41	<--	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has quit (Quit: WeeChat 3.3)
+2021-12-03 01:40:30	-->	smallville7123 [smallville7123] (smallville7123) (~smallvill@cpe-172-193-72-46.qld.foxtel.net.au) has joined #algorithms
+2021-12-03 01:46:29	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:46:43	-->	ferdna [ferdna] (realname) (~ferdna@user/ferdna) has joined #algorithms
+2021-12-03 12:21:15	--	irc: disconnected from server
+2021-12-03 12:21:32	-->	mrmanner (mrmanner@90.235.13.15) has joined #algorithms
+2021-12-03 12:21:32	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-03 04:10:27	asd	https://c.be.sexy/best-within-border.html # can this be done better than O(n^2) ? 
+2021-12-03 04:24:07	cherim	This can be done in O(n)
+2021-12-03 04:25:19	cherim	There is some irrelevant extra here with values being integers and the allowed variation 5 being small, which may invite some stupid solutions
+2021-12-03 04:26:25	cherim	But even if you give the allowed maximum variation as a float parameter d in input and all the values are also floats, the problem is still doable in O(n)
+2021-12-03 04:26:58	asd	O(n)? really? I dont see how
+2021-12-03 04:28:25	asd	im not looking for those crazy types of hacks i find on cses, im trying to stick to regular/general knowledge and clean code
+2021-12-03 04:28:55	cherim	What is a hack when the question is about O()?
+2021-12-03 04:29:40	cherim	There is a very detailed exposition in https://www.dropbox.com/s/oek36m27ha12yo8/looking-for-a-challenge.djvu , p.41 onwards ("Pilots" problem)
+2021-12-03 04:30:10	asd	well i guess that means different things to different people. but i think i've seen some solutions that had large tables with precalculated tables to gain some speed
+2021-12-03 04:31:08	cherim	Precomputation also counts towards O(), it's not some free extra
+2021-12-03 04:31:28	cherim	If you can find some precomputation that helps, it's perfectly OK
+2021-12-03 04:32:18	cherim	The book I linked is probably one of the best texts on competitive programming and it certainly says more words on the problem than I can say on IRC, so I strongly suggest you at least take a look
+2021-12-03 04:32:56	cherim	Also compare the level of exposition with junk resources like G4G that people keep mentioning
+2021-12-03 04:36:53	asd	seems like a nice book, might've been exactly what ive been looking for considering googling hints has been a very poor experience for me
+2021-12-03 04:38:53	cherim	Note, however, that this a sort of a "collection of gems", not the way to quickly fill the basics; but what is done there, is done properly.
+2021-12-03 04:40:27	asd	it is very thourough, to the point where it's distracting me from what im suppose to be doing, ill have a read and see if i need more help :)
+2021-12-03 04:41:31	cherim	OK. I can explain O(nlogn) or O(n) in several lines if needed later.
+2021-12-03 04:41:51	asd	my djvu ready is not well equipped for browsing the book. but where is "t-stable" described? would i need to do pre-processing?
+2021-12-03 04:43:18	asd	*my djvu reader
+2021-12-03 04:43:19	cherim	In the second line of "Solution" it goes "We say that the segment [i, j] is t-stable..." Is this what you are asking about?
+2021-12-03 04:43:29	asd	yes
+2021-12-03 04:43:49	cherim	But it's the definition
+2021-12-03 04:44:26	cherim	"t-stable" = "satisfies the requirement of..."
+2021-12-03 04:49:43	asd	took my a couple of tries to understand it, but i think i get it
+2021-12-03 04:49:55	asd	(referring to t-stable definiton)
+2021-12-03 04:50:32	cherim	I thought you were done with the whole chapter at first, that's pretty fast :)
+2021-12-03 04:51:18	asd	haha i wish, im stupid when it comes to reading books
+2021-12-03 04:54:34	asd	wait will this work with negative numbers?
+2021-12-03 04:58:15	cherim	It shouldn't use anything beyond min, max, and subtraction, so will work with any object that supports those
+2021-12-03 04:59:08	cherim	But even if you had some weird algorithm requiring positivity, you can always shift all values up by maximum +|M|, variations |x[i]-x[j]| won't be affected
+2021-12-03 04:59:33	asd	oh thats a neat trick i should remember
+2021-12-03 05:20:31	asd	hmm, wouldn't sliding window work for this problem in particular?
+2021-12-03 05:21:25	cherim	All solutions here are based on sliding windows
+2021-12-03 05:22:15	asd	i should learn sliding windows sometime ._.
+2021-12-03 05:26:38	asd	does c++ have a bi-queue?
+2021-12-03 05:26:49	cherim	deque?
+2021-12-03 05:38:52	asd	deque< pair<int,int> > foo(); foo.front().first(); // how do i read the pair from the queue in c++ ?
+2021-12-03 05:42:48	asd	the parenthesis was the problem i guess
+2021-12-03 06:11:01	asd	i tried writing the O(n log n) version and the O(n) none of them seem to work :(
+2021-12-03 08:01:44	fef	isnt sliding window is O(N)
+2021-12-03 12:22:37	--	irc: disconnected from server
+2021-12-03 12:22:54	-->	mrmanner (mrmanner@90.235.13.15) has joined #algorithms
+2021-12-03 12:22:54	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-03 12:34:53	<--	dohtem (uid524096@user/dohtem) has quit (Quit: Connection closed for inactivity)
+2021-12-03 12:42:37	-->	Trieste_ [pilgrim] (T) (T@user/pilgrim) has joined #algorithms
+2021-12-03 12:43:11	<--	Trieste (T@user/pilgrim) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:46:00	--	Trieste_ is now known as Trieste
+2021-12-03 12:46:22	<--	whatsupdoc (uid509081@id-509081.hampstead.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-03 12:52:25	-->	seninha [seninha] (realname) (~seninha@user/seninha) has joined #algorithms
+2021-12-03 12:59:13	<--	yamchah2 (~yamchah2@user/yamchah2) has quit (Remote host closed the connection)
+2021-12-03 12:59:34	-->	yamchah2 [yamchah2] (yamchah2) (~yamchah2@user/yamchah2) has joined #algorithms
+2021-12-03 13:08:34	<--	_flood (flooded@gateway/vpn/protonvpn/flood/x-43489060) has quit (Remote host closed the connection)
+2021-12-03 20:17:22	--	irc: disconnected from server
+2021-12-03 20:17:35	-->	mrmanner (mrmanner@98.128.201.128) has joined #algorithms
+2021-12-03 20:17:35	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-03 18:14:41	lpapp	asd: hi, that is basic c++ question for deque, better-suited for #c++-general :)
+2021-12-03 19:56:13	lpapp	now, I can practice algos and DS full-time, finally \o/
+2021-12-03 19:58:27	shugo_	hi
+2021-12-03 19:58:44	shugo_	i have this question https://0x0.st/-hfm.png
+2021-12-03 19:59:36	shugo_	of which this is my attempt to solution https://0x0.st/-hfa.cpp
+2021-12-03 20:00:15	shugo_	can anyone pls point out out my mistake or suggest what i might be doing wrong
+2021-12-03 20:06:17	fef	lpapp, congrats
+2021-12-03 20:19:02	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:46	-->	mrmanner (mrmanner@98.128.201.128) has joined #algorithms
+2021-12-03 20:19:46	--	Topic for #algorithms is "Just ask your full question, then wait! | Discuss algorithms, data structures, computer programming contest problems, etc. | Use a pastebin such as https://plaster.tymoon.eu/ to share code. | Use http://mathb.in/ to share math. | Don't be sorry for your bad English: https://goo.gl/xZkzh1"
+2021-12-03 20:21:01	ksu	shugo_: in the h == v == 0 case, you give length 0, but bitstring of length 1
+2021-12-03 20:23:36	-->	jethro_ [jethro_] (realname) (~jethro_@cpc147188-rdng25-2-0-cust423.15-3.cable.virginm.net) has joined #algorithms
+2021-12-03 20:26:44	ksu	also, in the h > v case, your bitstring is supposed to have exactly v valleys, but has h - 1
+2021-12-03 20:32:00	<--	average (uid473595@user/average) has quit (Quit: Connection closed for inactivity)
+2021-12-03 20:36:44	<--	jethro_ (~jethro_@cpc147188-rdng25-2-0-cust423.15-3.cable.virginm.net) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:44:53	<--	dohtem (uid524096@user/dohtem) has quit (Quit: Connection closed for inactivity)
+2021-12-03 20:45:57	-->	rvalue [rvalue] (ZNC - https://znc.in) (~rvalue@user/rvalue) has joined #algorithms
+2021-12-03 20:45:58	-->	abrantesasf [abrantesasf] (abrantesasf) (~abrantesa@187.36.170.211) has joined #algorithms
+2021-12-03 20:53:03	-->	nvmd [nvmd] (Pedro) (~nvmd@user/nvmd) has joined #algorithms

@@ -1,0 +1,17 @@
+2021-10-13 11:29:03	Carl	A group is asking me if we can get a list which members (the last couple of months) was added through the public reg form and who was added manually by the member admin. The reason is that they have added to many members and need to remove some.
+2021-10-13 12:14:20	russ	Not sure if there's a way to see that in the system today, but it's something I could find out in the database, because when someone uses public reg or API there's no "updated by" stamp, since (normally) nobody was logged in when it was added
+2021-10-13 13:29:11	Carl	ok I'll give you a list in a ticket :slightly_smiling_face: (edited)
+2021-10-14 15:56:47	Carl	Is the e-mail template membership_reject used in any other case then when someone is removed from the waitinglist?
+2021-10-14 22:38:46	russ	Any time the "reject" action is called, so I guess it could be waiting list or waiting approval list
+2021-10-15 09:42:54	Carl	Ok good Im going to rewrite the message to sound a little bit nicer
+2021-10-15 12:50:26	tom.lantz	Can we duplicate a project and include the participants?
+2021-10-15 12:50:26	         	If not. Will giving all participants a role in the project give the same effect?
+2021-10-15 12:50:26	         	again if this is not the chase. Could you trigger a duplicate project task that also includes participants? @russ*
+2021-10-15 13:02:45	russ	There are no participants in the tasks right now but I guess they could be added... Depends on complexity I guess, like direct participants is pretty easy but are we talking about copying registration form responses etc. Too? If we copy role members today then that would not include the participant status, just the role record.
+2021-10-15 13:37:40	Carl	Isnt it possible to sort out the leaders for a specific age group on a emaillist on org level?
+2021-10-15 13:42:39	tom.lantz	ok, this is a situation where a project wants to split a registration in to as the original registration resulted in to many particiants. they solved it by making it into two separate weekends and now they want to have that morrored in Min speiding.
+2021-10-15 13:43:39	tom.lantz	So basically the need would be to copy/paste everything about a project.
+2021-10-15 13:43:39	         	I will tell them that this is not possible... Maybe we will solve it with subprojects of some sort...
+2021-10-15 13:43:59	tom.lantz	It is alot of praticipants so manually is almost not a option...
+2021-10-17 20:53:37	mrmanner	Is the setting "exclude from reminders" that is available on individual invoice lines super-admin only or is it safe for me to use in my role as group admin?
+2021-12-02 16:02:02	Carl	Me and @tom.lantz will think about this next week :slightly_smiling_face:

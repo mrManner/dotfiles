@@ -1,0 +1,1638 @@
+2021-10-13 00:07:18	-->	mrmanner (~jmanner@user/mrmanner) has joined #fedora
+2021-10-13 00:07:18	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-13 00:07:18	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:49:00
+2021-10-13 00:07:18	--	Channel #fedora: 1426 nicks (2 ops, 737 voices, 687 normals)
+2021-10-13 00:07:18	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-13 00:07:20	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-13 00:08:35	-->	srv (~cmd@user/srv) has joined #fedora
+2021-10-13 00:08:44	<--	ljavorsk (~Adium@ip-85-160-41-201.eurotel.cz) has quit (Quit: Leaving.)
+2021-10-13 00:09:04	<--	leogallego (~leogalleg@45-8-245-190.fibertel.com.ar) has quit (Quit: Vermouth con papas fritas y good show!)
+2021-10-13 00:12:00	<--	uvolmer (~uvolmer@2001-4dd0-212c-82-e069-f5f7-ab7b-8443.ipv6dyn.netcologne.de) has quit (Ping timeout: 268 seconds)
+2021-10-13 00:12:11	-->	nx_ (~nitronix@5.29.23.150) has joined #fedora
+2021-10-13 00:12:35	<--	kk4ewt (~notfred@fedora/Southern-Gentlem) has quit (Remote host closed the connection)
+2021-10-13 00:12:57	-->	kk4ewt (~notfred@216.30.159.134) has joined #fedora
+2021-10-13 00:12:57	<--	kk4ewt (~notfred@216.30.159.134) has quit (Changing host)
+2021-10-13 00:12:57	-->	kk4ewt (~notfred@fedora/Southern-Gentlem) has joined #fedora
+2021-10-13 00:13:19	<--	LiaoTao (~LiaoTao@gateway/tor-sasl/liaotao) has quit (Remote host closed the connection)
+2021-10-13 00:13:52	-->	LiaoTao (~LiaoTao@gateway/tor-sasl/liaotao) has joined #fedora
+2021-10-13 00:22:02	-->	analbleeding (b9bf7c8f@67.205.143.82) has joined #fedora
+2021-10-13 00:22:36	<--	aday (~aday@188.234.93.209.dyn.plus.net) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:23:35	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-10-13 00:25:20	<--	csmith (~csmith@user/csmith) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-10-13 00:26:14	-->	chasmo77 (~chas77@71.63.241.168) has joined #fedora
+2021-10-13 00:26:32	-->	csmith (~csmith@user/csmith) has joined #fedora
+2021-10-13 00:26:58	-->	Vilegent (~notfred@216.30.159.134) has joined #fedora
+2021-10-13 00:27:11	<--	Vilegent (~notfred@216.30.159.134) has quit (Remote host closed the connection)
+2021-10-13 00:27:58	<--	kk4ewt (~notfred@fedora/Southern-Gentlem) has quit (Ping timeout: 252 seconds)
+2021-10-13 00:29:56	<--	unlaudable (~unlaudabl@155.93.175.230) has quit (Ping timeout: 256 seconds)
+2021-10-13 00:31:21	<--	DyDyMan (~DyDyMan@16.red-88-16-166.dynamicip.rima-tde.net) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:39:18	-->	p0indexter (~alpha@user/p0indexter) has joined #fedora
+2021-10-13 00:41:37	--	irc: disconnected from server
+2021-10-13 00:42:00	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #fedora
+2021-10-13 00:42:01	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-13 00:42:01	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:49:00
+2021-10-13 00:42:01	--	Channel #fedora: 1423 nicks (2 ops, 737 voices, 684 normals)
+2021-10-13 00:42:03	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-13 00:42:04	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-13 00:42:36	<--	u^A|fedora (~allberto@2001:e68:805c:d700:c0ea:e526:6615:f53d) has quit (Remote host closed the connection)
+2021-10-13 00:46:21	<--	analbleeding (b9bf7c8f@67.205.143.82) has left #fedora
+2021-10-13 00:46:33	<--	Strom (strom@fedora/strom) has quit
+2021-10-13 00:48:09	-->	Strom (strom@fedora/strom) has joined #fedora
+2021-10-13 00:57:28	@fedbot	*** F34-20211001 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-10-13 00:59:33	-->	mattil (~mattil@87-92-67-65.bb.dnainternet.fi) has joined #fedora
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:02:23	-->	CodePoint (~CodePoint@2600:1700:3070:3790:cced:c365:caec:cb99) has joined #fedora
+2021-10-13 01:02:46	-->	kk4ewt (~notfred@216.30.159.134) has joined #fedora
+2021-10-13 01:02:46	<--	kk4ewt (~notfred@216.30.159.134) has quit (Changing host)
+2021-10-13 01:02:46	-->	kk4ewt (~notfred@fedora/Southern-Gentlem) has joined #fedora
+2021-10-13 01:04:10	<--	mattil (~mattil@87-92-67-65.bb.dnainternet.fi) has quit (Ping timeout: 265 seconds)
+2021-10-13 01:05:43	<--	norbertus (~weechat@37.161.63.81) has quit (Quit: Leaving.)
+2021-10-13 01:06:42	<--	sherm (~shorton@pool-108-26-147-200.bstnma.fios.verizon.net) has quit (Quit: WeeChat 3.2)
+2021-10-13 01:07:25	<--	TheHermann (~TheHerman@gateway/tor-sasl/thehermann) has quit (Quit: Leaving)
+2021-10-13 01:13:26	<--	gr33nR10t (~greenriot@user/gr33nr10t) has quit (Ping timeout: 246 seconds)
+2021-10-13 01:15:23	-->	gr33nR10t (~greenriot@user/gr33nr10t) has joined #fedora
+2021-10-13 01:17:39	<--	aleasto (~aleasto@host-79-25-157-136.retail.telecomitalia.it) has quit (Quit: Konversation terminated!)
+2021-10-13 01:19:48	-->	lepke (~lepke@user/lepke) has joined #fedora
+2021-10-13 01:20:19	<--	ynhuser|0521394 (~thelounge@c-73-126-128-95.hsd1.ct.comcast.net) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-13 01:20:51	<--	LiaoTao (~LiaoTao@gateway/tor-sasl/liaotao) has quit (Ping timeout: 276 seconds)
+2021-10-13 01:21:18	-->	LiaoTao (~LiaoTao@gateway/tor-sasl/liaotao) has joined #fedora
+2021-10-13 01:22:32	<--	qlixed (~qlixed@181.44.129.13) has quit (Ping timeout: 265 seconds)
+2021-10-13 01:24:06	<--	inhetep (~lepke@user/lepke) has quit (Ping timeout: 276 seconds)
+2021-10-13 01:27:14	-->	honli (~honli@119.254.120.72) has joined #fedora
+2021-10-13 01:30:53	-->	ynhuser|0521394 (~thelounge@c-73-126-128-95.hsd1.ct.comcast.net) has joined #fedora
+2021-10-13 01:31:21	-->	CodePoint_ (~CodePoint@107-208-128-79.lightspeed.tukrga.sbcglobal.net) has joined #fedora
+2021-10-13 01:32:57	<--	dowdle (~dowdle@fedora/dowdle) has quit (Quit: Konversation terminated!)
+2021-10-13 01:34:16	<--	CodePoint (~CodePoint@2600:1700:3070:3790:cced:c365:caec:cb99) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:36:21	<--	CodePoint_ (~CodePoint@107-208-128-79.lightspeed.tukrga.sbcglobal.net) has quit (Quit: CodePoint_)
+2021-10-13 01:40:53	-->	zumba_addict (~zumba_add@c-71-194-58-34.hsd1.il.comcast.net) has joined #fedora
+2021-10-13 01:41:21	<--	jwisbell35 (~jwisbell3@047-036-214-124.res.spectrum.com) has quit (Quit: Leaving)
+2021-10-13 01:41:36	-->	jwisbell35 (~jwisbell3@047-036-214-124.res.spectrum.com) has joined #fedora
+2021-10-13 01:44:14	-->	DrBrownBear (~DrBrownbe@2600:1700:9aa1:6bc0:5468:7d82:1f0a:58a1) has joined #fedora
+2021-10-13 01:45:21	<--	p0indexter (~alpha@user/p0indexter) has quit (Quit: ars longa vita brevis)
+2021-10-13 01:48:37	-->	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has joined #fedora
+2021-10-13 01:49:07	<--	kk4ewt (~notfred@fedora/Southern-Gentlem) has quit (Ping timeout: 265 seconds)
+2021-10-13 01:49:57	-->	kk4ewt (~notfred@216.30.159.134) has joined #fedora
+2021-10-13 01:49:57	<--	kk4ewt (~notfred@216.30.159.134) has quit (Changing host)
+2021-10-13 01:49:57	-->	kk4ewt (~notfred@fedora/Southern-Gentlem) has joined #fedora
+2021-10-13 01:55:18	-->	icy_hot (~irc@24.162.32.121) has joined #fedora
+2021-10-13 01:58:33	+Mershl	F35 (uptodate) just completly crashed with the following error:... (full message at https://libera.ems.host/_matrix/media/r0/download/libera.chat/c709a61d2a665326fd3238d867fe75eada9b28de)
+2021-10-13 02:00:26	<--	eherget (~eherget@136.56.142.71) has quit (Quit: Leaving)
+2021-10-13 02:05:29	<--	plarsen (~plarsen@fedora/plarsen) has quit (Remote host closed the connection)
+2021-10-13 02:08:26	-->	mutk (~mutk@117-20-70-34.751446.bne.nbn.aussiebb.net) has joined #fedora
+2021-10-13 02:17:26	<--	dan01 (~dan01@84.117.188.145) has quit (Read error: Connection reset by peer)
+2021-10-13 02:18:36	<--	bhoman (~bhoman@pool-74-102-26-111.nwrknj.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2021-10-13 02:21:50	<--	AsenMx (~AsenMx@78.90.248.234) has quit (Ping timeout: 260 seconds)
+2021-10-13 02:26:46	-->	bhoman (~bhoman@pool-74-102-26-111.nwrknj.fios.verizon.net) has joined #fedora
+2021-10-13 02:28:17	<--	jeffgus (~jeffgus@hepburn.tv-digital.net) has quit (Ping timeout: 268 seconds)
+2021-10-13 02:31:07	<--	drdesquire_ (~drlp@2601:4c0:4180:3750:a71d:815c:bb15:7d29) has quit (Quit: Konversation terminated!)
+2021-10-13 02:31:31	-->	drdesquire_ (~drlp@2601:4c0:4180:3750:a71d:815c:bb15:7d29) has joined #fedora
+2021-10-13 02:33:31	<--	beggi_ (~beggi@nova-153-092-157-089.cpe.novanet.is) has quit (Read error: Connection reset by peer)
+2021-10-13 02:34:02	-->	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has joined #fedora
+2021-10-13 02:36:29	<--	bhoman (~bhoman@pool-74-102-26-111.nwrknj.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2021-10-13 02:38:05	-->	bhoman (~bhoman@pool-74-102-26-111.nwrknj.fios.verizon.net) has joined #fedora
+2021-10-13 02:40:10	<--	nx_ (~nitronix@5.29.23.150) has quit (Ping timeout: 260 seconds)
+2021-10-13 02:48:00	Khaytsus	Mershl: Not really much of an error there...  surely there was more
+2021-10-13 02:50:02	-->	brainfreeze (~brainfree@2a03:1b20:4:f011::20d) has joined #fedora
+2021-10-13 02:53:59	-->	hammock (~Hammock@2600:1700:19a1:3330::588) has joined #fedora
+2021-10-13 02:54:15	-->	daMaestro (~damaestro@fedora/daMaestro) has joined #fedora
+2021-10-13 02:54:19	<--	GrannyGoose (~GrannyGoo@2001:8003:c834:fd01:a4ec:e357:5aa3:c987) has quit (Quit: Leaving)
+2021-10-13 02:54:52	<--	srv (~cmd@user/srv) has quit (Quit: Leaving)
+2021-10-13 02:55:03	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-10-13 02:57:29	@fedbot	*** F34-20211001 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-10-13 02:57:40	-->	chrisklinger (~Thunderbi@2603:3020:2602:3000::b160) has joined #fedora
+2021-10-13 03:00:00	-->	qlixed (~qlixed@181.44.129.13) has joined #fedora
+2021-10-13 03:00:04	<--	qlixed (~qlixed@181.44.129.13) has quit (Remote host closed the connection)
+2021-10-13 03:02:45	<--	Candido_ruminant (~candidoru@2804:14d:baa1:954e::f851) has quit (Quit: Leaving)
+2021-10-13 03:11:24	-->	baboo (~Thunderbi@2603-7000-2644-d300-547e-d8dc-643a-4cd1.res6.spectrum.com) has joined #fedora
+2021-10-13 03:12:18	-->	jeffgus (~jeffgus@hepburn.tv-digital.net) has joined #fedora
+2021-10-13 03:13:24	<--	drdesquire_ (~drlp@2601:4c0:4180:3750:a71d:815c:bb15:7d29) has quit (Quit: Konversation terminated!)
+2021-10-13 03:21:55	<--	rbutler1728 (~rbutlerc1@217.140.102.13) has quit (Read error: Connection reset by peer)
+2021-10-13 03:23:55	-->	highgogo (~Thunderbi@2408:8207:1867:1ea0:956d:17d5:6f8d:a10e) has joined #fedora
+2021-10-13 03:25:27	<--	highgogo (~Thunderbi@2408:8207:1867:1ea0:956d:17d5:6f8d:a10e) has quit (Client Quit)
+2021-10-13 03:25:29	-->	GrannyGoose (~GrannyGoo@2001:8003:c834:fd01:a4ec:e357:5aa3:c987) has joined #fedora
+2021-10-13 03:28:42	<--	baboo (~Thunderbi@2603-7000-2644-d300-547e-d8dc-643a-4cd1.res6.spectrum.com) has quit (Quit: baboo)
+2021-10-13 03:30:09	<--	jf_simon (~quassel@200116b840673200ba27ebfffe291835.dip.versatel-1u1.de) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-10-13 03:40:08	-->	jf_simon (~quassel@200116b840673200ba27ebfffe291835.dip.versatel-1u1.de) has joined #fedora
+2021-10-13 03:41:20	<--	kiril (~kiril@85.91.153.163) has quit (Quit: ZNC - https://znc.in)
+2021-10-13 03:41:32	-->	kiril (~kiril@85.91.153.163) has joined #fedora
+2021-10-13 03:41:47	-->	Dmitri[m] (~dimitruma@2001:470:69fc:105::1:1805) has joined #fedora
+2021-10-13 03:41:47	--	Mode #fedora [+v Dmitri[m]] by ChanServ
+2021-10-13 03:42:51	<--	Dmitri[m] (~dimitruma@2001:470:69fc:105::1:1805) has left #fedora
+2021-10-13 03:52:22	<--	jhns (~johannes@dynamic-089-012-141-222.89.12.pool.telefonica.de) has quit (Ping timeout: 260 seconds)
+2021-10-13 03:52:45	<--	cpluspunch (~znc@66.115.147.182) has quit (Ping timeout: 250 seconds)
+2021-10-13 03:53:31	-->	cpluspunch (~znc@104.200.132.249) has joined #fedora
+2021-10-13 03:54:09	-->	jhns (~johannes@dynamic-089-014-075-217.89.14.pool.telefonica.de) has joined #fedora
+2021-10-13 04:00:02	<--	deavmi (~tbk@user/deavmi) has quit (Read error: Connection reset by peer)
+2021-10-13 04:00:51	<--	zumba_addict (~zumba_add@c-71-194-58-34.hsd1.il.comcast.net) has quit (Quit: Client closed)
+2021-10-13 04:03:52	<--	donofrio (~donofrio@c-68-40-123-74.hsd1.mi.comcast.net) has quit (Remote host closed the connection)
+2021-10-13 04:04:37	<--	tschan (~tschan@p57a86108.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:05:06	-->	donofrio (~donofrio@c-68-40-123-74.hsd1.mi.comcast.net) has joined #fedora
+2021-10-13 04:05:56	-->	deavmi (~tbk@user/deavmi) has joined #fedora
+2021-10-13 04:10:10	-->	tschan (~tschan@p57a865e9.dip0.t-ipconnect.de) has joined #fedora
+2021-10-13 04:12:15	<--	mymindstorm (~Thunderbi@cpe-70-121-73-120.austin.res.rr.com) has quit (Ping timeout: 250 seconds)
+2021-10-13 04:20:56	<--	kk4ewt (~notfred@fedora/Southern-Gentlem) has quit (Ping timeout: 245 seconds)
+2021-10-13 04:22:27	-->	kk4ewt (~notfred@216.30.159.134) has joined #fedora
+2021-10-13 04:22:27	<--	kk4ewt (~notfred@216.30.159.134) has quit (Changing host)
+2021-10-13 04:22:27	-->	kk4ewt (~notfred@fedora/Southern-Gentlem) has joined #fedora
+2021-10-13 04:33:16	-->	lord_helmet (~lordhelme@8-40-48-229.dynamic.skybest.com) has joined #fedora
+2021-10-13 04:48:17	<--	nmy (~nmy@user/nomasteryoda) has quit (Quit: breathing!)
+2021-10-13 04:53:02	<--	giesen (~ggiesen@ego.giesen.me) has quit (Ping timeout: 260 seconds)
+2021-10-13 04:54:07	-->	giesen (~ggiesen@ego.giesen.me) has joined #fedora
+2021-10-13 04:56:14	<--	eddiejennings (~eddiejenn@136.55.139.140) has quit (Quit: Farewell and fare well!)
+2021-10-13 04:57:30	@fedbot	*** F34-20211001 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-10-13 05:01:37	<--	hammock (~Hammock@2600:1700:19a1:3330::588) has quit (Ping timeout: 265 seconds)
+2021-10-13 05:03:40	<--	alzgh (~alzgh@user/alzgh) has quit (Remote host closed the connection)
+2021-10-13 05:04:01	-->	gravy (~gravy@220-245-7-7.static.tpgi.com.au) has joined #fedora
+2021-10-13 05:04:10	<--	chinosoliard (~chinosoli@fedora/chinosoliard) has quit (Quit: Leaving)
+2021-10-13 05:06:25	<--	elwisp (~elwisp@178.73.210.32) has quit (Ping timeout: 250 seconds)
+2021-10-13 05:14:31	<--	daMaestro (~damaestro@fedora/daMaestro) has quit (Quit: Leaving)
+2021-10-13 05:15:26	<--	yaaii (~andirc@2400:4052:8383:5c00:bdfd:1355:4731:796d) has quit (Ping timeout: 260 seconds)
+2021-10-13 05:18:11	-->	elwisp (~elwisp@178.73.210.32) has joined #fedora
+2021-10-13 05:21:01	-->	sassmann_ (~sassmann@user/sassmann) has joined #fedora
+2021-10-13 05:21:12	-->	yaaii (~andirc@neoau1-133-203-130-202.tky.mesh.ad.jp) has joined #fedora
+2021-10-13 05:21:37	<--	sassmann (~sassmann@user/sassmann) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:22:43	<--	axin (~axin@user/axin) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:24:40	-->	axin (~axin@user/axin) has joined #fedora
+2021-10-13 05:28:00	-->	YoungPrince (~DrBrownbe@2600:1700:9aa1:6bc0:5468:7d82:1f0a:58a1) has joined #fedora
+2021-10-13 05:28:59	-->	Delta237_ (~Delta237@175.100.139.254) has joined #fedora
+2021-10-13 05:31:27	<--	Delta237 (~Delta237@219.91.230.41) has quit (Ping timeout: 265 seconds)
+2021-10-13 05:31:46	<--	DrBrownBear (~DrBrownbe@2600:1700:9aa1:6bc0:5468:7d82:1f0a:58a1) has quit (Ping timeout: 245 seconds)
+2021-10-13 05:41:06	<--	kamdard_ (~kamdard@47.187.208.241) has quit (Ping timeout: 260 seconds)
+2021-10-13 05:42:11	-->	thingfish (~thingfish@user/thingfish) has joined #fedora
+2021-10-13 05:51:58	-->	rassa[m] (~rassamatr@2001:470:69fc:105::1:1817) has joined #fedora
+2021-10-13 05:51:59	--	Mode #fedora [+v rassa[m]] by ChanServ
+2021-10-13 05:55:09	-->	anginapectoris4 (~anginapec@user/anginapectoris) has joined #fedora
+2021-10-13 05:55:45	<--	jf_simon (~quassel@200116b840673200ba27ebfffe291835.dip.versatel-1u1.de) has quit (Ping timeout: 265 seconds)
+2021-10-13 05:57:22	<--	anginapectoris (~anginapec@user/anginapectoris) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:57:22	--	anginapectoris4 is now known as anginapectoris
+2021-10-13 05:59:27	-->	zdohnal (~zdohnal@2a02:8308:a083:cb00:e5de:f31d:ab20:7946) has joined #fedora
+2021-10-13 06:10:37	<--	deavmi (~tbk@user/deavmi) has quit (Ping timeout: 252 seconds)
+2021-10-13 06:13:24	-->	fkvodndh[m] (~fkvodndhm@2001:470:69fc:105::1:182f) has joined #fedora
+2021-10-13 06:13:25	--	Mode #fedora [+v fkvodndh[m]] by ChanServ
+2021-10-13 06:17:46	-->	sudhir (~sudhir@2401:4900:33b9:4389:4459:e31d:5532:2) has joined #fedora
+2021-10-13 06:17:47	-->	roboirc (~roboirc@robo.powered.by.lunarbnc.net) has joined #fedora
+2021-10-13 06:24:23	-->	ericzolf (~ericzolf@2a02:8070:a298:29f0::31a) has joined #fedora
+2021-10-13 06:30:54	<--	kk4ewt (~notfred@fedora/Southern-Gentlem) has quit (Remote host closed the connection)
+2021-10-13 06:30:56	<--	sebastianos (~sebastian@user/sebastianos) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:34:03	-->	jf_simon (~quassel@200116b84082a500ba27ebfffe291835.dip.versatel-1u1.de) has joined #fedora
+2021-10-13 06:36:46	<--	fdelapena_ (~fdelapena@user/fdelapena) has quit (Remote host closed the connection)
+2021-10-13 06:37:22	-->	fdelapena (~fdelapena@user/fdelapena) has joined #fedora
+2021-10-13 06:37:33	-->	sebastianos (~sebastian@user/sebastianos) has joined #fedora
+2021-10-13 06:41:21	<--	thingfish (~thingfish@user/thingfish) has quit (Quit: Leaving.)
+2021-10-13 06:44:41	<--	yaaii (~andirc@neoau1-133-203-130-202.tky.mesh.ad.jp) has quit (Read error: Connection reset by peer)
+2021-10-13 06:44:49	-->	yaaii (~andirc@2400:4052:8383:5c00:651b:5214:604b:966f) has joined #fedora
+2021-10-13 06:49:25	-->	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has joined #fedora
+2021-10-13 06:50:21	-->	vaginaldischarge (b9dc66f8@67.205.143.82) has joined #fedora
+2021-10-13 06:57:30	@fedbot	*** F34-20211001 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-10-13 06:59:48	+coryc257[m]	I've made an rpm for openbsd signify program since it appears missing. What's a good resource to read make sure all my ducks are in a row so I can submit it for review?
+2021-10-13 07:00:59	<--	vaginaldischarge (b9dc66f8@67.205.143.82) has left #fedora
+2021-10-13 07:01:04	-->	mattil (~mattil@helsinki.portalify.com) has joined #fedora
+2021-10-13 07:01:21	<--	ericzolf (~ericzolf@2a02:8070:a298:29f0::31a) has quit (Ping timeout: 245 seconds)
+2021-10-13 07:01:39	<--	mattil (~mattil@helsinki.portalify.com) has quit (Remote host closed the connection)
+2021-10-13 07:06:21	-->	mattil (~mattil@helsinki.portalify.com) has joined #fedora
+2021-10-13 07:09:09	-->	hohokus[m] (~h0h0kusma@2001:470:69fc:105::1:d43) has joined #fedora
+2021-10-13 07:09:09	--	Mode #fedora [+v hohokus[m]] by ChanServ
+2021-10-13 07:10:08	<--	mattil (~mattil@helsinki.portalify.com) has quit (Read error: Connection reset by peer)
+2021-10-13 07:10:45	-->	mattil (~mattil@airio.portalify.com) has joined #fedora
+2021-10-13 07:10:50	-->	Paul-muadib (~Paul-muad@2a01:e0a:abd:8a90:fc49:4f78:ab9a:72d) has joined #fedora
+2021-10-13 07:25:03	-->	rindolf (~shlomif@2a0d:6fc2:4bb1:500:6b1e:2524:3d70:36ec) has joined #fedora
+2021-10-13 07:27:34	-->	stoneware (~stoneware@user/stoneware) has joined #fedora
+2021-10-13 07:31:06	-->	Aninuscsalas[m] (~aninuscsa@2001:470:69fc:105::1:1835) has joined #fedora
+2021-10-13 07:31:06	--	Mode #fedora [+v Aninuscsalas[m]] by ChanServ
+2021-10-13 07:32:17	-->	ElectronApps (~ElectronA@user/electronapps) has joined #fedora
+2021-10-13 07:39:27	-->	Delta237 (~Delta237@123.201.100.166) has joined #fedora
+2021-10-13 07:39:32	<--	Delta237_ (~Delta237@175.100.139.254) has quit (Ping timeout: 265 seconds)
+2021-10-13 07:44:37	<--	great_taste (~great_tas@190.32.235.20) has quit (Quit: Client closed)
+2021-10-13 07:47:22	-->	languagelovr[m] (~languagel@2001:470:69fc:105::1:1837) has joined #fedora
+2021-10-13 07:47:22	--	Mode #fedora [+v languagelovr[m]] by ChanServ
+2021-10-13 07:52:29	-->	AquaL1te (~AquaL1te@user/aqual1te) has joined #fedora
+2021-10-13 07:54:52	-->	jpodivin (~jpodivin@118.108.broadband14.iol.cz) has joined #fedora
+2021-10-13 07:55:38	<--	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has quit (Read error: Connection reset by peer)
+2021-10-13 07:56:09	-->	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has joined #fedora
+2021-10-13 07:56:56	-->	mattil_ (~mattil@helsinki.portalify.com) has joined #fedora
+2021-10-13 07:57:31	<--	mattil_ (~mattil@helsinki.portalify.com) has quit (Remote host closed the connection)
+2021-10-13 07:58:02	<--	mattil (~mattil@airio.portalify.com) has quit (Read error: Connection reset by peer)
+2021-10-13 07:58:06	-->	mattil_ (~mattil@airio.portalify.com) has joined #fedora
+2021-10-13 07:58:28	<--	YoungPrince (~DrBrownbe@2600:1700:9aa1:6bc0:5468:7d82:1f0a:58a1) has quit (Quit: Leaving)
+2021-10-13 08:07:44	-->	makopec (~makopec@2a00:ca8:a1f:c05:8a4d:9d:8f99:b6e) has joined #fedora
+2021-10-13 08:11:30	-->	sheepduck_ (~sheepduck@user/sheepduck) has joined #fedora
+2021-10-13 08:11:55	<--	sheepduck (~sheepduck@user/sheepduck) has quit (Ping timeout: 265 seconds)
+2021-10-13 08:13:42	<--	msauton_ (~msauton@107-138-40-213.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 260 seconds)
+2021-10-13 08:13:59	<--	cpluspunch (~znc@104.200.132.249) has quit (Ping timeout: 265 seconds)
+2021-10-13 08:14:20	-->	cpluspunch (~znc@104.200.132.106) has joined #fedora
+2021-10-13 08:14:28	<--	nickodd (~nickodd@user/nickodd) has left #fedora
+2021-10-13 08:15:47	-->	deavmi (~tbk@user/deavmi) has joined #fedora
+2021-10-13 08:20:18	-->	carl- (~carl-@185.103.188.131) has joined #fedora
+2021-10-13 08:27:36	<--	kiril (~kiril@85.91.153.163) has quit (Read error: Connection reset by peer)
+2021-10-13 08:30:40	-->	lemonzest (~lemonzest@user/lemonzest) has joined #fedora
+2021-10-13 08:31:35	-->	kiril (~kiril@85.91.153.163) has joined #fedora
+2021-10-13 08:33:01	<--	zmt00 (~zmt00@user/zmt00) has quit (Ping timeout: 245 seconds)
+2021-10-13 08:33:53	<--	sentenza_ (~sentenza@146-241-179-140.dyn.eolo.it) has quit (Remote host closed the connection)
+2021-10-13 08:35:17	<--	lemonzest (~lemonzest@user/lemonzest) has quit (Remote host closed the connection)
+2021-10-13 08:35:32	-->	ayustae (Thunderbir@gateway/vpn/protonvpn/ayustae) has joined #fedora
+2021-10-13 08:38:01	johnny	coryc257[m], i don't think this is the right channel. pretty sure you wanna be in #fedora-devel
+2021-10-13 08:38:09	-->	lemonzest (~lemonzest@user/lemonzest) has joined #fedora
+2021-10-13 08:40:55	<--	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has quit (Read error: Connection reset by peer)
+2021-10-13 08:40:57	<--	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has quit (Remote host closed the connection)
+2021-10-13 08:41:28	-->	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has joined #fedora
+2021-10-13 08:41:42	<--	deavmi (~tbk@user/deavmi) has quit (Ping timeout: 260 seconds)
+2021-10-13 08:41:43	-->	deavmi_ (~tbk@user/deavmi) has joined #fedora
+2021-10-13 08:42:48	-->	on^ (~on@wsip-70-165-23-55.mc.at.cox.net) has joined #fedora
+2021-10-13 08:43:17	-->	ljavorsk (~Adium@ip-85-160-41-201.eurotel.cz) has joined #fedora
+2021-10-13 08:44:09	-->	bkircher (~bkircher@2001:a61:25b1:b301:38c4:d8e7:23b0:bde5) has joined #fedora
+2021-10-13 08:44:39	-->	nickodd (~nickodd@user/nickodd) has joined #fedora
+2021-10-13 08:47:30	<--	lemonzest (~lemonzest@user/lemonzest) has quit (Read error: Connection reset by peer)
+2021-10-13 08:47:31	-->	twoerner__ (~twoerner@200116b822e7ba00bb5e742d23c5a91d.dip.versatel-1u1.de) has joined #fedora
+2021-10-13 21:22:51	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:16	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #fedora
+2021-10-13 21:23:16	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-13 21:23:16	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:49:00
+2021-10-13 21:23:17	--	Channel #fedora: 1531 nicks (2 ops, 839 voices, 690 normals)
+2021-10-13 21:23:23	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-13 21:23:24	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-13 21:23:24	<--	rebtoor (~rebtoor@user/rebtoor) has quit (Quit: rebtoor)
+2021-10-13 21:23:46	<--	dowdle (~dowdle@fedora/dowdle) has quit (Quit: Konversation terminated!)
+2021-10-13 21:24:31	-->	kiril (~kiril@85.91.153.163) has joined #fedora
+2021-10-13 21:25:10	-->	linsux (~metbsd@cpe00fc8d943db3-cm00fc8d943db0.cpe.net.cable.rogers.com) has joined #fedora
+2021-10-13 21:25:11	<--	linsux (~metbsd@cpe00fc8d943db3-cm00fc8d943db0.cpe.net.cable.rogers.com) has quit (Changing host)
+2021-10-13 21:25:11	-->	linsux (~metbsd@user/linsux) has joined #fedora
+2021-10-13 21:26:10	<--	qlixed (~qlixed@host101.181-9-122.telecom.net.ar) has quit (Ping timeout: 265 seconds)
+2021-10-13 21:27:03	-->	jdm2 (~jdm2@24.50.216.160) has joined #fedora
+2021-10-13 21:27:40	-->	DyDyMan (~DyDyMan@16.red-88-16-166.dynamicip.rima-tde.net) has joined #fedora
+2021-10-13 21:27:40	-->	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has joined #fedora
+2021-10-13 21:29:14	<--	adzise (~adzise_xd@193.87.160.120) has quit (Quit: Leaving)
+2021-10-13 21:29:50	<--	great_taste (~great_tas@190.32.235.20) has quit (Quit: Ping timeout (120 seconds))
+2021-10-13 21:33:52	<--	rymdkraft (~rymdkraft@user/rymdkraft) has quit (Quit: leaving)
+2021-10-13 21:34:01	<--	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:34:15	<--	xkahn (~xkahn@pool-108-26-189-244.bstnma.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2021-10-13 21:35:52	<--	bhoman (~bhoman@pool-74-102-26-111.nwrknj.fios.verizon.net) has quit (Remote host closed the connection)
+2021-10-13 21:37:59	-->	donofrio_ (~donofrio@c-68-40-123-74.hsd1.mi.comcast.net) has joined #fedora
+2021-10-13 21:38:13	--	LiaoTao_ is now known as LiaoTao
+2021-10-13 21:38:16	-->	stoneware (~stoneware@user/stoneware) has joined #fedora
+2021-10-13 21:40:43	-->	qlixed (~qlixed@181.45.80.239) has joined #fedora
+2021-10-13 21:41:30	<--	donofrio (~donofrio@165.225.60.54) has quit (Ping timeout: 265 seconds)
+2021-10-13 21:42:28	<--	sherm (~shorton@pool-108-26-147-200.bstnma.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2021-10-13 21:43:08	-->	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has joined #fedora
+2021-10-13 21:43:53	-->	rob_rock (~Thunderbi@net-37-119-188-177.cust.vodafonedsl.it) has joined #fedora
+2021-10-13 21:43:55	<--	___nick___ (~quassel@cpc68286-cdif17-2-0-cust533.5-1.cable.virginm.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:43:57	<--	pmoura (~pmoura@2804:14c:183:84ac:22fe:48f0:ab4b:9a8c) has quit (Quit: Leaving)
+2021-10-13 21:45:39	-->	rohin (~rohin@2605:a601:a73e:9900:28a4:2813:c191:5535) has joined #fedora
+2021-10-13 21:47:25	-->	great_taste (~great_tas@190.32.235.20) has joined #fedora
+2021-10-13 21:48:48	-->	ledeni (~ledeni@fedora/ledeni) has joined #fedora
+2021-10-13 21:49:20	-->	JenningsZhang[m] (~jennydama@2001:470:69fc:105::1:1908) has joined #fedora
+2021-10-13 21:49:21	--	Mode #fedora [+v JenningsZhang[m]] by ChanServ
+2021-10-13 21:51:01	-->	xkahn (~xkahn@pool-108-26-189-244.bstnma.fios.verizon.net) has joined #fedora
+2021-10-13 21:52:43	<--	donofrio_ (~donofrio@c-68-40-123-74.hsd1.mi.comcast.net) has quit (Quit: Leaving)
+2021-10-13 21:53:00	-->	donofrio_ (~donofrio@c-68-40-123-74.hsd1.mi.comcast.net) has joined #fedora
+2021-10-13 21:53:30	-->	sherm (~shorton@pool-108-26-147-200.bstnma.fios.verizon.net) has joined #fedora
+2021-10-13 21:56:31	-->	elxa (~elxa@2a02:6d40:35f4:e301:1be3:44b1:4f99:8c72) has joined #fedora
+2021-10-13 22:00:52	<--	jwisbell35 (~jwisbell3@047-036-214-124.res.spectrum.com) has quit (Remote host closed the connection)
+2021-10-13 22:00:57	<--	srv (~cmd@user/srv) has quit (Quit: Leaving)
+2021-10-13 22:02:19	-->	unlaudable (~unlaudabl@155.93.175.230) has joined #fedora
+2021-10-13 22:02:53	-->	hussam (~hussam@user/hussam) has joined #fedora
+2021-10-13 22:04:49	<--	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has quit (Ping timeout: 252 seconds)
+2021-10-13 22:08:12	<--	chipox (~chipox@86.107.21.135) has quit (Quit: Leaving)
+2021-10-13 22:12:39	<--	ksinny_ (~quassel@212.86.48.93) has quit (Remote host closed the connection)
+2021-10-13 22:15:37	<--	vxwarlock (~Darkcodex@user/vxwarlock) has left #fedora (Closing Window)
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:31	-->	mrmanner (~jmanner@185.224.57.161) has joined #fedora
+2021-10-16 12:32:31	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-16 12:32:31	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:49:00
+2021-10-16 12:32:31	--	Channel #fedora: 1436 nicks (2 ops, 771 voices, 663 normals)
+2021-10-16 12:32:34	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-16 12:32:36	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-16 12:33:15	<--	jean (~jean@user/jean) has quit (Quit: Quitter)
+2021-10-16 12:34:45	-->	jean (~jean@user/jean) has joined #fedora
+2021-10-16 12:45:32	<--	davidlt (~davidlt@78-63-27-146.static.zebra.lt) has quit (Ping timeout: 268 seconds)
+2021-10-16 12:47:30	-->	osfe__ (~lemaire@2a01:e0a:16e:7620::1e2d:4e60) has joined #fedora
+2021-10-16 12:51:39	-->	highgogo (~Thunderbi@2408:8207:1867:1ea0:956d:17d5:6f8d:a10e) has joined #fedora
+2021-10-16 12:53:11	<--	osfe__ (~lemaire@2a01:e0a:16e:7620::1e2d:4e60) has quit (Ping timeout: 264 seconds)
+2021-10-16 12:54:38	<--	yaaii (~andirc@p1076233-ipngn5501niigatani.niigata.ocn.ne.jp) has quit (Read error: Connection reset by peer)
+2021-10-16 13:02:06	<--	beggi (~beggi@nova-153-092-157-089.cpe.novanet.is) has quit (Read error: Connection reset by peer)
+2021-10-16 13:02:10	-->	beggi_ (~beggi@nova-153-092-157-089.cpe.novanet.is) has joined #fedora
+2021-10-16 13:07:31	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Quit: Laa shay'a waqi'un moutlaq bale kouloun moumkine)
+2021-10-16 13:07:49	-->	yaaii (~andirc@2400:4052:8383:5c00:4de0:28c5:9be0:4651) has joined #fedora
+2021-10-16 13:11:51	-->	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has joined #fedora
+2021-10-16 13:14:46	<--	hhlp (~hhlp@fedora/hhlp) has quit (Remote host closed the connection)
+2021-10-16 13:14:58	-->	Lord_of_Life_ (~Lord@user/lord-of-life/x-2819915) has joined #fedora
+2021-10-16 13:16:21	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Ping timeout: 245 seconds)
+2021-10-16 13:16:22	--	Lord_of_Life_ is now known as Lord_of_Life
+2021-10-16 13:20:31	<--	ElectronApps (~ElectronA@user/electronapps) has quit (Remote host closed the connection)
+2021-10-16 13:22:30	-->	Lord_of_Life_ (~Lord@user/lord-of-life/x-2819915) has joined #fedora
+2021-10-16 13:23:11	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Ping timeout: 264 seconds)
+2021-10-17 18:14:36	-->	jmanner (~jmanner@185.224.57.161) has joined #fedora
+2021-10-17 18:14:36	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-17 18:14:36	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:48:59
+2021-10-17 18:14:37	--	Channel #fedora: 1443 nicks (2 ops, 773 voices, 668 normals)
+2021-10-17 18:14:40	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-17 18:14:40	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-17 18:17:32	+finalv0id[m]	is it correct that doing updates via gnome software needs to shortly restart the pc to apply updates before finally shutting down?
+2021-10-17 18:19:01	-->	jmanner (~jmanner@user/mrmanner) has joined #fedora
+2021-10-17 18:19:01	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-17 18:19:01	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:48:59
+2021-10-17 18:19:01	--	Channel #fedora: 1443 nicks (2 ops, 773 voices, 668 normals)
+2021-10-17 18:19:03	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-17 18:19:05	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-17 18:30:30	-->	jmanner (~jmanner@user/mrmanner) has joined #fedora
+2021-10-17 18:30:30	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-17 18:30:30	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:48:59
+2021-10-17 18:30:33	--	Channel #fedora: 1445 nicks (2 ops, 773 voices, 670 normals)
+2021-10-17 18:30:39	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-17 18:30:39	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:54	-->	dowdle (~dowdle@fedora/dowdle) has joined #fedora
+2021-10-17 18:31:35	<--	rohin (~rohin@2605:a601:a73e:9900:a032:fa45:fa68:53cd) has quit (Ping timeout: 264 seconds)
+2021-10-17 18:31:44	<--	Guest15 (~Guest15@213.137.71.243) has quit (Quit: Client closed)
+2021-10-17 18:32:05	-->	alzgh (~alzgh@user/alzgh) has joined #fedora
+2021-10-17 18:33:51	-->	avben999098 (~avben9990@213.137.71.243) has joined #fedora
+2021-10-17 18:35:24	-->	Night-Shade (~Tim@ip5b403d56.dynamic.kabel-deutschland.de) has joined #fedora
+2021-10-17 18:36:31	<--	sebastianos (~sebastian@user/sebastianos) has quit (Ping timeout: 252 seconds)
+2021-10-17 18:39:45	avben999098	Hello
+2021-10-17 18:40:21	-->	sebastianos (~sebastian@user/sebastianos) has joined #fedora
+2021-10-17 18:40:25	avben999098	I am using Fedora 34 with KDE desktop. For some reason the plasma desktop is not starting
+2021-10-17 18:40:54	avben999098	Any ideas how to fix that. I am just seeing a blackscreen without any information about what could go wrong
+2021-10-17 18:47:03	-->	PatrickWicki[m] (~arctizefe@2001:470:69fc:105::1:1c4d) has joined #fedora
+2021-10-17 18:47:03	--	Mode #fedora [+v PatrickWicki[m]] by ChanServ
+2021-10-17 18:49:19	-->	beggi_ (~beggi@nova-153-092-157-089.cpe.novanet.is) has joined #fedora
+2021-10-17 18:49:27	<--	osfe__ (~lemaire@2a01:e0a:16e:7620::1e2d:4e60) has quit (Ping timeout: 265 seconds)
+2021-10-17 18:49:31	<--	TheHermann (~TheHerman@gateway/tor-sasl/thehermann) has quit (Remote host closed the connection)
+2021-10-17 18:49:43	-->	TheHermann (~TheHerman@gateway/tor-sasl/thehermann) has joined #fedora
+2021-10-17 18:50:00	-->	dec0d3r (~dec0d3r@2001:8003:480a:e00:e07:e7c3:7efc:ed0f) has joined #fedora
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:40	-->	mrmanner (~jmanner@user/mrmanner) has joined #fedora
+2021-10-17 19:45:40	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-17 19:45:40	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:49:00
+2021-10-17 19:45:42	--	Channel #fedora: 1452 nicks (2 ops, 776 voices, 674 normals)
+2021-10-17 19:45:44	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-17 19:45:44	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-17 19:51:22	<--	fdelapena (~fdelapena@user/fdelapena) has quit (Remote host closed the connection)
+2021-10-17 19:51:59	<--	msg75 (~jack@user/msg75) has quit (Ping timeout: 264 seconds)
+2021-10-17 19:52:35	-->	fdelapena (~fdelapena@user/fdelapena) has joined #fedora
+2021-10-17 19:55:10	-->	srv (~cmd@user/srv) has joined #fedora
+2021-10-17 19:56:16	-->	douglascorrea_io (~douglasco@200.146.85.128.static.gvt.net.br) has joined #fedora
+2021-10-17 19:56:17	<--	Night-Shade (~Tim@ip5b403d56.dynamic.kabel-deutschland.de) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-17 19:57:59	-->	brutex (~brutex@user/brutex) has joined #fedora
+2021-10-17 19:58:30	<--	KjellR (~KjellR@84.213.90.158) has quit (Quit: Konversation terminated!)
+2021-10-17 19:59:08	<--	avben999098 (~avben9990@213.137.71.243) has quit (Ping timeout: 256 seconds)
+2021-10-17 20:02:23	-->	brutex_ (~brutex@user/brutex) has joined #fedora
+2021-10-17 20:02:27	--	brutex is now known as Guest302
+2021-10-17 20:02:38	--	brutex_ is now known as brutex
+2021-10-17 20:02:41	<--	sbooch (~sbooch@user/sbooch) has quit (Quit: leaving)
+2021-10-17 20:03:16	<--	Guest302 (~brutex@user/brutex) has quit (Ping timeout: 265 seconds)
+2021-10-17 20:04:59	+Mershl	<Khaytsus> "Woah, your group is 5 lines..." <- Hmmm. I'm a bit baffled/confused now. My desktop workstation has an even shorter /etc/group
+2021-10-17 20:05:10	 *	Mershl sent a code block: https://libera.ems.host/_matrix/media/r0/download/libera.chat/e43cf53024fa840b8830b81ced1e27f903b2edf0
+2021-10-17 20:05:55	Khaytsus	Mershl: I don't possibly see how.  I looked at a 35, a 34, even a container..  all were NOT that.  You have been doing something to bust it.
+2021-10-17 20:10:30	+Mershl	just did a fresh installation of Fedora 35 Kinoite. /etc/group is 3 lines long
+2021-10-17 20:10:59	+Mershl	It seems the ostree variants of Fedora use a different mechanism? Not sure honestly.
+2021-10-17 20:12:14	-->	Guest3753 (~Guest37@2a01:e0a:81a:5230:a54:14fc:4849:fe5d) has joined #fedora
+2021-10-17 20:13:12	<--	Guest3753 (~Guest37@2a01:e0a:81a:5230:a54:14fc:4849:fe5d) has quit (Client Quit)
+2021-10-17 20:13:34	<--	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-17 20:13:44	-->	brainfreeze (~brainfree@2a03:1b20:4:f011::20d) has joined #fedora
+2021-10-17 20:14:32	-->	KjellR (~KjellR@84.213.90.158) has joined #fedora
+2021-10-17 20:14:55	<--	buzain (~buzain@77.69.187.231) has left #fedora
+2021-10-17 20:17:38	<--	yaaii (~andirc@2400:4052:8383:5c00:750b:6a06:50a3:dc4e) has quit
+2021-10-17 20:18:25	+Mershl	ahhh okay. TIL: /etc/group and /usr/lib/group are concatenated on ostree variants of Fedora
+2021-10-17 20:22:15	-->	avben999098 (~avben9990@213.137.71.243) has joined #fedora
+2021-10-17 20:24:03	-->	yaaii (~andirc@2400:4052:8383:5c00:750b:6a06:50a3:dc4e) has joined #fedora
+2021-10-17 20:24:08	-->	mayab (uid477228@id-477228.uxbridge.irccloud.com) has joined #fedora
+2021-10-17 20:27:41	-->	chaology (~user@185.247.175.201) has joined #fedora
+2021-10-17 20:30:21	-->	minall (~minall@186.69.200.119) has joined #fedora
+2021-10-17 20:31:24	<--	axin (~axin@user/axin) has quit (Remote host closed the connection)
+2021-10-17 20:31:58	[[R]]	Mershl: you're a cat
+2021-10-17 20:32:15	+Mershl	Thanks, I guess 🙂
+2021-10-17 20:32:56	[[R]]	lost opportunity to use the 🐱 emoji
+2021-10-17 20:34:05	<--	srv (~cmd@user/srv) has quit (Remote host closed the connection)
+2021-10-17 20:35:07	+Mershl	Ahhh, I see. I'll remember next time 😉
+2021-10-17 20:40:17	-->	tkonto (~tkonto@193.92.214.143.dsl.dyn.forthnet.gr) has joined #fedora
+2021-10-17 20:45:47	<--	cornyst (~SFMF@ool-4353cb8b.dyn.optonline.net) has quit (Quit: ChatZilla 0.9.92-rdmsoft [XULRunner 35.0.1/20150122214805])
+2021-10-17 20:46:23	<--	timahvo1 (~rogue@105.163.2.183) has quit (Quit: leaving)
+2021-10-17 20:46:40	-->	timahvo1 (~rogue@105.163.2.183) has joined #fedora
+2021-10-17 20:48:05	<--	AJ_Z0 (~AJ_Z0@user/aj-z0/x-3780512) has quit (Read error: Connection reset by peer)
+2021-10-17 20:50:57	-->	AJ_Z0 (~AJ_Z0@user/aj-z0/x-3780512) has joined #fedora
+2021-10-17 20:50:57	-->	kd5678__ (~kd5678@p200300fe5f00de00e3831398c27d7a5b.dip0.t-ipconnect.de) has joined #fedora
+2021-10-17 20:55:07	<--	brutex (~brutex@user/brutex) has quit (Remote host closed the connection)
+2021-10-17 20:55:35	<--	lemonzest (~lemonzest@user/lemonzest) has quit (Quit: \)
+2021-10-17 20:56:58	<--	chaology (~user@185.247.175.201) has quit (Ping timeout: 265 seconds)
+2021-10-17 20:57:53	<--	davidlt (~davidlt@78-63-27-146.static.zebra.lt) has quit (Ping timeout: 265 seconds)
+2021-10-17 21:00:01	-->	srv (~cmd@user/srv) has joined #fedora
+2021-10-17 21:04:44	<--	minall (~minall@186.69.200.119) has quit (Ping timeout: 268 seconds)
+2021-10-17 21:05:45	-->	minall (~minall@186.69.200.119) has joined #fedora
+2021-10-17 21:05:49	-->	msg75 (~jack@user/msg75) has joined #fedora
+2021-10-17 21:11:41	inflatador	janos and friends, in case anyone is curious, I think I figured out the bonding thing. Looks like it was a routing issue with default routes getting confused when I had both the bonded interfaces and the other interface active
+2021-10-30 12:09:23	-->	jmanner (~jmanner@user/mrmanner) has joined #fedora
+2021-10-30 12:09:23	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-30 12:09:23	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:48:59
+2021-10-30 12:09:23	--	Channel #fedora: 1456 nicks (2 ops, 789 voices, 665 normals)
+2021-10-30 12:09:25	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-30 12:09:26	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-30 12:10:16	<--	vimal (~vimal@2a02:a210:9600:1600:4fb4:e20f:72bc:9bf8) has quit (Client Quit)
+2021-10-30 12:10:53	-->	jmanner (~jmanner@user/mrmanner) has joined #fedora
+2021-10-30 12:10:53	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-30 12:10:53	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:48:59
+2021-10-30 12:10:53	--	Channel #fedora: 1456 nicks (2 ops, 789 voices, 665 normals)
+2021-10-30 12:10:54	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-30 12:10:56	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-30 12:11:51	-->	fecktd (~fecktd@149.167.147.186) has joined #fedora
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:14:40	<--	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has quit (Remote host closed the connection)
+2021-10-30 12:17:09	-->	vxwarlock (~Darkcodex@user/vxwarlock) has joined #fedora
+2021-10-30 12:18:03	+clodimus[m]	Silverblue and toolbox users: I imagine its spatially costly to have a lot of toolboxes created, no? How many do you use (1 big one; 1 for each CLI app; several for certain categories of CLI app)?
+2021-10-30 12:18:55	-->	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has joined #fedora
+2021-10-30 12:19:15	<--	infides (~infides@i6DFA393A.versanet.de) has quit (Quit: leaving)
+2021-10-30 12:20:49	-->	coz_ (~coz_@user/coz/x-5866170) has joined #fedora
+2021-10-30 12:21:07	<--	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has quit (Max SendQ exceeded)
+2021-10-30 12:21:10	-->	ljavorsk (~ljavorsk@85-237-234-96.dynamic.orange.sk) has joined #fedora
+2021-10-30 12:21:29	-->	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has joined #fedora
+2021-10-30 12:22:02	-->	Guest7537 (~joe@cpc1-cosh21-2-0-cust993.6-1.cable.virginm.net) has joined #fedora
+2021-10-30 12:22:05	<--	coz_ (~coz_@user/coz/x-5866170) has quit (Client Quit)
+2021-10-30 12:22:28	<--	sentenza (~sentenza@146-241-182-25.dyn.eolo.it) has quit (Remote host closed the connection)
+2021-10-30 12:23:27	<--	LiaoTao (~LiaoTao@gateway/tor-sasl/liaotao) has quit (Remote host closed the connection)
+2021-10-30 12:24:42	+AidenLangley[m]	Would be yeah - I want to be able to dispose of and recreate my toolboxes easily so everything's just in one big bucket for the most part
+2021-10-30 12:25:21	+AidenLangley[m]	But when I know I'll be re-using the toolbox, I create a new one w/ specific tools
+2021-10-30 12:26:20	-->	infides (~infides@i6DFA393A.versanet.de) has joined #fedora
+2021-10-30 12:26:21	-->	LiaoTao (~LiaoTao@gateway/tor-sasl/liaotao) has joined #fedora
+2021-10-30 12:27:25	<--	vimal (~vimal@2a02:a210:9600:1600:4fb4:e20f:72bc:9bf8) has quit (Ping timeout: 252 seconds)
+2021-10-30 12:29:29	<--	triad (~triad@user/triad) has quit (Ping timeout: 264 seconds)
+2021-10-30 12:30:07	+AidenLangley[m]	I don't use toolbox a whole lot... But it's encouraged me to use `.devcontainers` in vscode for practically everything
+2021-10-30 12:30:36	<--	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has quit (Quit: Leaving)
+2021-10-30 12:32:22	<--	jean (~jean@user/jean) has quit (Quit: Quitter)
+2021-10-30 12:34:23	-->	jean (~jean@user/jean) has joined #fedora
+2021-10-30 12:35:27	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #fedora
+2021-10-30 12:36:21	-->	lxwulf (~lxwulf@user/lxwulf) has joined #fedora
+2021-10-30 12:37:17	ledeni	@f35release
+2021-10-30 12:37:17	@fedbot	Fedora 35 is planned for release on 2021-11-02, which is 3 days, 3 hours, 22 minutes, and 43 seconds from now
+2021-10-30 12:38:06	ledeni	@f33eol
+2021-10-30 12:38:07	@fedbot	Fedora 33 will go end of life and no longer supported one month after Fedora 35 is released. Sometime around November 2021
+2021-10-30 12:40:10	-->	aday (~aday@188.234.93.209.dyn.plus.net) has joined #fedora
+2021-10-30 12:40:49	-->	yaaii (~andirc@p1076233-ipngn5501niigatani.niigata.ocn.ne.jp) has joined #fedora
+2021-10-30 12:42:28	<--	lxwulf (~lxwulf@user/lxwulf) has left #fedora (Leaving)
+2021-10-30 12:42:46	<--	GrannyGoose (~GrannyGoo@2001:8003:c834:fd01:947a:7c5f:e6c3:1dee) has quit (Quit: Leaving)
+2021-10-30 12:45:27	<--	yaaii (~andirc@p1076233-ipngn5501niigatani.niigata.ocn.ne.jp) has quit (Read error: Connection reset by peer)
+2021-10-30 12:51:09	<--	carl-- (~carl-@c-138ee555.02-180-73746f39.bbcust.telenor.se) has quit (Ping timeout: 268 seconds)
+2021-10-30 12:55:47	<--	SallyAhaj (~SallyAhaj@user/sallyahaj) has quit (Quit: Leaving)
+2021-10-30 12:58:33	-->	zys (~zys@116.22.160.119) has joined #fedora
+2021-10-30 13:03:30	<--	ljavorsk (~ljavorsk@85-237-234-96.dynamic.orange.sk) has quit (Quit: This computer has gone to sleep)
+2021-10-30 13:03:53	<--	Sokel (~nazu@rockylinux/idm/label) has quit (Quit: Bye)
+2021-10-30 13:05:47	<--	chrisklinger (~Thunderbi@2603:3020:2602:3000::42b4) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:06:35	-->	Sokel (~nazu@rockylinux/idm/label) has joined #fedora
+2021-10-30 13:08:49	-->	kerunaru (~Jmcb@202.red-79-146-100.dynamicip.rima-tde.net) has joined #fedora
+2021-10-30 13:10:17	-->	guipan (~guipan@life.is-a.beauty) has joined #fedora
+2021-10-30 13:13:04	<--	kerunaru (~Jmcb@202.red-79-146-100.dynamicip.rima-tde.net) has quit (Ping timeout: 252 seconds)
+2021-10-30 13:14:28	<--	lordross (~lordross@aurora.izrod.com) has quit (Quit: WeeChat 3.3)
+2021-10-30 13:17:40	<--	aday (~aday@188.234.93.209.dyn.plus.net) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:17:49	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has joined #fedora
+2021-10-30 13:19:05	-->	aday (~aday@188.234.93.209.dyn.plus.net) has joined #fedora
+2021-10-30 13:20:45	<--	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:22:00	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has joined #fedora
+2021-10-30 13:22:09	-->	tWqaq (~tWqaq@240e:389:5dca:aa00:3f5a:182b:f3a9:ee40) has joined #fedora
+2021-10-30 13:23:06	-->	Liexei (~Liexei@user/liexei) has joined #fedora
+2021-10-30 13:23:58	-->	ljavorsk (~ljavorsk@85-237-234-50.dynamic.orange.sk) has joined #fedora
+2021-10-30 13:25:17	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:25:56	-->	msg75 (~jack@user/msg75) has joined #fedora
+2021-10-30 13:33:42	-->	brutex (~openface@user/brutex) has joined #fedora
+2021-10-30 13:33:44	<--	aleasto (~aleasto@host-95-250-207-188.retail.telecomitalia.it) has quit (Ping timeout: 246 seconds)
+2021-10-30 13:35:33	<--	msg75 (~jack@user/msg75) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:35:38	@fedbot	*** F34-20211015 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-10-30 13:39:02	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has joined #fedora
+2021-10-30 13:41:38	<--	mmebsd (~metbsd@cpe00fc8d943db3-cm00fc8d943db0.cpe.net.cable.rogers.com) has left #fedora
+2021-10-30 13:41:43	<--	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:41:58	-->	linsux (~metbsd@user/linsux) has joined #fedora
+2021-10-30 13:45:23	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:d418:453f:8e01:9edf) has joined #fedora
+2021-10-30 13:47:37	-->	Oarbonyeb8 (~Oarbonyeb@182-54.dynamonet.fi) has joined #fedora
+2021-10-30 13:48:05	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has quit (Ping timeout: 246 seconds)
+2021-10-30 13:52:20	kenoba	thinkpad t580 - very slow video playback in firefox on F34? anyone knows what the issue is?
+2021-10-30 13:52:59	kenoba	lagging and stuttering   - completely unwatchable. but in chrome works just fine
+2021-10-30 13:53:53	-->	aleasto (~aleasto@host-212-171-210-179.retail.telecomitalia.it) has joined #fedora
+2021-10-30 13:55:05	-->	pihhan (~pihhan@46.149.126.14) has joined #fedora
+2021-10-30 17:07:05	--	irc: disconnected from server
+2021-10-30 17:07:32	-->	mrmanner (~jmanner@user/mrmanner) has joined #fedora
+2021-10-30 17:07:32	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-30 17:07:32	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:48:59
+2021-10-30 17:07:32	--	Channel #fedora: 1465 nicks (2 ops, 790 voices, 673 normals)
+2021-10-30 17:07:36	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-30 17:07:36	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-30 17:07:38	<--	ElectronApps (~ElectronA@user/electronapps) has quit (Remote host closed the connection)
+2021-10-30 17:09:06	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #fedora
+2021-10-30 17:11:24	<--	aleasto (~aleasto@host-212-171-210-179.retail.telecomitalia.it) has quit (Read error: Connection reset by peer)
+2021-10-30 17:11:46	<--	zer0bitz_ (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 252 seconds)
+2021-10-30 17:14:52	<--	highgogo (~Thunderbi@222.129.52.193) has quit (Remote host closed the connection)
+2021-10-30 17:15:12	-->	highgogo (~Thunderbi@222.129.52.193) has joined #fedora
+2021-10-30 17:16:21	<--	c4t3l_home (~rcallicot@139.138.156.11) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:25:58	<--	highgogo (~Thunderbi@222.129.52.193) has quit (Quit: highgogo)
+2021-10-30 17:26:16	-->	highgogo (~Thunderbi@222.129.52.193) has joined #fedora
+2021-10-30 17:27:04	<--	brutex (~openface@user/brutex) has quit (Quit: disconnecting.)
+2021-10-30 17:27:30	-->	aleasto (~aleasto@host-212-171-210-179.pool212171.interbusiness.it) has joined #fedora
+2021-10-30 17:28:05	+steiner[m]	oh, reading more into it I might be wrong, I thought linux-zen came before AMD released their zen architecture but the first release in their github comes from 2018, so you might be right actually, but it doesn't seem like it was just created with it in mind
+2021-10-30 17:29:59	<--	Paul-muadib (~Paul-muad@2a01:e0a:abd:8a90:fc49:4f78:ab9a:72d) has quit (Ping timeout: 246 seconds)
+2021-10-30 17:31:05	akik	wasn't the zen kernel just somebody's kernel build?
+2021-10-30 17:32:11	akik	https://liquorix.net/ i think it's that
+2021-10-30 17:32:57	<--	highgogo (~Thunderbi@222.129.52.193) has quit (Quit: highgogo)
+2021-10-30 17:34:39	<--	hollowman (~hollowman@user/hollowman) has quit (Quit: Konversation terminated!)
+2021-10-30 17:35:39	@fedbot	*** F34-20211015 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-10-30 17:38:51	<--	zmt00 (~zmt00@user/zmt00) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:39:03	+steiner[m]	oh yeah, it's basically liquorix but native for arch
+2021-10-30 17:40:59	-->	asus-pc (~asus-pc@157.38.208.227) has joined #fedora
+2021-10-30 17:41:12	<--	elec64 (~elec64@65.186.33.154) has quit (Ping timeout: 260 seconds)
+2021-10-30 17:44:17	<--	asus-pc (~asus-pc@157.38.208.227) has quit (Remote host closed the connection)
+2021-10-30 17:44:50	-->	elec64 (~elec64@65.186.33.154) has joined #fedora
+2021-10-30 17:45:31	<--	AquaL1te (~AquaL1te@user/aqual1te) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:45:45	-->	asus-pc (~asus-pc@157.38.208.227) has joined #fedora
+2021-10-30 17:47:04	<--	chinosoliard (~chinosoli@fedora/chinosoliard) has quit (Quit: Leaving)
+2021-10-30 17:51:29	<--	yesno (~yesno@109.98.151.179) has quit (Quit: Leaving)
+2021-10-30 17:51:59	<--	fdelapena (~fdelapena@user/fdelapena) has quit (Ping timeout: 264 seconds)
+2021-10-30 17:52:06	-->	fdelapena_ (~fdelapena@user/fdelapena) has joined #fedora
+2021-10-30 17:53:37	-->	nostar (~nostar@68.51.221.108) has joined #fedora
+2021-10-30 17:57:00	-->	alimesea (~alimesea@2601:1c2:500:84f0::bb62) has joined #fedora
+2021-10-30 17:58:00	-->	gera_ (~gera@62.192.246.134) has joined #fedora
+2021-10-30 17:58:08	-->	Yukiteru (~Yukiteru@user/yukiteru) has joined #fedora
+2021-10-30 17:58:16	<--	gera_ (~gera@62.192.246.134) has quit (Remote host closed the connection)
+2021-10-30 18:00:06	<--	eo[m] (~eomozilla@2001:470:69fc:105::1:857) has quit (Quit: You have been kicked for being idle)
+2021-10-30 18:00:06	<--	enoceleven[m] (~enoceleve@2001:470:69fc:105::f235) has quit (Quit: You have been kicked for being idle)
+2021-10-30 18:00:06	<--	DennisSchridde[m (~okonkwoma@2001:470:69fc:105::1:879) has quit (Quit: You have been kicked for being idle)
+2021-10-30 18:01:24	-->	zmt00 (~zmt00@user/zmt00) has joined #fedora
+2021-10-30 22:21:16	--	irc: disconnected from server
+2021-10-30 22:21:43	-->	mrmanner (~jmanner@user/mrmanner) has joined #fedora
+2021-10-30 22:21:43	--	Topic for #fedora is "Fedora Linux F33, F34, F35B end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F33-common https://tinyurl.com/f34-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F34 Live isos: https://tinyurl.com/Live-respins"
+2021-10-30 22:21:43	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 28 sep 2021 15:48:59
+2021-10-30 22:21:44	--	Channel #fedora: 1463 nicks (2 ops, 788 voices, 673 normals)
+2021-10-30 22:21:48	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-10-30 22:21:48	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-30 22:23:42	<--	cornyst (~cornyst@ool-4353cb8b.dyn.optonline.net) has quit (Quit: Leaving)
+2021-10-30 22:26:14	-->	CanARIKAN[m] (~bambbamma@2001:470:69fc:105::1:27a2) has joined #fedora
+2021-10-30 22:26:14	--	Mode #fedora [+v CanARIKAN[m]] by ChanServ
+2021-10-30 22:30:59	<--	alimesea (~alimesea@2601:1c2:500:84f0::bb62) has quit (Read error: Connection reset by peer)
+2021-10-30 22:31:21	<--	Falcon| (andreas@user/falcon/x-0540249) has quit (Quit: Falcon|)
+2021-10-30 22:32:45	-->	Falcon| (andreas@user/falcon/x-0540249) has joined #fedora
+2021-12-01 23:20:40	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #fedora
+2021-12-01 23:20:42	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 30 nov 2021 15:49:35
+2021-12-01 23:20:42	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-01 23:20:42	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 30 nov 2021 15:49:35
+2021-12-01 23:20:43	--	Channel #fedora: 1514 nicks (2 ops, 731 voices, 781 normals)
+2021-12-01 23:20:40	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-12-01 23:21:05	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-01 23:22:47	<--	sherm (~shorton@pool-108-26-147-200.bstnma.fios.verizon.net) has quit (Quit: WeeChat 3.2)
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #fedora
+2021-12-01 23:23:03	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 30 nov 2021 15:49:35
+2021-12-01 23:23:03	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-01 23:23:03	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 30 nov 2021 15:49:35
+2021-12-01 23:23:04	--	Channel #fedora: 1513 nicks (2 ops, 731 voices, 780 normals)
+2021-12-01 23:22:59	--	PvNotice(ChanServ): Any advice you read here is provided by individual community members. You should use it at your OWN RISK. This advice is owned by each individual, and does NOT represent the views of Libera.Chat, Fedora or Red Hat. This channel may be logged.
+2021-12-01 23:23:14	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-01 23:23:27	-->	karlisk [karlisk] (karlisk) (~karlisk@87.110.183.114) has joined #fedora
+2021-12-01 23:23:32	--	Mode #fedora [+nt]
+2021-12-01 23:23:32	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-01 23:23:43	-->	electron^-8924 [electron^-] (Electron^-) (~electron^@212.66.122.116) has joined #fedora
+2021-12-01 23:24:11	<--	electron^-892 (~electron^@212.66.122.116) has quit (Read error: Connection reset by peer)
+2021-12-01 23:24:12	--	electron^-8924 is now known as electron^-892
+2021-12-01 23:27:15	<--	qlixed (~qlixed@181.44.129.13) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:28:43	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-01 23:29:38	<--	karlisk (~karlisk@87.110.183.114) has quit (Remote host closed the connection)
+2021-12-01 23:33:55	-->	shubbar_ [shubbar] (Ahmed Shubbar) (~shubbar@5.244.159.90) has joined #fedora
+2021-12-01 23:34:31	<--	elxa (~elxa@2a02:6d40:35fc:6801:a527:ff29:7c3:be64) has quit (Remote host closed the connection)
+2021-12-01 23:35:44	+SigmaSquadron	<vwbusguy[m]> "I'm still getting used to the..." <- Toolbox won't work with anything that depends on systemd unfortunately.
+2021-12-01 23:36:03	+SigmaSquadron	Though I think systemd support is an active issue
+2021-12-01 23:36:18	<--	shubbar_7 (~shubbar@5.245.84.112) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:36:37	<--	stdout (~stdout@216.163.21.11) has quit (Quit: Leaving)
+2021-12-01 23:36:52	-->	shubbar_7 [shubbar] (Ahmed Shubbar) (~shubbar@5.244.159.90) has joined #fedora
+2021-12-01 23:38:37	<--	shubbar_ (~shubbar@5.244.159.90) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:44:29	<--	jhns (~johannes@dynamic-078-054-240-221.78.54.pool.telefonica.de) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:47:56	<--	u^A|fedora (~allberto@2001:e68:8066:3c00:7392:3d7f:3337:33fb) has quit (Remote host closed the connection)
+2021-12-01 23:48:01	<--	kathenas (~kathenas@2a02:c7f:e512:a500:82fa:5bff:fe68:a513) has quit (Quit: Leaving)
+2021-12-01 23:48:02	-->	karlisk [karlisk] (karlisk) (~karlisk@87.110.183.114) has joined #fedora
+2021-12-01 23:48:47	-->	chinosoliard [chinosoliard] (Chino) (~chinosoli@fedora/chinosoliard) has joined #fedora
+2021-12-01 23:52:00	<--	sheikhshard (~Rheanna@61.171.21.169) has quit (Remote host closed the connection)
+2021-12-01 23:52:38	<--	mdemo (~mdemo@user/mdemo22) has quit (Quit: The Lounge - https://thelounge.github.io)
+2021-12-01 23:53:20	-->	sheikhshard (purple) (~Rheanna@218.78.94.61) has joined #fedora
+2021-12-01 23:53:52	<--	GrannyGoose (~GrannyGoo@2001:8003:c834:fd01:88f3:746d:d703:a3d8) has quit (Quit: Leaving)
+2021-12-01 23:54:36	<--	dmgk (~dmgk@user/dmgk) has left #fedora
+2021-12-01 23:56:09	-->	kathenas [kathenas] (Phil Wyett) (~kathenas@2a02:c7f:e512:a500:82fa:5bff:fe68:a513) has joined #fedora
+2021-12-01 23:56:17	-->	jhns [jhns] (Johannes) (~johannes@x4db75b9a.dyn.telefonica.de) has joined #fedora
+2021-12-01 23:57:43	-->	short-bike [short-bike] (Phil) (~short-bik@centos/community/short-bike) has joined #fedora
+2021-12-01 23:58:45	<--	chinosoliard (~chinosoli@fedora/chinosoliard) has quit (Remote host closed the connection)
+2021-12-01 23:59:37	-->	frmlof [frmlof] (From Land of Fire) (~frmlof@70.243.238.191) has joined #fedora
+2021-12-02 00:00:46	-->	cpluspunch_ [cpluspunch] (ZNC - https://znc.in) (~znc@104.200.132.245) has joined #fedora
+2021-12-02 00:01:32	<--	uvolmer (~uvolmer@2001-4dd0-212c-82-e069-f5f7-ab7b-8443.ipv6dyn.netcologne.de) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:02:56	<--	cpluspunch (~znc@104.200.132.221) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:06:39	<--	shubbar_7 (~shubbar@5.244.159.90) has quit (Remote host closed the connection)
+2021-12-02 00:06:59	<--	ljavorsk_ (~ljavorsk@ip-85-160-15-224.eurotel.cz) has quit (Quit: This computer has gone to sleep)
+2021-12-02 00:09:47	-->	shubbar_7 [shubbar] (Ahmed Shubbar) (~shubbar@5.244.159.90) has joined #fedora
+2021-12-02 00:11:47	<--	sct (~sct@94.173.242.58) has quit (Quit: Leaving)
+2021-12-02 00:13:01	vwbusguy[m]	Seems to be working fine so far 🤷‍♂️
+2021-12-02 00:13:18	vwbusguy[m]	I didn't need to use toolbx, at least intentionally - I installed it with rpm-ostree
+2021-12-02 00:13:20	-->	freakynl [freakynl] (Unknown) (~freaky@user/freakynl) has joined #fedora
+2021-12-02 00:18:29	<--	ux_man (ux_man@gateway/vpn/protonvpn/uxman/x-60099443) has quit (Quit: leaving)
+2021-12-02 00:19:16	+SigmaSquadron	<vwbusguy[m]> "I didn't need to use toolbx..." <- Yeah, you couldn't use toolbox to run cockpit.
+2021-12-02 00:19:22	+SigmaSquadron	s/couldn/can/
+2021-12-02 00:20:27	<--	chrisklinger (~Thunderbi@2603:3020:2602:3000:2c0:caff:fe82:8240) has quit (Quit: chrisklinger)
+2021-12-02 00:20:36	-->	chrisklinger (chrisklinger) (~Thunderbi@2603:3020:2602:3000:2c0:caff:fe82:8240) has joined #fedora
+2021-12-02 00:23:51	<--	DyDyMan (~DyDyMan@1.red-79-145-222.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:26:39	<--	a0z1 (~a0z1@185.213.155.166) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:32:21	<--	ccallahan (~ccallahan@redhat/ccallahan) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:34:18	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-12-02 00:36:55	<--	se-sm-ca (~sean@user/se-sm-ca) has quit (Quit: WeeChat 3.3)
+2021-12-02 00:42:01	<--	sheikhshard (~Rheanna@218.78.94.61) has quit (Remote host closed the connection)
+2021-12-02 00:44:07	-->	sheikhshard (purple) (~Rheanna@218.78.79.129) has joined #fedora
+2021-12-02 00:47:14	-->	vysn [vysn] (vysn) (~vysn@user/vysn) has joined #fedora
+2021-12-02 00:47:56	<--	frmlof (~frmlof@70.243.238.191) has quit (Quit: frmlof)
+2021-12-02 00:51:08	-->	quasineutral3 [quasineutral] (quasineutral) (~quaisneut@user/quasineutral) has joined #fedora
+2021-12-02 00:51:14	-->	skierpage [skierpage] (skierpage) (~Thunderbi@76-14-115-121.rk.wavecable.com) has joined #fedora
+2021-12-02 00:51:44	<--	quasineutral (~quaisneut@user/quasineutral) has quit (Ping timeout: 260 seconds)
+2021-12-02 00:51:44	--	quasineutral3 is now known as quasineutral
+2021-12-02 00:52:27	-->	rednul (rednul) (~rednul@098-127-226-233.biz.spectrum.com) has joined #fedora
+2021-12-02 00:53:41	-->	nb0 [nb] (The Lounge User) (~nb@fedora/ansible.user.nb) has joined #fedora
+2021-12-02 00:53:55	<--	nb (~nb@fedora/ansible.user.nb) has quit (Read error: Connection reset by peer)
+2021-12-02 00:53:55	--	nb0 is now known as nb
+2021-12-02 00:54:46	<--	Seirdy (~Seirdy@sourcehut/user/seirdy) has quit (Quit: exiting 3.3)
+2021-12-02 00:55:17	-->	Seirdy [Seirdy] (Seirdy) (~Seirdy@sourcehut/user/seirdy) has joined #fedora
+2021-12-02 00:56:19	<--	zer0bitz (~zer0bitz@dsl-hkibng32-54fbfb-173.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-12-02 00:58:36	<--	rednul (~rednul@098-127-226-233.biz.spectrum.com) has quit (Quit: My Mac Mini has gone to sleep. ZZZzzz…)
+2021-12-02 01:00:49	<--	uid_max (~samw@host86-177-209-226.range86-177.btcentralplus.com) has quit (Quit: Leaving)
+2021-12-02 01:04:03	-->	rednul (rednul) (~rednul@098-127-226-233.biz.spectrum.com) has joined #fedora
+2021-12-02 01:04:18	<--	sabas3dgh (~ambassado@5.62.229.6) has quit (Remote host closed the connection)
+2021-12-02 01:04:25	<--	mkyral_ (~mkyral@cgnat44-pool3-70-118.poda.cz) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:04:28	<--	ncuxo (~ident@87.121.71.46) has quit (Quit: Konversation terminated!)
+2021-12-02 01:06:22	-->	syam7311[m] (@syam7311:mozilla.org) (~syam7311m@2001:470:69fc:105::1:4398) has joined #fedora
+2021-12-02 01:06:22	--	Mode #fedora [+v syam7311[m]] by ChanServ
+2021-12-02 01:07:22	-->	GrannyGoose [GrannyGoose] (Greg) (~GrannyGoo@2001:8003:c834:fd01:88f3:746d:d703:a3d8) has joined #fedora
+2021-12-02 01:21:33	<--	nostar (~nostar@2601:406:4100:34d:8f4:5ea7:30b2:b7e6) has quit (Ping timeout: 268 seconds)
+2021-12-02 01:25:02	-->	nostar [nostar] (realname) (~nostar@45.14.195.55) has joined #fedora
+2021-12-02 01:26:40	<--	chrisklinger (~Thunderbi@2603:3020:2602:3000:2c0:caff:fe82:8240) has quit (Quit: chrisklinger)
+2021-12-02 01:26:44	<--	vwbusguy (~vwbusguy@fedora/vwbusguy) has quit (Quit: Leaving)
+2021-12-02 01:27:18	-->	chrisklinger (chrisklinger) (~Thunderbi@2603:3020:2602:3000:2c0:caff:fe82:8240) has joined #fedora
+2021-12-02 01:28:45	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 01:29:29	-->	vdamewood [vdamewood] (Vincent Damewood) (~vdamewood@fedora/vdamewood) has joined #fedora
+2021-12-02 01:29:35	<--	vimal (~vimal@ip-213-127-89-120.ip.prioritytelecom.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:30:45	-->	gtwilliams_ (Garry Williams) (garry@107-206-242-22.lightspeed.tukrga.sbcglobal.net) has joined #fedora
+2021-12-02 01:31:14	<--	electron^-892 (~electron^@212.66.122.116) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-02 01:31:50	-->	electron^-8924 [electron^-] (Electron^-) (~electron^@212.66.122.116) has joined #fedora
+2021-12-02 01:31:58	<--	sheikhshard (~Rheanna@218.78.79.129) has quit (Remote host closed the connection)
+2021-12-02 01:32:02	<--	gtwilliams (garry@2600:1700:b511:30d0::48) has quit (Ping timeout: 268 seconds)
+2021-12-02 01:33:26	-->	vinleod [vdamewood] (Vincent Damewood) (~vdamewood@fedora/vdamewood) has joined #fedora
+2021-12-02 01:33:57	-->	sheikhshard (purple) (~Rheanna@218.78.99.237) has joined #fedora
+2021-12-02 01:34:29	<--	vdamewood (~vdamewood@fedora/vdamewood) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:39:56	-->	legacyjames [legacyjames] (James) (~james@c-73-139-195-210.hsd1.fl.comcast.net) has joined #fedora
+2021-12-02 01:42:53	<--	rednul (~rednul@098-127-226-233.biz.spectrum.com) has quit (Quit: My Mac Mini has gone to sleep. ZZZzzz…)
+2021-12-02 01:43:50	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:43:53	+tochigi	i have been playing around with i3-gaps and polybar on my system. i like it
+2021-12-02 01:44:03	+tochigi	https://i.tochigi.co/2021/12/iV51b2Op.png
+2021-12-02 01:45:22	--	vinleod is now known as vdamewood
+2021-12-02 01:45:48	+tochigi	glad there is a spin for i3
+2021-12-02 01:48:10	<--	getSomethingGood (~getSometh@d72-39-70-155.home1.cgocable.net) has quit (Quit: Leaving)
+2021-12-02 01:48:36	-->	vimal [vimal] (Vimal) (~vimal@ip-213-127-42-70.ip.prioritytelecom.net) has joined #fedora
+2021-12-02 01:51:19	-->	espadav8 (Andrew Smith) (~espadav8@122-199-10-115.ip4.superloop.com) has joined #fedora
+2021-12-02 01:51:20	--	espadav8 has identified as espadav8
+2021-12-02 01:52:54	-->	gtwilliams (Garry Williams) (garry@107-206-242-22.lightspeed.tukrga.sbcglobal.net) has joined #fedora
+2021-12-02 01:53:02	-->	rednul (rednul) (~rednul@098-127-226-233.biz.spectrum.com) has joined #fedora
+2021-12-02 01:53:57	<--	gtwilliams_ (garry@107-206-242-22.lightspeed.tukrga.sbcglobal.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:55:20	-->	saml [saml] (realname) (~saml@cpe-74-73-80-162.nyc.res.rr.com) has joined #fedora
+2021-12-02 01:57:17	<--	srv (~cmd@user/srv) has quit (Quit: Leaving)
+2021-12-02 01:57:20	-->	a0z1 [a0z1] (realname) (~a0z1@cpc158779-hari22-2-0-cust168.20-2.cable.virginm.net) has joined #fedora
+2021-12-02 01:59:33	-->	Villux [Villux] (realname) (~Villux@li338-244.members.linode.com) has joined #fedora
+2021-12-02 02:01:22	<--	Vilux (~Villux@li338-244.members.linode.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:03:27	-->	Jimmy_H [Jimmy_H] (realname) (~Jimmy_H@113.118.4.226) has joined #fedora
+2021-12-02 02:05:46	<--	kiilerix (~mk@87-52-41-128-cable.dk.customer.tdc.net) has quit (Quit: Leaving.)
+2021-12-02 02:06:59	-->	stdout [stdout] (realname) (~stdout@mobile-166-137-145-104.mycingular.net) has joined #fedora
+2021-12-02 02:09:03	-->	sassmann_ [sassmann] (sassmann) (~sassmann@user/sassmann) has joined #fedora
+2021-12-02 02:09:19	<--	sassmann (~sassmann@user/sassmann) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:09:59	stdout	how can i set a module option for a kernel driver? i loaded rtw89 with modprobe and i need to "Use the "disable_ps_mode=y' module option for
+2021-12-02 02:09:59	stdout	rtw89core."
+2021-12-02 02:14:59	@Khaytsus	stdout: You create a file in /etc/modprobe.d named whatever.conf and specify options there.  
+2021-12-02 02:15:12	@Khaytsus	stdout: like options rtw89 disable_ps_mode=y
+2021-12-02 02:15:33	stdout	Khaytsus, does the .conf file name need to match exactly the driver or device?
+2021-12-02 02:15:34	--	Mode #fedora [-o Khaytsus] by ChanServ
+2021-12-02 02:15:49	Khaytsus	stdout: nope, but you can so you remember, can find it easier etc
+2021-12-02 02:16:05	stdout	ok, thanks
+2021-12-02 02:16:06	<--	robobo7 (~robobo@c-e52c524e.015-74-6762675.bbcust.telenor.se) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:16:32	Khaytsus	reboot and see if that has set the option, not sure how you'd verify it, I assume it'd do whatever disable_ps_mode does ;)
+2021-12-02 02:18:24	<--	rednul (~rednul@098-127-226-233.biz.spectrum.com) has quit (Quit: My Mac Mini has gone to sleep. ZZZzzz…)
+2021-12-02 02:18:43	<--	nostar (~nostar@45.14.195.55) has quit (Quit: Leaving)
+2021-12-02 02:21:43	stdout	Khaytsus, I'm hoping I can ping w/o extremely high latency spikes. that'd be my test. if that option doesn't fix it then i guess i'm gonna try out an ax210 card.
+2021-12-02 02:22:04	-->	rednul (rednul) (~rednul@098-127-226-233.biz.spectrum.com) has joined #fedora
+2021-12-02 02:22:04	<--	sheikhshard (~Rheanna@218.78.99.237) has quit (Remote host closed the connection)
+2021-12-02 02:22:39	Khaytsus	Well, does manually setting the option help?
+2021-12-02 02:22:50	<--	stdout (~stdout@mobile-166-137-145-104.mycingular.net) has quit (Remote host closed the connection)
+2021-12-02 02:23:09	-->	stdout [stdout] (realname) (~stdout@mobile-166-137-145-104.mycingular.net) has joined #fedora
+2021-12-02 02:23:49	-->	sheikhshard (purple) (~Rheanna@218.78.53.13) has joined #fedora
+2021-12-02 02:24:36	<--	stdout (~stdout@mobile-166-137-145-104.mycingular.net) has quit (Remote host closed the connection)
+2021-12-02 02:26:49	<--	shubbar_7 (~shubbar@5.244.159.90) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:27:17	<--	pboyHB (~pb@p200300ca7f0642003d6e1b0afad79671.dip0.t-ipconnect.de) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-02 02:30:13	<--	nmourey (~nmourey@70.16.102.129) has quit (Quit: Leaving)
+2021-12-02 02:33:11	-->	stdout [stdout] (realname) (~stdout@50.115.255.72) has joined #fedora
+2021-12-02 02:35:11	stdout	When I run 'modinfo rtw89core' I see "parm: disable_ps_mode:Set Y to disable low power mode (bool)". is that telling me that 'disable_ps_mode' is enabled or that i can set it to "Y" to enable it?
+2021-12-02 02:36:05	[[R]]	stdout: if you set it to Y, it will disable low power mode
+2021-12-02 02:36:25	stdout	I'm thinking it's saying that the option is disabled and to set it to Y to enable it. However, I have "options rtw89core disable_ps_mode=Y" in /etc/modprob.conf.d/rtw89.conf
+2021-12-02 02:36:37	[[R]]	modinfo doesnt care what is currently happening with your system
+2021-12-02 02:36:41	[[R]]	its just telling you what options the module supports
+2021-12-02 02:37:10	stdout	ah, i was expecting that value to change according to an option being enabled/disabled.
+2021-12-02 02:38:16	mutk	Its possible dmesg will show what the module has done 
+2021-12-02 02:38:18	[[R]]	 /sys shows the current satte
+2021-12-02 02:38:19	[[R]]	state
+2021-12-02 02:38:42	-->	nostar [nostar] (realname) (~nostar@68.51.221.108) has joined #fedora
+2021-12-02 02:43:19	-->	robobo7 [robobo] (robobo) (~robobo@c-e52c524e.015-74-6762675.bbcust.telenor.se) has joined #fedora
+2021-12-02 02:45:56	-->	armanwu [armanwu] (purple) (~Arman_Wu@fedora/armanwu) has joined #fedora
+2021-12-02 02:46:02	<--	armanwu (~Arman_Wu@fedora/armanwu) has left #fedora
+2021-12-02 02:46:13	-->	qlixed [qlixed] (Ezequiel (Ezekiel)) (~qlixed@181.44.129.13) has joined #fedora
+2021-12-02 02:47:17	stdout	is the command "iw wlp3s0 set power_save off" persistent? just thought i'd save myself a reboot by asking.
+2021-12-02 02:48:34	[[R]]	no
+2021-12-02 02:49:23	stdout	adding it to the network startup script should be ok right?
+2021-12-02 02:50:01	[[R]]	try it and see
+2021-12-02 02:54:33	<--	eddiejennings (~eddiejenn@136.55.139.140) has quit (Read error: Connection reset by peer)
+2021-12-02 02:55:44	-->	frmlof [frmlof] (From Land of Fire) (~frmlof@70.243.238.191) has joined #fedora
+2021-12-02 02:56:35	Khaytsus	stdout: Maybe you need to do rtw89core not rtw89 in that config file
+2021-12-02 02:56:49	Khaytsus	stdout: dmesg | grep rtw    <--  see anything?
+2021-12-02 02:56:54	stdout	Khaytsus, I tried that. :/
+2021-12-02 02:57:00	Khaytsus	Ah.. huh
+2021-12-02 02:57:28	Khaytsus	But is this sure to fix something or you're currently in the state of trying to fix something?
+2021-12-02 02:57:52	-->	pgnd [pgnd] (pgnd) (~pgnd@user/pgnd) has joined #fedora
+2021-12-02 02:57:58	stdout	I found that running iw wlp3s0 set power_save off definitely fixes the issue
+2021-12-02 02:59:23	stdout	I just added "ExecStartPost=iw wlp3s0 set power_save off" to /etc/systemd/system/multi-user.target.wants/NetworkManager.service 
+2021-12-02 02:59:46	stdout	about to reboot and see if i did that right
+2021-12-02 02:59:51	<--	stdout (~stdout@50.115.255.72) has quit (Remote host closed the connection)
+2021-12-02 02:59:58	-->	chenshijie (chenshijie) (~Thunderbi@111.207.172.18) has joined #fedora
+2021-12-02 03:01:10	<--	frmlof (~frmlof@70.243.238.191) has quit (Quit: frmlof)
+2021-12-02 03:01:11	 *	Khaytsus twitches
+2021-12-02 03:01:19	-->	mattil (mattil) (~mattil@87-92-46-202.bb.dnainternet.fi) has joined #fedora
+2021-12-02 03:01:19	--	mattil has identified as mattil
+2021-12-02 03:04:11	-->	stdout [stdout] (realname) (~stdout@50.115.255.72) has joined #fedora
+2021-12-02 03:04:24	stdout	it looks like that worked.
+2021-12-02 03:04:52	stdout	i now have realistic and normal latency on wifi. thanks for the help
+2021-12-02 03:05:07	Khaytsus	Cool.  btw, you really, really shouldn't edit system files
+2021-12-02 03:05:15	Khaytsus	systemctl --edit NetworkManager.service
+2021-12-02 03:05:21	 *	[[R]] edit's khaytsus
+2021-12-02 03:05:22	Khaytsus	that would create a secondary file
+2021-12-02 03:05:30	 *	Khaytsus formats [[R]]
+2021-12-02 03:05:32	<--	chrisklinger (~Thunderbi@2603:3020:2602:3000:2c0:caff:fe82:8240) has quit (Read error: Connection reset by peer)
+2021-12-02 03:05:49	stdout	will it be overwritten on an update?
+2021-12-02 03:05:55	<--	mattil (~mattil@87-92-46-202.bb.dnainternet.fi) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:06:03	Khaytsus	Yes
+2021-12-02 03:06:10	stdout	great! /s
+2021-12-02 03:06:19	Khaytsus	The above will prevent that
+2021-12-02 03:06:30	stdout	ok, doing it now
+2021-12-02 03:06:35	stdout	thanks for the heads up
+2021-12-02 03:07:02	-->	chrisklinger (chrisklinger) (~Thunderbi@2603:3020:2602:3000:2c0:caff:fe82:8240) has joined #fedora
+2021-12-02 03:07:03	Khaytsus	Yeah, latent failures are no fun
+2021-12-02 03:12:01	<--	zulutango (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has quit (Remote host closed the connection)
+2021-12-02 03:12:01	<--	sheikhshard (~Rheanna@218.78.53.13) has quit (Remote host closed the connection)
+2021-12-02 03:12:34	stdout	Khaytsus, this is my first time using 'systemctl edit blah.service'. It's opened a nano session and shows the contents of the systems network.service file but all commented out. Do I need to put everything in this new overrides file or will the contents be appended to the systems file?
+2021-12-02 03:12:38	-->	zulutango [zulutango] (zulutango) (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has joined #fedora
+2021-12-02 03:13:52	-->	sheikhshard (purple) (~Rheanna@218.78.67.149) has joined #fedora
+2021-12-02 03:14:25	<--	legacyjames (~james@c-73-139-195-210.hsd1.fl.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:14:37	Khaytsus	Looks like the commented out lines are from the file, and you could pass --full to basically just start with a copy of the original file
+2021-12-02 03:15:16	stdout	ok, so it does replace the original and not append settings to it.
+2021-12-02 03:15:44	Khaytsus	Yeah looks like it does, I was thinking for some reason it was overlaid but the way unit files are kind of INI file oriented I guess that doesn't make sense
+2021-12-02 03:17:35	[[R]]	the edit does an append
+2021-12-02 03:17:46	[[R]]	so you just put [Service] then ExecStartPost in it
+2021-12-02 03:17:53	<--	Sonar_Guy (~sonarguy@fedora/sonarguy) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:20:09	<--	a0z1 (~a0z1@cpc158779-hari22-2-0-cust168.20-2.cable.virginm.net) has quit (Quit: Leaving)
+2021-12-02 03:20:23	-->	Sonar_Guy [Sonar_Guy] (Who Cares) (~sonarguy@fedora/sonarguy) has joined #fedora
+2021-12-02 03:20:47	Khaytsus	Now you pipe in  :P
+2021-12-02 03:20:58	Khaytsus	I am still a cronjob kind of hack it guy 
+2021-12-02 03:21:11	stdout	ok, gonna reboot and see what sticks. lol
+2021-12-02 03:21:12	stdout	brb
+2021-12-02 03:21:17	<--	stdout (~stdout@50.115.255.72) has quit (Remote host closed the connection)
+2021-12-02 03:22:15	<--	zulutango (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has quit (Remote host closed the connection)
+2021-12-02 03:22:40	-->	zulutango [zulutango] (zulutango) (~zulutango@static-n58-105-160-58.mas4.nsw.optusnet.com.au) has joined #fedora
+2021-12-02 03:22:48	-->	frmlof [frmlof] (From Land of Fire) (~frmlof@70.243.238.191) has joined #fedora
+2021-12-02 03:24:32	-->	stdout [stdout] (realname) (~stdout@50.115.255.72) has joined #fedora
+2021-12-02 03:24:56	 *	stdout announces the verdict:
+2021-12-02 03:25:02	stdout	It appends
+2021-12-02 03:25:12	Khaytsus	Nice, and worked?
+2021-12-02 03:25:16	stdout	yep
+2021-12-02 03:27:03	[[R]]	looks like --full creates a regular service file in /etc/systemd/system... without --full it creates a drop in inblah.service.d/override.conf
+2021-12-02 03:28:40	-->	kinghat[m] (@kinghat:matrix.org) (~kinghatma@2001:470:69fc:105::a82) has joined #fedora
+2021-12-02 03:28:40	--	Mode #fedora [+v kinghat[m]] by ChanServ
+2021-12-02 03:28:46	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 03:28:50	<--	plarsen (~plarsen@fedora/plarsen) has quit (Remote host closed the connection)
+2021-12-02 03:29:13	-->	gtwilliams_ (Garry Williams) (garry@107-206-242-22.lightspeed.tukrga.sbcglobal.net) has joined #fedora
+2021-12-02 03:30:09	<--	jf_simon (~quassel@2001:16b8:405f:b000:ba27:ebff:fe29:1835) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-12-02 03:30:32	<--	gtwilliams (garry@107-206-242-22.lightspeed.tukrga.sbcglobal.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:30:57	-->	jf_simon [jf_simon] (Simon T) (~quassel@2001:16b8:405f:b000:ba27:ebff:fe29:1835) has joined #fedora
+2021-12-02 03:31:28	<--	frmlof (~frmlof@70.243.238.191) has quit (Quit: frmlof)
+2021-12-02 03:35:04	<--	jf_simon (~quassel@2001:16b8:405f:b000:ba27:ebff:fe29:1835) has quit (Client Quit)
+2021-12-02 03:35:48	Khaytsus	Oh, I thought --full created the same override file but just copied the origin
+2021-12-02 03:36:01	 *	Khaytsus shrugs
+2021-12-02 03:40:36	[[R]]	if blah.service exists in /lib/systemd and it also exists in /etc, it'll just use the one in /etc
+2021-12-02 03:44:08	<--	pgnd (~pgnd@user/pgnd) has left #fedora
+2021-12-02 03:44:17	<--	WhyNot-POR (~quassel@2a01:c22:c8c7:6d00:87a2:600c:40b4:455f) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:44:31	-->	WhyNot-POR (WhyNot-POR) (~quassel@2a01:c23:7909:b500:62e8:b988:e4f2:d31a) has joined #fedora
+2021-12-02 03:44:32	--	WhyNot-POR has identified as WhyNot-POR
+2021-12-02 03:48:03	Terminus	stdout: instead of editing system systemd files, i put all my customization in ~/.config/systemd/user/. haven't tested using sudo with it. it'll probably work with oneshot though.
+2021-12-02 03:48:49	Terminus	the stuff i run as a service doesn't require root.
+2021-12-02 03:49:13	-->	hqdruxn08__ [hqdruxn08] (realname) (~hqdruxn08@cpe-66-68-166-214.austin.res.rr.com) has joined #fedora
+2021-12-02 03:51:31	-->	jf_simon [jf_simon] (Simon T) (~quassel@2001:16b8:405f:b000:ba27:ebff:fe29:1835) has joined #fedora
+2021-12-02 03:53:27	<--	hqdruxn08_ (~hqdruxn08@cpe-66-68-166-214.austin.res.rr.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:54:01	Terminus	just read more and saw the module options stuff. that's probably the best way to do it if it works.
+2021-12-02 03:55:14	--	fkvodndh[m] is now known as gjsjc[m]
+2021-12-02 03:55:17	<--	tswsl (~tswsl@overviewer/tswsl) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:59:59	--	gtwilliams_ has identified as gtwilliams
+2021-12-02 04:00:06	--	gtwilliams_ is now known as gtwilliams
+2021-12-02 04:00:12	<--	tsundoku- (~tsundoku@irc.tsundoku.ne.jp) has left #fedora
+2021-12-02 04:00:18	<--	skierpage (~Thunderbi@76-14-115-121.rk.wavecable.com) has quit (Quit: skierpage)
+2021-12-02 04:01:03	-->	tsundoku [tsundoku] (積読) (~tsundoku@irc.tsundoku.ne.jp) has joined #fedora
+2021-12-02 04:01:58	<--	sheikhshard (~Rheanna@218.78.67.149) has quit (Remote host closed the connection)
+2021-12-02 04:02:07	<--	rednul (~rednul@098-127-226-233.biz.spectrum.com) has quit (Quit: My Mac Mini has gone to sleep. ZZZzzz…)
+2021-12-02 04:02:15	-->	tswsl [tswsl] (Tom) (~tswsl@overviewer/tswsl) has joined #fedora
+2021-12-02 04:04:42	-->	sheikhshard (purple) (~Rheanna@101.89.150.168) has joined #fedora
+2021-12-02 04:05:34	-->	frmlof [frmlof] (From Land of Fire) (~frmlof@70.243.238.191) has joined #fedora
+2021-12-02 04:12:09	<--	qlixed (~qlixed@181.44.129.13) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:12:30	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-12-02 04:19:12	-->	ilmostro [ilmostro] (ilmostro) (~ilmostro@user/ilmostro) has joined #fedora
+2021-12-02 04:23:14	<--	murphnj (~murph@user/murphnj) has quit (Quit: Leaving)
+2021-12-02 04:25:45	-->	gtwilliams_ (Garry Williams) (garry@2600:1700:b511:30d0::48) has joined #fedora
+2021-12-02 04:26:49	<--	gtwilliams (garry@107-206-242-22.lightspeed.tukrga.sbcglobal.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:32:22	-->	pemensik [pemensik] (realname) (~pemensik@46.149.126.14) has joined #fedora
+2021-12-02 04:34:53	<--	pemensik_ (~pemensik@46.149.126.14) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:36:13	--	gtwilliams_ has identified as gtwilliams
+2021-12-02 04:36:15	--	gtwilliams_ is now known as gtwilliams
+2021-12-02 04:36:21	<--	msauton__ (~msauton@107-138-40-213.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:37:54	-->	great_taste [great_taste] ([https://web.libera.chat] great_taste) (~great_tas@user/great-taste/x-5798414) has joined #fedora
+2021-12-02 04:39:42	-->	messiahbooks[m] (@messiahbooks:matrix.org) (~messiahbo@2001:470:69fc:105::1:43c0) has joined #fedora
+2021-12-02 04:39:43	--	Mode #fedora [+v messiahbooks[m]] by ChanServ
+2021-12-02 04:40:55	+messiahbooks[m]	Secret Knowledge Wisdom That Will Help You Become God Again, Active Super Power, Live Forever https://eternalsacredbooks.wordpress.com/2021/12/01/secret-knowledge-wisdom-that-will-help-you-become-god-again-active-super-power-live-forever/
+2021-12-02 04:41:34	<--	messiahbooks[m] (~messiahbo@2001:470:69fc:105::1:43c0) has left #fedora
+2021-12-02 04:42:04	[[R]]	khaytsus: ping
+2021-12-02 04:43:04	Khaytsus	dong
+2021-12-02 04:43:27	[[R]]	khaytsus: look up
+2021-12-02 04:43:38	Khaytsus	Yeah, nuked on matrix 
+2021-12-02 04:43:56	-->	qlixed [qlixed] (Ezequiel (Ezekiel)) (~qlixed@181.44.129.13) has joined #fedora
+2021-12-02 04:44:11	Khaytsus	I've never looked at any of those urls but.... just why
+2021-12-02 04:44:18	[[R]]	lol
+2021-12-02 04:46:16	<--	slidercrank (~slidercra@user/slidercrank) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:50:50	<--	jhns (~johannes@x4db75b9a.dyn.telefonica.de) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:52:08	<--	sheikhshard (~Rheanna@101.89.150.168) has quit (Remote host closed the connection)
+2021-12-02 04:52:32	<--	vdamewood (~vdamewood@fedora/vdamewood) has quit (Read error: Connection reset by peer)
+2021-12-02 04:54:31	-->	sheikhshard (purple) (~Rheanna@101.89.150.168) has joined #fedora
+2021-12-02 04:54:44	-->	vdamewood [vdamewood] (Vincent Damewood) (~vdamewood@fedora/vdamewood) has joined #fedora
+2021-12-02 04:56:36	<--	GrannyGoose (~GrannyGoo@2001:8003:c834:fd01:88f3:746d:d703:a3d8) has quit (Quit: Leaving)
+2021-12-02 04:57:58	-->	sudhir [sudhir] (realname) (~sudhir@2401:4900:619f:5284:eb99:ca2d:ffce:503f) has joined #fedora
+2021-12-02 04:58:20	-->	on^ (...) (~on@68.101.58.90) has joined #fedora
+2021-12-02 04:59:49	<--	qlixed (~qlixed@181.44.129.13) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:00:55	<--	mymindstorm (~Thunderbi@cpe-70-121-73-120.austin.res.rr.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:02:03	-->	bytehackr (Sandipan Roy) (~Sandipan@43.252.250.77) has joined #fedora
+2021-12-02 05:02:03	--	bytehackr has identified as bytehackr
+2021-12-02 05:02:27	-->	slidercrank [slidercrank] (Mr. Vain) (~slidercra@user/slidercrank) has joined #fedora
+2021-12-02 05:06:11	-->	Ryan[m]12 (@ryaeiin:matrix.org) (~ryaeiinma@2001:470:69fc:105::d1fa) has joined #fedora
+2021-12-02 05:06:12	--	Mode #fedora [+v Ryan[m]12] by ChanServ
+2021-12-02 05:06:13	<--	privacyisgood[m] (~privacyis@2001:470:69fc:105::1:3a0b) has left #fedora
+2021-12-02 05:07:40	-->	jhns [jhns] (Johannes) (~johannes@dynamic-089-012-210-119.89.12.pool.telefonica.de) has joined #fedora
+2021-12-02 05:12:52	-->	anginapectoris3 [anginapectoris] (anginapectoris) (~anginapec@user/anginapectoris) has joined #fedora
+2021-12-02 05:15:07	<--	anginapectoris (~anginapec@user/anginapectoris) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:15:07	--	anginapectoris3 is now known as anginapectoris
+2021-12-02 05:19:52	<--	chenshijie (~Thunderbi@111.207.172.18) has quit (Ping timeout: 250 seconds)
+2021-12-02 05:20:07	<--	HolyGarbage (~HolyGarba@c83-254-160-78.bredband.tele2.se) has quit (Quit: WeeChat 3.3)
+2021-12-02 05:22:42	-->	sassmann [sassmann] (sassmann) (~sassmann@user/sassmann) has joined #fedora
+2021-12-02 05:23:16	<--	frmlof (~frmlof@70.243.238.191) has quit (Quit: frmlof)
+2021-12-02 05:23:17	<--	sassmann_ (~sassmann@user/sassmann) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:23:42	-->	frmlof [frmlof] (From Land of Fire) (~frmlof@70.243.238.191) has joined #fedora
+2021-12-02 05:24:28	-->	jdofbkel[m] (@jdofbkel:matrix.org) (~jdofbkelm@2001:470:69fc:105::1:43c5) has joined #fedora
+2021-12-02 05:24:28	--	Mode #fedora [+v jdofbkel[m]] by ChanServ
+2021-12-02 05:26:17	-->	HolyGarbage [HolyGarbage] (HolyGarbage) (~HolyGarba@c83-254-160-78.bredband.tele2.se) has joined #fedora
+2021-12-02 05:27:25	-->	c0sa_mn[m] (@c0sa_mn:matrix.org) (~c0samnmat@2001:470:69fc:105::1:43c6) has joined #fedora
+2021-12-02 05:27:25	--	Mode #fedora [+v c0sa_mn[m]] by ChanServ
+2021-12-02 05:27:50	<--	c0sa_mn[m] (~c0samnmat@2001:470:69fc:105::1:43c6) has left #fedora
+2021-12-02 05:28:04	-->	spybert [spybert] (Herbert West) (~spybert@2601:204:d000:8120::e6b9) has joined #fedora
+2021-12-02 05:28:48	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 05:38:08	<--	jf_simon (~quassel@2001:16b8:405f:b000:ba27:ebff:fe29:1835) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:38:37	-->	jf_simon [jf_simon] (Simon T) (~quassel@2001:16b8:4078:6500:ba27:ebff:fe29:1835) has joined #fedora
+2021-12-02 05:43:50	-->	GrannyGoose [GrannyGoose] (Greg) (~GrannyGoo@2001:8003:c834:fd01:88f3:746d:d703:a3d8) has joined #fedora
+2021-12-02 05:44:12	<--	stdout (~stdout@50.115.255.72) has quit (Quit: Leaving)
+2021-12-02 05:47:23	-->	anginapectoris1 [anginapectoris] (anginapectoris) (~anginapec@user/anginapectoris) has joined #fedora
+2021-12-02 05:49:41	<--	anginapectoris (~anginapec@user/anginapectoris) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:49:41	--	anginapectoris1 is now known as anginapectoris
+2021-12-02 05:52:45	<--	leogallego (~leogalleg@181.229.50.87) has quit (Read error: Connection reset by peer)
+2021-12-02 05:53:16	<--	vimal (~vimal@ip-213-127-42-70.ip.prioritytelecom.net) has quit (Ping timeout: 245 seconds)
+2021-12-02 05:53:18	-->	leogallego [leogallego] (Leo Gallego) (~leogalleg@181.229.50.87) has joined #fedora
+2021-12-02 05:56:28	-->	chenshijie (chenshijie) (~Thunderbi@111.207.172.18) has joined #fedora
+2021-12-02 05:59:46	-->	gambl0re [gambl0re] (gambl0re) (~gambl0re@216.154.4.187) has joined #fedora
+2021-12-02 06:00:38	-->	zdohnal [zdohnal] (purple) (~zdohnal@2a02:8308:a083:cb00:e5de:f31d:ab20:7946) has joined #fedora
+2021-12-02 06:06:26	-->	TOB_CyxoB [TOB_CyxoB] (realname) (~TOB_CyxoB@gateway/tor-sasl/tobcyxob/x-83841022) has joined #fedora
+2021-12-02 06:07:05	<--	HappyMan (~HappyMan@user/happyman) has quit (Quit: HappyMan)
+2021-12-02 06:08:15	-->	jorgegarcia (Jorge Garcia) (~jorgegarc@201.162.192.116) has joined #fedora
+2021-12-02 06:08:19	<--	on^ (~on@68.101.58.90) has quit (Remote host closed the connection)
+2021-12-02 06:08:27	<--	jorgegarcia (~jorgegarc@201.162.192.116) has quit (Client Quit)
+2021-12-02 06:09:47	-->	HappyMan [HappyMan] (HappyMan) (~HappyMan@user/happyman) has joined #fedora
+2021-12-02 06:11:47	<--	kamdard (~kamdard@47.189.25.217) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:12:49	-->	vimal [vimal] (Vimal) (~vimal@ip-213-127-87-89.ip.prioritytelecom.net) has joined #fedora
+2021-12-02 06:18:48	<--	Bayangan (~Host@ngapak.org) has quit (Ping timeout: 268 seconds)
+2021-12-02 06:21:35	<--	sheikhshard (~Rheanna@101.89.150.168) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:22:35	-->	sheikhshard (purple) (~Rheanna@218.78.105.67) has joined #fedora
+2021-12-02 06:32:02	<--	sheikhshard (~Rheanna@218.78.105.67) has quit (Remote host closed the connection)
+2021-12-02 06:34:32	-->	sheikhshard (purple) (~Rheanna@218.78.99.237) has joined #fedora
+2021-12-02 06:36:03	-->	osfe (Olivier LEMAIRE) (~lemaire@2a01:e0a:16e:7620::1e2d:4e60) has joined #fedora
+2021-12-02 06:36:03	--	osfe has identified as osfe
+2021-12-02 06:39:51	<--	hkz_ (~hkz@31.177.41.76) has quit (Ping timeout: 260 seconds)
+2021-12-02 06:41:49	<--	chenshijie (~Thunderbi@111.207.172.18) has quit (Quit: chenshijie)
+2021-12-02 06:46:05	<--	yesno (~yesno@109.98.151.179) has quit (Read error: Connection reset by peer)
+2021-12-02 06:46:22	-->	yesno (realname) (~yesno@109.98.151.179) has joined #fedora
+2021-12-02 06:48:41	-->	mattil [mattil] (mattil) (~mattil@87-95-32-212.bb.dnainternet.fi) has joined #fedora
+2021-12-02 06:49:32	-->	mattil_ (mattil) (~mattil@d1b1b9jyyfph0lzy-mp-4.rev.dnainternet.fi) has joined #fedora
+2021-12-02 06:49:46	-->	padge [padge] (Fullname) (~Username@99-62-36-179.lightspeed.iplsin.sbcglobal.net) has joined #fedora
+2021-12-02 06:53:43	<--	mattil (~mattil@87-95-32-212.bb.dnainternet.fi) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:54:45	padge	Does anyone have any recommendations on how I can conveniently push files to my /var/www from a Windows 10 box where I would like to edit them?
+2021-12-02 06:55:16	padge	I'm sorry, to be more clear, I'm sitting at a Windows 10 box and I have a Fedora 35/nginx box running on the lan.
+2021-12-02 06:56:35	-->	rindolf [rindolf] (Shlomi Fish) (~shlomif@2a0d:6fc2:4bb1:500:6b1e:2524:3d70:36ec) has joined #fedora
+2021-12-02 06:58:08	<--	yesno (~yesno@109.98.151.179) has quit (Remote host closed the connection)
+2021-12-02 06:59:48	<--	leogallego (~leogalleg@181.229.50.87) has quit (Quit: Vermú con papas fritas y good show!)
+2021-12-02 07:01:23	<--	mattil_ (~mattil@d1b1b9jyyfph0lzy-mp-4.rev.dnainternet.fi) has quit (Remote host closed the connection)
+2021-12-02 07:02:02	Terminus	padge: i just use filezilla to upload to a *nix box from windows. needs perms set correctly for the user uploading of course.
+2021-12-02 07:02:40	-->	mattil [mattil] (mattil) (~mattil@d1b1b9jyyfph0lzy-mp-4.rev.dnainternet.fi) has joined #fedora
+2021-12-02 07:02:55	-->	vxwarlock [vxwarlock] (Darkcodex) (~Darkcodex@user/vxwarlock) has joined #fedora
+2021-12-02 07:03:03	padge	FTP then? I had been trying to use SCP, but my trouble comes with permission. I'm assuming root is disabled, and you can't su with scp
+2021-12-02 07:03:22	padge	as far as I know
+2021-12-02 07:04:13	-->	nickorta12 (Nick) (~nickorta1@174-28-167-187.albq.qwest.net) has joined #fedora
+2021-12-02 07:04:18	Terminus	sftp. set perms correctly on /var/www
+2021-12-02 07:04:48	<--	great_taste (~great_tas@user/great-taste/x-5798414) has quit (Quit: Client closed)
+2021-12-02 07:05:02	<--	osfe (~lemaire@2a01:e0a:16e:7620::1e2d:4e60) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:05:18	Terminus	like i just give my user ownership of /var/www/foo because nginx only needs to read from it anyway, not write.
+2021-12-02 07:06:12	padge	Terminus: I don't know what that means. root owns www and perms are rwx, rx, rx
+2021-12-02 07:06:26	padge	okay
+2021-12-02 07:09:15	padge	What happens if I start getting a little more advanced. Does nginx ever need to write anywhere if I'm running some backend?
+2021-12-02 07:09:24	<--	mattil (~mattil@d1b1b9jyyfph0lzy-mp-4.rev.dnainternet.fi) has quit (Remote host closed the connection)
+2021-12-02 07:09:47	<--	nickorta12 (~nickorta1@174-28-167-187.albq.qwest.net) has quit (Quit: Igloo IRC: https://iglooirc.com)
+2021-12-02 07:09:50	-->	zmiklank (realname) (Zuzana@nat-pool-brq-t.redhat.com) has joined #fedora
+2021-12-02 07:11:48	Terminus	if you're making a dynamic website and need to store stuff on the filesystem like files uploaded by users, then nginx will need write access.
+2021-12-02 07:12:03	<--	ledeni (~ledeni@fedora/ledeni) has quit (Remote host closed the connection)
+2021-12-02 07:12:54	padge	... at which point, then I would assume I would need a more proper setup, or just deal with the fact that the edit/test cycle will be less convenient...?
+2021-12-02 07:13:52	-->	LuksNuke_ [LuksNuke] (LuksNuke) (~LuksNuke@gateway/tor-sasl/luksnuke) has joined #fedora
+2021-12-02 07:16:42	<--	LuksNuke (~LuksNuke@gateway/tor-sasl/luksnuke) has quit (Ping timeout: 276 seconds)
+2021-12-02 07:19:26	-->	mattil_ (mattil) (~mattil@helsinki.portalify.com) has joined #fedora
+2021-12-02 07:20:34	--	jdofbkel[m] is now known as dhiebrkof[m]
+2021-12-02 07:21:20	Terminus	padge: you really need to learn how permissions on linux work. for more advanced stuff, look up ACLs too.
+2021-12-02 07:22:02	<--	sheikhshard (~Rheanna@218.78.99.237) has quit (Remote host closed the connection)
+2021-12-02 07:22:08	Terminus	you can give multiple users and groups whatever kind of access you deem necessary with ACLs.
+2021-12-02 07:22:57	<--	mattil_ (~mattil@helsinki.portalify.com) has quit (Remote host closed the connection)
+2021-12-02 07:23:31	-->	mattil [mattil] (mattil) (~mattil@helsinki.portalify.com) has joined #fedora
+2021-12-02 07:24:09	-->	hkz [hkz] (hkz) (~hkz@31.177.41.76) has joined #fedora
+2021-12-02 07:24:12	<--	sentenza (~sentenza@146-241-168-59.dyn.eolo.it) has quit (Remote host closed the connection)
+2021-12-02 07:24:19	<--	tlamer (~tlamer@ip-94-112-134-89.net.upcbroadband.cz) has quit (Ping timeout: 256 seconds)
+2021-12-02 07:24:30	-->	sheikhshard (purple) (~Rheanna@218.78.94.61) has joined #fedora
+2021-12-02 07:25:40	padge	Terminus: okay, I'll pull on that thread for a while. Thanks for the help.
+2021-12-02 07:25:50	-->	xay[m] (@xay:matrix.org) (~xaymatrix@2001:470:69fc:105::1:43d7) has joined #fedora
+2021-12-02 07:25:51	--	Mode #fedora [+v xay[m]] by ChanServ
+2021-12-02 07:26:31	<--	losuler (~losuler@122-199-41-42.ip4.superloop.com) has quit (Ping timeout: 260 seconds)
+2021-12-02 07:27:21	-->	stransky (Martin Stransky) (~stransky@ip-94-112-201-82.net.upcbroadband.cz) has joined #fedora
+2021-12-02 07:28:50	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 07:29:41	-->	ElectronApps [ElectronApps] (Electron) (~ElectronA@user/electronapps) has joined #fedora
+2021-12-02 07:33:16	-->	ncuxo [ncuxo] (Real name) (~ident@87.121.70.87) has joined #fedora
+2021-12-02 08:09:36	--	irc: disconnected from server
+2021-12-02 08:09:53	-->	mrmanner (mrmanner@98.128.201.128) has joined #fedora
+2021-12-02 08:09:53	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-02 08:09:53	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 30 nov 2021 15:49:35
+2021-12-02 08:09:53	--	Channel #fedora: 1501 nicks (1 op, 735 voices, 765 normals)
+2021-12-02 07:52:18	+organizedglobals	Hello again, is there a command I can use to get the geoip location of a doamin or IP address from the command line? I have nslookup and the whois command that i know of, but I've got a domain address whose whois IP is not registered to a location or country. Using `mtr -4 -u -s 1024 -B 256 -i 2 -G 12 -Z 18 -c 200 -b -z` i can see that the traceroute locates it at a datacenter warehouse "fsn1.hetzner.com" which is a service routed from
+2021-12-02 07:52:18	+organizedglobals	Frankfurt to 3 different locations in the country, but it doesn't tell me what the physical address is without comparing their various warehouse ping times to the traceroute results, or doing server ping triangulation.
+2021-12-02 07:54:35	+organizedglobals	I wouldn't mind a program that has a database of server geolocations, which it then tests various servers to figure out route delay, and thus adjust and triangulate an arbitrarily given server address given that the echo replies are at high priority, or the interface isn't under heavy load.
+2021-12-02 08:10:14	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-02 08:11:06	-->	ayustae [ayustae] (ayustae) (Thunderbir@gateway/vpn/protonvpn/ayustae) has joined #fedora
+2021-12-02 08:11:54	-->	ledeni [cacti] (ledeni) (~ledeni@fedora/ledeni) has joined #fedora
+2021-12-02 08:11:58	<--	sheikhshard (~Rheanna@218.78.94.61) has quit (Remote host closed the connection)
+2021-12-02 08:13:41	-->	sheikhshard (purple) (~Rheanna@101.91.232.166) has joined #fedora
+2021-12-02 08:14:35	-->	jpodivin [jpodivin] (realname) (~jpodivin@cgnat44-pool3-71-200.poda.cz) has joined #fedora
+2021-12-02 08:17:05	<--	gambl0re (~gambl0re@216.154.4.187) has quit (Ping timeout: 252 seconds)
+2021-12-02 08:21:11	<--	padge (~Username@99-62-36-179.lightspeed.iplsin.sbcglobal.net) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-12-02 08:23:26	-->	padge [padge] (Paul) (~padge@99-62-36-179.lightspeed.iplsin.sbcglobal.net) has joined #fedora
+2021-12-02 08:24:55	<--	padge (~padge@99-62-36-179.lightspeed.iplsin.sbcglobal.net) has quit (Client Quit)
+2021-12-02 08:25:05	-->	padge [padge] (Paul) (~padge@99-62-36-179.lightspeed.iplsin.sbcglobal.net) has joined #fedora
+2021-12-02 08:26:02	<--	padge (~padge@99-62-36-179.lightspeed.iplsin.sbcglobal.net) has quit (Client Quit)
+2021-12-02 08:26:17	-->	padge [padge] (Paul) (~padge@99-62-36-179.lightspeed.iplsin.sbcglobal.net) has joined #fedora
+2021-12-02 21:02:57	--	irc: disconnected from server
+2021-12-02 21:03:16	-->	mrmanner (mrmanner@90.235.13.15) has joined #fedora
+2021-12-02 21:03:16	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-02 21:03:16	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 30 nov 2021 15:49:35
+2021-12-02 21:03:16	--	Channel #fedora: 1528 nicks (1 op, 732 voices, 795 normals)
+2021-12-02 09:22:01	tete_	hi, for testing purposes i guess i have to remove pipewire from the system and use jack instead. is that simply done with dnf remove pipewire or is there something else i should consider?
+2021-12-02 09:22:11	tete_	https://github.com/wineasio/wineasio/issues/34 because of that 
+2021-12-02 09:27:01	rindolf	tete_: hi
+2021-12-02 09:27:17	tete_	hi rindolf 
+2021-12-02 09:28:52	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 09:39:37	rindolf	tete_: can you try it and see?
+2021-12-02 09:40:45	tete_	i got answer in #pipewire, i just removed the pipewire-jack-audio-connection-kit and installed jack-audio-connection-kit
+2021-12-02 09:41:09	tete_	brb
+2021-12-02 11:28:52	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 12:22:47	+JamesBelchamber[	<theblackuchiha[m> "Hey everyone, this might be a..." <- In Fedora Workstation? Sure.
+2021-12-02 12:24:17	+JamesBelchamber[	Just bear in mind that packages in RPM Fusion (like all non-Fedora packages) aren't being built and tested in the same way and through the same processes
+2021-12-02 12:24:34	+JamesBelchamber[	Standard "third party packages" risks apply
+2021-12-02 12:25:17	+JamesBelchamber[	(in practice RPM Fusion repos tend to feel almost like 1.5 party packages rather than third party)
+2021-12-02 12:43:51	+SigmaSquadron	And do keep in mind that the RPM Fusion non-free repo does not have the same open source restrictions the Fedora repo has, if you care about that.
+2021-12-02 13:28:54	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 14:10:00	Southern_Gentlem	JamesBelchamber[, also remember the RPMfusion maintainer maintain other packages in Fedora, and they are trusted by the community 
+2021-12-02 14:10:39	Salatwurzel	Hello, first time Fedora user here. Quick Question: I just added the rpmfusion repository. If i update to Fedora 36 in the future, do i need to update repos like this manually to match the new version, or is fedora a good friend and does it for me?
+2021-12-02 14:11:06	+iantucenghi[m]	It does it for you
+2021-12-02 14:11:20	+iantucenghi[m]	So yeah a good friend.
+2021-12-02 14:11:55	Salatwurzel	@iantucenghi[m] : Damn, that is really nice. Thank you for your answer.
+2021-12-02 14:11:57	+JamesBelchamber[	*So long as you've added the repos sensibly
+2021-12-02 14:12:02	Southern_Gentlem	Salatwurzel, most of the time rpmfusion is ready when upgrades to the next version happens 
+2021-12-02 14:12:57	+iantucenghi[m]	Salatwurzel: No worries, Bud. Enjoy.
+2021-12-02 14:13:01	+JamesBelchamber[	If you look at the repo config it should have something like `$arch` `$version` in it, which means it'll automatically move to the new repo as you upgrade Fedora
+2021-12-02 14:13:02	Southern_Gentlem	JamesBelchamber[, that can be said for any repo you add to be truthful 
+2021-12-02 14:13:29	+iantucenghi[m]	Yup
+2021-12-02 14:14:08	+JamesBelchamber[	Sure
+2021-12-02 14:14:16	+iantucenghi[m]	That's the beauty of Fedora. Unlike say Slackware where you have to edit the mirrors file to point to the current version before it can pull packages for that version.
+2021-12-02 14:14:28	+JamesBelchamber[	>slackware
+2021-12-02 14:15:39	+JamesBelchamber[	https://media.giphy.com/media/3owzW9BQ1KkuvfyaGI/giphy.gif
+2021-12-02 15:18:06	+ignapk	according to https://www.phoronix.com/scan.php?page=news_item&px=Minecraft-RadeonSI-Thread, running Minecraft with the mesa_glthread=true environment variable should speed fps up 30% while it slows it down in reality, why could that be? Using flatpak minecraft, switchable graphics
+2021-12-02 15:24:00	gnafu	ignapk: What do you mean by "switchable graphics"?
+2021-12-02 15:24:18	gnafu	Also, how did you set the environment variable?
+2021-12-02 15:24:36	gnafu	I wonder if it needs to be done a bit differently with flatpaks.
+2021-12-02 15:28:55	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 15:29:47	+ignapk	by switchable graphics I mean intel integrated gpu and amd dedicated gpu in a laptop
+2021-12-02 15:30:42	+ignapk	mesa_glthread=true DRI_PRIME=1 flatpak run com.mojang.Minecraft
+2021-12-02 15:32:22	gnafu	Aah, I forgot that there were Intel/AMD laptops and not just Intel/NVIDIA :-).
+2021-12-02 15:34:12	+ignapk	yes, works great so far :)
+2021-12-02 15:37:42	+vurpo	https://retrace.fedoraproject.org/faf/reports/258854/ I've started experiencing this crash pretty much daily
+2021-12-02 15:38:03	+vurpo	At some point while I'm away from the computer, gnome-shell crashes and I'm returned to the login screen
+2021-12-02 15:38:21	gnafu	ignapk: You might try setting the variable using the '--env=' command line switch for 'flatpak'.
+2021-12-02 15:38:30	gnafu	https://docs.flatpak.org/en/latest/flatpak-command-reference.html
+2021-12-02 15:39:41	gnafu	ignapk: Wait, sorry; that might be for building a flatpak...
+2021-12-02 15:44:23	Southern_Gentlem	vurpo file a bugzilla 
+2021-12-02 15:45:17	+vurpo	Where is the bugzilla and what kind of account do I need?
+2021-12-02 15:45:28	Southern_Gentlem	bugzilla.redhat.com
+2021-12-02 15:45:39	Southern_Gentlem	whatever account your want to use 
+2021-12-02 15:52:31	+vurpo	Actually I found a report of the same crash
+2021-12-02 15:52:47	+vurpo	opened a few weeks ago
+2021-12-02 15:54:04	stdout	what's the currently recommended imap server? dovecot?
+2021-12-02 15:57:48	[Enrico]	stdout: not sure what you mean with recommended. I use cyrus imapd
+2021-12-02 15:57:59	[Enrico]	I like it quite a bit
+2021-12-02 15:59:19	stdout	I haven't set up an imap server in ages and I'm not sure which package is more popular these days. I remember dovecot and cyrus being the big two to choose from 15 years ago.
+2021-12-02 16:06:53	karlisk	recently was at the crossroads between hosted SaaS VS self-hosted on a VPS
+2021-12-02 16:08:37	karlisk	ended up going with containerized solution because I did not want to go through the setup and configuration again of each and every component along with the usual "oh ffs, why  isn't X or Y working?" 
+2021-12-02 16:11:12	billings	can anyone tell me when Fedora started creating .rpmorig files for packaged files that have been changed and then removed by an update?
+2021-12-02 16:32:43	janos	stdout: i use dovecot and have for years
+2021-12-02 16:33:11	janos	a combo of dovecot, postfix, postgrey
+2021-12-02 17:28:57	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 18:05:17	Khaytsus	billings: Specifically, offhand not sure, it's been a long time though
+2021-12-02 18:06:33	Khaytsus	billings: As far as I can tell rpm has done this since at _least_ 2008
+2021-12-02 18:23:29	marloi	Hello, I am currently running Fedora 31 and have no experience with upgrading versions. What's the best way to update my version?
+2021-12-02 18:26:01	kjetilho	marloi: the supported method is two at a time.  so dnf system-upgrade to 33, then 35
+2021-12-02 18:26:10	kjetilho	but many people think it is safe to jump directly
+2021-12-02 18:26:34	Khaytsus	Personally I won't jump more than one a time
+2021-12-02 18:26:42	 *	Khaytsus points to https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade
+2021-12-02 18:26:58	Khaytsus	But this is the document.  Follow the entire thing for every upgrade.  Including the "optional" items, they aren't really optional.
+2021-12-02 18:27:09	kjetilho	also, you should read the release notes for all of them, ie. for 32 and 33, not just 33 :)
+2021-12-02 18:28:20	+Sheogorath[m]	Alternatively: Make a backup of all your stuff, and reinstall a current version. Might be less time consuming than upgrading 4-5 times. Just saying.
+2021-12-02 18:29:16	kjetilho	yeah, well - it's not like you have to sit there and watch it ...
+2021-12-02 18:30:32	marloi	Hmmm ok. Also almost time for a new laptop, but be safer to just wait for that rather than risk breaking my current setup
+2021-12-02 18:31:31	+Sheogorath[m]	No. It would be by no means safer if your device is connected to the internet.
+2021-12-02 18:33:13	+Sheogorath[m]	You missed 1 ½ years worth of security updates. That is a lot.
+2021-12-02 18:34:44	Ziggurat	Hello I am trying to set power profiles using powerprofilesctl but when I use the set subcommand I get AccessDenied: Not Authorized: net.hadess.PowerProfiles.switch-profile
+2021-12-02 18:34:44	Ziggurat	I was sure I was able to do this without root before, have I messed up some permissions or something?
+2021-12-02 18:46:57	Ziggurat	I just tried to install power profiles daemon on my separate arch machine, and it works without root like it used to on my fedora machine
+2021-12-02 18:50:57	sadsfae	it may not be recommended but I jump versions all the time and nevr had an issue
+2021-12-02 18:51:18	sadsfae	good attribution to how good dnf system-upgrade has gotten
+2021-12-02 18:51:40	sadsfae	last time I did 31 -> 34 or something
+2021-12-02 18:51:51	sadsfae	I always have backups though
+2021-12-02 18:52:19	billings	Khaytsus: odd.  I'm working on a package that doesn't leave behind .rpmorig in RHEL8, but does in F34
+2021-12-02 18:54:01	Khaytsus	billings: huh...  it should always leave rpmorig if the original configuration file was modified.  But there are of course settings around that, maybe only if it's marked as a config file, that I'm not sure of
+2021-12-02 18:54:09	billings	I just deployed an updated package that no longer includes a file, and it gets modifed by the user (due to bugs in how NM works, *sigh*) so when the package is updated, RHEL8 doesn't leave any .rpmorig files, but Fedora does
+2021-12-02 18:57:03	Khaytsus	Huh, maybe the spec file is different.  That's out of my sphere ;)
+2021-12-02 18:57:27	billings	identical packages -- F34 system is installing the RHEL8 package.
+2021-12-02 18:57:41	billings	(I know, we should build separate -- in fact, I'd love to, but infrastructure issues)
+2021-12-02 19:28:59	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 19:34:14	tangy	so, has fedora migrated from 'oprofile' to 'perf'?
+2021-12-02 19:35:58	tangy	...seems to be....
+2021-12-02 20:03:27	Han	Why can't I set my sysrq sysctl? cat /etc/sysctl.d/10-magic-sysrq.conf → kernel.sysrq = 1 ; sysctl kernel.sysrq → 16
+2021-12-02 20:04:11	tangy	fyi, https://www.phoronix.com/scan.php?page=news_item&px=OProfile-Linux-5.12-Removal
+2021-12-02 20:04:13	tangy	thx
+2021-12-02 20:04:16	Han	Of course I've rebooted, and all other sysctl locations don't contain sysrq entries. Manually setting it works, but after a reboot it's back to 16.
+2021-12-02 20:08:57	Han	Ah! sudo /usr/lib/systemd/systemd-sysctl --cat-config|grep sysrq
+2021-12-02 20:10:11	Han	sudo mv 10-magic-sysrq.conf 51-magic-sysrq.conf
+2021-12-02 20:10:31	Han	Thanks you lovely rubber duckies. =)
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:45	-->	mrmanner (mrmanner@90.235.13.15) has joined #fedora
+2021-12-02 21:04:45	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-02 21:04:45	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 30 nov 2021 15:49:35
+2021-12-02 21:04:46	--	Channel #fedora: 1528 nicks (1 op, 732 voices, 795 normals)
+2021-12-02 21:05:38	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-02 21:07:07	<--	jjelen__ (~jjelen@ip4-95-82-151-4.cust.nbox.cz) has quit (Ping timeout: 256 seconds)
+2021-12-02 21:11:14	--	irc: disconnected from server
+2021-12-02 21:11:27	-->	mrmanner (mrmanner@90.235.13.15) has joined #fedora
+2021-12-02 21:11:28	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-02 21:11:28	--	Topic set by Southern_Gentlem (~notfred@fedora/Southern-Gentlem) on tis, 30 nov 2021 15:49:35
+2021-12-02 21:11:28	--	Channel #fedora: 1528 nicks (1 op, 732 voices, 795 normals)
+2021-12-02 21:10:40	marloi	Alright, just tried upgrading from Fedora 31 to 33 and got a segmentation fault. How can I proceed?
+2021-12-02 21:11:36	marloi	I did get an error before that: Error: Failed to download metadata for repo 'patriciogv_glslviewer-ppa': Cannot download repomd.xml: Empty mirrorlist and no basepath specified!
+2021-12-02 21:12:00	<--	jav_ (~jeff@2607:fea8:1b9e:cb00:96de:80ff:fead:b998) has quit (Quit: Leaving)
+2021-12-02 21:12:08	-->	jav_ (realname) (~jeff@2607:fea8:1b9e:cb00:96de:80ff:fead:b998) has joined #fedora
+2021-12-02 21:12:10	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-02 21:12:41	<--	aleasto (~aleasto@host-95-249-58-24.retail.telecomitalia.it) has quit (Remote host closed the connection)
+2021-12-02 21:12:53	<--	jav_ (~jeff@2607:fea8:1b9e:cb00:96de:80ff:fead:b998) has quit (Client Quit)
+2021-12-02 21:13:09	-->	jeffvoskamp [jeffvoskamp] (realname) (~jeff@2607:fea8:1b9e:cb00:96de:80ff:fead:b998) has joined #fedora
+2021-12-02 21:14:02	vwbusguy[m]	marloi: First - check your internet connection on that machine.
+2021-12-02 21:14:14	<--	ch3wBaCca (~chew23@host-82-60-57-239.retail.telecomitalia.it) has quit (Ping timeout: 252 seconds)
+2021-12-02 21:14:32	<--	aivaras (~aivaras@78-62-44-125.static.zebra.lt) has quit (Quit: Leaving)
+2021-12-02 21:14:34	ux_man	do I need to enable fstrum.timer in f35 on an default install on a nvme?
+2021-12-02 21:14:37	vwbusguy[m]	But it looks like you probably just need to disable that repo
+2021-12-02 21:14:47	ux_man	fstrim.timer
+2021-12-02 21:15:15	-->	DyDyMan [DyDyMan] (realname) (~DyDyMan@1.red-79-145-222.dynamicip.rima-tde.net) has joined #fedora
+2021-12-02 21:15:28	vwbusguy[m]	marloi: Assuming your network connection is fine, you should probably disable that repo and any other 3rd party repos that aren't rpmfusion if you run into any more of those.
+2021-12-02 21:15:36	jkc	marloi: I should also point out that F33 is no longer supported.
+2021-12-02 21:16:01	marloi	I just ran the command again and it seems to be working fine. Guess it was a network problem
+2021-12-02 21:16:14	marloi	I'm getting F33 to get to F35
+2021-12-02 21:18:26	-->	contyk [contyk] (Petr Šabata) (~contyk@redhat/contyk) has joined #fedora
+2021-12-02 21:19:44	<--	ynhuser|05213943 (~thelounge@c-73-126-128-95.hsd1.ct.comcast.net) has quit (Quit: Ping timeout (120 seconds))
+2021-12-02 21:19:56	vwbusguy[m]	Sorry to crosspost with the Silverblue channel but I didn't get a reply there.  I have Kinoite installed and I'm curious about the difference between the fedora/35/x86_64/kinoite branch and the fedora/35/x86_64/updates/kinoite branches?
+2021-12-02 21:21:23	<--	cpluspunch_ (~znc@104.200.132.245) has quit (Ping timeout: 252 seconds)
+2021-12-02 21:21:24	Southern_Gentlem	vwbusguy[m], dont they use the rpmostree stuff 
+2021-12-02 21:21:34	-->	ynhuser|05213943 (The Lounge User) (~thelounge@c-73-126-128-95.hsd1.ct.comcast.net) has joined #fedora
+2021-12-02 21:21:45	vwbusguy[m]	Yes - these are different branches for the system base
+2021-12-02 21:22:20	vwbusguy[m]	It defaults to the one without "updates" in it.  I know the difference for normal dnf repos, but not for ostree branches.
+2021-12-02 21:22:46	Southern_Gentlem	i would try in -KDE 
+2021-12-02 21:23:17	vwbusguy[m]	Silverblue has the same thing
+2021-12-02 21:23:34	<--	gtwilliams (garry@2600:1700:b511:30d0::48) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-12-02 21:23:55	 *	vwbusguy[m] uploaded an image: (56KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/aDQvkKCpHsWpsGpdcVjUVlrL/image.png >
+2021-12-02 21:24:38	vwbusguy[m]	Ah, I got a response in the Silverblue chan - it's the same content with or without updates
+2021-12-02 21:28:46	-->	mrmanner (mrmanner@90.235.13.15) has joined #fedora
+2021-12-02 21:28:46	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-02 21:29:00	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:46	-->	mrmanner (mrmanner@98.128.201.128) has joined #fedora
+2021-12-02 21:50:46	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-02 21:41:59	ux_man	I have an intel i9 1900k with a asus z590-a mainboard!Since yesterday I removed the radeon hd 7550 and use the integrated intel graphics... that works fine with kernel 5.15, but when bootingI have to remove the second monitor... otherwise the system freezes shortly after grub
+2021-12-02 21:42:39	ux_man	i9 11900k
+2021-12-02 21:49:57	Southern_Gentlem	my guess is maybe you will need to rebuild dracut 
+2021-12-02 21:50:41	Southern_Gentlem	but lets see what happens on the next kernel update 
+2021-12-02 21:50:56	ux_man	Southern_Gentlem: its a fresh install
+2021-12-02 21:51:24	ux_man	Southern_Gentlem: yeah, looking forward to that... at least its no firmware stuff
+2021-12-02 21:52:19	Southern_Gentlem	https://bodhi.fedoraproject.org/updates/FEDORA-2021-0dd98a1546
+2021-12-02 21:52:33	Southern_Gentlem	install that kernel and see what happens 
+2021-12-02 21:52:57	<--	vwbusguy (~vwbusguy@fedora/vwbusguy) has quit (Remote host closed the connection)
+2021-12-02 21:53:05	Southern_Gentlem	you removed the Radeon card before or after the install 
+2021-12-02 21:53:20	-->	vwbusguy [vwbusguy] (realname) (~vwbusguy@fedora/vwbusguy) has joined #fedora
+2021-12-02 21:53:27	ux_man	Southern_Gentlem: before the install! 
+2021-12-02 21:53:42	Southern_Gentlem	ok that dont make any sense 
+2021-12-02 21:53:52	ux_man	Southern_Gentlem: I tested Qubes 4.1 rc2
+2021-12-02 21:54:12	Southern_Gentlem	which means nothing here 
+2021-12-02 21:54:15	ux_man	Southern_Gentlem: before, what has a 5.10 LTS kernel
+2021-12-02 21:54:21	ux_man	Southern_Gentlem: true
+2021-12-02 21:54:50	Southern_Gentlem	try the kernel i directed you too , and lets us know 
+2021-12-02 21:56:23	ux_man	Southern_Gentlem: happening now
+2021-12-02 21:56:56	ux_man	brb
+2021-12-02 21:56:59	<--	ux_man (ux_man@gateway/vpn/protonvpn/uxman/x-60099443) has quit (Quit: leaving)
+2021-12-02 21:58:14	marloi	Can someone help me clear space on the / filesystem ? Apparently there's insufficient pace for me to update my system
+2021-12-02 21:58:53	Southern_Gentlem	marloi, df -h |fpaste 
+2021-12-02 21:58:57	-->	ux_man [ux_man] (rehcla) (~ux_man@213-147-160-6.nat.highway.bob.at) has joined #fedora
+2021-12-02 22:00:31	-->	gr33nR10t [gr33nR10t] (gr33nR10t) (~greenriot@user/gr33nr10t) has joined #fedora
+2021-12-02 22:00:31	marloi	https://paste.centos.org/view/1f22f762
+2021-12-02 22:00:39	ux_man	no change
+2021-12-02 22:00:42	-->	mkyral_ (Martin Kyral) (~mkyral@cgnat44-pool3-70-118.poda.cz) has joined #fedora
+2021-12-02 22:01:09	-->	se-sm-ca [se-sm-ca] (sean) (~sean@user/se-sm-ca) has joined #fedora
+2021-12-02 22:01:31	Southern_Gentlem	ux_man, make sure in your bios that the radeon card is not being wanted 
+2021-12-02 22:02:03	<--	TomZanna (~TomZanna@151.95.237.82) has quit (Quit: Client closed)
+2021-12-02 22:02:41	Southern_Gentlem	marloi, get rid of those snaps and you will have plenty of room 
+2021-12-02 22:03:26	marloi	How do I do that?
+2021-12-02 22:03:49	Khaytsus	the 5 snaps taking like..  200m of disk spaec? o_O
+2021-12-02 22:04:00	-->	bkircher [bkircher] (Ben Kircher) (~bkircher@2001:a61:250f:2b01:4b96:7ca4:45ee:36d4) has joined #fedora
+2021-12-02 22:04:03	Khaytsus	268
+2021-12-02 22:04:10	Khaytsus	I doubt that's the issue.
+2021-12-02 22:04:39	Khaytsus	marloi: du -h --max-depth=1 -x / and start chasing what's taking all the disk space.
+2021-12-02 22:05:25	-->	greenriot [gr33nR10t] (gr33nR10t) (~greenriot@user/gr33nr10t) has joined #fedora
+2021-12-02 22:05:29	<--	gr33nR10t (~greenriot@user/gr33nr10t) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:08:00	marloi	my /var is 28G , is that normal?
+2021-12-02 22:08:07	ux_man	Southern_Gentlem: all settings in bios are fine!Grub starts, keyboard lights up... but I dont get to the point where I can type the luks2 password
+2021-12-02 22:08:37	janos	Khaytsus: ncdu is great for that too
+2021-12-02 22:09:25	Khaytsus	janos: I figure they can't install it ;)
+2021-12-02 22:09:47	Khaytsus	marloi: That's a bit large, yeah I'd start there.  So same command, but /var as the path.  Keep digging in
+2021-12-02 22:09:53	janos	it's tiny but yeah good point
+2021-12-02 22:10:06	Khaytsus	And what janos said is absolutely true, once you free up a little space install ncdu, it's a little more user friendly
+2021-12-02 22:10:14	Khaytsus	But most of the time I still use du, old habit I guess
+2021-12-02 22:10:48	Khaytsus	marloi: Are you running VMs?  If so those use up space fast and go into /var by default.  May be a reason.  Also containers can eat up a ton of space, also go in /var
+2021-12-02 22:11:31	marloi	my /var/cache 5.6G
+2021-12-02 22:11:57	Khaytsus	marloi: that might just be from downloaded updates, but you can dry dnf clean all if you don't mind downloading them again
+2021-12-02 22:12:11	Khaytsus	After that runs, see how big it is, and what in particular it is
+2021-12-02 22:12:56	Khaytsus	In fact after you run dnf clean all, dnf install ncdu then see if that's quicker to use..  ncdu /var and then just start digging in
+2021-12-02 22:13:23	<--	bkircher (~bkircher@2001:a61:250f:2b01:4b96:7ca4:45ee:36d4) has quit (Ping timeout: 268 seconds)
+2021-12-02 22:13:52	-->	yesno (realname) (~yesno@109.98.151.179) has joined #fedora
+2021-12-02 22:14:38	-->	philipp64 [philipp64] (Philip Prindeville) (~philipp64@mail.redfish-solutions.com) has joined #fedora
+2021-12-02 22:15:04	marloi	sudo dnf clean all brought /var/cache down to 5.4G
+2021-12-02 22:16:02	Khaytsus	janos: huh, does ndcu not have an ignore mounts option?  Weird
+2021-12-02 22:16:40	<--	jess (~jess@libera/staff/jess) has quit
+2021-12-02 22:16:41	janos	most of my use is within mounts, so i haven't looked for that option. but that is odd
+2021-12-02 22:17:01	Khaytsus	janos: Yeah, makes it pretty slow/tedious to narrow down what's on / ;)
+2021-12-02 22:17:19	janos	woof haha
+2021-12-02 22:17:20	Khaytsus	I mean, yes, /storage1 has 500G of memes on it, I don't care
+2021-12-02 22:17:28	janos	yeah
+2021-12-02 22:17:47	Khaytsus	so back to du ;)
+2021-12-02 22:18:08	Khaytsus	I mean yes ncdu does have exclude, I could exclude a big list... meh
+2021-12-02 22:18:22	janos	blech
+2021-12-02 22:19:05	-->	fweht [fweht] (fweht) (uid404746@id-404746.lymington.irccloud.com) has joined #fedora
+2021-12-02 22:19:54	Vizack	-x  Do not cross filesystem boundaries?
+2021-12-02 22:20:03	Khaytsus	Vizack: ...in ncdu?
+2021-12-02 22:20:03	<--	uid_max (~samw@host86-177-209-226.range86-177.btcentralplus.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:20:19	Vizack	yep
+2021-12-02 22:20:30	Khaytsus	Oh lord how did I miss that
+2021-12-02 22:20:34	 *	Khaytsus sighs
+2021-12-02 22:22:36	<--	cstratak (~cstratak@95.82.134.60) has quit (Quit: Leaving)
+2021-12-02 22:24:11	<--	slidercrank (~slidercra@user/slidercrank) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:24:15	<--	wwalker (~wwalker@platinum.solid-constructs.com) has quit (Quit: leaving)
+2021-12-02 22:25:19	<--	aday (~aday@31.185.249.220) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:27:32	marloi	Khaytsus, I'm not running any VMs or containers as far as I know
+2021-12-02 22:28:43	Khaytsus	okay, keep digging?
+2021-12-02 22:28:44	<--	chinosoliard (~chinosoli@fedora/chinosoliard) has quit (Quit: Leaving)
+2021-12-02 22:29:12	-->	wwalker [wwalker] (wwalker) (~wwalker@platinum.solid-constructs.com) has joined #fedora
+2021-12-02 22:29:26	<--	Brottweiler (~brott@user/brottweiler) has quit (Quit: leaving)
+2021-12-02 22:29:49	marloi	my var/log is 4.1G. Is that normal?
+2021-12-02 22:30:12	janos	that seems heavy
+2021-12-02 22:30:22	janos	mine is 1.3 and imo it needs cleaning out
+2021-12-02 22:30:28	marloi	Seems /var/log and /var/cache are the large directories in /var
+2021-12-02 22:30:31	<--	DibbTubberOne (~DibbDibbe@2a02:908:956:3ce0::154e) has quit (Quit: Leaving)
+2021-12-02 22:30:34	Khaytsus	marloi: Yeay, again look in there and see what's big
+2021-12-02 22:31:09	marloi	4G for /var/log/journal
+2021-12-02 22:31:16	janos	i've had packagekit garbage loading up var for me before. guess what is no longer on my system? :)
+2021-12-02 22:31:34	Khaytsus	janos: package*it
+2021-12-02 22:31:40	janos	haha
+2021-12-02 22:31:58	Khaytsus	marloi: Yeah that might be normal, but you can change that 
+2021-12-02 22:32:34	Khaytsus	That gets set in /etc/systemd/journald.conf SystemMaxUse=1G or whatever you want to limit it to.
+2021-12-02 22:32:39	marloi	Should I just rm the files in there?
+2021-12-02 22:32:42	Khaytsus	journald is how logs are stored 
+2021-12-02 22:32:47	Khaytsus	I would not just rm in there no
+2021-12-02 22:32:53	marloi	ok...
+2021-12-02 22:33:22	Khaytsus	marloi: try this, journalctl --vacuum-time=7d
+2021-12-02 22:33:27	-->	Hashida (realname) (~DaSH@ro2.flokinet.is) has joined #fedora
+2021-12-02 22:33:32	Khaytsus	that'll nuke any logs older than 7 days
+2021-12-02 22:33:51	marloi	That freed 3.8G
+2021-12-02 22:33:52	Khaytsus	And also make the tweak above in the config so it doesn't get so big
+2021-12-02 22:34:47	Khaytsus	/ /var/cache you'd have to look at and see what's big in there.  It's your filesystem, we can't see it, you gotta just keep looking :)
+2021-12-02 22:35:50	<--	Hashida (~DaSH@ro2.flokinet.is) has quit (Remote host closed the connection)
+2021-12-02 22:35:52	marloi	Ya, but the help is appreciated because I don't know what's supposed to be large and what isn't
+2021-12-02 22:36:19	-->	Hashida (realname) (~DaSH@ro2.flokinet.is) has joined #fedora
+2021-12-02 22:36:29	Khaytsus	marloi: No problem there :)
+2021-12-02 22:36:33	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:38:44	marloi	Hmmm 5.3G for /var/cache/PackageKit
+2021-12-02 22:38:52	Khaytsus	janos: You're up
+2021-12-02 22:39:46	janos	haha
+2021-12-02 22:39:52	Khaytsus	marloi: sudo pkcon refresh force -c -1
+2021-12-02 22:39:54	Khaytsus	from the googles
+2021-12-02 22:39:59	Khaytsus	that should clean out stuff there
+2021-12-02 22:40:07	janos	kill. PackageKit. with. prejudice.
+2021-12-02 22:40:17	Khaytsus	janos: awww you had one job
+2021-12-02 22:40:20	Khaytsus	Nuke it from orbit
+2021-12-02 22:40:29	<--	great_taste (~great_tas@user/great-taste/x-5798414) has quit (Quit: Client closed)
+2021-12-02 22:40:43	-->	great_taste [great_taste] ([https://web.libera.chat] great_taste) (~great_tas@user/great-taste/x-5798414) has joined #fedora
+2021-12-02 22:40:52	<--	Hashida (~DaSH@ro2.flokinet.is) has quit (Client Quit)
+2021-12-02 22:42:11	marloi	OK that brought it down to 695M 
+2021-12-02 22:43:53	-->	Itaru (realname) (~DaSH@ro2.flokinet.is) has joined #fedora
+2021-12-02 22:44:32	marloi	So what is PackageKit and how do I stop it from causing problems?
+2021-12-02 22:45:08	gtwilliams	sudo dnf erase PackageKit
+2021-12-02 22:48:52	-->	ux_man_ [ux_man] (rehcla) (ux_man@gateway/vpn/protonvpn/uxman/x-60099443) has joined #fedora
+2021-12-02 22:49:02	Khaytsus	marloi: PackageKit is a utility that handles packages for you.. In this case most likely Gnome Software doing updates.  Ultimately it's all the same thing, but they do cache separately sometimes.
+2021-12-02 22:49:56	<--	ux_man (~ux_man@213-147-160-6.nat.highway.bob.at) has quit (Ping timeout: 245 seconds)
+2021-12-02 22:51:50	marloi	OK, maybe I'll just leave at and try to monitor the size
+2021-12-02 22:51:51	<--	Terminus (~null@user/terminus) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-12-02 22:53:05	<--	wwalker (~wwalker@platinum.solid-constructs.com) has quit (Quit: leaving)
+2021-12-02 22:53:24	-->	Terminus [Terminus] (The universe is a playground of improvisation.) (~null@user/terminus) has joined #fedora
+2021-12-02 22:54:47	<--	Terminus (~null@user/terminus) has quit (Client Quit)
+2021-12-02 22:55:33	-->	Terminus [Terminus] (The universe is a playground of improvisation.) (~null@user/terminus) has joined #fedora
+2021-12-02 22:56:19	Khaytsus	marloi: How do you typically do updates?  dnf, or Gnome Software?
+2021-12-02 22:56:40	Khaytsus	If you do it manually with dnf, you can go into Gnome Software (assuming you use Gnome!) and disable it doing updates
+2021-12-02 22:57:42	marloi	I almost always use dnf
+2021-12-02 22:58:00	Khaytsus	Yeah, then probably just disable it in GS and just remember to do dnf update :)
+2021-12-02 23:00:15	<--	Terminus (~null@user/terminus) has quit (Client Quit)
+2021-12-02 23:00:17	marloi	Will do, thanks. Going to try to upgrade again now
+2021-12-02 23:00:30	<--	marloi (~mark@45.72.209.251) has quit (Remote host closed the connection)
+2021-12-02 23:05:37	<--	vwbusguy (~vwbusguy@fedora/vwbusguy) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:06:34	-->	The_Seeker [The_Seeker] (realname) (~uname@2405:6e00:3027:5f00:9c97:39f6:4996:82b0) has joined #fedora
+2021-12-02 23:06:46	-->	wwalker [wwalker] (wwalker) (~wwalker@platinum.solid-constructs.com) has joined #fedora
+2021-12-02 23:07:53	-->	SeanM[m] (@seaninspace:fedora.im) (~seaninspa@2001:470:69fc:105::1:44eb) has joined #fedora
+2021-12-02 23:07:53	--	Mode #fedora [+v SeanM[m]] by ChanServ
+2021-12-02 23:09:56	<--	WhyNot-POR (~quassel@2a01:c23:7909:b500:62e8:b988:e4f2:d31a) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-12-02 23:17:20	<--	The_Seeker (~uname@2405:6e00:3027:5f00:9c97:39f6:4996:82b0) has quit (Quit: The_Seeker)
+2021-12-02 23:18:56	-->	brainfreeze [brainfreeze] (realname) (~brainfree@2a03:1b20:4:f011::20d) has joined #fedora
+2021-12-02 23:22:07	<--	vxwarlock (~Darkcodex@user/vxwarlock) has quit (Remote host closed the connection)
+2021-12-02 23:22:30	<--	donkykong[m] (~donkykong@2001:470:69fc:105::1:1c1c) has left #fedora
+2021-12-02 23:24:57	<--	Muvon53 (~Muvon53@2a02:168:563b:0:8363:c65b:fcb:1fbf) has quit (Quit: Konversation terminated!)
+2021-12-02 23:25:45	-->	aday [aday] (realname) (~aday@31.185.249.220) has joined #fedora
+2021-12-02 23:27:31	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:28:04	-->	Itaru (realname) (~DaSH@ro2.flokinet.is) has joined #fedora
+2021-12-02 23:28:08	<--	stdout (~stdout@216.163.21.11) has quit (Quit: Leaving)
+2021-12-02 23:29:02	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-02 23:33:33	<--	lejocelyn_ (~lejocelyn@p200300fcd70745678b343dd118f1dbb6.dip0.t-ipconnect.de) has quit (Quit: lejocelyn_)
+2021-12-02 23:34:54	-->	vis [vis] (realname) (~vis@gateway/tor-sasl/vis) has joined #fedora
+2021-12-02 23:37:17	<--	aday (~aday@31.185.249.220) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:43:04	-->	aday [aday] (realname) (~aday@31.185.249.220) has joined #fedora
+2021-12-02 23:49:30	-->	espadav8 (Andrew Smith) (~espadav8@122-199-10-115.ip4.superloop.com) has joined #fedora
+2021-12-02 23:49:30	--	espadav8 has identified as espadav8
+2021-12-02 23:52:10	<--	ljavorsk_ (~ljavorsk@ip-85-160-36-118.eurotel.cz) has quit (Quit: This computer has gone to sleep)
+2021-12-02 23:52:40	<--	uvolmer (~uvolmer@2001-4dd0-212c-82-e069-f5f7-ab7b-8443.ipv6dyn.netcologne.de) has quit (Ping timeout: 268 seconds)
+2021-12-02 23:53:48	-->	Terminus [Terminus] (The universe is a playground of improvisation.) (~null@user/terminus) has joined #fedora
+2021-12-02 23:54:25	-->	srv [srv] (realname) (~cmd@user/srv) has joined #fedora
+2021-12-02 23:55:25	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Remote host closed the connection)
+2021-12-02 23:56:07	<--	sherm (~shorton@pool-108-26-147-200.bstnma.fios.verizon.net) has quit (Quit: WeeChat 3.2)
+2021-12-02 23:59:07	<--	yaaii (~andirc@p683096-ipngn4301niigatani.niigata.ocn.ne.jp) has quit (Read error: Connection reset by peer)
+2021-12-02 23:59:38	<--	Jimmy_H (~Jimmy_H@113.118.4.226) has quit (Read error: Connection reset by peer)
+2021-12-02 23:59:57	-->	Jimmy_H (realname) (~Jimmy_H@113.118.4.226) has joined #fedora
+2021-12-02 23:59:57	--	Jimmy_H has identified as Jimmy_H
+2021-12-03 00:01:19	<--	aday (~aday@31.185.249.220) has quit (Quit: Leaving)
+2021-12-03 00:04:56	-->	henry404080 [henry40408] (Henry Wu) (~henry4040@112-104-114-241.adsl.dynamic.seed.net.tw) has joined #fedora
+2021-12-03 00:06:32	<--	Paul-muadib (~Paul-muad@2a01:e0a:abd:8a90:fc49:4f78:ab9a:72d) has quit (Ping timeout: 240 seconds)
+2021-12-03 00:06:49	<--	DyDyMan (~DyDyMan@1.red-79-145-222.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 00:06:56	<--	henry40408 (~henry4040@112-105-247-102.adsl.dynamic.seed.net.tw) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:06:56	--	henry404080 is now known as henry40408
+2021-12-03 00:14:42	<--	elxa (~elxa@2a02:6d40:3580:9d01:dc08:f62d:26b0:551f) has quit (Remote host closed the connection)
+2021-12-03 00:18:07	<--	Cuban (~CubanP3te@40.115.36.152) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:18:20	-->	frmlof [frmlof] (From Land of Fire) (~frmlof@70.243.238.191) has joined #fedora
+2021-12-03 00:18:46	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-12-03 00:21:49	<--	frmlof (~frmlof@70.243.238.191) has quit (Client Quit)
+2021-12-03 00:26:39	-->	Cuban (Cuban Pete) (~CubanP3te@40.115.36.152) has joined #fedora
+2021-12-03 00:27:01	<--	philipp64 (~philipp64@mail.redfish-solutions.com) has quit (Quit: philipp64)
+2021-12-03 00:34:07	<--	charcoal (~karl@c-71-236-85-182.hsd1.pa.comcast.net) has quit (Quit: Leaving.)
+2021-12-03 00:39:09	-->	BobLfoot [BobLfoot] (Bob Lightfoot) (~Bob@fedora/BobLfoot) has joined #fedora
+2021-12-03 00:40:07	<--	mkyral_ (~mkyral@cgnat44-pool3-70-118.poda.cz) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:42:57	<--	brainfreeze (~brainfree@2a03:1b20:4:f011::20d) has quit (Remote host closed the connection)
+2021-12-03 00:44:16	-->	marloi [marloi] (realname) (~mark@45.72.209.251) has joined #fedora
+2021-12-03 00:44:31	-->	yaaii [yaaii] (yaaii) (~andirc@p683096-ipngn4301niigatani.niigata.ocn.ne.jp) has joined #fedora
+2021-12-03 00:45:17	marloi	Back again. My upgrade to F33 worked, but now I'm having trouble upgrading to 35. I'm getting errors like: Problem 1: package php-imap-7.4.26-1.fc33.x86_64 requires php-common(x86-64) = 7.4.26-1.fc33, but none of the providers can be installed
+2021-12-03 00:45:47	Sokel	I would try going to f34 first.
+2021-12-03 00:47:00	marloi	ok
+2021-12-03 00:47:10	+karlisk[m]	also FYi, upgrades disable 3rd-party repos, so if you had that installed from, say rpmfusion, you might need to enable the repo to be able to update the packages or to uninstall them altogether
+2021-12-03 00:48:46	marloi	ah, I think I did install some things from there but not sure what
+2021-12-03 00:49:35	<--	se-sm-ca (~sean@user/se-sm-ca) has quit (Quit: WeeChat 3.3)
+2021-12-03 00:51:04	marloi	How do I enable rpmfusion in the upgrade?
+2021-12-03 00:51:45	<--	sprout_ (~quassel@2a02:a467:ccd6:1:54db:f79f:90dc:3ee5) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-12-03 00:51:59	+karlisk[m]	I only said if - the upgrade utility will print out a notice
+2021-12-03 00:52:04	-->	sprout (anon) (~quassel@2a02:a467:ccd6:1:54db:f79f:90dc:3ee5) has joined #fedora
+2021-12-03 00:52:05	--	sprout has identified as sprout
+2021-12-03 00:52:21	+karlisk[m]	that it's disabling 3rd party repos if there are any
+2021-12-03 00:53:11	+cornyst[m]	marloi:     sudo dnf list installed | grep -i rpmfusion
+2021-12-03 00:53:15	+karlisk[m]	also, you don't need rpmfusion during the upgrade - you may need it if there are outdated packages that depend on packages from 3rd party repos
+2021-12-03 00:53:46	+karlisk[m]	s/also, you don't need rpmfusion during the upgrade - you may need it if there are outdated packages that depend on packages from 3rd party repos/also, you don't need rpmfusion _during the upgrade_ - you may need it before the upgrade if there are outdated packages that depend on packages from 3rd party repos/
+2021-12-03 00:54:55	marloi	seems I have around 20 packages listed from rpmfusion
+2021-12-03 00:55:44	<--	ux_man_ (ux_man@gateway/vpn/protonvpn/uxman/x-60099443) has quit (Quit: leaving)
+2021-12-03 00:56:50	-->	Bayangan (Prastowo Agung Widodo) (~Host@103.219.249.27) has joined #fedora
+2021-12-03 00:56:50	--	Bayangan has identified as Bayangan
+2021-12-03 00:57:51	marloi	Can I automatically upgrade all those packages?
+2021-12-03 00:57:57	+karlisk[m]	if you don't actively need any of them  you could just uninstall them for now and reinstall again later after the upgrades
+2021-12-03 01:01:12	+cornyst[m]	marloi: I would go with karlisk's suggestion. That is the approach I have taken in my upgrades. Plus I would keep track of my repo list!
+2021-12-03 01:03:17	-->	legacyjames [legacyjames] (James) (~james@c-73-139-195-210.hsd1.fl.comcast.net) has joined #fedora
+2021-12-03 01:03:29	<--	Bayangan (~Host@103.219.249.27) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:07:02	+cornyst[m]	change /my/your/
+2021-12-03 01:13:33	marloi	One of the messages I got was: "Error: Failed to download metadata for repo 'patriciogv_glslviewer-ppa': Cannot download repomd.xml: Empty mirrorlist and no basepath specified!" But I'm having trouble tracking down what package this is about
+2021-12-03 01:16:31	<--	legacyjames (~james@c-73-139-195-210.hsd1.fl.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:16:51	<--	cornyst[m] (~cornystma@2001:470:69fc:105::1619) has left #fedora
+2021-12-03 01:18:46	-->	anyone [jengelh] (-) (~filler@a4.inai.de) has joined #fedora
+2021-12-03 01:18:51	<--	nostar (~nostar@68.51.221.108) has quit (Quit: Leaving)
+2021-12-03 01:19:01	<--	GrannyGoose (~GrannyGoo@2001:8003:c834:fd01:d86a:b268:1a97:b050) has quit (Quit: Leaving)
+2021-12-03 01:19:09	<--	ccallahan (~ccallahan@redhat/ccallahan) has quit (Remote host closed the connection)
+2021-12-03 01:21:08	+karlisk[m]	that has to be a mistake ... that sounds like a Ubuntu PPA - patriciogv_glslviewer-ppa
+2021-12-03 01:21:22	+karlisk[m]	s/patriciogv_glslviewer/https://launchpad.net/~patriciogv/+archive/ubuntu/glslviewer/
+2021-12-03 01:21:55	+karlisk[m]	I'd take a look in your /etc/yum.repos.d/
+2021-12-03 01:22:16	+karlisk[m]	for any Ubuntu PPA repo configs hiding in there
+2021-12-03 01:22:29	-->	charcoal [charcoal] (purple) (~karl@c-71-236-85-182.hsd1.pa.comcast.net) has joined #fedora
+2021-12-03 01:23:38	<--	great_taste (~great_tas@user/great-taste/x-5798414) has quit (Quit: Client closed)
+2021-12-03 01:24:43	marloi	OK. turns out it was two other packages causing the problem. I removed them for now
+2021-12-03 01:26:14	<--	BobLfoot (~Bob@fedora/BobLfoot) has quit (Remote host closed the connection)
+2021-12-03 01:26:39	<--	wizzo (~wizzo@user/wizzo) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-12-03 01:27:30	-->	wizzo [wizzo] (Got ZNC?) (~wizzo@user/wizzo) has joined #fedora
+2021-12-03 01:29:03	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 01:30:21	-->	cornyst[m] (@cornyst:matrix.org) (~cornystma@2001:470:69fc:105::1619) has joined #fedora
+2021-12-03 01:30:21	--	Mode #fedora [+v cornyst[m]] by ChanServ
+2021-12-03 01:30:57	<--	kiilerix (~mk@87-52-41-128-cable.dk.customer.tdc.net) has quit (Quit: Leaving.)
+2021-12-03 01:31:02	-->	BobLfoot [BobLfoot] (Bob Lightfoot) (~Bob@fedora/BobLfoot) has joined #fedora
+2021-12-03 01:33:05	-->	philipp64 [philipp64] (Philip Prindeville) (~philipp64@174.27.30.118) has joined #fedora
+2021-12-03 01:36:55	-->	saml [saml] (realname) (~saml@cpe-74-73-80-162.nyc.res.rr.com) has joined #fedora
+2021-12-03 01:46:29	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:48:59	<--	aegorenk (~aegorenko@cgnat44-pool1-237-6.poda.cz) has quit (Quit: WeeChat 3.3)
+2021-12-03 01:49:06	<--	Telcoguy (~quassel@83-215-44-12.bruck.dyn.salzburg-online.at) has quit (Remote host closed the connection)
+2021-12-03 01:51:05	-->	vash_ (realname) (~vash@2a00:23c8:4200:7b01:c208:2d92:65ed:285e) has joined #fedora
+2021-12-03 01:53:38	<--	BobLfoot (~Bob@fedora/BobLfoot) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:21:15	--	irc: disconnected from server
+2021-12-03 12:21:33	-->	mrmanner (mrmanner@90.235.13.15) has joined #fedora
+2021-12-03 12:21:33	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-03 02:24:23	felixphew	hi! does anyone know if dnf system-upgrade ignoring group_package_types is intended behaviour?
+2021-12-03 02:24:42	Khaytsus	felixphew: Offhand not sure what that means
+2021-12-03 02:25:26	felixphew	I've got a box I'm trying to take from f34 to f35, and even with group_package_types=mandatory it still wants to install systemd-resolved as a "group/module package", even though systemd-resolved is a "default" (not "mandatory") member of group Core
+2021-12-03 02:26:34	felixphew	so groups have 3 "tiers" of packages in them: mandatory, default, and optional. the default when installing a group is to install mandatory and default packages, but this can be configured with a dnf option (group_package_types)
+2021-12-03 02:27:33	felixphew	dnf system-upgrade likes to install packages that have been newly added to groups (which is good!), but seemingly wants to install newly added default packages even if they wouldn't normally be installed (less good)
+2021-12-03 02:34:19	+Sheogorath[m]	Since dnf system-upgrade is a separate package I would argue that the group mechanics weren't considered.
+2021-12-03 02:34:29	+Sheogorath[m]	https://dnf-plugins-extras.readthedocs.io/en/latest/system-upgrade.html
+2021-12-03 02:35:19	mutk	I am wondering why we would be able to fiddle with groups in an upgrade scenario.  It sounds like a recipe for a broken upgrade.
+2021-12-03 02:35:43	mutk	'Hey do a system upgrade but ommit a set of packages just 'cause'
+2021-12-03 02:36:12	Sokel	especially if there are mandatory packages
+2021-12-03 02:37:36	felixphew	put it this way: why should a package that (with a particular DNF config) wouldn't be installed with `dnf groupinstall`, be installed with `dnf system-upgrade`?
+2021-12-03 02:38:02	mutk	Because an upgrade is necessarily 'everything'
+2021-12-03 02:38:16	mutk	A system upgrade
+2021-12-03 02:38:21	Sokel	If a group was installed (and is marked as installed) on your system, and there are changes in the next version that adds mandatory packages, they're going to come in.
+2021-12-03 02:38:35	mutk	The entirety of the packages provided in the release have been rebased
+2021-12-03 02:38:35	felixphew	oh, I agree if there's a new mandatory package
+2021-12-03 02:38:43	felixphew	I'm talking about if there's a new _default_ package
+2021-12-03 02:39:20	felixphew	e.g. from 34 -> 35, systemd-resolved was added as a default package to @core
+2021-12-03 02:39:24	Khaytsus	If you don't want to use resolved, you don't have to, but going out of your way avoiding it is kind of silly.
+2021-12-03 02:39:30	Sokel	I don't see the problem.
+2021-12-03 02:39:56	felixphew	I'm not particularly concerned about resolved, this is just the example with which I found what sounds to me like a (admittedly super minor) bug
+2021-12-03 02:41:03	mutk	If you are doing a system upgrade, there will be changed packages regardless of group 'status'
+2021-12-03 02:41:44	felixphew	yes, I understand that; please don't think I'm here trying to complain that upgrade is "installing too much stuff" or anything like that
+2021-12-03 02:41:48	mutk	I would say group status is not even relevent during a system upgrade. Within the life of an installed release sure.
+2021-12-03 02:42:50	felixphew	by what logic is it not relevant? the upgrade process is definitely aware of groups as it tracks and installs new group packages
+2021-12-03 03:29:05	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 05:29:06	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 07:29:07	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 07:32:41	gour	morning
+2021-12-03 07:33:55	rindolf	gour: hey
+2021-12-03 07:33:59	gour	i recently switched from debian to fc35 and would like to have of en_GB/hr_HR locales
+2021-12-03 07:34:27	gour	i've the following in my locale.conf: LANG=hr_HR.UTF-8 and LC_MESSAGES=en_GB.UTF-8
+2021-12-03 07:35:01	gour	but hr_HR setting is not honoured which was working under debian, so wonder what else do i need?
+2021-12-03 07:35:13	 *	gour is using xfce spin
+2021-12-03 07:37:53	rindolf	gour: try https://docs.fedoraproject.org/en-US/fedora/rawhide/system-administrators-guide/basic-system-configuration/System_Locale_and_Keyboard_Configuration/
+2021-12-03 07:41:36	gour	@rindolf: i read it and put appropriate entries...now tried to change xfce's language settings
+2021-12-03 07:41:40	gour	let's see
+2021-12-03 07:50:25	gour	despite setting Croatian (in xfce) as system language and having hr_HR.UTF-8 in locale.conf, 'locales' still does show en_GB :-/
+2021-12-03 07:57:58	gour	changing the language in lightdm screen, helped :-)
+2021-12-03 08:01:59	rindolf	gour: great!
+2021-12-03 08:17:28	gour	btw, am right there is no dedicated channel for xfce spin?
+2021-12-03 08:24:40	rindolf	gour: don't know, and see https://www.shlomifish.org/humour/fortunes/show.cgi?id=joel-diary-2-Sep-2004--1
+2021-12-03 08:31:17	 *	gour nods
+2021-12-03 08:40:57	ledeni	gour: did you install xfce4-xkb-plugin
+2021-12-03 08:42:33	gour	ledeni: yes, it's installed...i solved the problem
+2021-12-03 08:42:55	gour	😄
+2021-12-03 08:44:14	ledeni	gour, great 👍 
+2021-12-03 08:46:45	gour	everything else works beautifully...and no need to dance on Debian's unstable (sid) to have fresh packages 😉
+2021-12-03 09:03:53	SpartanBunny	I'm having a problem with multimonitor setup with join-displays on GNOME 41
+2021-12-03 09:04:03	SpartanBunny	Anyone facing similar problems?
+2021-12-03 09:29:08	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 10:05:53	TomZanna	Hi, with arecord I can capture audio easily but neither PulseAudio nor PipeWire detect the mic.
+2021-12-03 10:05:54	TomZanna	How can I manually configure an ALSA source in PipeWire?
+2021-12-03 10:08:55	+SigmaSquadron	<SpartanBunny> "I'm having a problem with..." <- Please be more specific. Include details of the problem with your question and any hardware info you may find relevant.
+2021-12-03 10:59:39	mr4braham	I need help with snapshot rollback
+2021-12-03 11:00:29	mr4braham	My laptop crashed while running dnf update, I had to do a force reset, now when I turn it on again it takes me to the maintenance shell
+2021-12-03 11:01:32	mr4braham	I had snapper installed doing snapshots every dnf transaction, so what I want to do is restore the os to the snapshot pre sudo dnf update
+2021-12-03 11:03:03	mr4braham	How can I do that? I booted from a live fedora stick and mounted my ssd but the .snapshots subvolume inside the root folder is locked, I cannot access it for some reason, and even if I could I don't know how I would be able to rollback to the snapshots in there.
+2021-12-03 11:03:08	mr4braham	Someone help pls
+2021-12-03 11:03:23	[Enrico]	mr4braham: with btrfs should be simple enough, you can create a RW snapshot of the snapshot you want to restore (so you still have a copy if the first try fails). Rename your / subvolume to something else, then rename your RW snapshot to the same name your root volume had before. That's it. Of course if you have other system folders, such as /var in a different volume you have to do the same for all of them
+2021-12-03 11:03:52	[Enrico]	.snapshots folder locked? How so?
+2021-12-03 11:05:10	mr4braham	So when I try acessing the .snapshots with the file manager the folder has a lock and gives me an error when I try to access, doing it through the terminal it does not give me any errors but it does not go to the folder, simply stays at the current folder
+2021-12-03 11:06:06	mr4braham	The laptop ssd is encrypted, I am decrypting before mounting
+2021-12-03 11:06:41	[Enrico]	mr4braham: so you type cd .snapshots , it doesn't give any error, but it doesn't go in there? You might have a corrupted file system I suppose
+2021-12-03 11:08:36	mr4braham	Nevermind it was a dumb thing
+2021-12-03 11:08:38	mr4braham	permissions
+2021-12-03 11:08:53	[Enrico]	well you might need to be root indeed
+2021-12-03 11:11:18	mr4braham	Thanks for pointing me in the right directions, I will google how to create the rw copy, if I run into trouble I will come back here
+2021-12-03 11:29:08	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 12:22:37	--	irc: disconnected from server
+2021-12-03 12:22:54	-->	mrmanner (mrmanner@90.235.13.15) has joined #fedora
+2021-12-03 12:22:54	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-03 12:32:55	<--	ayustae (Thunderbir@gateway/vpn/protonvpn/ayustae) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:36:20	-->	luizfernando [luizfernando] (Luiz Fernando Pereira) (~quassel@2804:7f2:2992:e46b:ce0e:a66b:2315:e990) has joined #fedora
+2021-12-03 12:37:18	<--	luizfernando (~quassel@2804:7f2:2992:e46b:ce0e:a66b:2315:e990) has quit (Client Quit)
+2021-12-03 12:37:46	--	maranda[90 is now known as maranda[92
+2021-12-03 12:38:01	-->	iqexception [iqexception] (iqexception) (~iqexcepti@180.175.152.191) has joined #fedora
+2021-12-03 12:39:09	<--	GrannyGoose (~GrannyGoo@2001:8003:c834:fd01:1d99:7649:a1f5:210e) has quit (Quit: Leaving)
+2021-12-03 12:42:38	<--	iqexception (~iqexcepti@180.175.152.191) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:47:47	<--	legacyjames (~james@c-73-139-195-210.hsd1.fl.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 12:48:04	-->	paride [paride] (Paride Legovini) (~paride@ubuntu/member/paride) has joined #fedora
+2021-12-03 12:48:34	<--	paride (~paride@ubuntu/member/paride) has left #fedora
+2021-12-03 12:50:26	--	ksurma-afk is now known as ksurma
+2021-12-03 12:50:54	-->	SpartanBunny [SpartanBunny] (Spartan Bunny) (~spartanbu@103.243.46.215) has joined #fedora
+2021-12-03 12:53:55	-->	iqexception [iqexception] (iqexception) (~iqexcepti@180.175.152.191) has joined #fedora
+2021-12-03 12:54:22	-->	chinosoliard [chinosoliard] (Chino) (~chinosoli@fedora/chinosoliard) has joined #fedora
+2021-12-03 12:55:15	<--	iqexception (~iqexcepti@180.175.152.191) has quit (Remote host closed the connection)
+2021-12-03 13:05:42	<--	retroid_ (~retro@97e2ba2e.skybroadband.com) has quit (Ping timeout: 268 seconds)
+2021-12-03 13:05:54	-->	cstratak [cstratak] (Charalampos Stratakis) (~cstratak@95.82.134.60) has joined #fedora
+2021-12-03 13:06:04	-->	retroid_ (retro) (~retro@97e2ba2e.skybroadband.com) has joined #fedora
+2021-12-03 13:08:40	<--	jpbn (~jpbn@2001:980:c868:1:8e20:3b90:5523:bebf) has quit (Quit: Client closed)
+2021-12-03 20:17:22	--	irc: disconnected from server
+2021-12-03 20:17:35	-->	mrmanner (mrmanner@98.128.201.128) has joined #fedora
+2021-12-03 20:17:35	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-03 13:29:09	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 15:29:10	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 15:40:42	jlabarre-rh	an odd situation with a F35 install here.  On a Lenovo H515, I've twice installed Fedora (F34 upgraded to F35 on older HDD, and F35 on a brand-new SSD).  These work fine for a few days, but then I'll find the system suddenly can't find an OS on the disks (I'll have the system shut off for a day or two)
+2021-12-03 15:41:45	jlabarre-rh	if I put the SSD into another machine (thinkpad T430 in this case) the system boots and runs the OS from the disk without any modifications needed (no rescue steps, etc)
+2021-12-03 15:43:15	jlabarre-rh	I can mount the HDD and SSD (formatted with the default BTRFS install, root disabled) and read/write with no problem.
+2021-12-03 15:46:10	jlabarre-rh	the next thing I wanted to try was to bring the H515 up in "rescue" mode and see if I could re-write the bootloader (perhaps not visible to that particular system, even if otherwise available, but the regular "rescue" boot says it can't because root is locked
+2021-12-03 15:51:06	jlabarre-rh	ultimately I'm trying to determine two things here 1: I haven't found documentation on rescue procedure for F35, so I figure I should write it up myself and 2: is this failure a bug in Fedora, or just bad HW.
+2021-12-03 16:00:08	ledeni	jlabarre-rh: did you try to turn off old hdd and boot f35 from sdd on H515
+2021-12-03 16:01:15	jlabarre-rh	I removed the HDD and had done a fresh install on the SSD (there aren't enough SATA & power connections to have more than one "hard drive"
+2021-12-03 16:04:35	ledeni	jlabarre-rh: and hdd & sdd systems drop to rescue shell 
+2021-12-03 16:06:28	jlabarre-rh	no, I have to boot from a Fedora live DVD, booting from the HDD or SSD gives a "Error 1962: no operating system found"
+2021-12-03 16:07:49	apollo13	jlabarre-rh: I assume that this is an uefi based system?
+2021-12-03 16:08:54	jlabarre-rh	yes, I've tried setting it for "legacy only" and "UEFI only" (it's default is "Auto") to see if that got out of sync
+2021-12-03 16:09:38	apollo13	well if it is uefi you might have to need to recreate the boot entries after swapping disks
+2021-12-03 16:10:39	apollo13	from what you said it might be that the bios battery is empty
+2021-12-03 16:10:58	apollo13	which may (or may not) wipe boot entries
+2021-12-03 16:11:37	jlabarre-rh	new 2032 installed (actually changed twice, just in case the ones I have on hand have expired)
+2021-12-03 16:12:02	apollo13	but after changing the boot entries will still be gone and you might need to manually recreate them
+2021-12-03 16:12:30	jlabarre-rh	the machine had been sitting in storage 2 or 3 years, so I changed the battery first thing before installing.
+2021-12-03 16:13:06	jlabarre-rh	although if the replacement one had already expired, it might have lost EFI anyway
+2021-12-03 16:14:13	apollo13	yeah, I mean I honestly doubt that the disks have a problem especially if they work in another pc. I mean the connector might have broken down as well, but dunno…
+2021-12-03 16:14:29	apollo13	I'd drop into a uefi shell and see if you can start the system from there
+2021-12-03 16:16:14	jlabarre-rh	now that's interesting, I had done an install on another SSD yesterday (this is after the second battery), and swapping it in today it's already not seeing the boot sector
+2021-12-03 16:16:34	apollo13	oi
+2021-12-03 16:17:33	jlabarre-rh	have to find how to get this to go into EFI shell, as it's not on it's regular boot options (or in the "BIOS" screens either)
+2021-12-03 16:18:41	jlabarre-rh	this machine isn't one of Lenovo's best efforts.  But I figured it might at least make a useful test platform (which it looks like it kind of is, unintentionally)
+2021-12-03 16:18:58	apollo13	:D
+2021-12-03 16:34:10	Southern_Gentlem	jlabarre-rh, most machines its f8
+2021-12-03 16:35:04	jlabarre-rh	yeah, but not working here
+2021-12-03 16:35:31	ledeni	jlabarre-rh: intersting I have one old asus laptop and when i took hdd i had lost boot and i find way to solve it. I boot supergrub2 usb that find boot(grub) .Once i bootup system run sudo efibootmgr -b 0000 -B & sudo efibootmgr -c -w -L Fedora -d /dev/sda -p 1 -l \\EFI\\fedora\\shimx64.efi  
+2021-12-03 16:35:53	farchord	Good morning, ladies, gents and people of unspecified genders! Question for you all; I just migrated from Manjaro to Fedora. I'm working on getting everything working as I want, one little thing that seems to not work is Google Chrome's Hardware Video Decoding support. I copied my chrome flags from Manjaro, made sure that GPU blacklist is disabled, and even with that, video decode is still disabled. Using a 
+2021-12-03 16:35:54	farchord	3070ti, libva/vdpauinfo is installed, as well as the akmod-nvidia drivers.
+2021-12-03 16:42:29	Southern_Gentlem	farchord, did you try the commonbugs in the channel topic
+2021-12-03 16:43:30	farchord	Nope I have not, let me see those
+2021-12-03 16:47:45	farchord	@Southern_Gentlem, I don't think none of those apply to me. The only one I thought *might* apply is the sound one, but nah sound works here
+2021-12-03 16:51:30	charcoal	upgrade question. i'm doing f33->f35. command is "dnf -y system-upgrade download --no-downgrade --allowerasing --noautoremove --downloaddir=/home/tmp/fedup --releasever 35". after removing some conflicting packages, it's no longer complaining of various incompatibilities. fine so far.
+2021-12-03 16:51:37	charcoal	however, looking in the download directory, i do not find (e.g.) python3-3.10-whatever, even though it obviously needs to upgrade, and several incompats for it had to be removed. am i missing something?
+2021-12-03 17:00:56	Khaytsus	charcoal: Why are you passing all those flags?
+2021-12-03 17:01:00	 *	Khaytsus points to https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade
+2021-12-03 17:01:23	Khaytsus	If you can't use defaults, post the reason why and we can help you figure it out.
+2021-12-03 17:01:39	Khaytsus	Adding every possible flag known to man is often a problem where just defaults work fine
+2021-12-03 17:02:59	Khaytsus	Specifically, why no downgrade....  allowerasing shouldn't normally be needed either.  I owuld never do -y on such an operation either.
+2021-12-03 17:09:38	+Astarael[m]	yep one of the reasons I like Fedora for that they don't enable `y` as default
+2021-12-03 17:10:52	farchord	@Southern_Gentlem, Found the problem. Seems Google Chrome in Fedora ignores the chrome-flags.conf file in .config. Had to edit the .desktop file in /usr/share/applications
+2021-12-03 17:11:45	Khaytsus	farchord: Except Fedora doesn't ship Chrome, so
+2021-12-03 17:12:11	charcoal	i use flags like that because when i use the simple command for defaults i get: "Error:  Problem: The operation would result in removing the following protected packages: gnome-shell (try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages)"
+2021-12-03 17:12:42	Khaytsus	charcoal: And that sounds like a mess, again, post it to a pastebin..  use fpaste or whatnot
+2021-12-03 17:12:46	Southern_Gentlem	remove the noautoremove 
+2021-12-03 17:13:01	farchord	@Khaytsus, no worries :)
+2021-12-03 17:29:10	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 17:50:25	choirboy	I have a ThinkPad W541. Using a corded headset with mic, I am getting a terrible static noise when recording audio. ISTR there is some change I need to do after upgrading from F34 to F35 as regards to the audio subsystem, like maybe convert to the new subsystem. Does that ring any bells for anyone?
+2021-12-03 17:58:05	rindolf	choirboy: pipewire?
+2021-12-03 18:00:34	jlabarre-rh	got it to boot to the installed system with the supergrub2 CD, and in addition to the efibootmgr commands, I also added rEFInd Boot Manager (maybe if the system loses it's Fedora boot I can still recover it there)
+2021-12-03 18:02:13	choirboy	rindolf ISTR that, if you upgraded from a pulse based system (like F33 or F34) to F35, you have to convert the system to using pipewire. But I can't find anything about it with my weak Google-foo.
+2021-12-03 18:06:50	+thm[m]	choirboy: https://bugzilla.redhat.com/show_bug.cgi?id=2016253
+2021-12-03 18:10:02	choirboy	thm[m] I don't think that's it, I have audio. Just that the input is corrupted, it just records static
+2021-12-03 18:11:20	+thm[m]	You might have a "mixed" setup, try `sudo dnf swap --allowerasing pulseaudio pipewire-pulseaudio` (mentioned later in that bug)
+2021-12-03 18:23:29	choirboy	thm[m] thanks, I appreciate it. That wasn't it. I'm gonna reboot into another OS and make sure this is not a hardware issue
+2021-12-03 18:37:48	cerill	Hi. I have proxy / dns question. I have a machine with no public interface connected, so the plan is to use a proxy to reach machines outside the internal network. The proxy is set up and it works, and I can connect to the proxy from my machine, but name record resolving fails. I am unsure how to fix this. Anyone have any advice?
+2021-12-03 19:08:47	[[R]]	cerill: wht type of proxy, and how are you using it
+2021-12-03 19:29:10	fedbot	*** F35-20211201 updated lives available: https://tinyurl.com/Live-respins2 Built by the Fedora Respin Sig more info #fedora-respins ***
+2021-12-03 19:33:00	nukke	having issues with getting anything *but* HSP audio on a bluetooth headset. I'm on Fedora 35 KDE spin, latest kernel and using pipewire. this is on a laptop w/ an Intel AX200NGW (with Bluetooth 5.1), and the headphones in question are the Sony WH-1000XM4
+2021-12-03 19:34:49	nukke	I've tried copying the `bluez-monitor.conf` file from `/etc` over to `~/.config/pipewire/media-session` and uncommenting the lines with the list of codecs. I've installed `pavucontrol` and all the "High Fidelity Playback" options (aptX, LDAC, AAC, ...) options are shown as "unavailable". 
+2021-12-03 19:38:54	nukke	forgot to mention that I also did install the `bluetooth-freeworld` package from RPMFusion (`pulseaudio-module-bluetooth-freeworld-1.4-8.fc35.x86_64`)
+2021-12-03 20:01:50	nukke	I also just tried adding `Disable=Headset` at the end of the `/etc/bluetooth/main.conf` file and rebooted. I reconnected the headphones after rebooting and it's still defaulting to HSP with all other options showing as "unavailable"
+2021-12-03 20:19:02	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:46	-->	mrmanner (mrmanner@98.128.201.128) has joined #fedora
+2021-12-03 20:19:46	--	Topic for #fedora is "Fedora Linux F34, F35 end user support || Please READ: https://tinyurl.com/Fchanfaq || Common bugs: https://tinyurl.com/F34-common https://tinyurl.com/F35-common || Only Use Fedora, rpmfusion and Copr Repos || IRC Feedback: https://tinyurl.com/fedoraircsig || Updated F35 Live isos: https://tinyurl.com/Live-respins"
+2021-12-03 20:20:02	-->	twoerner_ (realname) (~twoerner@i59F5F346.versanet.de) has joined #fedora
+2021-12-03 20:21:20	<--	sprout (~quassel@2a02:a467:ccd6:1:8149:2184:782c:2882) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:21:43	-->	triad [triad] (realname) (~triad@user/triad) has joined #fedora
+2021-12-03 20:22:55	<--	twoerner__ (~twoerner@2001:16b8:224e:e200:4cd3:b77a:5bb5:11e4) has quit (Ping timeout: 268 seconds)
+2021-12-03 20:25:35	-->	sentenza [sentenza] (realname for real people) (~sentenza@146-241-168-59.dyn.eolo.it) has joined #fedora
+2021-12-03 20:27:07	farchord	Hello, I setup a KVM VM with Windows, and I setup samba on the host, and confirmed it works with another computer on the same network. Is there a reason why the KVM host is not accessible through the VM? (i.e. \\192.168.122.1 is not accessible) Thanks!
+2021-12-03 20:27:24	--	maranda104 is now known as maranda106
+2021-12-03 20:30:29	[[R]]	you dindt set up netowrking properly
+2021-12-03 20:31:22	farchord	Is there a website or something I could follow? This is my first distro with a full blown firewall... and selinux, frankly it's even more complicated lol
+2021-12-03 20:32:10	+Astarael[m]	farchord: https://wiki.archlinux.org/title/SELinux this might help
+2021-12-03 20:32:32	+allenwrench[m]	Does Fedora not fix things that are not broken and instead replace things? 
+2021-12-03 20:32:37	<--	qlixed (~qlixed@181.44.129.13) has quit (Quit: That's all folks!!)
+2021-12-03 20:32:57	+zerofox[m]	My super key is no longer pulling up the menu in fedora kde, has this happened to anyone else??/
+2021-12-03 20:33:33	+Astarael[m]	known issue
+2021-12-03 20:33:33	<--	bongobrown (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has quit (Quit: Leaving)
+2021-12-03 20:33:46	+zerofox[m]	Astarael[m]: fuck
+2021-12-03 20:33:46	Khaytsus	zerofox[m]: This is a family channel, such language is not acceptable.  Please remember children and their grandmothers may be watching.
+2021-12-03 20:33:48	+Astarael[m]	ive fixed it by googling it
+2021-12-03 20:33:52	-->	bongobrown [bongobrown] (realname) (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has joined #fedora
+2021-12-03 20:34:02	+zerofox[m]	Khaytsus: my bad
+2021-12-03 20:34:17	-->	frmlof [frmlof] (From Land of Fire) (~frmlof@70.243.238.191) has joined #fedora
+2021-12-03 20:34:38	+Astarael[m]	you have double keyboard shortcut registred for ALT+F1
+2021-12-03 20:34:48	+Astarael[m]	you have to remove one
+2021-12-03 20:34:53	+zerofox[m]	other than that I love Fedora KDE
+2021-12-03 20:34:59	<--	jdmark (~jdmark@097-102-095-007.res.spectrum.com) has quit (Changing host)
+2021-12-03 20:34:59	-->	jdmark [jdmark] (realname) (~jdmark@user/jdmark) has joined #fedora
+2021-12-03 20:35:06	+zerofox[m]	its the best setup I've had so far
+2021-12-03 20:37:02	<--	xorandor (~xorandor@2001:ac8:33:42::a05e) has quit (Ping timeout: 240 seconds)
+2021-12-03 20:37:42	farchord	Found it... Samba had to be enabled as a service in the libvirt zone of the firewall.
+2021-12-03 20:38:02	-->	xorandor [xorandor] (Laurence Pettitt) (~xorandor@185.242.6.21) has joined #fedora
+2021-12-03 20:38:52	+zerofox[m]	Astarael[m]: I cleared out the shortcuts and still nothing
+2021-12-03 20:39:17	+Astarael[m]	there's double
+2021-12-03 20:39:27	+Astarael[m]	you have to rmoev one from the config file
+2021-12-03 20:39:33	--	maranda106 is now known as maranda108
+2021-12-03 20:39:39	+Astarael[m]	I should've bookmarked the article
+2021-12-03 20:39:56	<--	Ryan[m]12 (~ryaeiinma@2001:470:69fc:105::d1fa) has left #fedora
+2021-12-03 20:43:14	farchord	@zerofox[m], I don't personally like KDE, I use Gnome, but with the Dash To Panel extension (Don't like that bar at the top; makes it look more like Windows 7-ish)
+2021-12-03 20:43:56	farchord	Errr I mean, my setup makes it look more like Windows 7-ish, fat fingers....
+2021-12-03 20:44:55	<--	xorandor (~xorandor@185.242.6.21) has quit (Ping timeout: 256 seconds)
+2021-12-03 20:45:05	+Astarael[m]	Astarael: this might help you : https://bugs.kde.org/show_bug.cgi?id=391322
+2021-12-03 20:45:14	+zerofox[m]	farchord: I know this might be controversial (I'm not a windows fan) but I think the OS interface peaked at windows 7. I like Gnome3 I'm not a KDE fanboy either
+2021-12-03 20:45:16	+Astarael[m]	zerofox: 
+2021-12-03 20:45:20	+Astarael[m]	https://bugs.kde.org/show_bug.cgi?id=391322
+2021-12-03 20:45:34	<--	mhroncok (~churchyar@fedora/churchyard) has quit (Quit: Leaving.)
+2021-12-03 20:46:05	-->	xorandor [xorandor] (Laurence Pettitt) (~xorandor@193.9.112.126) has joined #fedora
+2021-12-03 20:46:27	farchord	@zerofox[m], I mean, if the abundance of Distros/DEs can tell us something is that everyone has their own taste lol, another controversial thought: That's both Linux's strength and weakness lol
+2021-12-03 20:46:59	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Quit: Laa shay'a waqi'un moutlaq bale kouloun moumkine)
+2021-12-03 20:48:12	+zerofox[m]	farchord: agreed, I'm doing this thing were I have to prove or disprove a position by utilizing nothing but the thing I have an opinion about for a week. I.E. if I think KDE is not good, dive into it for a week and learn from the community before I form my final opinion
+2021-12-03 20:48:40	+zerofox[m]	haven't been much of a KDE fan but this has been nice, and changed my mind about a lot of stuff
+2021-12-03 20:49:50	farchord	@zerofox[m], so you are effectively conditioning yourself towards being more accepting of change, huh that's admirable..... I know an insane amount of people who would learn if they did the same
+2021-12-03 20:50:02	farchord	....me being the first lol
+2021-12-03 20:50:34	farchord	Although, me leaving Windows 11 for Linux was kindof the result of me embracing change and busting my a... at giving it a fair shake lol
+2021-12-03 20:50:35	<--	xorandor (~xorandor@193.9.112.126) has quit (Ping timeout: 256 seconds)
+2021-12-03 20:51:20	 *	farchord still suffers from PTSD from properly making nvidia proprietary drivers work...
+2021-12-03 20:51:28	+allenwrench[m]	farchord: What regrets do you have about leaving windows for fedora
+2021-12-03 20:51:55	+allenwrench[m]	farchord: Why not get amd or ati cards
+2021-12-03 20:52:22	<--	frmlof (~frmlof@70.243.238.191) has quit (Quit: frmlof)
+2021-12-03 20:52:24	-->	xorandor [xorandor] (Laurence Pettitt) (~xorandor@193.9.112.126) has joined #fedora
+2021-12-03 20:52:51	farchord	@allenwrench[m], regrets? Hmmm, good question... For the record, I just switched to Fedora this morning, I was on Manjaro for a month and a half. But the only thing I kinda miss would be it's cohesiveness, and the fact the interface hasn't changed in years. If you need to make something work, if it's possible, it's extremely well documented everywhere on the net.
+2021-12-03 20:53:17	farchord	On Linux, it's documented... but the ways changed over the years, or it's not properly documented. The information is so abundant that it's highly confusing
+2021-12-03 20:53:29	<--	vulpes_vulpes (~vulpes_vu@62-64-207-153.dynamic.dial.as9105.com) has quit (Remote host closed the connection)
+2021-12-03 20:53:49	farchord	@allenwrench[m], I did buy a new GPU this year, I got a 3070ti because, well, the difference in price was 2x
+2021-12-03 20:54:14	farchord	And performance would have been lesser (3070 vs 6700xt)
+2021-12-03 20:55:15	<--	jjelen__ (~jjelen@ip4-95-82-151-4.cust.nbox.cz) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:56:24	-->	fdelapena_ [fdelapena] (Francisco de la Peña) (~fdelapena@user/fdelapena) has joined #fedora
+2021-12-03 20:57:56	farchord	That, and... you know when you have a misconception about a brand from seeing your relatives buying that brand and being screwed? That's basically what AMD graphics cards are to me. I've seen quite a few friends with ATI cards having cards either giving up on them after 1-2 years, or having artifacts and issues not long after buying them
+2021-12-03 20:58:29	farchord	I know it's probably an insane streak of bad luck, but...
+2021-12-03 20:58:55	<--	fdelapena (~fdelapena@user/fdelapena) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:59:30	--	harrymichal is now known as harrymichal[m]
+2021-12-03 20:59:50	<--	bongobrown (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has quit (Quit: Leaving)
+2021-12-03 21:01:21	<--	xorandor (~xorandor@193.9.112.126) has quit (Ping timeout: 256 seconds)
+2021-12-03 21:03:19	--	harrymichal[m] is now known as harrymichal
+2021-12-03 21:03:48	-->	aJJa__ [aJJa] (aJJa) (~aJJa@2601:283:8301:a20::df78) has joined #fedora
+2021-12-03 21:03:49	<--	mmh (~mmh@173-165-141-73-utah.hfc.comcastbusiness.net) has quit (Quit: Leaving)

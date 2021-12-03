@@ -1,0 +1,16 @@
+2021-10-13 11:17:03	Carl	Are you feeling better today @russ*?
+2021-10-13 12:12:24	russ	A bit. Sore throat is better but I'm still coughing like a smoker :disappointed:
+2021-10-14 15:22:16	Carl	@russ* I think it's time to maybe change hosting. So could you give me the specs which hardware, software and admin access we want you to have so I can check with a potential new host.
+2021-10-15 15:00:51	Carl	@tom.lantz 12:00 on monday isn't the best time to be hones. I can have a meeting anytime on monday between 09:00-:11:30 or 13:30-17:00
+2021-10-17 21:01:40	tom.lantz	how about tuesday?
+2021-10-17 21:06:44	tom.lantz	@russ how does tuesday look for summary meeting?
+2021-10-17 21:06:44	tom.lantz	@russ how does tuesday look for summary meeting?
+2021-12-03 13:38:11	Carl	@russ @tom.lantz what do you guys think about some kind of e-mail that is sent to group admins maybe like 5 days after a membership fee was supposed to be paid with a list of the members that haven't paid with a message asking the group to check their contact details and remind them of paying etc?
+2021-12-03 13:52:49	russ	Could be an email trigger for overdue invoices
+2021-12-03 13:53:45	Carl	Yeah but not for project invoices because that is the individuals responsibility in another way I think
+2021-12-03 13:54:20	russ	yup, could be restricted to membership invoices, triggering some period after due date is passed
+2021-12-03 13:54:38	russ	Alternatively could be set up as a mailing list rule so you could send it manually, rather than as a trigger
+2021-12-03 13:55:04	Carl	I like automation :wink: [:+1::skin-tone-2:(@russ)]
+2021-12-03 14:07:27	tom.lantz	yes, that would be nice :slightly_smiling_face:
+2021-12-03 14:07:57	Carl	Ok goodie
+2021-12-03 14:08:03	Carl	I'll put it in a ticket :wink: [:+1:(@tom.lantz)]

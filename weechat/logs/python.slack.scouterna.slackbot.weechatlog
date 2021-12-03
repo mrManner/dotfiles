@@ -1,0 +1,8 @@
+2021-09-29 13:02:38	Slackbot	@PetterSandholdt joined via your invite link! If you need to disable the link or change your notification settings, you can https://scouterna.slack.com/admin/shared_invites (go to your invite link page). Or https://scouterna.slack.com/admin (open your member list) if you need to deactivate this new user.
+2021-10-11 19:11:25	Slackbot	@PetterSandholdt just sent https://scouterna.slack.com/archives/C010H41UK2P/p1633972284003200 (their first message) to a channel you're in. :tada: Help keep the conversation going!
+2021-10-11 19:11:25	        	| Petter Sandholdt: Finns det något sätt att via API få reda på registration_id en medlem har?
+2021-10-11 19:11:25	        	| Dvs jag har en activity med ett visst id. Jag har ett fomrulär med ett visst id och om jag vill visa vad en person har fyllr i det formuläret så är tydligen urlen uppbyggd med:
+2021-10-11 19:11:25	        	| https://scoutnet.se/activities/<activity_id>/registration_summary/for/<registration_id>/form/<form_id>
+2021-10-11 19:11:25	        	| Tänkte ha möjlighet att länka in direkt till den vyn, men hittar inte hur jag ska få reda på detta id.
+2021-10-11 19:11:25	        	| Jag kan ju få ut alla svar via denna, men hittar inte idt
+2021-10-11 19:11:25	        	| https://scoutnet.se/api/project/get/participants?id=<activity_id>&key=<key>

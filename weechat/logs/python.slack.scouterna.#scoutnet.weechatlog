@@ -1,0 +1,15 @@
+2021-04-25 19:57:53	Krabban	Hej på er,
+2021-04-25 19:57:53		Har frågan med att tillåta svaradress istället för noreply i epostlistorna i scoutnet vart uppe?
+2021-08-25 21:04:52	KarlThorén	Hej!
+2021-08-25 21:04:52	          	Anmälnginsformuläret har plötsligt med nya obligatoriska fällt som inte går att stänga av.
+2021-08-25 21:04:52	          	Decimalgrader - Norr *
+2021-08-25 21:04:52	          	Decimalgrader - Öst *
+2021-08-25 21:04:52	          	Kan ni ta bort de igen då
+2021-09-29 13:03:11	-->	@PetterSandholdt* has joined the channel
+2021-10-11 19:11:24	PetterSandholdt	Finns det något sätt att via API få reda på registration_id en medlem har?
+2021-10-11 19:11:24	               	Dvs jag har en activity med ett visst id. Jag har ett fomrulär med ett visst id och om jag vill visa vad en person har fyllr i det formuläret så är tydligen urlen uppbyggd med:
+2021-10-11 19:11:24	               	https://scoutnet.se/activities/<activity_id>/registration_summary/for/<registration_id>/form/<form_id>
+2021-10-11 19:11:24	               	Tänkte ha möjlighet att länka in direkt till den vyn, men hittar inte hur jag ska få reda på detta id.
+2021-10-11 19:11:24	               	Jag kan ju få ut alla svar via denna, men hittar inte idt
+2021-10-11 19:11:24	               	https://scoutnet.se/api/project/get/participants?id=<activity_id>&key=<key>
+2021-10-12 21:27:55	MartinGreen	Vad är det för skillnad på listorna i "Medlemmar som inte godkänts"? Den ena listan är "Medlemmar i väntelista" den andra är "Medlemmar som väntar på godkännande".

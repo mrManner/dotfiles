@@ -1,0 +1,302 @@
+2021-10-13 00:20:58	-->	mrmanner (~jmanner@user/mrmanner) has joined #borgbackup
+2021-10-13 00:20:58	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-13 00:20:58	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-13 00:20:58	--	Channel #borgbackup: 148 nicks (0 ops, 0 voices, 148 normals)
+2021-10-13 00:21:00	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:02	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #borgbackup
+2021-10-13 00:42:02	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-13 00:42:02	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-13 00:42:02	--	Channel #borgbackup: 148 nicks (0 ops, 0 voices, 148 normals)
+2021-10-13 00:42:30	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-13 00:52:58	-->	Betal (~Betal@user/betal) has joined #borgbackup
+2021-10-13 01:00:43	<--	SanskritFritz (~quassel@20014C4C243A44005CE2FDBB314A306F.catv.pool.telekom.hu) has quit (Ping timeout: 268 seconds)
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:46:08	-->	SanskritFritz (~quassel@20014C4C243A4400B17096755149CD45.catv.pool.telekom.hu) has joined #borgbackup
+2021-10-13 01:53:33	<--	hexa- (~hexa-@juno.lossy.network) has quit (Quit: WeeChat 3.1)
+2021-10-13 01:54:56	-->	hexa- (~hexa-@juno.lossy.network) has joined #borgbackup
+2021-10-13 02:12:58	<--	adhawkins (~adhawkins@user/adhawkins) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:13:47	-->	adhawkins (~adhawkins@user/adhawkins) has joined #borgbackup
+2021-10-13 02:23:12	-->	Linkandzelda (~Linkandze@cloudirc.laz.li) has joined #borgbackup
+2021-10-13 02:24:21	<--	SanskritFritz (~quassel@20014C4C243A4400B17096755149CD45.catv.pool.telekom.hu) has quit (Ping timeout: 250 seconds)
+2021-10-13 02:27:32	<--	unmanbearpig (~unmanbear@user/unmanbearpig) has quit (Remote host closed the connection)
+2021-10-13 02:27:55	-->	unmanbearpig (~unmanbear@user/unmanbearpig) has joined #borgbackup
+2021-10-13 03:08:30	<--	tsal (~tsal@user/tsal) has quit (Ping timeout: 260 seconds)
+2021-10-13 03:14:16	-->	tsal (~tsal@user/tsal) has joined #borgbackup
+2021-10-13 04:14:16	<--	textshell (~textshell@xdsl-84-44-157-205.nc.de) has quit (Ping timeout: 245 seconds)
+2021-10-13 04:28:09	-->	textshell (~textshell@xdsl-78-35-221-186.nc.de) has joined #borgbackup
+2021-10-13 05:29:49	<--	peetaur (~peter@204.237.2.79) has quit (Quit: Konversation terminated!)
+2021-10-13 06:16:05	<--	pidroid (~pidroid@user/pidroid) has quit (Quit: Ping timeout (120 seconds))
+2021-10-13 06:16:33	-->	pidroid (~pidroid@user/pidroid) has joined #borgbackup
+2021-10-13 06:24:02	<--	scoobydoo (~scooby@user/scoobydoo) has quit (Ping timeout: 260 seconds)
+2021-10-13 07:26:26	-->	scoobydoo (~scooby@user/scoobydoo) has joined #borgbackup
+2021-10-13 07:41:00	-->	Doraemon (~NeoCron@p200300c4cf1964009b5b3ef502cc8e57.dip0.t-ipconnect.de) has joined #borgbackup
+2021-10-13 07:43:17	<--	NeoCron (~NeoCron@p200300c4cf195d00df9b3d9f9a455325.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2021-10-13 21:22:52	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:22	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #borgbackup
+2021-10-13 21:23:22	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-13 21:23:22	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-13 21:23:22	--	Channel #borgbackup: 152 nicks (0 ops, 0 voices, 152 normals)
+2021-10-13 21:23:48	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-13 21:38:25	<--	jab416171 (~jab416171@c-174-52-53-66.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:40:28	--	dodo__ is now known as dodo
+2021-10-13 21:41:05	--	colo_ is now known as colo
+2021-10-13 21:43:39	<--	bn_work (uid268505@id-268505.uxbridge.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-13 21:43:49	-->	jab416171 (~jab416171@c-67-161-208-101.hsd1.ut.comcast.net) has joined #borgbackup
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:33	-->	mrmanner (~jmanner@185.224.57.161) has joined #borgbackup
+2021-10-16 12:32:33	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-16 12:32:33	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-16 12:32:33	--	Channel #borgbackup: 145 nicks (0 ops, 0 voices, 145 normals)
+2021-10-16 12:33:02	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-16 12:56:48	<--	garret (~garret@user/garret) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-10-16 13:02:01	-->	garret (~garret@user/garret) has joined #borgbackup
+2021-10-16 13:04:36	<--	garret (~garret@user/garret) has quit (Client Quit)
+2021-10-16 13:07:24	-->	garret (~garret@user/garret) has joined #borgbackup
+2021-10-17 18:14:39	-->	jmanner (~jmanner@185.224.57.161) has joined #borgbackup
+2021-10-17 18:14:39	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-17 18:14:39	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-17 18:14:39	--	Channel #borgbackup: 143 nicks (0 ops, 0 voices, 143 normals)
+2021-10-17 18:15:05	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined #borgbackup
+2021-10-17 18:19:02	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-17 18:19:02	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-17 18:19:02	--	Channel #borgbackup: 143 nicks (0 ops, 0 voices, 143 normals)
+2021-10-17 18:19:30	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-17 18:30:36	-->	jmanner (~jmanner@user/mrmanner) has joined #borgbackup
+2021-10-17 18:30:36	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-17 18:30:36	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-17 18:30:36	--	Channel #borgbackup: 143 nicks (0 ops, 0 voices, 143 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:31:01	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-17 18:50:32	-->	antlarr (~quassel@232.red-83-47-39.dynamicip.rima-tde.net) has joined #borgbackup
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:43	-->	mrmanner (~jmanner@user/mrmanner) has joined #borgbackup
+2021-10-17 19:45:43	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-17 19:45:43	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-17 19:45:44	--	Channel #borgbackup: 144 nicks (0 ops, 0 voices, 144 normals)
+2021-10-17 19:46:08	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-17 20:03:00	-->	peetaur2 (~peter@204.237.2.79) has joined #borgbackup
+2021-10-17 20:03:00	--	peetaur2 is now known as peetaur
+2021-10-17 20:05:31	<--	antlarr (~quassel@232.red-83-47-39.dynamicip.rima-tde.net) has quit (Quit: bye!)
+2021-10-17 20:14:59	<--	artefact (~artefact@150.207.192.77.rev.sfr.net) has quit (Remote host closed the connection)
+2021-10-17 20:18:20	-->	artefact (~artefact@243.227.192.77.rev.sfr.net) has joined #borgbackup
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #borgbackup
+2021-10-30 12:09:24	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-30 12:09:24	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-30 12:09:24	--	Channel #borgbackup: 149 nicks (0 ops, 0 voices, 149 normals)
+2021-10-30 12:09:52	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #borgbackup
+2021-10-30 12:10:54	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-30 12:10:54	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-30 12:10:54	--	Channel #borgbackup: 149 nicks (0 ops, 0 voices, 149 normals)
+2021-10-30 12:11:23	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:30:28	<--	antlarr (~quassel@16.red-2-137-11.dynamicip.rima-tde.net) has quit (Quit: bye!)
+2021-10-30 13:13:08	<--	SanskritFritz (~quassel@20014C4C243A4400E4ED73BEBBAD7F15.catv.pool.telekom.hu) has quit (Ping timeout: 268 seconds)
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:35	-->	mrmanner (~jmanner@user/mrmanner) has joined #borgbackup
+2021-10-30 17:07:35	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-30 17:07:35	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-30 17:07:35	--	Channel #borgbackup: 148 nicks (0 ops, 0 voices, 148 normals)
+2021-10-30 17:08:02	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-10-30 17:36:59	<--	Mathisen (mathisen@about/windows/staff/mathisen) has quit (Ping timeout: 264 seconds)
+2021-10-30 17:37:42	-->	Mathisen (mathisen@about/windows/staff/mathisen) has joined #borgbackup
+2021-10-30 22:21:17	--	irc: disconnected from server
+2021-10-30 22:21:47	-->	mrmanner (~jmanner@user/mrmanner) has joined #borgbackup
+2021-10-30 22:21:47	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-10-30 22:21:47	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-10-30 22:21:47	--	Channel #borgbackup: 149 nicks (0 ops, 0 voices, 149 normals)
+2021-10-30 22:22:11	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-12-01 23:20:49	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #borgbackup
+2021-12-01 23:20:49	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-12-01 23:20:49	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-01 23:20:49	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-12-01 23:20:49	--	Channel #borgbackup: 151 nicks (0 ops, 0 voices, 151 normals)
+2021-12-01 23:21:33	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-12-01 23:21:51	--	Mode #borgbackup [+nt]
+2021-12-01 23:21:51	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #borgbackup
+2021-12-01 23:23:02	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-12-01 23:23:02	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-01 23:23:02	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-12-01 23:23:02	--	Channel #borgbackup: 151 nicks (0 ops, 0 voices, 151 normals)
+2021-12-01 23:23:14	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-12-01 23:23:24	--	Mode #borgbackup [+nt]
+2021-12-01 23:23:24	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-12-01 23:29:18	<--	BCMM (~BCMM@user/bcmm) has quit (Quit: Konversation terminated!)
+2021-12-01 23:42:50	<--	duxsco (~duxsco@2a01:c23:c4fc:b510::7ca) has quit (Quit: Leaving)
+2021-12-01 23:43:10	<--	amiconn (jens@p200300ea871de700305e95fffec66ff3.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2021-12-01 23:43:42	-->	amiconn [amiconn] (Jens) (jens@p200300ea871de700305e95fffec66ff3.dip0.t-ipconnect.de) has joined #borgbackup
+2021-12-01 23:46:11	<--	scain (~scain@2603-8080-b104-4e00-45cf-678b-0a7f-b897.res6.spectrum.com) has quit (Quit: Konversation terminated!)
+2021-12-02 00:04:17	<--	ceska (~Cieska@2a02:c7f:f4cb:ad00:dabb:c1ff:fe05:e854) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:36:01	<--	fizikz (~fizikz@107.171.153.147) has quit (Remote host closed the connection)
+2021-12-02 00:37:30	<--	viq|w (~viq@user/viq) has quit (Ping timeout: 256 seconds)
+2021-12-02 00:39:11	-->	viq|w [viq] (viq) (~viq@user/viq) has joined #borgbackup
+2021-12-02 00:47:14	-->	vysn [vysn] (vysn) (~vysn@user/vysn) has joined #borgbackup
+2021-12-02 01:43:50	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:10:23	<--	tsal (~tsal@user/tsal) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:15:02	-->	tsal [tsal] (tsal) (~tsal@user/tsal) has joined #borgbackup
+2021-12-02 03:03:57	<--	tsal (~tsal@user/tsal) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:10:51	-->	tsal [tsal] (tsal) (~tsal@user/tsal) has joined #borgbackup
+2021-12-02 03:49:14	<--	peetaur (~peter@204.237.2.79) has quit (Quit: Konversation terminated!)
+2021-12-02 04:01:53	<--	tsal (~tsal@user/tsal) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:08:50	-->	tsal [tsal] (tsal) (~tsal@user/tsal) has joined #borgbackup
+2021-12-02 04:13:59	<--	textshell (~textshell@xdsl-87-78-191-84.nc.de) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:16:27	-->	girafe2 (girafe) (~girafe@176-147-142-235.abo.bbox.fr) has joined #borgbackup
+2021-12-02 04:18:23	<--	girafe (~girafe@176-147-142-235.abo.bbox.fr) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:25:26	<--	strugee (~strugee@strugee.net) has quit (Quit: ZNC - http://znc.in)
+2021-12-02 04:27:01	-->	textshell [textshell] (KVIrc) (~textshell@xdsl-87-78-20-248.nc.de) has joined #borgbackup
+2021-12-02 04:31:33	-->	strugee [strugee] (AJ Jordan) (~strugee@strugee.net) has joined #borgbackup
+2021-12-02 04:49:15	<--	amiconn (jens@p200300ea871de700305e95fffec66ff3.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2021-12-02 04:49:28	-->	amiconn [amiconn] (Jens) (jens@p200300ea871de700305e95fffec66ff3.dip0.t-ipconnect.de) has joined #borgbackup
+2021-12-02 05:51:20	-->	lfam [lfam] (realname) (~lfam@user/lfam) has joined #borgbackup
+2021-12-02 06:21:46	-->	strugee_ [strugee] (AJ Jordan) (~strugee@strugee.net) has joined #borgbackup
+2021-12-02 06:22:03	-->	Nadalle [Elladan] (Elladan) (~elladan@user/elladan) has joined #borgbackup
+2021-12-02 06:22:19	<--	strugee (~strugee@strugee.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:22:19	<--	Elladan (~elladan@user/elladan) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:22:19	--	Nadalle is now known as Elladan
+2021-12-02 06:23:32	<--	ToxicFrog (~ToxicFrog@198-200-100-178.cpe.distributel.net) has quit (Ping timeout: 240 seconds)
+2021-12-02 06:26:32	-->	ToxicFrog [ToxicFrog] (ToxicFrog) (~ToxicFrog@198-200-100-178.cpe.distributel.net) has joined #borgbackup
+2021-12-02 07:42:25	<--	lfam (~lfam@user/lfam) has quit (Quit: Leaving)
+2021-12-02 07:42:44	<--	scoobydoo (~scooby@user/scoobydoo) has quit (Ping timeout: 265 seconds)
+2021-12-02 07:45:13	-->	scoobydoo [scoobydoo] (scoobydoo) (~scooby@user/scoobydoo) has joined #borgbackup
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:59	-->	mrmanner (mrmanner@98.128.201.128) has joined #borgbackup
+2021-12-02 08:09:59	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-02 08:09:59	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-12-02 08:09:59	--	Channel #borgbackup: 145 nicks (0 ops, 0 voices, 145 normals)
+2021-12-02 08:11:06	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-12-02 08:15:41	-->	ceska (Cieska) (~Cieska@2a02:c7f:f4cb:ad00:dabb:c1ff:fe05:e854) has joined #borgbackup
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:15	-->	mrmanner (mrmanner@90.235.13.15) has joined #borgbackup
+2021-12-02 21:03:15	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-02 21:03:15	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-12-02 21:03:16	--	Channel #borgbackup: 149 nicks (0 ops, 0 voices, 149 normals)
+2021-12-02 09:45:06	adhawkins	Anyone had any contact from Lima at all? I guess they probably have a lot of email to answer...
+2021-12-02 09:49:46	tao	not me
+2021-12-02 10:05:03	intelfx	not me either
+2021-12-02 10:13:15	intelfx	also 1st December came and went and lima is still mostly broken
+2021-12-02 10:13:31	intelfx	which means that I'm going to ditch it, sadly
+2021-12-02 10:17:31	adhawkins	I've already come to that conclusion sadly. Just one more batch of data to seed up to borgbase then I'm almost certainly done.
+2021-12-02 10:17:44	adhawkins	Cancelling the recurring payment could be interesting though.
+2021-12-02 10:27:08	elho	broken again, I guess
+2021-12-02 10:28:38	elho	my tiny repos did completed their cecks (like 20 mins for 2G repos), a bigger one completed segment check yesterday and since then sits at 0.0% archive check
+2021-12-02 10:58:46	adhawkins	I've basically given up accessing them at all elho, except to delete the backups once I've successfully seeded to borgbase.
+2021-12-02 10:58:58	adhawkins	Will see what they say if and when I finally get an email.
+2021-12-02 11:00:23	elho	why even delete?
+2021-12-02 11:00:47	elho	its not as if that was secure anyway
+2021-12-02 11:02:22	adhawkins	One reason is that if it comes down to them saying "Well, you've had xTB of data stored here, so we're going to continue charging for that" I don't want them to have that out.
+2021-12-02 11:03:01	tao	yeah. i deleted my backups and emailed them to ask them to delete my whole account on both their portal and the sftp server. they haven't replied obviously. but maybe they'll get around to it one day
+2021-12-02 11:03:03	elho	I kinda just thought that I am more bothered about the time I wasted re-enabling Lima on the tiny systems and now disabling it again a day fater than I am about the fact that its not working :P
+2021-12-02 11:03:23	tao	thankfully they didn't have any of my payment details anyway as i was only using the free trial 25GB
+2021-12-02 11:04:15	adhawkins	It's been largely unusable for me since the end of October, and I've been paying them all that time.
+2021-12-02 11:05:00	elho	you partly choose to though (like me, but for different reasons)
+2021-12-02 11:08:24	tao	i'm wondering if you can talk to the bank and ask them to block transactions from that vendor without needing to replace the entire card
+2021-12-02 11:08:41	tao	i'd be doing that and witholding money until they at least replied to you
+2021-12-02 11:10:40	elho	block makes no sense IMO.  either you want out, then cancel and be done with it. or if you still want/need your data, the blocking could lead to them deleteing your account and data for not paying and you'd be bummed.
+2021-12-02 11:13:15	elho	having the cheap beta rate, having pay 3 months half rate for the first shortish (in comparison to this) problem and somewhat feeling with them for the health issues and most importantly becase it just is that third, kinda archive like, backup copy, I'm holding on for now, but the day I decide to give up, I cancel with the bank and that's all.
+2021-12-02 11:14:31	tao	isn't the fear though that they are going to continue to take payment for a service that you can't use and there's no way to stop it if they are not responding to you
+2021-12-02 11:15:07	tao	you can't cancel it if they don't respond
+2021-12-02 11:15:13	elho	the bank will stop it
+2021-12-02 11:15:28	tao	that's what I suggested, asking the bank to stop it :)
+2021-12-02 11:24:44	adhawkins	Yeah, I'm hoping it doesn't come to that though.
+2021-12-02 11:39:10	elho	oh, I'm now as cursed as you are...
+2021-12-02 11:39:21	elho	for the first time I see the SSH login being stuck
+2021-12-02 11:58:32	adhawkins	Yay, it's not just me :)
+2021-12-02 12:43:58	intelfx	yeah I've saw it a couple times
+2021-12-02 12:44:07	intelfx	*I've seen
+2021-12-02 12:44:47	intelfx	I wonder what exactly is the failure mode
+2021-12-02 12:45:11	intelfx	the interesting tidbit is that invoking statfs on the home directory says it's xfs
+2021-12-02 12:45:53	intelfx	which suggests that they may be using ceph as a block storage and mounting xfs on that
+2021-12-02 12:46:08	adhawkins	Or the home directories aren't on ceph?
+2021-12-02 12:46:19	intelfx	home directory is where you're supposed to keep your stuff
+2021-12-02 12:46:28	adhawkins	Ah yes, fair point :)
+2021-12-02 12:47:51	intelfx	which, in turn, suggests that file availability might depend on the allocation group
+2021-12-02 12:48:19	intelfx	(xfs allocation group)
+2021-12-02 12:49:33	intelfx	if it was something like ext4 which keeps metadata in one place, the filesystem would be either wholly inaccessible for metadata ops (if the ceph node that happens to store the inode table has failed) or not
+2021-12-02 12:54:30	tao	at the start when the service first launched it was really fast. so whatever has caused it to go wrong has happened later. either more customers on it, or more data being stored on it. either it's just overloaded now with too much, or the chia miners destroyed it and it's never recovered properly
+2021-12-02 12:55:29	elho	yeah intelfx, I saw a rbd device once
+2021-12-02 12:57:30	elho	and yes, its not entirely dead, the check of my laptop was at 92.x% of the segment check when new logins already got stuck, but now it passed the segment check and is stuck at the archive one
+2021-12-02 12:58:46	intelfx	idk, it seems that ceph nodes just die and recover at random
+2021-12-02 12:59:13	intelfx	it could be anything, like overloaded network causing health check failures
+2021-12-02 12:59:20	elho	there's also that second component to it, not being able to fsync() through to the disk, that was intermittently fine (both, a blatand sync in the shell completing as well as borg being able to write its lock files) but broken again now
+2021-12-02 13:00:15	elho	the actual problems could be anything. the going from remarkably fast to hideously slow in general is the customers/load
+2021-12-02 13:02:05	tao	it might still have chia on it and they haven't blocked it like they thought. especially when they've been away with broken legs
+2021-12-02 13:08:28	 *	elho wonders whether there's a relation between broken legs and unhappy banned CHIA customers ;D
+2021-12-02 13:16:28	tao	hah ye
+2021-12-02 21:04:25	--	irc: disconnected from server
+2021-12-02 21:04:42	-->	mrmanner (mrmanner@90.235.13.15) has joined #borgbackup
+2021-12-02 21:04:42	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-02 21:04:42	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-12-02 21:04:43	--	Channel #borgbackup: 150 nicks (0 ops, 0 voices, 150 normals)
+2021-12-02 21:05:14	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:25	-->	mrmanner (mrmanner@90.235.13.15) has joined #borgbackup
+2021-12-02 21:11:25	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-02 21:11:25	--	Topic set by ThomasWaldmann (~twaldmann@shell.thinkmo.de) on mån, 12 jul 2021 23:22:57
+2021-12-02 21:11:25	--	Channel #borgbackup: 151 nicks (0 ops, 0 voices, 151 normals)
+2021-12-02 21:11:46	--	Channel created on ons, 19 maj 2021 16:21:01
+2021-12-02 21:24:40	<--	girafe2 (~girafe@176-147-142-235.abo.bbox.fr) has quit (Quit: Leaving)
+2021-12-02 21:25:04	-->	girafe [girafe] (girafe) (~girafe@176-147-142-235.abo.bbox.fr) has joined #borgbackup
+2021-12-02 21:28:50	-->	mrmanner (mrmanner@90.235.13.15) has joined #borgbackup
+2021-12-02 21:28:50	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #borgbackup
+2021-12-02 21:50:44	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-02 22:03:51	<--	duxsco (~duxsco@2a01:c23:c4fc:b510::a05) has quit (Quit: Leaving)
+2021-12-02 22:06:19	-->	duxsco [duxsco] (realname) (~duxsco@2a01:c23:c4fc:b510::c8b) has joined #borgbackup
+2021-12-02 22:16:40	<--	jess (~jess@libera/staff/jess) has quit
+2021-12-02 22:32:30	<--	SanskritFritz (~quassel@20014C4C243A440028BE2D29B5ECCFCA.catv.pool.telekom.hu) has quit (Ping timeout: 268 seconds)
+2021-12-02 22:34:04	-->	duxco [duxsco] (realname) (~duxsco@dynamic-095-115-115-185.95.115.pool.telefonica.de) has joined #borgbackup
+2021-12-02 22:36:49	<--	duxsco (~duxsco@2a01:c23:c4fc:b510::c8b) has quit (Ping timeout: 268 seconds)
+2021-12-02 22:39:17	<--	duxco (~duxsco@dynamic-095-115-115-185.95.115.pool.telefonica.de) has quit (Quit: Leaving)
+2021-12-02 23:14:21	-->	duxsco [duxsco] (realname) (~duxsco@dynamic-095-115-115-185.95.115.pool.telefonica.de) has joined #borgbackup
+2021-12-02 23:36:41	<--	lfam (~lfam@user/lfam) has quit (Quit: Leaving)
+2021-12-03 00:30:02	<--	ceska (~Cieska@2a02:c7f:f4cb:ad00:dabb:c1ff:fe05:e854) has quit (Ping timeout: 240 seconds)
+2021-12-03 00:47:05	<--	duxsco (~duxsco@dynamic-095-115-115-185.95.115.pool.telefonica.de) has quit (Quit: Leaving)
+2021-12-03 01:46:29	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:21:16	--	irc: disconnected from server
+2021-12-03 12:21:31	-->	mrmanner (mrmanner@90.235.13.15) has joined #borgbackup
+2021-12-03 12:21:31	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-03 12:06:04	elho	heh, after Lima SSH login hung for me as well, I did find a terminal with a still open login and did a ls */lock.exclusive which got stuck seemingly forever, too. I kept that window around and by today the ls actually completed :P
+2021-12-03 12:12:18	tao	yeah. before I quit it completely I was trying to do a backup and getting frustrated with it and control C'ing it. then 24 hours later I tried running borg break-lock which hung itself
+2021-12-03 12:13:05	tao	I suppose break-lock though still needs to load the entire python interpreter and libraries just to delete a file
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:52	-->	mrmanner (mrmanner@90.235.13.15) has joined #borgbackup
+2021-12-03 12:22:52	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-03 12:42:37	-->	Trieste_ [pilgrim] (T) (T@user/pilgrim) has joined #borgbackup
+2021-12-03 12:43:11	<--	Trieste (T@user/pilgrim) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:46:00	--	Trieste_ is now known as Trieste
+2021-12-03 13:05:25	<--	ToxicFrog (~ToxicFrog@198-200-100-178.cpe.distributel.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:37	-->	mrmanner (mrmanner@98.128.201.128) has joined #borgbackup
+2021-12-03 20:17:37	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-03 13:11:37	elho	I think its rather the lock files itself nowadays. seen borg --version complete fine not too slow but any operation that needs to create the lock (and I assume fsyc() it) be stuck looooooong
+2021-12-03 20:17:15	ccf	Ahoj, is is faster and possible to use something else than SSH for a Local-Area-Network backup?
+2021-12-03 20:17:26	ccf	"is it"
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:45	-->	mrmanner (mrmanner@98.128.201.128) has joined #borgbackup
+2021-12-03 20:19:45	--	Topic for #borgbackup is "BorgBackup - stable: 1.1.17 beta: 1.2.0b3 - pastebin: https://rn0.me"
+2021-12-03 20:29:28	ToxicFrog	Fastest is going to be running borg on the client machines, rather than mounting them over sshfs
+2021-12-03 20:29:42	ToxicFrog	If that's not an option there are some things you can do to make the initial scan faster over sshfs.
+2021-12-03 20:31:42	-->	ceska (Cieska) (~Cieska@2a02:c7f:f4cb:ad00:dabb:c1ff:fe05:e854) has joined #borgbackup
+2021-12-03 20:31:44	ccf	I once tested to use it "locally" by mounting the destination by NFS. But having two instances of borg (one on the server and one on the client) seems to be faster? About the initial scan, I do not care
+2021-12-03 20:39:36	-->	Linkandzelda (LaZ) (~Linkandze@cloudirc.laz.li) has joined #borgbackup
+2021-12-03 20:41:26	ToxicFrog	So, two instances of borg are faster because the client instance can do the metadata scan locally, which is much faster, and then for files that have changed, can also do the content scan locally, and send to the server only those blocks that have changed
+2021-12-03 20:42:05	ToxicFrog	For network mounts, the metadata scan is much slower, and the default settings for the metadata scan don't actually work well with sshfs (and possibly nfs, less sure about that)
+2021-12-03 20:42:20	ToxicFrog	Which results in it regarding every file as "potentially changed" and having to do a content scan on every file as well
+2021-12-03 20:42:58	ToxicFrog	Even once you change the settings so that's fixed, it still needs to load the complete contents of every changed file to do the content scan, so a 4GB file containing 1MB of changed data results in 4GB of network traffic rather than 1MB.
+2021-12-03 20:44:22	ccf	Cool, thanks for the explanation! So what is the fastest way to backup my data here in my LAN?
+2021-12-03 20:45:02	ccf	Is it possible to use something else than openssh that is faster? (could be set by --rsh)
+2021-12-03 20:45:19	ToxicFrog	https://borgbackup.readthedocs.io/en/stable/deployment/pull-backup.html#creating-a-backup has some additional details; note in particular the use of --files-cache to change the cache settings (which affects how the metadata scan finds modified files)
+2021-12-03 20:45:34	ToxicFrog	Not sure about "something faster than openssh". I haven't tried it on nfs; that might be faster on some setups.
+2021-12-03 20:45:37	ToxicFrog	Stuff I have tried:
+2021-12-03 20:48:14	ToxicFrog	- borg->borg -- this is fastest, but of course you need borg installed on both ends
+2021-12-03 20:48:16	ToxicFrog	- rsync->borg -- i.e. use rsync to copy the files to be backed up to the server, then run borg on that. Also very fast, but requires enough room on the server to keep a complete copy of the dataset being backed up *plus* the borg repo. I use this for backing up some offsite machines that are very slow over sshfs but also very small <8GB each)
+2021-12-03 20:48:18	ToxicFrog	- sshfs->borg -- significantly slower, even with appropriate --files-cache settings, and has some gross failure modes if the network goes down or the remote machine goes to sleep; however, works on anything you can ssh into, which is often a virtue (I use this to back up windows machines, small ARM thingies without borg installed, etc)
+2021-12-03 20:49:25	ToxicFrog	Other people in this channel may have tried other setups like borg-over-nfs or borg-over-smb, if you want to hang around and see who else chimes in.
+2021-12-03 20:51:17	--	Linkandzelda has identified as Linkandzelda

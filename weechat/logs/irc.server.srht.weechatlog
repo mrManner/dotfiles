@@ -1,0 +1,474 @@
+2021-12-01 22:47:51	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 22:47:51	--	gnutls: receiving 3 certificates
+2021-12-01 22:47:51	--	 - certificate[1] info:
+2021-12-01 22:47:51	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 22:47:51	--	 - certificate[2] info:
+2021-12-01 22:47:51	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 22:47:51	--	 - certificate[3] info:
+2021-12-01 22:47:51	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 22:47:51	--	gnutls: peer's certificate is trusted
+2021-12-01 22:47:51	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 22:47:52	--	irc: client capability, server supports: account-notify message-tags echo-message soju.im/bouncer-networks-notify sasl=PLAIN,EXTERNAL invite-notify draft/chathistory account-tag server-time batch away-notify extended-join draft/extended-monitor setname soju.im/bouncer-networks cap-notify multi-prefix
+2021-12-01 22:47:52	--	irc: client capability, requesting: account-notify invite-notify server-time away-notify extended-join soju.im/bouncer-networks cap-notify multi-prefix
+2021-12-01 22:47:52	--	irc: client capability, enabled: account-notify invite-notify server-time away-notify extended-join soju.im/bouncer-networks cap-notify multi-prefix
+2021-12-01 22:47:52	--	*: Invalid sr.ht OAuth2 access token
+2021-12-01 22:48:22	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-12-01 22:48:22	--	irc: disconnecting from server...
+2021-12-01 22:48:22	--	irc: disconnected from server
+2021-12-01 22:48:22	--	irc: reconnecting to server in 10 seconds
+2021-12-01 22:48:32	--	irc: reconnecting to server...
+2021-12-01 22:48:32	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 22:48:32	--	gnutls: receiving 3 certificates
+2021-12-01 22:48:32	--	 - certificate[1] info:
+2021-12-01 22:48:32	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 22:48:32	--	 - certificate[2] info:
+2021-12-01 22:48:32	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 22:48:32	--	 - certificate[3] info:
+2021-12-01 22:48:32	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 22:48:32	--	gnutls: peer's certificate is trusted
+2021-12-01 22:48:32	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 22:48:32	--	irc: client capability, server supports: draft/extended-monitor soju.im/bouncer-networks draft/chathistory extended-join echo-message sasl=PLAIN,EXTERNAL multi-prefix invite-notify message-tags account-notify away-notify server-time setname cap-notify soju.im/bouncer-networks-notify batch account-tag
+2021-12-01 22:48:32	--	irc: client capability, requesting: soju.im/bouncer-networks extended-join multi-prefix invite-notify account-notify away-notify server-time cap-notify
+2021-12-01 22:48:33	--	irc: client capability, enabled: soju.im/bouncer-networks extended-join multi-prefix invite-notify account-notify away-notify server-time cap-notify
+2021-12-01 22:48:33	--	*: Invalid sr.ht OAuth2 access token
+2021-12-01 22:49:02	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-12-01 22:49:02	--	irc: disconnecting from server...
+2021-12-01 22:49:02	--	irc: disconnected from server
+2021-12-01 22:49:02	--	irc: reconnecting to server in 20 seconds
+2021-12-01 22:49:22	--	irc: reconnecting to server...
+2021-12-01 22:49:22	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 22:49:22	--	gnutls: receiving 3 certificates
+2021-12-01 22:49:22	--	 - certificate[1] info:
+2021-12-01 22:49:22	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 22:49:22	--	 - certificate[2] info:
+2021-12-01 22:49:22	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 22:49:22	--	 - certificate[3] info:
+2021-12-01 22:49:22	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 22:49:22	--	gnutls: peer's certificate is trusted
+2021-12-01 22:49:22	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 22:49:23	--	irc: client capability, server supports: setname draft/extended-monitor soju.im/bouncer-networks account-notify multi-prefix message-tags batch cap-notify away-notify invite-notify soju.im/bouncer-networks-notify draft/chathistory account-tag extended-join echo-message server-time sasl=PLAIN,EXTERNAL
+2021-12-01 22:49:23	--	irc: client capability, requesting: soju.im/bouncer-networks account-notify multi-prefix cap-notify away-notify invite-notify extended-join server-time
+2021-12-01 22:49:23	--	irc: client capability, enabled: soju.im/bouncer-networks account-notify multi-prefix cap-notify away-notify invite-notify extended-join server-time
+2021-12-01 22:49:23	--	*: Invalid sr.ht OAuth2 access token
+2021-12-01 22:49:39	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 22:49:39	--	gnutls: receiving 3 certificates
+2021-12-01 22:49:39	--	 - certificate[1] info:
+2021-12-01 22:49:39	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 22:49:39	--	 - certificate[2] info:
+2021-12-01 22:49:39	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 22:49:39	--	 - certificate[3] info:
+2021-12-01 22:49:39	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 22:49:39	--	gnutls: peer's certificate is trusted
+2021-12-01 22:49:39	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 22:49:39	--	irc: client capability, server supports: setname echo-message away-notify soju.im/bouncer-networks-notify server-time message-tags account-tag cap-notify invite-notify sasl=PLAIN,EXTERNAL draft/chathistory extended-join multi-prefix draft/extended-monitor soju.im/bouncer-networks batch account-notify
+2021-12-01 22:49:39	--	irc: client capability, requesting: sasl
+2021-12-01 22:49:39	--	irc: client capability, enabled: sasl
+2021-12-01 22:49:40	--	Invalid sr.ht OAuth2 access token
+2021-12-01 22:49:40	--	*: Invalid sr.ht OAuth2 access token
+2021-12-01 22:50:09	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-12-01 22:50:09	--	irc: disconnecting from server...
+2021-12-01 22:50:09	--	irc: disconnected from server
+2021-12-01 22:50:09	--	irc: reconnecting to server in 10 seconds
+2021-12-01 22:50:19	--	irc: reconnecting to server...
+2021-12-01 22:50:19	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 22:50:19	--	gnutls: receiving 3 certificates
+2021-12-01 22:50:19	--	 - certificate[1] info:
+2021-12-01 22:50:19	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 22:50:19	--	 - certificate[2] info:
+2021-12-01 22:50:19	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 22:50:19	--	 - certificate[3] info:
+2021-12-01 22:50:19	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 22:50:19	--	gnutls: peer's certificate is trusted
+2021-12-01 22:50:19	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 22:50:19	--	irc: client capability, server supports: invite-notify cap-notify echo-message server-time multi-prefix extended-join account-notify account-tag setname soju.im/bouncer-networks soju.im/bouncer-networks-notify sasl=PLAIN,EXTERNAL draft/extended-monitor message-tags batch draft/chathistory away-notify
+2021-12-01 22:50:19	--	irc: client capability, requesting: invite-notify cap-notify server-time multi-prefix extended-join account-notify soju.im/bouncer-networks sasl away-notify
+2021-12-01 22:50:19	--	irc: client capability, enabled: invite-notify cap-notify server-time multi-prefix extended-join account-notify soju.im/bouncer-networks sasl away-notify
+2021-12-01 22:50:20	--	Invalid sr.ht OAuth2 access token
+2021-12-01 22:50:20	--	*: Invalid sr.ht OAuth2 access token
+2021-12-01 22:50:49	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-12-01 22:50:49	--	irc: disconnecting from server...
+2021-12-01 22:50:49	--	irc: disconnected from server
+2021-12-01 22:50:49	--	irc: reconnecting to server in 20 seconds
+2021-12-01 22:50:58		irc: auto-reconnection is cancelled
+2021-12-01 22:50:58	--	irc: disconnected from server
+2021-12-01 22:51:02	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 22:51:02	--	gnutls: receiving 3 certificates
+2021-12-01 22:51:02	--	 - certificate[1] info:
+2021-12-01 22:51:02	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 22:51:02	--	 - certificate[2] info:
+2021-12-01 22:51:02	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 22:51:02	--	 - certificate[3] info:
+2021-12-01 22:51:02	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 22:51:02	--	gnutls: peer's certificate is trusted
+2021-12-01 22:51:02	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 22:51:03	--	irc: client capability, server supports: invite-notify soju.im/bouncer-networks-notify account-tag account-notify message-tags setname soju.im/bouncer-networks cap-notify away-notify draft/extended-monitor batch echo-message server-time sasl=PLAIN,EXTERNAL draft/chathistory extended-join multi-prefix
+2021-12-01 22:51:03	--	irc: client capability, requesting: invite-notify account-notify soju.im/bouncer-networks cap-notify away-notify server-time sasl extended-join multi-prefix
+2021-12-01 22:51:03	--	irc: client capability, enabled: invite-notify account-notify soju.im/bouncer-networks cap-notify away-notify server-time sasl extended-join multi-prefix
+2021-12-01 22:51:03	--	Invalid sr.ht OAuth2 access token
+2021-12-01 22:51:03	--	*: Invalid sr.ht OAuth2 access token
+2021-12-01 22:51:15	--	irc: disconnected from server
+2021-12-01 22:53:57	=!=	irc: not connected to server "srht"!
+2021-12-01 22:53:59	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 22:54:00	--	gnutls: receiving 3 certificates
+2021-12-01 22:54:00	--	 - certificate[1] info:
+2021-12-01 22:54:00	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 22:54:00	--	 - certificate[2] info:
+2021-12-01 22:54:00	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 22:54:00	--	 - certificate[3] info:
+2021-12-01 22:54:00	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 22:54:00	--	gnutls: peer's certificate is trusted
+2021-12-01 22:54:00	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 22:54:00	--	irc: client capability, server supports: batch echo-message account-tag away-notify invite-notify cap-notify draft/chathistory message-tags soju.im/bouncer-networks-notify multi-prefix draft/extended-monitor server-time setname soju.im/bouncer-networks sasl=PLAIN,EXTERNAL extended-join account-notify
+2021-12-01 22:54:00	--	irc: client capability, requesting: away-notify invite-notify cap-notify multi-prefix server-time soju.im/bouncer-networks sasl extended-join account-notify
+2021-12-01 22:54:01	--	irc: client capability, enabled: away-notify invite-notify cap-notify multi-prefix server-time soju.im/bouncer-networks sasl extended-join account-notify
+2021-12-01 22:54:01	--	SASL authentication successful
+2021-12-01 22:54:01	--	Welcome to soju, jmanner
+2021-12-01 22:54:01	--	Your host is chat.sr.ht
+2021-12-01 22:54:01	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-01 22:54:01	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-01 22:54:01	--	You are logged in as mrmanner (jmanner!mrmanner@98.128.201.128)
+2021-12-01 22:54:01	--	- Message of the Day -
+2021-12-01 22:54:01	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-01 22:54:01	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-01 22:54:01	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-01 22:54:01	--	Welcome to chat.sr.ht!
+2021-12-01 22:54:01	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-01 22:54:01	--	Documentation for this service is available online:
+2021-12-01 22:54:01	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-01 22:54:01	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-01 22:54:01	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-01 22:54:01	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-01 22:54:01	--	In order to chat with other users, you must configure an IRC network.
+2021-12-01 22:54:01	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-01 22:54:01	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-01 22:54:01	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-01 22:54:01	--	Once connected, it is recommended to register an account with the network.
+2021-12-01 22:54:02	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-01 22:54:02	--	registration system for details.
+2021-12-01 22:54:02	--	End of /MOTD command.
+2021-12-01 22:58:31	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 22:58:31	--	gnutls: receiving 3 certificates
+2021-12-01 22:58:31	--	 - certificate[1] info:
+2021-12-01 22:58:31	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 22:58:31	--	 - certificate[2] info:
+2021-12-01 22:58:31	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 22:58:31	--	 - certificate[3] info:
+2021-12-01 22:58:31	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 22:58:31	--	gnutls: peer's certificate is trusted
+2021-12-01 22:58:31	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 22:58:32	--	irc: client capability, server supports: message-tags cap-notify soju.im/bouncer-networks draft/chathistory account-tag setname away-notify extended-join multi-prefix invite-notify sasl=PLAIN,EXTERNAL draft/extended-monitor account-notify batch echo-message server-time soju.im/bouncer-networks-notify
+2021-12-01 22:58:32	--	irc: client capability, requesting: cap-notify soju.im/bouncer-networks away-notify extended-join multi-prefix invite-notify sasl account-notify server-time
+2021-12-01 22:58:32	--	irc: client capability, enabled: cap-notify soju.im/bouncer-networks away-notify extended-join multi-prefix invite-notify sasl account-notify server-time
+2021-12-01 22:58:32	--	SASL authentication successful
+2021-12-01 22:58:33	--	Welcome to soju, jmanner
+2021-12-01 22:58:33	--	Your host is chat.sr.ht
+2021-12-01 22:58:33	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-01 22:58:33	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-01 22:58:33	--	You are logged in as mrmanner (jmanner!mrmanner@98.128.201.128)
+2021-12-01 22:58:33	--	- Message of the Day -
+2021-12-01 22:58:33	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-01 22:58:33	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-01 22:58:33	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-01 22:58:33	--	Welcome to chat.sr.ht!
+2021-12-01 22:58:33	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-01 22:58:33	--	Documentation for this service is available online:
+2021-12-01 22:58:33	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-01 22:58:33	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-01 22:58:33	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-01 22:58:33	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-01 22:58:33	--	In order to chat with other users, you must configure an IRC network.
+2021-12-01 22:58:33	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-01 22:58:33	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-01 22:58:33	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-01 22:58:33	--	Once connected, it is recommended to register an account with the network.
+2021-12-01 22:58:33	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-01 22:58:33	--	registration system for details.
+2021-12-01 22:58:34	--	End of /MOTD command.
+2021-12-01 23:03:00	--	MSG(BouncerServ): help
+2021-12-01 23:11:13	--	irc: disconnected from server
+2021-12-01 23:11:21	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 23:11:21	--	gnutls: receiving 3 certificates
+2021-12-01 23:11:21	--	 - certificate[1] info:
+2021-12-01 23:11:21	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 23:11:21	--	 - certificate[2] info:
+2021-12-01 23:11:21	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 23:11:21	--	 - certificate[3] info:
+2021-12-01 23:11:21	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 23:11:21	--	gnutls: peer's certificate is trusted
+2021-12-01 23:11:21	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 23:11:21	--	irc: client capability, server supports: setname draft/chathistory multi-prefix soju.im/bouncer-networks-notify server-time draft/extended-monitor batch message-tags cap-notify echo-message account-notify away-notify extended-join invite-notify sasl=PLAIN,EXTERNAL account-tag soju.im/bouncer-networks
+2021-12-01 23:11:21	--	irc: client capability, requesting: multi-prefix server-time cap-notify account-notify away-notify extended-join invite-notify sasl soju.im/bouncer-networks
+2021-12-01 23:11:22	--	irc: client capability, enabled: multi-prefix server-time cap-notify account-notify away-notify extended-join invite-notify sasl soju.im/bouncer-networks
+2021-12-01 23:11:22	--	SASL authentication successful
+2021-12-01 23:11:22	--	Welcome to soju, mrmanner
+2021-12-01 23:11:22	--	Your host is chat.sr.ht
+2021-12-01 23:11:22	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-01 23:11:22	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-01 23:11:22	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-01 23:11:22	--	- Message of the Day -
+2021-12-01 23:11:22	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-01 23:11:22	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-01 23:11:22	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-01 23:11:22	--	Welcome to chat.sr.ht!
+2021-12-01 23:11:22	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-01 23:11:22	--	Documentation for this service is available online:
+2021-12-01 23:11:22	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-01 23:11:22	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-01 23:11:22	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-01 23:11:22	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-01 23:11:22	--	In order to chat with other users, you must configure an IRC network.
+2021-12-01 23:11:22	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-01 23:11:22	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-01 23:11:22	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-01 23:11:22	--	Once connected, it is recommended to register an account with the network.
+2021-12-01 23:11:22	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-01 23:11:22	--	registration system for details.
+2021-12-01 23:11:22	--	End of /MOTD command.
+2021-12-02 21:02:55	--	irc: lag is high, reconnecting to server srht
+2021-12-02 21:02:55	--	irc: disconnected from server
+2021-12-02 21:02:55	--	irc: reconnecting to server in 10 seconds
+2021-12-02 21:03:05	--	irc: reconnecting to server...
+2021-12-02 21:03:05	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:03:07	--	gnutls: receiving 3 certificates
+2021-12-02 21:03:07	--	 - certificate[1] info:
+2021-12-02 21:03:07	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:03:07	--	 - certificate[2] info:
+2021-12-02 21:03:07	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:03:07	--	 - certificate[3] info:
+2021-12-02 21:03:07	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:03:07	--	gnutls: peer's certificate is trusted
+2021-12-02 21:03:07	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:03:07	--	irc: client capability, server supports: echo-message account-tag away-notify draft/extended-monitor invite-notify message-tags setname soju.im/bouncer-networks soju.im/bouncer-networks-notify cap-notify sasl=PLAIN,EXTERNAL extended-join multi-prefix server-time batch draft/chathistory account-notify
+2021-12-02 21:03:07	--	irc: client capability, requesting: away-notify invite-notify soju.im/bouncer-networks cap-notify sasl extended-join multi-prefix server-time account-notify
+2021-12-02 21:03:07	--	irc: client capability, enabled: away-notify invite-notify soju.im/bouncer-networks cap-notify sasl extended-join multi-prefix server-time account-notify
+2021-12-02 21:03:08	--	SASL authentication successful
+2021-12-02 21:03:08	--	Welcome to soju, mrmanner
+2021-12-02 21:03:08	--	Your host is chat.sr.ht
+2021-12-02 21:03:08	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:03:08	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-02 21:03:08	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-02 21:03:08	--	- Message of the Day -
+2021-12-02 21:03:08	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-02 21:03:08	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-02 21:03:08	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-02 21:03:08	--	Welcome to chat.sr.ht!
+2021-12-02 21:03:08	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-02 21:03:09	--	Documentation for this service is available online:
+2021-12-02 21:03:09	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-02 21:03:09	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-02 21:03:09	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-02 21:03:09	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-02 21:03:09	--	In order to chat with other users, you must configure an IRC network.
+2021-12-02 21:03:09	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-02 21:03:09	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-02 21:03:09	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-02 21:03:10	--	Once connected, it is recommended to register an account with the network.
+2021-12-02 21:03:10	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-02 21:03:10	--	registration system for details.
+2021-12-02 21:03:10	--	End of /MOTD command.
+2021-12-02 21:14:13	--	irc: lag is high, reconnecting to server srht
+2021-12-02 21:14:13	--	irc: disconnected from server
+2021-12-02 21:14:13	--	irc: reconnecting to server in 10 seconds
+2021-12-02 21:14:23	--	irc: reconnecting to server...
+2021-12-02 21:14:23	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:14:24	--	gnutls: receiving 3 certificates
+2021-12-02 21:14:24	--	 - certificate[1] info:
+2021-12-02 21:14:24	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:14:24	--	 - certificate[2] info:
+2021-12-02 21:14:24	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:14:24	--	 - certificate[3] info:
+2021-12-02 21:14:24	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:14:24	--	gnutls: peer's certificate is trusted
+2021-12-02 21:14:24	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:14:24	--	irc: client capability, server supports: account-tag soju.im/bouncer-networks-notify server-time account-notify soju.im/bouncer-networks sasl=PLAIN,EXTERNAL away-notify message-tags batch draft/extended-monitor echo-message draft/chathistory extended-join multi-prefix invite-notify setname cap-notify
+2021-12-02 21:14:24	--	irc: client capability, requesting: server-time account-notify soju.im/bouncer-networks sasl away-notify extended-join multi-prefix invite-notify cap-notify
+2021-12-02 21:14:24	--	irc: client capability, enabled: server-time account-notify soju.im/bouncer-networks sasl away-notify extended-join multi-prefix invite-notify cap-notify
+2021-12-02 21:14:25	--	SASL authentication successful
+2021-12-02 21:14:25	--	Welcome to soju, mrmanner
+2021-12-02 21:14:25	--	Your host is chat.sr.ht
+2021-12-02 21:14:25	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:14:25	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-02 21:14:25	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-02 21:14:26	--	- Message of the Day -
+2021-12-02 21:14:26	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-02 21:14:26	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-02 21:14:26	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-02 21:14:26	--	Welcome to chat.sr.ht!
+2021-12-02 21:14:26	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-02 21:14:26	--	Documentation for this service is available online:
+2021-12-02 21:14:27	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-02 21:14:27	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-02 21:14:27	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-02 21:14:27	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-02 21:14:27	--	In order to chat with other users, you must configure an IRC network.
+2021-12-02 21:14:27	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-02 21:14:27	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-02 21:14:27	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-02 21:14:28	--	Once connected, it is recommended to register an account with the network.
+2021-12-02 21:14:28	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-02 21:14:28	--	registration system for details.
+2021-12-02 21:14:28	--	End of /MOTD command.
+2021-12-02 21:28:42	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:28:43	--	gnutls: receiving 3 certificates
+2021-12-02 21:28:43	--	 - certificate[1] info:
+2021-12-02 21:28:43	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:28:43	--	 - certificate[2] info:
+2021-12-02 21:28:43	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:28:43	--	 - certificate[3] info:
+2021-12-02 21:28:43	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:28:43	--	gnutls: peer's certificate is trusted
+2021-12-02 21:28:43	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:28:44	--	irc: client capability, server supports: echo-message soju.im/bouncer-networks account-notify invite-notify message-tags batch account-tag away-notify extended-join server-time setname sasl=PLAIN,EXTERNAL draft/extended-monitor multi-prefix cap-notify soju.im/bouncer-networks-notify draft/chathistory
+2021-12-02 21:28:44	--	irc: client capability, requesting: soju.im/bouncer-networks account-notify invite-notify away-notify extended-join server-time sasl multi-prefix cap-notify
+2021-12-02 21:28:44	--	irc: client capability, enabled: soju.im/bouncer-networks account-notify invite-notify away-notify extended-join server-time sasl multi-prefix cap-notify
+2021-12-02 21:28:45	--	SASL authentication successful
+2021-12-02 21:28:46	--	Welcome to soju, mrmanner
+2021-12-02 21:28:46	--	Your host is chat.sr.ht
+2021-12-02 21:28:46	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:28:46	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-02 21:28:46	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-02 21:28:46	--	- Message of the Day -
+2021-12-02 21:28:46	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-02 21:28:46	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-02 21:28:46	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-02 21:28:46	--	Welcome to chat.sr.ht!
+2021-12-02 21:28:46	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-02 21:28:46	--	Documentation for this service is available online:
+2021-12-02 21:28:46	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-02 21:28:46	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-02 21:28:46	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-02 21:28:46	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-02 21:28:46	--	In order to chat with other users, you must configure an IRC network.
+2021-12-02 21:28:46	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-02 21:28:46	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-02 21:28:46	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-02 21:28:46	--	Once connected, it is recommended to register an account with the network.
+2021-12-02 21:28:46	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-02 21:28:46	--	registration system for details.
+2021-12-02 21:28:46	--	End of /MOTD command.
+2021-12-02 21:51:55	--	irc: lag is high, reconnecting to server srht
+2021-12-02 21:51:55	--	irc: disconnected from server
+2021-12-02 21:51:55	--	irc: reconnecting to server in 10 seconds
+2021-12-02 21:52:05	--	irc: reconnecting to server...
+2021-12-02 21:52:05	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:52:06	--	gnutls: receiving 3 certificates
+2021-12-02 21:52:06	--	 - certificate[1] info:
+2021-12-02 21:52:06	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:52:06	--	 - certificate[2] info:
+2021-12-02 21:52:06	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:52:06	--	 - certificate[3] info:
+2021-12-02 21:52:06	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:52:06	--	gnutls: peer's certificate is trusted
+2021-12-02 21:52:06	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:52:06	--	irc: client capability, server supports: echo-message extended-join invite-notify soju.im/bouncer-networks draft/extended-monitor batch cap-notify setname multi-prefix account-notify away-notify message-tags soju.im/bouncer-networks-notify server-time sasl=PLAIN,EXTERNAL draft/chathistory account-tag
+2021-12-02 21:52:06	--	irc: client capability, requesting: extended-join invite-notify soju.im/bouncer-networks cap-notify multi-prefix account-notify away-notify server-time sasl
+2021-12-02 21:52:06	--	irc: client capability, enabled: extended-join invite-notify soju.im/bouncer-networks cap-notify multi-prefix account-notify away-notify server-time sasl
+2021-12-02 21:52:07	--	SASL authentication successful
+2021-12-02 21:52:07	--	Welcome to soju, mrmanner
+2021-12-02 21:52:07	--	Your host is chat.sr.ht
+2021-12-02 21:52:07	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:52:07	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-02 21:52:07	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-02 21:52:07	--	- Message of the Day -
+2021-12-02 21:52:07	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-02 21:52:07	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-02 21:52:07	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-02 21:52:07	--	Welcome to chat.sr.ht!
+2021-12-02 21:52:07	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-02 21:52:07	--	Documentation for this service is available online:
+2021-12-02 21:52:07	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-02 21:52:07	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-02 21:52:07	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-02 21:52:07	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-02 21:52:07	--	In order to chat with other users, you must configure an IRC network.
+2021-12-02 21:52:07	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-02 21:52:07	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-02 21:52:07	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-02 21:52:07	--	Once connected, it is recommended to register an account with the network.
+2021-12-02 21:52:07	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-02 21:52:07	--	registration system for details.
+2021-12-02 21:52:07	--	End of /MOTD command.
+2021-12-03 12:24:20	--	irc: lag is high, reconnecting to server srht
+2021-12-03 12:24:20	--	irc: disconnected from server
+2021-12-03 12:24:20	--	irc: reconnecting to server in 10 seconds
+2021-12-03 12:24:30	--	irc: reconnecting to server...
+2021-12-03 12:24:30	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-03 12:24:31	--	gnutls: receiving 3 certificates
+2021-12-03 12:24:31	--	 - certificate[1] info:
+2021-12-03 12:24:31	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-03 12:24:31	--	 - certificate[2] info:
+2021-12-03 12:24:31	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-03 12:24:31	--	 - certificate[3] info:
+2021-12-03 12:24:31	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-03 12:24:31	--	gnutls: peer's certificate is trusted
+2021-12-03 12:24:31	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-03 12:24:31	--	irc: client capability, server supports: soju.im/bouncer-networks-notify echo-message multi-prefix away-notify cap-notify sasl=PLAIN,EXTERNAL draft/chathistory account-notify account-tag batch invite-notify extended-join draft/extended-monitor server-time setname soju.im/bouncer-networks message-tags
+2021-12-03 12:24:31	--	irc: client capability, requesting: multi-prefix away-notify cap-notify sasl account-notify invite-notify extended-join server-time soju.im/bouncer-networks
+2021-12-03 12:24:32	--	irc: client capability, enabled: multi-prefix away-notify cap-notify sasl account-notify invite-notify extended-join server-time soju.im/bouncer-networks
+2021-12-03 12:24:32	--	SASL authentication successful
+2021-12-03 12:24:32	--	Welcome to soju, mrmanner
+2021-12-03 12:24:32	--	Your host is chat.sr.ht
+2021-12-03 12:24:32	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-03 12:24:32	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-03 12:24:32	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-03 12:24:32	--	- Message of the Day -
+2021-12-03 12:24:32	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-03 12:24:32	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-03 12:24:32	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-03 12:24:32	--	Welcome to chat.sr.ht!
+2021-12-03 12:24:32	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-03 12:24:32	--	Documentation for this service is available online:
+2021-12-03 12:24:32	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-03 12:24:32	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-03 12:24:32	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-03 12:24:32	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-03 12:24:32	--	In order to chat with other users, you must configure an IRC network.
+2021-12-03 12:24:32	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-03 12:24:32	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-03 12:24:32	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-03 12:24:32	--	Once connected, it is recommended to register an account with the network.
+2021-12-03 12:24:32	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-03 12:24:32	--	registration system for details.
+2021-12-03 12:24:32	--	End of /MOTD command.
+2021-12-03 20:17:23	--	irc: lag is high, reconnecting to server srht
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:23	--	irc: reconnecting to server in 10 seconds
+2021-12-03 20:17:33	--	irc: reconnecting to server...
+2021-12-03 20:17:33	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-03 20:17:33	--	gnutls: receiving 3 certificates
+2021-12-03 20:17:33	--	 - certificate[1] info:
+2021-12-03 20:17:33	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-03 20:17:33	--	 - certificate[2] info:
+2021-12-03 20:17:33	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-03 20:17:33	--	 - certificate[3] info:
+2021-12-03 20:17:33	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-03 20:17:33	--	gnutls: peer's certificate is trusted
+2021-12-03 20:17:33	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-03 20:17:34	--	irc: client capability, server supports: extended-join draft/extended-monitor soju.im/bouncer-networks-notify draft/chathistory away-notify account-notify soju.im/bouncer-networks batch cap-notify echo-message invite-notify message-tags sasl=PLAIN,EXTERNAL multi-prefix server-time setname account-tag
+2021-12-03 20:17:34	--	irc: client capability, requesting: extended-join away-notify account-notify soju.im/bouncer-networks cap-notify invite-notify sasl multi-prefix server-time
+2021-12-03 20:17:34	--	irc: client capability, enabled: extended-join away-notify account-notify soju.im/bouncer-networks cap-notify invite-notify sasl multi-prefix server-time
+2021-12-03 20:17:34	--	SASL authentication successful
+2021-12-03 20:17:34	--	Welcome to soju, mrmanner
+2021-12-03 20:17:34	--	Your host is chat.sr.ht
+2021-12-03 20:17:34	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-03 20:17:34	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-03 20:17:34	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-03 20:17:34	--	- Message of the Day -
+2021-12-03 20:17:34	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-03 20:17:35	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-03 20:17:35	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-03 20:17:35	--	Welcome to chat.sr.ht!
+2021-12-03 20:17:35	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-03 20:17:35	--	Documentation for this service is available online:
+2021-12-03 20:17:35	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-03 20:17:35	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-03 20:17:35	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-03 20:17:35	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-03 20:17:35	--	In order to chat with other users, you must configure an IRC network.
+2021-12-03 20:17:35	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-03 20:17:35	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-03 20:17:35	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-03 20:17:35	--	Once connected, it is recommended to register an account with the network.
+2021-12-03 20:17:35	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-03 20:17:35	--	registration system for details.
+2021-12-03 20:17:35	--	End of /MOTD command.

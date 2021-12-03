@@ -1,0 +1,4 @@
+2021-08-25 20:59:31	KarlThorén	Will the user also be blocked from logging in to Scoutnet?
+2021-08-25 20:59:31	          	If that is the case a denials of service attack can also be performed.
+2021-08-25 21:01:18	russ*	A fix has been released today (ver 3.70) :slightly_smiling_face:
+2021-08-25 21:01:18	     	This issue would not have prevented login, it was just a status change on the individual group membership, which put the member back on the waiting list, but did not affect any other attributes.

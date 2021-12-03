@@ -1,0 +1,450 @@
+2021-10-13 00:18:01	-->	mrmanner (~jmanner@user/mrmanner) has joined #qutebrowser
+2021-10-13 00:18:01	--	Topic for #qutebrowser is "Current: v2.3.1 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-13 00:18:01	--	Topic set by The-Compiler (~compiler@the-compiler.org) on lör, 21 aug 2021 16:27:44
+2021-10-13 00:18:01	--	Channel #qutebrowser: 174 nicks (0 ops, 0 voices, 174 normals)
+2021-10-13 00:18:02	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-13 00:21:06	-->	Crescendo (~Crescendo@user/crescendo) has joined #qutebrowser
+2021-10-13 00:38:22	<--	Crescendo (~Crescendo@user/crescendo) has quit (Ping timeout: 252 seconds)
+2021-10-13 00:40:32	<--	jtgd (~jay@user/jtgd) has quit (Read error: Connection reset by peer)
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:02	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #qutebrowser
+2021-10-13 00:42:02	--	Topic for #qutebrowser is "Current: v2.3.1 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-13 00:42:02	--	Topic set by The-Compiler (~compiler@the-compiler.org) on lör, 21 aug 2021 16:27:44
+2021-10-13 00:42:02	--	Channel #qutebrowser: 174 nicks (0 ops, 0 voices, 174 normals)
+2021-10-13 00:42:20	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-13 00:44:14	-->	jtgd (~jay@user/jtgd) has joined #qutebrowser
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:22:58	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Ping timeout: 252 seconds)
+2021-10-13 01:31:05	-->	trog (~trog@user/trog) has joined #qutebrowser
+2021-10-13 01:31:29	<--	trog (~trog@user/trog) has left #qutebrowser (WeeChat 3.0.1)
+2021-10-13 01:35:32	<--	jtgd (~jay@user/jtgd) has quit (Remote host closed the connection)
+2021-10-13 01:38:18	-->	jtgd (~jay@user/jtgd) has joined #qutebrowser
+2021-10-13 01:49:01	<--	Crescendo (~Crescendo@user/crescendo) has quit (Read error: Connection reset by peer)
+2021-10-13 01:55:07	-->	whyCombinator (~whyCombin@user/whycombinator) has joined #qutebrowser
+2021-10-13 01:55:15	-->	Crescendo (~Crescendo@user/crescendo) has joined #qutebrowser
+2021-10-13 02:30:15	<--	whyCombinator (~whyCombin@user/whycombinator) has quit (Ping timeout: 260 seconds)
+2021-10-13 02:50:40	<--	js3z (~js3z@146.115.76.107) has quit (Ping timeout: 260 seconds)
+2021-10-13 03:14:44	-->	simon1 (~simon@modemcable090.207-203-24.mc.videotron.ca) has joined #qutebrowser
+2021-10-13 03:15:20	simon1	why does calling a userscript with '--userscript /usr/bin/env /some/script' end with exit code 127 ?
+2021-10-13 03:15:36	--	simon1 is now known as sim590
+2021-10-13 03:16:02	sim590	I want to override some variables in the MPV userscript, but Qutebrowser doesn't let me call the script with env.
+2021-10-13 03:18:10	sim590	I guess I'll have to write a script that wraps the other userscript instead.
+2021-10-13 03:19:23	-->	whyCombinator (~whyCombin@user/whycombinator) has joined #qutebrowser
+2021-10-13 03:19:34	<--	earnestly (~earnest@user/earnestly) has quit (Ping timeout: 252 seconds)
+2021-10-13 03:35:31	-->	brabrax_ (~brabrax@user/brabrax) has joined #qutebrowser
+2021-10-13 03:36:04	<--	brabrax (~brabrax@user/brabrax) has quit (Ping timeout: 252 seconds)
+2021-10-13 03:36:04	--	brabrax_ is now known as brabrax
+2021-10-13 03:36:21	<--	whyCombinator (~whyCombin@user/whycombinator) has quit (Ping timeout: 245 seconds)
+2021-10-13 03:54:09	-->	js3z (~js3z@146.115.76.107) has joined #qutebrowser
+2021-10-13 04:02:30	-->	whyCombinator (~whyCombin@user/whycombinator) has joined #qutebrowser
+2021-10-13 04:08:28	whyCombinator	Does anybody know what if anything else is exposed by :debug-console other than q_app and objreg?
+2021-10-13 04:10:15	whyCombinator	Or where there is info on that? Other than the code comments.. no complaints, it's commented insanely well
+2021-10-13 04:12:19	<--	k0ta (~k0ta@151.210.174.146) has quit (Read error: Connection reset by peer)
+2021-10-13 04:14:18	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #qutebrowser
+2021-10-13 04:29:48	<--	js3z (~js3z@146.115.76.107) has quit (Quit: WeeChat 3.3)
+2021-10-13 04:47:26	<--	whyCombinator (~whyCombin@user/whycombinator) has quit (Remote host closed the connection)
+2021-10-13 04:47:43	-->	whyCombinator (~whyCombin@user/whycombinator) has joined #qutebrowser
+2021-10-13 04:56:33	-->	jomat (~jomat@2001:470:69fc:105::21) has joined #qutebrowser
+2021-10-13 05:10:07	<--	Crescendo (~Crescendo@user/crescendo) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:20:44	-->	Crescendo (~Crescendo@user/crescendo) has joined #qutebrowser
+2021-10-13 05:38:34	-->	k0ta (~k0ta@151.210.174.146) has joined #qutebrowser
+2021-10-13 05:40:31	<--	whyCombinator (~whyCombin@user/whycombinator) has quit (Ping timeout: 245 seconds)
+2021-10-13 05:48:43	-->	whyCombinator (~whyCombin@user/whycombinator) has joined #qutebrowser
+2021-10-13 05:55:09	-->	anginapectoris4 (~anginapec@user/anginapectoris) has joined #qutebrowser
+2021-10-13 05:57:22	<--	anginapectoris (~anginapec@user/anginapectoris) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:57:22	--	anginapectoris4 is now known as anginapectoris
+2021-10-13 06:08:40	-->	guido (~guido@host-79-53-243-104.retail.telecomitalia.it) has joined #qutebrowser
+2021-10-13 06:45:24	<--	whyCombinator (~whyCombin@user/whycombinator) has quit (Quit: Leaving)
+2021-10-13 06:59:50	<--	lamarpavel_ (~Lamar@ip5f59c003.dynamic.kabel-deutschland.de) has quit (Ping timeout: 250 seconds)
+2021-10-13 07:00:04	<--	sudoforge (~sudoforge@wireguard/tunneler/sudoforge) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:04:18	<--	brabrax (~brabrax@user/brabrax) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-10-13 07:05:01	-->	brabrax (~brabrax@user/brabrax) has joined #qutebrowser
+2021-10-13 07:11:37	<--	emanuele6 (~emanuele6@user/emanuele6) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:13:22	-->	lamarpavel_ (~Lamar@ip5f59bf48.dynamic.kabel-deutschland.de) has joined #qutebrowser
+2021-10-13 07:40:37	-->	emanuele6 (~emanuele6@net-2-36-103-7.cust.vodafonedsl.it) has joined #qutebrowser
+2021-10-13 07:42:27	<--	emanuele6 (~emanuele6@net-2-36-103-7.cust.vodafonedsl.it) has quit (Changing host)
+2021-10-13 07:42:27	-->	emanuele6 (~emanuele6@user/emanuele6) has joined #qutebrowser
+2021-10-13 07:47:47	The-Compiler	sim590: 127 usually means "command not found" - not much more I can say without knowing what you actually invoked
+2021-10-13 07:48:55	The-Compiler	sim590: this for example works as expected for me:    spawn -u /usr/bin/env FOO=TEST /bin/bash -c 'notify-send "$(env | grep TEST)"'
+2021-10-13 08:08:33	<--	guido (~guido@host-79-53-243-104.retail.telecomitalia.it) has quit (Quit: WeeChat 3.3)
+2021-10-13 08:25:21	-->	jnphilipp (~jnphilipp@gateway/tor-sasl/jnphilipp) has joined #qutebrowser
+2021-10-13 08:29:53	-->	guido (~guido@2001:b07:6455:ac4f:3641:5dff:fe55:2a8f) has joined #qutebrowser
+2021-10-13 21:22:51	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:20	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #qutebrowser
+2021-10-13 21:23:20	--	Topic for #qutebrowser is "Current: v2.3.1 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-13 21:23:20	--	Topic set by The-Compiler (~compiler@the-compiler.org) on lör, 21 aug 2021 16:27:44
+2021-10-13 21:23:20	--	Channel #qutebrowser: 179 nicks (0 ops, 0 voices, 179 normals)
+2021-10-13 21:23:38	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-13 21:29:36	<--	guido (~guido@host-87-21-254-70.retail.telecomitalia.it) has quit (Quit: WeeChat 3.3)
+2021-10-13 21:29:58	-->	guido (~guido@host-87-21-254-70.retail.telecomitalia.it) has joined #qutebrowser
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:32	-->	mrmanner (~jmanner@185.224.57.161) has joined #qutebrowser
+2021-10-16 12:32:32	--	Topic for #qutebrowser is "Current: v2.3.1 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-16 12:32:32	--	Topic set by The-Compiler (~compiler@the-compiler.org) on lör, 21 aug 2021 16:27:44
+2021-10-16 12:32:33	--	Channel #qutebrowser: 177 nicks (0 ops, 0 voices, 177 normals)
+2021-10-16 12:32:52	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-16 12:39:45	-->	sim590 (~simon@modemcable090.207-203-24.mc.videotron.ca) has joined #qutebrowser
+2021-10-16 12:55:07	<--	sim590 (~simon@modemcable090.207-203-24.mc.videotron.ca) has quit (Ping timeout: 252 seconds)
+2021-10-16 13:07:17	<--	Lord (~Lord@kif.lord.re) has quit (Quit: WeeChat 3.3)
+2021-10-16 13:07:57	-->	sim590 (~simon@modemcable090.207-203-24.mc.videotron.ca) has joined #qutebrowser
+2021-10-17 18:14:38	-->	jmanner (~jmanner@185.224.57.161) has joined #qutebrowser
+2021-10-17 18:14:39	--	Topic for #qutebrowser is "Current: v2.3.1 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-17 18:14:39	--	Topic set by The-Compiler (~compiler@the-compiler.org) on lör, 21 aug 2021 16:27:44
+2021-10-17 18:14:39	--	Channel #qutebrowser: 175 nicks (0 ops, 0 voices, 175 normals)
+2021-10-17 18:14:55	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined #qutebrowser
+2021-10-17 18:19:02	--	Topic for #qutebrowser is "Current: v2.3.1 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-17 18:19:02	--	Topic set by The-Compiler (~compiler@the-compiler.org) on lör, 21 aug 2021 16:27:44
+2021-10-17 18:19:02	--	Channel #qutebrowser: 175 nicks (0 ops, 0 voices, 175 normals)
+2021-10-17 18:19:20	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-17 18:30:36	-->	jmanner (~jmanner@user/mrmanner) has joined #qutebrowser
+2021-10-17 18:30:36	--	Topic for #qutebrowser is "Current: v2.3.1 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-17 18:30:36	--	Topic set by The-Compiler (~compiler@the-compiler.org) on lör, 21 aug 2021 16:27:44
+2021-10-17 18:30:36	--	Channel #qutebrowser: 175 nicks (0 ops, 0 voices, 175 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:52	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:43	-->	mrmanner (~jmanner@user/mrmanner) has joined #qutebrowser
+2021-10-17 19:45:43	--	Topic for #qutebrowser is "Current: v2.3.1 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-17 19:45:43	--	Topic set by The-Compiler (~compiler@the-compiler.org) on lör, 21 aug 2021 16:27:44
+2021-10-17 19:45:43	--	Channel #qutebrowser: 176 nicks (0 ops, 0 voices, 176 normals)
+2021-10-17 19:45:59	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-17 20:01:31	<--	Crescendo (~Crescendo@user/crescendo) has quit (Ping timeout: 268 seconds)
+2021-10-17 20:03:41	-->	guido (~guido@host-79-56-253-164.retail.telecomitalia.it) has joined #qutebrowser
+2021-10-17 20:16:20	-->	Crescendo (~Crescendo@user/crescendo) has joined #qutebrowser
+2021-10-17 20:29:16	<--	emanuele6 (~emanuele6@user/emanuele6) has quit (Ping timeout: 252 seconds)
+2021-10-17 20:33:00	-->	emanuele6 (~emanuele6@net-2-36-101-242.cust.vodafonedsl.it) has joined #qutebrowser
+2021-10-17 20:33:09	<--	emanuele6 (~emanuele6@net-2-36-101-242.cust.vodafonedsl.it) has quit (Changing host)
+2021-10-17 20:33:09	-->	emanuele6 (~emanuele6@user/emanuele6) has joined #qutebrowser
+2021-10-17 20:40:31	<--	Crescendo (~Crescendo@user/crescendo) has quit (Ping timeout: 245 seconds)
+2021-10-17 20:47:18	-->	Crescendo (~Crescendo@user/crescendo) has joined #qutebrowser
+2021-10-17 20:51:09	-->	saufa (~saufa@m91-129-107-138.cust.tele2.ee) has joined #qutebrowser
+2021-10-17 20:59:46	<--	zeraphel (~daddy@2a00:a040:196:56d:96de:80ff:fefa:44a) has quit (Quit: zeraphel)
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #qutebrowser
+2021-10-30 12:09:24	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-30 12:09:24	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-10-30 12:09:24	--	Channel #qutebrowser: 183 nicks (0 ops, 0 voices, 183 normals)
+2021-10-30 12:09:42	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #qutebrowser
+2021-10-30 12:10:54	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-30 12:10:54	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-10-30 12:10:54	--	Channel #qutebrowser: 183 nicks (0 ops, 0 voices, 183 normals)
+2021-10-30 12:11:13	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:29:21	<--	mord0d (~mord0d@gateway/tor-sasl/mord0d) has quit (Ping timeout: 276 seconds)
+2021-10-30 12:31:26	-->	mord0d (~mord0d@gateway/tor-sasl/mord0d) has joined #qutebrowser
+2021-10-30 13:36:37	-->	jnphilipp (~jnphilipp@gateway/tor-sasl/jnphilipp) has joined #qutebrowser
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:34	-->	mrmanner (~jmanner@user/mrmanner) has joined #qutebrowser
+2021-10-30 17:07:34	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-30 17:07:34	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-10-30 17:07:34	--	Channel #qutebrowser: 186 nicks (0 ops, 0 voices, 186 normals)
+2021-10-30 17:07:52	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-10-30 17:14:59	-->	guido (~guido@host-79-40-188-193.business.telecomitalia.it) has joined #qutebrowser
+2021-10-30 17:20:17	Hund	Does anyone how to make us of Terminus font in Debian with qutebrowser?
+2021-10-30 17:25:45	The-Compiler	Hund: for web content? Terminus is a bitmap font, but Chromium doesn't support those
+2021-10-30 17:26:38	Hund	The-Compiler: No. The statusbar.
+2021-10-30 17:26:51	Hund	I can't figure out the name
+2021-10-30 17:26:56	The-Compiler	Hund: how does it show up in fc-list?
+2021-10-30 17:27:14	The-Compiler	it's probably either Terminus or "xos4 Terminus" IIRC (including the quotes)
+2021-10-30 17:27:29	Hund	/usr/share/fonts/opentype/terminus/terminus-normal.otb: Terminus:style=Medium
+2021-10-30 17:27:58	Hund	I have tried "Terminus".
+2021-10-30 17:28:21	The-Compiler	maybe see if you can get a TTF variant, I'm not sure what Qt supports
+2021-10-30 17:28:43	Hund	I have tried that as well.
+2021-10-30 17:29:02	<--	konubinix (~konubinix@131-199-28-81.ftth.cust.kwaoo.net) has quit (Quit: Coyote finally caught me)
+2021-10-30 17:29:29	Hund	:(
+2021-10-30 17:33:25	The-Compiler	Hund: might want to try :debug-console and doing:  from PyQt5.QtGui import QFontDatabase   followed by   print('\n'.join(QFontDatabase().families()))
+2021-10-30 17:33:28	-->	konubinix (~konubinix@131-199-28-81.ftth.cust.kwaoo.net) has joined #qutebrowser
+2021-10-30 17:36:41	<--	Seiduna_ (~ip@94.198.41.237) has quit (Ping timeout: 264 seconds)
+2021-10-30 17:36:58	-->	Seiduna (~ip@195.12.48.173) has joined #qutebrowser
+2021-10-30 17:46:08	Hund	Terminus
+2021-10-30 17:46:10	Hund	Terminus (TTF)
+2021-10-30 17:46:15	Hund	The-Compiler: ^
+2021-10-30 17:46:47	<--	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has quit (Ping timeout: 260 seconds)
+2021-10-30 17:52:14	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #qutebrowser
+2021-10-30 17:54:00	The-Compiler	Hund: ok, and what setting are you setting exactly how?
+2021-10-30 18:03:32	Hund	The-Compiler: :set fonts.statusbar Terminus
+2021-10-30 22:21:16	--	irc: disconnected from server
+2021-10-30 22:21:47	-->	mrmanner (~jmanner@user/mrmanner) has joined #qutebrowser
+2021-10-30 22:21:47	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-10-30 22:21:47	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-10-30 22:21:47	--	Channel #qutebrowser: 188 nicks (0 ops, 0 voices, 188 normals)
+2021-10-30 22:22:01	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-12-01 23:20:43	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #qutebrowser
+2021-12-01 23:20:46	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-12-01 23:20:47	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-01 23:20:47	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-12-01 23:20:47	--	Channel #qutebrowser: 190 nicks (0 ops, 0 voices, 190 normals)
+2021-12-01 23:21:21	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-12-01 23:21:26	--	Mode #qutebrowser [+nt]
+2021-12-01 23:21:26	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #qutebrowser
+2021-12-01 23:23:09	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-12-01 23:23:09	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-01 23:23:10	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-12-01 23:23:10	--	Channel #qutebrowser: 190 nicks (0 ops, 0 voices, 190 normals)
+2021-12-01 23:23:19	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-12-01 23:23:40	<--	saufa (~saufa@m91-129-99-39.cust.tele2.ee) has quit (Quit: Lost terminal)
+2021-12-01 23:24:02	--	Mode #qutebrowser [+tn]
+2021-12-01 23:24:03	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-12-01 23:34:06	mornfall	oh dear me… there 140 threads at the time of the crash
+2021-12-01 23:34:25	elshize	mornfall: that is many threads
+2021-12-01 23:34:37	elshize	I don't blame it for crashing lol
+2021-12-01 23:35:48	mornfall	anyway, i guess it's not python nor qb at fault… the segv happens in * 2    thread 353425     0x00000f682ce4b94e in ?? () from /usr/X11R6/lib/modules/dri/iris_dri.so
+2021-12-01 23:36:02	mornfall	lovely :\
+2021-12-01 23:36:36	mornfall	first thing in the stack that's got a symbol to it is #6  0x00000f692274ee99 in gl::GLApiBase::glTexImage2DFn(unsigned int, int, int, int, int, int, unsigned int, unsigned int, void const*) () from /usr/local/lib/qt5/libQt5WebEngineCore.so.1.0
+2021-12-01 23:37:47	elshize	is that something recurring?
+2021-12-01 23:38:11	elshize	not that I can help, you'll have to wait for someone smarter
+2021-12-01 23:40:16	mornfall	yeah, crashes reliably on session restore
+2021-12-01 23:42:19	elshize	bummer
+2021-12-01 23:42:40	elshize	I mean, good for debugging, bad for you know, browsing
+2021-12-01 23:43:24	natris1979[m]	Anything graphically intensive on that session?
+2021-12-01 23:44:47	mornfall	opening a twitter tab crashed the thing, but i nuked those 2 tabs from the session and it didn't help
+2021-12-01 23:45:03	natris1979[m]	I'm probably not going to be much help either. That kinda thing is pretty outside my wheelhouse
+2021-12-01 23:45:05	mornfall	probably a bug in the gpu driver or somwehere else in the operating system
+2021-12-01 23:48:13	mornfall	i guess i could try restarting X to see if that helps
+2021-12-01 23:48:44	natris1979[m]	yeah, that's my suspicicion. Though I do wonder if there's something in that QtWebEngine function that isn't properly handling some error it gets from the gpu. Like ultimately it's propobably a driver issue, but I doubt it should blow up like that
+2021-12-01 23:49:28	natris1979[m]	that kinda situation sucks because your like "rebooting might fix this, but if it does, I'll never know why"
+2021-12-01 23:49:59	mornfall	i'll run into it again, eventually; it's not the first time this happened
+2021-12-01 23:50:25	mornfall	spamming tabs will usually do it; the bug actually improved my browsing habits quite a bit :p
+2021-12-01 23:50:36	mornfall	i still hate it tho
+2021-12-01 23:51:00	natris1979[m]	although I just saw that you said that function was just the first thing in the stack with a symbol. So ifyou've got some issue in a binary blob driver, well then who the heck knows
+2021-12-01 23:51:04	natris1979[m]	* heck knows?
+2021-12-01 23:54:22	topcat001	It could also be that under memory pressure something is corrupting memory. If that happened then the actual crash will show up at a completely unrelated place, when it finally hits the corruption. Just speculating here.
+2021-12-01 23:54:44	topcat001	Does the crash happen in iris_dri every time?
+2021-12-02 00:02:28	mornfall	there's gigabytes of free ram
+2021-12-02 00:03:01	mornfall	both in the system and in the limit in the process
+2021-12-02 00:03:11	mornfall	the session restores okay after reboot
+2021-12-02 00:04:16	mornfall	i have another machine with the same system and a gpu one generation older (intel 620 vs intel 630) that does not suffer from this
+2021-12-02 00:04:51	topcat001	ok then could be a driver issue.
+2021-12-02 00:05:15	mornfall	well, i have noticed a knob that's been set differently between them, so i'll see if that changes anything; but of course the different hardware cannot be helped
+2021-12-02 00:15:25	elshize	mornfall: is this some kind of fancy intel gpu that requires special drivers? I always thought intel worked with open source drivers
+2021-12-02 00:16:56	mornfall	it's the standard oss intel driver
+2021-12-02 00:17:18	elshize	mornfall: oh, ok
+2021-12-02 00:58:24	<--	jnphilipp (~jnphilipp@gateway/tor-sasl/jnphilipp) has quit (Ping timeout: 276 seconds)
+2021-12-02 01:00:44	<--	gast0n (~g4570n@user/gast0n) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:01:49	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:04:19	-->	ktprograms (ktprograms) (~ktprogram@14.192.216.213) has joined #qutebrowser
+2021-12-02 02:20:45	<--	futune (~futune@95.82.133.240) has quit (Remote host closed the connection)
+2021-12-02 02:24:20	-->	futune [futune] (realname) (~futune@95.82.133.240) has joined #qutebrowser
+2021-12-02 02:40:58	-->	cliluw [cliluw] (realname) (~cliluw@47.147.80.149) has joined #qutebrowser
+2021-12-02 03:04:41	<--	elshize (~michal@70.107.91.44) has quit (Quit: WeeChat 3.3)
+2021-12-02 03:19:43	<--	sudoforge (~sudoforge@wireguard/tunneler/sudoforge) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:19:45	<--	ktprograms (~ktprogram@14.192.216.213) has quit (Quit: Bye!)
+2021-12-02 03:24:36	-->	ktprograms (ktprograms) (~ktprogram@14.192.216.213) has joined #qutebrowser
+2021-12-02 03:25:02	-->	brabrax_ [brabrax] (brabrax) (~brabrax@user/brabrax) has joined #qutebrowser
+2021-12-02 03:25:43	-->	michal [elshize] (michal) (~michal@70.107.91.44) has joined #qutebrowser
+2021-12-02 03:25:57	<--	brabrax (~brabrax@user/brabrax) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:25:57	--	brabrax_ is now known as brabrax
+2021-12-02 03:26:31	-->	js3z [js3z] (js3z) (~js3z@146.115.76.107) has joined #qutebrowser
+2021-12-02 03:26:53	<--	earnest (~earnest@user/earnestly) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:37:18	-->	sudoforge [sudoforge] (sudoforge) (~sudoforge@wireguard/tunneler/sudoforge) has joined #qutebrowser
+2021-12-02 04:12:11	-->	gast0n [gast0n] (Gastón) (~g4570n@user/gast0n) has joined #qutebrowser
+2021-12-02 04:13:59	<--	js3z (~js3z@146.115.76.107) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:12:52	-->	anginapectoris3 [anginapectoris] (anginapectoris) (~anginapec@user/anginapectoris) has joined #qutebrowser
+2021-12-02 05:15:07	<--	anginapectoris (~anginapec@user/anginapectoris) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:15:07	--	anginapectoris3 is now known as anginapectoris
+2021-12-02 05:33:03	<--	arkurious (~arkurious@user/arkurious) has quit (Quit: Leaving)
+2021-12-02 05:47:23	-->	anginapectoris1 [anginapectoris] (anginapectoris) (~anginapec@user/anginapectoris) has joined #qutebrowser
+2021-12-02 05:49:41	<--	anginapectoris (~anginapec@user/anginapectoris) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:49:41	--	anginapectoris1 is now known as anginapectoris
+2021-12-02 05:57:28	-->	Haudegen (AP,,,) (~quassel@178.115.237.87.static.drei.at) has joined #qutebrowser
+2021-12-02 05:57:28	--	Haudegen has identified as Haudegen
+2021-12-02 06:25:58	<--	gast0n (~g4570n@user/gast0n) has quit (Quit: Bye, see you soon! 👋)
+2021-12-02 06:49:38	<--	sudoforge (~sudoforge@wireguard/tunneler/sudoforge) has quit (Ping timeout: 252 seconds)
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:55	-->	mrmanner (mrmanner@98.128.201.128) has joined #qutebrowser
+2021-12-02 08:09:55	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-02 08:09:55	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-12-02 08:09:55	--	Channel #qutebrowser: 186 nicks (0 ops, 0 voices, 186 normals)
+2021-12-02 07:50:25	taeaad	The-Compiler: Thanks! $QUTE_HTML seems sensible
+2021-12-02 08:10:34	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-12-02 08:21:04	-->	jnphilipp [jnphilipp] (realname) (~jnphilipp@gateway/tor-sasl/jnphilipp) has joined #qutebrowser
+2021-12-02 08:29:01	<--	xenrox (~xenrox@user/xenrox) has quit (Remote host closed the connection)
+2021-12-02 08:29:10	-->	xenrox [xenrox] (xenrox) (~xenrox@user/xenrox) has joined #qutebrowser
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:12	-->	mrmanner (mrmanner@90.235.13.15) has joined #qutebrowser
+2021-12-02 21:03:12	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-02 21:03:12	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-12-02 21:03:12	--	Channel #qutebrowser: 194 nicks (0 ops, 0 voices, 194 normals)
+2021-12-02 09:47:50	pylbrecht	Good morning guys, maybe someone can help me out with this https://github.com/qutebrowser/qutebrowser/pull/6855#issuecomment-984327048
+2021-12-02 09:56:40	The-Compiler	pylbrecht: I'm confused why we are using an old pylint version, we should not
+2021-12-02 09:58:21	pylbrecht	The-Compiler: then I would try to use the latest and see if CI is green. Should I do it in the same PR or in a separate one?
+2021-12-02 09:58:42	The-Compiler	lol we're using a >2 year old pylint version and nobody noticed until now? nice
+2021-12-02 10:00:55	The-Compiler	ah it was due to https://github.com/PyCQA/astroid/issues/772
+2021-12-02 10:01:20	The-Compiler	I guess I missed it being fixed...
+2021-12-02 10:10:07	The-Compiler	pylbrecht: as I expected, lots of new checks added in the meantime :D
+2021-12-02 10:10:44	pylbrecht	The-Compiler: that means this isn't just about recompiling requirements, but also fixing many many issues?
+2021-12-02 10:11:52	The-Compiler	pylbrecht: yeah - I'd be happy to do it, unless you feel like doing it, but it can get repetitive
+2021-12-02 10:12:18	The-Compiler	some new checks should probably be suppressed, but others could be genuine
+2021-12-02 10:14:05	pylbrecht	The-Compiler: well, this seems to block the issue I'm currently working on, so if you don't get to it soon, I'm happy to do that. Although I might not be as fast as you.
+2021-12-02 10:14:42	The-Compiler	I should have some time this afternoon if students don't have too many questions
+2021-12-02 10:15:03	The-Compiler	perfect environment for that kind of work actually, can't do stuff requiring too much focus
+2021-12-02 10:18:37	The-Compiler	pylbrecht: I suppose if you want to go on in the meantime, you could remove the <2.5 from misc/requirements/requirements-pylint.txt-raw, run "python3 scripts/dev/recompile_requirements.py pylint", and run pylint in a way it only reports your new warning, nothing else (might need to change the config temporarily)
+2021-12-02 10:19:02	pylbrecht	The-Compiler: sounds great!
+2021-12-02 10:19:35	The-Compiler	(if using tox, make sure to use "tox -e pylint -r" initially so it recreates the env)
+2021-12-02 10:20:57	pylbrecht	thanks for the heads-up!
+2021-12-02 10:29:45	The-Compiler	ok, after skimming through the changelogs, I see a lot of new gems and optional checkers I want to try
+2021-12-02 10:30:34	The-Compiler	thanks for finding this pylbrecht, I had no idea!
+2021-12-02 10:36:57	pylbrecht	happy accidents ¯\_(ツ)_/¯
+2021-12-02 10:46:39	pylbrecht	The-Compiler: ever seen this before: http://p.cmpl.cc/d03df4da ?
+2021-12-02 10:58:22	The-Compiler	pylbrecht: do you have python3.7 in PATH?
+2021-12-02 11:01:12	pylbrecht	yes, at least running `python3.7` works fine (using pyenv). I just checked and the /shims/ directory is in PATH.
+2021-12-02 11:29:26	The-Compiler	pylbrecht: hm. What happens if you run that command there?   python3.7 -m venv /tmp/somedir
+2021-12-02 11:31:06	pylbrecht	unfortunately the same issue: Error: Command '['/tmp/asdfasdfasdf/bin/python3.7', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.
+2021-12-02 11:31:21	pylbrecht	maybe something's wrong with my pyenv setup..
+2021-12-02 11:33:32	The-Compiler	pylbrecht: no more output above it? Not the same error, one level deeper now
+2021-12-02 11:34:24	The-Compiler	pylbrecht: could try to run that ensurepip command manually (with the full path to the Python in /tmp there)
+2021-12-02 11:43:08	pylbrecht	The-Compiler: yeah, just that one line of output. I will try to run ensurepip manually
+2021-12-02 11:43:53	pylbrecht	The-Compiler: ahhh, thanks a lot: ImportError: libffi.so.7: cannot open shared object file: No such file or directory
+2021-12-02 11:44:16	pylbrecht	The-Compiler: that looks familiar and I will most definitely find something on Google to solve this
+2021-12-02 11:45:50	pylbrecht	The-Compiler: thanks for helping me with the steps to solve this!
+2021-12-02 11:47:39	The-Compiler	pylbrecht: rebuilding your python should help, needed to do that too after a libffi upgrade recently
+2021-12-02 11:50:27	pylbrecht	The-Compiler: that's what stackoverflow suggested as well. And seems to be working
+2021-12-02 11:50:50	pylbrecht	thanks again!
+2021-12-02 13:37:32	noex	does anyone else experience a bright white flash when switching tabs? if i switch between them, I can get it to stop sometimes, but if I wrap around while switching tabs then they all do it again.
+2021-12-02 13:37:49	noex	is my config jacked up?
+2021-12-02 13:40:22	arza	that's normal recent qtwebengine behavior
+2021-12-02 13:42:51	noex	incredible. really defeats the purpose of "dark mode" when bright white flashes keep blinding you every few seconds.
+2021-12-02 13:43:08	noex	it actually gives me headaches and i have to stop browsing because of it
+2021-12-02 14:05:19	alpha_Aquilae	hello/ I haven't this behavior with darkmode
+2021-12-02 14:06:58	alpha_Aquilae	perhaps try :set colors.webpage.bg black
+2021-12-02 14:11:19	alpha_Aquilae	and in personal css : body {background : #000000 ; background-color : #010101}
+2021-12-02 14:13:22	alpha_Aquilae	and :set content.user_stylesheets ~/.config/qutebrowser/mystyle.css
+2021-12-02 14:41:13	alpha_Aquilae	noex: it's better with that?
+2021-12-02 14:43:15	noex	alpha_Aquilae: it appears just setting colors.webpage.bg to black fixes the issue. nice
+2021-12-02 14:43:51	alpha_Aquilae	'k ;)
+2021-12-02 14:50:13	alpha_Aquilae	you can take back a usual activity...
+2021-12-02 14:50:14	alpha_Aquilae	;D
+2021-12-02 15:20:53	noex	alpha_Aquilae: you saved me a lot of headache.  quite literally lol
+2021-12-02 21:03:07	topcat001	I love the -B (basedir option). Using it to sync my QB state between machines from just one folder.
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:39	-->	mrmanner (mrmanner@90.235.13.15) has joined #qutebrowser
+2021-12-02 21:04:39	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-02 21:04:39	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-12-02 21:04:39	--	Channel #qutebrowser: 194 nicks (0 ops, 0 voices, 194 normals)
+2021-12-02 21:04:49	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:30	-->	mrmanner (mrmanner@90.235.13.15) has joined #qutebrowser
+2021-12-02 21:11:30	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-02 21:11:30	--	Topic set by The-Compiler (~compiler@the-compiler.org) on tor, 21 okt 2021 19:09:48
+2021-12-02 21:11:30	--	Channel #qutebrowser: 194 nicks (0 ops, 0 voices, 194 normals)
+2021-12-02 21:12:35	--	Channel created on ons, 19 maj 2021 15:51:40
+2021-12-02 21:13:28	henko	topcat001: via sshfs?
+2021-12-02 21:16:18	topcat001	No plain rsync over ssh. I just run a sync before starting QB and another after.
+2021-12-02 21:16:41	topcat001	It's a little low tech :)
+2021-12-02 21:17:08	topcat001	The actual data is very little so it works ok.
+2021-12-02 21:28:48	-->	mrmanner (mrmanner@90.235.13.15) has joined #qutebrowser
+2021-12-02 21:28:48	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:43	-->	mrmanner (mrmanner@98.128.201.128) has joined #qutebrowser
+2021-12-02 21:50:43	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-02 21:53:37	-->	guido [guidoc] (guido) (~guido@host-82-51-187-207.retail.telecomitalia.it) has joined #qutebrowser
+2021-12-02 22:18:50	<--	guido (~guido@host-82-51-187-207.retail.telecomitalia.it) has quit (Quit: WeeChat 3.3)
+2021-12-02 22:33:27	-->	Hashida (realname) (~DaSH@ro2.flokinet.is) has joined #qutebrowser
+2021-12-02 22:35:50	<--	Hashida (~DaSH@ro2.flokinet.is) has quit (Remote host closed the connection)
+2021-12-02 22:36:19	-->	Hashida (realname) (~DaSH@ro2.flokinet.is) has joined #qutebrowser
+2021-12-02 22:36:33	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:40:52	<--	Hashida (~DaSH@ro2.flokinet.is) has quit (Client Quit)
+2021-12-02 22:43:53	-->	Itaru (realname) (~DaSH@ro2.flokinet.is) has joined #qutebrowser
+2021-12-02 23:27:31	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:28:04	-->	Itaru (realname) (~DaSH@ro2.flokinet.is) has joined #qutebrowser
+2021-12-02 23:30:10	<--	michal (~michal@70.107.91.44) has quit (Quit: WeeChat 3.3)
+2021-12-02 23:32:21	<--	mord0d (~mord0d@gateway/tor-sasl/mord0d) has quit (Ping timeout: 276 seconds)
+2021-12-02 23:33:06	-->	mord0d [mord0d] (mord0d) (~mord0d@gateway/tor-sasl/mord0d) has joined #qutebrowser
+2021-12-02 23:43:28	henko	cool idea!
+2021-12-02 23:54:26	alpha_Aquilae	§window new hidden
+2021-12-02 23:55:25	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Remote host closed the connection)
+2021-12-03 00:31:51	<--	alpha_Aquilae (~ircII@user/alpha-aquilae/x-1057823) has quit (Quit: client irssi quit)
+2021-12-03 00:32:47	<--	cliluw (~cliluw@47.147.80.149) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:33:45	-->	cliluw [cliluw] (realname) (~cliluw@47.147.80.149) has joined #qutebrowser
+2021-12-03 00:40:56	<--	emagex (~user@user/emagex) has quit (Quit: ZZZ)
+2021-12-03 00:54:03	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:05:24	<--	jnphilipp (~jnphilipp@gateway/tor-sasl/jnphilipp) has quit (Remote host closed the connection)
+2021-12-03 01:16:07	-->	futunebot [futunebot] (User Futunebot) (~futunebot@ti0578q160-2108.bb.online.no) has joined #qutebrowser
+2021-12-03 01:16:42	futunebot	does qb keep track of files that have been downloaded recently?
+2021-12-03 01:17:01	futunebot	i mean, in a log or something, after you clear them from the ui
+2021-12-03 01:21:33	<--	reset (~reset@user/reset) has quit (Quit: reset)
+2021-12-03 01:23:53	<--	gast0n (~g4570n@user/gast0n) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:53:51	-->	michal [elshize] (michal) (~michal@70.107.91.44) has joined #qutebrowser
+2021-12-03 12:21:16	--	irc: disconnected from server
+2021-12-03 12:21:29	-->	mrmanner (mrmanner@90.235.13.15) has joined #qutebrowser
+2021-12-03 12:21:29	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-03 09:17:01	The-Compiler	futunebot: nope, see https://github.com/qutebrowser/qutebrowser/issues/1059
+2021-12-03 09:27:29	thorsten`	futunebot: there is https://github.com/qutebrowser/qutebrowser/pull/924 :-)
+2021-12-03 09:30:13	thorsten`	I also have an extended version that can move files to the trash or copy their filepath: https://github.com/t-wissmann/dotfiles/blob/master/config/qutebrowser/userscripts/open_download
+2021-12-03 09:38:05	haligh	is there a setting for password storage? mine seem to be kept for about 3 days and disappear afterwards.
+2021-12-03 09:40:18	The-Compiler	haligh: qutebrowser doesn't do password storage
+2021-12-03 12:22:37	--	irc: disconnected from server
+2021-12-03 12:22:51	-->	mrmanner (mrmanner@90.235.13.15) has joined #qutebrowser
+2021-12-03 12:22:51	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-03 12:57:19	<--	guido (~guido@2001:b07:6455:ac4f:3641:5dff:fe55:2a8f) has quit (Quit: WeeChat 3.3)
+2021-12-03 13:05:08	<--	alpha_Aquilae (~ircII@user/alpha-aquilae/x-1057823) has quit (Quit: client irssi quit)
+2021-12-03 20:17:22	--	irc: disconnected from server
+2021-12-03 20:17:35	-->	mrmanner (mrmanner@98.128.201.128) has joined #qutebrowser
+2021-12-03 20:17:35	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-03 13:34:27	The-Compiler	pylbrecht: damn you're too quick :D Just found another thing to enable, but I hope it won't make much of a difference for your PR
+2021-12-03 13:37:18	The-Compiler	pylbrecht: pushed: https://github.com/qutebrowser/qutebrowser/commit/26d308d95d54abf68207d00002c0c1cd3d142ba4
+2021-12-03 14:13:55	pylbrecht	The-Compiler: I already have other issues popping up.. https://github.com/qutebrowser/qutebrowser/runs/4407995343?check_suite_focus=true
+2021-12-03 14:15:06	pylbrecht	The-Compiler: ..and a intimidating deprecation warning https://github.com/qutebrowser/qutebrowser/runs/4407995021?check_suite_focus=true
+2021-12-03 14:17:20	The-Compiler	pylbrecht: fun
+2021-12-03 14:19:31	The-Compiler	pylbrecht: for the former, it's because my update also upgraded typing_extensions in pylint requirements, but the your tests requirements have an older version - I'd actually suggest not adding astroid/pylint to the test requirements, and instead adjusting tox.ini to install requirements-pylint.txt for the tests
+2021-12-03 14:20:00	pylbrecht	The-Compiler: oh yeah, neat way of solving that. Thanks!
+2021-12-03 14:20:39	The-Compiler	pylbrecht: might want to use pytest.importorskip in your test module though, to make things easier for Linux distributions running our testsuite
+2021-12-03 14:21:00	The-Compiler	pylbrecht: https://docs.pytest.org/en/latest/how-to/skipping.html#skipping-on-a-missing-import-dependency
+2021-12-03 14:22:17	pylbrecht	The-Compiler: thanks, will look into that after fixing the typing_extensions issue.
+2021-12-03 14:24:38	The-Compiler	pylbrecht: looking at the DeprecationWarning
+2021-12-03 14:28:06	The-Compiler	pylbrecht: reported it here: https://github.com/PyCQA/astroid/issues/1282 - next we should ignore it via "filterwarnings =" in pytest.ini. Add a link to that issue too please, like with the python-hunter thing :)
+2021-12-03 14:33:46	pylbrecht	The-Compiler: not sure what you're referring to with "python-hunter", but I will add the link to the issue along with the "filterwarnings =" if that's what you meant?
+2021-12-03 14:34:11	The-Compiler	pylbrecht: like here: https://github.com/qutebrowser/qutebrowser/blob/v2.4.0/pytest.ini#L87
+2021-12-03 14:34:20	The-Compiler	so, yes :)
+2021-12-03 14:34:37	pylbrecht	The-Compiler: ah, now I get it :)
+2021-12-03 14:42:23	pylbrecht	The-Compiler: regarding pytest.importskip, what exact module(s) are you talking about?
+2021-12-03 14:42:46	pylbrecht	The-Compiler: astroid and pylint?
+2021-12-03 14:52:33	pylbrecht	The-Compiler: and adding pylint requirements to tox.ini did not fix the typing_extensions issue, unfortunately.
+2021-12-03 14:53:04	pylbrecht	but maybe I added them to the wrong place?
+2021-12-03 15:15:12	The-Compiler	pylbrecht: yep, astroid and pylint, so that distribution tests wanting to install qutebrowser and test their installs don't need to add those as dependencies
+2021-12-03 15:20:40	The-Compiler	pylbrecht: sigh, ok, same issue of course even with the split files - though I don't understand where the 4.0.0 is coming from
+2021-12-03 15:20:50	The-Compiler	pylbrecht: probably easiest if I just run a dependency update now and then you rebase
+2021-12-03 15:22:26	pylbrecht	The-Compiler: that sounds delightful :)
+2021-12-03 16:00:07	The-Compiler	pylbrecht: done!
+2021-12-03 16:00:42	rj1	:D
+2021-12-03 16:01:38	pylbrecht	The-Compiler: great, thanks! rebased and pushed, let's see if CI is happy.
+2021-12-03 16:02:27	rj1	i hope the wayland memory leak issue can be fixed, it cause me much grief
+2021-12-03 16:04:13	pylbrecht	The-Compiler: looking good, then I can continue with functional testing and final polishing over the weekend. \o/
+2021-12-03 16:05:38	 *	pylbrecht signing off to enter dad mode o/
+2021-12-03 16:14:05	The-Compiler	pylbrecht: enjoy your weekend!
+2021-12-03 16:14:49	Foxboron	The-Compiler: is the python-adblock dude on irc?
+2021-12-03 16:16:32	The-Compiler	Foxboron: ArniDagur? Don't think so, but responsive on GitHub usually, or arni@dagur.eu according to GitHub. What's up?
+2021-12-03 16:17:07	The-Compiler	rj1: yeah - unlikely to be something qutebrowser can fix, but someone should look into writing a minimal reproducer and reporting it to Qt... toofar, I think you started with something like that, no?
+2021-12-03 16:17:12	Foxboron	The-Compiler: python-adblock is failing it's test suite on 3.10.0
+2021-12-03 16:17:13	Foxboron	Guess
+2021-12-03 16:17:14	Foxboron	why
+2021-12-03 16:17:20	Foxboron	https://rebuilds.foutrelis.com/log/python-adblock.log
+2021-12-03 16:17:23	Foxboron	https://paste.xinu.at/oiFv4pNUFXdvXf1oXL/
+2021-12-03 16:17:33	The-Compiler	lmao
+2021-12-03 16:18:23	arza	:D
+2021-12-03 16:18:44	Foxboron	https://github.com/ArniDagur/python-adblock/issues/55
+2021-12-03 16:18:47	The-Compiler	Foxboron: I'd ope... yes
+2021-12-03 16:18:48	rj1	yeah The-Compiler totally understand  its not a qutebrowser-specific issue, just a shame! ahhhh  #swagland
+2021-12-03 16:23:15	The-Compiler	Foxboron: btw, I was wondering, what's the situation on Archlinux and using pip vs. setup.py for packages using setuptools?
+2021-12-03 16:23:25	Foxboron	The-Compiler: Complicated
+2021-12-03 16:23:29	The-Compiler	Foxboron: https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html
+2021-12-03 16:24:05	Foxboron	The-Compiler: FFY00 is an Arch TU who got engaged in this entire situation and has been trying to figure out a solution for all the distributions.
+2021-12-03 16:24:21	Foxboron	He is quoted in that blog article. I have been waiting on them collecting up some notes and new guidelines. Currently it's a mixed bag
+2021-12-03 16:25:05	The-Compiler	Foxboron: I just pushed https://github.com/qutebrowser/qutebrowser/commit/2378ba7886558436254a8cdd3a455b91bcfc6c8a and was wondering if I should adjust https://github.com/qutebrowser/qutebrowser/blob/master/misc/Makefile too
+2021-12-03 16:28:07	Foxboron	The-Compiler: I think you can. I have used python-build a few places
+2021-12-03 16:37:21	Foxboron	The-Compiler: https://github.com/ArniDagur/python-adblock/pull/56 :p
+2021-12-03 16:43:46	The-Compiler	Foxboron: doesn't that introduce a new test dependency though?
+2021-12-03 16:44:19	Foxboron	The-Compiler: packaging is default i think?
+2021-12-03 16:44:30	Foxboron	or am i wrong
+2021-12-03 16:44:48	Foxboron	Im probably wrong...
+2021-12-03 20:19:02	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #qutebrowser
+2021-12-03 20:19:44	--	Topic for #qutebrowser is "Current: v2.4.0 (fixes RCE on Windows, CVE-2021-41146) - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-bots; offtopic: #qutebrowser-offtopic"
+2021-12-03 20:22:15	thekrak	hey there, open.spotify.com skips 5 songs every time I click play on the webapp (open.spotify.com). Some people had the exact same problem 6 months ago (cf. https://www.reddit.com/r/spotify/comments/nx71ug/spotify_skips_exactly_5_songs_then_will_only_load/) but it appeared like 1 week ago for me. Could someone tell me if they can reproduce the bug?
+2021-12-03 20:41:34	<--	henko (~henko@62-178-187-35.cable.dynamic.surfer.at) has quit (Quit: WeeChat 3.3)
+2021-12-03 21:03:01	--	worldofgeese[m] is now known as worldof[m]

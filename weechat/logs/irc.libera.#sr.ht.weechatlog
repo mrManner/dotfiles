@@ -1,0 +1,392 @@
+2021-12-01 23:20:41	-->	mrmanner (mrmanner@98.128.201.128) has joined #sr.ht
+2021-12-01 23:20:41	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-01 23:20:41	--	Topic set by ddevault (znc@sourcehut/staff/ddevault) on mån, 20 sep 2021 18:04:34
+2021-12-01 23:20:41	--	Channel #sr.ht: 510 nicks (3 ops, 0 voices, 507 normals)
+2021-12-01 23:20:46	--	Channel created on tis, 11 maj 2021 22:21:31
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #sr.ht
+2021-12-01 23:23:11	--	Topic set by ddevault (znc@sourcehut/staff/ddevault) on mån, 20 sep 2021 18:04:34
+2021-12-01 23:23:11	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-01 23:23:11	--	Topic set by ddevault (znc@sourcehut/staff/ddevault) on mån, 20 sep 2021 18:04:34
+2021-12-01 23:23:12	--	Channel #sr.ht: 510 nicks (3 ops, 0 voices, 507 normals)
+2021-12-01 23:23:25	--	Channel created on tis, 11 maj 2021 22:21:31
+2021-12-01 23:24:13	--	Mode #sr.ht [+nst]
+2021-12-01 23:24:13	--	Channel created on tis, 11 maj 2021 22:21:31
+2021-12-01 23:36:58	Sofi	How exactly does the authentication for https://git.sr.ht/graphql work? I have been trying to write up a script that uses the api, but I cant seem to figure out how im supposed to give it a Token. It keeps rejecting the methods i have tried.
+2021-12-01 23:37:56	<--	strajder (~strajder@user/strajder) has quit (Quit: nn)
+2021-12-01 23:40:48	hwrd	Sofi how are you connecting to the API?
+2021-12-01 23:41:23	eschwartz	#include <std-questions.h>
+2021-12-01 23:41:28	eschwartz	what have you tried so far?
+2021-12-01 23:42:33	Sofi	Currently im trying to use requests in python. With a `headers={"Authorization": "Bearer TOKEN"}`. But this doesnt seem to work.
+2021-12-01 23:43:47	<--	mjw (~mark@gnu.wildebeest.org) has quit (Quit: zzz)
+2021-12-01 23:46:16	Sofi	Where the token is a personal access token
+2021-12-01 23:46:28	hwrd	Sofi are you using the Oauth2 token?
+2021-12-01 23:46:45	hwrd	there are separate tokesn for the legacy API vs the GraphQL API
+2021-12-01 23:46:47	Sofi	Yes. It is an oauth2 token.
+2021-12-01 23:47:08	hwrd	I'm not sure about the python library, as I don't use python
+2021-12-01 23:47:47	<--	alextee (~alextee@zrythm/alex) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:48:39	ignaloidas	Sofi, from here? https://meta.sr.ht/oauth2
+2021-12-01 23:48:45	Sofi	If you can make it work around curl that would be a good one too. As my issue issnt directly python and requests. I have only ever gotten it to work trough the playground.
+2021-12-01 23:49:08	Sofi	ignaloidas: yes. I see my token there too.
+2021-12-01 23:56:18	eschwartz	requests.post('https://git.sr.ht/query', headers={"Authorization": "Bearer <...>", "Content-Type":"application/json"}, data='{"query": "{ me { canonicalName } }"}')
+2021-12-01 23:56:22	eschwartz	works for me
+2021-12-01 23:56:48	eschwartz	this is identical to the version provided as a curl example in the playground comments
+2021-12-02 00:00:41	ignaloidas	yeah, works for me to
+2021-12-02 00:01:03	ignaloidas	I guess a mistake could be that you're requesting /graphql instead of /query
+2021-12-02 00:01:17	ignaloidas	I got stuck on that a bit :P
+2021-12-02 00:01:51	-->	alextee [alextee] (realname) (~alextee@zrythm/alex) has joined #sr.ht
+2021-12-02 00:02:24	<--	brook (~brook@192.88.140.10) has quit (Remote host closed the connection)
+2021-12-02 00:03:26	-->	brook [brook] (brook) (~brook@192.88.140.10) has joined #sr.ht
+2021-12-02 00:06:42	Sofi	Yeah. I was requesting graphql, not query
+2021-12-02 00:07:01	<--	brook (~brook@192.88.140.10) has quit (Remote host closed the connection)
+2021-12-02 00:07:09	eschwartz	interesting
+2021-12-02 00:14:23	-->	Guest71 ([https://web.libera.chat] Guest71) (~Guest71@2601:483:4f80:228d:de23:5a0f:854:a939) has joined #sr.ht
+2021-12-02 00:15:26	<--	Guest71 (~Guest71@2601:483:4f80:228d:de23:5a0f:854:a939) has quit (Client Quit)
+2021-12-02 00:17:40	hwrd	Sofi so changing to /query solved your issue?
+2021-12-02 00:18:01	Sofi	Yeah, i should have said that. Changing over to `/query` made it work first try.
+2021-12-02 00:19:07	Sofi	Its always that one thing you dont think about, so you try changing all the other variables. Sigh. At least i got it working now, thanks for the help hwrd, ignaloidas, and eschwartz
+2021-12-02 00:19:27	hwrd	heh, always
+2021-12-02 00:24:01	-->	jjonah (jjonah) (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has joined #sr.ht
+2021-12-02 00:35:28	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-02 00:38:14	<--	rgrinberg (~textual@200.5.63.76) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-12-02 00:39:13	-->	ianmjones (ianmjones) (ba0c2c8aac@2604:bf00:561:2000::1d6) has joined #sr.ht
+2021-12-02 00:46:50	--	ianmjones has identified as ianmjones
+2021-12-02 00:46:56	<--	earboxer (28a110e43f@2604:bf00:561:2000::80) has left #sr.ht
+2021-12-02 00:49:36	-->	igemnace [igemnace] (Ian Emnace) (~ian@user/igemnace) has joined #sr.ht
+2021-12-02 00:51:54	<--	bkidwell (~quassel@vicky3.xen.prgmr.com) has quit (Ping timeout: 265 seconds)
+2021-12-02 00:52:09	-->	bkidwell [bkidwell] (Brendan Kidwell) (~quassel@vicky3.xen.prgmr.com) has joined #sr.ht
+2021-12-02 00:54:46	<--	Seirdy (~Seirdy@sourcehut/user/seirdy) has quit (Quit: exiting 3.3)
+2021-12-02 00:55:17	-->	Seirdy [Seirdy] (Seirdy) (~Seirdy@sourcehut/user/seirdy) has joined #sr.ht
+2021-12-02 00:58:42	@emersion	khardix: hm weird that shouldn't be necessary
+2021-12-02 00:58:54	@emersion	alderwick: yeah it was enabled before, then got disabled
+2021-12-02 01:00:45	<--	taiju (~taiju@240b:253:ec40:2400:651e:f83b:5890:99a6) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:02:10	-->	brook [brook] (brook) (~brook@192.88.140.10) has joined #sr.ht
+2021-12-02 01:03:25	<--	brook (~brook@192.88.140.10) has quit (Remote host closed the connection)
+2021-12-02 01:03:38	-->	taiju [taiju] (taiju) (~taiju@M014013236064.v4.enabler.ne.jp) has joined #sr.ht
+2021-12-02 01:13:47	-->	brook [brook] (brook) (~brook@192.88.140.10) has joined #sr.ht
+2021-12-02 01:17:41	<--	KOTP (~KOTP@cpe-24-198-168-91.maine.res.rr.com) has quit (Quit: Leaving)
+2021-12-02 01:22:06	<--	brook (~brook@192.88.140.10) has quit (Remote host closed the connection)
+2021-12-02 01:48:13	-->	troseman [troseman] (realname) (~troseman@c-75-70-98-121.hsd1.co.comcast.net) has joined #sr.ht
+2021-12-02 01:54:51	<--	martijnbraam (~martijnbr@2a00:bba0:120c:9f00:7a8e:8795:650f:7c4e) has quit (Ping timeout: 268 seconds)
+2021-12-02 02:02:11	-->	martijnbraam [martijnbraam] (Martijn Braam) (~martijnbr@2a00:bba0:120c:9f00:7a8e:8795:650f:7c4e) has joined #sr.ht
+2021-12-02 02:03:01	<--	pingiun (~jelle@user/pingiun) has quit (Quit: Bye!)
+2021-12-02 02:04:40	-->	rgrinberg [rgrinberg] (Textual User) (~textual@200.5.63.76) has joined #sr.ht
+2021-12-02 02:20:44	-->	nackjicholson [nackjicholson] (William Vaughn) (e492d83292@2604:bf00:561:2000::1d8) has joined #sr.ht
+2021-12-02 02:32:20	nackjicholson	I'm not understanding how to connect to a particular network from an IRC client that doesn't have a plugin. Can anyone help me?
+2021-12-02 02:32:38	nackjicholson	This is with soju / chat.sr.ht
+2021-12-02 02:33:22	nackjicholson	I'm using the web chat right now
+2021-12-02 02:39:12	eschwartz	There's a blue "add network" in the corner of the "chat.sr.ht" tab
+2021-12-02 02:39:36	nackjicholson	Did that
+2021-12-02 02:39:38	eschwartz	which is the server buffer for managing the bouncer itself ;)
+2021-12-02 02:40:30	eschwartz	ok, so what is the problem? That should be the best way to connect to new networks from the chat.sr.ht webchat
+2021-12-02 02:40:51	nackjicholson	Everything works great in the web chat here. I'm failing to be able to connect from my emacs ERC client to channels on libera
+2021-12-02 02:41:11	eschwartz	ah, so this is *not* about the webchat
+2021-12-02 02:41:21	nackjicholson	Correct
+2021-12-02 02:42:21	eschwartz	the basic idea is you connect to the network "chat.sr.ht" and you use the username "mysrhtusername/networkname"
+2021-12-02 02:43:49	eschwartz	some IRC clients have native support for soju, e.g. weechat has soju.py, so you can connect as "mysrhtusername" and it communicates with the bouncer and auto-adds a second network as "mysrhtusername/networkname"
+2021-12-02 02:45:02	nackjicholson	Okay, so maybe where I've gone wrong is not using my srht username, was trying to use my libera name
+2021-12-02 02:45:29	nackjicholson	And the password is still my oauth token?
+2021-12-02 02:45:44	nackjicholson	Thank you for your help by the way
+2021-12-02 02:45:46	eschwartz	yes
+2021-12-02 02:46:14	eschwartz	you are connecting to the bouncer, so you need the bouncer credentials
+2021-12-02 02:46:54	eschwartz	(the bouncer is already connected and identified as you)
+2021-12-02 02:46:55	nackjicholson	Once I'm in, how would I see channels and join a libeara channel?
+2021-12-02 02:47:25	nackjicholson	It seems to still be dropping me right into chat.sr.ht /motd still
+2021-12-02 02:47:26	eschwartz	you can /join as normal from any buffer on that network
+2021-12-02 02:47:30	eschwartz	hmm
+2021-12-02 02:47:55	eschwartz	you should not get the chat.sr.ht motd if you added the "/network" suffix to your username
+2021-12-02 02:50:38	eschwartz	e.g. I have 3 networks configured in weechat, all 3 connecting to the chat.sr.ht domain. One is a buffer named "soju", connected as "eschwartz", that has the chat.sr.ht motd and does bouncer management. One is a buffer named "irc.libera.chat", connected as "eschwartz/irc.libera.chat", and that one acts as a normal connection to libera and gives me the libera motd
+2021-12-02 02:51:40	nackjicholson	Hmmmm, do I have to use the full address of the upstream, like "irc.libera.chat"? I was just using the -name which I set to libera
+2021-12-02 02:52:09	nackjicholson	i.e. myname/libera and not myname/irc.libera.chat
+2021-12-02 02:52:10	-->	noeontheend (Michael Rees) (~noeonthee@207.237.194.194) has joined #sr.ht
+2021-12-02 02:52:11	--	noeontheend has identified as noeontheend
+2021-12-02 02:54:45	nackjicholson	I'm going to chalk this up to being emacs fault. Maybe I'll try weechat or irssi to verify
+2021-12-02 02:55:33	eschwartz	I used the actual -name irc.libera.chat though
+2021-12-02 02:56:22	eschwartz	https://man.sr.ht/chat.sr.ht/quickstart.md#connecting-without-a-client-plugin
+2021-12-02 02:57:03	nackjicholson	Thanks, been reading that too. Was on that link before I came begging for help here
+2021-12-02 03:00:42	zoglesby	I would like to do something like soju.py for erc (soju.el?) but need to find the time
+2021-12-02 03:02:21	coder_kalyan	just wanted to mention: I currently have an internet outage on the street, and I'm using a hotspot to get things done - most websites are horrendously slow, except for *.sr.ht! it still loads in ~1 second!
+2021-12-02 03:08:25	-->	calebccff (calebccff) (115f3d81f1@2604:bf00:561:2000::1db) has joined #sr.ht
+2021-12-02 03:14:27	nackjicholson	Can't get it to work from irssi either. Drops me into the chat.sr.ht motd
+2021-12-02 03:15:22	nackjicholson	wait, maybe I'm wrong, not familiar enough with irssi to understand if i'm just missing a buffer or something
+2021-12-02 03:18:13	nackjicholson	Definitely the same problem from irssi
+2021-12-02 03:20:01	eschwartz	well, again -- sr.ht uses single-upstream mode only, so you have one irssi/erc connection to chat.sr.ht per configured network + one for chat.sr.ht itself
+2021-12-02 03:20:28	eschwartz	and having a client plugin just means something else does the administrivia of setting up the secondary network connections
+2021-12-02 03:20:52	eschwartz	if you have gotten the chat.sr.ht motd, you connected to the bouncer itself instead of using the bouncer to connect to libera
+2021-12-02 03:21:18	eschwartz	and if you don't have a plugin, there isn't a second buffer somewhere
+2021-12-02 03:26:31	-->	js3z [js3z] (js3z) (~js3z@146.115.76.107) has joined #sr.ht
+2021-12-02 03:38:19	-->	brook [brook] (brook) (~brook@174-28-52-215.albq.qwest.net) has joined #sr.ht
+2021-12-02 03:45:22	zoglesby	nackjicholson: I think it is because ERC lacks SASL support for auth. I got circe working and will post an example for you in a second
+2021-12-02 03:47:08	<--	martijnbraam (~martijnbr@2a00:bba0:120c:9f00:7a8e:8795:650f:7c4e) has quit (Quit: WeeChat 3.3)
+2021-12-02 03:48:33	zoglesby	nackjicholson: https://paste.sr.ht/~zoglesby/8d0a585398896e7f132676bfffe3090bb46c9796
+2021-12-02 03:49:21	zoglesby	granted that will only work if you are using use-package
+2021-12-02 03:52:06	<--	nomn (nomn@user/nomn) has quit (Ping timeout: 260 seconds)
+2021-12-02 03:52:32	 *	eschwartz prefers to just use an IRC client, not an OS masquerading as one
+2021-12-02 03:54:08	-->	nomn [nomn] (nomn) (nomn@user/nomn) has joined #sr.ht
+2021-12-02 03:55:48	<--	taiju (~taiju@M014013236064.v4.enabler.ne.jp) has quit (Remote host closed the connection)
+2021-12-02 03:56:03	-->	taiju [taiju] (taiju) (~taiju@240b:253:ec40:2400:651e:f83b:5890:99a6) has joined #sr.ht
+2021-12-02 03:59:44	zoglesby	yeah, I do a lot in emacs, but I still tend to use weechat most of the time
+2021-12-02 04:13:59	<--	js3z (~js3z@146.115.76.107) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:43:26	<--	paulgrmn_ (~paulgrmn@user/paulgrmn) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:49:55	<--	taiju (~taiju@240b:253:ec40:2400:651e:f83b:5890:99a6) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:53:35	nackjicholson	zoglesby: wow, thank you!
+2021-12-02 04:55:10	nackjicholson	Here's something wierd. I was just trying some more and I discovered that if I login with erc as mysrhtusername/libera I could type "/join ##formula1/libera" and then in the web client I would actually see that channel get joined, but still couldn't get to it from within emacs. I guess I'll have to try circe
+2021-12-02 05:12:07	-->	taiju [taiju] (taiju) (~taiju@M014013236064.v4.enabler.ne.jp) has joined #sr.ht
+2021-12-02 05:16:39	nackjicholson	Here I am, from emacs using circe
+2021-12-02 05:17:03	<--	c7s (~c7s@user/c7s) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:18:11	nackjicholson	zoglesby and eschwartz thank you for all the help
+2021-12-02 05:50:04	<--	brook (~brook@174-28-52-215.albq.qwest.net) has quit (Remote host closed the connection)
+2021-12-02 05:50:39	-->	brook [brook] (brook) (~brook@174-28-52-215.albq.qwest.net) has joined #sr.ht
+2021-12-02 05:55:11	<--	brook (~brook@174-28-52-215.albq.qwest.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:18:17	<--	hedy (hedy@tilde.team) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:18:17	<--	kaenbyou (anastasie@tilde.team) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:25:59	<--	noeontheend (~noeonthee@207.237.194.194) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:32:25	<--	av6 (~av6@edam.dwimlabs.net) has quit (Quit: ZNC - http://znc.in)
+2021-12-02 06:35:51	-->	av6 [av6] (av6) (~av6@edam.dwimlabs.net) has joined #sr.ht
+2021-12-02 06:41:18	-->	riksteri [riksteri] (Space Dinosaur) (riksteri@gateway/vpn/airvpn/riksteri) has joined #sr.ht
+2021-12-02 06:47:11	-->	kaenbyou [kaenbyou] (liv) (anastasie@tilde.team) has joined #sr.ht
+2021-12-02 06:49:11	<--	einnhverr (~einnhverr@user/einnhverr) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:50:49	-->	hedy (hedy) (hedy@tilde.team) has joined #sr.ht
+2021-12-02 06:51:03	<--	rgrinberg (~textual@200.5.63.76) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-12-02 06:52:33	-->	rgrinberg [rgrinberg] (Textual User) (~textual@200.5.63.76) has joined #sr.ht
+2021-12-02 06:53:07	<--	rgrinberg (~textual@200.5.63.76) has quit (Client Quit)
+2021-12-02 06:58:49	<--	lazr (~lazr@45.76.248.123) has quit (Ping timeout: 256 seconds)
+2021-12-02 07:03:54	-->	rdpate (rdpate) (d00a2663d2@2604:bf00:561:2000::1de) has joined #sr.ht
+2021-12-02 07:10:51	-->	muirrum0 [muirrum] (Muirrum) (~muirrum@sourcehut/user/muirrum) has joined #sr.ht
+2021-12-02 07:11:46	-->	rgrinberg [rgrinberg] (Textual User) (~textual@200.5.63.76) has joined #sr.ht
+2021-12-02 07:22:51	<--	rgrinberg (~textual@200.5.63.76) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-12-02 07:25:06	<--	av6 (~av6@edam.dwimlabs.net) has quit (Quit: ZNC - http://znc.in)
+2021-12-02 07:25:22	-->	av6 [av6] (av6) (~av6@edam.dwimlabs.net) has joined #sr.ht
+2021-12-02 07:26:46	-->	bokfink [bokfink] (unknown) (~user@122x214x111x75.ap122.ftth.ucom.ne.jp) has joined #sr.ht
+2021-12-02 07:31:38	<--	bokfink (~user@122x214x111x75.ap122.ftth.ucom.ne.jp) has left #sr.ht
+2021-12-02 08:09:35	--	irc: disconnected from server
+2021-12-02 08:09:58	-->	mrmanner (mrmanner@98.128.201.128) has joined #sr.ht
+2021-12-02 08:09:58	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-02 08:09:58	--	Topic set by ddevault (znc@sourcehut/staff/ddevault) on mån, 20 sep 2021 18:04:34
+2021-12-02 08:09:58	--	Channel #sr.ht: 507 nicks (3 ops, 0 voices, 504 normals)
+2021-12-02 08:10:54	--	Channel created on tis, 11 maj 2021 22:21:31
+2021-12-02 08:12:22	-->	neurocyte0132889 [neurocyte] (cj) (~neurocyte@user/neurocyte) has joined #sr.ht
+2021-12-02 08:29:01	<--	xenrox (~xenrox@user/xenrox) has quit (Remote host closed the connection)
+2021-12-02 08:29:10	-->	xenrox [xenrox] (xenrox) (~xenrox@user/xenrox) has joined #sr.ht
+2021-12-02 21:02:57	--	irc: disconnected from server
+2021-12-02 21:03:12	-->	mrmanner (mrmanner@90.235.13.15) has joined #sr.ht
+2021-12-02 21:03:12	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-02 21:03:12	--	Topic set by ddevault (znc@sourcehut/staff/ddevault) on mån, 20 sep 2021 18:04:34
+2021-12-02 21:03:12	--	Channel #sr.ht: 520 nicks (3 ops, 0 voices, 517 normals)
+2021-12-02 21:04:23	--	irc: disconnected from server
+2021-12-02 21:04:40	-->	mrmanner (mrmanner@90.235.13.15) has joined #sr.ht
+2021-12-02 21:04:41	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-02 21:04:41	--	Topic set by ddevault (znc@sourcehut/staff/ddevault) on mån, 20 sep 2021 18:04:34
+2021-12-02 21:04:41	--	Channel #sr.ht: 520 nicks (3 ops, 0 voices, 517 normals)
+2021-12-02 21:03:54	hwrd	emersion just to be clear, the `WHO #bash %cuhsnfdar` commands are being sent by soju on behalf of my client right?
+2021-12-02 21:04:22	@emersion	your client sends `WHO #bash %cuhsnfdar`
+2021-12-02 21:04:30	@emersion	soju relays that to libera
+2021-12-02 21:05:02	--	Channel created on tis, 11 maj 2021 22:21:31
+2021-12-02 21:05:40	-->	guest765 ([https://web.libera.chat] guest765) (~guest765@cpc107679-brnt2-2-0-cust221.4-2.cable.virginm.net) has joined #sr.ht
+2021-12-02 21:06:29	--	robin__ is now known as robin
+2021-12-02 21:07:31	hwrd	got it, and that's a result of joining a channel on my client I would assume
+2021-12-02 21:07:59	@emersion	yes
+2021-12-02 21:08:06	@emersion	well, kind of
+2021-12-02 21:08:25	@emersion	soju will send JOIN messages to clients when they connect, for all channels you've joined
+2021-12-02 21:11:14	--	irc: disconnected from server
+2021-12-02 21:11:23	-->	mrmanner (mrmanner@90.235.13.15) has joined #sr.ht
+2021-12-02 21:11:23	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-02 21:11:23	--	Topic set by ddevault (znc@sourcehut/staff/ddevault) on mån, 20 sep 2021 18:04:34
+2021-12-02 21:11:23	--	Channel #sr.ht: 522 nicks (3 ops, 0 voices, 519 normals)
+2021-12-02 21:08:42	@emersion	weechat sends WHO commands when receiving JOIN messages from the server
+2021-12-02 21:11:33	--	Channel created on tis, 11 maj 2021 22:21:31
+2021-12-02 21:12:02	hwrd	ah I see.
+2021-12-02 21:12:11	hwrd	emersion is there a way to get /server raw piped out to a file?
+2021-12-02 21:12:34	@emersion	hm, that would be handy
+2021-12-02 21:13:33	@emersion	i'm not sure, maybe ask in the weechat channel? 
+2021-12-02 21:28:50	-->	mrmanner (mrmanner@90.235.13.15) has joined #sr.ht
+2021-12-02 21:28:50	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-02 21:26:15	hwrd	emersion if you're curious, you just unset the `no_log` variable in the buffer, and it'll start logging... re-set it and it'll stop
+2021-12-02 21:31:22	-->	jess [jess] (feeling like a sinner, goddamn, it hurts like hell) (~jess@libera/staff/jess) has joined #sr.ht
+2021-12-02 21:31:36	jess	sauce hut. a site where people vote on different sauces
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #sr.ht
+2021-12-02 21:50:44	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-02 21:32:18	@emersion	ship it
+2021-12-02 21:32:55	Zash	ship it to the watercooler channel?
+2021-12-02 21:33:29	hwrd	jess supppp
+2021-12-02 21:34:03	hwrd	okay jess is here cuz I've been having separate discussions with jess in #libera and emersion here. Here's my raw server logs: https://paste.sr.ht/~hwrd/166a1fbc5c2b9a4e8d10c15f666604aebd0ce2f3
+2021-12-02 21:34:05	jess	hey :)
+2021-12-02 21:34:34	hwrd	there are a few instances of the rate-limiting you can see in the logs. this is what happens when I (re-)connect to the bouncer.
+2021-12-02 21:35:45	fluix	is it just me or is paste.sr.ht down?
+2021-12-02 21:36:01	@emersion	it's not you
+2021-12-02 21:36:16	hwrd	is it cuz it's tryinng to serve my massive log paste
+2021-12-02 21:36:31	fluix	ah
+2021-12-02 21:36:38	@emersion	yeah, congratulations hwrd :S
+2021-12-02 21:36:51	jess	hahaha
+2021-12-02 21:36:53	@emersion	definitely paste.sr.ht's mistake to not truncate
+2021-12-02 21:36:56	hwrd	fuxor.
+2021-12-02 21:37:00	hwrd	lemme re-paste elsewhere.
+2021-12-02 21:37:36	hwrd	re-pasted: https://gist.github.com/hahuang65/1b4314dfd26e354d0e84b30bcbb561bb
+2021-12-02 21:37:40	@emersion	unfortunately my SSH keys are missing from that host, so i can't investigate
+2021-12-02 21:37:55	hwrd	emersion what host? for paste.sr.ht or chat.sr.ht?
+2021-12-02 21:37:57	@emersion	hm it doesn't seem that big
+2021-12-02 21:38:00	@emersion	paste.sr.ht
+2021-12-02 21:38:15	@emersion	maybe it's the server-side syntax highlighting which messes everything up
+2021-12-02 21:38:41	@emersion	hwrd: please change your password ASAP
+2021-12-02 21:38:41	hwrd	I didn't give it a name, so it shouldn't trigger highlighting right?
+2021-12-02 21:38:51	@emersion	your chat.sr.ht password
+2021-12-02 21:38:59	hwrd	emersion lol did I include it in the paste?
+2021-12-02 21:39:01	hwrd	whoops
+2021-12-02 21:39:04	@emersion	yes
+2021-12-02 21:39:28	@emersion	next time please delete everything with AUTHENTICATE in it
+2021-12-02 21:39:46	hwrd	I thought I did
+2021-12-02 21:39:52	hwrd	oh crap. I deleted it in the previous paste
+2021-12-02 21:39:56	hwrd	and I just re-pasted the file
+2021-12-02 21:39:58	hwrd	derp
+2021-12-02 21:40:04	@emersion	rip
+2021-12-02 21:40:13	hwrd	emersion there's no token scope for chat.sr.ht yet?
+2021-12-02 21:40:30	@emersion	not yet, that's still a TODO
+2021-12-02 21:40:41	hwrd	k
+2021-12-02 21:40:51	hwrd	anyways, revoked the previous token. thansk for the alert.
+2021-12-02 21:40:52	@emersion	the work for it is half-done
+2021-12-02 21:41:15	@emersion	ah yeah you can just revoke the token, nice
+2021-12-02 21:42:30	jess	i can't see the commands that caused these WHOs
+2021-12-02 21:42:32	@emersion	okay so weechat is a bit dumb here
+2021-12-02 21:42:40	jess	oh i guess i can
+2021-12-02 21:42:44	@emersion	it sends WHO every 4s
+2021-12-02 21:42:52	jess	yeah
+2021-12-02 21:42:53	jess	that's bad
+2021-12-02 21:42:53	@emersion	but doesn't wait for WHO replies to come in before sending the next
+2021-12-02 21:43:46	hwrd	"it sends WHO ever 4s" as a response to the JOINs it gets from soju? or just in general?
+2021-12-02 21:44:11	@emersion	yeah it sends WHO in response to JOIN, but that's fine
+2021-12-02 21:45:38	hwrd	so what's the issue with sending every 4 seconds, or is it more of the "it doesn't wait for the response"?
+2021-12-02 21:45:54	hwrd	so it's re-sending multiple per channel?
+2021-12-02 21:46:08	@emersion	right, the issue is that it doesn't wait for the WHO command to complete before sending the next one
+2021-12-02 21:46:27	@emersion	you're supposed to only have a single WHO command running at a time
+2021-12-02 21:46:40	hwrd	I guess either way, maybe I should stop wasting both of your guys time? I supposed eventually this resolves itself as the WHO queue clears out and it doesn't reaally affect chat.sr.ht or libera negatively... right?
+2021-12-02 21:46:53	hwrd	it's a weechat fix anyways?
+2021-12-02 21:47:32	@emersion	it would be nice if you could open a weechat bug report
+2021-12-02 21:47:46	hwrd	I'll absolutely do that. I'll include these logs in it.
+2021-12-02 21:47:51	@emersion	yeah it's not an urgent issue
+2021-12-02 21:48:00	@emersion	still worth fixing ofc
+2021-12-02 21:48:15	hwrd	emersion jess sorry for wasting your times... I actually very much enjoyed this process though. I learned alot haha
+2021-12-02 21:48:35	@emersion	no worries at all, glad we found the issue!
+2021-12-02 21:49:32	jess	hwrd: not wasting my time at all
+2021-12-02 21:50:40	@emersion	i've opened these two soju issues as well:
+2021-12-02 21:50:40	@emersion	https://todo.sr.ht/~emersion/soju/168
+2021-12-02 21:50:47	@emersion	https://todo.sr.ht/~emersion/soju/167
+2021-12-02 21:52:30	hwrd	thanks, that should be helpful
+2021-12-02 21:53:37	-->	guido [guidoc] (guido) (~guido@host-82-51-187-207.retail.telecomitalia.it) has joined #sr.ht
+2021-12-02 22:01:58	noelle	emersion: Have you gotten a chance to read my response to your review? https://lists.sr.ht/~emersion/public-inbox/%3C20211201000155.18524-1-noelle_leigh%40fastmail.com%3E#%3C23464d78-efc6-4417-9992-59567dd6fbd6@www.fastmail.com%3E
+2021-12-02 22:16:40	<--	jess (~jess@libera/staff/jess) has quit
+2021-12-02 22:18:50	<--	guido (~guido@host-82-51-187-207.retail.telecomitalia.it) has quit (Quit: WeeChat 3.3)
+2021-12-02 23:17:14	-->	paulgrmn__ [paulgrmn] (realname) (~paulgrmn@user/paulgrmn) has joined #sr.ht
+2021-12-02 23:17:40	-->	igemnace [igemnace] (Ian Emnace) (~ian@user/igemnace) has joined #sr.ht
+2021-12-02 23:19:19	<--	ShockTohp (~kevin@155.138.224.160) has quit (Read error: Connection reset by peer)
+2021-12-02 23:50:15	<--	paulgrmn__ (~paulgrmn@user/paulgrmn) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:01:15	<--	strajder (~strajder@user/strajder) has quit (Quit: gtg)
+2021-12-03 00:26:56	-->	noeontheend (Michael Rees) (~noeonthee@12.205.205.130) has joined #sr.ht
+2021-12-03 00:26:56	--	noeontheend has identified as noeontheend
+2021-12-03 00:26:59	<--	z812 (~zyg@user/z812) has quit (Quit: bye!)
+2021-12-03 00:28:15	-->	z812 [z812] (zyg) (~zyg@user/z812) has joined #sr.ht
+2021-12-03 00:41:14	<--	mdkcore (~mdkcore@user/mdkcore) has quit (Quit: wait, WAT?!)
+2021-12-03 00:50:45	<--	noeontheend (~noeonthee@12.205.205.130) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:50:54	-->	sirufer (sirufer) (68f46fc7c3@2604:bf00:561:2000::1ef) has joined #sr.ht
+2021-12-03 00:51:49	<--	sirufer (68f46fc7c3@2604:bf00:561:2000::1ef) has quit (Changing host)
+2021-12-03 00:51:49	-->	sirufer (sirufer) (68f46fc7c3@user/sirufer) has joined #sr.ht
+2021-12-03 00:56:34	<--	sirufer (68f46fc7c3@user/sirufer) has quit (Remote host closed the connection)
+2021-12-03 00:59:19	-->	ShockTohp [ShockTohp] (Unknown) (~kevin@155.138.224.160) has joined #sr.ht
+2021-12-03 00:59:59	-->	sirufer [sirufer] (sirufer) (68f46fc7c3@user/sirufer) has joined #sr.ht
+2021-12-03 01:09:09	<--	igemnace (~ian@user/igemnace) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:10:10	-->	schinckel [schinckel] (Matthew Schinckel) (uid38120@id-38120.ilkley.irccloud.com) has joined #sr.ht
+2021-12-03 01:10:11	<--	c7s (~c7s@user/c7s) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:14:16	<--	brook (~brook@192.88.140.10) has quit (Remote host closed the connection)
+2021-12-03 01:14:35	<--	taiju (~taiju@M014013236064.v4.enabler.ne.jp) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:17:51	-->	b0o [b0o] (b0o) (0e4a0bf4c9@2604:bf00:561:2000::1bf) has joined #sr.ht
+2021-12-03 01:19:36	-->	taiju [taiju] (taiju) (~taiju@m014013236064.v4.enabler.ne.jp) has joined #sr.ht
+2021-12-03 01:38:44	-->	brook [brook] (brook) (~brook@174-28-52-215.albq.qwest.net) has joined #sr.ht
+2021-12-03 01:39:42	<--	brook (~brook@174-28-52-215.albq.qwest.net) has quit (Remote host closed the connection)
+2021-12-03 01:48:23	-->	torresjrjr [torresjrjr] (torresjrjr) (~torresjrj@user/torresjrjr) has joined #sr.ht
+2021-12-03 01:48:51	-->	brook [brook] (brook) (~brook@174-28-52-215.albq.qwest.net) has joined #sr.ht
+2021-12-03 12:21:16	--	irc: disconnected from server
+2021-12-03 12:21:31	-->	mrmanner (mrmanner@90.235.13.15) has joined #sr.ht
+2021-12-03 12:21:31	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-03 10:27:03	@ddevault	ludovicchabant: that hg.sr.ht patch is all you
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:52	-->	mrmanner (mrmanner@90.235.13.15) has joined #sr.ht
+2021-12-03 12:22:52	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-03 12:32:18	-->	igemnace [igemnace] (Ian Emnace) (~ian@user/igemnace) has joined #sr.ht
+2021-12-03 12:57:19	<--	guido (~guido@2001:b07:6455:ac4f:3641:5dff:fe55:2a8f) has quit (Quit: WeeChat 3.3)
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:36	-->	mrmanner (mrmanner@98.128.201.128) has joined #sr.ht
+2021-12-03 20:17:36	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-03 16:13:02	vigoux	Hey did someone update the crypto package on sr.ht in the end or not ?
+2021-12-03 16:20:58	@emersion	vigoux: i don't know, but we use this https://git.sr.ht/~sircmpwn/sr.ht-apkbuilds/tree/master/item/sr.ht/py3-pgpy/APKBUILD
+2021-12-03 16:23:36	vigoux	I think that the issue came from the Go side of things
+2021-12-03 16:23:47	vigoux	That the Go package for crypto related things is outdated
+2021-12-03 16:26:07	@emersion	oh right
+2021-12-03 16:26:27	@emersion	it's using the deprecated x/crypto
+2021-12-03 16:26:31	vigoux	But I never had time to test my patch, and I think I'll never be able to tbh
+2021-12-03 16:26:34	vigoux	emersion: yup
+2021-12-03 16:26:39	@emersion	haven't seen activity on this
+2021-12-03 16:26:46	@emersion	why will you not be able to?
+2021-12-03 16:26:51	vigoux	Good afternoon btw, I forgot basic hume interaction
+2021-12-03 16:27:14	vigoux	Not enough time, and I've never been able to make it work
+2021-12-03 16:27:23	@emersion	rip
+2021-12-03 16:28:54	vigoux	But I really think that the patch is just a few lines long
+2021-12-03 16:28:57	vigoux	Just can't test it
+2021-12-03 16:32:00	vigoux	But it feels pretty inconsistent from a user point of view, that SSH keys can be of type ed25519 but no subkeys of the PGP key can
+2021-12-03 16:32:27	vigoux	And, in my case, I can have one of my PGP subkeys as an ssh key, but not my complete PGP key
+2021-12-03 16:32:48	vigoux	Do you wan't me to open a ticket for that though ?
+2021-12-03 16:33:46	@emersion	i think we already know what the problem is
+2021-12-03 16:33:52	@emersion	so no need for a new ticket
+2021-12-03 16:33:56	vigoux	okay
+2021-12-03 16:34:20	@emersion	just need someone to do the work, no amount of new tickets will magically fix it
+2021-12-03 16:34:26	vigoux	yup
+2021-12-03 16:51:53	@emersion	noelle: sorry, not yet
+2021-12-03 17:02:46	julm	vigoux: I may be able to test your patch, is it available somewhere?
+2021-12-03 17:05:52	vigoux	huh nope
+2021-12-03 17:05:57	vigoux	Let me try to find it
+2021-12-03 17:07:07	vigoux	But basically it is just "replace x/crypto package by https://github.com/ProtonMail/go-crypto"
+2021-12-03 17:17:31	julm	vigoux: so, would this be working/enough? go get github.com/ProtonMail/go-crypto && go get golang.org/x/crypto@none && go mod tidy
+2021-12-03 17:25:17	vigoux	I think ?
+2021-12-03 17:25:22	vigoux	No a go expert
+2021-12-03 17:25:29	vigoux	*Not a go expert
+2021-12-03 17:29:33	@emersion	no, it's not enough
+2021-12-03 17:29:39	@emersion	all imports need to be replaced
+2021-12-03 17:29:51	julm	ah, right
+2021-12-03 17:29:58	@emersion	but you can quickly test if it would work with a replace directive in go.mod
+2021-12-03 17:30:05	minus	unless you have in a replace statement, assuming the api is the same
+2021-12-03 17:30:17	@emersion	the API isn't the same, but is close
+2021-12-03 17:45:06	julm	oh dear, not knowing where exactly is enough to replace that package makes it hard on me, I'm now down to patching https://git.sr.ht/~sircmpwn/dowork
+2021-12-03 17:45:54	@emersion	… i don't think this package uses pgp?
+2021-12-03 17:45:57	@emersion	ah
+2021-12-03 17:46:04	@emersion	it uses x/crypto maybe?
+2021-12-03 17:46:10	julm	and then I would have to find a way to tell the referrers to use my patched dependencies
+2021-12-03 17:46:12	julm	yep
+2021-12-03 17:46:20	@emersion	we probably only want to use the proto repo for the openpgp package
+2021-12-03 17:46:24	@emersion	proton*
+2021-12-03 17:46:31	julm	hmm
+2021-12-03 17:46:56	@emersion	maybe a replace directive isn't easier then
+2021-12-03 17:47:07	@emersion	i'd recommend grepping for openpgp and just replacing these
+2021-12-03 17:48:07	julm	ok, that would only be core-go/email/worker.go and meta.sr.ht/api/graph/schema.resolvers.go
+2021-12-03 17:48:46	@emersion	sounds good
+2021-12-03 17:49:08	@emersion	also you'll need an elliptic PGP key to try it out
+2021-12-03 17:49:25	@emersion	maybe vigoux can describe how they generated their key?
+2021-12-03 17:57:48	amazigh	re build.sr.ht, it is not a security question, qemu is running inside a docker container?
+2021-12-03 17:59:36	@emersion	yes
+2021-12-03 18:09:57	okt	Just some minor feedback: UX is amazing. Thank you.
+2021-12-03 18:12:16	@emersion	<3
+2021-12-03 18:15:31	okt	Redirecting Github funds. Honestly, using the web interface is _Refreshing_. Also, soju addition is primo. Okay, enough gush, off to walk dog in snow. 
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #sr.ht
+2021-12-03 20:19:44	--	Topic for #sr.ht is "sr.ht discussion & support — https://sourcehut.org — /!\ do not discuss security issues here; email sir@cmpwn.com instead /!\ — email ~sircmpwn/sr.ht-discuss@lists.sr.ht if you have long-form questions or don't get helped right away — want a sourcehut/user/yourname cloak? Ask in #libera"
+2021-12-03 20:21:09	<--	rgrinberg (~textual@187.223.248.37) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:28:45	-->	serbest [serbest] (Ike Serbestian) (~serbest@user/serbest) has joined #sr.ht
+2021-12-03 20:29:47	-->	rgrinberg [rgrinberg] (Textual User) (~textual@187.223.144.204) has joined #sr.ht
+2021-12-03 20:32:11	<--	arminweigl (~arminweig@sourcehut/user/arminweigl) has quit (Read error: Connection reset by peer)
+2021-12-03 20:32:25	<--	eXeC64 (5ff8a84e19@2604:bf00:561:2000::f9) has quit (Remote host closed the connection)
+2021-12-03 20:32:33	-->	exec64 [eXeC64] (Harry) (5ff8a84e19@2604:bf00:561:2000::f9) has joined #sr.ht
+2021-12-03 20:34:37	-->	arminweigl [arminweigl] (Armin Weigl) (~arminweig@sourcehut/user/arminweigl) has joined #sr.ht
+2021-12-03 20:34:43	<--	serbest (~serbest@user/serbest) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:35:15	<--	eloi (~azmeuk@2a01:cb19:a7:6b00:8042:af2a:7dc6:253f) has quit (Ping timeout: 268 seconds)
+2021-12-03 20:36:11	<--	theothornhill (~user@217.84-49-191.nextgentel.com) has quit (Remote host closed the connection)
+2021-12-03 20:45:33	<--	rgrinberg (~textual@187.223.144.204) has quit (Ping timeout: 256 seconds)
+2021-12-03 20:51:08	<--	exec64 (5ff8a84e19@2604:bf00:561:2000::f9) has quit (Remote host closed the connection)
+2021-12-03 20:51:17	-->	exec64 [eXeC64] (Harry) (5ff8a84e19@2604:bf00:561:2000::f9) has joined #sr.ht

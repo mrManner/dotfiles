@@ -1,0 +1,307 @@
+2021-10-13 00:11:25	-->	mrmanner (~jmanner@user/mrmanner) has joined #remarkable
+2021-10-13 00:11:25	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-13 00:11:25	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-13 00:11:26	--	Channel #remarkable: 555 nicks (0 ops, 0 voices, 555 normals)
+2021-10-13 00:11:27	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:01	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #remarkable
+2021-10-13 00:42:01	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-13 00:42:01	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-13 00:42:01	--	Channel #remarkable: 555 nicks (0 ops, 0 voices, 555 normals)
+2021-10-13 00:42:10	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-13 00:45:01	<--	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 00:52:50	-->	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has joined #remarkable
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:13:52	<--	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 01:15:11	-->	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has joined #remarkable
+2021-10-13 02:03:31	-->	analbleeding (6bbd1e16@67.205.143.82) has joined #remarkable
+2021-10-13 02:14:07	--	analbleeding is now known as 020AAH5RV
+2021-10-13 02:16:17	--	020AAH5RV is now known as turd
+2021-10-13 02:17:25	--	turd is now known as penilestent
+2021-10-13 02:26:11	<--	penilestent (6bbd1e16@67.205.143.82) has quit (K-Lined)
+2021-10-13 02:34:54	<--	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 02:47:45	-->	striking[m] (~discord14@2001:470:69fc:105::1:17ff) has joined #remarkable
+2021-10-13 02:58:16	-->	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has joined #remarkable
+2021-10-13 04:25:43	<--	FemmeAndroid (~textual@72-50-208-37.fttp.usinternet.com) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 04:33:05	-->	davisr (~davisr@user/davisr) has joined #remarkable
+2021-10-13 04:52:47	-->	davisr_ (davisr@user/davisr) has joined #remarkable
+2021-10-13 04:55:16	<--	davisr (~davisr@user/davisr) has quit (Ping timeout: 252 seconds)
+2021-10-13 06:20:41	<--	davisr_ (davisr@user/davisr) has quit (Quit: Leaving)
+2021-10-13 06:28:15	-->	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has joined #remarkable
+2021-10-13 08:40:57	<--	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has quit (Remote host closed the connection)
+2021-10-13 21:22:51	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:18	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #remarkable
+2021-10-13 21:23:18	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-13 21:23:18	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-13 21:23:19	--	Channel #remarkable: 687 nicks (0 ops, 0 voices, 687 normals)
+2021-10-13 21:23:28	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-13 21:27:40	--	mwfc_ is now known as mwfc
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:32	-->	mrmanner (~jmanner@185.224.57.161) has joined #remarkable
+2021-10-16 12:32:32	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-16 12:32:32	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-16 12:32:32	--	Channel #remarkable: 568 nicks (0 ops, 0 voices, 568 normals)
+2021-10-16 12:32:42	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-17 18:14:38	-->	jmanner (~jmanner@185.224.57.161) has joined #remarkable
+2021-10-17 18:14:38	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-17 18:14:38	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-17 18:14:38	--	Channel #remarkable: 571 nicks (0 ops, 0 voices, 571 normals)
+2021-10-17 18:14:45	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined #remarkable
+2021-10-17 18:19:02	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-17 18:19:02	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-17 18:19:02	--	Channel #remarkable: 571 nicks (0 ops, 0 voices, 571 normals)
+2021-10-17 18:19:10	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-17 18:30:35	-->	jmanner (~jmanner@user/mrmanner) has joined #remarkable
+2021-10-17 18:30:35	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-17 18:30:35	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-17 18:30:36	--	Channel #remarkable: 571 nicks (0 ops, 0 voices, 571 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:42	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:42	-->	mrmanner (~jmanner@user/mrmanner) has joined #remarkable
+2021-10-17 19:45:42	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-17 19:45:42	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-17 19:45:42	--	Channel #remarkable: 571 nicks (0 ops, 0 voices, 571 normals)
+2021-10-17 19:45:52	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-17 19:55:32	--	sunekwifn[m] is now known as snahvalo9781[m]
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #remarkable
+2021-10-30 12:09:24	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-30 12:09:24	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-30 12:09:24	--	Channel #remarkable: 593 nicks (0 ops, 0 voices, 593 normals)
+2021-10-30 12:09:32	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #remarkable
+2021-10-30 12:10:54	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-30 12:10:54	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-30 12:10:54	--	Channel #remarkable: 593 nicks (0 ops, 0 voices, 593 normals)
+2021-10-30 12:11:02	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:33	-->	mrmanner (~jmanner@user/mrmanner) has joined #remarkable
+2021-10-30 17:07:33	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-30 17:07:33	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-30 17:07:33	--	Channel #remarkable: 594 nicks (0 ops, 0 voices, 594 normals)
+2021-10-30 17:07:42	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-10-30 22:21:16	--	irc: disconnected from server
+2021-10-30 22:21:45	-->	mrmanner (~jmanner@user/mrmanner) has joined #remarkable
+2021-10-30 22:21:45	--	Topic for #remarkable is ""reMarkable development (evan@evanw.org)""
+2021-10-30 22:21:45	--	Topic set by evidlo2 (~evan@mobile-166-175-189-61.mycingular.net) on ons, 22 sep 2021 04:41:30
+2021-10-30 22:21:45	--	Channel #remarkable: 594 nicks (0 ops, 0 voices, 594 normals)
+2021-10-30 22:21:51	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-12-01 23:20:41	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #remarkable
+2021-12-01 23:20:44	--	Topic set by evidlo on mån, 08 nov 2021 04:41:36
+2021-12-01 23:20:44	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-01 23:20:44	--	Topic set by evidlo on mån, 08 nov 2021 04:41:36
+2021-12-01 23:20:45	--	Channel #remarkable: 611 nicks (0 ops, 0 voices, 611 normals)
+2021-12-01 23:21:11	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #remarkable
+2021-12-01 23:23:10	--	Topic set by evidlo on mån, 08 nov 2021 04:41:36
+2021-12-01 23:23:10	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-01 23:23:10	--	Topic set by evidlo on mån, 08 nov 2021 04:41:36
+2021-12-01 23:23:10	--	Channel #remarkable: 611 nicks (0 ops, 0 voices, 611 normals)
+2021-12-01 23:23:21	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-12-01 23:24:04	--	Mode #remarkable [+nt]
+2021-12-01 23:24:04	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-12-02 02:33:24	-->	slobber [slobber] (slobber) (~slobber@swift/slobber) has joined #remarkable
+2021-12-02 05:59:05	-->	Bitters (Fullname) (~Bitters@37.19.211.58) has joined #remarkable
+2021-12-02 05:59:23	Bitters	word?
+2021-12-02 05:59:37	-->	jurgenhaasOld[m] (@jurgenhaas:matrix.org) (~jurgenhaa@2001:470:69fc:105::8fc) has joined #remarkable
+2021-12-02 05:59:49	-->	iaminapickle[m] (@iaminapickle:matrix.org) (~iaminapic@2001:470:69fc:105::1:b2d) has joined #remarkable
+2021-12-02 06:00:02	-->	Motsel[m] (@notdavid:matrix.org) (~notdavidm@2001:470:69fc:105::1:5d3) has joined #remarkable
+2021-12-02 06:00:07	Bitters	Dullsville,man
+2021-12-02 06:00:14	-->	ngp[m] (@chiefnoah:matrix.org) (~chiefnoah@2001:470:69fc:105::1:6df) has joined #remarkable
+2021-12-02 06:00:26	-->	cheguevarawithbl (@cheguevarawithblingon:matrix.org) (~cheguevar@2001:470:69fc:105::1:700) has joined #remarkable
+2021-12-02 06:00:39	-->	unrust[m] (@unrust:matrix.org) (~unrustmat@2001:470:69fc:105::1:712) has joined #remarkable
+2021-12-02 06:00:51	-->	DavideRiva[m] (@driva:matrix.org) (~drivamatr@2001:470:69fc:105::1:16c8) has joined #remarkable
+2021-12-02 06:01:03	-->	aqwzs[m] (@aqwzs:matrix.org) (~aqwzsmatr@2001:470:69fc:105::1:59f) has joined #remarkable
+2021-12-02 06:01:15	-->	Arnaud[m] (@arnaud:matrix.btmx.fr) (~arnaudmat@2001:470:69fc:105::1:5a1) has joined #remarkable
+2021-12-02 06:01:27	-->	b3rsf0[m] (@b3rsf0:matrix.org) (~b3rsf0mat@2001:470:69fc:105::1:5a3) has joined #remarkable
+2021-12-02 06:01:39	-->	joostie[m] (@joostie:matrix.org) (~joostiema@2001:470:69fc:105::1:5b9) has joined #remarkable
+2021-12-02 06:01:51	-->	Yage[m] (@jorgeyp:matrix.org) (~jorgeypma@2001:470:69fc:105::844e) has joined #remarkable
+2021-12-02 06:02:01	Bitters	Alot of joining, but no chatting
+2021-12-02 06:02:03	-->	jrib[m] (@jrib:matrix.org) (~jribmatri@2001:470:69fc:105::1:5bb) has joined #remarkable
+2021-12-02 06:02:16	-->	nicolas[m] (@nicolas:cybre.space) (~nicolascy@2001:470:69fc:105::3527) has joined #remarkable
+2021-12-02 06:02:21	<--	Bitters (~Bitters@37.19.211.58) has left #remarkable (Closing Window)
+2021-12-02 06:02:28	-->	nidi[m] (@nidi:matrix.org) (~nidimatri@2001:470:69fc:105::9032) has joined #remarkable
+2021-12-02 06:02:40	-->	ophalia[m] (@ophalia:hackerspaces.be) (~ophaliaha@2001:470:69fc:105::1:5d5) has joined #remarkable
+2021-12-02 06:02:52	-->	oren[m] (@oren:matrix.org) (~orenmatri@2001:470:69fc:105::47b1) has joined #remarkable
+2021-12-02 06:03:05	-->	paul[m]1 (@paul:perthchat.org) (~paulperth@2001:470:69fc:105::1:5d6) has joined #remarkable
+2021-12-02 06:03:20	-->	sven[m]1234 (@sven:tchncs.de) (~sventchnc@2001:470:69fc:105::9cf1) has joined #remarkable
+2021-12-02 06:03:32	-->	tgdostie[m] (@tgdostie:tgdostie.me) (~tgdostiet@2001:470:69fc:105::d06d) has joined #remarkable
+2021-12-02 06:03:44	-->	TheCookie[m] (@thecookie:matrix.org) (~thecookie@2001:470:69fc:105::da15) has joined #remarkable
+2021-12-02 06:03:56	-->	agrement[m] (@agrement:matrix.org) (~agrementm@2001:470:69fc:105::1:595) has joined #remarkable
+2021-12-02 06:04:08	-->	alexanderking[m] (@alexanderking:matrix.org) (~alexander@2001:470:69fc:105::6d48) has joined #remarkable
+2021-12-02 06:04:20	-->	UniverseDreamInf (@alex:matrix.udia.ca) (~alexmatri@2001:470:69fc:105::1:597) has joined #remarkable
+2021-12-02 06:04:32	-->	alexwd[m] (@alexwd:matrix.org) (~alexwdmat@2001:470:69fc:105::1:599) has joined #remarkable
+2021-12-02 06:04:45	-->	amphion[m] (@amphion:asra.gr) (~amphionas@2001:470:69fc:105::42b6) has joined #remarkable
+2021-12-02 06:04:57	-->	Anirudh[m] (@anirudh:librem.one) (~anirudhli@2001:470:69fc:105::1:59b) has joined #remarkable
+2021-12-02 06:05:09	-->	annette[m] (@annette:ggc-project.de) (~annettegg@2001:470:69fc:105::4b4d) has joined #remarkable
+2021-12-02 06:05:21	-->	ansheos[m] (@ansheos:matrix.org) (~ansheosma@2001:470:69fc:105::1:59e) has joined #remarkable
+2021-12-02 06:05:21	-->	blt[m] (@belette:uc.neviani.fr) (~beletteuc@2001:470:69fc:105::d32f) has joined #remarkable
+2021-12-02 06:05:33	-->	BennoFnfstck[m] (@bennofs:matrix.org) (~bennofsma@2001:470:69fc:105::1:58d) has joined #remarkable
+2021-12-02 06:05:45	-->	bilbo12[m] (@bilbo12:matrix.org) (~bilbo12ma@2001:470:69fc:105::1:58f) has joined #remarkable
+2021-12-02 06:05:57	-->	JoakimBohlin[m] (@bohlin:matrix.org) (~bohlinmat@2001:470:69fc:105::1:590) has joined #remarkable
+2021-12-02 06:06:09	-->	bonan[m] (@bonan:g33k.se) (~bonang33k@2001:470:69fc:105::1:592) has joined #remarkable
+2021-12-02 06:06:09	-->	Boss[m] (@bossbigbigboss002:matrix.org) (~bossbigbi@2001:470:69fc:105::2acd) has joined #remarkable
+2021-12-02 06:06:22	-->	c01_d93p_s4f1[m] (@c01_d93p_s4f1:matrix.org) (~c01d93ps4@2001:470:69fc:105::1:598) has joined #remarkable
+2021-12-02 06:06:35	-->	cameron[m] (@cameron:matrix.pfiffer.org) (~cameronma@2001:470:69fc:105::1953) has joined #remarkable
+2021-12-02 06:06:48	-->	carola[m] (@carola:halogen.city) (~carolahal@2001:470:69fc:105::1:59c) has joined #remarkable
+2021-12-02 06:07:00	-->	catos[m] (@catos:matrix.org) (~catosmatr@2001:470:69fc:105::1:59d) has joined #remarkable
+2021-12-02 06:07:14	-->	chaseadam [chaseadam[m]] (@chaseadam:matrix.org) (~chaseadam@2001:470:69fc:105::ca8) has joined #remarkable
+2021-12-02 06:07:27	-->	christoph[m]12 (@christoph:fairydust.space) (~christoph@2001:470:69fc:105::1:5a0) has joined #remarkable
+2021-12-02 06:07:39	-->	ChrisKamphuis[m] (@ckamphuis:matrix.org) (~ckamphuis@2001:470:69fc:105::1:5a2) has joined #remarkable
+2021-12-02 06:07:51	-->	TiagoPeixoto[m] (@count0:matrix.skewed.de) (~count0ma_@2001:470:69fc:105::7587) has joined #remarkable
+2021-12-02 06:08:03	-->	cylogy[m] (@cylogy:matrix.org) (~cylogymat@2001:470:69fc:105::1:1f7) has joined #remarkable
+2021-12-02 06:08:21	-->	datanoise[m] (@datanoise:matrix.org) (~datanoise@2001:470:69fc:105::1:5aa) has joined #remarkable
+2021-12-02 06:08:33	-->	deraffe[m] (@deraffe:matrix.org) (~deraffema@2001:470:69fc:105::1:3f4) has joined #remarkable
+2021-12-02 06:08:45	-->	dinis[m] (@dinis:matrix.org) (~dinismatr@2001:470:69fc:105::c01a) has joined #remarkable
+2021-12-02 06:08:57	-->	doubly-stochasti (@doubly-stochastic:matrix.org) (~doubly-st@2001:470:69fc:105::1:3fa) has joined #remarkable
+2021-12-02 06:09:09	-->	eberan[m] (@eberan:matrix.org) (~eberanmat@2001:470:69fc:105::1:3fb) has joined #remarkable
+2021-12-02 06:09:21	-->	ebx[m] (@ebx:matrix.org) (~ebxmatrix@2001:470:69fc:105::1:3fc) has joined #remarkable
+2021-12-02 06:09:33	-->	EdwardVeldman[m] (@edwardv:matrix.org) (~edwardvma@2001:470:69fc:105::1:3fe) has joined #remarkable
+2021-12-02 06:09:45	-->	egermond[m] (@egermond:matrix.org) (~egermondm@2001:470:69fc:105::1:3ff) has joined #remarkable
+2021-12-02 06:09:58	-->	ej[m] (@eggert:ags.tu-bs.de) (~eggertags@2001:470:69fc:105::1:400) has joined #remarkable
+2021-12-02 06:10:10	-->	emil[m]1 (@emil:nitro.chat) (~emilnitro@2001:470:69fc:105::4b58) has joined #remarkable
+2021-12-02 06:10:22	-->	jameson[m] (@erich:gemeinsam.jetzt) (~erichgeme@2001:470:69fc:105::1:401) has joined #remarkable
+2021-12-02 06:10:36	-->	erik[m]123 (@erik:pwarde.nl) (~erikpward@2001:470:69fc:105::1:402) has joined #remarkable
+2021-12-02 06:10:48	-->	evidlo[m]1 (@evidlo:mozilla.org) (~evidlomoz@2001:470:69fc:105::1:403) has joined #remarkable
+2021-12-02 06:11:00	-->	fd47gg[m] (@fd47gg:matrix.org) (~fd47ggmat@2001:470:69fc:105::1:404) has joined #remarkable
+2021-12-02 06:11:12	-->	ferdinand[m] (@ferdinand:matrix.allmende.io) (~ferdinand@2001:470:69fc:105::1:405) has joined #remarkable
+2021-12-02 06:11:25	-->	Frypolar[m] (@frypolar:matrix.org) (~frypolarm@2001:470:69fc:105::1:5a8) has joined #remarkable
+2021-12-02 06:11:37	-->	MarkHowell[m] (@garbledmarmalade:matrix.org) (~garbledma@2001:470:69fc:105::1:5ab) has joined #remarkable
+2021-12-02 06:11:50	-->	garshol[m] (@garshol:matrix.org) (~garsholma@2001:470:69fc:105::1:5ad) has joined #remarkable
+2021-12-02 06:12:02	-->	GeckoEidechse[m] (@geckoeidechse:matrix.org) (~geckoeide@2001:470:69fc:105::3fb) has joined #remarkable
+2021-12-02 06:12:14	-->	GerdFlaig[m] (@gefla:matrix.org) (~geflamatr@2001:470:69fc:105::1:5b0) has joined #remarkable
+2021-12-02 06:12:27	-->	ggpeti[m] (@ggpeti:ggpeti.com) (~ggpetiggp@2001:470:69fc:105::1:5b2) has joined #remarkable
+2021-12-02 06:12:39	-->	gofetch[m] (@gofetch:matrix.org) (~gofetchma@2001:470:69fc:105::1:5b4) has joined #remarkable
+2021-12-02 06:12:51	-->	gordianbot[m] (@gordianbot:matrix.org) (~gordianbo@2001:470:69fc:105::7e5c) has joined #remarkable
+2021-12-02 06:13:03	-->	grindvoll[m] (@grindvoll:matrix.org) (~grindvoll@2001:470:69fc:105::1:5b8) has joined #remarkable
+2021-12-02 06:13:16	-->	groxx[m]1 (@groxx:matrix.org) (~groxxmatr@2001:470:69fc:105::1d97) has joined #remarkable
+2021-12-02 06:13:24	-->	dlew^ (...) (~dlew@68.101.58.90) has joined #remarkable
+2021-12-02 06:13:28	-->	guillaume[m] (@guillaume:herail.net) (~guillaume@2001:470:69fc:105::1129) has joined #remarkable
+2021-12-02 06:13:40	-->	ornot7353[m] (@guterj2013:matrix.org) (~guterj201@2001:470:69fc:105::e477) has joined #remarkable
+2021-12-02 06:13:52	-->	halmex[m] (@halmex_:matrix.org) (~halmexmat@2001:470:69fc:105::718) has joined #remarkable
+2021-12-02 06:14:04	-->	hans_123[m] (@hans_123:matrix.org) (~hans123ma@2001:470:69fc:105::7fbf) has joined #remarkable
+2021-12-02 06:14:16	-->	hans[m] (@hans:bau-ha.us) (~hansbau-h@2001:470:69fc:105::1:5bc) has joined #remarkable
+2021-12-02 06:14:28	-->	RasmusHvingelby[ (@hvingelby:matrix.org) (~hvingelby@2001:470:69fc:105::1:5be) has joined #remarkable
+2021-12-02 06:14:40	-->	Ingo[m] (@ingo:imbitbu.de) (~ingoimbit@2001:470:69fc:105::1:5c0) has joined #remarkable
+2021-12-02 06:14:52	-->	ITechGeek[m] (@itechgeek:matrix.org) (~itechgeek@2001:470:69fc:105::580) has joined #remarkable
+2021-12-02 06:15:04	-->	jair[m] (@jair:hope.net) (~jairhopen@2001:470:69fc:105::1:5c3) has joined #remarkable
+2021-12-02 06:15:16	-->	jakeisnt[m] (@jakeisnt:matrix.org) (~jakeisntm@2001:470:69fc:105::1:5c5) has joined #remarkable
+2021-12-02 06:15:32	-->	james[m]12345 (@james:somecomputer.xyz) (~jamessome@2001:470:69fc:105::1:5a9) has joined #remarkable
+2021-12-02 06:15:45	-->	jens[m]1 (@jens:riotchat.de) (~jensriotc@2001:470:69fc:105::1:5af) has joined #remarkable
+2021-12-02 06:15:58	-->	jevez[m] (@jevez:matrix.org) (~jevezmatr@2001:470:69fc:105::1:5b1) has joined #remarkable
+2021-12-02 06:16:10	-->	jh_panketal[m] (@jh_panketal:matrix.org) (~jhpanketa@2001:470:69fc:105::1:5b3) has joined #remarkable
+2021-12-02 06:16:23	-->	johanan[m] (@johanan:matrix.org) (~johananma@2001:470:69fc:105::1:5b5) has joined #remarkable
+2021-12-02 06:16:36	-->	Jomn[m] (@jomn:matrix.org) (~jomnmatri@2001:470:69fc:105::1:5b6) has joined #remarkable
+2021-12-02 06:16:49	-->	jonathan[m]12 (@jonathan:converser.eu) (~jonathanc@2001:470:69fc:105::3750) has joined #remarkable
+2021-12-02 06:17:02	-->	kalon33[m] (@kalon33:spiralo.net) (~kalon33sp@2001:470:69fc:105::85c4) has joined #remarkable
+2021-12-02 06:17:14	-->	karin[m] (@karin:kde.org) (~karinkdeo@2001:470:69fc:105::2bb6) has joined #remarkable
+2021-12-02 06:17:26	-->	kastaren[m] (@kastaren:matrix.org) (~kastarenm@2001:470:69fc:105::1:532) has joined #remarkable
+2021-12-02 06:17:40	-->	kudod [kudos] (@kudos:kudos.im) (~kudos@2001:470:69fc:105::3650) has joined #remarkable
+2021-12-02 06:17:52	-->	kvnsmth[m] (@kvnsmth:matrix.org) (~kvnsmthma@2001:470:69fc:105::1:535) has joined #remarkable
+2021-12-02 06:18:04	-->	labcat[m] (@labcat:matrix.org) (~labcatmat@2001:470:69fc:105::1:536) has joined #remarkable
+2021-12-02 06:18:16	-->	leafgecko[m] (@leafgecko:matrix.org) (~leafgecko@2001:470:69fc:105::1:53b) has joined #remarkable
+2021-12-02 06:18:30	-->	leaf_[m] (@leaf_:matrix.org) (~leafmatri@2001:470:69fc:105::1:539) has joined #remarkable
+2021-12-02 06:18:43	-->	leapingfrogs[m] (@leapingfrogs:matrix.org) (~leapingfr@2001:470:69fc:105::eefc) has joined #remarkable
+2021-12-02 06:18:55	-->	llewlem888[m] (@llewlem888:matrix.org) (~llewlem88@2001:470:69fc:105::1ecc) has joined #remarkable
+2021-12-02 06:19:07	-->	Ludwigmatrixorg[ (@luplex:matrix.org) (~luplexmat@2001:470:69fc:105::1edb) has joined #remarkable
+2021-12-02 06:19:19	-->	m0n5t3r[m] (@m0n5t3r:matrix.m0n5t3r.info) (~m0n5t3rma@2001:470:69fc:105::1:5bf) has joined #remarkable
+2021-12-02 06:19:32	-->	maimonides6[m] (@maimonides6:matrix.org) (~maimonide@2001:470:69fc:105::1:5c1) has joined #remarkable
+2021-12-02 06:19:47	-->	matthew[m]1234 (@matthew:nltrix.net) (~matthewnl@2001:470:69fc:105::1:5c2) has joined #remarkable
+2021-12-02 06:19:59	-->	me[m]1 (@me:synapse.etc.geekgalaxy.com) (~mesynapse@2001:470:69fc:105::8caa) has joined #remarkable
+2021-12-02 06:20:11	-->	mgxn[m] (@mgxn:matrix.org) (~mgxnmatri@2001:470:69fc:105::1f19) has joined #remarkable
+2021-12-02 06:20:23	-->	michail[m] (@michail:ru-matrix.org) (~michailru@2001:470:69fc:105::e440) has joined #remarkable
+2021-12-02 06:20:37	-->	mike[m]12 (@mike:nerdsin.space) (~mikenerds@2001:470:69fc:105::4b94) has joined #remarkable
+2021-12-02 06:20:49	-->	mitchell[m] (@mitchellsalad:matrix.org) (~mitchells@2001:470:69fc:105::8de6) has joined #remarkable
+2021-12-02 06:20:49	-->	SalamaSalama[m] (@moustafa5:matrix.org) (~moustafa5@2001:470:69fc:105::e6c4) has joined #remarkable
+2021-12-02 06:21:01	-->	mstrom[m] (@mstrom:matrix.org) (~mstrommat@2001:470:69fc:105::fee) has joined #remarkable
+2021-12-02 06:21:13	-->	neaj[m] (@neaj:matrix.org) (~neajmatri@2001:470:69fc:105::1:5ce) has joined #remarkable
+2021-12-02 06:21:25	-->	nekrondev[m] (@nekrondev:matrix.org) (~nekrondev@2001:470:69fc:105::8fc7) has joined #remarkable
+2021-12-02 06:21:37	-->	nfd[m]1 (@nfd:cybre.space) (~nfdcybres@2001:470:69fc:105::1:3c0) has joined #remarkable
+2021-12-02 06:21:49	-->	pdp8[m] (@pdp8:matrix.pdp8.info) (~pdp8matri@2001:470:69fc:105::1:5d8) has joined #remarkable
+2021-12-02 06:22:06	-->	peter[m]123456 (@peter:chat.weho.st) (~peterchat@2001:470:69fc:105::1:5c6) has joined #remarkable
+2021-12-02 06:22:18	-->	pimpom[m] (@pimpom:utwente.io) (~pimpomutw@2001:470:69fc:105::1:5c8) has joined #remarkable
+2021-12-02 06:22:30	-->	pliski[m] (@pliski:matrix.org) (~pliskimat@2001:470:69fc:105::1:5c9) has joined #remarkable
+2021-12-02 06:22:42	-->	ploek[m] (@ploek:matrix.org) (~ploekmatr@2001:470:69fc:105::134) has joined #remarkable
+2021-12-02 06:22:54	-->	pocketpiggy[m] (@pocketpiggy:matrix.org) (~pocketpig@2001:470:69fc:105::1:5ca) has joined #remarkable
+2021-12-02 06:23:06	-->	DavidDiem[m] (@purlupar:matrix.org) (~purluparm@2001:470:69fc:105::94ad) has joined #remarkable
+2021-12-02 06:23:18	-->	raeshooDante[m] (@raeshoo:fairydust.space) (~raeshoofa@2001:470:69fc:105::1:5d1) has joined #remarkable
+2021-12-02 06:23:30	-->	Rafael[m] (@rafael:leic.pt) (~rafaellei@2001:470:69fc:105::3322) has joined #remarkable
+2021-12-02 06:23:43	-->	ananas[m]1 (@rchn:matrix.org) (~rchnmatri@2001:470:69fc:105::1:5d2) has joined #remarkable
+2021-12-02 06:23:55	-->	RmiLapeyre[m] (@remilapeyre:matrix.org) (~remilapey@2001:470:69fc:105::1:5d4) has joined #remarkable
+2021-12-02 06:24:07	-->	reyawn[m] (@reyawn:stokedmind.net) (~reyawnsto@2001:470:69fc:105::966f) has joined #remarkable
+2021-12-02 06:24:20	-->	ringo[m] (@ringo:matrixim.cc) (~ringomat_@2001:470:69fc:105::4b75) has joined #remarkable
+2021-12-02 06:24:32	-->	riotagainstthema (@riot.against.the.machine:privacytools.io) (~riotagain@2001:470:69fc:105::1:5d7) has joined #remarkable
+2021-12-02 06:24:45	-->	luluganeta[m] (@rlafuente:matrix.org) (~rlafuente@2001:470:69fc:105::1:5d9) has joined #remarkable
+2021-12-02 06:24:57	-->	sam[m] (@sam:m.topoi.dev) (~sammtopoi@2001:470:69fc:105::e887) has joined #remarkable
+2021-12-02 06:25:09	-->	shiva[m] (@shiva:diasp.in) (~shivadias@2001:470:69fc:105::ea6) has joined #remarkable
+2021-12-02 06:25:22	-->	simtr[m] (@simtr:matrix.org) (~simtrmatr@2001:470:69fc:105::1:3d3) has joined #remarkable
+2021-12-02 06:25:34	-->	sivaaan[m] (@sivaaan:matrix.org) (~sivaaanma@2001:470:69fc:105::1:3d5) has joined #remarkable
+2021-12-02 06:25:46	-->	sozin[m] (@sozin:matrix.org) (~sozinmatr@2001:470:69fc:105::1:3d6) has joined #remarkable
+2021-12-02 06:25:58	-->	Kookie[m] (@spacekookie:fairydust.space) (~spacekook@2001:470:69fc:105::d0e) has joined #remarkable
+2021-12-02 06:26:10	-->	stanton[m] (@stanton:matrix.org) (~stantonma@2001:470:69fc:105::1:3d7) has joined #remarkable
+2021-12-02 06:26:22	-->	sterni[m] (@sterni:feneas.org) (~sternifen@2001:470:69fc:105::3c3f) has joined #remarkable
+2021-12-02 06:26:34	-->	thetownfool[m] (@thetownfool:matrix.org) (~thetownfo@2001:470:69fc:105::1:3d8) has joined #remarkable
+2021-12-02 06:26:46	-->	Ulunyth[m] (@ulunyth:matrix.org) (~ulunythma@2001:470:69fc:105::1:5da) has joined #remarkable
+2021-12-02 06:26:58	-->	variety[m] (@variety:matrix.org) (~varietyma@2001:470:69fc:105::1:5db) has joined #remarkable
+2021-12-02 06:27:10	-->	whitingdev[m] (@whitingdev:matrix.org) (~whitingde@2001:470:69fc:105::46cf) has joined #remarkable
+2021-12-02 06:27:23	-->	Will[m]12 (@willhb:matrix.org) (~willhbmat@2001:470:69fc:105::1:5dd) has joined #remarkable
+2021-12-02 06:27:36	-->	WojciechirthKwol (@wojciech:r23s.eu) (~wojciechr@2001:470:69fc:105::1941) has joined #remarkable
+2021-12-02 06:27:48	-->	woody[m] (@woody:poddery.com) (~woodypodd@2001:470:69fc:105::379d) has joined #remarkable
+2021-12-02 06:28:00	-->	x5a4b48[m] (@x5a4b48:librem.one) (~x5a4b48li@2001:470:69fc:105::1:5de) has joined #remarkable
+2021-12-02 06:28:12	-->	xandkar[m] (@xandkar:matrix.org) (~xandkarma@2001:470:69fc:105::1:5df) has joined #remarkable
+2021-12-02 06:28:24	-->	xiu[m] (@xiu42:matrix.org) (~xiu42matr@2001:470:69fc:105::1:5e0) has joined #remarkable
+2021-12-02 06:28:36	-->	yuyangchee98[m] (@yuyangchee98:matrix.org) (~yuyangche@2001:470:69fc:105::1:5e1) has joined #remarkable
+2021-12-02 06:28:48	-->	zotus[m] (@zotus:matrix.org) (~zotusmatr@2001:470:69fc:105::1:5e2) has joined #remarkable
+2021-12-02 06:29:00	-->	zpojqwfejwfhiunz (@zpojqwfejwfhiunz:hackers.town) (~zpojqwfej@2001:470:69fc:105::1:5e4) has joined #remarkable
+2021-12-02 06:29:12	-->	zyzek[m] (@zyzek:matrix.org) (~zyzekmatr@2001:470:69fc:105::1:5e5) has joined #remarkable
+2021-12-02 06:29:24	-->	grszkthfr[m] (@grszkthfr:matrix.org) (~grszkthfr@2001:470:69fc:105::1:23ba) has joined #remarkable
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:54	-->	mrmanner (mrmanner@98.128.201.128) has joined #remarkable
+2021-12-02 08:09:54	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-02 08:09:54	--	Topic set by evidlo on mån, 08 nov 2021 04:41:36
+2021-12-02 08:09:55	--	Channel #remarkable: 761 nicks (0 ops, 0 voices, 761 normals)
+2021-12-02 08:10:20	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:17	-->	mrmanner (mrmanner@90.235.13.15) has joined #remarkable
+2021-12-02 21:03:17	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-02 21:03:17	--	Topic set by evidlo on mån, 08 nov 2021 04:41:36
+2021-12-02 21:03:17	--	Channel #remarkable: 762 nicks (0 ops, 0 voices, 762 normals)
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:46	-->	mrmanner (mrmanner@90.235.13.15) has joined #remarkable
+2021-12-02 21:04:46	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-02 21:04:47	--	Topic set by evidlo on mån, 08 nov 2021 04:41:36
+2021-12-02 21:04:47	--	Channel #remarkable: 762 nicks (0 ops, 0 voices, 762 normals)
+2021-12-02 21:05:50	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:29	-->	mrmanner (mrmanner@90.235.13.15) has joined #remarkable
+2021-12-02 21:11:29	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-02 21:11:29	--	Topic set by evidlo on mån, 08 nov 2021 04:41:36
+2021-12-02 21:11:29	--	Channel #remarkable: 762 nicks (0 ops, 0 voices, 762 normals)
+2021-12-02 21:12:23	--	Channel created on ons, 19 maj 2021 18:45:40
+2021-12-02 21:28:47	-->	mrmanner (mrmanner@90.235.13.15) has joined #remarkable
+2021-12-02 21:28:47	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:45	-->	mrmanner (mrmanner@98.128.201.128) has joined #remarkable
+2021-12-02 21:50:45	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-02 21:51:47	-->	george65[m] (@_discord_779472056621989908:t2bot.io) (~discord77@2001:470:69fc:105::1:44e0) has joined #remarkable
+2021-12-03 00:58:36	-->	nac [nac] (nac) (~nac@user/nac) has joined #remarkable
+2021-12-03 01:22:41	-->	anyone [jengelh] (-) (~filler@a4.inai.de) has joined #remarkable
+2021-12-03 01:27:05	<--	anyone (~filler@a4.inai.de) has left #remarkable
+2021-12-03 12:21:15	--	irc: disconnected from server
+2021-12-03 12:21:33	-->	mrmanner (mrmanner@90.235.13.15) has joined #remarkable
+2021-12-03 12:21:33	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-03 12:22:37	--	irc: disconnected from server
+2021-12-03 12:22:54	-->	mrmanner (mrmanner@90.235.13.15) has joined #remarkable
+2021-12-03 12:22:54	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-03 20:17:22	--	irc: disconnected from server
+2021-12-03 20:17:35	-->	mrmanner (mrmanner@98.128.201.128) has joined #remarkable
+2021-12-03 20:17:35	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-03 20:19:02	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:45	-->	mrmanner (mrmanner@98.128.201.128) has joined #remarkable
+2021-12-03 20:19:45	--	Topic for #remarkable is ""remarkable and remarkable development""
+2021-12-03 20:22:59	-->	NicoPilami[m]1 (@_discord_915334619140874270:t2bot.io) (~discord91@2001:470:69fc:105::1:45c0) has joined #remarkable

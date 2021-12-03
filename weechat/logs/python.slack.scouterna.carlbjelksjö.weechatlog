@@ -1,0 +1,221 @@
+2021-03-18 15:28:13	CarlBjelksjö	Har fått ny jobbdator är det några konstigheter att ta ram-minnet från den gamla och sätta in i den nya (förutsatt att den har en ledig plats)?
+2021-03-18 15:33:37	JohanManner	Kan vara komplicerat :S Det absolut säkraste är att ha alla minnen av samma sort. Näst säkrast är att ha minnen parvis av samma sort (om du har mer än två platser). Om de ska vara olika, ökar chansen att det funkar bra om de 1) har samma frekvens och 2) är lika stora (i den prioritetsordningen).
+2021-03-18 15:34:02	JohanManner	Och det måste vara rätt minnestyp (troligen DDR4?) för att det ska fungera öht
+2021-03-18 15:34:13	CarlBjelksjö	ok så skippa det med andra ord :stuck_out_tongue:
+2021-03-18 15:34:28	JohanManner	om de inte råkar vara identiska skulle jag säga det, ja
+2021-03-18 15:34:35	CarlBjelksjö	ok! tack!
+2021-03-18 15:34:42	CarlBjelksjö	kommer du kunna vara med på skojjtmötet ikväll?
+2021-03-18 15:35:03	JohanManner	Nya minnen är rätt billiga, jag hade inga problem med att få beställa 2*8GB och uppgradera min dator :)
+2021-03-23 16:15:04	CarlBjelksjö	Ska ha möte med frontedgeit imorgon ang Scoutstuga. Det verkar som de är villiga att fixa en del av buggarna utan extra kostnad. Det var ju trevligt! [:muscle:1]
+2021-03-24 10:43:24	CarlBjelksjö	Tja kan du lägga in mailto:joja92@hotmail.com (joja92@hotmail.com) så att hon kommer åt Scoutstuga på Azure?
+2021-03-24 11:10:10	JohanManner	mailto:joja92@hotmail.com (joja92@hotmail.com) was added to the Scouterna directory as a guest.
+2021-03-24 11:10:10		mailto:joja92@hotmail.com (joja92@hotmail.com) was also sent an invitation link they must accept.
+2021-03-24 11:10:10		To manually invite:
+2021-03-24 11:10:10		1. Right-click and copy this https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d317a47ba-fd32-41b8-8ebe-310a1adc9863%26user%3d2235c947-0273-44ae-bbf5-c8b9c7846d85%26ticket%3dZDSByiQ7xy7KH8RbD%252blZ4GzZL4Cyt4vtaQln%252bebZg%252bY%253d%26ver%3d2.0 (invitation link).
+2021-03-24 11:10:10		(Do not click the link because it starts the invitation process.)
+2021-03-24 11:10:10		2. Send the invitation link to the invited user.
+2021-03-24 11:22:50	CarlBjelksjö	Tack! Jag tror jag hittade in i Azure själv också :stuck_out_tongue: [:raised_hands:1]
+2021-03-24 11:23:48	JohanManner	Det är resursgruppen http://scoutstuga.se (scoutstuga.se) du vill ge access till, om det är fler som behöver in där :)
+2021-03-24 11:24:03	CarlBjelksjö	jo jag bjöd in henne till den
+2021-03-24 11:24:40	JohanManner	Topp
+2021-03-24 11:24:47	CarlBjelksjö	förhoppningsvis så innebär detta att http://scoutstuga.se (scoutstuga.se) är klar snart :stuck_out_tongue:
+2021-03-24 13:07:23	CarlBjelksjö	Vet du?
+2021-03-24 13:07:23		Hej,
+2021-03-24 13:07:23		Jag håller på och sätter upp allt så jag kan börja lösa era buggar, men märkte att jag inte kan använda Google Maps API med er API-nyckel.
+2021-03-24 13:07:23		Just nu kan jag inte se kartan utan får ett felmeddelande som säger att min url (http://localhost:3000/home) inte är giltig för att referera till Google maps APIet med den API-nyckeln som används.
+2021-03-24 13:07:23		Har du någon koll på vad för restriktionsinställningar ni har för Google Maps API-nyckeln?
+2021-03-24 13:07:23		MVH
+2021-03-24 13:07:23		Johanna Jansson
+2021-03-24 13:08:07	JohanManner	Vet inte - men tror det är någonstans i Google Cloud console 
+2021-03-24 15:00:59	CarlBjelksjö	Vet du om man borde kunna se kartan i "localhost"?
+2021-03-24 18:51:35	JohanManner	Jag tror du måste konfigurera det i inställningarna någonstans 
+2021-03-24 18:51:52	JohanManner	Lägga in alla godkända hostnames eller URL:er
+2021-03-25 15:15:49	CarlBjelksjö	Hur blev det med automatisk deploy?
+2021-03-25 15:15:49		Hej,
+2021-03-25 15:15:49		Jag har nu fixat buggen med att inaktiverade stugor visas på kartan.
+2021-03-25 15:15:49		Jag har pushat in allt i master på GitHub repot, men jag tror inte Azure Pipeline fungerar som den ska för att deploya sidan till http://scoutstuga.se (scoutstuga.se) med de nya ändringarna. Jag verkar inte ha tillgång till Azure Pipeline på er Azure så kan inte kontrollera.
+2021-03-25 15:15:49		 Brukar er sida uppdateras automatiskt när ni gör ändringar i GitHub-repot eller deployar ni den manuellt?
+2021-03-25 15:15:49		MVH
+2021-03-25 15:15:49		Johanna Jansson
+2021-03-26 16:22:32	CarlBjelksjö	Tja! Bara påminner om frågan ovan. Verkar inte ha hänt något när jag går in på sidan i alla fall.
+2021-03-26 16:22:32	CarlBjelksjö	Tja! Bara påminner om frågan ovan. Verkar inte ha hänt något när jag går in på sidan i alla fall.
+2021-03-26 16:22:32	CarlBjelksjö	Tja! Bara påminner om frågan ovan. Verkar inte ha hänt något när jag går in på sidan i alla fall.
+2021-03-26 16:22:32	CarlBjelksjö	Tja! Bara påminner om frågan ovan. Verkar inte ha hänt något när jag går in på sidan i alla fall.
+2021-03-26 16:22:32	CarlBjelksjö	Tja! Bara påminner om frågan ovan. Verkar inte ha hänt något när jag går in på sidan i alla fall.
+2021-03-26 16:22:32	CarlBjelksjö	Tja! Bara påminner om frågan ovan. Verkar inte ha hänt något när jag går in på sidan i alla fall.
+2021-03-29 18:23:21	CarlBjelksjö	Hej! Kommer du vara med på skojjtmötet ikväll?
+2021-03-29 18:33:28	JohanManner	Japp, kan bli lite sen pga måste äta innan  [:+1:1]
+2021-03-29 18:33:47	JohanManner	Har sett din fråga btw, men har inget svar rakt ur huvudet :thinking_face:
+2021-03-29 18:34:09	CarlBjelksjö	den deployar inte trodde vi fixade det
+2021-03-29 18:34:21	CarlBjelksjö	men det finns en massa fixar nu som du kan få deploya om du hinner ikväll :wink:
+2021-03-29 18:34:53	CarlBjelksjö	hon tror att hon är klar imorgon så det är ju spännande kan få bli en liten påskpresent från oss med en smyglansering
+2021-03-29 19:50:58	JohanManner	Kikar på scoutstuga när jag fått klart min Skojjt-deploy här :) 
+2021-03-30 13:28:49	CarlBjelksjö	Nu ska hon vara klara med alla buggfixar så det vore grymt om du deployade (du får gärna lära mig nån gång hur man gör så slipper du tjat från mig ;-))
+2021-04-01 13:05:09	CarlBjelksjö	Ber jättesnällt att du deployar om du får en minut över under påskhelgen :innocent:
+2021-04-01 13:07:38	JohanManner	Just det, jag gjorde 90% igår
+2021-04-01 13:07:43	JohanManner	fixar sista biten nu
+2021-04-01 13:07:59	JohanManner	nåt är knas med mitt försök att göra det automatiskt dock, det kan jag kika på i påsk 
+2021-04-01 13:20:45	JohanManner	Nu borde det vara senaste versionen som är live 
+2021-04-01 13:21:26	CarlBjelksjö	Coolt! Tack då ska jag testa lite :slightly_smiling_face:
+2021-04-01 13:22:36	CarlBjelksjö	Kan fortfarande inte ta bort annonser :confused:
+2021-04-01 13:25:50	JohanManner	jag kunde precis skapa och ta bort
+2021-04-01 13:26:15	JohanManner	Prova en hård omladdning (ofta shift-f5 eller ctrl-shift-r) alternativt töm cachen
+2021-04-01 13:26:31	JohanManner	Definitivt något för oss att kika på dock, det ska inte behövas
+2021-04-01 13:26:31	CarlBjelksjö	kanske bara gäller de gamla exiserande?
+2021-04-01 13:26:42	JohanManner	men jag kan ha satt en onödigt hård cache-policy 
+2021-04-01 13:26:53	JohanManner	kan vara så också, jag ska testa att plocka upp en gamaml
+2021-04-01 13:27:08	CarlBjelksjö	har du adminrättigheter då?
+2021-04-01 13:27:12	JohanManner	bra fråga
+2021-04-01 13:27:21	JohanManner	nej
+2021-04-01 13:27:28	JohanManner	jag kunde radera min egen, men har inte admin 
+2021-04-01 13:27:37	CarlBjelksjö	nej men det borde ju gå
+2021-04-01 13:28:04	JohanManner	får du upp radera-knappen?
+2021-04-01 13:28:30	CarlBjelksjö	ja
+2021-04-01 13:29:42	CarlBjelksjö	får bara Något gick fel. Var god försök igen.
+2021-04-01 13:29:50	CarlBjelksjö	får lägga upp den som en issue och be Fronteedge fixa det
+2021-04-01 13:30:00	CarlBjelksjö	vill bli klar med detta nu :stuck_out_tongue:
+2021-04-01 13:30:54	JohanManner	Topp! min deploy verkar ha funkat iallafall, för jag kan radera bilder nu
+2021-04-01 13:31:01	JohanManner	det fanns väl inte alls innan?
+2021-04-01 13:31:11	CarlBjelksjö	nej det betalade vi lite exta för
+2021-04-01 13:31:19	CarlBjelksjö	men kändes värt för användarupplevelsen
+2021-04-01 13:31:22	JohanManner	Hittade en liten bugg till f.ö: man kan inte ha 0 toaletter
+2021-04-01 13:35:29	CarlBjelksjö	hum det funkar inte från mitt konto
+2021-04-01 13:35:36	CarlBjelksjö	men när jag loggar in som admintestkontot funkar det
+2021-04-01 13:35:43	CarlBjelksjö	kan hon ha ändrat några behörigheter?
+2021-04-01 13:36:37	CarlBjelksjö	fast inte helt och hållet ändå :S
+2021-04-01 13:37:17	CarlBjelksjö	de jag inte kan deleta har svenska tecken i sig
+2021-04-01 13:43:10	JohanManner	Skumt
+2021-04-01 13:43:15	CarlBjelksjö	Jag kunde skriva in 0 toaletter?
+2021-04-01 13:43:38	JohanManner	Jag har inte reviewat några ändringar, så vet inte i detalj vad som är ändrat :)
+2021-04-01 13:44:02	JohanManner	Skumt, jag fick felet ”du måste ange antal toaletter” om jag satte noll :thinking_face:
+2021-04-01 13:45:11	CarlBjelksjö	jag provar från ett vanligt konto också
+2021-04-01 13:46:05	CarlBjelksjö	ok jag får också det meddelandet men jag kan gå vidare
+2021-04-01 13:46:36	CarlBjelksjö	ok inte om jag ändrade till 1 och sen tillbaka till 0
+2021-04-01 13:47:12	JohanManner	Lol
+2021-04-01 13:47:26	JohanManner	Men det är en petitess tycker jag 
+2021-04-01 13:56:15	CarlBjelksjö	jo men lika bra att fixa när vi är på G :slightly_smiling_face:
+2021-04-01 13:56:21	CarlBjelksjö	men deletegrejen är allvarligare
+2021-04-01 13:56:44	CarlBjelksjö	men tack i alla fall :slightly_smiling_face: om du hinner få till autodeployen under helgen så vore det guld värt!
+2021-04-01 13:57:44	JohanManner	Japp, jag ska testa Google Cloud Build för det där istället och se om det är bättre än Azure Pipelines pga Azure har blivit så förbaskat krångligt
+2021-04-01 13:57:57	JohanManner	och när vi ändå har ett Googlekonto så... why not
+2021-04-01 13:58:18	CarlBjelksjö	hehe bra där med tanke på att de egentligen vill bygga det för google från första början :wink:
+2021-04-01 13:58:24	JohanManner	haha oops
+2021-04-01 13:58:34	CarlBjelksjö	men vi sa nej nej Azure är det som gäller
+2021-04-01 13:58:42	JohanManner	jag tänkte att vi fortsätter deploya till Azure, men tar omvägen via Googles bygg-tjänst bara
+2021-04-01 13:58:54	JohanManner	USE ALL THE THINGS
+2021-04-08 13:19:47	CarlBjelksjö	Deploya scoutstuga så fort du kan:-D
+2021-04-12 10:57:51	CarlBjelksjö	Påminner om denna. Sorry för tjat!
+2021-04-12 11:52:38	JohanManner	Just det! Kikar på lunchen. 
+2021-04-12 11:52:38		I en helt orelaterad fråga, har du koll på scoutkårer runt Gnesta?  [:+1:1]
+2021-04-12 11:52:50	JohanManner	Inte Scoutnetkoll alltså, utan koll-koll
+2021-04-12 11:53:14	CarlBjelksjö	ne inte direkt
+2021-04-12 11:53:17	CarlBjelksjö	vadåra
+2021-04-12 11:53:46	JohanManner	Insåg att det är smartare att hyra kanoter nära där de ska användas än nära hemma 
+2021-04-12 11:54:05	CarlBjelksjö	mm
+2021-04-12 11:54:10	CarlBjelksjö	kollat med kanotkungen?
+2021-04-12 11:54:25	JohanManner	Ja, men han är så dyr :sweat_smile:
+2021-04-12 11:54:58	JohanManner	Särskilt när man måste köpa transport etc av honom. 
+2021-04-12 11:55:08	JohanManner	Men det är backupplanen 
+2021-04-12 12:07:13	CarlBjelksjö	ok vi har kört honom många gånger
+2021-04-12 12:07:18	CarlBjelksjö	han är bra
+2021-04-12 12:18:20	JohanManner	Mm: vi har hyrt kajaker via honom några gånger 
+2021-04-13 10:17:28	CarlBjelksjö	hej fattar att du har mycket annat! men det vore toppen om vi kunde deploya för då kan vi lansera och jag kan betala fakturan med bättre koll :wink:
+2021-04-13 11:01:54	JohanManner	Sorry! Mycket på jobb nu... Nu är den deployad :) 
+2021-04-13 11:02:27	CarlBjelksjö	Tack!
+2021-04-13 16:05:20	CarlBjelksjö	Okej då är det ju typ bara att fixa URlen i tre fall sen kan vi ju lansera skarpt.
+2021-04-13 16:05:20		http://scoutstuga.se
+2021-04-13 16:05:20		http://www.scoutstuga.se och
+2021-04-13 16:05:20		https://www.scoutstuga.se
+2021-04-13 16:05:20		Är det något du kan göra kanske om några dagar? :innocent:
+2021-04-13 16:05:20		| Scoutstuga (http://scoutstuga.se/)
+2021-04-13 16:05:20		| Web site created using create-react-app
+2021-04-13 16:05:20		| Scoutstuga (http://www.scoutstuga.se/)
+2021-04-13 16:05:20		| Web site created using create-react-app
+2021-04-16 14:21:27	CarlBjelksjö	Ska vi försöka boka ett möte med ScoutID gänget och försöka få till både scoutstuga men även freshdesk?
+2021-04-26 15:53:30	CarlBjelksjö	Tjena! Är det från ditt konto som azureavgiften dras? ekonomi efterfrågar kvitton
+2021-04-26 15:54:10	JohanManner	Nej, det är antingen Peter eller Gabbi 
+2021-04-26 15:54:26	CarlBjelksjö	alltså ditt microsoftkonto
+2021-04-26 15:54:33	CarlBjelksjö	det är gabbis kort och hon är på krigstigen :stuck_out_tongue:
+2021-04-26 16:52:20	JohanManner	Jahaa 
+2021-04-26 16:52:30	JohanManner	Jag tror inte jag får kvitton 
+2021-04-26 16:52:34	JohanManner	Men jag kan kolla 
+2021-04-26 16:56:46	JohanManner	Kommer du åt https://portal.azure.com/#@scouterna.se/resource/subscriptions/f1831dd3-3713-42ed-997f-d538ecdd960c/invoices (edit: fel länk) (edited)
+2021-04-26 16:57:50	JohanManner	Det ser ut som att vi kan uppdatera både vem som får mail och vem som står som fakturamottagare på fakturan där – jag tror vi ska uppdatera "sold to" så det står Scouterna, och lägga till Gabriellas mail?
+2021-04-26 17:00:31	JohanManner	Vi borde gå igenom vad vi betalar för också, det där ser rätt dyrt ut :S
+2021-05-05 16:32:11	CarlBjelksjö	Hej! Sorry missade att du svarat. Ja jag kan se dem men kan inte ändra det du skriver så om du kunde göra det så vore det bra.
+2021-05-05 16:32:27	CarlBjelksjö	När skulle du kunna ta ett möte och kolla ScoutID?
+2021-05-05 16:44:20	JohanManner	Lade in dig, mig, Peter, och Gabriella som mottagare nu
+2021-05-05 16:44:57	JohanManner	Den här veckan är svår mötesmässigt, har en kanothajk att sno ihop :S 
+2021-05-05 16:45:03	CarlBjelksjö	najs
+2021-05-05 16:45:09	JohanManner	Men måndag eller onsdag i nästa vecka
+2021-05-05 16:45:31	CarlBjelksjö	har du inte hajk då? :stuck_out_tongue:
+2021-05-05 16:45:36	CarlBjelksjö	Men måndag kanske?
+2021-05-05 16:45:54	JohanManner	Very najs! Bortsett från att jag haft ont i halsen sen i förrgår, håller tummarna att mitt coronatest kommer tillbaka negativt och allt går över innan hajken :D 
+2021-05-05 16:46:06	JohanManner	Inte hajk förrän på torsdag :P 
+2021-05-05 16:46:23	JohanManner	Men ja, måndag är nog bäst, ska projektleda att ta ner kanoterna från vinden på onsdag.
+2021-05-05 16:47:31	JohanManner	Eller måndagen efter kristihim, då har jag semester hela dagen och inget att göra :thinking-face: 
+2021-05-05 16:47:48	CarlBjelksjö	frågan är om vi ska bjuda in andra typ Puggan
+2021-05-05 16:47:58	CarlBjelksjö	så kväll eller dagtid?
+2021-05-05 16:48:19	JohanManner	Puggan vore väldigt bra att ha med
+2021-05-05 16:48:39	CarlBjelksjö	säg två tider du kan så kollar vi med honom och resten
+2021-05-05 16:48:45	JohanManner	Kanske Alexander också, han är ju inte så framåt av sig men det han gjort har varit bra
+2021-05-05 16:48:50	CarlBjelksjö	mm
+2021-05-05 16:50:57	JohanManner	Då säger jag klockan 20:30 på måndag den 10/5, alternativt när som helst måndag den 17/5 (dag, kväll, whatever :) )
+2021-05-05 16:51:37	CarlBjelksjö	skippa att bjuda in Sven och Magnus?
+2021-05-05 17:07:50	JohanManner	jag tror vi ska ta ett snack utan dem först
+2021-05-05 17:08:04	JohanManner	Börja från teknikhållet, sen kan vi prata produkt
+2021-05-05 16:47:48	CarlBjelksjö	frågan är om vi ska bjuda in andra typ Puggan
+2021-05-05 16:47:58	CarlBjelksjö	så kväll eller dagtid?
+2021-05-05 16:48:19	JohanManner	Puggan vore väldigt bra att ha med
+2021-05-05 16:48:39	CarlBjelksjö	säg två tider du kan så kollar vi med honom och resten
+2021-05-05 16:48:45	JohanManner	Kanske Alexander också, han är ju inte så framåt av sig men det han gjort har varit bra
+2021-05-05 16:48:50	CarlBjelksjö	mm
+2021-05-05 16:50:57	JohanManner	Då säger jag klockan 20:30 på måndag den 10/5, alternativt när som helst måndag den 17/5 (dag, kväll, whatever :) )
+2021-05-05 16:51:37	CarlBjelksjö	skippa att bjuda in Sven och Magnus?
+2021-05-05 17:07:50	JohanManner	jag tror vi ska ta ett snack utan dem först [:+1:1]
+2021-05-05 17:08:04	JohanManner	Börja från teknikhållet, sen kan vi prata produkt
+2021-05-06 11:45:58	CarlBjelksjö	kan du lägga till mailto:ekonomi@scouterna.se (ekonomi@scouterna.se) som mottagare på Azurekvittona också?
+2021-05-12 11:02:18	CarlBjelksjö	Kankse dags att köpa en sån där säkerhetsnyckel snart
+2021-05-12 11:02:18		https://computersweden.idg.se/2.2683/1.750809/github-tanker-ersatta-losenord-med-sakerhetsnycklar
+2021-05-12 11:02:18		| Github tänker ersätta lösenord med säkerhetsnycklar
+2021-05-12 11:02:18		| Säkerhetsnycklar betraktas som en säkrare och mer lättanvänd lösning och därför ska stödet för lösenord försvinna redan till hösten.
+2021-05-12 11:04:21	CarlBjelksjö	Vilken modell ska jag köpa?
+2021-05-12 11:43:34	JohanManner	En Yubikey, skulle jag säga. De är störst på området. 
+2021-05-12 11:43:34		Antingen https://www.yubico.com/gb/product/yubikey-5-nfc/ om du vill ha en som kan det mesta, eller en https://www.yubico.com/gb/product/security-key-nfc-by-yubico/ om du bara ska ha den för webbtjänster (github, Office 365, …) 
+2021-05-12 11:43:34		| USB-A YubiKey 5 NFC Two Factor Security Key | Yubico
+2021-05-12 11:43:34		| Protect yourself from account takeovers with the efficient, multi-protocol YubiKey 5 NFC. Go passwordless with our NFC capable security key.
+2021-05-12 11:43:34		| https://media.yubico.com/media/catalog/product/cache/6fb58896b78e5caa310f1026ba5cb6c3/5/n/5nfc_hero_2021.png
+2021-05-12 11:43:34		| Security Key NFC by Yubico | Two Factor Security Key | USB-A & NFC
+2021-05-12 11:43:34		| YubiKey 5 NFC is a two-factor security key that authenticates and secures login credentials via USB-A or NFC communication. Its rigid body features water-resistant and crush-resistant characterstics for years of reliable service.
+2021-05-12 11:43:34		| https://media.yubico.com/media/catalog/product/cache/6fb58896b78e5caa310f1026ba5cb6c3/s/k/sky3-nfc-2021-02.png
+2021-05-12 11:44:27	JohanManner	Kanske värt att be Love köpa in ett 100-pack av de blå bara 
+2021-05-12 12:58:51	CarlBjelksjö	tack!
+2021-05-26 21:12:50	CarlBjelksjö	Idé kan man skicka med enheter där man har roller som company också?
+2021-05-26 21:12:56	CarlBjelksjö	T ex regional utvecklingsgrupp
+2021-05-26 21:13:09	CarlBjelksjö	användningsområde kunna styra delar av kunskapsbanken utifrån tillhörighet
+2021-05-27 14:09:15	JohanManner	Möjligt är det säkert 
+2021-05-27 14:09:49	JohanManner	Men jag tror bara vi kan skicka ett ”company” så jag vet inte riktigt hur vi ska välja vilken enhet osv
+2021-05-27 14:10:08	CarlBjelksjö	Ok då skippar vi det :) 
+2021-05-27 14:10:50	JohanManner	Men om de har ett API för att skapa konton i förväg så kan vi synka utvalda användare separat, och lösa behörigheter där kanske :thinking_face:
+2021-05-27 14:16:17	CarlBjelksjö	Det är inget jätteviktigt bara en tanke vi fick igår. Folkhögskolan ska flytta en del manualer för sina kurser till freshdesk
+2021-05-27 14:16:17	CarlBjelksjö	Det är inget jätteviktigt bara en tanke vi fick igår. Folkhögskolan ska flytta en del manualer för sina kurser till freshdesk
+2021-06-08 20:37:21	CarlBjelksjö	Visst är det väl rätt lätt att slänga upp en wiki?
+2021-06-08 20:46:42	JohanManner	Det beror helt på hur mycket man krånglar till det :sweat_smile:
+2021-06-08 20:47:05	JohanManner	Men nej det behöver inte vara så svårt
+2021-06-08 21:22:40	CarlBjelksjö	Ok coolt nej men jag funderade lite. Fick frågan från museet om att deras siter och då tänkte jag om en wiki (med ScoutID naturligtvis!) skulle kunna var en bra lösning för att visa upp bilder,film text etc istället för deras sida som de har idag.
+2021-06-08 21:22:40		Då kanske de kan få till ett samarbete med muséerna i Göteborg och Skåne också så de kan dela wikin.
+2021-06-08 21:22:40		Sen kanske man kan använda 360-kamerorna för att göra den virtuella turen och lägga ut (kanske även på Google maps om man vill vara lite extra galen)
+2021-06-09 19:29:05	JohanManner	Oh, ja de tlåter som en rätt bra ide!
+2021-07-01 20:12:06	CarlBjelksjö	Hej kan du deploya scoutstuga när du har möjlighet? Det vore toppen då vi uppdaterat designen för att likna http://scouterna.se (scouterna.se) mm
+2021-07-06 16:48:04	JohanManner	jag kollar på Scoutstuga nu, medan jag fixar kaffe till scoutid-mötet
+2021-07-09 14:06:08	CarlBjelksjö	Tjena! Kan du deploya scoutstuga igen vi har lite nya uppdateringar! :slightly_smiling_face:
+2021-07-09 14:48:18	JohanManner	Uppdaterat!
+2021-07-09 14:48:26	CarlBjelksjö	grymt tack så mycket
+2021-07-19 13:20:46	CarlBjelksjö	Nu har hon svarat:
+2021-07-19 13:20:46		Hej Carl,
+2021-07-19 13:20:46		 
+2021-07-19 13:20:46		Jag har kollat lite och lagt upp vad jag hoppas ska fixa problemet.
+2021-07-19 13:20:46		Jag måste säga att jag förstår inte riktigt varför det här problemet uppstår nu, då jag inte rört just de filerna sen innan ni deployade sidan med den nya designen.
+2021-07-19 13:20:46		Men eftersom det verkade vara google maps apiet som krånglade så har jag testat att uppdatera detta till deras senaste version. Jag har inte sett några errors på min dator, så jag hoppas att detta ska lösa det även för er när ni deployar.
+2021-07-19 13:20:46		 
+2021-07-19 13:20:46		Säg när ni deployat igen. Om ni fortfarande får problem då kollar jag igen om det är något annat som strular. [ Thread: ac0 Replies: 2 Subscribed ]

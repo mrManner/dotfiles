@@ -1,0 +1,949 @@
+2021-10-13 00:07:45	-->	mrmanner (~jmanner@user/mrmanner) has joined #matrix
+2021-10-13 00:07:45	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Bridged to #matrix:matrix.org (not mirroring membership)"
+2021-10-13 00:07:45	--	Topic set by halfy_ (~halfy@goodboy/halfy) on mån, 14 jun 2021 14:36:44
+2021-10-13 00:07:46	--	Channel #matrix: 1023 nicks (1 op, 0 voices, 1022 normals)
+2021-10-13 00:07:47	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-13 00:13:01	<--	d76d5436757 (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has quit (Quit: Bye)
+2021-10-13 00:13:30	-->	d76d5436757 (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has joined #matrix
+2021-10-13 00:15:19	<--	progandy (~progandy@user/progandy) has quit (Ping timeout: 252 seconds)
+2021-10-13 00:20:37	-->	RickSanc_ (~RickSanch@2607:fb90:88df:af6:d8c8:d91f:a344:f108) has joined #matrix
+2021-10-13 00:21:50	-->	RickSan__ (~RickSanch@2607:fb90:88df:af6:6933:301f:92c9:b455) has joined #matrix
+2021-10-13 00:24:19	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:ed43:d015:c215:2b4c) has joined #matrix
+2021-10-13 00:24:58	-->	charhillmilf[m] (~charhillm@2001:470:69fc:105::1:17ee) has joined #matrix
+2021-10-13 00:25:31	<--	RickSanc_ (~RickSanch@2607:fb90:88df:af6:d8c8:d91f:a344:f108) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:25:56	<--	RickSan__ (~RickSanch@2607:fb90:88df:af6:6933:301f:92c9:b455) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:28:26	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:ed43:d015:c215:2b4c) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:29:12	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:d1fb:86cb:fc5:57a2) has joined #matrix
+2021-10-13 00:29:56	<--	unlaudable (~unlaudabl@155.93.175.230) has quit (Ping timeout: 256 seconds)
+2021-10-13 00:33:19	-->	RickSanc_ (~RickSanch@2607:fb90:88df:af6:7c96:4bc7:a0c3:2df0) has joined #matrix
+2021-10-13 00:34:41	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:d1fb:86cb:fc5:57a2) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:35:56	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:1404:6932:1e56:41ea) has joined #matrix
+2021-10-13 00:36:31	-->	Jaxx (~Jaxx@user/jaxx) has joined #matrix
+2021-10-13 00:37:09	-->	analbleeding (b9bf7c8f@67.205.143.82) has joined #matrix
+2021-10-13 00:38:01	<--	RickSanc_ (~RickSanch@2607:fb90:88df:af6:7c96:4bc7:a0c3:2df0) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:38:28	-->	RickSanc_ (~RickSanch@2607:fb90:88df:af6:c884:77db:4d5e:a88c) has joined #matrix
+2021-10-13 00:40:34	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:1404:6932:1e56:41ea) has quit (Ping timeout: 260 seconds)
+2021-10-13 00:40:56	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:e4f7:3715:4eb3:c4e6) has joined #matrix
+2021-10-13 00:41:37	--	irc: disconnected from server
+2021-10-13 00:42:01	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #matrix
+2021-10-13 00:42:01	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Bridged to #matrix:matrix.org (not mirroring membership)"
+2021-10-13 00:42:01	--	Topic set by halfy_ (~halfy@goodboy/halfy) on mån, 14 jun 2021 14:36:44
+2021-10-13 00:42:01	--	Channel #matrix: 1026 nicks (1 op, 0 voices, 1025 normals)
+2021-10-13 00:42:06	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-13 00:42:36	<--	RickSanc_ (~RickSanch@2607:fb90:88df:af6:c884:77db:4d5e:a88c) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:45:42	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:e4f7:3715:4eb3:c4e6) has quit (Ping timeout: 260 seconds)
+2021-10-13 00:45:47	-->	RickSan__ (~RickSanch@2607:fb90:88df:af6:d0db:d28b:3f63:4c2d) has joined #matrix
+2021-10-13 00:46:21	<--	analbleeding (b9bf7c8f@67.205.143.82) has left #matrix (The Lounge - https://thelounge.chat)
+2021-10-13 00:46:52	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:f9ac:9600:181e:4d7d) has joined #matrix
+2021-10-13 00:49:09	-->	RickSanc_ (~RickSanch@2607:fb90:88df:af6:b0e5:c092:92ef:f472) has joined #matrix
+2021-10-13 00:51:36	<--	RickSan__ (~RickSanch@2607:fb90:88df:af6:d0db:d28b:3f63:4c2d) has quit (Ping timeout: 260 seconds)
+2021-10-13 00:51:36	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:f9ac:9600:181e:4d7d) has quit (Ping timeout: 260 seconds)
+2021-10-13 00:51:36	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:64c3:982d:810b:47ae) has joined #matrix
+2021-10-13 00:53:38	<--	RickSanc_ (~RickSanch@2607:fb90:88df:af6:b0e5:c092:92ef:f472) has quit (Ping timeout: 260 seconds)
+2021-10-13 00:54:49	-->	RickSanc_ (~RickSanch@2607:fb90:88df:af6:a44d:327c:ef0b:75df) has joined #matrix
+2021-10-13 00:54:52	<--	LjL (~ljl@user/ljl) has quit (Ping timeout: 252 seconds)
+2021-10-13 00:55:58	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:64c3:982d:810b:47ae) has quit (Ping timeout: 260 seconds)
+2021-10-13 00:57:14	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:616c:efc4:aba5:649e) has joined #matrix
+2021-10-13 00:59:26	-->	RickSan__ (~RickSanch@2607:fb90:88df:af6:244a:4c9d:f257:af18) has joined #matrix
+2021-10-13 00:59:41	<--	RickSanc_ (~RickSanch@2607:fb90:88df:af6:a44d:327c:ef0b:75df) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:00:36	-->	RickSanc_ (~RickSanch@2607:fb90:88df:af6:ddcf:1be1:273e:860) has joined #matrix
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:01:21	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:616c:efc4:aba5:649e) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:02:23	-->	CodePoint (~CodePoint@2600:1700:3070:3790:cced:c365:caec:cb99) has joined #matrix
+2021-10-13 01:03:27	-->	RickSa___ (~RickSanch@2607:fb90:88df:af6:8cc:1bf5:2f47:8c9d) has joined #matrix
+2021-10-13 01:04:10	<--	Quack (~Quack@185.21.216.169) has quit (Ping timeout: 265 seconds)
+2021-10-13 01:04:16	<--	RickSan__ (~RickSanch@2607:fb90:88df:af6:244a:4c9d:f257:af18) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:04:41	<--	RickSanc_ (~RickSanch@2607:fb90:88df:af6:ddcf:1be1:273e:860) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:05:24	-->	RickSanc_ (~RickSanch@2607:fb90:88df:af6:5575:d736:4e51:d7ab) has joined #matrix
+2021-10-13 01:05:27	-->	LjL (~ljl@user/ljl) has joined #matrix
+2021-10-13 01:06:19	-->	Quack (~Quack@185.21.216.169) has joined #matrix
+2021-10-13 01:06:23	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:6502:da42:f8f7:ead4) has joined #matrix
+2021-10-13 01:07:36	<--	RickSa___ (~RickSanch@2607:fb90:88df:af6:8cc:1bf5:2f47:8c9d) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:09:41	<--	RickSanc_ (~RickSanch@2607:fb90:88df:af6:5575:d736:4e51:d7ab) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:10:11	-->	RickSanc_ (~RickSanch@2607:fb90:88df:af6:cea:6be:1390:a99f) has joined #matrix
+2021-10-13 01:10:31	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:6502:da42:f8f7:ead4) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:10:54	<--	TheSilentLink (~TheSilent@user/thesilentlink) has quit (Ping timeout: 260 seconds)
+2021-10-13 01:11:26	-->	TheSilentLink (~TheSilent@user/thesilentlink) has joined #matrix
+2021-10-13 01:11:53	<--	peterdwall[m] (~peterdwal@2001:470:69fc:105::1:16f2) has left #matrix
+2021-10-13 01:13:48	-->	mackness[m] (~macknessm@2001:470:69fc:105::1:17f4) has joined #matrix
+2021-10-13 01:14:38	<--	RickSanc_ (~RickSanch@2607:fb90:88df:af6:cea:6be:1390:a99f) has quit (Ping timeout: 260 seconds)
+2021-10-13 01:16:22	-->	dan010595[m] (~dan010595@2001:470:69fc:105::1:17f6) has joined #matrix
+2021-10-13 01:17:50	--	dan010595[m] is now known as wahzo[m]
+2021-10-13 01:21:05	-->	simon[m]123456 (~simonsmnz@2001:470:69fc:105::1:17f7) has joined #matrix
+2021-10-13 01:21:11	-->	ygrittetully2526 (~ygrittetu@2001:470:69fc:105::1:17f8) has joined #matrix
+2021-10-13 01:31:21	-->	CodePoint_ (~CodePoint@107-208-128-79.lightspeed.tukrga.sbcglobal.net) has joined #matrix
+2021-10-13 01:34:16	<--	CodePoint (~CodePoint@2600:1700:3070:3790:cced:c365:caec:cb99) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:36:21	<--	CodePoint_ (~CodePoint@107-208-128-79.lightspeed.tukrga.sbcglobal.net) has quit (Quit: CodePoint_)
+2021-10-13 01:36:58	<--	Epsilon (~Epsilon@user/epsilon) has quit (Remote host closed the connection)
+2021-10-13 01:37:34	-->	Epsilon (~Epsilon@user/epsilon) has joined #matrix
+2021-10-13 01:45:00	-->	astronomerayaan6 (~astronome@2001:470:69fc:105::1:17fa) has joined #matrix
+2021-10-13 01:45:01	astronomerayaan6	if i change display name will my username stay the same
+2021-10-13 01:47:28	astronomerayaan6	* display name, will, * the same?
+2021-10-13 01:50:58	ilmari[m]	<astronomerayaan6> "if i change display name will my..." <- yes, the username is immutable
+2021-10-13 01:51:21	-->	PantelicGR (~PantelicG@user/pantelicgr) has joined #matrix
+2021-10-13 01:51:23	astronomerayaan6	ilmari[m]: Ok, thanks.
+2021-10-13 02:08:41	-->	VinciusVieira[m] (~viniciusp@2001:470:69fc:105::1:17fc) has joined #matrix
+2021-10-13 02:10:38	-->	spsbb[m] (~xmppspsbb@2001:470:69fc:105::1:15ac) has joined #matrix
+2021-10-13 02:13:59	<--	charhillmilf[m] (~charhillm@2001:470:69fc:105::1:17ee) has left #matrix
+2021-10-13 02:15:26	-->	secrety[m] (~secretyma@2001:470:69fc:105::1:17fd) has joined #matrix
+2021-10-13 02:16:14	secrety[m]	Hi
+2021-10-13 02:22:52	-->	jakaya[m] (~jakayamat@2001:470:69fc:105::81f0) has joined #matrix
+2021-10-13 02:23:44	-->	rekkzy[m] (~rekkzymat@2001:470:69fc:105::c61b) has joined #matrix
+2021-10-13 02:27:32	<--	unmanbearpig (~unmanbear@user/unmanbearpig) has quit (Remote host closed the connection)
+2021-10-13 02:27:55	-->	unmanbearpig (~unmanbear@user/unmanbearpig) has joined #matrix
+2021-10-13 02:28:41	-->	ami-[m] (~ami-matri@2001:470:69fc:105::f3f2) has joined #matrix
+2021-10-13 02:33:30	<--	LuKaRo (~LuKaRo@p4fc3226e.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2021-10-13 02:35:49	-->	LuKaRo (~LuKaRo@p57b15e22.dip0.t-ipconnect.de) has joined #matrix
+2021-10-13 02:39:56	-->	Donnie_Fly (~Donnie_Fl@host-92-22-33-246.as13285.net) has joined #matrix
+2021-10-13 02:43:47	<--	Donnie_Fly (~Donnie_Fl@host-92-22-33-246.as13285.net) has quit (Quit: Quit)
+2021-10-13 02:45:41	<--	ur5us (~ur5us@2406:e002:6c21:1b01:1d94:5568:cc90:9ee2) has quit (Ping timeout: 264 seconds)
+2021-10-13 02:49:58	-->	ur5us (~ur5us@2406:e002:6c21:1b01:ce4e:6cc3:39c7:6cf2) has joined #matrix
+2021-10-13 02:52:59	j1m6h[m]	hi
+2021-10-13 02:53:49	<--	TReKiE (activetrek@trexion.com) has quit (Quit: Leaving)
+2021-10-13 03:08:52	<--	PantelicGR (~PantelicG@user/pantelicgr) has quit (Quit: Leaving)
+2021-10-13 03:10:43	-->	TReKiE (activetrek@trexion.com) has joined #matrix
+2021-10-13 03:13:01	astronomerayaan6	hello
+2021-10-13 03:14:02	Nyaaori[PTF]	hi
+2021-10-13 03:24:45	-->	visionman06[m] (~visionman@2001:470:69fc:105::1:1802) has joined #matrix
+2021-10-13 03:25:34	visionman06[m]	Hello to all
+2021-10-13 03:26:44	visionman06[m]	I’m completely lost 🤨
+2021-10-13 03:34:04	M710libre[m]	<visionman06[m]> "I’m completely lost 🤨" <- what are you lost about? 
+2021-10-13 03:34:53	Nyaaori[PTF]	🤔
+2021-10-13 03:39:32	visionman06[m]	Everything, its only 3 weeks that i start and I follow the instructions but don’t understand if it’s to get more access to pages or if I’m totally wrong 😅
+2021-10-13 04:10:07	-->	bybybaby[m] (~bybybabym@2001:470:69fc:105::1:1809) has joined #matrix
+2021-10-13 04:11:24	--	bybybaby[m] is now known as JoeCommon[m]
+2021-10-13 04:17:41	-->	ivanchenkos[m] (~ivanchenk@2001:470:69fc:105::1:180a) has joined #matrix
+2021-10-13 04:19:49	ivanchenkos[m]	Hello, can i use matrix to avoid NAT? Make some app like garena or hamachi
+2021-10-13 04:20:51	Nyaaori[PTF]	ivanchenkos[m]: you're probably looking for something like Yggdrasil 
+2021-10-13 04:21:20	Nyaaori[PTF]	https://yggdrasil-network.github.io/
+2021-10-13 04:24:37	M710libre[m]	<visionman06[m]> "Everything, its only 3 weeks..." <- by pages do you mean matrix 'rooms'? if so i think we can help you out
+2021-10-13 04:25:36	ivanchenkos[m]	Nyaaori[PTF]: Ty
+2021-10-13 04:28:23	M710libre[m]	visionman06: what client are you using? and what room(s) are you trying to access?
+2021-10-13 04:30:50	visionman06[m]	Client ? Sorry but I m not use with all the terms. I will give a example “legit bank note” it exist ?
+2021-10-13 04:32:06	 *	visionman06[m] uploaded an audio file: (4KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/zsEZIEyrGEAMXypPwBBbeOFv/Voice%20message-!OGEhHVWSdvArJzumhm%3Amatrix.org.ogg >
+2021-10-13 04:38:33	-->	metamus[m] (~metamusma@2001:470:69fc:105::1:180b) has joined #matrix
+2021-10-13 04:47:15	<--	kts (~kts@103.73.237.146) has quit (Ping timeout: 268 seconds)
+2021-10-13 05:00:45	astronomerayaan6	<visionman06[m]> "Client ? Sorry but I m not use..." <- https://matrix.org/clients/
+2021-10-13 05:01:49	<--	metamus[m] (~metamusma@2001:470:69fc:105::1:180b) has left #matrix
+2021-10-13 05:03:04	<--	akimbo (~akimbo@customer-145-40-27-9.stosn.net) has quit (Remote host closed the connection)
+2021-10-13 05:04:43	-->	akimbo (~akimbo@customer-145-40-27-9.stosn.net) has joined #matrix
+2021-10-13 05:09:18	-->	asosnovsky[m] (~asosnovsk@2001:470:69fc:105::1:180f) has joined #matrix
+2021-10-13 05:14:22	-->	GeraldS[m] (~geraldree@2001:470:69fc:105::1:1810) has joined #matrix
+2021-10-13 05:38:54	<--	promeys (~Promeys@gateway/tor-sasl/promey) has quit (Ping timeout: 276 seconds)
+2021-10-13 05:42:24	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:2d4a:81f0:cccd:9877) has joined #matrix
+2021-10-13 05:45:29	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:2d4a:81f0:cccd:9877) has quit (Remote host closed the connection)
+2021-10-13 05:46:02	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:2d4a:81f0:cccd:9877) has joined #matrix
+2021-10-13 05:49:53	-->	das[m] (~dahinimat@2001:470:69fc:105::1:1815) has joined #matrix
+2021-10-13 05:50:05	-->	yeocol[m] (~yeocolmat@2001:470:69fc:105::1:1816) has joined #matrix
+2021-10-13 05:50:49	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:2d4a:81f0:cccd:9877) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:51:08	yeocol[m]	Hi. How secure is Matrix compared to Signal for example? I find that decentralized network really interesting.
+2021-10-13 05:51:34	-->	progandy (~progandy@user/progandy) has joined #matrix
+2021-10-13 05:56:52	-->	orlenabrahear[m] (~orlenabra@2001:470:69fc:105::1:181c) has joined #matrix
+2021-10-13 05:56:52	-->	merciedebra[m] (~merciedeb@2001:470:69fc:105::1:181a) has joined #matrix
+2021-10-13 05:56:52	-->	arlinelamori[m] (~arlinelam@2001:470:69fc:105::1:1821) has joined #matrix
+2021-10-13 05:56:52	-->	grohjudas[m] (~grohjudas@2001:470:69fc:105::1:181b) has joined #matrix
+2021-10-13 05:56:52	-->	valeramchail[m] (~valeramch@2001:470:69fc:105::1:181f) has joined #matrix
+2021-10-13 05:56:52	-->	squirevassell[m] (~squirevas@2001:470:69fc:105::1:181e) has joined #matrix
+2021-10-13 05:56:52	-->	murrycolville[m] (~murrycolv@2001:470:69fc:105::1:1819) has joined #matrix
+2021-10-13 05:56:52	-->	mahmoudconni[m] (~mahmoudco@2001:470:69fc:105::1:181d) has joined #matrix
+2021-10-13 05:56:52	-->	crescentiamelisa (~crescenti@2001:470:69fc:105::1:1822) has joined #matrix
+2021-10-13 05:56:52	-->	anglostrain[m] (~anglostra@2001:470:69fc:105::1:1820) has joined #matrix
+2021-10-13 05:56:52	-->	ibbykort[m] (~ibbykortr@2001:470:69fc:105::1:1818) has joined #matrix
+2021-10-13 05:56:52	-->	maximilianantoni (~maximilia@2001:470:69fc:105::1:1823) has joined #matrix
+2021-10-13 05:56:52	-->	dodgeseen[m] (~dodgeseen@2001:470:69fc:105::1:1825) has joined #matrix
+2021-10-13 05:56:52	-->	ryonivon[m] (~ryonivonr@2001:470:69fc:105::1:1826) has joined #matrix
+2021-10-13 05:56:52	-->	angusbarnum[m] (~angusbarn@2001:470:69fc:105::1:1824) has joined #matrix
+2021-10-13 06:01:19	-->	albrightwiles[m] (~albrightw@2001:470:69fc:105::1:1828) has joined #matrix
+2021-10-13 06:02:06	<--	progandy (~progandy@user/progandy) has quit (Quit: No Ping reply in 180 seconds.)
+2021-10-13 06:02:44	-->	progandy (~progandy@user/progandy) has joined #matrix
+2021-10-13 06:05:15	-->	yatesgwenn[m] (~yatesgwen@2001:470:69fc:105::1:1829) has joined #matrix
+2021-10-13 06:06:23	-->	alversonmcmahon[ (~alversonm@2001:470:69fc:105::1:182a) has joined #matrix
+2021-10-13 06:07:00	-->	donelurudyard[m] (~donelurud@2001:470:69fc:105::1:182b) has joined #matrix
+2021-10-13 06:07:37	-->	tenneywhite[m] (~tenneywhi@2001:470:69fc:105::1:182c) has joined #matrix
+2021-10-13 06:08:32	-->	lamarburgess[m] (~lamarburg@2001:470:69fc:105::1:182d) has joined #matrix
+2021-10-13 06:09:09	-->	buddinggoldfinch (~buddinggo@2001:470:69fc:105::1:182e) has joined #matrix
+2021-10-13 06:09:19	Nyaaori[PTF]	yeocol[m]: the end to end encryption system is fairly similar 
+2021-10-13 06:09:56	j1m6h[m]	Probably more secure considering it's decentralized. 
+2021-10-13 06:10:26	j1m6h[m]	Well I know in private messages only you and the receiver are the only ones who can see the messages. Because everything is end to end encrypted.
+2021-10-13 06:10:26	yeocol[m]	I like the idea to not have a specific service as my messaging solution but a network which can accept any app
+2021-10-13 06:10:26	yeocol[m]	j1m6h I'm not an expert in data security but how / where are all the uploaded images / files stored? And could anyone somehow open/see stuff I send on here when it's decentralized?
+2021-10-13 06:12:45	M710libre[m]	<yeocol[m]> "I like the idea to not have a..." <- same that's why i'm using it.
+2021-10-13 06:14:26	<--	progandy (~progandy@user/progandy) has quit (Ping timeout: 246 seconds)
+2021-10-13 06:25:35	-->	lucasoc[m] (~lucasocma@2001:470:69fc:105::1:1831) has joined #matrix
+2021-10-13 06:27:46	<--	ur5us (~ur5us@2406:e002:6c21:1b01:ce4e:6cc3:39c7:6cf2) has quit (Ping timeout: 260 seconds)
+2021-10-13 06:36:31	<--	yanmaani (~yanmaani@gateway/tor-sasl/yanmaani) has quit (Remote host closed the connection)
+2021-10-13 06:37:14	-->	yanmaani (~yanmaani@gateway/tor-sasl/yanmaani) has joined #matrix
+2021-10-13 06:51:49	<--	mapu (~Mapu@c-73-167-238-214.hsd1.ma.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 06:52:28	-->	mapu_ (~Mapu@c-73-167-238-214.hsd1.ma.comcast.net) has joined #matrix
+2021-10-13 06:53:16	-->	xxx_obamakazi420 (~xxxobamak@2001:470:69fc:105::1:1832) has joined #matrix
+2021-10-13 06:54:57	-->	vaginaldischarge (b9dc66f8@67.205.143.82) has joined #matrix
+2021-10-13 06:59:34	penguinbot[m]	Does it work with the fedivers?
+2021-10-13 07:00:35	-->	Viscometer_ (~quassel@195.216.219.146) has joined #matrix
+2021-10-13 07:00:36	vaginaldischarge	penguinbot[m]: how are you?
+2021-10-13 07:00:48	Nickli	penguinbot[m], matrix is not part of the fediverse
+2021-10-13 07:01:21	<--	Viscometer (~quassel@195.216.219.56) has quit (Ping timeout: 265 seconds)
+2021-10-13 07:05:52	-->	LordRishav (~LordRisha@user/lordrishav) has joined #matrix
+2021-10-13 07:07:17	<--	MatrixAbuseMod has kicked vaginaldischarge (Kicked by @abuse:matrix.org : inappropriate profile for this community)
+2021-10-13 07:11:08	Nickli	penguinbot[m], it is just federated, there seems to be a bridge for mastodon tho https://matrix.org/bridges/#mastodon
+2021-10-13 07:19:34	-->	EnchanterTim (~weechat@thestonedapes.com) has joined #matrix
+2021-10-13 07:21:31	<--	AlexKalopsia (~alexkalop@2-248-76-22-no182.tbcn.telia.com) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:21:46	<--	LordRishav (~LordRisha@user/lordrishav) has left #matrix (Ight Imma head out)
+2021-10-13 07:25:48	-->	john_tu[m] (~johntumat@2001:470:69fc:105::1:1834) has joined #matrix
+2021-10-13 07:28:49	-->	AlexKalopsia (~alexkalop@2-248-76-22-no182.tbcn.telia.com) has joined #matrix
+2021-10-13 07:36:46	<--	Umbire (~UmbireThe@user/umbire) has quit (Ping timeout: 265 seconds)
+2021-10-13 07:52:54	-->	potatocat[m] (~potatocat@2001:470:69fc:105::1:1838) has joined #matrix
+2021-10-13 07:56:47	-->	tiz143[m] (~tiz143mat@2001:470:69fc:105::1:1839) has joined #matrix
+2021-10-13 07:57:39	<--	tiz143[m] (~tiz143mat@2001:470:69fc:105::1:1839) has left #matrix
+2021-10-13 08:13:51	-->	RickSanchez (~RickSanch@2607:fb90:88df:af6:2d4a:81f0:cccd:9877) has joined #matrix
+2021-10-13 08:17:01	-->	Umbire (~UmbireThe@user/umbire) has joined #matrix
+2021-10-13 08:18:50	<--	RickSanchez (~RickSanch@2607:fb90:88df:af6:2d4a:81f0:cccd:9877) has quit (Ping timeout: 260 seconds)
+2021-10-13 08:19:29	<--	vurpo (~vurpohack@2001:470:69fc:105::789) has left #matrix
+2021-10-13 08:25:28	<--	yanmaani (~yanmaani@gateway/tor-sasl/yanmaani) has quit (Remote host closed the connection)
+2021-10-13 08:26:08	-->	yanmaani (~yanmaani@gateway/tor-sasl/yanmaani) has joined #matrix
+2021-10-13 08:29:13	-->	KoitVilbas[m] (~koitvilba@2001:470:69fc:105::1:183c) has joined #matrix
+2021-10-13 08:40:57	<--	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has quit (Remote host closed the connection)
+2021-10-13 08:41:21	<--	Umbire (~UmbireThe@user/umbire) has quit (Ping timeout: 245 seconds)
+2021-10-13 21:22:51	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:17	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #matrix
+2021-10-13 21:23:17	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Bridged to #matrix:matrix.org (not mirroring membership)"
+2021-10-13 21:23:17	--	Topic set by halfy_ (~halfy@goodboy/halfy) on mån, 14 jun 2021 14:36:44
+2021-10-13 21:23:17	--	Channel #matrix: 301 nicks (1 op, 0 voices, 300 normals)
+2021-10-13 21:23:24	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-13 21:32:12	MateusRodCosta[m	<moritzdietz[m]> "Or a final message before you..." <- Already did that a while ago
+2021-10-13 21:32:46	moritzdietz[m]	Gotcha
+2021-10-13 21:34:26	-->	BotNet[m] (~botnetuse@2001:470:69fc:105::fe84) has joined #matrix
+2021-10-13 21:34:53	-->	joseluismaldonad (~joseluism@2001:470:69fc:105::1:1905) has joined #matrix
+2021-10-13 21:41:21	-->	RickSanchez (~RickSanch@2607:fb90:ba8a:f0de:7d39:56ae:9527:6465) has joined #matrix
+2021-10-13 21:43:55	<--	___nick___ (~quassel@cpc68286-cdif17-2-0-cust533.5-1.cable.virginm.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:46:57	<--	RickSanchez (~RickSanch@2607:fb90:ba8a:f0de:7d39:56ae:9527:6465) has quit (Ping timeout: 265 seconds)
+2021-10-13 21:57:05	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Remote host closed the connection)
+2021-10-13 21:57:15	-->	milkt_ (~debian@gateway/tor-sasl/milkt) has joined #matrix
+2021-10-13 21:57:58	<--	wowi4242 (~wowi42@5.30.23.58) has quit (Quit: WeeChat 3.2)
+2021-10-13 22:00:39	-->	jdmark (~jdmark@097-102-095-007.res.spectrum.com) has joined #matrix
+2021-10-13 22:00:49	jdmark	how do i join an irc channel using a bridge?
+2021-10-13 22:02:21	-->	unlaudable (~unlaudabl@155.93.175.230) has joined #matrix
+2021-10-13 22:03:33	-->	yanmaani (~yanmaani@gateway/tor-sasl/yanmaani) has joined #matrix
+2021-10-13 22:09:11	-->	brian_ (~brianc@46.7.105.181) has joined #matrix
+2021-10-13 22:11:57	<--	brian__ (~brianc@access.iptel.co) has quit (Ping timeout: 265 seconds)
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:31	-->	mrmanner (~jmanner@185.224.57.161) has joined #matrix
+2021-10-16 12:32:31	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Bridged to #matrix:matrix.org (not mirroring membership)"
+2021-10-16 12:32:31	--	Topic set by halfy_ (~halfy@goodboy/halfy) on mån, 14 jun 2021 14:36:44
+2021-10-16 12:32:31	--	Channel #matrix: 397 nicks (1 op, 0 voices, 396 normals)
+2021-10-16 12:32:38	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-16 12:32:51	<--	Atque (~Atque@user/atque) has quit (Ping timeout: 276 seconds)
+2021-10-16 12:37:44	darkismark[m]	x
+2021-10-16 12:37:48	darkismark[m]	x
+2021-10-16 13:01:09	-->	maromau (~mauro@151.62.228.166) has joined #matrix
+2021-10-16 13:07:39	-->	joseangel[m] (~joseangel@2001:470:69fc:105::1:1aaa) has joined #matrix
+2021-10-16 13:16:42	<--	joseangel[m] (~joseangel@2001:470:69fc:105::1:1aaa) has left #matrix
+2021-10-17 18:14:37	-->	jmanner (~jmanner@185.224.57.161) has joined #matrix
+2021-10-17 18:14:37	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/"
+2021-10-17 18:14:37	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on lör, 16 okt 2021 22:03:36
+2021-10-17 18:14:37	--	Channel #matrix: 509 nicks (1 op, 0 voices, 508 normals)
+2021-10-17 18:14:41	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-17 18:17:32	-->	heavy-mt[m] (~heavy-mtm@2001:470:69fc:105::1:1c48) has joined #matrix
+2021-10-17 18:19:01	-->	jmanner (~jmanner@user/mrmanner) has joined #matrix
+2021-10-17 18:19:01	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/"
+2021-10-17 18:19:01	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on lör, 16 okt 2021 22:03:36
+2021-10-17 18:19:01	--	Channel #matrix: 510 nicks (1 op, 0 voices, 509 normals)
+2021-10-17 18:19:07	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-17 18:21:33	-->	Foxyloxy_ (~foxyloxy@cpc151593-shef16-2-0-cust343.17-1.cable.virginm.net) has joined #matrix
+2021-10-17 18:23:01	<--	Foxyloxy (~foxyloxy@cpc151593-shef16-2-0-cust343.17-1.cable.virginm.net) has quit (Ping timeout: 245 seconds)
+2021-10-17 18:30:33	-->	jmanner (~jmanner@user/mrmanner) has joined #matrix
+2021-10-17 18:30:33	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/"
+2021-10-17 18:30:33	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on lör, 16 okt 2021 22:03:36
+2021-10-17 18:30:35	--	Channel #matrix: 510 nicks (1 op, 0 voices, 509 normals)
+2021-10-17 18:30:39	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:40:34	-->	EdwinproKing[m] (~edwinprok@2001:470:69fc:105::1:1c4c) has joined #matrix
+2021-10-17 18:40:41	-->	clarjon1 (~clarjon1@user/clarjon1) has joined #matrix
+2021-10-17 18:41:04	<--	EdwinproKing[m] (~edwinprok@2001:470:69fc:105::1:1c4c) has left #matrix
+2021-10-17 18:46:41	-->	op2 (~op@user/op2) has joined #matrix
+2021-10-17 18:50:32	<--	Mikaela (~sid12355@Feneas/Mikaela) has quit (Remote host closed the connection)
+2021-10-17 18:51:26	-->	Mikaela (~sid12355@Feneas/Mikaela) has joined #matrix
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:42	-->	mrmanner (~jmanner@user/mrmanner) has joined #matrix
+2021-10-17 19:45:42	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/"
+2021-10-17 19:45:42	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on lör, 16 okt 2021 22:03:36
+2021-10-17 19:45:42	--	Channel #matrix: 512 nicks (1 op, 0 voices, 511 normals)
+2021-10-17 19:45:45	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-17 19:45:56	-->	solxia[m] (~solxiamat@2001:470:69fc:105::1:1c56) has joined #matrix
+2021-10-17 19:48:08	--	solxia[m] is now known as Sol[m]
+2021-10-17 19:48:47	-->	pj_connect[m] (~pjconnect@2001:470:69fc:105::1:1c57) has joined #matrix
+2021-10-17 19:51:16	--	pj_connect[m] is now known as soundwave[m]
+2021-10-17 19:56:16	-->	douglascorrea_io (~douglasco@200.146.85.128.static.gvt.net.br) has joined #matrix
+2021-10-17 19:58:01	<--	mugandis[m] (~mugandism@2001:470:69fc:105::1:1b36) has left #matrix
+2021-10-17 20:02:12	<--	larry87 (~quassel@2601:2c7:4280:17a0::b85e) has quit (Ping timeout: 264 seconds)
+2021-10-17 20:27:24	-->	kulogix[m] (~kulogixma@2001:470:69fc:105::1:1c5b) has joined #matrix
+2021-10-17 20:39:43	-->	Umbire (~UmbireThe@user/umbire) has joined #matrix
+2021-10-17 20:44:36	-->	Da_MeateistBDDJo (~rhomier89@2001:470:69fc:105::1:1c5f) has joined #matrix
+2021-10-17 20:45:47	<--	cornyst (~SFMF@ool-4353cb8b.dyn.optonline.net) has quit (Quit: ChatZilla 0.9.92-rdmsoft [XULRunner 35.0.1/20150122214805])
+2021-10-17 20:47:02	-->	js9t[m] (~js9tmatri@2001:470:69fc:105::1:1c60) has joined #matrix
+2021-10-17 20:47:11	<--	mniip (mniip@libera/staff/mniip) has quit (Ping timeout: 624 seconds)
+2021-10-17 20:47:18	<--	op2 (~op@user/op2) has quit (Remote host closed the connection)
+2021-10-17 20:49:12	<--	js9t[m] (~js9tmatri@2001:470:69fc:105::1:1c60) has left #matrix
+2021-10-17 20:58:01	-->	mniip (mniip@libera/staff/mniip) has joined #matrix
+2021-10-17 20:58:37	-->	fkejck[m] (~fakejockm@2001:470:69fc:105::1:1c63) has joined #matrix
+2021-10-17 21:07:07	<--	heavy-mt[m] (~heavy-mtm@2001:470:69fc:105::1:1c48) has left #matrix
+2021-10-17 21:13:09	-->	progandy (~progandy@user/progandy) has joined #matrix
+2021-10-30 12:09:23	-->	jmanner (~jmanner@user/mrmanner) has joined #matrix
+2021-10-30 12:09:23	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-10-30 12:09:23	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:45
+2021-10-30 12:09:24	--	Channel #matrix: 1500 nicks (1 op, 0 voices, 1499 normals)
+2021-10-30 12:09:28	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-30 12:10:53	-->	jmanner (~jmanner@user/mrmanner) has joined #matrix
+2021-10-30 12:10:53	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-10-30 12:10:53	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:45
+2021-10-30 12:10:54	--	Channel #matrix: 1500 nicks (1 op, 0 voices, 1499 normals)
+2021-10-30 12:10:58	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:14:40	<--	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has quit (Remote host closed the connection)
+2021-10-30 12:18:55	-->	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has joined #matrix
+2021-10-30 12:20:01	-->	JisminShaju[m] (~mistresso@2001:470:69fc:105::1:275e) has joined #matrix
+2021-10-30 12:21:07	<--	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has quit (Max SendQ exceeded)
+2021-10-30 12:21:29	-->	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has joined #matrix
+2021-10-30 12:26:52	-->	MrLemon[m] (~mrlemonma@2001:470:69fc:105::1:2761) has joined #matrix
+2021-10-30 12:29:29	<--	triad (~triad@user/triad) has quit (Ping timeout: 264 seconds)
+2021-10-30 12:30:36	<--	kirk781 (~doors_1@2402:3a80:11fe:7714:3da9:9c89:b871:dd4b) has quit (Quit: Leaving)
+2021-10-30 12:30:39	-->	tech_exorcist (txrcst@user/tech-exorcist/x-0447479) has joined #matrix
+2021-10-30 12:35:27	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #matrix
+2021-10-30 12:42:18	BenjaminKeyLaude	🤣
+2021-10-30 12:42:18	BenjaminKeyLaude	https://youtu.be/NFgAELRQ5M0
+2021-10-30 12:44:34	<--	BenjaminKeyLaude (~microsoft@2001:470:69fc:105::1:2758) has left #matrix
+2021-10-30 12:56:13	-->	cy78treIlw2reewe (~cy78trell@2001:470:69fc:105::1:2762) has joined #matrix
+2021-10-30 12:57:12	-->	bogbrush[m] (~bogbrushm@2001:470:69fc:105::1:275d) has joined #matrix
+2021-10-30 13:01:43	<--	Guest2433 (~brianc@46.7.105.181) has quit (Read error: No route to host)
+2021-10-30 13:02:11	-->	brian_ (~brianc@46.7.105.181) has joined #matrix
+2021-10-30 13:04:55	-->	Atque (~Atque@user/atque) has joined #matrix
+2021-10-30 13:07:16	-->	burakcank (~burakcank@has.arrived.and.is.ready-to.party) has joined #matrix
+2021-10-30 13:17:49	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has joined #matrix
+2021-10-30 13:20:45	<--	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:22:00	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has joined #matrix
+2021-10-30 13:25:17	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:36:52	-->	st327 (~st327@user/st327) has joined #matrix
+2021-10-30 13:39:02	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has joined #matrix
+2021-10-30 13:41:43	<--	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:45:23	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:d418:453f:8e01:9edf) has joined #matrix
+2021-10-30 13:47:11	-->	gabriel1 (~gabriel1@user/gabriel1) has joined #matrix
+2021-10-30 13:48:05	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has quit (Ping timeout: 246 seconds)
+2021-10-30 13:54:14	-->	LionelC-R[m] (~lionelcha@2001:470:69fc:105::2f23) has joined #matrix
+2021-10-30 13:54:15	LionelC-R[m]	Hi guys, I could not open a video a matrix.org user posted in one of my rooms, I get the error "error decrypting attachment" and when I check synapse logs I can see "Failed to fetch remote media matrix.org/<somelongstring>".
+2021-10-30 13:54:15	LionelC-R[m]	Do you know what I can do about that?
+2021-10-30 13:54:25	-->	in-connu[m] (~in-connum@2001:470:69fc:105::1:2766) has joined #matrix
+2021-10-30 13:56:26	-->	gabriel1_ (~gabriel1@37.164.209.172) has joined #matrix
+2021-10-30 17:07:05	--	irc: disconnected from server
+2021-10-30 17:07:32	-->	mrmanner (~jmanner@user/mrmanner) has joined #matrix
+2021-10-30 17:07:32	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-10-30 17:07:32	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-10-30 17:07:33	--	Channel #matrix: 1515 nicks (1 op, 0 voices, 1514 normals)
+2021-10-30 17:07:38	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-30 17:09:06	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #matrix
+2021-10-30 17:10:41	m4rigoldx[m]	ninchuka[m]: i seee, can you give an example?
+2021-10-30 17:11:46	<--	zer0bitz_ (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 252 seconds)
+2021-10-30 17:12:05	ninchuka[m]	m4rigoldx[m]: its decentralised, I'm not on the same homeserver as you yet I'm able to talk to you :P its got end to end encryption so only you and other people in the room can read the messages and you can use many different clients matrix.org/clients
+2021-10-30 17:12:59	ninchuka[m]	https://coshacks.blogspot.com/2021/05/matrix-tips-they-dont-tell-you.html here is a good post about matrix thats recommended to read
+2021-10-30 17:13:26	m4rigoldx[m]	oh yea right right
+2021-10-30 17:14:03	m4rigoldx[m]	ninchuka[m]: thanks for this! 
+2021-10-30 17:14:12	ninchuka[m]	np
+2021-10-30 17:14:30	farribeiro	<f0rs3ti1> "inuse.png" <- It's obvious
+2021-10-30 17:15:59	-->	Dravenster[m] (~dravenste@2001:470:69fc:105::1:277b) has joined #matrix
+2021-10-30 17:16:57	farribeiro	<penguinbot[m]> "Metaverse over matrix  protocol?" <- No... Is it a Zuckerberg joke?
+2021-10-30 17:17:11	-->	Guest6433 (~Guest64@dslb-002-202-059-024.002.202.pools.vodafone-ip.de) has joined #matrix
+2021-10-30 17:18:22	<--	Guest6433 (~Guest64@dslb-002-202-059-024.002.202.pools.vodafone-ip.de) has quit (Client Quit)
+2021-10-30 17:21:24	-->	op2 (~op@user/op2) has joined #matrix
+2021-10-30 17:22:41	-->	namedeck[m] (~namedeckm@2001:470:69fc:105::1:277c) has joined #matrix
+2021-10-30 17:29:45	_lonelycat_[m]	<farribeiro> "No... Is it a Zuckerberg joke?" <- Am I the only one get invited by ChungChen @chuang16890:matrix.org ? 
+2021-10-30 17:34:58	penguinbot[m]	https://youtu.be/e26UJRCGfGk
+2021-10-30 17:42:32	-->	bu5hm4n[m] (~bu5hm4nma@2001:470:69fc:105::88f) has joined #matrix
+2021-10-30 17:46:14	-->	nayimatelecom[m] (~xmppnayim@2001:470:69fc:105::faa9) has joined #matrix
+2021-10-30 17:47:57	-->	Ryan[m]123456 (~adminchat@2001:470:69fc:105::1:277d) has joined #matrix
+2021-10-30 17:48:20	bu5hm4n[m]	Hi! i already asked over in #libera, i reported a message, and i am wondering who that "local administrator" is, is that the operator in a channel or the administration of the bridge ? (It was a #libera bridged room)
+2021-10-30 17:51:26	-->	halilhan35[m] (~halilhan3@2001:470:69fc:105::1:277e) has joined #matrix
+2021-10-30 17:52:27	voice	based on your #libera message, local administrator would mean whoever is a admin on the homeserver you are using
+2021-10-30 17:53:28	voice	that said as a server admin myself and having tested message/event reporting all it does is log it in a db table, the admin(s) have to be actively checking that for it to be effective
+2021-10-30 17:55:11	bu5hm4n[m]	oh okay :) thank you 
+2021-10-30 17:59:24	<--	bu5hm4n[m] (~bu5hm4nma@2001:470:69fc:105::88f) has left #matrix
+2021-10-30 22:21:16	--	irc: disconnected from server
+2021-10-30 22:21:44	-->	mrmanner (~jmanner@user/mrmanner) has joined #matrix
+2021-10-30 22:21:44	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-10-30 22:21:44	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:45
+2021-10-30 22:21:44	--	Channel #matrix: 1529 nicks (1 op, 0 voices, 1528 normals)
+2021-10-30 22:21:49	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-10-30 22:22:01	-->	CanARIKAN[m] (~bambbamma@2001:470:69fc:105::1:27a2) has joined #matrix
+2021-10-30 22:23:42	<--	cornyst (~cornyst@ool-4353cb8b.dyn.optonline.net) has quit (Quit: Leaving)
+2021-12-01 23:20:40	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #matrix
+2021-12-01 23:20:43	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-12-01 23:20:43	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-01 23:20:43	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-12-01 23:20:44	--	Channel #matrix: 1308 nicks (1 op, 0 voices, 1307 normals)
+2021-12-01 23:21:07	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #matrix
+2021-12-01 23:23:08	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-12-01 23:23:08	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-01 23:23:08	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-12-01 23:23:09	--	Channel #matrix: 1308 nicks (1 op, 0 voices, 1307 normals)
+2021-12-01 23:23:15	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-01 23:23:38	farribeiro	jess[m]: and just this
+2021-12-01 23:23:53	--	Mode #matrix [+nt]
+2021-12-01 23:23:53	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-01 23:25:04	--	Tea_killer[m]1 is now known as ColdTea[m]
+2021-12-01 23:26:53	-->	wabbe (wabbe) (~wabbe@231.sub-174-252-128.myvzw.com) has joined #matrix
+2021-12-01 23:27:15	-->	JeremyCloud[m] (@fvzzvsadfxzc:matrix.org) (~fvzzvsadf@2001:470:69fc:105::1:4382) has joined #matrix
+2021-12-01 23:27:26	cvmn	spokojni[m]: 5 minutes?  my timestamps in matrix?
+2021-12-01 23:28:45	-->	PantelisVassilop (@pdvass:matrix.org) (~pdvassmat@2001:470:69fc:105::1:4383) has joined #matrix
+2021-12-01 23:30:57	-->	ska [ska] (skatinator) (~ska@user/ska) has joined #matrix
+2021-12-01 23:31:34	ska	Can someone who runs Debian recommend a Linux client ?
+2021-12-01 23:34:38	morguldir	cvmn: i think their server is being really slow, it was messages you sent 3 hours ago
+2021-12-01 23:35:21	nothacking[m]	ska: element-desktop runs well on X11 but crashes on wayland.
+2021-12-01 23:35:29	cvmn	morguldir: 3 hours delay?  why is this?
+2021-12-01 23:35:34	nothacking[m]	I run debian 11 btw
+2021-12-01 23:35:46	 *	spokojni[m] uploaded an image: (191KiB) < https://libera.ems.host/_matrix/media/r0/download/onlyhumans.ai/MAbdXnVVRQtJZdbfebMNJMNh/Screenshot%20from%202021-12-01%2023-35-08.png >
+2021-12-01 23:35:59	spokojni[m]	I am uploading screenshot
+2021-12-01 23:36:21	spokojni[m]	Have you guys received the image yet_
+2021-12-01 23:37:17	spokojni[m]	check the timestamps on  screenshot
+2021-12-01 23:37:27	moritzdietz[m]	Please use #test:matrix.org for any kind of testing
+2021-12-01 23:38:11	ska	nothacking[m]: Do you have any feeling for Fractal?
+2021-12-01 23:39:16	morguldir	cvmn: with matrix you can use which server you want, and this server may have large issues, but the messages will still try to arrive at some point
+2021-12-01 23:39:48	cvmn	morguldir: are these delay issues more in matrix than irc?
+2021-12-01 23:41:01	spokojni[m]	I am receiving push messages and seeing actual messages in the room at different rate....first it's visible as bubble notification, then it's visible in the room after some time
+2021-12-01 23:42:32	<--	PantelisVassilop (~pdvassmat@2001:470:69fc:105::1:4383) has left #matrix
+2021-12-01 23:42:56	Penncilk[m]	How do clients tell the difference between a space and a room?
+2021-12-01 23:43:40	morguldir	cvmn: in this case specifically i don't think it would arrive on IRC at all
+2021-12-01 23:44:13	cvmn	i wonder if matrix's http api makes it much slower.
+2021-12-01 23:44:24	voice	Penncilk[m], m.type is added to m.room
+2021-12-01 23:44:34	voice	type, rather:  "type": "m.space",
+2021-12-01 23:46:08	morguldir	spokojni[m]: notifications would be pushed from your server pretty quickly, but the client is probably retrieving messages slower than your server is retrieving them (when it would push). Did you shut down your server or something?
+2021-12-01 23:47:36	spokojni[m]	seems it's working fine again now...nope,server is still up
+2021-12-01 23:47:57	Penncilk[m]	Ohhh! Ok! Thanks ^^
+2021-12-01 23:48:10	-->	space_ranger_5[m (@space_ranger_5:matrix.org) (~spacerang@2001:470:69fc:105::1:42f2) has joined #matrix
+2021-12-01 23:49:27	 *	space_ranger_5[m uploaded an image: (567KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/RejvoadFiyujZHzsSQFNxgec/CAMPS.png >
+2021-12-01 23:49:30	 *	space_ranger_5[m uploaded an image: (109KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/yqzboXRaXJSvpDEuhtXlxkHA/1776-CONSPIRACY.jpg >
+2021-12-01 23:49:34	 *	space_ranger_5[m uploaded an image: (98KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/aRrQQtuROZioslearhxjJroZ/COVID-PATENT.jpg >
+2021-12-01 23:49:44	morguldir	spokojni[m]: I meant if your server was shut down recently
+2021-12-01 23:51:46	spokojni[m]	it was, i've powered it back on few hours ago
+2021-12-01 23:52:58	<--	space_ranger_5[m (~spacerang@2001:470:69fc:105::1:42f2) has left #matrix
+2021-12-01 23:53:18	-->	theboo[m] (@theboo:matrix.org) (~theboomat@2001:470:69fc:105::1:438b) has joined #matrix
+2021-12-01 23:53:34	-->	kadoogan[m] (@kadoogan:matrix.org) (~kadooganm@2001:470:69fc:105::1:438c) has joined #matrix
+2021-12-01 23:55:22	-->	anonimusde88[m] (@anonimusde88:hive-mind.network) (~anonimusd@2001:470:69fc:105::1:438d) has joined #matrix
+2021-12-01 23:55:26	morguldir	spokojni[m]: right, then the server will try to retrieve everything from when it was offline from other servers, so this is why it was being slow in this case
+2021-12-02 00:04:08	Penncilk[m]	<voice> "type, rather:  "type": "m.space"..." <- On a SDK would it work like this?
+2021-12-02 00:04:08	Penncilk[m]	if (room.type == "m.space")
+2021-12-02 00:06:28	<--	cvmn (~caveman@gateway/tor-sasl/caveman) has quit (Quit: the #end of the abyss)
+2021-12-02 00:06:57	--	kadoogan[m] is now known as redhook[m]
+2021-12-02 00:12:43	<--	redhook[m] (~kadooganm@2001:470:69fc:105::1:438c) has left #matrix
+2021-12-02 00:14:31	<--	progandy (~progandy@user/progandy) has quit (Ping timeout: 245 seconds)
+2021-12-02 00:24:55	-->	gingerbeer99[m] (@gingerbeer99:matrix.org) (~gingerbee@2001:470:69fc:105::1:438f) has joined #matrix
+2021-12-02 00:36:58	-->	MasFlam[m] (@masflam:masflam.com) (~masflamma@2001:470:69fc:105::2e66) has joined #matrix
+2021-12-02 00:38:01	-->	Vyrus (Fullname) (~Username@208-122-122-82.t3com.net) has joined #matrix
+2021-12-02 00:44:15	-->	ruthwik_dhama[m] (@ruthwik_dhama:matrix.org) (~ruthwikdh@2001:470:69fc:105::1:4392) has joined #matrix
+2021-12-02 00:44:39	<--	ruthwik_dhama[m] (~ruthwikdh@2001:470:69fc:105::1:4392) has left #matrix
+2021-12-02 00:48:09	-->	flottbas[m] (@flottbas:matrix.org) (~flottbasm@2001:470:69fc:105::1:4395) has joined #matrix
+2021-12-02 00:53:55	<--	nb (~nb@fedora/ansible.user.nb) has quit (Read error: Connection reset by peer)
+2021-12-02 00:55:19	-->	nb [nb] (The Lounge User) (~nb@fedora/ansible.user.nb) has joined #matrix
+2021-12-02 00:56:19	<--	zer0bitz (~zer0bitz@dsl-hkibng32-54fbfb-173.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-12-02 00:56:43	-->	JustinAndrusk[m] (@jandrusk:matrix.org) (~jandruskm@2001:470:69fc:105::e789) has joined #matrix
+2021-12-02 01:01:44	-->	dricardo023[m] (@dricardo023:matrix.org) (~dricardo0@2001:470:69fc:105::1:4397) has joined #matrix
+2021-12-02 01:20:15	-->	performancetest[ (@admin:synapse-performance-test.lab.element.dev) (~adminsyna@2001:470:69fc:105::1:29d2) has joined #matrix
+2021-12-02 01:26:47	<--	Vyrus (~Username@208-122-122-82.t3com.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:28:01	<--	performancetest[ (~adminsyna@2001:470:69fc:105::1:29d2) has left #matrix
+2021-12-02 01:36:15	-->	DavidAlm[m] (@sensiblearts:matrix.org) (~sensiblea@2001:470:69fc:105::1:439a) has joined #matrix
+2021-12-02 01:39:09	-->	deadeyes2[m] (@deadeyes2:matrix.org) (~deadeyes2@2001:470:69fc:105::1:439c) has joined #matrix
+2021-12-02 01:46:38	<--	deadeyes2[m] (~deadeyes2@2001:470:69fc:105::1:439c) has left #matrix
+2021-12-02 01:59:33	-->	Villux [Villux] (realname) (~Villux@li338-244.members.linode.com) has joined #matrix
+2021-12-02 02:01:22	<--	Vilux (~Villux@li338-244.members.linode.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:17:17	DarwinLemoine[m]	Hi all I'm trying to purge the history on a room I'm using this line of code but I don't know how to find "event_id" of this room
+2021-12-02 02:17:25	DarwinLemoine[m]	POST /_synapse/admin/v1/purge_history/<room_id>[/<event_id>]
+2021-12-02 02:22:45	DarwinLemoine[m]	somebody know how to find it?
+2021-12-02 02:24:09	-->	mrlitch797[m] (@mrlitch797:matrix.org) (~mrlitch79@2001:470:69fc:105::1:43b2) has joined #matrix
+2021-12-02 02:25:41	mrlitch797[m]	hey guys i need to know ur review about wadbot 
+2021-12-02 02:29:37	<--	israfel (~israfel@gateway/vpn/pia/israfel) has quit (Quit: Leaving)
+2021-12-02 02:44:23	<--	wabbe (~wabbe@231.sub-174-252-128.myvzw.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:49:18	-->	jamn [jamn] ([https://web.libera.chat] jamn) (~jamn@c-67-187-72-176.hsd1.tn.comcast.net) has joined #matrix
+2021-12-02 02:50:12	jamn	I am currently signed into element on my (iOS) phone from way back, but cannot remember my password. I don't have an email address associated either. Is there any way to recover my account?
+2021-12-02 02:52:56	-->	KevinThomas[m]1 (@trustedmercury:matrix.org) (~trustedme@2001:470:69fc:105::1:43b3) has joined #matrix
+2021-12-02 03:00:33	-->	Vyrus (Fullname) (~Username@208-122-122-82.t3com.net) has joined #matrix
+2021-12-02 03:02:25	-->	PantelicGR [PantelicGR] (realname) (~PantelicG@user/pantelicgr) has joined #matrix
+2021-12-02 03:03:37	-->	jamn[m] (@jamn:matrix.org) (~jamnmatri@2001:470:69fc:105::1:43b5) has joined #matrix
+2021-12-02 03:09:24	jamn	I finally guessed my old password. thanks anyway
+2021-12-02 03:12:32	<--	jamn (~jamn@c-67-187-72-176.hsd1.tn.comcast.net) has quit (Quit: Client closed)
+2021-12-02 03:12:59	-->	jamn [jamn] ([https://web.libera.chat] jamn) (~jamn@c-67-187-72-176.hsd1.tn.comcast.net) has joined #matrix
+2021-12-02 03:13:00	-->	husky008[m] (@husky008:matrix.org) (~husky008m@2001:470:69fc:105::1:43b7) has joined #matrix
+2021-12-02 03:21:03	<--	PantelicGR (~PantelicG@user/pantelicgr) has quit (Quit: Leaving)
+2021-12-02 03:21:30	collitchboy[m]	Is there a resource that explains bridging? I was thinking I could use matrix to access telegram and other services but can't seem to find a way to set it up. 
+2021-12-02 03:26:46	-->	LuZivR[m] (@luzivr92:matrix.org) (~luzivr92m@2001:470:69fc:105::1:43b8) has joined #matrix
+2021-12-02 03:31:20	AustinHuang[m]	<darwinlemoine[m]> "somebody know how to find it?" <- you're asking this repeatedly after the admin told you to move to #synapse:matrix.org, so please ask there instead.
+2021-12-02 03:32:45	-->	darkst3alth[m] (@darkst3alth:matrix.org) (~darkst3al@2001:470:69fc:105::1:43b9) has joined #matrix
+2021-12-02 03:36:51	AustinHuang[m]	<collitchboy[m]> "Is there a resource that..." <- the gist is that you either run your own homeserver and bridge, or you pay someone to run the bridge for you
+2021-12-02 03:36:51	AustinHuang[m]	for the former, setup for the bridge: https://docs.mau.fi/bridges/python/setup/index.html?bridge=telegram
+2021-12-02 03:36:51	AustinHuang[m]	for the latter, https://beeper.com or https://https://element.io/element-one
+2021-12-02 03:38:04	AustinHuang[m]	s/https:////
+2021-12-02 03:41:52	-->	brdsk[m] (@brdsk:matrix.org) (~brdskmatr@2001:470:69fc:105::1:43ba) has joined #matrix
+2021-12-02 03:42:16	-->	srmann[m] (@srmann:matrix.org) (~srmannmat@2001:470:69fc:105::1:43bb) has joined #matrix
+2021-12-02 03:42:43	<--	jamn (~jamn@c-67-187-72-176.hsd1.tn.comcast.net) has quit (Quit: Client closed)
+2021-12-02 03:46:11	<--	d76d5436757 (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has quit (Quit: Bye)
+2021-12-02 03:47:24	-->	d76d5436757 [d76d5] (d76d5) (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has joined #matrix
+2021-12-02 03:56:32	-->	computist[m] (@computist:matrix.org) (~computist@2001:470:69fc:105::f9c9) has joined #matrix
+2021-12-02 03:56:33	computist[m]	Why every time I try to join wikipedia-en@libera.chat, it appears to work for a second then it kicks me out with this warning:
+2021-12-02 03:56:34	 *	computist[m] uploaded an image: (41KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/OhobwzqEhVzGdYJktUgQtbki/image.png >
+2021-12-02 03:58:00	AustinHuang[m]	you might need to do the irc nick registration through an unencrypted dm with @ChanServ:libera.chat
+2021-12-02 03:59:25	computist[m]	I believe I'm already registered. How to verify?
+2021-12-02 04:00:02	<--	srmann[m] (~srmannmat@2001:470:69fc:105::1:43bb) has left #matrix
+2021-12-02 04:05:55	--	AustinHuang[m] has identified as AustinHuang[m]
+2021-12-02 04:06:45	-->	NaFeeS[m] (@nefeee:matrix.org) (~nefeeemat@2001:470:69fc:105::1:43bf) has joined #matrix
+2021-12-02 04:06:53	AustinHuang[m]	<computist[m]> "I believe I'm already registered..." <- 1. dm @NickServ:libera.chat
+2021-12-02 04:06:53	AustinHuang[m]	2. `IDENTIFY password`
+2021-12-02 04:06:53	AustinHuang[m]	note: those are NOT ENCRYPTED
+2021-12-02 04:46:20	<--	d76d5436757 (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has quit (Quit: Bye)
+2021-12-02 04:49:16	Penncilk[m]	Is there a proximity chat for Matrix?
+2021-12-02 04:49:48	-->	messiahbooks[m] (@messiahbooks:matrix.org) (~messiahbo@2001:470:69fc:105::1:43c0) has joined #matrix
+2021-12-02 04:50:20	--	computist[m] has identified as computist[m]
+2021-12-02 04:50:24	messiahbooks[m]	Secret Knowledge Wisdom That Will Help You Become God Again, Active Super Power, Live Forever https://eternalsacredbooks.wordpress.com/2021/12/01/secret-knowledge-wisdom-that-will-help-you-become-god-again-active-super-power-live-forever/
+2021-12-02 04:50:33	AustinHuang[m]	Administrator: 
+2021-12-02 04:51:17	<--	messiahbooks[m] (~messiahbo@2001:470:69fc:105::1:43c0) has left #matrix
+2021-12-02 04:51:38	Arche[m]	AustinHuang[m]: Admin?
+2021-12-02 04:51:47	-->	Sigh[m] (@greenbean123:matrix.org) (~greenbean@2001:470:69fc:105::1:1296) has joined #matrix
+2021-12-02 04:51:47	Sigh[m]	Lol
+2021-12-02 04:51:50	AustinHuang[m]	Arche[m]: ???
+2021-12-02 04:51:58	Arche[m]	Replying because it mentions them, and also my mentions are broken
+2021-12-02 04:52:30	Arche[m]	it doesnt do the auto formatting thing
+2021-12-02 04:52:48	Sigh[m]	Anyone have 88k?
+2021-12-02 04:52:49	-->	d76d5436757 [d76d5] (d76d5) (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has joined #matrix
+2021-12-02 04:53:10	Arche[m]	probably still works but I like pretty mentions
+2021-12-02 04:53:53	Arche[m]	messiahbooks[m]: @abuse:matrix.org ^
+2021-12-02 04:53:54	<--	Vyrus (~Username@208-122-122-82.t3com.net) has quit (Quit: Vyrus)
+2021-12-02 04:55:03	-->	karry[m] (@nudes:matrix.org) (~nudesmatr@2001:470:69fc:105::1:43c3) has joined #matrix
+2021-12-02 04:55:12	karry[m]	If you guys want to have fun, send me a friend request. I will share my hot pictures and videos with you for free.
+2021-12-02 04:56:25	AustinHuang[m]	sigh
+2021-12-02 04:56:44	AustinHuang[m]	not gonna ping admin again
+2021-12-02 04:56:56	Arche[m]	what about the other admins 
+2021-12-02 04:57:56	AustinHuang[m]	usually we only ping the admin bot
+2021-12-02 04:58:02	-->	Vyrus (Fullname) (~Username@208-122-122-82.t3com.net) has joined #matrix
+2021-12-02 04:58:11	AustinHuang[m]	think it notifies whoever that's there
+2021-12-02 04:58:21	-->	on^ (...) (~on@68.101.58.90) has joined #matrix
+2021-12-02 04:58:45	Arche[m]	@matthew:matrix.org :p theres some bots posting stuff
+2021-12-02 04:59:03	Arche[m]	AustinHuang[m]: eh just in case
+2021-12-02 05:01:57	-->	Ryan[m]12 (@ryaeiin:matrix.org) (~ryaeiinma@2001:470:69fc:105::d1fa) has joined #matrix
+2021-12-02 05:02:22	<--	privacyisgood[m] (~privacyis@2001:470:69fc:105::1:3a0b) has left #matrix
+2021-12-02 05:16:48	 *	karry[m] uploaded an image: (11KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/AytQcZXGVslNjXiRmNbSzGiC/image0-4-1.png >
+2021-12-02 05:16:56	karry[m]	Guys, I'm completely free now. If anyone wants to get nudes, message me...
+2021-12-02 05:19:15	Arche[m]	Wheres the admins when you need it
+2021-12-02 05:20:29	-->	progandy [progandy] (ProgAndy) (~progandy@user/progandy) has joined #matrix
+2021-12-02 05:25:04	@MatrixAbuseMod	<Arche[m]> "Wheres the admins when you..." <- Pinging this account usually gets their attention
+2021-12-02 05:25:12	<--	karry[m] (~nudesmatr@2001:470:69fc:105::1:43c3) has left #matrix
+2021-12-02 05:27:24	<--	Vyrus (~Username@208-122-122-82.t3com.net) has quit (Quit: Vyrus)
+2021-12-02 05:33:23	-->	LarryBeck[m] (@larry:sdkco.io) (~larrysdkc@2001:470:69fc:105::1:43c7) has joined #matrix
+2021-12-02 05:34:13	-->	gh057 [gh057] (realname) (gh057@gateway/vpn/protonvpn/gh057) has joined #matrix
+2021-12-02 05:40:09	-->	DcfromMexico[m] (@dcfrommexico:matrix.org) (~dcfrommex@2001:470:69fc:105::1:43c9) has joined #matrix
+2021-12-02 05:40:42	AustinHuang[m]	<messiahbooks[m]> "Secret Knowledge Wisdom That..." <- @Administrator: this too
+2021-12-02 05:49:29	-->	heap[m] (@heap:converser.eu) (~heapconve@2001:470:69fc:105::1:43cb) has joined #matrix
+2021-12-02 05:52:18	<--	progandy (~progandy@user/progandy) has quit (Quit: No Ping reply in 180 seconds.)
+2021-12-02 05:52:56	-->	progandy [progandy] (ProgAndy) (~progandy@user/progandy) has joined #matrix
+2021-12-02 05:53:27	<--	heap[m] (~heapconve@2001:470:69fc:105::1:43cb) has left #matrix
+2021-12-02 05:56:15	-->	kotyara_199[m] (@kotyara_199:matrix.org) (~kotyara19@2001:470:69fc:105::1:43cc) has joined #matrix
+2021-12-02 05:57:28	<--	kotyara_199[m] (~kotyara19@2001:470:69fc:105::1:43cc) has left #matrix
+2021-12-02 06:00:27	-->	hxdexjo (hxdexjo) (~hxdexjo@li1553-163.members.linode.com) has joined #matrix
+2021-12-02 06:00:48	<--	hxdexjo (~hxdexjo@li1553-163.members.linode.com) has quit (Client Quit)
+2021-12-02 06:01:01	-->	hxdexjo (hxdexjo) (~hxdexjo@li1553-163.members.linode.com) has joined #matrix
+2021-12-02 06:02:33	<--	hxdexjo (~hxdexjo@li1553-163.members.linode.com) has quit (Client Quit)
+2021-12-02 06:03:40	-->	jdofbkel[m] (@jdofbkel:matrix.org) (~jdofbkelm@2001:470:69fc:105::1:43c5) has joined #matrix
+2021-12-02 06:07:15	-->	Alexey_ (Alexey) (~Alexey@109-252-116-72.nat.spd-mgts.ru) has joined #matrix
+2021-12-02 06:07:56	Alexey_	Internet music:
+2021-12-02 06:07:56	Alexey_	http://komplex.psyradio.org:8010/index.html?sid=1
+2021-12-02 06:07:58	Alexey_	http://komplex.psyradio.org:8020/index.html?sid=1
+2021-12-02 06:08:00	Alexey_	http://komplex.psyradio.org:8030/index.html?sid=1
+2021-12-02 06:08:04	Alexey_	http://komplex.psyradio.org:8040/index.html?sid=1
+2021-12-02 06:08:06	-->	hxdexjofdx (hxdexjofdx) (~hxdexjofd@20.63.215.128) has joined #matrix
+2021-12-02 06:08:14	<--	hxdexjofdx (~hxdexjofd@20.63.215.128) has quit (Remote host closed the connection)
+2021-12-02 06:08:19	<--	on^ (~on@68.101.58.90) has quit (Remote host closed the connection)
+2021-12-02 06:08:28	<--	progandy (~progandy@user/progandy) has quit (Quit: leaving)
+2021-12-02 06:08:36	<--	Alexey_ (~Alexey@109-252-116-72.nat.spd-mgts.ru) has quit (Killed (ozone (No Spam)))
+2021-12-02 06:10:20	-->	hxdexjofdx (hxdexjofdx) (~hxdexjofd@20.63.215.128) has joined #matrix
+2021-12-02 06:11:38	<--	hxdexjofdx (~hxdexjofd@20.63.215.128) has quit (Remote host closed the connection)
+2021-12-02 06:18:20	-->	SamRadik[m] (@sam_radik:matrix.org) (~samradikm@2001:470:69fc:105::1:43cf) has joined #matrix
+2021-12-02 06:23:31	<--	gh057 (gh057@gateway/vpn/protonvpn/gh057) has quit (Quit: Leaving)
+2021-12-02 06:38:26	-->	zen86[m] (@zen86:matrix.org) (~zen86matr@2001:470:69fc:105::1:43d1) has joined #matrix
+2021-12-02 06:44:23	-->	yocif[m] (@yocif:matrix.org) (~yocifmatr@2001:470:69fc:105::d987) has joined #matrix
+2021-12-02 06:45:27	yocif[m]	Which emojis do the cool visuals? I know: firework, milkway/space invaders, and snow
+2021-12-02 06:55:08	AustinHuang[m]	<yocif[m]> "Which emojis do the cool visuals..." <- all visuals are listed as slash commands in (pc) element
+2021-12-02 06:58:45	yocif[m]	dankoin
+2021-12-02 06:58:54	yocif[m]	dankon
+2021-12-02 06:59:21	-->	champogne[m] (@champogne:matrix.org) (~champogne@2001:470:69fc:105::1:43d2) has joined #matrix
+2021-12-02 07:07:32	-->	helmen[m] (@helmen:matrix.org) (~helmenmat@2001:470:69fc:105::8035) has joined #matrix
+2021-12-02 07:20:17	-->	performancetest[ (@admin:synapse-performance-test.lab.element.dev) (~adminsyna@2001:470:69fc:105::1:29d2) has joined #matrix
+2021-12-02 07:20:34	--	jdofbkel[m] is now known as dhiebrkof[m]
+2021-12-02 07:23:00	-->	gh057 [gh057] (realname) (gh057@gateway/vpn/protonvpn/gh057) has joined #matrix
+2021-12-02 07:24:25	-->	nefeex[m] (@nefeex:matrix.org) (~nefeexmat@2001:470:69fc:105::1:43d6) has joined #matrix
+2021-12-02 07:24:49	nefeex[m]	helloo
+2021-12-02 07:29:42	<--	GNUmoon (~GNUmoon@gateway/tor-sasl/gnumoon) has quit (Ping timeout: 276 seconds)
+2021-12-02 07:30:26	<--	performancetest[ (~adminsyna@2001:470:69fc:105::1:29d2) has left #matrix
+2021-12-02 07:34:18	-->	mniip_ [mniip] (mniip) (mniip@libera/staff/mniip) has joined #matrix
+2021-12-02 07:35:24	<--	mniip (mniip@libera/staff/mniip) has quit (Quit: This page is intentionally left blank.)
+2021-12-02 07:35:43	--	mniip_ is now known as mniip
+2021-12-02 07:36:10	--	Dot[m] is now known as dot[m]
+2021-12-02 07:39:25	-->	MatthiasNiemann[ (@matthias_niemann:matrix.org) (~matthiasn@2001:470:69fc:105::1:43da) has joined #matrix
+2021-12-02 07:39:40	<--	natsiripaska[m] (~natsiripa@2001:470:69fc:105::1:4362) has left #matrix
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:59	-->	mrmanner (mrmanner@98.128.201.128) has joined #matrix
+2021-12-02 08:09:59	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-02 08:09:59	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-12-02 08:10:00	--	Channel #matrix: 1334 nicks (1 op, 0 voices, 1333 normals)
+2021-12-02 07:45:36	geuristic[m]	testing
+2021-12-02 07:46:45	geuristic[m]	I plan to use a VM for bug-testing Xfce, does anyone have any suggestions for which distro I should test it on?
+2021-12-02 07:50:15	dibi58[m]	geuristic[m]: probably debian server and ubuntu server, but some version dont have xfce, ubuntu 18.04 LTS server has it, 20.04 LTS server does not but installed lxde that is equally light 
+2021-12-02 07:52:56	geuristic[m]	dibi58[m]: Actually, I want to contribute to Xfce by filing bugs that I find in the DE, so I wanted opinions on which distro with Xfce would be ideal to run inside a VM for said bug-testing
+2021-12-02 07:58:02	dibi58[m]	geuristic[m]: sounds a nice idea, sorry cant help, i always start from servers so im not a good case for testing distros or desktops ... generally i try to run at least four desktops on each system, all very light just in case ... 
+2021-12-02 07:59:53	geuristic[m]	dibi58[m]: no problems, thanks though
+2021-12-02 08:01:08	geuristic[m]	:+1: 
+2021-12-02 08:04:19	Probablyahuman[m	<yocif[m]> "Which emojis do the cool visuals..." <- On android, only confetti and snow work. Why is that?
+2021-12-02 08:10:36	-->	peterpeterson[m] (@peterpeterson:matrix.org) (~peterpete@2001:470:69fc:105::1:43de) has joined #matrix
+2021-12-02 08:11:05	-->	RockingGod[m] (@/_-=:matrix.org) (~M-matrixo@2001:470:69fc:105::1:43df) has joined #matrix
+2021-12-02 08:11:14	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-02 08:18:16	-->	mich_a[m] (@mich_a:matrix.org) (~michamatr@2001:470:69fc:105::1:43e0) has joined #matrix
+2021-12-02 08:18:47	-->	Atque [Atque] (Atque) (~Atque@user/atque) has joined #matrix
+2021-12-02 08:23:47	-->	GNUmoon [GNUmoon] (realname) (~GNUmoon@gateway/tor-sasl/gnumoon) has joined #matrix
+2021-12-02 08:25:39	-->	masterpe[m] (@michiel:piscaer.com) (~michielpi@2001:470:69fc:105::fc1) has joined #matrix
+2021-12-02 08:26:15	--	JosephMelendez[m is now known as oblockandOTF[m]
+2021-12-02 08:26:28	-->	bg10k[m] (@bg10k:matrix.org) (~bg10kmatr@2001:470:69fc:105::1:43e1) has joined #matrix
+2021-12-02 21:02:57	--	irc: disconnected from server
+2021-12-02 21:03:14	-->	mrmanner (mrmanner@90.235.13.15) has joined #matrix
+2021-12-02 21:03:14	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-02 21:03:14	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-12-02 21:03:15	--	Channel #matrix: 1383 nicks (1 op, 0 voices, 1382 normals)
+2021-12-02 09:14:37	selny	hello guys whats up
+2021-12-02 09:14:37	selny	anyone here?
+2021-12-02 09:16:00	lukas[m]123456	me
+2021-12-02 09:27:00	vl1[m]	hi
+2021-12-02 09:43:13	masterpe[m]	Is there a Matrix bridge for Zoom chat?
+2021-12-02 09:44:49	ptman[m]	michiel, https://matrix.org/bridges/
+2021-12-02 10:30:09	masterpe[m]	<ptman[m]> "michiel, https://matrix.org/..." <- Yes, sorry I already looked at that page but I could not find a bridge for Zoom.
+2021-12-02 10:58:24	_lonelycat_[m]	<masterpe[m]> "Yes, sorry I already looked at..." <- So, maybe there is no bridge to zoom. Since zoom using it's own wrbrtc implementation.
+2021-12-02 10:58:24	_lonelycat_[m]	And there is a progress around matrix voip, toward group conversation on webrtc. Hope they reach a better result on testing
+2021-12-02 11:00:53	masterpe[m]	_lonelycat_: I already feared, that there is no implementation for Zoom, but I hoped that something was known about that it was in the making.
+2021-12-02 11:14:51	_lonelycat_[m]	<masterpe[m]> "_lonelycat_: I already feared..." <- Matrix was using jitsi instance to get webrtc implementation. Now, trying forward by that to get more integrated inside. While zoom already run their own as a close way in their own business. 
+2021-12-02 11:14:51	_lonelycat_[m]	Even try connecting jitsi to zoom seems never been a progress. Maybe I miss some info around that
+2021-12-02 11:15:45	_lonelycat_[m]	* Matrix was using jitsi instance to get webrtc implementation. Now, trying forward by that to get more integrated inside. While zoom already run their own as a closed way in their own business. 
+2021-12-02 11:15:45	_lonelycat_[m]	Even try connecting jitsi to zoom seems never been a progress. Maybe I miss some info around that
+2021-12-02 11:23:29	masterpe[m]	Also I mainly was curious to the chat functionality from Zoom.
+2021-12-02 11:49:11	_lonelycat_[m]	<masterpe[m]> "Also I mainly was curious to the..." <- Try search room related to securemessagingapps
+2021-12-02 12:25:03	RolandSharp[m]	Hey everyone, first time on Matrix. How is it possible to encrypt a public room ? 
+2021-12-02 12:25:44	ninchuka[m]	RolandSharp[m]: you need to be admin then goto the room settings and enable encryption
+2021-12-02 12:26:15	ninchuka[m]	but there's no point really in encrypting a public room since its public
+2021-12-02 12:27:53	RolandSharp[m]	ninchuka[m]: ahh cool. why wouldn't that be by default ?
+2021-12-02 12:28:25	RolandSharp[m]	ninchuka[m]: okay got it
+2021-12-02 12:28:48	ninchuka[m]	RolandSharp[m]: especially on massive rooms, encryption can be very laggy and lots of bridges wont work and there's no point since most other chat services arent encrypted
+2021-12-02 12:30:36	RolandSharp[m]	ninchuka[m]: okay got it thanks
+2021-12-02 12:31:28	ninchuka[m]	np
+2021-12-02 13:04:36	Cat[m]	Especially since it limits your circle of trust a lot compared to no E2EE what so ever
+2021-12-02 13:04:36	Cat[m]	<ninchuka[m]> "especially on massive rooms..." <- End to Bridge Encryption has a purpose
+2021-12-02 13:22:31	pc__	D i d    u s a   t r a i n    &   s u p pl y      i s i s     wi th   w e a p o n s     l i k e     i t     d i d   w i t h       a l    q a e d a   to   j u st i f y  c r e a t i n g  w a r  s        > >       C R E A T  I V E     C H O A S
+2021-12-02 13:22:34	pc__	d i d     c i a     d i d     9 1 1    or    i t    j u s t     l e t       it      h a p p en
+2021-12-02 13:22:36	pc__	if     a l   q a e d a      di d    it     w h y      t o    k i l l   9  m i l l i  on     i  r a q i s 
+2021-12-02 13:22:38	pc__	ab o u t    9   m il i o n        i r a q i   l o s t  th e i r  li ves      e i th e r  be ca uz  o f   dir e ct  viol ence  o f   u sa   and   becauz of  si ege      u sa    ma de        ag a in s t     i r a q  t h at   pr eve nt ed    i raqi   f or m es se nt ial         l i v i n   g       ma te rial s  food m e d i c i n e   and  even     p e n c i l s
+2021-12-02 13:22:43	pc__	i s i s   a n d a l q a e da    o n l y     a p p e a r e d  i n       i r  a  q    a f t e r  u s a  i n v a si on  , D i d    u s a     p a v e   th e w ay  f or  i s i s   to  i r a q ?
+2021-12-02 13:24:02	moritzdietz[m]	meh
+2021-12-02 13:26:44	Aminda-	@Administrator ^ looks like it could use your attention
+2021-12-02 13:26:48	jess	handled already irc side
+2021-12-02 17:08:29	ereio[m]	Sorry if this was already brought up but this seems questionable in terms of trademark violation (on their part, not element)
+2021-12-02 17:08:29	ereio[m]	https://press.holo.host/205474-elemental-chat-public-test-success-amp-learnings
+2021-12-02 17:16:00	novita2020[m]	saldo.1234
+2021-12-02 17:33:54	TravisR	> <@ereio:matrix.org> Sorry if this was already brought up but this seems questionable in terms of trademark violation (on their part, not element)
+2021-12-02 17:33:55	TravisR	> 
+2021-12-02 17:33:55	TravisR	> https://press.holo.host/205474-elemental-chat-public-test-success-amp-learnings
+2021-12-02 17:33:55	TravisR	thanks, have forwarded internally at Element.
+2021-12-02 17:50:42	jakearms[m]	Hi everyone
+2021-12-02 18:52:53	xyler[m]	is element a good discord alternative? Do Group calls work well?
+2021-12-02 18:59:26	ninchuka[m]	<xyler[m]> "is element a good discord..." <- not at the moment, there isnt any voice channels like in discord atm but they are currently working on native group calls so there might be voice channels coming next year but I'm not 100% what their plans are
+2021-12-02 19:00:22	imonBrandner[m]	Voice/video channels are quite definitely planned
+2021-12-02 19:01:16	xyler[m]	ok good to know ty mate
+2021-12-02 19:03:34	ninchuka[m]	np
+2021-12-02 19:06:21	ninchuka[m]	<imonBrandner[m]> "Voice/video channels are quite..." <- it would be interesting if you could have another list for voice rooms and stuff and have it setup so only if there's people in the rooms they show up 🤔
+2021-12-02 19:45:29	voice	it'd be nice to see that and https://github.com/matrix-org/matrix-doc/pull/2545 land
+2021-12-02 20:30:56	logicwizard[m]	Hello
+2021-12-02 20:31:09	logicwizard[m]	Are matrix calls end to end Encrypted ?
+2021-12-02 20:31:22	logicwizard[m]	Both voice and video ??
+2021-12-02 20:33:17	ninchuka[m]	logicwizard[m]: by default if you start a DM with someone the room is E2EE and if you cal it'll be P2P which is E2EE as well, currently group calls are through jitsi which support E2EE but its not enabled by default
+2021-12-02 20:44:30	Cat[m]	And Native Group VOIP is on its way that is also E2EE
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:43	-->	mrmanner (mrmanner@90.235.13.15) has joined #matrix
+2021-12-02 21:04:43	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-02 21:04:43	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-12-02 21:04:44	--	Channel #matrix: 1383 nicks (1 op, 0 voices, 1382 normals)
+2021-12-02 21:05:22	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:26	-->	mrmanner (mrmanner@90.235.13.15) has joined #matrix
+2021-12-02 21:11:26	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-02 21:11:26	--	Topic set by MatrixAbuseMod (~abusemana@2001:470:69fc:105::eb7) on mån, 18 okt 2021 11:28:46
+2021-12-02 21:11:26	--	Channel #matrix: 1383 nicks (1 op, 0 voices, 1382 normals)
+2021-12-02 21:11:40	-->	gharibarbi[m] (@gharibarbi:matrix.org) (~gharibarb@2001:470:69fc:105::1:44cf) has joined #matrix
+2021-12-02 21:11:54	--	Channel created on ons, 19 maj 2021 15:50:29
+2021-12-02 21:23:33	-->	colemickens [colemickens] (@colemickens:matrix.org) (~colemicke@2001:470:69fc:105::676) has joined #matrix
+2021-12-02 21:23:34	colemickens	fucking once again Element Web making the god damn worst noise ever in my ear, followed by fucking nothing in hte UI
+2021-12-02 21:23:39	colemickens	no idea why I was notified
+2021-12-02 21:28:51	-->	mrmanner (mrmanner@90.235.13.15) has joined #matrix
+2021-12-02 21:28:51	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-02 21:26:36	enjoinedmot[m]	<cat[m]> "And Native Group VOIP is on..." <- link for this?
+2021-12-02 21:28:16	patched[m]	<colemickens> "fucking once again Element Web..." <- You can turn off sound for notifications in settings
+2021-12-02 21:28:56	patched[m]	You can also choose custom notification sound for individual rooms, but for some reason not globally 
+2021-12-02 21:28:57	enjoinedmot[m]	might be that people reacted to a message
+2021-12-02 21:50:39	--	irc: disconnected from server
+2021-12-02 21:50:45	-->	mrmanner (mrmanner@98.128.201.128) has joined #matrix
+2021-12-02 21:50:45	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-02 21:40:48	imonBrandner[m]	> <@enjoinedmot[m]:libera.chat> > <@cat[m]:libera.chat> And Native Group VOIP is on its way that is also E2EE
+2021-12-02 21:40:49	imonBrandner[m]	> 
+2021-12-02 21:40:49	imonBrandner[m]	> link for this?
+2021-12-02 21:40:49	imonBrandner[m]	https://github.com/matrix-org/matrix-doc/pull/3401
+2021-12-02 21:46:35	enjoinedmot[m]	Thank you simonbrandner[m] and cat[m] 
+2021-12-02 21:48:29	Cat[m]	Good Job Bridge 
+2021-12-02 21:49:16	Cat[m]	Also how would the IRC bridge work if i happened to create a user known as thalegendarycat here on feline.support wouldnt the bridge have a funny time 
+2021-12-02 21:49:36	Cat[m]	using that account as an example due to well it happens to be a matrix.org account that i may or may not have control over
+2021-12-02 21:51:33	-->	elliu[m]1 (@elliu:hashi.re) (~elliuhash@2001:470:69fc:105::1:44b7) has joined #matrix
+2021-12-02 21:52:51	<--	a (allie@libera/staff/allie) has quit (Quit: good, and i cannot stress this enough, bye)
+2021-12-02 21:57:44	-->	benzedreamer (benzedreamer) (~benzedrea@80.233.60.240) has joined #matrix
+2021-12-02 21:58:03	<--	benzedreamer (~benzedrea@80.233.60.240) has quit (Client Quit)
+2021-12-02 21:59:25	-->	iainc[m] (@iainc:matrix.org) (~iaincmatr@2001:470:69fc:105::1:44e2) has joined #matrix
+2021-12-02 21:59:30	-->	Rafael[m]12 (@beescuit:matrix.org) (~beescuitm@2001:470:69fc:105::1:44e3) has joined #matrix
+2021-12-02 22:01:21	<--	GNUmoon (~GNUmoon@gateway/tor-sasl/gnumoon) has quit (Ping timeout: 276 seconds)
+2021-12-02 22:05:02	-->	UtshoDas[m] (@utshodas2002:matrix.org) (~utshodas2@2001:470:69fc:105::1:44e5) has joined #matrix
+2021-12-02 22:10:17	Aminda-	I am not sure I understand your question, but IRC would enforce different nicknames (except in case Ergo and integrated bouncer in which case overlapping names from IRC are simply not shown to Matrix) and the accounts would connect from a different IPv6 address and have different realnames
+2021-12-02 22:16:24	morguldir	When people join different rooms that are both bridged to the same IRC room, the bridge will create a puppet user containing their username + [m] to make sure the other room sees the messages, so what happens when there are multiple people with the same username?
+2021-12-02 22:16:40	<--	jess (~jess@libera/staff/jess) has quit
+2021-12-02 22:17:06	-->	xyhhx[m]1 (@xdxanslfqjctozjeg:matrix.org) (~xdxanslfq@2001:470:69fc:105::cf99) has joined #matrix
+2021-12-02 22:18:31	Cat[m]	Like what happens when multiple users share the same display name and local mxid with the bridge
+2021-12-02 22:23:27	<--	caveman (~caveman@gateway/tor-sasl/caveman) has quit (Ping timeout: 276 seconds)
+2021-12-02 22:23:56	<--	Rafael[m]12 (~beescuitm@2001:470:69fc:105::1:44e3) has left #matrix
+2021-12-02 22:33:27	-->	Hashida (realname) (~DaSH@ro2.flokinet.is) has joined #matrix
+2021-12-02 22:35:50	<--	Hashida (~DaSH@ro2.flokinet.is) has quit (Remote host closed the connection)
+2021-12-02 22:36:19	-->	Hashida (realname) (~DaSH@ro2.flokinet.is) has joined #matrix
+2021-12-02 22:36:33	<--	Itaru (~DaSH@ro2.flokinet.is) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:37:21	<--	Hashida (~DaSH@ro2.flokinet.is) has left #matrix
+2021-12-02 22:38:03	-->	DmytroKostiukevy (@dk:matrix.codein.software) (~dkmatrixc@2001:470:69fc:105::1:44e7) has joined #matrix
+2021-12-02 22:55:46	-->	GNUmoon [GNUmoon] (realname) (~GNUmoon@gateway/tor-sasl/gnumoon) has joined #matrix
+2021-12-02 23:01:04	morguldir	<Cat[m]> "Like what happens when multiple..." <- The bridge will add numbers to the nick until it doesn't conflict on the IRC side, but when it's duplicating it to multiple matrix rooms it will just use the localpart + [m], if the localpart is not a valid nick, it will use the displayname. So it could end up sending messages from different users with the same puppet, but it doesn't happen that often, and it does avoid having to worry about
+2021-12-02 23:01:04	morguldir	people impersonating IRC users
+2021-12-02 23:02:30	Cat[m]	morguldir: just wondered 
+2021-12-02 23:02:33	Cat[m]	because the IRC bridge decided to display some lets just say Wierd behavior earlier
+2021-12-02 23:02:48	Cat[m]	like replies that are actually replies in the Libera version of this room or something and a ton of other quirks
+2021-12-02 23:03:31	<--	Yashar[m] (~ranormmat@2001:470:69fc:105::1:443f) has left #matrix
+2021-12-02 23:05:56	-->	serfer1[m] (@serfer1:matrix.org) (~serfer1ma@2001:470:69fc:105::1:44ea) has joined #matrix
+2021-12-02 23:08:44	-->	wxboss[m] (@wxboss:matrix.org) (~wxbossmat@2001:470:69fc:105::1:44ec) has joined #matrix
+2021-12-02 23:10:05	segfaultmaster[m	any recommendations for bridges/transports that allow connections between XMPP and matrix?
+2021-12-02 23:11:17	<--	serfer1[m] (~serfer1ma@2001:470:69fc:105::1:44ea) has left #matrix
+2021-12-02 23:11:41	morguldir	<Cat[m]> "like replies that are actually..." <- Yeah the bridge copies some of the event contents when duplicating across rooms, like the reply fallback
+2021-12-02 23:13:09	Cat[m]	morguldir: But why does it duplicate across rooms?
+2021-12-02 23:15:10	-->	JamesHAllphin[m] (@zeeon:matrix.org) (~zeeonmatr@2001:470:69fc:105::1:44ef) has joined #matrix
+2021-12-02 23:15:17	--	JamesHAllphin[m] is now known as zeeon[m]
+2021-12-02 23:16:07	-->	serfer1[m] (@serfer1:matrix.org) (~serfer1ma@2001:470:69fc:105::1:44ea) has joined #matrix
+2021-12-02 23:17:49	<--	serfer1[m] (~serfer1ma@2001:470:69fc:105::1:44ea) has left #matrix
+2021-12-02 23:17:52	-->	caveman [caveman] (caveman) (~caveman@gateway/tor-sasl/caveman) has joined #matrix
+2021-12-02 23:24:20	morguldir	<Cat[m]> "But why does it duplicate across..." <- Otherwise the other rooms wouldn't see the message, which is bad enough by itself, but if they are talking to someone on IRC it's even worse, because you would only see one part of the conversation
+2021-12-02 23:24:29	morguldir	<segfaultmaster[m> "any recommendations for bridges..." <- https://github.com/matrix-org/matrix-bifrost/wiki/Address-syntax
+2021-12-02 23:30:50	-->	justin[m]12 (@justin:sdkco.io) (~justinsdk@2001:470:69fc:105::1:3b6b) has joined #matrix
+2021-12-02 23:33:44	Cat[m]	<morguldir> "Otherwise the other rooms wouldn..." <- Why does the IRC bridge need to cause a Matrix<->Matrix bridge to work?
+2021-12-02 23:34:08	Cat[m]	I get why it needs to make a Matrix<->IRC bridge because well that is literally what a bridge is in this case 
+2021-12-02 23:43:17	<--	progandy (~progandy@user/progandy) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:45:28	morguldir	<Cat[m]> "Why does the IRC bridge need..." <- Because it supports multiple rooms for the same IRC channel, the original reason was that plumbed rooms could prevent you from using the bridge as a bouncer if the plumbed room was broken. This could also make it easier to run multiple bridges alongside each other. Sending the message over matrix instead of parsing it as an IRC message should make it work better in most cases, and I'm not sure if
+2021-12-02 23:45:29	morguldir	the bridge receives messages it sent itself either, in which case it would be just as simple to duplicate it
+2021-12-02 23:55:07	-->	hgd[m] (@hgd:matrix.org) (~hgdmatrix@2001:470:69fc:105::1:44f2) has joined #matrix
+2021-12-03 00:05:46	<--	caveman (~caveman@gateway/tor-sasl/caveman) has quit (Quit: caveman)
+2021-12-03 00:05:54	<--	PyMaster22[m] (~pymaster2@2001:470:69fc:105::1:436f) has left #matrix
+2021-12-03 00:09:17	-->	maisam[m] (@maisam:matrix.org) (~maisammat@2001:470:69fc:105::1:44f4) has joined #matrix
+2021-12-03 00:09:41	-->	caveman [caveman] (caveman) (~caveman@gateway/tor-sasl/caveman) has joined #matrix
+2021-12-03 00:10:05	<--	maisam[m] (~maisammat@2001:470:69fc:105::1:44f4) has left #matrix
+2021-12-03 00:17:33	-->	brownhary[m] (@brownhary:matrix.org) (~brownhary@2001:470:69fc:105::1:44f6) has joined #matrix
+2021-12-03 00:17:40	-->	Quintus_Primus [Quintus_Primus] (realname) (~Quintus_P@gateway/vpn/pia/quintusprimus/x-10761165) has joined #matrix
+2021-12-03 00:19:06	-->	captainplanet133 (@captainplanet1337:matrix.org) (~captainpl@2001:470:69fc:105::1:44f7) has joined #matrix
+2021-12-03 00:20:44	segfaultmaster[m	<morguldir> "https://github.com/matrix-org/..." <- Thank you! I appreciate the help. It's nice to be able to bring these together
+2021-12-03 00:21:27	-->	tclayton[m] (@_xmpp_t.clayton=40chatserver.space:matrix.org) (~xmpptclay@2001:470:69fc:105::1:44f8) has joined #matrix
+2021-12-03 00:22:15	--	captainplanet133 is now known as AwesomeOne[m]
+2021-12-03 00:23:18	<--	AwesomeOne[m] (~captainpl@2001:470:69fc:105::1:44f7) has left #matrix
+2021-12-03 00:24:50	-->	willswang[m] (@willswang:matrix.org) (~willswang@2001:470:69fc:105::1:44fb) has joined #matrix
+2021-12-03 00:25:15	-->	bootbot666[m] (@bootbot666:matrix.org) (~bootbot66@2001:470:69fc:105::1:44fc) has joined #matrix
+2021-12-03 00:40:52	-->	Narok[m] (@narokk:matrix.org) (~narokkmat@2001:470:69fc:105::1:44fe) has joined #matrix
+2021-12-03 00:41:59	-->	hewwo12[m] (@hewwo12:matrix.org) (~hewwo12ma@2001:470:69fc:105::1:44ff) has joined #matrix
+2021-12-03 00:42:15	hewwo12[m]	Hello?
+2021-12-03 00:52:46	-->	latingurl[m] (@latingurl:matrix.org) (~latingurl@2001:470:69fc:105::1:4503) has joined #matrix
+2021-12-03 01:04:05	-->	hellstabber [hellstabber] (hellstabber) (~hellstabb@5.229.101.159) has joined #matrix
+2021-12-03 01:06:49	<--	geeknix (~pi@180.74.190.212) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:06:56	<--	hellstabber (~hellstabb@5.229.101.159) has quit (Quit: Igloo IRC: https://iglooirc.com)
+2021-12-03 01:10:06	-->	hellstabber (hellstabber) (~hellstabb@178.233.16.12) has joined #matrix
+2021-12-03 01:10:30	<--	hellstabber (~hellstabb@178.233.16.12) has quit (Client Quit)
+2021-12-03 01:11:59	enjoinedmot[m]	hewwo
+2021-12-03 01:12:52	<--	crabbedhaloablut (~crabbedha@user/crabbedhaloablut) has quit (Remote host closed the connection)
+2021-12-03 01:13:24	-->	crabbedhaloablut [crabbedhaloablut] (crabbedhaloablution) (~crabbedha@user/crabbedhaloablut) has joined #matrix
+2021-12-03 01:14:23	-->	jamn [jamn] ([https://web.libera.chat] jamn) (~jamn@c-67-187-72-176.hsd1.tn.comcast.net) has joined #matrix
+2021-12-03 01:18:01	-->	Hannah[m] (@hannahgrace:matrix.org) (~hannahgra@2001:470:69fc:105::1:4508) has joined #matrix
+2021-12-03 01:19:18	-->	geeknix [geeknix] (pi) (~pi@2001:e68:5432:d6a8:64df:806:e8d6:354c) has joined #matrix
+2021-12-03 01:20:19	-->	performancetest[ (@admin:synapse-performance-test.lab.element.dev) (~adminsyna@2001:470:69fc:105::1:29d2) has joined #matrix
+2021-12-03 01:28:44	-->	vagrantc [vagrantc] (Vagrant Cascadian) (~vagrant@2600:3c01:e000:21:21:21:0:100e) has joined #matrix
+2021-12-03 01:29:17	<--	Sario (uid356235@fosshost/cdo/Sario) has quit (Quit: Connection closed for inactivity)
+2021-12-03 01:29:18	<--	performancetest[ (~adminsyna@2001:470:69fc:105::1:29d2) has left #matrix
+2021-12-03 01:29:32	vagrantc	someone's trying to get a matrix bridge to connect to another irc channel, and a bot joins and then immediately disconnects from the channel
+2021-12-03 01:30:03	vagrantc	does the irc channel operator need to do something to allow it? and if so, what?
+2021-12-03 01:31:41	vagrantc	someone says connecting with their matrix client they get a message "Failed to make link: Cannot read property 'users' of undefined"
+2021-12-03 01:33:36	<--	JaceHill[m] (~th3tk3dma@2001:470:69fc:105::1:3a91) has left #matrix
+2021-12-03 01:42:56	-->	jmariondev[m] (@jmarion:matrix.org) (~jmarionma@2001:470:69fc:105::2af7) has joined #matrix
+2021-12-03 01:48:34	<--	jamn (~jamn@c-67-187-72-176.hsd1.tn.comcast.net) has quit (Quit: Client closed)
+2021-12-03 12:21:17	--	irc: disconnected from server
+2021-12-03 12:21:32	-->	mrmanner (mrmanner@90.235.13.15) has joined #matrix
+2021-12-03 12:21:32	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-03 02:10:00	hewwo12[m]	hello?
+2021-12-03 02:22:56	Flamez[m]	Hello
+2021-12-03 02:50:21	hewwo12[m]	swag
+2021-12-03 03:01:21	tomman	hi there
+2021-12-03 03:01:32	tomman	I'm still kinda new to Matrix, but am having trouble tonight
+2021-12-03 03:01:50	tomman	I'm trying to post on a public room hosted on a server that is not my homeserver
+2021-12-03 03:02:06	tomman	I can join fine, but apparently I don't have the right to write
+2021-12-03 03:02:19	tomman	...oh, and I managed to crash THREE DIFFERENT CLIENTS while attempting to do so
+2021-12-03 03:02:51	tomman	also: how do you set your avatar?
+2021-12-03 03:03:44	tomman	(can't use Element on web because my browser is not welcome to the party, and I am not in the mood to install Electron apps on my devices)
+2021-12-03 05:02:10	santasbigbootied	<tomman> "(can't use Element on web..." <- are you on desktop or mobile?
+2021-12-03 05:02:12	santasbigbootied	> <@tomman:libera.chat> (can't use Element on web because my browser is not welcome to the party, and I am not in the mood to install Electron apps on my devices)
+2021-12-03 05:02:12	santasbigbootied	 * are you on desktop or mobile?
+2021-12-03 05:08:12	geuristic[m]	What's the difference b/w all the matrix rooms(like W3C Snoonet etc)?
+2021-12-03 06:09:57	Arche[m]	<geuristic[m]> "What's the difference b/w all..." <- Generally the topic is different 
+2021-12-03 06:29:00	ndn[m]	geuristic: if im not mistaken, you are referring to rooms but referencing networks - so the difference is that they're essentially hosted on their own non-matrix networks, but matrix users can participate in them via bridges
+2021-12-03 06:34:28	Nickli	*irc networks
+2021-12-03 06:35:01	Nickli	which snoonet is and i assume w3c also got one
+2021-12-03 06:35:58	ndn[m]	ahh, wasn't sure they were all IRC so didn't specify
+2021-12-03 07:36:59	MadMonkey[m]	Hello everyone
+2021-12-03 07:37:53	MadMonkey[m]	I have 1 question, if possible make an interactive bot with maubot?... (full message at https://libera.ems.host/_matrix/media/r0/download/libera.chat/c5a2da5b384880faaea96827b975f6d6823dfcdf)
+2021-12-03 07:51:19	Arche[m]	> <@madmonkei:matrix.org> I have 1 question, if possible make an interactive bot with maubot?... (full message at https://libera.ems.host/_matrix/media/r0/download/libera.chat/6ac31615bd86785d3535970dc79e2ff23e330997)
+2021-12-03 07:52:03	Arche[m]	oh you already posted it there
+2021-12-03 07:53:18	Arche[m]	I don’t know much about maubot but I do know it can “respond” to text
+2021-12-03 07:54:43	_lonelycat_[m]	Arche[m]: It's better if it is just a permalink to origin message
+2021-12-03 07:55:14	Arche[m]	Arche[m]: for example cat disrupter does this https://github.com/maubot/disruptor/
+2021-12-03 07:55:28	Arche[m]	*disruptor
+2021-12-03 08:50:19	MadMonkey[m]	<Arche[m]> "for example cat disrupter does..." <- Thanks, I'll check it😁
+2021-12-03 10:30:28	bzalan[m]	Hello everyone, is there a documentation for matrix react sdk somwhere?
+2021-12-03 10:31:57	ptman[m]	https://github.com/matrix-org/matrix-react-sdk/tree/develop/docs ?
+2021-12-03 10:39:36	indiscrete_void[	Is it possible to create access token with restricted access to account (e.g. only send/read messages, but not delete them) ? 
+2021-12-03 10:41:25	bzalan[m]	<ptman[m]> "https://github.com/matrix-org/..." <- Yes i've seen this one, but i am trying to build my own webclient but it just doesn't provide enough information. Should I look deeper in the code?
+2021-12-03 10:42:25	ptman[m]	indiscrete_void, I don't think you can scope/restrict tokens in synapse currently
+2021-12-03 10:43:20	ptman[m]	indiscrete_void, https://github.com/matrix-org/matrix-doc/issues/2615
+2021-12-03 10:48:54	tulir	<bzalan[m]> "Yes i've seen this one, but i am..." <- probably not. matrix-react-sdk is not actually an sdk that can be used to build web clients
+2021-12-03 10:49:33	OctopusAqua[m]	11
+2021-12-03 10:50:16	tulir	you should probably look into using a js sdk (like matrix-js-sdk or matrix-bot-sdk) and building your own UI, or just embedding some client (that has decent UI when embedded)
+2021-12-03 10:54:30	bzalan[m]	Thanks for the answers!
+2021-12-03 11:02:37	bzalan[m]	<tulir> "probably not. matrix-react-sdk..." <- But wait, what it is used for then?
+2021-12-03 11:02:59	tulir	it's not technically used for anything, it is element web
+2021-12-03 11:03:53	bzalan[m]	Sorry for asking too much, but i got a bit confused
+2021-12-03 11:03:53	tulir	if you look in the subdirectories of https://github.com/vector-im/element-web/tree/develop/src, you'll notice there are only a handful of files there. That's because basically all the code is in matrix-react-sdk
+2021-12-03 11:04:18	bzalan[m]	Ooh, i see
+2021-12-03 11:08:47	hewwo12[m]	is for anybody else in Linux the shortcut ctrl+Q => Close Element not working? Elements just keeps being open, only way to fully close is rightclicking the system tray and quit from there...
+2021-12-03 11:23:34	 *	JokerGermany[m] uploaded an image: (14KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/ynIMApEiXaSyueLxOMwTcWHC/image.png >
+2021-12-03 11:23:39	JokerGermany[m]	<hewwo12[m]> "is for anybody else in Linux the..." <-    works for me:
+2021-12-03 11:24:36	hewwo12[m]	JokerGermany[m]: Rip well enjoy ;]
+2021-12-03 11:56:14	_lonelycat_[m]	Just happened , can't send messages. 
+2021-12-03 11:56:30	_lonelycat_[m]	Can't login to my HS
+2021-12-03 11:57:54	_lonelycat_[m]	But, federation tester not showing error. Or, maybe I miss-read the result
+2021-12-03 12:05:28	hewwo12[m]	How are you all doing?
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:53	-->	mrmanner (mrmanner@90.235.13.15) has joined #matrix
+2021-12-03 12:22:53	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-03 12:26:54	-->	megahungrybeast[ (@megahungrybeast:matrix.org) (~megahungr@2001:470:69fc:105::d223) has joined #matrix
+2021-12-03 12:27:29	-->	test[m]123 (@test:testt2.nohost.me) (~testtestt@2001:470:69fc:105::1:4554) has joined #matrix
+2021-12-03 12:34:29	tomman	santasbigbootied: Desktop here, I don't do mobile at all
+2021-12-03 12:34:37	-->	altf2[m] (@altf2:matrix.org) (~altf2matr@2001:470:69fc:105::1:4555) has joined #matrix
+2021-12-03 12:34:48	tomman	and I use SeaMonkey, on which Element won't work
+2021-12-03 12:35:14	tomman	been using matrix-purple (Pidgin), but also have Nheko as fallback
+2021-12-03 12:35:19	tomman	also tried Quaternion too
+2021-12-03 12:35:32	altf2[m]	<hewwo12[m]> "How are you all doing?" <- I'm doing okay, hru?
+2021-12-03 12:36:35	tomman	neither nheko nor Quaternion allow me to set an avatar (at least, I don't see an option anywhere, but I can see other members'/room avatars)
+2021-12-03 12:36:57	tomman	Pidgin does, but then, it doesn't display avatars on my contact list
+2021-12-03 12:37:27	tomman	In any case, what I want to know is how to tell when I need special permissions to talk on a public room
+2021-12-03 12:38:17	Nico[m]	tomman: If you are not on an old Nheko, you can click on the top left, where your avatar is and then the edit button on your avatar
+2021-12-03 12:38:25	tomman	the room I'm trying to join is this: https://matrix.to/#/#bananahackers:mozilla.org
+2021-12-03 12:38:45	Nico[m]	tomman: Not all rooms allow you to talk, some are announcement rooms
+2021-12-03 12:39:52	tomman	Nico[m]: this one doesn't seems to tell, but maybe it's misconfigured as noone talks there...
+2021-12-03 12:40:32	Nico[m]	Or the room is just dead?
+2021-12-03 12:41:09	-->	progandy [progandy] (ProgAndy) (~progandy@user/progandy) has joined #matrix
+2021-12-03 12:41:27	tomman	supposedly it's bridged to a Discord "server"
+2021-12-03 12:41:41	tomman	in any case, I guess there is a problem with the room
+2021-12-03 12:41:57	tomman	but curiously, I managed to crash Pidgin, nheko, AND Quaternion trying to talk there
+2021-12-03 12:42:37	-->	Trieste_ [pilgrim] (T) (T@user/pilgrim) has joined #matrix
+2021-12-03 12:42:44	tomman	and in the case of Pidgin, I get disconnected from my home server with a "you don't have permissions to talk there" error
+2021-12-03 12:43:11	<--	Trieste (T@user/pilgrim) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:43:28	tomman	Still very new to Matrix, trying to understand the ecosystem, but when all guides say "install Element", you quickly lose your way
+2021-12-03 12:43:58	tomman	(had to install nheko just to create my account, because as I've said, Element won't work on SeaMonkey, and I'm not installing FF/Chrome on any of my PCs)
+2021-12-03 12:44:08	yersinia-[m]	this ain't twitch chat boy 
+2021-12-03 12:44:50	ilmari[m]	tomman: you can see the required power level for various actions (including sending messages) in the room settings
+2021-12-03 12:46:00	--	Trieste_ is now known as Trieste
+2021-12-03 12:46:21	hewwo12[m]	<altf2[m]> "I'm doing okay, hru?" <- Good good happy to here just figuring out matrix. you?
+2021-12-03 13:02:02	 *	_lonelycat_[m] uploaded an image: (39KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/qmjJrfHUjIxgGPtxVlVevWpl/Screenshot_2021-12-03-18-55-16-057_com.duckduckgo.mobile.android_1.jpg >
+2021-12-03 13:03:05	_lonelycat_[m]	Are they upgrading ? Or, something else happen..? 
+2021-12-03 13:05:42	<--	retroid_ (~retro@97e2ba2e.skybroadband.com) has quit (Ping timeout: 268 seconds)
+2021-12-03 13:06:04	-->	retroid_ (retro) (~retro@97e2ba2e.skybroadband.com) has joined #matrix
+2021-12-03 13:06:35	Cat[m]	https://federationtester.matrix.org/#matrix.sabakan.industries
+2021-12-03 13:06:39	Cat[m]	Synapse 1.31
+2021-12-03 13:06:47	Cat[m]	ehhhhhhhh that seems a bit out of date
+2021-12-03 13:07:35	Cat[m]	Ye 6th of April 2021 
+2021-12-03 13:08:34	<--	_flood (flooded@gateway/vpn/protonvpn/flood/x-43489060) has quit (Remote host closed the connection)
+2021-12-03 13:09:13	_lonelycat_[m]	> But, federation tester not showing error. Or, maybe I miss-read the result
+2021-12-03 13:09:13	_lonelycat_[m]	Was trying
+2021-12-03 13:10:04	_lonelycat_[m]	But, this just happening today
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:37	-->	mrmanner (mrmanner@98.128.201.128) has joined #matrix
+2021-12-03 20:17:37	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-03 13:11:32	_lonelycat_[m]	Previous time there is no problem
+2021-12-03 13:12:33	_lonelycat_[m]	Umm, just a little long time to sync
+2021-12-03 14:59:47	_lonelycat_[m]	Just realized have lost connection since last day of prevouos month. Misssed some conversation
+2021-12-03 17:01:25	ilmaisin[m]	It seems to be difficult to join channels at matrix.org again
+2021-12-03 17:04:40	neonmaddie_[m]	Is there a way I can use SSO login as an alternative login? Since my Matrix account has my email, is there a way I can use “Login with GitHub” to login into my Matrix account because they have the same email? I think Mozilla homeserver does this.
+2021-12-03 17:13:35	DavidPrieto[m]	Hi. Any idea what [this](https://www.theregister.com/2021/11/26/eu_digital_markets_act/) might mean for Matrix?
+2021-12-03 17:16:11	grinn[m]	David Prieto: maybe matrix shall reveal the secrets of the protocol! Or, maybe, they have to let other people to use the servers for their external clients. Scary!
+2021-12-03 17:25:56	AnneMendoza-Rodr	ahhaha
+2021-12-03 17:27:42	santasbigbootied	whats the benefits to the network by setting up a synapse?
+2021-12-03 17:27:49	santasbigbootied	i see instructions on how-to on the githum but... why
+2021-12-03 17:27:52	ilmaisin[m]	I'd hope that they at least prevent im vendors from using the legal system to harass the developers of 3rd party clients, and preferably also stop them from banning their users
+2021-12-03 17:28:28	santasbigbootied	s/githum/github/
+2021-12-03 17:29:50	santasbigbootied	<grinn[m]> "David Prieto: maybe matrix shall..." <- theres definitely something about the closed nature of it that unsettles me a bit
+2021-12-03 17:30:41	santasbigbootied	reminds me of that utopia platform. "were so super secure that we just have to keep all these secrets from you"
+2021-12-03 17:42:04	DavidPrieto[m]	<grinn[m]> "David Prieto: maybe matrix shall..." <- I meant for bridging, obvs 😆
+2021-12-03 19:08:49	AblioCosta[m]	Hey! I have a space with a couple of rooms. Now a second user was set as "Admin" for that space. Altough he can create new rooms there, he cannot do much in the already existing rooms since it did not become a moderator for those. Is it possible to apply permissions recursively?
+2021-12-03 19:33:24	kelvarnsen[m]	Hi
+2021-12-03 19:49:42	_lonelycat_[m]	Just curious, how to really sure when a homeserver stop it's service ?? 
+2021-12-03 19:50:38	 *	_lonelycat_[m] uploaded an image: (83KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/sZEXpUxMwPbthruzJdaNNkFT/Screenshot_2021-12-04-01-42-22-406_org.bromite.bromite_1.jpg >
+2021-12-03 19:52:25	_lonelycat_[m]	While it is still showing a login page, I can't get log-in as registered user
+2021-12-03 19:52:34	Cat[m]	_lonelycat_: Why are you posting about this specific homeserver in HQ?
+2021-12-03 19:53:20	Cat[m]	And is this the support room for this HS? I dont think so 
+2021-12-03 19:53:44	Cat[m]	The HS in question when i fed tested it hours ago showed a Synapse version from April so that is 100% out of date too 
+2021-12-03 19:54:55	santasbigbootied	<AblioCosta[m]> "Hey! I have a space with a..." <- afaik the admin privilege's are room specific 
+2021-12-03 19:56:05	_lonelycat_[m]	Cat[m]: Umm, any room related ? Maybe Something I should understand about really happened
+2021-12-03 19:56:55	AblioCosta[m]	Yeah, I think so. But it would be great to be able to have a better way to manage room permissions in a space. 
+2021-12-03 19:58:44	_lonelycat_[m]	> Just curious, how to really sure when a homeserver stop it's service ?? 
+2021-12-03 19:58:44	_lonelycat_[m]	Still in my question in general.. 
+2021-12-03 20:01:16	_lonelycat_[m]	🤕
+2021-12-03 20:17:35	-->	lostyack[m] (@lostyack:matrix.org) (~lostyackm@2001:470:69fc:105::1:45be) has joined #matrix
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:45	-->	mrmanner (mrmanner@98.128.201.128) has joined #matrix
+2021-12-03 20:19:45	--	Topic for #matrix is "The Official Matrix HQ - chat about Matrix here! | https://matrix.org/docs/spec | To support Matrix.org development: https://patreon.com/matrixdotorg | Looking for hosting? Check out https://upcloud.com/matrix! | Code of Conduct: https://matrix.org/legal/code-of-conduct/ | This is an English speaking room |"
+2021-12-03 20:19:53	sugoma[m]	🏕️
+2021-12-03 20:21:43	-->	triad [triad] (realname) (~triad@user/triad) has joined #matrix
+2021-12-03 20:23:05	-->	velvetvoid[m] (@velvet.void:matrix.org) (~velvetvoi@2001:470:69fc:105::1:45c1) has joined #matrix
+2021-12-03 20:23:57	velvetvoid[m]	sup gś
+2021-12-03 20:24:03	velvetvoid[m]	anyone sniff any cats?
+2021-12-03 20:24:07	 *	velvetvoid[m] uploaded an audio file: Voice message (5KiB) < https://libera.ems.host/_matrix/media/r0/download/matrix.org/GWIAecaSLFtaEQDgDIPvwZyu >
+2021-12-03 20:24:29	--	avalonblue[m] is now known as Komodo[m]
+2021-12-03 20:24:32	velvetvoid[m]	whats this groupchat even about?
+2021-12-03 20:25:06	velvetvoid[m]	grass is blue the sky is green
+2021-12-03 20:26:03	-->	kitsaholb[m] (@kitsaholb:matrix.org) (~kitsaholb@2001:470:69fc:105::1:45c2) has joined #matrix
+2021-12-03 20:30:22	-->	^Joe (...) (~Joe@cpe-69-133-204-164.cinci.res.rr.com) has joined #matrix
+2021-12-03 20:36:33	<--	geeknix (~pi@2001:e68:5432:d6a8:64df:806:e8d6:354c) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:36:35	ninchuka[m]	<velvetvoid[m]> "whats this groupchat even about?" <- its to talk about the matrix project matrix.org
+2021-12-03 20:37:07	-->	MichaelRaskin [MichaelRaskin] (MichaelRaskin) (~MichaelRa@ipb21a9944.dynamic.kabel-deutschland.de) has joined #matrix
+2021-12-03 20:38:25	velvetvoid[m]	thats cool
+2021-12-03 20:38:32	velvetvoid[m]	wanna run duos?
+2021-12-03 20:38:59	-->	BriceMazabraud[m (@brice.org:matrix.org) (~briceorgm@2001:470:69fc:105::1:45c5) has joined #matrix
+2021-12-03 20:40:55	-->	test2[m] (@test2:alexselimov.xyz) (~test2alex@2001:470:69fc:105::1:45c6) has joined #matrix
+2021-12-03 20:43:50	-->	jamilahward[m] (@errorunknown:matrix.org) (~errorunkn@2001:470:69fc:105::1:45c7) has joined #matrix
+2021-12-03 20:49:45	-->	geeknix [geeknix] (pi) (~pi@2001:e68:5432:3223:5ebb:b60a:8745:12b9) has joined #matrix
+2021-12-03 20:50:38	<--	velvetvoid[m] (~velvetvoi@2001:470:69fc:105::1:45c1) has left #matrix
+2021-12-03 20:51:29	-->	morikonikoniko[m (@morikonikoniko:matrix.org) (~morikonik@2001:470:69fc:105::1:45c8) has joined #matrix
+2021-12-03 20:54:32	--	aldallas5[m] is now known as aldallas5[m]1
+2021-12-03 20:57:07	-->	peterssam[m] (@peterssam:matrix.org) (~peterssam@2001:470:69fc:105::1:45c9) has joined #matrix
+2021-12-03 20:58:15	-->	alsel[m] (@alsel:alexselimov.xyz) (~alselalex@2001:470:69fc:105::1:45ca) has joined #matrix
+2021-12-03 20:58:42	<--	^Joe (~Joe@cpe-69-133-204-164.cinci.res.rr.com) has left #matrix

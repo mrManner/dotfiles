@@ -1,0 +1,945 @@
+2021-10-12 23:07:11	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-12 23:07:12	--	gnutls: receiving 2 certificates
+2021-10-12 23:07:12	--	 - certificate[1] info:
+2021-10-12 23:07:12	--	   - subject `CN=helix.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04532023a7cd665140b1211eeda9310986c2, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:22 UTC', expires `2022-01-04 19:38:21 UTC', pin-sha256="4ofWFZue1ho7VuUuu/f9uL95J0R47F86T6zRYHlvFaU="
+2021-10-12 23:07:12	--	 - certificate[2] info:
+2021-10-12 23:07:12	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-12 23:07:12	--	gnutls: peer's certificate is trusted
+2021-10-12 23:07:12	--	irc: connected to irc.oftc.net/6697 (130.239.18.116)
+2021-10-12 23:07:12	--	helix.oftc.net: *** Looking up your hostname...
+2021-10-12 23:07:12	--	helix.oftc.net: *** Checking Ident
+2021-10-12 23:07:12	--	helix.oftc.net: *** Found your hostname
+2021-10-12 23:07:23	--	helix.oftc.net: *** No Ident response
+2021-10-12 23:07:23	--	helix.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-12 23:07:23	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-12 23:07:23	--	Your host is helix.oftc.net[130.239.18.116/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-12 23:07:23	--	This server was created Mar 26 2021 at 20:38:16
+2021-10-12 23:07:23	--	helix.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-12 23:07:23	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-12 23:07:23	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2021-10-12 23:07:23	--	4G4AAD79H :your unique ID
+2021-10-12 23:07:23	--	There are 34 users and 24210 invisible on 18 servers
+2021-10-12 23:07:23	--	20 :IRC Operators online
+2021-10-12 23:07:23	--	4134 :channels formed
+2021-10-12 23:07:23	--	I have 4571 clients and 1 servers
+2021-10-12 23:07:23	--	Current local users: 4571  Max: 4634
+2021-10-12 23:07:23	--	Current global users: 24244  Max: 24664
+2021-10-12 23:07:23	--	Highest connection count: 4635 (4634 clients) (184004 connections received)
+2021-10-12 23:07:23	--	- helix.oftc.net Message of the Day -
+2021-10-12 23:07:23	--	-   O
+2021-10-12 23:07:23	--	-    \   The Open and Free
+2021-10-12 23:07:23	--	-     O  Technology Community
+2021-10-12 23:07:23	--	-    /|  https://www.oftc.net
+2021-10-12 23:07:23	--	- O-O O
+2021-10-12 23:07:23	--	-
+2021-10-12 23:07:23	--	- Welcome to the OFTC IRC Network.
+2021-10-12 23:07:23	--	-
+2021-10-12 23:07:23	--	- The Open and Free Technology Community was founded at the
+2021-10-12 23:07:23	--	- end of 2001 by a group of experienced members of the Open
+2021-10-12 23:07:23	--	- Source and Free Software communities; it is aimed at
+2021-10-12 23:07:23	--	- providing these communities with better communication,
+2021-10-12 23:07:23	--	- development, and support infrastructure. Our goal is to
+2021-10-12 23:07:23	--	- provide stable services to members of the community in any
+2021-10-12 23:07:23	--	- part of the world, while listening closely to their needs
+2021-10-12 23:07:23	--	- and desires.
+2021-10-12 23:07:23	--	-
+2021-10-12 23:07:23	--	- We are not a general purpose chat platform, but a topical
+2021-10-12 23:07:23	--	- network intent on providing the open source and free
+2021-10-12 23:07:23	--	- software communities a means to cooperate and communicate.
+2021-10-12 23:07:23	--	- As such, illegal and off-topic activity, such as warez
+2021-10-12 23:07:23	--	- trading, will result in being barred from access.
+2021-10-12 23:07:23	--	-
+2021-10-12 23:07:23	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-12 23:07:23	--	- and process information about IRC connections, nicknames,
+2021-10-12 23:07:23	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-12 23:07:23	--	- that data, and what your rights are. By connecting, you
+2021-10-12 23:07:23	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-12 23:07:23	--	-
+2021-10-12 23:07:23	--	- If you require assistance with using the OFTC IRC network,
+2021-10-12 23:07:23	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-12 23:07:23	--	- details. For help with non-IRC questions please refer to
+2021-10-12 23:07:23	--	- the respective channels and project homepages.
+2021-10-12 23:07:23	--	-
+2021-10-12 23:07:23	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-12 23:07:23	--	End of /MOTD command.
+2021-10-12 23:07:23	--	User mode [+i] by jmanner
+2021-10-12 23:33:59	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-12 23:33:59	--	gnutls: receiving 2 certificates
+2021-10-12 23:33:59	--	 - certificate[1] info:
+2021-10-12 23:33:59	--	   - subject `CN=liquid.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x049e3967f43ee5693e291fb3c7e99b201151, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:50 UTC', expires `2022-01-04 19:38:49 UTC', pin-sha256="A1ZNi/sflrIMufHJiCWyXNw/PMiZrZGKnwcCdFRoOFQ="
+2021-10-12 23:33:59	--	 - certificate[2] info:
+2021-10-12 23:33:59	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-12 23:33:59	--	gnutls: peer's certificate is trusted
+2021-10-12 23:33:59	--	irc: connected to irc.oftc.net/6697 (188.240.145.40)
+2021-10-12 23:34:00	--	liquid.oftc.net: *** Looking up your hostname...
+2021-10-12 23:34:00	--	liquid.oftc.net: *** Checking Ident
+2021-10-12 23:34:00	--	liquid.oftc.net: *** Found your hostname
+2021-10-12 23:34:11	--	liquid.oftc.net: *** No Ident response
+2021-10-12 23:34:11	--	liquid.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-12 23:34:11	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-12 23:34:11	--	Your host is liquid.oftc.net[188.240.145.40/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-12 23:34:11	--	This server was created Mar 26 2021 at 20:37:26
+2021-10-12 23:34:11	--	liquid.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-12 23:34:11	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-12 23:34:11	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2021-10-12 23:34:11	--	7YZAADRQH :your unique ID
+2021-10-12 23:34:11	--	There are 34 users and 24165 invisible on 18 servers
+2021-10-12 23:34:11	--	20 :IRC Operators online
+2021-10-12 23:34:11	--	4138 :channels formed
+2021-10-12 23:34:11	--	I have 4985 clients and 1 servers
+2021-10-12 23:34:11	--	Current local users: 4985  Max: 5465
+2021-10-12 23:34:11	--	Current global users: 24199  Max: 24664
+2021-10-12 23:34:11	--	Highest connection count: 5466 (5465 clients) (162584 connections received)
+2021-10-12 23:34:11	--	- liquid.oftc.net Message of the Day -
+2021-10-12 23:34:11	--	-   O
+2021-10-12 23:34:11	--	-    \   The Open and Free
+2021-10-12 23:34:11	--	-     O  Technology Community
+2021-10-12 23:34:11	--	-    /|  https://www.oftc.net
+2021-10-12 23:34:11	--	- O-O O
+2021-10-12 23:34:11	--	-
+2021-10-12 23:34:11	--	- Welcome to the OFTC IRC Network.
+2021-10-12 23:34:11	--	-
+2021-10-12 23:34:11	--	- The Open and Free Technology Community was founded at the
+2021-10-12 23:34:11	--	- end of 2001 by a group of experienced members of the Open
+2021-10-12 23:34:11	--	- Source and Free Software communities; it is aimed at
+2021-10-12 23:34:11	--	- providing these communities with better communication,
+2021-10-12 23:34:11	--	- development, and support infrastructure. Our goal is to
+2021-10-12 23:34:11	--	- provide stable services to members of the community in any
+2021-10-12 23:34:11	--	- part of the world, while listening closely to their needs
+2021-10-12 23:34:11	--	- and desires.
+2021-10-12 23:34:11	--	-
+2021-10-12 23:34:11	--	- We are not a general purpose chat platform, but a topical
+2021-10-12 23:34:11	--	- network intent on providing the open source and free
+2021-10-12 23:34:11	--	- software communities a means to cooperate and communicate.
+2021-10-12 23:34:11	--	- As such, illegal and off-topic activity, such as warez
+2021-10-12 23:34:11	--	- trading, will result in being barred from access.
+2021-10-12 23:34:11	--	-
+2021-10-12 23:34:11	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-12 23:34:11	--	- and process information about IRC connections, nicknames,
+2021-10-12 23:34:11	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-12 23:34:11	--	- that data, and what your rights are. By connecting, you
+2021-10-12 23:34:11	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-12 23:34:11	--	-
+2021-10-12 23:34:11	--	- If you require assistance with using the OFTC IRC network,
+2021-10-12 23:34:11	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-12 23:34:11	--	- details. For help with non-IRC questions please refer to
+2021-10-12 23:34:11	--	- the respective channels and project homepages.
+2021-10-12 23:34:11	--	-
+2021-10-12 23:34:11	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-12 23:34:11	--	End of /MOTD command.
+2021-10-12 23:34:11	--	User mode [+i] by jmanner
+2021-10-12 23:59:31	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-12 23:59:32	--	gnutls: receiving 2 certificates
+2021-10-12 23:59:32	--	 - certificate[1] info:
+2021-10-12 23:59:32	--	   - subject `CN=kinetic.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0366e88f47790e1854ebfd4c383554c4d8c0, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:37:56 UTC', expires `2022-01-04 19:37:55 UTC', pin-sha256="DQP9n1I3MPgilrJ3pmRWywwwQ+KXtRbbyCoFiSMwxfk="
+2021-10-12 23:59:32	--	 - certificate[2] info:
+2021-10-12 23:59:32	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-12 23:59:32	--	gnutls: peer's certificate is trusted
+2021-10-12 23:59:32	--	irc: connected to irc.oftc.net/6697 (109.169.7.194)
+2021-10-12 23:59:33	--	kinetic.oftc.net: *** Looking up your hostname...
+2021-10-12 23:59:33	--	kinetic.oftc.net: *** Checking Ident
+2021-10-12 23:59:33	--	kinetic.oftc.net: *** Found your hostname
+2021-10-12 23:59:44	--	kinetic.oftc.net: *** No Ident response
+2021-10-12 23:59:44	--	kinetic.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-12 23:59:44	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-12 23:59:44	--	Your host is kinetic.oftc.net[109.169.7.194/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-12 23:59:44	--	This server was created Mar 26 2021 at 20:36:49
+2021-10-12 23:59:44	--	kinetic.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-12 23:59:44	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-12 23:59:44	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2021-10-12 23:59:44	--	8VQAAD70R :your unique ID
+2021-10-12 23:59:44	--	There are 32 users and 24124 invisible on 18 servers
+2021-10-12 23:59:44	--	20 :IRC Operators online
+2021-10-12 23:59:44	--	4138 :channels formed
+2021-10-12 23:59:44	--	I have 4840 clients and 1 servers
+2021-10-12 23:59:44	--	Current local users: 4840  Max: 5533
+2021-10-12 23:59:44	--	Current global users: 24156  Max: 24664
+2021-10-12 23:59:44	--	Highest connection count: 5534 (5533 clients) (183690 connections received)
+2021-10-12 23:59:44	--	- kinetic.oftc.net Message of the Day -
+2021-10-12 23:59:44	--	-   O
+2021-10-12 23:59:44	--	-    \   The Open and Free
+2021-10-12 23:59:44	--	-     O  Technology Community
+2021-10-12 23:59:44	--	-    /|  https://www.oftc.net
+2021-10-12 23:59:44	--	- O-O O
+2021-10-12 23:59:44	--	-
+2021-10-12 23:59:44	--	- Welcome to the OFTC IRC Network.
+2021-10-12 23:59:44	--	-
+2021-10-12 23:59:44	--	- The Open and Free Technology Community was founded at the
+2021-10-12 23:59:44	--	- end of 2001 by a group of experienced members of the Open
+2021-10-12 23:59:44	--	- Source and Free Software communities; it is aimed at
+2021-10-12 23:59:44	--	- providing these communities with better communication,
+2021-10-12 23:59:44	--	- development, and support infrastructure. Our goal is to
+2021-10-12 23:59:44	--	- provide stable services to members of the community in any
+2021-10-12 23:59:44	--	- part of the world, while listening closely to their needs
+2021-10-12 23:59:44	--	- and desires.
+2021-10-12 23:59:44	--	-
+2021-10-12 23:59:44	--	- We are not a general purpose chat platform, but a topical
+2021-10-12 23:59:44	--	- network intent on providing the open source and free
+2021-10-12 23:59:44	--	- software communities a means to cooperate and communicate.
+2021-10-12 23:59:44	--	- As such, illegal and off-topic activity, such as warez
+2021-10-12 23:59:44	--	- trading, will result in being barred from access.
+2021-10-12 23:59:44	--	-
+2021-10-12 23:59:44	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-12 23:59:44	--	- and process information about IRC connections, nicknames,
+2021-10-12 23:59:44	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-12 23:59:44	--	- that data, and what your rights are. By connecting, you
+2021-10-12 23:59:44	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-12 23:59:44	--	-
+2021-10-12 23:59:44	--	- If you require assistance with using the OFTC IRC network,
+2021-10-12 23:59:44	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-12 23:59:44	--	- details. For help with non-IRC questions please refer to
+2021-10-12 23:59:44	--	- the respective channels and project homepages.
+2021-10-12 23:59:44	--	-
+2021-10-12 23:59:44	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-12 23:59:44	--	End of /MOTD command.
+2021-10-12 23:59:44	--	User mode [+i] by jmanner
+2021-10-13 01:01:10	--	You have been marked as being away
+2021-10-13 21:18:05	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2021-10-13 21:18:05	--	irc: disconnecting from server...
+2021-10-13 21:18:05	--	irc: disconnected from server
+2021-10-13 21:18:05	--	irc: reconnecting to server in 10 seconds
+2021-10-13 21:18:15	--	irc: reconnecting to server...
+2021-10-13 21:18:15	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-13 21:18:16	--	gnutls: receiving 2 certificates
+2021-10-13 21:18:16	--	 - certificate[1] info:
+2021-10-13 21:18:16	--	   - subject `CN=coulomb.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0326755f48b3b35d1051f6aa497e72a05614, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:37 UTC', expires `2022-01-04 19:38:36 UTC', pin-sha256="oyjCAderPW2fidQNe1LoOLIX9CuLZXcQEpbOkJ76Hr4="
+2021-10-13 21:18:16	--	 - certificate[2] info:
+2021-10-13 21:18:16	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-13 21:18:16	--	gnutls: peer's certificate is trusted
+2021-10-13 21:18:16	--	irc: connected to irc.oftc.net/6697 (109.74.200.93)
+2021-10-13 21:18:16	--	coulomb.oftc.net: *** Looking up your hostname...
+2021-10-13 21:18:16	--	coulomb.oftc.net: *** Checking Ident
+2021-10-13 21:18:16	--	coulomb.oftc.net: *** Found your hostname
+2021-10-13 21:18:27	--	coulomb.oftc.net: *** No Ident response
+2021-10-13 21:18:27	--	coulomb.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-13 21:18:27	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-13 21:18:27	--	Your host is coulomb.oftc.net[109.74.200.93/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-13 21:18:27	--	This server was created Mar 26 2021 at 20:37:28
+2021-10-13 21:18:27	--	coulomb.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-13 21:18:27	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-13 21:18:27	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2021-10-13 21:18:27	--	0BGAAE0WX :your unique ID
+2021-10-13 21:18:27	--	There are 34 users and 24302 invisible on 18 servers
+2021-10-13 21:18:27	--	20 :IRC Operators online
+2021-10-13 21:18:27	--	1 :unknown connection(s)
+2021-10-13 21:18:27	--	4086 :channels formed
+2021-10-13 21:18:27	--	I have 4956 clients and 1 servers
+2021-10-13 21:18:27	--	Current local users: 4956  Max: 5508
+2021-10-13 21:18:27	--	Current global users: 24336  Max: 24664
+2021-10-13 21:18:27	--	Highest connection count: 5509 (5508 clients) (221136 connections received)
+2021-10-13 21:18:27	--	- coulomb.oftc.net Message of the Day -
+2021-10-13 21:18:27	--	-   O
+2021-10-13 21:18:27	--	-    \   The Open and Free
+2021-10-13 21:18:27	--	-     O  Technology Community
+2021-10-13 21:18:27	--	-    /|  https://www.oftc.net
+2021-10-13 21:18:27	--	- O-O O
+2021-10-13 21:18:27	--	-
+2021-10-13 21:18:27	--	- Welcome to the OFTC IRC Network.
+2021-10-13 21:18:27	--	-
+2021-10-13 21:18:27	--	- The Open and Free Technology Community was founded at the
+2021-10-13 21:18:27	--	- end of 2001 by a group of experienced members of the Open
+2021-10-13 21:18:27	--	- Source and Free Software communities; it is aimed at
+2021-10-13 21:18:27	--	- providing these communities with better communication,
+2021-10-13 21:18:27	--	- development, and support infrastructure. Our goal is to
+2021-10-13 21:18:27	--	- provide stable services to members of the community in any
+2021-10-13 21:18:27	--	- part of the world, while listening closely to their needs
+2021-10-13 21:18:27	--	- and desires.
+2021-10-13 21:18:27	--	-
+2021-10-13 21:18:27	--	- We are not a general purpose chat platform, but a topical
+2021-10-13 21:18:27	--	- network intent on providing the open source and free
+2021-10-13 21:18:27	--	- software communities a means to cooperate and communicate.
+2021-10-13 21:18:27	--	- As such, illegal and off-topic activity, such as warez
+2021-10-13 21:18:27	--	- trading, will result in being barred from access.
+2021-10-13 21:18:27	--	-
+2021-10-13 21:18:27	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-13 21:18:27	--	- and process information about IRC connections, nicknames,
+2021-10-13 21:18:27	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-13 21:18:27	--	- that data, and what your rights are. By connecting, you
+2021-10-13 21:18:27	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-13 21:18:27	--	-
+2021-10-13 21:18:27	--	- If you require assistance with using the OFTC IRC network,
+2021-10-13 21:18:27	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-13 21:18:27	--	- details. For help with non-IRC questions please refer to
+2021-10-13 21:18:27	--	- the respective channels and project homepages.
+2021-10-13 21:18:27	--	-
+2021-10-13 21:18:27	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-13 21:18:27	--	End of /MOTD command.
+2021-10-13 21:18:27	--	User mode [+i] by jmanner
+2021-10-13 21:18:27	--	You have been marked as being away
+2021-10-16 12:32:07	--	irc: lag is high, reconnecting to server oftc
+2021-10-16 12:32:07	--	irc: disconnected from server
+2021-10-16 12:32:07	--	irc: reconnecting to server in 10 seconds
+2021-10-16 12:32:17	--	irc: reconnecting to server...
+2021-10-16 12:32:17	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-16 12:32:19	--	gnutls: receiving 2 certificates
+2021-10-16 12:32:19	--	 - certificate[1] info:
+2021-10-16 12:32:19	--	   - subject `CN=kinetic.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0366e88f47790e1854ebfd4c383554c4d8c0, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:37:56 UTC', expires `2022-01-04 19:37:55 UTC', pin-sha256="DQP9n1I3MPgilrJ3pmRWywwwQ+KXtRbbyCoFiSMwxfk="
+2021-10-16 12:32:19	--	 - certificate[2] info:
+2021-10-16 12:32:19	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-16 12:32:19	--	gnutls: peer's certificate is trusted
+2021-10-16 12:32:19	--	irc: connected to irc.oftc.net/6697 (109.169.7.194)
+2021-10-16 12:32:19	--	kinetic.oftc.net: *** Looking up your hostname...
+2021-10-16 12:32:19	--	kinetic.oftc.net: *** Checking Ident
+2021-10-16 12:32:19	--	kinetic.oftc.net: *** Couldn't look up your hostname
+2021-10-16 12:32:30	--	kinetic.oftc.net: *** No Ident response
+2021-10-16 12:32:30	--	kinetic.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-16 12:32:30	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-16 12:32:30	--	Your host is kinetic.oftc.net[109.169.7.194/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-16 12:32:30	--	This server was created Mar 26 2021 at 20:36:49
+2021-10-16 12:32:30	--	kinetic.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-16 12:32:30	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-16 12:32:30	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2021-10-16 12:32:30	--	8VQAAEAJ9 :your unique ID
+2021-10-16 12:32:30	--	There are 32 users and 24229 invisible on 18 servers
+2021-10-16 12:32:30	--	21 :IRC Operators online
+2021-10-16 12:32:30	--	1 :unknown connection(s)
+2021-10-16 12:32:30	--	4084 :channels formed
+2021-10-16 12:32:30	--	I have 4939 clients and 1 servers
+2021-10-16 12:32:30	--	Current local users: 4939  Max: 5533
+2021-10-16 12:32:30	--	Current global users: 24261  Max: 24664
+2021-10-16 12:32:30	--	Highest connection count: 5534 (5533 clients) (186984 connections received)
+2021-10-16 12:32:30	--	- kinetic.oftc.net Message of the Day -
+2021-10-16 12:32:30	--	-   O
+2021-10-16 12:32:30	--	-    \   The Open and Free
+2021-10-16 12:32:30	--	-     O  Technology Community
+2021-10-16 12:32:30	--	-    /|  https://www.oftc.net
+2021-10-16 12:32:30	--	- O-O O
+2021-10-16 12:32:30	--	-
+2021-10-16 12:32:30	--	- Welcome to the OFTC IRC Network.
+2021-10-16 12:32:30	--	-
+2021-10-16 12:32:30	--	- The Open and Free Technology Community was founded at the
+2021-10-16 12:32:30	--	- end of 2001 by a group of experienced members of the Open
+2021-10-16 12:32:30	--	- Source and Free Software communities; it is aimed at
+2021-10-16 12:32:30	--	- providing these communities with better communication,
+2021-10-16 12:32:30	--	- development, and support infrastructure. Our goal is to
+2021-10-16 12:32:30	--	- provide stable services to members of the community in any
+2021-10-16 12:32:30	--	- part of the world, while listening closely to their needs
+2021-10-16 12:32:30	--	- and desires.
+2021-10-16 12:32:30	--	-
+2021-10-16 12:32:30	--	- We are not a general purpose chat platform, but a topical
+2021-10-16 12:32:30	--	- network intent on providing the open source and free
+2021-10-16 12:32:30	--	- software communities a means to cooperate and communicate.
+2021-10-16 12:32:30	--	- As such, illegal and off-topic activity, such as warez
+2021-10-16 12:32:30	--	- trading, will result in being barred from access.
+2021-10-16 12:32:30	--	-
+2021-10-16 12:32:30	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-16 12:32:30	--	- and process information about IRC connections, nicknames,
+2021-10-16 12:32:30	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-16 12:32:30	--	- that data, and what your rights are. By connecting, you
+2021-10-16 12:32:30	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-16 12:32:30	--	-
+2021-10-16 12:32:30	--	- If you require assistance with using the OFTC IRC network,
+2021-10-16 12:32:30	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-16 12:32:30	--	- details. For help with non-IRC questions please refer to
+2021-10-16 12:32:30	--	- the respective channels and project homepages.
+2021-10-16 12:32:30	--	-
+2021-10-16 12:32:30	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-16 12:32:30	--	End of /MOTD command.
+2021-10-16 12:32:30	--	User mode [+i] by jmanner
+2021-10-16 12:32:30	--	You have been marked as being away
+2021-10-17 18:14:21	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-17 18:14:29	--	gnutls: receiving 2 certificates
+2021-10-17 18:14:29	--	 - certificate[1] info:
+2021-10-17 18:14:29	--	   - subject `CN=helix.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04532023a7cd665140b1211eeda9310986c2, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:22 UTC', expires `2022-01-04 19:38:21 UTC', pin-sha256="4ofWFZue1ho7VuUuu/f9uL95J0R47F86T6zRYHlvFaU="
+2021-10-17 18:14:29	--	 - certificate[2] info:
+2021-10-17 18:14:29	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-17 18:14:29	--	gnutls: peer's certificate is trusted
+2021-10-17 18:14:29	--	irc: connected to irc.oftc.net/6697 (130.239.18.116)
+2021-10-17 18:14:30	--	helix.oftc.net: *** Looking up your hostname...
+2021-10-17 18:14:30	--	helix.oftc.net: *** Checking Ident
+2021-10-17 18:14:30	--	helix.oftc.net: *** Couldn't look up your hostname
+2021-10-17 18:14:40	--	helix.oftc.net: *** No Ident response
+2021-10-17 18:14:40	--	helix.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-17 18:14:40	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-17 18:14:40	--	Your host is helix.oftc.net[130.239.18.116/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-17 18:14:40	--	This server was created Mar 26 2021 at 20:38:16
+2021-10-17 18:14:40	--	helix.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-17 18:14:40	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-17 18:14:40	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2021-10-17 18:14:40	--	4G4AAEBEA :your unique ID
+2021-10-17 18:14:40	--	There are 29 users and 24377 invisible on 18 servers
+2021-10-17 18:14:40	--	21 :IRC Operators online
+2021-10-17 18:14:40	--	4138 :channels formed
+2021-10-17 18:14:40	--	I have 4667 clients and 1 servers
+2021-10-17 18:14:40	--	Current local users: 4667  Max: 4667
+2021-10-17 18:14:40	--	Current global users: 24406  Max: 24664
+2021-10-17 18:14:40	--	Highest connection count: 4668 (4667 clients) (188065 connections received)
+2021-10-17 18:14:40	--	- helix.oftc.net Message of the Day -
+2021-10-17 18:14:40	--	-   O
+2021-10-17 18:14:40	--	-    \   The Open and Free
+2021-10-17 18:14:40	--	-     O  Technology Community
+2021-10-17 18:14:40	--	-    /|  https://www.oftc.net
+2021-10-17 18:14:40	--	- O-O O
+2021-10-17 18:14:40	--	-
+2021-10-17 18:14:40	--	- Welcome to the OFTC IRC Network.
+2021-10-17 18:14:40	--	-
+2021-10-17 18:14:40	--	- The Open and Free Technology Community was founded at the
+2021-10-17 18:14:40	--	- end of 2001 by a group of experienced members of the Open
+2021-10-17 18:14:40	--	- Source and Free Software communities; it is aimed at
+2021-10-17 18:14:40	--	- providing these communities with better communication,
+2021-10-17 18:14:40	--	- development, and support infrastructure. Our goal is to
+2021-10-17 18:14:40	--	- provide stable services to members of the community in any
+2021-10-17 18:14:40	--	- part of the world, while listening closely to their needs
+2021-10-17 18:14:40	--	- and desires.
+2021-10-17 18:14:40	--	-
+2021-10-17 18:14:40	--	- We are not a general purpose chat platform, but a topical
+2021-10-17 18:14:40	--	- network intent on providing the open source and free
+2021-10-17 18:14:40	--	- software communities a means to cooperate and communicate.
+2021-10-17 18:14:40	--	- As such, illegal and off-topic activity, such as warez
+2021-10-17 18:14:40	--	- trading, will result in being barred from access.
+2021-10-17 18:14:40	--	-
+2021-10-17 18:14:40	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-17 18:14:40	--	- and process information about IRC connections, nicknames,
+2021-10-17 18:14:40	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-17 18:14:40	--	- that data, and what your rights are. By connecting, you
+2021-10-17 18:14:40	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-17 18:14:40	--	-
+2021-10-17 18:14:40	--	- If you require assistance with using the OFTC IRC network,
+2021-10-17 18:14:40	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-17 18:14:40	--	- details. For help with non-IRC questions please refer to
+2021-10-17 18:14:40	--	- the respective channels and project homepages.
+2021-10-17 18:14:40	--	-
+2021-10-17 18:14:40	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-17 18:14:40	--	End of /MOTD command.
+2021-10-17 18:14:40	--	User mode [+i] by jmanner
+2021-10-17 18:18:41	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-17 18:18:43	--	gnutls: receiving 2 certificates
+2021-10-17 18:18:43	--	 - certificate[1] info:
+2021-10-17 18:18:43	--	   - subject `CN=liquid.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x049e3967f43ee5693e291fb3c7e99b201151, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:50 UTC', expires `2022-01-04 19:38:49 UTC', pin-sha256="A1ZNi/sflrIMufHJiCWyXNw/PMiZrZGKnwcCdFRoOFQ="
+2021-10-17 18:18:43	--	 - certificate[2] info:
+2021-10-17 18:18:43	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-17 18:18:43	--	gnutls: peer's certificate is trusted
+2021-10-17 18:18:43	--	irc: connected to irc.oftc.net/6697 (188.240.145.40)
+2021-10-17 18:18:44	--	liquid.oftc.net: *** Looking up your hostname...
+2021-10-17 18:18:44	--	liquid.oftc.net: *** Checking Ident
+2021-10-17 18:18:44	--	liquid.oftc.net: *** Couldn't look up your hostname
+2021-10-17 18:18:54	--	liquid.oftc.net: *** No Ident response
+2021-10-17 18:18:54	--	liquid.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-17 18:18:54	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-17 18:18:54	--	Your host is liquid.oftc.net[188.240.145.40/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-17 18:18:54	--	This server was created Mar 26 2021 at 20:37:26
+2021-10-17 18:18:54	--	liquid.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-17 18:18:54	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-17 18:18:54	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2021-10-17 18:18:54	--	7YZAADUWU :your unique ID
+2021-10-17 18:18:54	--	There are 29 users and 24353 invisible on 18 servers
+2021-10-17 18:18:54	--	21 :IRC Operators online
+2021-10-17 18:18:54	--	4139 :channels formed
+2021-10-17 18:18:54	--	I have 5076 clients and 1 servers
+2021-10-17 18:18:54	--	Current local users: 5076  Max: 5465
+2021-10-17 18:18:54	--	Current global users: 24382  Max: 24664
+2021-10-17 18:18:54	--	Highest connection count: 5466 (5465 clients) (166701 connections received)
+2021-10-17 18:18:54	--	- liquid.oftc.net Message of the Day -
+2021-10-17 18:18:54	--	-   O
+2021-10-17 18:18:54	--	-    \   The Open and Free
+2021-10-17 18:18:54	--	-     O  Technology Community
+2021-10-17 18:18:54	--	-    /|  https://www.oftc.net
+2021-10-17 18:18:54	--	- O-O O
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- Welcome to the OFTC IRC Network.
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- The Open and Free Technology Community was founded at the
+2021-10-17 18:18:54	--	- end of 2001 by a group of experienced members of the Open
+2021-10-17 18:18:54	--	- Source and Free Software communities; it is aimed at
+2021-10-17 18:18:54	--	- providing these communities with better communication,
+2021-10-17 18:18:54	--	- development, and support infrastructure. Our goal is to
+2021-10-17 18:18:54	--	- provide stable services to members of the community in any
+2021-10-17 18:18:54	--	- part of the world, while listening closely to their needs
+2021-10-17 18:18:54	--	- and desires.
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- We are not a general purpose chat platform, but a topical
+2021-10-17 18:18:54	--	- network intent on providing the open source and free
+2021-10-17 18:18:54	--	- software communities a means to cooperate and communicate.
+2021-10-17 18:18:54	--	- As such, illegal and off-topic activity, such as warez
+2021-10-17 18:18:54	--	- trading, will result in being barred from access.
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-17 18:18:54	--	- and process information about IRC connections, nicknames,
+2021-10-17 18:18:54	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-17 18:18:54	--	- that data, and what your rights are. By connecting, you
+2021-10-17 18:18:54	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- If you require assistance with using the OFTC IRC network,
+2021-10-17 18:18:54	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-17 18:18:54	--	- details. For help with non-IRC questions please refer to
+2021-10-17 18:18:54	--	- the respective channels and project homepages.
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-17 18:18:54	--	End of /MOTD command.
+2021-10-17 18:18:54	--	User mode [+i] by jmanner
+2021-10-17 18:30:11	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-17 18:30:14	--	gnutls: receiving 2 certificates
+2021-10-17 18:30:14	--	 - certificate[1] info:
+2021-10-17 18:30:14	--	   - subject `CN=coulomb.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0326755f48b3b35d1051f6aa497e72a05614, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:37 UTC', expires `2022-01-04 19:38:36 UTC', pin-sha256="oyjCAderPW2fidQNe1LoOLIX9CuLZXcQEpbOkJ76Hr4="
+2021-10-17 18:30:14	--	 - certificate[2] info:
+2021-10-17 18:30:14	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-17 18:30:14	--	gnutls: peer's certificate is trusted
+2021-10-17 18:30:14	--	irc: connected to irc.oftc.net/6697 (109.74.200.93)
+2021-10-17 18:30:15	--	coulomb.oftc.net: *** Looking up your hostname...
+2021-10-17 18:30:15	--	coulomb.oftc.net: *** Checking Ident
+2021-10-17 18:30:15	--	coulomb.oftc.net: *** Couldn't look up your hostname
+2021-10-17 18:30:26	--	coulomb.oftc.net: *** No Ident response
+2021-10-17 18:30:26	--	coulomb.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-17 18:30:26	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-17 18:30:26	--	Your host is coulomb.oftc.net[109.74.200.93/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-17 18:30:26	--	This server was created Mar 26 2021 at 20:37:28
+2021-10-17 18:30:26	--	coulomb.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-17 18:30:26	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-17 18:30:26	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2021-10-17 18:30:26	--	0BGAAE3Z5 :your unique ID
+2021-10-17 18:30:26	--	There are 29 users and 24370 invisible on 18 servers
+2021-10-17 18:30:26	--	21 :IRC Operators online
+2021-10-17 18:30:26	--	4137 :channels formed
+2021-10-17 18:30:26	--	I have 5062 clients and 1 servers
+2021-10-17 18:30:26	--	Current local users: 5062  Max: 5508
+2021-10-17 18:30:26	--	Current global users: 24399  Max: 24664
+2021-10-17 18:30:26	--	Highest connection count: 5509 (5508 clients) (225140 connections received)
+2021-10-17 18:30:26	--	- coulomb.oftc.net Message of the Day -
+2021-10-17 18:30:26	--	-   O
+2021-10-17 18:30:26	--	-    \   The Open and Free
+2021-10-17 18:30:26	--	-     O  Technology Community
+2021-10-17 18:30:26	--	-    /|  https://www.oftc.net
+2021-10-17 18:30:26	--	- O-O O
+2021-10-17 18:30:26	--	-
+2021-10-17 18:30:26	--	- Welcome to the OFTC IRC Network.
+2021-10-17 18:30:26	--	-
+2021-10-17 18:30:26	--	- The Open and Free Technology Community was founded at the
+2021-10-17 18:30:26	--	- end of 2001 by a group of experienced members of the Open
+2021-10-17 18:30:26	--	- Source and Free Software communities; it is aimed at
+2021-10-17 18:30:26	--	- providing these communities with better communication,
+2021-10-17 18:30:26	--	- development, and support infrastructure. Our goal is to
+2021-10-17 18:30:26	--	- provide stable services to members of the community in any
+2021-10-17 18:30:26	--	- part of the world, while listening closely to their needs
+2021-10-17 18:30:26	--	- and desires.
+2021-10-17 18:30:26	--	-
+2021-10-17 18:30:26	--	- We are not a general purpose chat platform, but a topical
+2021-10-17 18:30:26	--	- network intent on providing the open source and free
+2021-10-17 18:30:26	--	- software communities a means to cooperate and communicate.
+2021-10-17 18:30:26	--	- As such, illegal and off-topic activity, such as warez
+2021-10-17 18:30:26	--	- trading, will result in being barred from access.
+2021-10-17 18:30:26	--	-
+2021-10-17 18:30:26	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-17 18:30:26	--	- and process information about IRC connections, nicknames,
+2021-10-17 18:30:26	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-17 18:30:26	--	- that data, and what your rights are. By connecting, you
+2021-10-17 18:30:26	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-17 18:30:26	--	-
+2021-10-17 18:30:26	--	- If you require assistance with using the OFTC IRC network,
+2021-10-17 18:30:26	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-17 18:30:26	--	- details. For help with non-IRC questions please refer to
+2021-10-17 18:30:26	--	- the respective channels and project homepages.
+2021-10-17 18:30:26	--	-
+2021-10-17 18:30:26	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-17 18:30:26	--	End of /MOTD command.
+2021-10-17 18:30:26	--	User mode [+i] by jmanner
+2021-10-17 19:45:03	--	irc: lag is high, reconnecting to server oftc
+2021-10-17 19:45:03	--	irc: disconnected from server
+2021-10-17 19:45:03	--	irc: reconnecting to server in 10 seconds
+2021-10-17 19:45:13	--	irc: reconnecting to server...
+2021-10-17 19:45:13	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-17 19:45:27	--	gnutls: receiving 2 certificates
+2021-10-17 19:45:27	--	 - certificate[1] info:
+2021-10-17 19:45:27	--	   - subject `CN=kinetic.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0366e88f47790e1854ebfd4c383554c4d8c0, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:37:56 UTC', expires `2022-01-04 19:37:55 UTC', pin-sha256="DQP9n1I3MPgilrJ3pmRWywwwQ+KXtRbbyCoFiSMwxfk="
+2021-10-17 19:45:27	--	 - certificate[2] info:
+2021-10-17 19:45:27	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-17 19:45:27	--	gnutls: peer's certificate is trusted
+2021-10-17 19:45:27	--	irc: connected to irc.oftc.net/6697 (109.169.7.194)
+2021-10-17 19:45:28	--	kinetic.oftc.net: *** Looking up your hostname...
+2021-10-17 19:45:28	--	kinetic.oftc.net: *** Checking Ident
+2021-10-17 19:45:28	--	kinetic.oftc.net: *** Couldn't look up your hostname
+2021-10-17 19:45:39	--	kinetic.oftc.net: *** No Ident response
+2021-10-17 19:45:39	--	kinetic.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-17 19:45:39	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-17 19:45:39	--	Your host is kinetic.oftc.net[109.169.7.194/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-17 19:45:39	--	This server was created Mar 26 2021 at 20:36:49
+2021-10-17 19:45:39	--	kinetic.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-17 19:45:39	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-17 19:45:39	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2021-10-17 19:45:39	--	8VQAAEBAN :your unique ID
+2021-10-17 19:45:39	--	There are 28 users and 24279 invisible on 18 servers
+2021-10-17 19:45:39	--	21 :IRC Operators online
+2021-10-17 19:45:39	--	1 :unknown connection(s)
+2021-10-17 19:45:39	--	4137 :channels formed
+2021-10-17 19:45:39	--	I have 4907 clients and 1 servers
+2021-10-17 19:45:39	--	Current local users: 4907  Max: 5533
+2021-10-17 19:45:39	--	Current global users: 24307  Max: 24664
+2021-10-17 19:45:39	--	Highest connection count: 5534 (5533 clients) (187934 connections received)
+2021-10-17 19:45:39	--	- kinetic.oftc.net Message of the Day -
+2021-10-17 19:45:39	--	-   O
+2021-10-17 19:45:39	--	-    \   The Open and Free
+2021-10-17 19:45:39	--	-     O  Technology Community
+2021-10-17 19:45:39	--	-    /|  https://www.oftc.net
+2021-10-17 19:45:39	--	- O-O O
+2021-10-17 19:45:39	--	-
+2021-10-17 19:45:39	--	- Welcome to the OFTC IRC Network.
+2021-10-17 19:45:39	--	-
+2021-10-17 19:45:39	--	- The Open and Free Technology Community was founded at the
+2021-10-17 19:45:39	--	- end of 2001 by a group of experienced members of the Open
+2021-10-17 19:45:39	--	- Source and Free Software communities; it is aimed at
+2021-10-17 19:45:39	--	- providing these communities with better communication,
+2021-10-17 19:45:39	--	- development, and support infrastructure. Our goal is to
+2021-10-17 19:45:39	--	- provide stable services to members of the community in any
+2021-10-17 19:45:39	--	- part of the world, while listening closely to their needs
+2021-10-17 19:45:39	--	- and desires.
+2021-10-17 19:45:39	--	-
+2021-10-17 19:45:39	--	- We are not a general purpose chat platform, but a topical
+2021-10-17 19:45:39	--	- network intent on providing the open source and free
+2021-10-17 19:45:39	--	- software communities a means to cooperate and communicate.
+2021-10-17 19:45:39	--	- As such, illegal and off-topic activity, such as warez
+2021-10-17 19:45:39	--	- trading, will result in being barred from access.
+2021-10-17 19:45:39	--	-
+2021-10-17 19:45:39	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-17 19:45:39	--	- and process information about IRC connections, nicknames,
+2021-10-17 19:45:39	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-17 19:45:39	--	- that data, and what your rights are. By connecting, you
+2021-10-17 19:45:39	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-17 19:45:39	--	-
+2021-10-17 19:45:39	--	- If you require assistance with using the OFTC IRC network,
+2021-10-17 19:45:39	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-17 19:45:39	--	- details. For help with non-IRC questions please refer to
+2021-10-17 19:45:39	--	- the respective channels and project homepages.
+2021-10-17 19:45:39	--	-
+2021-10-17 19:45:39	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-17 19:45:39	--	End of /MOTD command.
+2021-10-17 19:45:39	--	User mode [+i] by jmanner
+2021-10-30 12:09:08	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-30 12:09:09	--	gnutls: receiving 2 certificates
+2021-10-30 12:09:09	--	 - certificate[1] info:
+2021-10-30 12:09:09	--	   - subject `CN=liquid.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x049e3967f43ee5693e291fb3c7e99b201151, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:50 UTC', expires `2022-01-04 19:38:49 UTC', pin-sha256="A1ZNi/sflrIMufHJiCWyXNw/PMiZrZGKnwcCdFRoOFQ="
+2021-10-30 12:09:09	--	 - certificate[2] info:
+2021-10-30 12:09:09	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 12:09:09	--	gnutls: peer's certificate is trusted
+2021-10-30 12:09:09	--	irc: connected to irc.oftc.net/6697 (188.240.145.40)
+2021-10-30 12:09:10	--	liquid.oftc.net: *** Looking up your hostname...
+2021-10-30 12:09:10	--	liquid.oftc.net: *** Checking Ident
+2021-10-30 12:09:10	--	liquid.oftc.net: *** Found your hostname
+2021-10-30 12:09:21	--	liquid.oftc.net: *** No Ident response
+2021-10-30 12:09:21	--	liquid.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-30 12:09:21	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-30 12:09:21	--	Your host is liquid.oftc.net[188.240.145.40/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-30 12:09:21	--	This server was created Mar 26 2021 at 20:37:26
+2021-10-30 12:09:21	--	liquid.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-30 12:09:21	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-30 12:09:21	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2021-10-30 12:09:21	--	7YZAAD50B :your unique ID
+2021-10-30 12:09:21	--	There are 32 users and 25058 invisible on 18 servers
+2021-10-30 12:09:21	--	21 :IRC Operators online
+2021-10-30 12:09:21	--	4064 :channels formed
+2021-10-30 12:09:21	--	I have 5207 clients and 1 servers
+2021-10-30 12:09:21	--	Current local users: 5207  Max: 5465
+2021-10-30 12:09:21	--	Current global users: 25090  Max: 25445
+2021-10-30 12:09:21	--	Highest connection count: 5466 (5465 clients) (181082 connections received)
+2021-10-30 12:09:21	--	- liquid.oftc.net Message of the Day -
+2021-10-30 12:09:21	--	-   O
+2021-10-30 12:09:21	--	-    \   The Open and Free
+2021-10-30 12:09:21	--	-     O  Technology Community
+2021-10-30 12:09:21	--	-    /|  https://www.oftc.net
+2021-10-30 12:09:21	--	- O-O O
+2021-10-30 12:09:21	--	-
+2021-10-30 12:09:21	--	- Welcome to the OFTC IRC Network.
+2021-10-30 12:09:21	--	-
+2021-10-30 12:09:21	--	- The Open and Free Technology Community was founded at the
+2021-10-30 12:09:21	--	- end of 2001 by a group of experienced members of the Open
+2021-10-30 12:09:21	--	- Source and Free Software communities; it is aimed at
+2021-10-30 12:09:21	--	- providing these communities with better communication,
+2021-10-30 12:09:21	--	- development, and support infrastructure. Our goal is to
+2021-10-30 12:09:21	--	- provide stable services to members of the community in any
+2021-10-30 12:09:21	--	- part of the world, while listening closely to their needs
+2021-10-30 12:09:21	--	- and desires.
+2021-10-30 12:09:21	--	-
+2021-10-30 12:09:21	--	- We are not a general purpose chat platform, but a topical
+2021-10-30 12:09:21	--	- network intent on providing the open source and free
+2021-10-30 12:09:21	--	- software communities a means to cooperate and communicate.
+2021-10-30 12:09:21	--	- As such, illegal and off-topic activity, such as warez
+2021-10-30 12:09:21	--	- trading, will result in being barred from access.
+2021-10-30 12:09:21	--	-
+2021-10-30 12:09:21	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-30 12:09:21	--	- and process information about IRC connections, nicknames,
+2021-10-30 12:09:21	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-30 12:09:21	--	- that data, and what your rights are. By connecting, you
+2021-10-30 12:09:21	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-30 12:09:21	--	-
+2021-10-30 12:09:21	--	- If you require assistance with using the OFTC IRC network,
+2021-10-30 12:09:21	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-30 12:09:21	--	- details. For help with non-IRC questions please refer to
+2021-10-30 12:09:21	--	- the respective channels and project homepages.
+2021-10-30 12:09:21	--	-
+2021-10-30 12:09:21	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-30 12:09:21	--	End of /MOTD command.
+2021-10-30 12:09:21	--	User mode [+i] by jmanner
+2021-10-30 12:10:38	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-30 12:10:39	--	gnutls: receiving 2 certificates
+2021-10-30 12:10:39	--	 - certificate[1] info:
+2021-10-30 12:10:39	--	   - subject `CN=liquid.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x049e3967f43ee5693e291fb3c7e99b201151, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:50 UTC', expires `2022-01-04 19:38:49 UTC', pin-sha256="A1ZNi/sflrIMufHJiCWyXNw/PMiZrZGKnwcCdFRoOFQ="
+2021-10-30 12:10:39	--	 - certificate[2] info:
+2021-10-30 12:10:39	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 12:10:39	--	gnutls: peer's certificate is trusted
+2021-10-30 12:10:39	--	irc: connected to irc.oftc.net/6697 (188.240.145.40)
+2021-10-30 12:10:39	--	liquid.oftc.net: *** Looking up your hostname...
+2021-10-30 12:10:39	--	liquid.oftc.net: *** Checking Ident
+2021-10-30 12:10:39	--	liquid.oftc.net: *** Found your hostname
+2021-10-30 12:10:50	--	liquid.oftc.net: *** No Ident response
+2021-10-30 12:10:50	--	liquid.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-30 12:10:50	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-30 12:10:50	--	Your host is liquid.oftc.net[188.240.145.40/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-30 12:10:50	--	This server was created Mar 26 2021 at 20:37:26
+2021-10-30 12:10:50	--	liquid.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-30 12:10:50	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-30 12:10:50	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2021-10-30 12:10:50	--	7YZAAD50E :your unique ID
+2021-10-30 12:10:50	--	There are 32 users and 25056 invisible on 18 servers
+2021-10-30 12:10:50	--	21 :IRC Operators online
+2021-10-30 12:10:50	--	1 :unknown connection(s)
+2021-10-30 12:10:50	--	4066 :channels formed
+2021-10-30 12:10:50	--	I have 5206 clients and 1 servers
+2021-10-30 12:10:50	--	Current local users: 5206  Max: 5465
+2021-10-30 12:10:50	--	Current global users: 25088  Max: 25445
+2021-10-30 12:10:50	--	Highest connection count: 5466 (5465 clients) (181085 connections received)
+2021-10-30 12:10:50	--	- liquid.oftc.net Message of the Day -
+2021-10-30 12:10:50	--	-   O
+2021-10-30 12:10:50	--	-    \   The Open and Free
+2021-10-30 12:10:50	--	-     O  Technology Community
+2021-10-30 12:10:50	--	-    /|  https://www.oftc.net
+2021-10-30 12:10:50	--	- O-O O
+2021-10-30 12:10:50	--	-
+2021-10-30 12:10:50	--	- Welcome to the OFTC IRC Network.
+2021-10-30 12:10:50	--	-
+2021-10-30 12:10:50	--	- The Open and Free Technology Community was founded at the
+2021-10-30 12:10:50	--	- end of 2001 by a group of experienced members of the Open
+2021-10-30 12:10:50	--	- Source and Free Software communities; it is aimed at
+2021-10-30 12:10:50	--	- providing these communities with better communication,
+2021-10-30 12:10:50	--	- development, and support infrastructure. Our goal is to
+2021-10-30 12:10:50	--	- provide stable services to members of the community in any
+2021-10-30 12:10:50	--	- part of the world, while listening closely to their needs
+2021-10-30 12:10:50	--	- and desires.
+2021-10-30 12:10:50	--	-
+2021-10-30 12:10:50	--	- We are not a general purpose chat platform, but a topical
+2021-10-30 12:10:50	--	- network intent on providing the open source and free
+2021-10-30 12:10:50	--	- software communities a means to cooperate and communicate.
+2021-10-30 12:10:50	--	- As such, illegal and off-topic activity, such as warez
+2021-10-30 12:10:50	--	- trading, will result in being barred from access.
+2021-10-30 12:10:50	--	-
+2021-10-30 12:10:50	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-30 12:10:50	--	- and process information about IRC connections, nicknames,
+2021-10-30 12:10:50	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-30 12:10:50	--	- that data, and what your rights are. By connecting, you
+2021-10-30 12:10:50	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-30 12:10:50	--	-
+2021-10-30 12:10:50	--	- If you require assistance with using the OFTC IRC network,
+2021-10-30 12:10:50	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-30 12:10:50	--	- details. For help with non-IRC questions please refer to
+2021-10-30 12:10:50	--	- the respective channels and project homepages.
+2021-10-30 12:10:50	--	-
+2021-10-30 12:10:50	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-30 12:10:50	--	End of /MOTD command.
+2021-10-30 12:10:50	--	User mode [+i] by jmanner
+2021-10-30 17:02:10	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2021-10-30 17:02:10	--	irc: disconnecting from server...
+2021-10-30 17:02:10	--	irc: disconnected from server
+2021-10-30 17:02:10	--	irc: reconnecting to server in 10 seconds
+2021-10-30 17:02:20	--	irc: reconnecting to server...
+2021-10-30 17:02:20	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-30 17:02:21	--	gnutls: receiving 2 certificates
+2021-10-30 17:02:21	--	 - certificate[1] info:
+2021-10-30 17:02:21	--	   - subject `CN=helix.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04532023a7cd665140b1211eeda9310986c2, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:22 UTC', expires `2022-01-04 19:38:21 UTC', pin-sha256="4ofWFZue1ho7VuUuu/f9uL95J0R47F86T6zRYHlvFaU="
+2021-10-30 17:02:21	--	 - certificate[2] info:
+2021-10-30 17:02:21	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 17:02:21	--	gnutls: peer's certificate is trusted
+2021-10-30 17:02:21	--	irc: connected to irc.oftc.net/6697 (130.239.18.116)
+2021-10-30 17:02:22	--	helix.oftc.net: *** Looking up your hostname...
+2021-10-30 17:02:22	--	helix.oftc.net: *** Checking Ident
+2021-10-30 17:02:22	--	helix.oftc.net: *** Found your hostname
+2021-10-30 17:02:32	--	helix.oftc.net: *** No Ident response
+2021-10-30 17:02:32	--	helix.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-30 17:02:32	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-30 17:02:32	--	Your host is helix.oftc.net[130.239.18.116/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-30 17:02:32	--	This server was created Mar 26 2021 at 20:38:16
+2021-10-30 17:02:32	--	helix.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-30 17:02:32	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-30 17:02:32	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2021-10-30 17:02:32	--	4G4AAEMW1 :your unique ID
+2021-10-30 17:02:32	--	There are 33 users and 25144 invisible on 18 servers
+2021-10-30 17:02:32	--	21 :IRC Operators online
+2021-10-30 17:02:32	--	4073 :channels formed
+2021-10-30 17:02:32	--	I have 4983 clients and 1 servers
+2021-10-30 17:02:32	--	Current local users: 4983  Max: 5034
+2021-10-30 17:02:32	--	Current global users: 25177  Max: 25445
+2021-10-30 17:02:32	--	Highest connection count: 5035 (5034 clients) (202996 connections received)
+2021-10-30 17:02:32	--	- helix.oftc.net Message of the Day -
+2021-10-30 17:02:32	--	-   O
+2021-10-30 17:02:32	--	-    \   The Open and Free
+2021-10-30 17:02:32	--	-     O  Technology Community
+2021-10-30 17:02:32	--	-    /|  https://www.oftc.net
+2021-10-30 17:02:32	--	- O-O O
+2021-10-30 17:02:32	--	-
+2021-10-30 17:02:32	--	- Welcome to the OFTC IRC Network.
+2021-10-30 17:02:32	--	-
+2021-10-30 17:02:32	--	- The Open and Free Technology Community was founded at the
+2021-10-30 17:02:32	--	- end of 2001 by a group of experienced members of the Open
+2021-10-30 17:02:32	--	- Source and Free Software communities; it is aimed at
+2021-10-30 17:02:32	--	- providing these communities with better communication,
+2021-10-30 17:02:32	--	- development, and support infrastructure. Our goal is to
+2021-10-30 17:02:32	--	- provide stable services to members of the community in any
+2021-10-30 17:02:32	--	- part of the world, while listening closely to their needs
+2021-10-30 17:02:32	--	- and desires.
+2021-10-30 17:02:32	--	-
+2021-10-30 17:02:32	--	- We are not a general purpose chat platform, but a topical
+2021-10-30 17:02:32	--	- network intent on providing the open source and free
+2021-10-30 17:02:32	--	- software communities a means to cooperate and communicate.
+2021-10-30 17:02:32	--	- As such, illegal and off-topic activity, such as warez
+2021-10-30 17:02:32	--	- trading, will result in being barred from access.
+2021-10-30 17:02:32	--	-
+2021-10-30 17:02:32	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-30 17:02:32	--	- and process information about IRC connections, nicknames,
+2021-10-30 17:02:32	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-30 17:02:32	--	- that data, and what your rights are. By connecting, you
+2021-10-30 17:02:32	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-30 17:02:32	--	-
+2021-10-30 17:02:32	--	- If you require assistance with using the OFTC IRC network,
+2021-10-30 17:02:32	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-30 17:02:32	--	- details. For help with non-IRC questions please refer to
+2021-10-30 17:02:32	--	- the respective channels and project homepages.
+2021-10-30 17:02:32	--	-
+2021-10-30 17:02:32	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-30 17:02:32	--	End of /MOTD command.
+2021-10-30 17:02:32	--	User mode [+i] by jmanner
+2021-10-30 22:17:10	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2021-10-30 22:17:10	--	irc: disconnecting from server...
+2021-10-30 22:17:10	--	irc: disconnected from server
+2021-10-30 22:17:10	--	irc: reconnecting to server in 10 seconds
+2021-10-30 22:17:20	--	irc: reconnecting to server...
+2021-10-30 22:17:20	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-30 22:17:21	--	gnutls: receiving 2 certificates
+2021-10-30 22:17:21	--	 - certificate[1] info:
+2021-10-30 22:17:21	--	   - subject `CN=liquid.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x049e3967f43ee5693e291fb3c7e99b201151, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:50 UTC', expires `2022-01-04 19:38:49 UTC', pin-sha256="A1ZNi/sflrIMufHJiCWyXNw/PMiZrZGKnwcCdFRoOFQ="
+2021-10-30 22:17:21	--	 - certificate[2] info:
+2021-10-30 22:17:21	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 22:17:21	--	gnutls: peer's certificate is trusted
+2021-10-30 22:17:21	--	irc: connected to irc.oftc.net/6697 (188.240.145.40)
+2021-10-30 22:17:21	--	liquid.oftc.net: *** Looking up your hostname...
+2021-10-30 22:17:21	--	liquid.oftc.net: *** Checking Ident
+2021-10-30 22:17:21	--	liquid.oftc.net: *** Found your hostname
+2021-10-30 22:17:32	--	liquid.oftc.net: *** No Ident response
+2021-10-30 22:17:32	--	liquid.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-30 22:17:32	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-30 22:17:32	--	Your host is liquid.oftc.net[188.240.145.40/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-30 22:17:32	--	This server was created Mar 26 2021 at 20:37:26
+2021-10-30 22:17:32	--	liquid.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-30 22:17:32	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-30 22:17:32	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2021-10-30 22:17:32	--	7YZAAD582 :your unique ID
+2021-10-30 22:17:32	--	There are 32 users and 25147 invisible on 18 servers
+2021-10-30 22:17:32	--	21 :IRC Operators online
+2021-10-30 22:17:32	--	4073 :channels formed
+2021-10-30 22:17:32	--	I have 5205 clients and 1 servers
+2021-10-30 22:17:32	--	Current local users: 5205  Max: 5465
+2021-10-30 22:17:32	--	Current global users: 25179  Max: 25445
+2021-10-30 22:17:32	--	Highest connection count: 5466 (5465 clients) (181397 connections received)
+2021-10-30 22:17:32	--	- liquid.oftc.net Message of the Day -
+2021-10-30 22:17:32	--	-   O
+2021-10-30 22:17:32	--	-    \   The Open and Free
+2021-10-30 22:17:32	--	-     O  Technology Community
+2021-10-30 22:17:32	--	-    /|  https://www.oftc.net
+2021-10-30 22:17:32	--	- O-O O
+2021-10-30 22:17:32	--	-
+2021-10-30 22:17:32	--	- Welcome to the OFTC IRC Network.
+2021-10-30 22:17:32	--	-
+2021-10-30 22:17:32	--	- The Open and Free Technology Community was founded at the
+2021-10-30 22:17:32	--	- end of 2001 by a group of experienced members of the Open
+2021-10-30 22:17:32	--	- Source and Free Software communities; it is aimed at
+2021-10-30 22:17:32	--	- providing these communities with better communication,
+2021-10-30 22:17:32	--	- development, and support infrastructure. Our goal is to
+2021-10-30 22:17:32	--	- provide stable services to members of the community in any
+2021-10-30 22:17:32	--	- part of the world, while listening closely to their needs
+2021-10-30 22:17:32	--	- and desires.
+2021-10-30 22:17:32	--	-
+2021-10-30 22:17:32	--	- We are not a general purpose chat platform, but a topical
+2021-10-30 22:17:32	--	- network intent on providing the open source and free
+2021-10-30 22:17:32	--	- software communities a means to cooperate and communicate.
+2021-10-30 22:17:32	--	- As such, illegal and off-topic activity, such as warez
+2021-10-30 22:17:32	--	- trading, will result in being barred from access.
+2021-10-30 22:17:32	--	-
+2021-10-30 22:17:32	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-30 22:17:32	--	- and process information about IRC connections, nicknames,
+2021-10-30 22:17:32	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-30 22:17:32	--	- that data, and what your rights are. By connecting, you
+2021-10-30 22:17:32	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-30 22:17:32	--	-
+2021-10-30 22:17:32	--	- If you require assistance with using the OFTC IRC network,
+2021-10-30 22:17:32	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-30 22:17:32	--	- details. For help with non-IRC questions please refer to
+2021-10-30 22:17:32	--	- the respective channels and project homepages.
+2021-10-30 22:17:32	--	-
+2021-10-30 22:17:32	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-30 22:17:32	--	End of /MOTD command.
+2021-10-30 22:17:32	--	User mode [+i] by jmanner
+2021-10-30 23:20:23	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2021-10-30 23:20:23	--	irc: disconnecting from server...
+2021-10-30 23:20:23	--	irc: disconnected from server
+2021-10-30 23:20:23	--	irc: reconnecting to server in 10 seconds
+2021-10-30 23:20:33	--	irc: reconnecting to server...
+2021-10-30 23:20:33	--	irc: connecting to server irc.oftc.net/6697 (SSL)...
+2021-10-30 23:20:34	--	gnutls: receiving 2 certificates
+2021-10-30 23:20:34	--	 - certificate[1] info:
+2021-10-30 23:20:34	--	   - subject `CN=coulomb.oftc.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0326755f48b3b35d1051f6aa497e72a05614, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-06 19:38:37 UTC', expires `2022-01-04 19:38:36 UTC', pin-sha256="oyjCAderPW2fidQNe1LoOLIX9CuLZXcQEpbOkJ76Hr4="
+2021-10-30 23:20:34	--	 - certificate[2] info:
+2021-10-30 23:20:34	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 23:20:34	--	gnutls: peer's certificate is trusted
+2021-10-30 23:20:34	--	irc: connected to irc.oftc.net/6697 (109.74.200.93)
+2021-10-30 23:20:34	--	coulomb.oftc.net: *** Looking up your hostname...
+2021-10-30 23:20:34	--	coulomb.oftc.net: *** Checking Ident
+2021-10-30 23:20:34	--	coulomb.oftc.net: *** Found your hostname
+2021-10-30 23:20:45	--	coulomb.oftc.net: *** No Ident response
+2021-10-30 23:20:45	--	coulomb.oftc.net: *** Connected securely via TLSv1.3 TLS_AES_256_GCM_SHA384-256
+2021-10-30 23:20:45	--	Welcome to the OFTC Internet Relay Chat Network jmanner
+2021-10-30 23:20:45	--	Your host is coulomb.oftc.net[109.74.200.93/6697], running version hybrid-7.2.2+oftc1.7.3
+2021-10-30 23:20:45	--	This server was created Mar 26 2021 at 20:37:28
+2021-10-30 23:20:45	--	coulomb.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2021-10-30 23:20:45	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2021-10-30 23:20:45	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2021-10-30 23:20:45	--	0BGAAFHW1 :your unique ID
+2021-10-30 23:20:45	--	There are 32 users and 25131 invisible on 18 servers
+2021-10-30 23:20:45	--	21 :IRC Operators online
+2021-10-30 23:20:45	--	4074 :channels formed
+2021-10-30 23:20:45	--	I have 5118 clients and 1 servers
+2021-10-30 23:20:45	--	Current local users: 5118  Max: 5508
+2021-10-30 23:20:45	--	Current global users: 25163  Max: 25445
+2021-10-30 23:20:45	--	Highest connection count: 5509 (5508 clients) (243172 connections received)
+2021-10-30 23:20:45	--	- coulomb.oftc.net Message of the Day -
+2021-10-30 23:20:45	--	-   O
+2021-10-30 23:20:45	--	-    \   The Open and Free
+2021-10-30 23:20:45	--	-     O  Technology Community
+2021-10-30 23:20:45	--	-    /|  https://www.oftc.net
+2021-10-30 23:20:45	--	- O-O O
+2021-10-30 23:20:45	--	-
+2021-10-30 23:20:45	--	- Welcome to the OFTC IRC Network.
+2021-10-30 23:20:45	--	-
+2021-10-30 23:20:45	--	- The Open and Free Technology Community was founded at the
+2021-10-30 23:20:45	--	- end of 2001 by a group of experienced members of the Open
+2021-10-30 23:20:45	--	- Source and Free Software communities; it is aimed at
+2021-10-30 23:20:45	--	- providing these communities with better communication,
+2021-10-30 23:20:45	--	- development, and support infrastructure. Our goal is to
+2021-10-30 23:20:45	--	- provide stable services to members of the community in any
+2021-10-30 23:20:45	--	- part of the world, while listening closely to their needs
+2021-10-30 23:20:45	--	- and desires.
+2021-10-30 23:20:45	--	-
+2021-10-30 23:20:45	--	- We are not a general purpose chat platform, but a topical
+2021-10-30 23:20:45	--	- network intent on providing the open source and free
+2021-10-30 23:20:45	--	- software communities a means to cooperate and communicate.
+2021-10-30 23:20:45	--	- As such, illegal and off-topic activity, such as warez
+2021-10-30 23:20:45	--	- trading, will result in being barred from access.
+2021-10-30 23:20:45	--	-
+2021-10-30 23:20:45	--	- OFTC honors your privacy. To operate the network, we store
+2021-10-30 23:20:45	--	- and process information about IRC connections, nicknames,
+2021-10-30 23:20:45	--	- and channels. Our Privacy Policy explains what we do with
+2021-10-30 23:20:45	--	- that data, and what your rights are. By connecting, you
+2021-10-30 23:20:45	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2021-10-30 23:20:45	--	-
+2021-10-30 23:20:45	--	- If you require assistance with using the OFTC IRC network,
+2021-10-30 23:20:45	--	- stop by in channel #oftc, or email support@oftc.net with
+2021-10-30 23:20:45	--	- details. For help with non-IRC questions please refer to
+2021-10-30 23:20:45	--	- the respective channels and project homepages.
+2021-10-30 23:20:45	--	-
+2021-10-30 23:20:45	--	- Thanks and enjoy your stay! The OFTC team.
+2021-10-30 23:20:45	--	End of /MOTD command.
+2021-10-30 23:20:45	--	User mode [+i] by jmanner

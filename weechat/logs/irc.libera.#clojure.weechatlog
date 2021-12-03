@@ -1,0 +1,606 @@
+2021-10-13 00:17:16	-->	mrmanner (~jmanner@user/mrmanner) has joined #clojure
+2021-10-13 00:17:16	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-13 00:17:16	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-13 00:17:16	--	Channel #clojure: 183 nicks (1 op, 0 voices, 182 normals)
+2021-10-13 00:17:18	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:02	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #clojure
+2021-10-13 00:42:02	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-13 00:42:02	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-13 00:42:02	--	Channel #clojure: 183 nicks (1 op, 0 voices, 182 normals)
+2021-10-13 00:42:07	-->	sailorCat (~user@p200300f6a70c4ac67861b31fafaef7c8.dip0.t-ipconnect.de) has joined #clojure
+2021-10-13 00:42:18	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-13 00:42:37	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Read error: Connection reset by peer)
+2021-10-13 00:42:59	-->	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has joined #clojure
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:05:47	<--	molson (~molson@2001-48F8-704A-CA1-0-0-75F-101F-static.midco.net) has quit (Quit: Leaving)
+2021-10-13 01:29:31	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Ping timeout: 252 seconds)
+2021-10-13 01:40:01	-->	AlaskanEmily (~AlaskanEm@user/alaskanemily) has joined #clojure
+2021-10-13 01:58:25	-->	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has joined #clojure
+2021-10-13 02:04:46	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:06:20	-->	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has joined #clojure
+2021-10-13 02:08:46	<--	introom (introom@2600:3c01::f03c:92ff:fea3:2cf) has quit (Quit: WeeChat 3.3)
+2021-10-13 02:09:03	-->	introom (introom@2600:3c01::f03c:92ff:fea3:2cf) has joined #clojure
+2021-10-13 02:10:46	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:12:38	-->	lad (~lad@user/lad) has joined #clojure
+2021-10-13 02:25:37	<--	xsperry (~xs@user/xsperry) has quit (Ping timeout: 252 seconds)
+2021-10-13 03:03:44	-->	nighcoder (~ciumbi@45.58.87.61) has joined #clojure
+2021-10-13 03:50:28	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #clojure
+2021-10-13 03:57:50	-->	ahlk (~user@2600:1700:31c0:3a10::43) has joined #clojure
+2021-10-13 03:58:41	-->	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has joined #clojure
+2021-10-13 04:00:14	<--	euandreh (~euandreh@2804:14c:33:9fe5:ce7f:4e93:4cc4:1ccd) has quit (Ping timeout: 265 seconds)
+2021-10-13 04:03:09	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Ping timeout: 250 seconds)
+2021-10-13 04:08:26	<--	mwnaylor (~user@2601:5ce:4300:5560::6a2) has quit (Ping timeout: 245 seconds)
+2021-10-13 04:16:10	-->	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has joined #clojure
+2021-10-13 04:16:46	<--	lad (~lad@user/lad) has quit (Ping timeout: 245 seconds)
+2021-10-13 04:29:07	-->	VoidNoir0 (~VoidNoir0@72.80.203.52) has joined #clojure
+2021-10-13 04:33:49	-->	euandreh (~euandreh@2804:14c:33:9fe5:11fc:225b:3e1b:f83b) has joined #clojure
+2021-10-13 04:39:52	<--	sailorCat (~user@p200300f6a70c4ac67861b31fafaef7c8.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:53:06	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 04:56:53	<--	iAmDecim (~cyberocto@c-73-39-172-34.hsd1.md.comcast.net) has quit (Ping timeout: 250 seconds)
+2021-10-13 05:21:18	-->	mbuf (~Shakthi@122.178.210.71) has joined #clojure
+2021-10-13 05:23:50	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Ping timeout: 260 seconds)
+2021-10-13 05:25:14	-->	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has joined #clojure
+2021-10-13 05:35:25	<--	harrigan (~harrigan@162.43.194.138) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:36:28	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:36:55	-->	iAmDecim (~cyberocto@c-73-39-172-34.hsd1.md.comcast.net) has joined #clojure
+2021-10-13 05:38:43	-->	harrigan (~harrigan@162.43.194.138) has joined #clojure
+2021-10-13 05:45:49	<--	harrigan (~harrigan@162.43.194.138) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:50:10	-->	harrigan (~harrigan@135.129.248.8) has joined #clojure
+2021-10-13 05:50:16	-->	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has joined #clojure
+2021-10-13 05:53:16	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #clojure
+2021-10-13 06:29:46	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 06:52:49	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #clojure
+2021-10-13 07:07:17	-->	struchu (~struchu@staticline-31-183-182-200.toya.net.pl) has joined #clojure
+2021-10-13 07:44:09	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 08:04:16	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Ping timeout: 245 seconds)
+2021-10-13 08:06:39	-->	atw (~user@dynamic-089-014-041-169.89.14.pool.telefonica.de) has joined #clojure
+2021-10-13 08:12:12	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined #clojure
+2021-10-13 08:12:48	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Client Quit)
+2021-10-13 08:14:21	-->	libertyprime (~libertypr@118.149.83.44) has joined #clojure
+2021-10-13 08:16:11	<--	libertyprime (~libertypr@118.149.83.44) has quit (Client Quit)
+2021-10-13 08:16:30	-->	libertyprime (~libertypr@118.149.83.44) has joined #clojure
+2021-10-13 08:33:01	<--	zmt00 (~zmt00@user/zmt00) has quit (Ping timeout: 245 seconds)
+2021-10-13 08:40:54	-->	to-hu (~Thunderbi@p200300e9af0e9c008e3681030d537db2.dip0.t-ipconnect.de) has joined #clojure
+2021-10-13 21:22:51	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:20	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #clojure
+2021-10-13 21:23:20	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-13 21:23:20	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-13 21:23:20	--	Channel #clojure: 191 nicks (1 op, 0 voices, 190 normals)
+2021-10-13 21:23:36	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-13 21:24:54	shem	oh dear. i'm with technomancy here. i much prefer variety and some degree of confusion to monoculture.
+2021-10-13 21:27:02	<--	wonko (~wjc@62.115.229.50) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:32:22	<--	schmudde (~schmudde@public.toolboxoffice.it) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:34:09	shem	i've grown my development environment slowly over the years. the tools and languages might change fast but my environment grows slowly and adapts
+2021-10-13 21:38:16	-->	schmudde (~schmudde@public.toolboxoffice.it) has joined #clojure
+2021-10-13 21:39:08	ridcully	technomancy: what?  not awesome-wm with fennel?
+2021-10-13 21:53:24	technomancy	ridcully: I could never give up my precious exwm and go back to using non-emacs key bindings in firefox
+2021-10-13 21:53:48	Para	shem: Well, I'm not exactly into monoculture either, but more like sensible crop rotation with clear favorites :)
+2021-10-13 21:53:51	-->	atw` (~user@dynamic-089-014-041-169.89.14.pool.telefonica.de) has joined #clojure
+2021-10-13 21:55:06	<--	atw (~user@dynamic-089-014-041-169.89.14.pool.telefonica.de) has quit (Ping timeout: 245 seconds)
+2021-10-13 21:57:16	ridcully	technomancy: i meant for the "next best thing'
+2021-10-13 21:57:21	shem	i'm so ancient that the editor wars just blow past me. i use emacs, berkeley vi, gnu & bsd ed all the time
+2021-10-13 21:58:58	technomancy	ridcully: oh, I see what you mean. yeah, probably only because I don't have first-hand experience with awesome+fennel because I found exwm before I found fennel =)
+2021-10-13 22:03:43	andreyorst	apparently it's possible to script Emacs with lua
+2021-10-13 22:04:38	andreyorst	https://github.com/syohex/emacs-lua - technomancy, I guess you can use fennel with exwm too :D
+2021-10-13 22:05:07	technomancy	whaaaaaaat
+2021-10-13 22:05:50	technomancy	omg how can you do this to me the day before the lisp jam =D
+2021-10-13 22:06:05	ridcully	sabotage?
+2021-10-13 22:06:23	 *	andreyorst produces cruel laughing noise
+2021-10-13 22:07:20	-->	AlaskanEmily (~AlaskanEm@user/alaskanemily) has joined #clojure
+2021-10-13 22:12:05	<--	matty_matt (~matt@cpe-98-14-254-37.nyc.res.rr.com) has quit (Ping timeout: 264 seconds)
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:32	-->	mrmanner (~jmanner@185.224.57.161) has joined #clojure
+2021-10-16 12:32:32	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-16 12:32:32	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-16 12:32:32	--	Channel #clojure: 184 nicks (1 op, 0 voices, 183 normals)
+2021-10-16 12:32:50	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-16 12:48:37	-->	Revitalist (~Revitalis@bras-base-toroon3514w-grc-27-142-114-224-72.dsl.bell.ca) has joined #clojure
+2021-10-16 12:55:47	<--	Revitalist (~Revitalis@bras-base-toroon3514w-grc-27-142-114-224-72.dsl.bell.ca) has quit (Remote host closed the connection)
+2021-10-16 13:18:41	--	RedNifre_ is now known as RedNifre
+2021-10-17 18:14:38	-->	jmanner (~jmanner@185.224.57.161) has joined #clojure
+2021-10-17 18:14:38	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-17 18:14:38	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-17 18:14:38	--	Channel #clojure: 182 nicks (1 op, 0 voices, 181 normals)
+2021-10-17 18:14:53	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined #clojure
+2021-10-17 18:19:02	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-17 18:19:02	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-17 18:19:02	--	Channel #clojure: 182 nicks (1 op, 0 voices, 181 normals)
+2021-10-17 18:19:18	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-17 18:30:36	-->	jmanner (~jmanner@user/mrmanner) has joined #clojure
+2021-10-17 18:30:36	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-17 18:30:36	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-17 18:30:36	--	Channel #clojure: 183 nicks (1 op, 0 voices, 182 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:50	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-17 18:31:14	<--	to-hu (~Thunderbi@p200300e9af0e9c0026a0c2f7594b896c.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-10-17 18:46:40	-->	op2 (~op@user/op2) has joined #clojure
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:43	-->	mrmanner (~jmanner@user/mrmanner) has joined #clojure
+2021-10-17 19:45:43	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-17 19:45:43	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-17 19:45:43	--	Channel #clojure: 182 nicks (1 op, 0 voices, 181 normals)
+2021-10-17 19:45:58	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-17 19:49:17	<--	kbsant (~kbsant@fp96f98fd0.tkyc111.ap.nuro.jp) has quit (Quit: Ping timeout (120 seconds))
+2021-10-17 19:51:58	-->	sailorCa` (~user@p200300f6a70c4a33b5486548f7e5975e.dip0.t-ipconnect.de) has joined #clojure
+2021-10-17 19:52:37	<--	sailorCat (~user@p200300f6a70c4adbf5e3a62fe942d143.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2021-10-17 19:56:16	-->	douglascorrea_io (~douglasco@200.146.85.128.static.gvt.net.br) has joined #clojure
+2021-10-17 20:04:10	manicennui	Why does it seem like there are a lot of lispers who used Perl before?
+2021-10-17 20:05:25	manicennui	Stuart Sierra gave a good talk where he explained some of the things that he liked from Clojure that it had in common with Perl (heavy use of basic data structures like hashes).
+2021-10-17 20:05:39	manicennui	But I've seen several people who use different lisps talk about Perl.
+2021-10-17 20:06:26	<--	mamapitufo (~mamapituf@188.31.100.114.threembb.co.uk) has quit (Quit: .,.)
+2021-10-17 20:07:11	-->	mamapitufo (~mamapituf@188.31.100.114.threembb.co.uk) has joined #clojure
+2021-10-17 20:11:44	technomancy	my guess: because back in the day if you wanted to have a real job and didn't want to write C there weren't many other options
+2021-10-17 20:13:01	<--	mamapitufo (~mamapituf@188.31.100.114.threembb.co.uk) has quit (Ping timeout: 245 seconds)
+2021-10-17 20:15:57	manicennui	https://www.scriptarchive.com/
+2021-10-17 20:16:18	manicennui	CGI was my first introduction to Perl. It saved me from the MS ecosystem.
+2021-10-17 20:16:21	technomancy	"Matt's Free C++ CGI Programs" extremely cursed
+2021-10-17 20:19:09	 *	ridcully glances at the bookshelf containing "CGI programming with perl"
+2021-10-17 20:47:18	<--	op2 (~op@user/op2) has quit (Remote host closed the connection)
+2021-10-17 21:03:10	<--	Skyfire (~pyon@user/pyon) has quit (Quit: WeeChat 3.3)
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #clojure
+2021-10-30 12:09:24	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-30 12:09:24	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-30 12:09:24	--	Channel #clojure: 170 nicks (1 op, 0 voices, 169 normals)
+2021-10-30 12:09:40	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #clojure
+2021-10-30 12:10:54	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-30 12:10:54	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-30 12:10:54	--	Channel #clojure: 170 nicks (1 op, 0 voices, 169 normals)
+2021-10-30 12:11:11	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:41:25	-->	uncleyear (~ian@pppoe.178-66-131-1.dynamic.avangarddsl.ru) has joined #clojure
+2021-10-30 12:46:30	-->	mamapitufo (~mamapituf@188.28.100.215.threembb.co.uk) has joined #clojure
+2021-10-30 12:56:11	<--	to-hu (~Thunderbi@p57b5ad19.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2021-10-30 12:57:46	<--	faxmodem (~faxmodem@82-65-124-102.subs.proxad.net) has quit (Ping timeout: 260 seconds)
+2021-10-30 13:07:07	-->	matty_ma1 (~matt@135.129.244.199) has joined #clojure
+2021-10-30 13:44:31	-->	faxmodem (~faxmodem@82-65-124-102.subs.proxad.net) has joined #clojure
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:34	-->	mrmanner (~jmanner@user/mrmanner) has joined #clojure
+2021-10-30 17:07:34	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-30 17:07:34	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-30 17:07:34	--	Channel #clojure: 174 nicks (1 op, 0 voices, 173 normals)
+2021-10-30 17:07:36	<--	mamapitufo (~mamapituf@89.40.71.106) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:07:50	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-30 17:09:37	-->	mamapitufo (~mamapituf@188.28.100.215.threembb.co.uk) has joined #clojure
+2021-10-30 17:11:43	-->	Skyfire (~pyon@user/pyon) has joined #clojure
+2021-10-30 17:21:24	-->	op2 (~op@user/op2) has joined #clojure
+2021-10-30 17:38:51	<--	zmt00 (~zmt00@user/zmt00) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:43:06	<--	mamapitufo (~mamapituf@188.28.100.215.threembb.co.uk) has quit (Quit: ..,,,.,.,,)
+2021-10-30 17:43:55	-->	mamapitufo (~mamapituf@188.28.100.215.threembb.co.uk) has joined #clojure
+2021-10-30 18:01:24	-->	zmt00 (~zmt00@user/zmt00) has joined #clojure
+2021-10-30 22:21:16	--	irc: disconnected from server
+2021-10-30 22:21:46	-->	mrmanner (~jmanner@user/mrmanner) has joined #clojure
+2021-10-30 22:21:46	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-10-30 22:21:46	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-10-30 22:21:47	--	Channel #clojure: 178 nicks (1 op, 0 voices, 177 normals)
+2021-10-30 22:21:59	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-10-30 22:22:32	-->	matty_ma1 (~matt@135.129.244.199) has joined #clojure
+2021-10-30 22:27:58	<--	matty_ma1 (~matt@135.129.244.199) has quit (Ping timeout: 260 seconds)
+2021-12-01 23:20:43	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #clojure
+2021-12-01 23:20:46	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-12-01 23:20:46	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-01 23:20:46	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-12-01 23:20:46	--	Channel #clojure: 177 nicks (1 op, 0 voices, 176 normals)
+2021-12-01 23:21:19	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-12-01 23:21:22	--	Mode #clojure [+nt]
+2021-12-01 23:21:22	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #clojure
+2021-12-01 23:23:03	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-12-01 23:23:03	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-01 23:23:03	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-12-01 23:23:03	--	Channel #clojure: 177 nicks (1 op, 0 voices, 176 normals)
+2021-12-01 23:23:14	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-12-01 23:23:28	--	Mode #clojure [+nt]
+2021-12-01 23:23:28	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-12-01 23:27:00	EdwardIII	[spoilers] just taking a look at the advent of code. my first implementation was the partition/reduce, but then i tried doing it in a loop instead and as expected it's quite a bit faster: https://gist.github.com/EdwardIII/fbbfc9a18a69472d4c969503f4e46c24 
+2021-12-01 23:27:48	EdwardIII	for the advent of code, who cares, either is fine, but i'm a bit curious. would going for a loop be an idiomatic approach here? or there's some other way i'm not thinking of?  
+2021-12-01 23:29:12	aphyr	EdwardIII: I did it like so: https://gist.github.com/aphyr/95fb0a788658a6e289a54abd80298aa2
+2021-12-01 23:29:22	aphyr	(not at all caring about performance)
+2021-12-01 23:30:11	EdwardIII	aphyr: that's very tidy
+2021-12-01 23:32:58	aphyr	Tons of intermediate allocations though, I bet
+2021-12-01 23:33:36	EdwardIII	if you cared, i wonder if transducers would help with that
+2021-12-01 23:33:37	aphyr	I think I'd do a loop like yours if I were going for speed--and how much I pulled into the loop would depend on what the profiler told me and how much modularity I wanted
+2021-12-01 23:33:55	EdwardIII	yes ofc, no optimisation without measuring first
+2021-12-01 23:33:56	aphyr	I should probably *learn* transducers at some point haha
+2021-12-01 23:34:05	aphyr	been... what, seven years?
+2021-12-01 23:34:19	EdwardIII	that is nice though, very pipeliney-rxjs-fpish feeling
+2021-12-01 23:34:30	aphyr	Typically when I have performance-sensitive reductions I use https://github.com/aphyr/tesser
+2021-12-01 23:34:38	EdwardIII	compared to recursive eye-soup in my example
+2021-12-01 23:35:51	aphyr	so transducers have sort of fallen in this weird in-between space where like... seqs handle the slow stuff, I write loop/recur for fast stuff, and transducers for medium-fast-but-also-parallel
+2021-12-01 23:36:01	aphyr	Er, tesser for medium-fast-but-also-parallel
+2021-12-01 23:36:25	EdwardIII	i've got 48 cores in my desktop computer
+2021-12-01 23:36:29	EdwardIII	i wish
+2021-12-01 23:36:39	EdwardIII	i'd switch to gentoo just for the giggles
+2021-12-01 23:36:59	aphyr	Honestly if I could get more cores I probably would haha
+2021-12-01 23:37:06	aphyr	Routinely saturate this box
+2021-12-01 23:37:17	EdwardIII	you've got to get a threadripper like linus
+2021-12-01 23:37:43	aphyr	I feel like the next step is probably to learn Rust and start writing faster programs period haha
+2021-12-01 23:38:13	aphyr	I'm trying to do all this perf-sensitive stuff in Clojure and while I love the language there's just no getting around the JVM's extra memory indirection
+2021-12-01 23:39:19	EdwardIII	what kind of thing are you working on?
+2021-12-01 23:39:33	EdwardIII	also did you make tesser before transducers existed? i see it's pretty old
+2021-12-01 23:40:50	aphyr	After transducers, but many of the same ideas
+2021-12-01 23:41:12	aphyr	"Transducers, but parallel, and you can ship them out to reduce over clusters if you want"
+2021-12-01 23:42:12	aphyr	https://github.com/jepsen-io/elle does a bunch of reductions to build dependency graphs and search for cycles in transactional histories
+2021-12-01 23:43:52	aphyr	and https://github.com/jepsen-io/maelstrom uses tesser internally to compute statistics over all the messages exchanged in its virtual "network"--it'll read something like 350K messages/sec off of disk if you've got the cores for it.
+2021-12-01 23:44:08	EdwardIII	is this the sort of task you'd like to try in rust?
+2021-12-01 23:44:30	aphyr	Honestly just writing Elle in the first place was so hard that I don't know how I'd rewrite it in another language haha
+2021-12-01 23:44:45	EdwardIII	heh that makes sense :D it looks hard!
+2021-12-01 23:44:47	aphyr	But yeah, someday, I hope a clever person takes all of that and makes it Faster (TM)
+2021-12-01 23:45:40	EdwardIII	-XX:UseAllTheCores
+2021-12-01 23:46:39	aphyr	yesssss, it's so satisfying to watch them all go
+2021-12-01 23:48:02	EdwardIII	i recently switched to an M1 so i need to make these cores sweat
+2021-12-01 23:49:19	aphyr	How are you liking the M1? Everyone I've asked says they're fantastic machines
+2021-12-01 23:49:56	EdwardIII	blown away. my last machine was a 2019 mbp and it was just a total piece of crap, unfit for purpose. purely a youtube and docs writing machine
+2021-12-01 23:50:16	EdwardIII	i was very pleasantly surprised by how much of the toolchain supports m1 already
+2021-12-01 23:50:42	EdwardIII	(i mostly do js/ts/docker stuff at work)
+2021-12-01 23:56:43	EdwardIII	hmm if you want to use partition-all with a step, and get a transducer back, how can you do that? (partition-all 2) works, but if you say (partition-all 2 2) it assumes you mean "partition with n = 2, and here's your collection, it's the number 2 <police sirens>"
+2021-12-02 00:00:14	EdwardIII	did i just disgustingly flood the channel with hundreds of lines?
+2021-12-02 00:01:37	rovanion	Don't think so.
+2021-12-02 00:01:37	aphyr	Nope
+2021-12-02 00:02:28	EdwardIII	phew, something weird happened in my erc buffer heh. i wanted to ask - is it OK to just do this, or is this the wrong thing? (partial partition-all 2 1)
+2021-12-02 00:04:14	rovanion	EdwardIII: Looks all well and good.
+2021-12-02 00:05:16	<--	seschwar (~seschwar@user/seschwar) has quit (Quit: :wq)
+2021-12-02 00:06:01	rovanion	Man, I can't figure out how to include my production built cljs-file into a resource folder of my uberjar. I seem to be doing what everyone else is doing: 1. add a prep-task that runs the cljs compiler, 2. add the output folder to :resource-paths. My project.clj looks like: https://dpaste.com//8DH7WQBS7
+2021-12-02 00:16:51	EdwardIII	sorry man, i know i did go through this a while ago on my toy proj but can't even recall if it got it working or not
+2021-12-02 00:20:01	-->	RendySurvage (rendysurvage) (~rendysurv@64.72.216.39) has joined #clojure
+2021-12-02 00:20:01	--	RendySurvage has identified as RendySurvage
+2021-12-02 00:20:14	<--	libertyprime (~libertypr@118-92-79-43.dsl.dyn.ihug.co.nz) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:21:20	<--	schmudde (~schmudde@2001:b07:ae6:7d19:ad4d:23c:7101:4648) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:25:28	rovanion	Its one of those things you do once and then immediately supress the memory of because it seems so arbitrary.
+2021-12-02 00:26:07	EdwardIII	looks like my plan was going to be to just cp resources/* along with my uberjar
+2021-12-02 00:29:43	EdwardIII	rovanion: are you trying to get the resources actually inside the uberjar?
+2021-12-02 00:31:52	rovanion	EdwardIII: I'm trying to get the single file main.js into the uberjar. At least I think that is the single output of an advanced cljs compilation that I need to bring with me.
+2021-12-02 00:32:48	rovanion	I mean, if I copy the file to resources/public it ends up in the uberjar.
+2021-12-02 00:33:08	EdwardIII	oh is your problem that your js files don't get output to resources/public in the first place?
+2021-12-02 00:34:46	EdwardIII	rovanion: could you dpaste your prod.cljs.edn file too?
+2021-12-02 00:34:48	-->	libertyprime [libertyprime] (mullikine) (~libertypr@203.97.185.98) has joined #clojure
+2021-12-02 00:36:21	EdwardIII	disregard that, is it related to this? https://figwheel.org/config-options#target-dir i notice this is something i changed in my build: https://github.com/EdwardIII/imjur/blob/main/figwheel-main.edn
+2021-12-02 00:36:58	rovanion	EdwardIII: That is another way of solving it. With the following prod.cljs.edn I got the compilation into the public dir, but not into the uberjar: http://dpaste.com//3KZ9NUYAN
+2021-12-02 00:37:25	EdwardIII	if i unzip my uberjar i can see resources/public in there, and my js + css are there too
+2021-12-02 00:37:31	rovanion	But if i copied the js-file into public it came through. Probably because the CLJS compilation happens aftre the uberjar is built.
+2021-12-02 00:38:34	rovanion	Can't figure out why the CLJS compilation happens after the uberjar is assembled...
+2021-12-02 00:40:37	rovanion	So my resources/public/js/ gets cleaned before the build, then the uberjar is assembled, then the CLJS is compiled.
+2021-12-02 00:40:57	<--	libertyprime (~libertypr@203.97.185.98) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:49:07	EdwardIII	hmm looks like (partial partition-all 2 1) is no good as a transducer. and there's a ticket on it too: https://clojure.atlassian.net/browse/CLJ-1858
+2021-12-02 00:58:41	neirac	which framework is being used more for a simple webapp (one page with one image)?
+2021-12-02 00:59:27	EdwardIII	neirac: i found compojure pretty good
+2021-12-02 00:59:58	EdwardIII	you can get up and running with 1 page and 1 image pretty quickly, but it can grow with you if you need to do more advanced stuff down the line
+2021-12-02 01:00:17	neirac	EdwardIII great!, I'll read the docs and get started
+2021-12-02 01:01:42	neirac	EdwardIII it uses hiccup?
+2021-12-02 01:01:57	EdwardIII	neirac: not if you don't need that yet. you can just have a plain html page
+2021-12-02 01:05:49	-->	libertyprime [libertyprime] (mullikine) (~libertypr@203.211.78.24) has joined #clojure
+2021-12-02 01:07:29	EdwardIII	neirac: in this example, i just slurp in a flat html file and replace one variable: https://github.com/EdwardIII/imjur/blob/main/src/imjur/core.clj#L24
+2021-12-02 01:07:37	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-02 01:13:57	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:15:34	--	pflanze_ is now known as pflanze
+2021-12-02 01:15:37	neirac	EdwardIII thank you very much!
+2021-12-02 01:15:37	--	pflanze has identified as pflanze
+2021-12-02 01:15:54	EdwardIII	no problem!
+2021-12-02 01:16:31	--	pflanze is now known as pflanze_
+2021-12-02 01:17:19	--	pflanze_ is now known as pflanze
+2021-12-02 01:27:11	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-02 01:32:28	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:34:35	-->	cmiles74 [cmiles74] (miles) (~miles@068-184-030-013.res.spectrum.com) has joined #clojure
+2021-12-02 01:40:21	<--	libertyprime (~libertypr@203.211.78.24) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:40:55	<--	cmiles74 (~miles@068-184-030-013.res.spectrum.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:04:31	<--	neirac (~neirac@pc-122-191-45-190.cm.vtr.net) has quit (Ping timeout: 245 seconds)
+2021-12-02 03:21:47	<--	RedNifre (~michael@dslb-002-205-008-196.002.205.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:23:51	-->	RedNifre (michael) (~michael@dslb-088-073-104-024.088.073.pools.vodafone-ip.de) has joined #clojure
+2021-12-02 03:26:19	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-02 03:33:41	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:40:40	-->	shiranaihito (Textual User) (~textual@123-192-192-149.dynamic.kbronet.com.tw) has joined #clojure
+2021-12-02 03:46:33	<--	unyu (~pyon@user/pyon) has quit (Quit: WeeChat 3.3)
+2021-12-02 03:52:26	<--	dadinn (~dadinn@cpc87065-finc18-2-0-cust67.4-2.cable.virginm.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:53:59	-->	dadinn [dadinn] (Daniel Dinnyes) (~dadinn@cpc87065-finc18-2-0-cust67.4-2.cable.virginm.net) has joined #clojure
+2021-12-02 03:58:30	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-02 04:02:59	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:31:45	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-02 04:36:38	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:48:47	-->	libertyprime [libertyprime] (mullikine) (~libertypr@222-154-245-111.adsl.xtra.co.nz) has joined #clojure
+2021-12-02 04:49:35	<--	libertyprime (~libertypr@222-154-245-111.adsl.xtra.co.nz) has quit (Client Quit)
+2021-12-02 05:07:19	<--	azimut_ (~azimut@gateway/tor-sasl/azimut) has quit (Remote host closed the connection)
+2021-12-02 05:07:46	-->	azimut [azimut] (ZNC - https://znc.in) (~azimut@gateway/tor-sasl/azimut) has joined #clojure
+2021-12-02 05:29:53	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-02 05:30:13	-->	libertyprime [libertyprime] (mullikine) (~libertypr@203.211.78.24) has joined #clojure
+2021-12-02 05:32:49	<--	dadinn (~dadinn@cpc87065-finc18-2-0-cust67.4-2.cable.virginm.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:34:23	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:35:21	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-02 05:40:03	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:42:08	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-02 05:52:01	<--	theruran_ (uid11305@id-11305.hampstead.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-02 05:55:45	<--	TheCoffeMaker (~TheCoffeM@user/thecoffemaker) has quit (Ping timeout: 265 seconds)
+2021-12-02 06:01:03	<--	RedNifre (~michael@dslb-088-073-104-024.088.073.pools.vodafone-ip.de) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:03:03	-->	RedNifre (michael) (~michael@dslb-188-100-021-036.188.100.pools.vodafone-ip.de) has joined #clojure
+2021-12-02 06:05:26	-->	TheCoffeMaker [TheCoffeMaker] (TheCoffeMaker) (~TheCoffeM@user/thecoffemaker) has joined #clojure
+2021-12-02 06:14:50	<--	azimut (~azimut@gateway/tor-sasl/azimut) has quit (Remote host closed the connection)
+2021-12-02 06:15:11	-->	azimut [azimut] (ZNC - https://znc.in) (~azimut@gateway/tor-sasl/azimut) has joined #clojure
+2021-12-02 06:22:19	<--	libertyprime (~libertypr@203.211.78.24) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:22:34	-->	libertyprime [libertyprime] (mullikine) (~libertypr@203.211.78.24) has joined #clojure
+2021-12-02 06:22:45	<--	azimut (~azimut@gateway/tor-sasl/azimut) has quit (Ping timeout: 276 seconds)
+2021-12-02 06:23:32	<--	ToxicFrog (~ToxicFrog@198-200-100-178.cpe.distributel.net) has quit (Ping timeout: 240 seconds)
+2021-12-02 06:23:52	-->	azimut [azimut] (ZNC - https://znc.in) (~azimut@gateway/tor-sasl/azimut) has joined #clojure
+2021-12-02 06:26:32	-->	ToxicFrog [ToxicFrog] (ToxicFrog) (~ToxicFrog@198-200-100-178.cpe.distributel.net) has joined #clojure
+2021-12-02 06:58:49	<--	lazr (~lazr@45.76.248.123) has quit (Ping timeout: 256 seconds)
+2021-12-02 07:09:23	-->	xulfer [xulfer] (none) (uid452788@id-452788.ilkley.irccloud.com) has joined #clojure
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:52	-->	mrmanner (mrmanner@98.128.201.128) has joined #clojure
+2021-12-02 08:09:53	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-02 08:09:53	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-12-02 08:09:53	--	Channel #clojure: 173 nicks (1 op, 0 voices, 172 normals)
+2021-12-02 08:05:52	wink	good morning, if I have like 5 (:require [foo.bar1 :as bar1]) for 1...5 how could I reasonably go about dispatching those? i.e. I'm running (time (bar1/run ...) and don't want to write that out several times.
+2021-12-02 08:09:36	wink	or maybe I am thinking too complicated and can just use (name (str "bar" num)) as a function name to call
+2021-12-02 08:10:14	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-12-02 08:24:21	wink	it's (resolve (symbol (str "full-ns.bar" num "/run")))
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:18	-->	mrmanner (mrmanner@90.235.13.15) has joined #clojure
+2021-12-02 21:03:18	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-02 21:03:18	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-12-02 21:03:18	--	Channel #clojure: 176 nicks (1 op, 0 voices, 175 normals)
+2021-12-02 11:15:03	rovanion	Man, I've never experienced having to wait for document ready when using reagent before but apparently I'm reaching it now because the div#app I want to attach to does not exist when my mount-fn runs, but if I put it on a timeout of a second its there.
+2021-12-02 11:25:45	rovanion	Have you ever had to add (js/window.addEventListener "DOMContentLoaded" mount) to your cljs-app?
+2021-12-02 11:30:38	ridcully	i usually just use the time honoured tradition and add the script tag at the end of the body
+2021-12-02 11:30:45	shiranaihito	rovanion yeah you should probably use "DOMContentLoaded" (or whatever variation of that is appropriate these days)
+2021-12-02 11:32:53	shiranaihito	rovanion yep, as ridcully implied, the main point is just to have the JS you want to use loaded, before you call it. That can be achieved with the "on loaded" callback, or just by arranging your JS to load in an order where everything is loaded when called
+2021-12-02 11:33:34	shiranaihito	the way JS sources are arranged to load can/will affect the perceived responsiveness of your app, of course
+2021-12-02 11:34:34	shiranaihito	so generally you'd use the "on loaded" callback if you first load some "minimum necessary" scripts, show the page, and then load the rest (and finally start your app for real in the "on loaded" callback)
+2021-12-02 11:34:35	rovanion	Putting the JS at the end must be what I've always done. But now I'm for the first time making a website that's a mix of server-side rendered pages and SPA so the JS ended up inside the "content" of the page instead.
+2021-12-02 11:36:32	shiranaihito	hmm.. i'm not sure what you're referring to with "content", but with a SPA, you probably don't have much JS sprinkled in the DOM document. 
+2021-12-02 11:36:33	rovanion	Well. I'll be going with the "on loaded" callback then.
+2021-12-02 11:36:54	shiranaihito	alrighty :)
+2021-12-02 11:37:49	rovanion	shiranaihito: The web server will deliver a static set of header, nav and footer tags and the "SPA" (which is not a SPA) will mount inside that.
+2021-12-02 11:37:50	shiranaihito	(so for example, you might want to load React with a script tag at the top of the page, maybe some shared library or something, and then the rest of your code at the bottom of the source)
+2021-12-02 11:38:05	shiranaihito	ok
+2021-12-02 11:38:48	shiranaihito	in case your app is meant to grow considerably, you might want to render the header, nav and everything with React (instead of leaving parts of it in the DOM/HTML content)
+2021-12-02 11:39:26	rovanion	But I think it should still be possible to override the click/url-change events for pages that are part of the React page so that a page reload does not happen.
+2021-12-02 11:40:49	shiranaihito	you'll probably need some kind of "router" code on the client side, that calls whatever component is meant to correspond to whatever the browser's "location" is
+2021-12-02 11:41:03	rovanion	Yeah
+2021-12-02 11:41:36	shiranaihito	(and it might be a decent idea to write it yourself, instead of picking up some JS library by some random author of questionable competence :))
+2021-12-02 11:42:23	rovanion	shiranaihito: I'm probably going with reitit given that I use it on the backend.
+2021-12-02 11:42:24	shiranaihito	IIRC the most popular "React router" was infamous for breaking backwards compatibility several times, rewriting the library over and over again
+2021-12-02 11:42:47	shiranaihito	ok, judging by the name, it's made by some f
+2021-12-02 11:42:50	shiranaihito	Finnish guy :P
+2021-12-02 11:42:54	rovanion	Yeah I once wrote a JS/TS webapp, pain.
+2021-12-02 11:43:03	shiranaihito	let's hope he's not a typical front-end goof :P
+2021-12-02 11:43:07	rovanion	shiranaihito: Yeah, its from Metosin.
+2021-12-02 11:43:13	rovanion	(the company)
+2021-12-02 11:43:16	shiranaihito	ok
+2021-12-02 11:43:45	rovanion	Sadly you have to speak and understand finnish to work with them.
+2021-12-02 11:44:02	shiranaihito	oh? otherwise you'd like to work there?
+2021-12-02 11:44:35	shiranaihito	btw, as a Finn, i can't imagine that would be a strict requirement
+2021-12-02 11:45:05	shiranaihito	i work for a Finnish company with people from all around the world and everything is handled in English
+2021-12-02 11:45:06	rovanion	I have thought about it, yes.
+2021-12-02 11:45:29	shiranaihito	so if you're serious about working for Metosin, i doubt not knowing Finnish would be a problem
+2021-12-02 11:46:25	shiranaihito	we're a small nation that no one gives a shit about outside of Finland, so we all grow up understanding that we need to learn English at the very least, to be able to function in the world :) 
+2021-12-02 11:46:26	rovanion	Okey, guess I'll put them back on the list of "interesting companies to look into after this project is done".
+2021-12-02 11:46:52	shiranaihito	ok
+2021-12-02 11:47:37	shiranaihito	and even if they don't have any official openings, they'll probably appreciate receiving an open application from a random competent developer out there
+2021-12-02 11:47:40	opqdonut	rovanion: btw I work for Metosin
+2021-12-02 11:47:44	rovanion	shiranaihito: The chances of me knowing swedish being a plus are slim though right?
+2021-12-02 11:48:03	rovanion	opqdonut: Oh shit, well hi!
+2021-12-02 11:48:05	shiranaihito	rovanion you might be able to snacka svenska with some of your colleagues :)
+2021-12-02 11:50:56	rovanion	I'll say noni, they'll say joo, and that will be the end of our respective vocabulary :D
+2021-12-02 11:51:52	opqdonut	that's like 99% of finnish right there already
+2021-12-02 11:58:28	rovanion	Hah, right, I was thinking of joo in swedish but of course its finnish too.
+2021-12-02 12:31:23	rwv	hi
+2021-12-02 13:12:47	rovanion	rwv: Yello!
+2021-12-02 13:22:46	Para	rovanion:Oh, Swedes have adopted "joo" as well? I've lately heard of few words Swedes use which are directly from Finnish and they seem so...mundane words to adapt :) Which is nice.
+2021-12-02 13:24:00	Para	also: torille
+2021-12-02 13:24:18	Para	but only your local one due to social distancing
+2021-12-02 13:38:02	rovanion	Para: Well there are variations of it in different dialects for sure. Here is one example from my "native" skelleftemål, three joo in a short sequence: https://www.youtube.com/watch?v=ooCLe66ewEk&t=100s And a jää in the next sentence.
+2021-12-02 13:40:32	rovanion	Para: Wiktionary claims torille is derived from swedish torg which in turn is from old east slavic tŭrgŭ. Did I guess the right word?
+2021-12-02 13:42:48	Para	rovanion: Yes, tori as in torg as in town/böle common marketplace.
+2021-12-02 13:43:25	Para	https://knowyourmeme.com/memes/torilla-tavataan
+2021-12-02 13:44:15	rovanion	Haha nice! I named my company after a böle not far from Skellefte, Hjoggböle.
+2021-12-02 16:35:57	ToxicFrog	Why does string/trim consider 0x1D GROUP SEPARATOR to be whitespace :(
+2021-12-02 16:37:34	EdwardIII	my day 2 solutions, roast me: https://gist.github.com/EdwardIII/faeea5e1b6ec2f1d447cbdaac3b54ac6
+2021-12-02 16:39:54	opqdonut	EdwardIII: I love how you just casually process the input twice instead of reusing the result
+2021-12-02 16:40:22	wink	oh keywords, fancy
+2021-12-02 16:40:31	wink	are strings not GOOD enough?
+2021-12-02 16:41:20	wink	there are definitely parts I like more than my own
+2021-12-02 16:41:30	opqdonut	EdwardIII: you destructure [pattern amount] in parse but not in the reduces
+2021-12-02 16:45:48	EdwardIII	wink: get out of here with your aldi "using-strings-for-keys"! :D
+2021-12-02 16:46:28	wink	I have a strong HTTP background. everything is a string until proven otherwise
+2021-12-02 16:46:41	EdwardIII	opqdonut: yeah it started to feel a bit action-at-a-distancy in the reduce, i did think about using destructure there too (if i wrap it in a let i mean)
+2021-12-02 16:50:29	EdwardIII	but wait...
+2021-12-02 16:51:35	EdwardIII	i don't need a let to destructure there: https://gist.github.com/EdwardIII/faeea5e1b6ec2f1d447cbdaac3b54ac6
+2021-12-02 16:53:18	opqdonut	indeed
+2021-12-02 16:53:49	opqdonut	next code golf: (update :horizontal + amount)
+2021-12-02 16:54:52	EdwardIII	not golf :) more like tidying up the house
+2021-12-02 16:56:19	aphyr	hmm, okay! Here's mine! https://gist.github.com/aphyr/310121a66dfd934ed07d8a077aad646d
+2021-12-02 16:58:50	aphyr	EdwardIII: You can drop the #(+ ...) fns and just write (update acc :depth + amount)
+2021-12-02 16:59:06	aphyr	Oh, derp, opqdonut already got there :)
+2021-12-02 16:59:28	opqdonut	aphyr: fancy man uses with-open in one-off scripts
+2021-12-02 16:59:50	EdwardIII	hey our solutions are not a million miles apart this time aphyr 
+2021-12-02 16:59:57	aphyr	so much of my life involves leaking filehandles hahahaha
+2021-12-02 17:00:07	opqdonut	aphyr: I'm kinda disappointed though, I was expecting something more along your technical interview stuff ;)
+2021-12-02 17:00:19	EdwardIII	makes me feel like i'm actually getting somwhere :)
+2021-12-02 17:00:27	aphyr	opqdonut: hahaha, oh, yeah, those are intentionally baroque, my normal code is muuuuch more readable
+2021-12-02 17:00:38	opqdonut	never meet your idols they say... :(
+2021-12-02 17:00:41	EdwardIII	technical interview stuff?
+2021-12-02 17:00:54	aphyr	EdwardIII: Yeah, I was just about to say, I think we landed on exactly the same track here--reduce + case
+2021-12-02 17:01:49	opqdonut	EdwardIII: oh you're in for a treat! https://aphyr.com/posts/340-reversing-the-technical-interview
+2021-12-02 17:02:02	aphyr	For small bits of state contained in a single reduce, I'll often prefer using vector destructuring for the accumulator instead of map destructuring, just cuz it's a little faster and not a huge hit to composability
+2021-12-02 17:02:03	opqdonut	better link: https://aphyr.com/tags/interviews
+2021-12-02 17:02:05	EdwardIII	i can already tell this is going to be perverse
+2021-12-02 17:02:10	aphyr	EdwardIII: oh they're FUN :D
+2021-12-02 17:02:27	EdwardIII	aphyr: yes, and it's a bit less noise over all too i see
+2021-12-02 17:02:41	aphyr	Yeah, but I'd say your approach is definitely defensible.
+2021-12-02 17:02:54	EdwardIII	ol' hash boy
+2021-12-02 17:02:57	aphyr	If that state got used anywhere else I'd be making a map out of it too
+2021-12-02 17:03:42	aphyr	`next (apply *)` is totally a code-golf hack, and I dunno if I'd do that in "real" code
+2021-12-02 17:04:16	aphyr	Your decomposition into course-with-aim and solving doing the multiplication separately makes a lot of sense
+2021-12-02 17:05:14	EdwardIII	(cons 1 (cons 2 (cons 3 nil))) haha, this is taking me back to the (non-joke) DAS video on lambda calculus
+2021-12-02 17:05:42	EdwardIII	aphyr: i sometimes find clojure a bit opaque so i have to break things down a lot so my unfamiliar mind can grasp the code
+2021-12-02 17:06:15	aphyr	EdwardIII: I'd say your solution shows a pretty fluent command of the language!
+2021-12-02 17:06:48	EdwardIII	great, so other than the useless use of #() i've passed the interview!
+2021-12-02 17:12:36	EdwardIII	i understand point-free (he says) but i don't quite get how '+ amount' works. if i did that anywhere else i'd have to use partial right? does update do that behind the scenes? gonna take a peep at the src as the documentation is not that clear to me: (update m k f x y z & more)
+2021-12-02 17:13:11	aphyr	update and swap both have this trick--they invoke your function f with the object being changed, THEN x y z as further args.
+2021-12-02 17:14:09	aphyr	So you can write things like (swap! counter + 2) to increment a counter by 2, or (update cats :ms-mittens assoc :fuzzy? true)
+2021-12-02 17:14:09	EdwardIII	riiight ok
+2021-12-02 17:15:01	aphyr	this tends to work prety often because most "transform-a-thing" functions take the thing as their first arg
+2021-12-02 17:15:29	aphyr	(breaks down for sequence functions though--if you want to update something with `map f`, you've gotta use either partial or a fn literal
+2021-12-02 17:20:25	EdwardIII	hm
+2021-12-02 18:10:07	leah2	funny how similar our solutions are
+2021-12-02 18:12:06	wink	aphyr: that's better commented than most of the production code I read. :|
+2021-12-02 18:14:55	wink	pushed my clojure solutions now as well: https://github.com/winks/adventofcode/blob/master/2021/clojure/src/aoc/day02.clj#L28
+2021-12-02 18:18:06	EdwardIII	neat
+2021-12-02 18:18:48	wink	(disregard the recursion with an index, I wanteed to try it out and it is slow, I guess too many (count lines))
+2021-12-02 18:19:54	aphyr	wink: Do you know about (recur)?
+2021-12-02 18:20:12	aphyr	I think this solution consumes a stack frame for every line
+2021-12-02 18:20:47	wink	aphyr: I heard about it but I don't remember using it
+2021-12-02 18:21:06	 *	wink should put an ascii art bucket of salt inside the code
+2021-12-02 18:21:11	wink	didn't write clojure for so long.
+2021-12-02 18:21:19	leah2	wink is used languages with tco now :)
+2021-12-02 18:21:24	leah2	*used to
+2021-12-02 18:21:47	wink	wink's life has been "fix it with bash" for too long to be honest
+2021-12-02 18:23:05	wink	is "10 years of not knowing clojure" some kind of badge of honor? :P
+2021-12-02 18:51:14	 *	manicennui hasn't known COBOL for over 40 years.
+2021-12-02 19:40:14	neirac	I'm slurping an html page, but the img is not showing, if I see the same html generated it works on my browser but not through the ring instance, do I need a config on lein to make the directory where the image is available?
+2021-12-02 19:41:38	Para	If it's a JavaScript based web page, you need to somehow evaluate the page first, just slurping the raw html won't do the trick.
+2021-12-02 19:45:32	ridcully	could also be a problem with the image being relative.  check your dev-tools to find out where the browser looks (there should be 404).  then check the logs on the server side
+2021-12-02 19:46:06	ridcully	but if you just have added a route to where the handler slurps the html, you most likely also need a route to slurp the image?
+2021-12-02 19:47:21	ridcully	and the default place, that lein uses for additional stuff, that ends up in the classpath is `resources`
+2021-12-02 19:48:52	neirac	Para is just html, ridcully yes the img is relative but works just using the browser, on my compojure route I see the page without the image
+2021-12-02 19:51:50	ridcully	check your dev-console and find out what is wrong.  eliminate the guesswork
+2021-12-02 19:57:22	neirac	ridcully just checked, the image comes from the same path, compojure route does not show it but opening the html on the browser shows it
+2021-12-02 20:00:06	ridcully	it's to guess what you are after.  the fact, that it works in your browser when you server it from somewhere else does not help that much.  do you generate the html, or do you really slurp it in your own handler, or do you use a static resource handler? 
+2021-12-02 20:00:34	ridcully	*it's hard to guess
+2021-12-02 20:02:18	ridcully	neirac: https://stackoverflow.com/questions/57367826/serve-static-resources-using-clojures-ring - maybe this helps.  it's full example with a similar problem (css for html)
+2021-12-02 20:10:56	EdwardIII	neirac: also are you using site-defaults? like this (wrap-defaults #'app-routes site-defaults) - from https://github.com/ring-clojure/ring-defaults ?
+2021-12-02 20:19:49	neirac	thanks I'll check those links
+2021-12-02 20:29:26	mwnaylor	I have a Clojure library project. It compiles correctly and correctly builds an uberjar in the target directory. I don't know how to deploy it to 𝘫𝘶𝘴𝘵 my ~/.m2 diretory or how to properly set dependencies for other projects to use it. I cloned the lein repository and am reading the *.md doc files, but I don't understand how to configure my project.clj files properly.
+2021-12-02 20:31:11	mwnaylor	I understand the high level theory of tools like lein, gradle, sbt, etc, but tend to get lost in the implementation details.
+2021-12-02 20:31:22	ridcully	`lein install` should put it in your .m2 dir
+2021-12-02 20:32:57	neirac	ridcully, EdwardIII thanks the site-defaults did the trick
+2021-12-02 20:33:31	mwnaylor	`lein install` worked.
+2021-12-02 20:38:02	mwnaylor	Now, how do I set the dependencies in a project to pull only from my .m2 dir?
+2021-12-02 20:40:12	ridcully	add it as a dep like any other.  use the group/artifact version from the install
+2021-12-02 20:40:37	ridcully	if you have to do that often because you are developing the lib in question, there are shortcuts to do so
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:45	-->	mrmanner (mrmanner@90.235.13.15) has joined #clojure
+2021-12-02 21:04:45	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-02 21:04:45	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-12-02 21:04:45	--	Channel #clojure: 176 nicks (1 op, 0 voices, 175 normals)
+2021-12-02 21:03:28	mwnaylor	Do I need to set the group/artifact in the project.clj in my library project? Or does lein determine that from the directory? I admit to not understanding group and artifact. I'm used to pasting the dependency clause given in the webpage describing a package.
+2021-12-02 21:04:56	mwnaylor	My only experience in publishing to local .m2 was in Scala via sbt, and that was a bit more than five years ago.
+2021-12-02 21:05:34	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-12-02 21:07:18	mwnaylor	I've been learning Clojure bit by bit on my own. I'd love to be a junior in a Clojure shop to have someone get me over intialial configurations issues. Don't have that going for me, so I'm doing it the hard way.
+2021-12-02 21:07:41	aphyr	lein derives the group and artifact from the project name--the thing immediately following `defproject`
+2021-12-02 21:08:22	<--	cmiles74 (~miles@068-184-030-013.res.spectrum.com) has quit (Quit: WeeChat 2.8)
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:27	-->	mrmanner (mrmanner@90.235.13.15) has joined #clojure
+2021-12-02 21:11:27	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-02 21:11:27	--	Topic set by jeaye (~jeaye@pastespace.org) on ons, 19 maj 2021 20:04:31
+2021-12-02 21:11:27	--	Channel #clojure: 175 nicks (1 op, 0 voices, 174 normals)
+2021-12-02 21:11:20	mwnaylor	Ok, defproject. Mine has several dot (.) separators. Is the artifact the last one in the projectname? ie. if name is aaa.bbb.ccc.ddd, aaa.bbb.ccc is the group and ddd is the artifact?
+2021-12-02 21:12:06	--	Channel created on ons, 19 maj 2021 15:51:03
+2021-12-02 21:12:36	-->	cmiles74 [cmiles74] (miles) (~miles@068-184-030-013.res.spectrum.com) has joined #clojure
+2021-12-02 21:13:57	ridcully	in theory it should work to use what is in project right after the defproject.  the group usually would be separated with a slash
+2021-12-02 21:14:27	ridcully	so without a group this end up in the same group as the artifact and lein does not insist on it... iirc?
+2021-12-02 21:16:10	ridcully	if in doubt, you can look at the generated pom.xml or if totally unsure you can try to `find ~/.m2/repository -name $JAR` where the lein install showed the name of the jar while building
+2021-12-02 21:18:30	-->	struchu [struchu] (struchu) (~struchu@staticline-31-183-169-131.toya.net.pl) has joined #clojure
+2021-12-02 21:19:38	ridcully	mwnaylor: yeah just use aaa.bbb.ccc.ddd "thversion" like in the lib project.clj in your other project
+2021-12-02 21:20:44	mwnaylor	re: pom.xml. Leads me to think I did something wrong when I created the project. The groupId and the artifactId are identical.
+2021-12-02 21:22:41	ridcully	i guess that is the slash missing
+2021-12-02 21:22:55	ridcully	it still works though
+2021-12-02 21:23:23	ridcully	if you use aaa.bbb.ccc/ddd as project name you will get the group/artifact more to your liking
+2021-12-02 21:28:46	-->	mrmanner (mrmanner@90.235.13.15) has joined #clojure
+2021-12-02 21:28:46	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-02 21:50:37	--	irc: disconnected from server
+2021-12-02 21:50:46	-->	mrmanner (mrmanner@98.128.201.128) has joined #clojure
+2021-12-02 21:50:46	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-02 21:36:06	mwnaylor	Ok. Seems like I 𝘮𝘢𝘺 have gotten the naming issues resolved. Now the problem I have is lein can't find my artifact in clojars. That stops me from starting a lein repl, and as a result, no cider repl in emacs.
+2021-12-02 21:37:22	ridcully	have you adjusted the name?
+2021-12-02 21:37:29	mwnaylor	I want to bypass accessing the web for the artifact and just get it from my .m2 directory.
+2021-12-02 21:37:35	ridcully	you have to use the name in project.clj of the lib
+2021-12-02 21:38:01	ridcully	and if you have adjusted the project name in the lib, then don't forget to `lein install` again
+2021-12-02 21:42:44	mwnaylor	Neither the aaa.bbb.ccc.ddd nor the aaa.bbb.ccc/ddd variant work. In both cases, lein can't find the jar in Clojars and breaks.
+2021-12-02 21:44:56	mwnaylor	Once I got a good local push w/ lein install, I haven't touched the library project.
+2021-12-02 21:47:25	ridcully	i tried that locally and it wfm™
+2021-12-02 21:48:06	ridcully	using the same naming (without the slash) because i wanted to see if the artifact/artifact is like i remembered
+2021-12-02 21:53:04	<--	struchu (~struchu@staticline-31-183-169-131.toya.net.pl) has quit (Quit: WeeChat 3.3)
+2021-12-02 22:02:55	<--	shiranaihito_ (~textual@123-192-192-149.dynamic.kbronet.com.tw) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-12-02 22:10:14	mwnaylor	I'm SOOO close. I got my lein repl, therefore the cider repl to load. lein can see my .m2 jar. Now, I can't get my ns declaration right. The :refer portion can't see the defn I want to pull in.
+2021-12-02 22:10:15	-->	schmudde (schmudde) (~schmudde@93-35-145-13.ip55.fastwebnet.it) has joined #clojure
+2021-12-02 22:15:55	mwnaylor	The hint about looking at the pom.xml was a huge insight. It looks like I have been using lein the wrong way in cereating projects. I had been using com.gmail.<my gmail id>.<my project name>. I should have been using com.gmail.<my gmail id>/<my project name>. Using the form with no slash, the group id and artifact id were the same. Using the slash, the group id and artifact id were more like we would expect.
+2021-12-02 22:17:42	mwnaylor	Since I have my library project in git, and the naming and directory structure are hosed, I may have to clone it and do the painful manual rework to get it in the proper form.
+2021-12-02 22:20:20	ridcully	the two things have nothing to do in general
+2021-12-02 22:20:55	ridcully	the directory structure under src is just the namespaces _inside_ the jar you are deploying as group/artifact "version"
+2021-12-02 22:39:49	-->	selfsymmetric-mu [selfsymmetric-mu] (matt) (~matt@c-73-10-148-139.hsd1.nj.comcast.net) has joined #clojure
+2021-12-02 22:41:06	mwnaylor	ridcully: directory structure seems to be similar. But, pom.xml w/ group and artifact ids differ. In a temp directory, In a disposable directory, run org.ridcully.test-prj and org.ridcully/test-prj. If you do lein uberjar in each, then dive into the jar files, I think you'll see a difference in the artifactId.
+2021-12-02 22:44:26	ridcully	the uberjar is just all jars squished together - so _if_ pom/maven stuff ends up there it will differ... but it has no relevance.  it's very unlikely anything will look for the maven stuff inside an uberjar (it is an artifact to be deployed/run - not to be distributed)
+2021-12-02 22:48:15	ridcully	or did you mean when you do a lein new, that the default namespace structure differs?  well that is true, but it does not really matter
+2021-12-02 22:49:40	ridcully	those are just default.  it makes sense to stick with the defaults so things align nicely, but it does not have to be like this.  if you create a project like foo.bar.baz and then change the defproject to g/a it will work just fine.  the jar will contain the foo/bar/baz/core.clj and it will be deployed under g/a/0.0.1-SNAPSHOT or whatever
+2021-12-02 23:07:17	mwnaylor	ridcully: In a virgin directory, run both 'lein new com.gmail.my-name.my-project' and 'lein new com.gmail.my-name/my-project'. In each of new sub-directories, run lein uberjar. Examine the both sub-directories and the pom.xml in the generated jars. You will see a big difference.
+2021-12-02 23:11:16	mwnaylor	Many thanks to all following, more to responder, for my problem of using lein to create and consume local only Clojure repositories/dependencies.  I don't have it nailed down perfectly, but you all have given me pointers for getting it correct.
+2021-12-02 23:13:22	ridcully	yes, in the meta data - and this to be expected
+2021-12-02 23:14:55	ridcully	but if you search in both jars for your my_project.clj you will find it in the same place
+2021-12-02 23:15:21	ridcully	the meta-inf is different because the defproject name is different
+2021-12-02 23:34:24	mwnaylor	Yes. I now see that defprojct name is the key. I was creating with com.gmail.my-name.my-project. I should have been using com.gmail.my-name/my-project. I think the first case makes a project with a groupId and no artifactId. w/o an artifactId, lein uses groupId as artifact
+2021-12-02 23:35:01	-->	op2 [op2] (op2) (~op2@user/op2) has joined #clojure
+2021-12-02 23:36:23	mwnaylor	… arcfifactId: basically com.gmail.my-name/com.gmail.my-name. Tomorrow, I'll test my hypothesis in a scratch directroy.
+2021-12-02 23:38:38	mwnaylor	If what I've learned to date is correct, I'll have to re-create my Clojure library repositories and just copy in the source files and give up on limited git history.
+2021-12-02 23:41:38	<--	schmudde (~schmudde@93-35-145-13.ip55.fastwebnet.it) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:44:01	<--	narendraj9 (~user@2a02:8109:b63f:ff7c::57b2) has quit (Remote host closed the connection)
+2021-12-02 23:46:55	<--	cmiles74 (~miles@068-184-030-013.res.spectrum.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:48:27	<--	seschwar (~seschwar@user/seschwar) has quit (Quit: :wq)
+2021-12-02 23:49:47	-->	dadinn [dadinn] (Daniel Dinnyes) (~dadinn@host86-137-124-119.range86-137.btcentralplus.com) has joined #clojure
+2021-12-02 23:56:13	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-03 00:00:31	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 256 seconds)
+2021-12-03 00:52:41	-->	AlaskanEmily [AlaskanEmily] (EmilyDioxideson) (~AlaskanEm@user/alaskanemily) has joined #clojure
+2021-12-03 01:04:00	-->	libertyprime [libertyprime] (mullikine) (~libertypr@118-92-79-43.dsl.dyn.ihug.co.nz) has joined #clojure
+2021-12-03 01:18:18	-->	uncleyea1 [uncleyear] (iaco) (~ian@pppoe.178-66-156-60.dynamic.avangarddsl.ru) has joined #clojure
+2021-12-03 01:21:11	<--	uncleyear (~ian@pppoe.178-66-158-195.dynamic.avangarddsl.ru) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:38:03	<--	libertyprime (~libertypr@118-92-79-43.dsl.dyn.ihug.co.nz) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:46:56	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-03 01:53:34	-->	uncleyear [uncleyear] (iaco) (~ian@pppoe.178-66-158-114.dynamic.avangarddsl.ru) has joined #clojure
+2021-12-03 12:21:15	--	irc: disconnected from server
+2021-12-03 12:21:33	-->	mrmanner (mrmanner@90.235.13.15) has joined #clojure
+2021-12-03 12:21:33	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-03 07:43:56	ridcully	mwnaylor: i think you only have to add a `/` in your defproject name
+2021-12-03 11:48:48	EdwardIII	skimmed the adventofcode today, is it a case of just counting the frequencies, or is there a way to do this with one of the bit-* functions?
+2021-12-03 12:10:54	wink	I don't think it's as much bitfiddling as you think it is
+2021-12-03 12:22:37	--	irc: disconnected from server
+2021-12-03 12:22:54	-->	mrmanner (mrmanner@90.235.13.15) has joined #clojure
+2021-12-03 12:22:54	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-03 12:42:37	-->	Trieste_ [pilgrim] (T) (T@user/pilgrim) has joined #clojure
+2021-12-03 12:43:11	<--	Trieste (T@user/pilgrim) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:45:40	<--	dharrigan (~dharrigan@user/dharrigan) has quit (Quit: ZNC - https://znc.in)
+2021-12-03 12:46:00	--	Trieste_ is now known as Trieste
+2021-12-03 12:48:01	-->	dharrigan [dharrigan] (ZNC - https://znc.in) (~dharrigan@user/dharrigan) has joined #clojure
+2021-12-03 12:58:10	<--	i7c (~i7c@user/i7c) has quit (Quit: WeeChat 3.3)
+2021-12-03 13:01:51	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-03 13:05:07	-->	i7c [i7c] (i7c) (~i7c@user/i7c) has joined #clojure
+2021-12-03 13:05:25	<--	ToxicFrog (~ToxicFrog@198-200-100-178.cpe.distributel.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 13:06:17	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 252 seconds)
+2021-12-03 20:17:22	--	irc: disconnected from server
+2021-12-03 20:17:35	-->	mrmanner (mrmanner@98.128.201.128) has joined #clojure
+2021-12-03 20:17:35	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-03 17:29:48	selfsymmetric-mu	EdwardIII: Spoilers:
+2021-12-03 17:31:02	selfsymmetric-mu	EdwardIII: In rot13: Va gur svefg cneg lbh pna ovgsyvc tnzzn gb rcfvyba, ohg va gur frpbaq cneg lbh'yy arrq gb pnyphyngr bk naq pb2 frcnengryl.
+2021-12-03 17:33:41	ridcully	the time i wasted looking up, if there is a "thing" for x * !x ...
+2021-12-03 17:35:19	selfsymmetric-mu	Yeah I just used `(apply * ((juxt gamma (comp flip gamma)) input))` and moved on.
+2021-12-03 17:38:01	ridcully	yeah i "cheated" for epsilon too.  but while one usually attempt to predict part 2 and prepare from part 1... this is not the aoc to do that... at least not for my little monkey brain
+2021-12-03 18:44:42	selfsymmetric-mu	I might throw up a GitHub repository that describes my strategy. 
+2021-12-03 18:45:27	selfsymmetric-mu	Most problems involve reading an input and computing some property efficiently. 
+2021-12-03 18:45:42	selfsymmetric-mu	So the spine of my solution is to have a recursive function with recur for tail-recursion-checking.
+2021-12-03 18:46:12	selfsymmetric-mu	The first parameter is the input being consumed (sometimes after some postprocessing), and the rest of the parameters are accumulators.
+2021-12-03 18:46:57	selfsymmetric-mu	(defn solve [input aux1 aux2 aux3 ...] (if base-case? solution (recur ...)))
+2021-12-03 18:47:33	selfsymmetric-mu	The accumulators are where you put your fancy data structures. So if you need a map or a min-heap or a queue or whatever to be fast, that's where they go.
+2021-12-03 18:48:24	selfsymmetric-mu	Now because of `recur` I don't need to worry about the stack anymore, and the strategy is reduced to finding the correct procedure and choosing the correct data structures.
+2021-12-03 20:19:02	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:46	-->	mrmanner (mrmanner@98.128.201.128) has joined #clojure
+2021-12-03 20:19:46	--	Topic for #clojure is "Clojure, the language https://clojure.org | Changelog: https://bit.ly/clj-changes | Discussion: https://groups.google.com/group/clojure"
+2021-12-03 20:22:54	-->	Ilyu [Ilyu] (etienne) (~quassel@166.215.82.79.rev.sfr.net) has joined #clojure
+2021-12-03 20:35:57	<--	Ilyu (~quassel@166.215.82.79.rev.sfr.net) has quit (Read error: Connection reset by peer)
+2021-12-03 20:37:08	<--	Tolstoy (~textual@97-120-40-166.ptld.qwest.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-03 20:38:48	-->	Tolstoy [Tolstoy] (Textual User) (~textual@97-120-40-166.ptld.qwest.net) has joined #clojure
+2021-12-03 20:44:27	-->	matty_ma1 (matt) (~matt@135.129.244.71) has joined #clojure
+2021-12-03 20:45:40	--	jsn-_ is now known as jsn-
+2021-12-03 20:59:05	-->	xsperry [xsperry] (xs) (~xs@user/xsperry) has joined #clojure
+2021-12-03 21:01:59	<--	matty_ma1 (~matt@135.129.244.71) has quit (Ping timeout: 256 seconds)

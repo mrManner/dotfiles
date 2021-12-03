@@ -1,0 +1,1051 @@
+2021-10-13 00:28:47	-->	mrmanner (~jmanner@user/mrmanner) has joined #go-nuts
+2021-10-13 00:28:47	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-13 00:28:47	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-13 00:28:47	--	Channel #go-nuts: 643 nicks (2 ops, 2 voices, 639 normals)
+2021-10-13 00:28:48	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-13 00:28:48	--	URL for #go-nuts: https://golang.org
+2021-10-13 00:28:49	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-13 00:29:45	--	xfnw2 is now known as vulpine`
+2021-10-13 00:29:58	b0nn	Yeah, to an extent, although you can overlay an OO pattern of keeping the data in an unexported type
+2021-10-13 00:30:53	b0nn	awmv: there's #traefik; have you tried in there?
+2021-10-13 00:31:14	<--	attila_lendvai (~alendvai@catv-213-222-131-28.catv.broadband.hu) has quit (Ping timeout: 260 seconds)
+2021-10-13 00:31:17	awmv	b0nn: Yeah, before I asked here
+2021-10-13 00:31:41	b0nn	What's the problem, I doubt that I can help, but ... rubber ducky and all that
+2021-10-13 00:33:17	awmv	This repo https://github.com/jfroment/seedbox uses Traefik v2 for a reverse proxy for docker containers. I don't know how to set up my DNS records at Porkbun for this
+2021-10-13 00:34:03	awmv	I found this https://go-acme.github.io/lego/dns/porkbun/ but that didn't really help
+2021-10-13 00:34:59	b0nn	OIC, you want to set up a "Seed box" on Porkbun?
+2021-10-13 00:35:30	awmv	It's just the registrar
+2021-10-13 00:35:49	b0nn	I'm not judging, I'm just coming to grips with what you're up to
+2021-10-13 00:36:21	b0nn	So, the problem is internal DNS, or DNS that points to the traefik endpoints?
+2021-10-13 00:38:42	awmv	I'd think the wildcard DNS that points to traefik? Not really familiar with traefik, though :)
+2021-10-13 00:39:10	b0nn	Glad I could help :)
+2021-10-13 00:40:01	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-10-13 00:40:10	b0nn	maybe try #docker?
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:02	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #go-nuts
+2021-10-13 00:42:02	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-13 00:42:02	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-13 00:42:03	--	Channel #go-nuts: 641 nicks (2 ops, 2 voices, 637 normals)
+2021-10-13 00:42:03	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-13 00:42:03	--	URL for #go-nuts: https://golang.org
+2021-10-13 00:42:14	-->	fikran (~fikran@user/fikran) has joined #go-nuts
+2021-10-13 00:42:32	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-13 00:46:07	awmv	b0nn: https://i.imgur.com/SvDaNQt.png
+2021-10-13 00:46:58	awmv	I guess that gives you more info
+2021-10-13 00:48:01	<--	whoami (~whoami@d118-75-170-49.try.wideopenwest.com) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:59:21	-->	analbleeding (6bbd1e16@67.205.143.82) has joined #go-nuts
+2021-10-13 01:01:10	<--	analbleeding (6bbd1e16@67.205.143.82) has left #go-nuts
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:03:40	<--	wroathe (~wroathe@user/wroathe) has quit (Ping timeout: 252 seconds)
+2021-10-13 01:11:22	-->	whoami (~whoami@d118-75-170-49.try.wideopenwest.com) has joined #go-nuts
+2021-10-13 01:12:41	-->	int3l (~int3l@78-83-119-37.spectrumnet.bg) has joined #go-nuts
+2021-10-13 01:14:17	<--	INeedAHandle (~INeedAHan@39.124.72.106) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 01:20:38	-->	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has joined #go-nuts
+2021-10-13 01:20:38	<--	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has quit (Changing host)
+2021-10-13 01:20:38	-->	wroathe (~wroathe@user/wroathe) has joined #go-nuts
+2021-10-13 01:25:26	<--	wroathe (~wroathe@user/wroathe) has quit (Ping timeout: 265 seconds)
+2021-10-13 01:28:18	<--	int3l (~int3l@78-83-119-37.spectrumnet.bg) has quit (Quit: WeeChat 3.3)
+2021-10-13 01:30:48	-->	int3l (~int3l@78-83-119-37.spectrumnet.bg) has joined #go-nuts
+2021-10-13 01:31:02	<--	int3l (~int3l@78-83-119-37.spectrumnet.bg) has quit (Client Quit)
+2021-10-13 01:31:43	<--	mika (~mika@odysseus.grml.info) has quit (Ping timeout: 252 seconds)
+2021-10-13 01:33:01	<--	NCS_One (~NCS_One@bl11-90-133.dsl.telepac.pt) has quit (Quit: Lost terminal)
+2021-10-13 01:33:05	<--	awmv (~awmv@2a02:21b0:644f:c181:6c4f:4ea7:720c:ec4) has quit (Quit: Client closed)
+2021-10-13 01:36:47	-->	normen (~normen@pd9eec54e.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-13 01:40:10	-->	int3l (~int3l@78-83-119-37.spectrumnet.bg) has joined #go-nuts
+2021-10-13 01:40:34	<--	int3l (~int3l@78-83-119-37.spectrumnet.bg) has quit (Client Quit)
+2021-10-13 01:42:13	<--	normen (~normen@pd9eec54e.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2021-10-13 01:44:39	<--	jjonah (~jjonah@p200300d5d7058900dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-10-13 01:47:42	-->	internut_ (~internut@98.38.226.136) has joined #go-nuts
+2021-10-13 01:48:37	-->	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has joined #go-nuts
+2021-10-13 01:50:13	<--	internut (~internut@2601:280:4e00:7b70:41f3:85d5:4dca:75a7) has quit (Ping timeout: 265 seconds)
+2021-10-13 01:50:27	-->	INeedAHandle (~INeedAHan@211.192.133.205) has joined #go-nuts
+2021-10-13 01:55:24	<--	sono (~sono@dslb-178-010-208-031.178.010.pools.vodafone-ip.de) has quit (Ping timeout: 265 seconds)
+2021-10-13 02:01:59	-->	theplushfrog (~theplushf@2601:43:8200:f8e0:64f6:274:b204:b078) has joined #go-nuts
+2021-10-13 02:03:12	<--	theplushfrog (~theplushf@2601:43:8200:f8e0:64f6:274:b204:b078) has left #go-nuts
+2021-10-13 02:07:52	pinky_	anyone have any good examples of using viper and cobra together without global variables? is it actually required to call viper.BindPFlags in init() ?
+2021-10-13 02:16:02	<--	predmijat (~predmijat@mail.strogopro.com) has quit (Quit: bye)
+2021-10-13 02:17:37	-->	predmijat (~predmijat@mail.strogopro.com) has joined #go-nuts
+2021-10-13 02:27:19	<--	imm_ (~imm_@user/imm/x-3405860) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:27:32	<--	unmanbearpig (~unmanbear@user/unmanbearpig) has quit (Remote host closed the connection)
+2021-10-13 02:27:55	-->	unmanbearpig (~unmanbear@user/unmanbearpig) has joined #go-nuts
+2021-10-13 02:28:38	pinky_	i'm not even sure what it means to bind flags to viper, that means the flags override the config file if they are set?
+2021-10-13 02:32:11	-->	chpar (~chpar@node-1w7jra2bl9lr0nstpq07d1mxw.ipv6.telus.net) has joined #go-nuts
+2021-10-13 02:32:33	-->	imm_ (~imm_@user/imm/x-3405860) has joined #go-nuts
+2021-10-13 02:34:08	chpar	dingus
+2021-10-13 02:38:58	-->	awmv (~awmv@2a02:21b0:644f:c181:6c4f:4ea7:720c:ec4) has joined #go-nuts
+2021-10-13 02:42:25	--	ahappydeath is now known as Guest7323
+2021-10-13 02:42:25	<--	Guest7323 (~silbermm@user/ahappydeath) has quit (Killed (molybdenum.libera.chat (Nickname regained by services)))
+2021-10-13 02:42:50	-->	Guest7323 (~silbermm@user/ahappydeath) has joined #go-nuts
+2021-10-13 02:45:12	b0nn	!ops
+2021-10-13 02:49:52	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:50:02	-->	brainfreeze (~brainfree@2a03:1b20:4:f011::20d) has joined #go-nuts
+2021-10-13 02:51:35	-->	fikran (~fikran@user/fikran) has joined #go-nuts
+2021-10-13 02:52:41	-->	burningserenity (~burningse@2603:9001:f01:ad99::1004) has joined #go-nuts
+2021-10-13 02:55:03	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-10-13 02:55:44	-->	int3l (~int3l@78-83-119-37.spectrumnet.bg) has joined #go-nuts
+2021-10-13 02:56:06	<--	int3l (~int3l@78-83-119-37.spectrumnet.bg) has quit (Client Quit)
+2021-10-13 02:57:12	pinky_	oh crap, this was exactly my issue, i have something similar and accidentally had called viper package functions instead of the method on v
+2021-10-13 02:57:14	pinky_	https://www.reddit.com/r/golang/comments/77f9lb/viper_config_from_a_file/
+2021-10-13 03:00:32	-->	ahappydeath (~ahappydea@dsl-74-83-53-157.fuse.net) has joined #go-nuts
+2021-10-13 03:05:53	<--	ahappydeath (~ahappydea@dsl-74-83-53-157.fuse.net) has quit (Quit: WeeChat 3.2.1)
+2021-10-13 03:06:30	-->	ahappydeath (~ahappydea@user/ahappydeath) has joined #go-nuts
+2021-10-13 03:08:00	-->	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has joined #go-nuts
+2021-10-13 03:08:00	<--	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has quit (Changing host)
+2021-10-13 03:08:00	-->	wroathe (~wroathe@user/wroathe) has joined #go-nuts
+2021-10-13 03:12:38	-->	idkfa (~idkfa@user/idkfa) has joined #go-nuts
+2021-10-13 03:15:02	<--	be3uykpy (~be3uykpy@2a00:a040:19a:b060:e86c:be50:e673:c005) has quit (Read error: Connection reset by peer)
+2021-10-13 03:19:27	-->	Compy_ (~compy@user/compy) has joined #go-nuts
+2021-10-13 03:26:21	<--	neurocyte0132889 (~neurocyte@user/neurocyte) has quit (Ping timeout: 245 seconds)
+2021-10-13 03:29:21	-->	gggpkm (~gggpkm@60.10.194.44) has joined #go-nuts
+2021-10-13 03:36:51	<--	burningserenity (~burningse@2603:9001:f01:ad99::1004) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-10-13 03:41:09	-->	gggpkm_ (~gggpkm@60.10.23.168) has joined #go-nuts
+2021-10-13 03:41:20	<--	kiril (~kiril@85.91.153.163) has quit (Quit: ZNC - https://znc.in)
+2021-10-13 03:41:32	-->	kiril (~kiril@85.91.153.163) has joined #go-nuts
+2021-10-13 03:44:19	<--	gggpkm (~gggpkm@60.10.194.44) has quit (Ping timeout: 252 seconds)
+2021-10-13 03:46:08	<--	dreamreal (~dreamreal@about/java/dreamreal) has quit (Quit: dreamreal)
+2021-10-13 03:51:14	Seirdy	anyone have examples of testing panics caused by hard-to-simulate scenarios (e.g. crypto/rand.Int or /x/term.ReadPassword returning an error)? looking into fault injection rn
+2021-10-13 03:51:55	Seirdy	s/panics/panics and errors/
+2021-10-13 03:54:10	<--	wroathe (~wroathe@user/wroathe) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:00:06	<--	whoami (~whoami@d118-75-170-49.try.wideopenwest.com) has quit (Ping timeout: 265 seconds)
+2021-10-13 04:04:33	-->	whoami (~whoami@d118-75-170-49.try.wideopenwest.com) has joined #go-nuts
+2021-10-13 04:05:46	-->	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has joined #go-nuts
+2021-10-13 04:05:46	<--	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has quit (Changing host)
+2021-10-13 04:05:46	-->	wroathe (~wroathe@user/wroathe) has joined #go-nuts
+2021-10-13 04:09:17	<--	dza (~dza@user/dza) has quit (Ping timeout: 265 seconds)
+2021-10-13 04:09:45	bpalmer	Seirdy: often, you just set up a fake function. E.g., in your package, 'var readPassword = term.ReadPassword'  and then in your test, 'original = readPassword; readPassword = func() (string, error) { return "", errors.New("something went wrong") } ; defer func() { readPassword = original }()'
+2021-10-13 04:10:00	bpalmer	and your code just calls readPassword()
+2021-10-13 04:10:43	<--	wroathe (~wroathe@user/wroathe) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:12:19	<--	k0ta (~k0ta@151.210.174.146) has quit (Read error: Connection reset by peer)
+2021-10-13 04:13:23	-->	dza (~dza@user/dza) has joined #go-nuts
+2021-10-13 04:14:18	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #go-nuts
+2021-10-13 04:16:24	seebs	i am sort of unfond of that mechanism and i distrust it and tests that rely too much on it
+2021-10-13 04:21:23	-->	normen (~normen@pd9eec54e.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-13 04:26:37	<--	normen (~normen@pd9eec54e.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:26:56	bpalmer	I don't know of a particular better way, although sometimes you can mask it behind an interface
+2021-10-13 04:31:04	<--	ahappydeath (~ahappydea@user/ahappydeath) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:31:24	<--	awmv (~awmv@2a02:21b0:644f:c181:6c4f:4ea7:720c:ec4) has quit (Quit: Client closed)
+2021-10-13 04:32:51	-->	Atque (~Atque@user/atque) has joined #go-nuts
+2021-10-13 04:38:46	<--	rcernin (~rcernin@144.132.209.31) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:50:53	<--	INeedAHandle (~INeedAHan@211.192.133.205) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-10-13 04:51:39	-->	rcernin (~rcernin@2001:8003:6803:db00:c40b:e92a:acbd:63a2) has joined #go-nuts
+2021-10-13 04:53:17	<--	rcernin (~rcernin@2001:8003:6803:db00:c40b:e92a:acbd:63a2) has quit (Client Quit)
+2021-10-13 04:53:37	-->	rcernin_ (~rcernin@144.132.209.31) has joined #go-nuts
+2021-10-13 04:58:51	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 245 seconds)
+2021-10-13 05:00:56	-->	fikran (~fikran@user/fikran) has joined #go-nuts
+2021-10-13 05:03:13	<--	idkfa (~idkfa@user/idkfa) has quit (Quit: Leaving)
+2021-10-13 05:03:40	<--	alzgh (~alzgh@user/alzgh) has quit (Remote host closed the connection)
+2021-10-13 05:04:13	<--	tg (~tg@rockylinux/infra/tg) has quit (Quit: tg)
+2021-10-13 05:08:59	-->	lishanhui (~lishanhui@104-184-3-133.lightspeed.austtx.sbcglobal.net) has joined #go-nuts
+2021-10-13 05:12:46	-->	yelnah (~felix@203.221.122.90) has joined #go-nuts
+2021-10-13 05:13:05	<--	ofh (~felix@61.69.196.50) has quit (Ping timeout: 265 seconds)
+2021-10-13 05:18:42	<--	lishanhui (~lishanhui@104-184-3-133.lightspeed.austtx.sbcglobal.net) has quit (Ping timeout: 260 seconds)
+2021-10-13 05:23:39	-->	gggpkm__ (~gggpkm@60.10.194.44) has joined #go-nuts
+2021-10-13 05:24:29	<--	martinkennelly (~martinken@84.203.20.92) has quit (Remote host closed the connection)
+2021-10-13 05:27:04	Seirdy	bpalmer, seebs: looking at the gopass source code, you can also temporarily set crypto/rand.Reader to something deterministic, triggering an error when calling the csprng. that seems like a much cleaner way to handle crypto/rand errors.
+2021-10-13 05:27:07	<--	gggpkm_ (~gggpkm@60.10.23.168) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:27:19	Seirdy	seebs: do you know of any alternatives?
+2021-10-13 05:29:11	-->	gggpkm_ (~gggpkm@60.10.194.44) has joined #go-nuts
+2021-10-13 05:32:01	-->	martinkennelly (~martinken@84.203.20.92) has joined #go-nuts
+2021-10-13 05:32:25	<--	gggpkm__ (~gggpkm@60.10.194.44) has quit (Ping timeout: 265 seconds)
+2021-10-13 05:33:00	 *	b0nn votes for the fake function style - it's dead easy to implement, and ensure that you get deterministic values for testing
+2021-10-13 05:35:27	-->	lishanhui (~lishanhui@104-184-3-133.lightspeed.austtx.sbcglobal.net) has joined #go-nuts
+2021-10-13 05:38:34	-->	k0ta (~k0ta@151.210.174.146) has joined #go-nuts
+2021-10-13 05:51:20	seebs	i don't know, i have just spent a lot of time recently debugging code which never worked but which had some crazy workarounds "to allow us to test without having to fully instantiate things" and it turns out that those crazy workarounds also happen in real usage sometimes, and at least one of the functions involved *can't work without them*.
+2021-10-13 05:51:35	seebs	like, it has a parameter which does not admit any value actually being correct and usable
+2021-10-13 05:52:47	b0nn	Your complaint is that its been done badly on your codebase?
+2021-10-13 05:55:23	<--	Compy_ (~compy@user/compy) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-10-13 05:56:16	<--	lishanhui (~lishanhui@104-184-3-133.lightspeed.austtx.sbcglobal.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 06:00:18	Seirdy	aite by emulating what gopass did, here's my crypto/rand panic test: https://termbin.com/ttx1
+2021-10-13 06:00:42	Seirdy	looks like the test for ReadPassword is gonna need to use a fake function
+2021-10-13 06:08:38	-->	frost (~frost@59.71.244.189) has joined #go-nuts
+2021-10-13 06:13:40	-->	gggpkm__ (~gggpkm@60.10.23.168) has joined #go-nuts
+2021-10-13 06:14:20	-->	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has joined #go-nuts
+2021-10-13 06:14:20	<--	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has quit (Changing host)
+2021-10-13 06:14:20	-->	wroathe (~wroathe@user/wroathe) has joined #go-nuts
+2021-10-13 06:15:10	<--	PortableDave (~portabled@194-223-17-29.tpgi.com.au) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 06:16:40	<--	gggpkm_ (~gggpkm@60.10.194.44) has quit (Ping timeout: 252 seconds)
+2021-10-13 06:28:07	-->	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has joined #go-nuts
+2021-10-13 06:32:18	-->	normen (~normen@p200300d7173139001ceb5bc8fed52134.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-13 06:36:13	-->	mika (~mika@odysseus.grml.info) has joined #go-nuts
+2021-10-13 06:36:46	<--	normen (~normen@p200300d7173139001ceb5bc8fed52134.dip0.t-ipconnect.de) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:39:07	<--	danderson (~dave@tailscale/danderson) has quit (Quit: WeeChat 3.3)
+2021-10-13 06:39:37	-->	fernand (~fernand@179.156.35.4) has joined #go-nuts
+2021-10-13 06:40:24	-->	danderson (~dave@tailscale/danderson) has joined #go-nuts
+2021-10-13 06:40:24	--	Mode #go-nuts [+v danderson] by ChanServ
+2021-10-13 06:42:28	--	fernand is now known as Fernanda
+2021-10-13 06:44:55	<--	LiftLeft (~LiftLeft@191.96.185.109) has quit (Ping timeout: 265 seconds)
+2021-10-13 06:47:28	<--	lilgopher (~textual@2601:241:8000:38f0:91b6:1448:b1dc:d7cc) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-13 06:48:02	<--	freakazoid343 (~matt@2603:9000:cf0f:80e3:a487:1497:3511:a6b2) has quit (Read error: Connection reset by peer)
+2021-10-13 06:49:39	-->	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has joined #go-nuts
+2021-10-13 06:49:56	-->	lilgopher (~textual@2601:241:8000:38f0:91b6:1448:b1dc:d7cc) has joined #go-nuts
+2021-10-13 06:50:56	<--	Fernanda (~fernand@179.156.35.4) has left #go-nuts
+2021-10-13 06:51:36	-->	bugtrial6 (bugtrial@gateway/vpn/protonvpn/bugtrial) has joined #go-nuts
+2021-10-13 06:53:01	<--	bugtrial (bugtrial@gateway/vpn/protonvpn/bugtrial) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:53:02	--	bugtrial6 is now known as bugtrial
+2021-10-13 06:54:37	-->	PortableDave (~portabled@194-223-17-29.tpgi.com.au) has joined #go-nuts
+2021-10-13 06:58:36	-->	INeedAHandle (~INeedAHan@39.124.72.106) has joined #go-nuts
+2021-10-13 07:00:04	<--	sudoforge (~sudoforge@wireguard/tunneler/sudoforge) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:03:14	<--	INeedAHandle (~INeedAHan@39.124.72.106) has quit (Ping timeout: 260 seconds)
+2021-10-13 07:08:19	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:08:58	-->	normen (~normen@p200300d7173139001ceb5bc8fed52134.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-13 07:09:46	-->	vaginaldischarge (b9dc66f8@67.205.143.82) has joined #go-nuts
+2021-10-13 07:10:18	-->	fikran (~fikran@user/fikran) has joined #go-nuts
+2021-10-13 07:11:21	<--	vaginaldischarge (b9dc66f8@67.205.143.82) has left #go-nuts
+2021-10-13 07:14:15	-->	jla (~jordi@tao.ddns.jazztel.es) has joined #go-nuts
+2021-10-13 07:14:15	<--	normen (~normen@p200300d7173139001ceb5bc8fed52134.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2021-10-13 07:14:28	<--	lofiguy (~lofiguy@87-207-104-205.dynamic.chello.pl) has quit (Remote host closed the connection)
+2021-10-13 07:16:08	<--	jla (~jordi@tao.ddns.jazztel.es) has left #go-nuts
+2021-10-13 07:23:06	-->	gggpkm_ (~gggpkm@60.10.194.44) has joined #go-nuts
+2021-10-13 07:26:28	<--	gggpkm__ (~gggpkm@60.10.23.168) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:29:09	-->	gggpkm__ (~gggpkm@60.10.194.44) has joined #go-nuts
+2021-10-13 07:32:34	<--	gggpkm_ (~gggpkm@60.10.194.44) has quit (Ping timeout: 252 seconds)
+2021-10-13 07:36:39	-->	gggpkm_ (~gggpkm@123.113.177.190) has joined #go-nuts
+2021-10-13 07:39:41	<--	gggpkm__ (~gggpkm@60.10.194.44) has quit (Ping timeout: 245 seconds)
+2021-10-13 07:41:00	-->	Doraemon (~NeoCron@p200300c4cf1964009b5b3ef502cc8e57.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-13 07:42:29	<--	martinkennelly (~martinken@84.203.20.92) has quit (Remote host closed the connection)
+2021-10-13 07:43:17	<--	NeoCron (~NeoCron@p200300c4cf195d00df9b3d9f9a455325.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2021-10-13 07:43:57	-->	martinkennelly (~martinken@84.203.20.92) has joined #go-nuts
+2021-10-13 07:48:32	-->	normen (~normen@p200300d7173139001ceb5bc8fed52134.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-13 07:51:08	<--	wroathe (~wroathe@user/wroathe) has quit (Ping timeout: 265 seconds)
+2021-10-13 07:52:29	-->	AquaL1te (~AquaL1te@user/aqual1te) has joined #go-nuts
+2021-10-13 07:55:18	<--	eNV25 (~quassel@user/env25) has quit (Quit: 😳)
+2021-10-13 07:56:44	-->	eNV25 (~quassel@user/env25) has joined #go-nuts
+2021-10-13 07:56:58	-->	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has joined #go-nuts
+2021-10-13 07:56:58	<--	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has quit (Changing host)
+2021-10-13 07:56:58	-->	wroathe (~wroathe@user/wroathe) has joined #go-nuts
+2021-10-13 07:57:36	<--	normen (~normen@p200300d7173139001ceb5bc8fed52134.dip0.t-ipconnect.de) has quit (Ping timeout: 245 seconds)
+2021-10-13 08:02:15	<--	wroathe (~wroathe@user/wroathe) has quit (Ping timeout: 265 seconds)
+2021-10-13 08:11:30	-->	normen (~normen@p200300d717349100c9f2b9197737a949.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-13 08:16:59	<--	normen (~normen@p200300d717349100c9f2b9197737a949.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2021-10-13 08:24:23	-->	eNV25_ (~quassel@user/env25) has joined #go-nuts
+2021-10-13 08:24:24	-->	lishanhui (~lishanhui@104-184-3-133.lightspeed.austtx.sbcglobal.net) has joined #go-nuts
+2021-10-13 08:24:46	<--	eNV25 (~quassel@user/env25) has quit (Ping timeout: 252 seconds)
+2021-10-13 08:27:36	<--	kiril (~kiril@85.91.153.163) has quit (Read error: Connection reset by peer)
+2021-10-13 08:31:35	-->	kiril (~kiril@85.91.153.163) has joined #go-nuts
+2021-10-13 08:33:39	<--	girafe (~girafe@176-147-142-235.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2021-10-13 08:40:57	<--	dsrt^ (~dsrt@wsip-70-165-23-55.mc.at.cox.net) has quit (Remote host closed the connection)
+2021-10-13 08:41:11	-->	gggpkm__ (~gggpkm@60.10.194.44) has joined #go-nuts
+2021-10-13 08:41:40	-->	sshow (~sshow@neo.hackeriet.no) has joined #go-nuts
+2021-10-13 08:43:57	<--	lishanhui (~lishanhui@104-184-3-133.lightspeed.austtx.sbcglobal.net) has quit (Ping timeout: 250 seconds)
+2021-10-13 08:44:09	-->	bkircher (~bkircher@2001:a61:25b1:b301:38c4:d8e7:23b0:bde5) has joined #go-nuts
+2021-10-13 08:44:14	-->	gggpkm (~gggpkm@60.10.194.44) has joined #go-nuts
+2021-10-13 08:44:26	<--	gggpkm_ (~gggpkm@123.113.177.190) has quit (Ping timeout: 265 seconds)
+2021-10-13 08:46:43	<--	gggpkm__ (~gggpkm@60.10.194.44) has quit (Ping timeout: 265 seconds)
+2021-10-13 08:47:20	-->	mrig (~mrig@user/mrig) has joined #go-nuts
+2021-10-13 08:48:09	-->	gggpkm_ (~gggpkm@60.10.194.44) has joined #go-nuts
+2021-10-13 21:22:52	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:22	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #go-nuts
+2021-10-13 21:23:22	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-13 21:23:22	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-13 21:23:22	--	Channel #go-nuts: 641 nicks (2 ops, 2 voices, 637 normals)
+2021-10-13 21:23:23	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-13 21:23:23	--	URL for #go-nuts: https://golang.org
+2021-10-13 21:23:44	krux02	Either the allocation is expensive (C++) or the GC that is triggered by the allocation (Java) is expensive.
+2021-10-13 21:23:50	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-13 21:24:10	krux02	also fresh allocated memory is never in the cache.
+2021-10-13 21:24:21	-->	mikoto-chan (~mikoto-ch@ip-83-134-2-136.dsl.scarlet.be) has joined #go-nuts
+2021-10-13 21:24:31	-->	kiril (~kiril@85.91.153.163) has joined #go-nuts
+2021-10-13 21:24:42	-->	tane (~tane@dslb-002-201-234-068.002.201.pools.vodafone-ip.de) has joined #go-nuts
+2021-10-13 21:26:48	krux02	anyway, I think we all said our points.
+2021-10-13 21:27:36	<--	dza (~dza@user/dza) has quit (Ping timeout: 245 seconds)
+2021-10-13 21:28:20	-->	dza (~dza@user/dza) has joined #go-nuts
+2021-10-13 21:28:42	-->	Scarecr0w (scarecr0w@user/scarecr0w) has joined #go-nuts
+2021-10-13 21:31:10	-->	jla (~jordi@tao.ddns.jazztel.es) has joined #go-nuts
+2021-10-13 21:32:37	-->	nattiestnate (~nate@2001:448a:20a0:4134:25e:715f:d637:5263) has joined #go-nuts
+2021-10-13 21:32:51	fentanyl	I'm using http.ResponseWriter.Write() method to write response in byte slice to a client (the response are bytes or text read from files), but when I run the server, cURL treats it as a binary output (although I explicitly included a "content-type" of "text/plain"). Is there a way I can fix this issue? Here is the code if that helps, the response is writen on line 72 https://termbin.com/t834
+2021-10-13 21:33:37	<--	nattiestnate (~nate@2001:448a:20a0:4134:25e:715f:d637:5263) has quit (Client Quit)
+2021-10-13 21:33:50	-->	nattiestnate (~nate@2001:448a:20a0:4134:25e:715f:d637:5263) has joined #go-nuts
+2021-10-13 21:42:54	<--	jla (~jordi@tao.ddns.jazztel.es) has quit (Read error: Connection reset by peer)
+2021-10-13 21:43:09	-->	jla (~jordi@tao.ddns.jazztel.es) has joined #go-nuts
+2021-10-13 21:44:54	<--	nattiestnate (~nate@2001:448a:20a0:4134:25e:715f:d637:5263) has quit (Quit: WeeChat 3.3)
+2021-10-13 21:45:09	-->	nattiestnate (~nate@2001:448a:20a0:4134:25e:715f:d637:5263) has joined #go-nuts
+2021-10-13 21:47:07	<--	mooff (mooff@awful.cooking) has quit (Remote host closed the connection)
+2021-10-13 21:47:11	<--	Torr (~Torr@user/torr) has quit (Ping timeout: 245 seconds)
+2021-10-13 21:48:35	<--	nattiestnate (~nate@2001:448a:20a0:4134:25e:715f:d637:5263) has quit (Client Quit)
+2021-10-13 21:48:48	-->	nattiestnate (~nate@2001:448a:20a0:4134:25e:715f:d637:5263) has joined #go-nuts
+2021-10-13 21:55:06	<--	arinov (~arinov@31.142.50.8) has quit (Ping timeout: 245 seconds)
+2021-10-13 22:02:08	<--	nattiestnate (~nate@2001:448a:20a0:4134:25e:715f:d637:5263) has quit (Quit: WeeChat 3.3)
+2021-10-13 22:02:30	-->	burningserenity (~burningse@142-196-178-216.res.spectrum.com) has joined #go-nuts
+2021-10-13 22:05:37	<--	CoolerY (~CoolerX@user/coolerx) has quit (Quit: Leaving)
+2021-10-13 22:09:58	-->	mooff (mooff@awful.cooking) has joined #go-nuts
+2021-10-13 22:10:04	Awoobis	krux02: my point is that until you need those optimisations, ie, the program is running slow enough to impact its job, any optimisations decrease readability for no gain
+2021-10-13 22:10:27	Awoobis	fentanyl: have you verified that your content type is being sent?
+2021-10-13 22:10:49	<--	mooff (mooff@awful.cooking) has quit (Remote host closed the connection)
+2021-10-13 22:12:26	-->	connor_goodwolf (~connor@user/connor-goodwolf/x-2615606) has joined #go-nuts
+2021-10-13 22:13:55	fentanyl	yes, it does send in response headers
+2021-10-13 22:14:20	Awoobis	you have verified this on cURLs end?
+2021-10-13 22:14:36	-->	arinov (~arinov@213.194.126.155) has joined #go-nuts
+2021-10-13 22:14:44	fentanyl	i did, like i mentioned.
+2021-10-13 22:15:38	Awoobis	then its cURL likely not doing as you expect
+2021-10-16 12:32:07	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:33	-->	mrmanner (~jmanner@185.224.57.161) has joined #go-nuts
+2021-10-16 12:32:33	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-16 12:32:33	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-16 12:32:33	--	Channel #go-nuts: 629 nicks (2 ops, 2 voices, 625 normals)
+2021-10-16 12:32:34	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-16 12:32:34	--	URL for #go-nuts: https://golang.org
+2021-10-16 12:32:40	-->	me-sudoer-dentne (~me-sudoer@2405:204:53ab:d5ed:583f:8b00:175b:9f05) has joined #go-nuts
+2021-10-16 12:32:51	<--	Atque (~Atque@user/atque) has quit (Ping timeout: 276 seconds)
+2021-10-16 12:33:04	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-16 12:35:06	<--	xiongxin_ (~quassel@113.116.33.28) has quit (Ping timeout: 245 seconds)
+2021-10-16 12:40:01	-->	silbermm (~silbermm@user/ahappydeath) has joined #go-nuts
+2021-10-16 12:44:47	<--	silbermm (~silbermm@user/ahappydeath) has quit (Ping timeout: 264 seconds)
+2021-10-16 12:51:26	<--	gggp (~gggp@li870-78.members.linode.com) has quit (Remote host closed the connection)
+2021-10-16 12:52:08	-->	gggp (~gggp@li870-78.members.linode.com) has joined #go-nuts
+2021-10-16 12:58:06	-->	Snyp (~Snyp@49.207.212.233) has joined #go-nuts
+2021-10-16 12:59:14	<--	Snyp (~Snyp@49.207.212.233) has quit (Client Quit)
+2021-10-16 13:00:15	<--	gggp (~gggp@li870-78.members.linode.com) has quit (Remote host closed the connection)
+2021-10-16 13:00:55	-->	gggp (~gggp@li870-78.members.linode.com) has joined #go-nuts
+2021-10-16 13:02:00	-->	jjonah (~jjonah@p200300d5d7058900dea632fffeb3342f.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-16 13:03:30	-->	Snyp (~Snyp@49.207.212.233) has joined #go-nuts
+2021-10-16 13:04:04	-->	Hanicef (~gustaf@81-229-9-108-no92.tbcn.telia.com) has joined #go-nuts
+2021-10-16 13:05:02	-->	xiongxin (~quassel@113.116.32.200) has joined #go-nuts
+2021-10-16 13:05:43	<--	Snyp (~Snyp@49.207.212.233) has quit (Client Quit)
+2021-10-16 13:06:12	-->	Snyp (~Snyp@49.207.212.233) has joined #go-nuts
+2021-10-16 13:12:01	-->	internut (~internut@2601:280:4e00:7b70:1503:621b:7dcb:587e) has joined #go-nuts
+2021-10-16 13:16:16	<--	Snyp (~Snyp@49.207.212.233) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-16 13:16:21	<--	internut (~internut@2601:280:4e00:7b70:1503:621b:7dcb:587e) has quit (Ping timeout: 245 seconds)
+2021-10-16 13:23:35	-->	silbermm (~silbermm@user/ahappydeath) has joined #go-nuts
+2021-10-17 18:14:39	-->	jmanner (~jmanner@185.224.57.161) has joined #go-nuts
+2021-10-17 18:14:39	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-17 18:14:39	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-17 18:14:39	--	Channel #go-nuts: 626 nicks (2 ops, 2 voices, 622 normals)
+2021-10-17 18:14:40	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-17 18:14:40	--	URL for #go-nuts: https://golang.org
+2021-10-17 18:15:07	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-17 18:15:44	-->	internut (~internut@2601:280:4e00:7b70:7c1c:8d1a:107d:9591) has joined #go-nuts
+2021-10-17 18:15:53	<--	internut (~internut@2601:280:4e00:7b70:7c1c:8d1a:107d:9591) has quit (Client Quit)
+2021-10-17 18:17:12	-->	freakazoid343 (~matt@2603:9000:cf0f:80e3:ecd7:c30b:133e:765f) has joined #go-nuts
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined #go-nuts
+2021-10-17 18:19:02	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-17 18:19:02	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-17 18:19:03	--	Channel #go-nuts: 627 nicks (2 ops, 2 voices, 623 normals)
+2021-10-17 18:19:03	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-17 18:19:03	--	URL for #go-nuts: https://golang.org
+2021-10-17 18:19:32	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-17 18:20:55	<--	freakazoid12345 (~matt@2603-9000-cf0f-80e3-9d79-7459-1d29-717f.inf6.spectrum.com) has quit (Ping timeout: 268 seconds)
+2021-10-17 18:22:54	Awoobis	the character is `"`?
+2021-10-17 18:22:59	Awoobis	ie, a double quote?
+2021-10-17 18:23:12	Awoobis	that'll be in the data you get from stdin
+2021-10-17 18:30:36	-->	jmanner (~jmanner@user/mrmanner) has joined #go-nuts
+2021-10-17 18:30:36	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-17 18:30:36	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-17 18:30:39	--	Channel #go-nuts: 627 nicks (2 ops, 2 voices, 623 normals)
+2021-10-17 18:30:39	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-17 18:30:39	--	URL for #go-nuts: https://golang.org
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:59	tuskkk____	but I am now using scanner.Text(), and then removing it from the string
+2021-10-17 18:31:04	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-17 18:31:38	fizzie	Sounds very odd. Do an example on the playground? You can put your input data in a bytes.Reader or a strings.Reader.
+2021-10-17 18:32:05	-->	alzgh (~alzgh@user/alzgh) has joined #go-nuts
+2021-10-17 18:32:16	tuskkk____	ok
+2021-10-17 18:33:37	fizzie	It'd be normal for the scanner to read some amount of the next line (it's called `bufio` for a reason), and those bytes would even be physically present in the []byte from scanner.Bytes() if you look at the data between len() and cap(), but they certainly shouldn't end up in the output from scanner.Text(), as long as the SplitFunc is written correctly.
+2021-10-17 18:35:05	<--	freakazoid343 (~matt@2603:9000:cf0f:80e3:ecd7:c30b:133e:765f) has quit (Remote host closed the connection)
+2021-10-17 18:35:45	-->	freakazoid343 (~matt@2603-9000-cf0f-80e3-ecd7-c30b-133e-765f.inf6.spectrum.com) has joined #go-nuts
+2021-10-17 18:40:41	-->	clarjon1 (~clarjon1@user/clarjon1) has joined #go-nuts
+2021-10-17 18:50:42	<--	rek2 (~ReK2@47.62.9.10) has quit (Quit: WeeChat 3.3)
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:44	-->	mrmanner (~jmanner@user/mrmanner) has joined #go-nuts
+2021-10-17 19:45:44	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-17 19:45:44	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-17 19:45:44	--	Channel #go-nuts: 628 nicks (2 ops, 2 voices, 624 normals)
+2021-10-17 19:45:44	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-17 19:45:44	--	URL for #go-nuts: https://golang.org
+2021-10-17 19:45:47	-->	CaryHartline (~CaryHartl@2603-8080-6a0e-8d88-d584-6e57-f98b-0941.res6.spectrum.com) has joined #go-nuts
+2021-10-17 19:46:09	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-17 19:46:47	<--	freakazoid343 (~matt@2603-9000-cf0f-80e3-ecd7-c30b-133e-765f.inf6.spectrum.com) has quit (Read error: Connection reset by peer)
+2021-10-17 19:46:52	<--	CaryHartline (~CaryHartl@2603-8080-6a0e-8d88-d584-6e57-f98b-0941.res6.spectrum.com) has quit (Client Quit)
+2021-10-17 19:47:34	-->	freakazoid343 (~matt@2603:9000:cf0f:80e3:ecd7:c30b:133e:765f) has joined #go-nuts
+2021-10-17 19:50:17	--	muirrum_ is now known as muirrum
+2021-10-17 19:55:41	-->	Torr (~Torr@user/torr) has joined #go-nuts
+2021-10-17 20:00:17	-->	CaryHartline (~CaryHartl@2603-8080-6a0e-8d88-d584-6e57-f98b-0941.res6.spectrum.com) has joined #go-nuts
+2021-10-17 20:01:13	-->	ztx (~ztx@user/ztx) has joined #go-nuts
+2021-10-17 20:02:36	<--	freakazoid343 (~matt@2603:9000:cf0f:80e3:ecd7:c30b:133e:765f) has quit (Read error: Connection reset by peer)
+2021-10-17 20:03:16	-->	freakazoid343 (~matt@2603:9000:cf0f:80e3:ecd7:c30b:133e:765f) has joined #go-nuts
+2021-10-17 20:08:16	<--	fmac (bf93f83905@2604:bf00:710:0:5054:ff:feea:5006) has quit (Remote host closed the connection)
+2021-10-17 20:08:18	-->	fmac (bf93f83905@2604:bf00:710:0:5054:ff:feea:5006) has joined #go-nuts
+2021-10-17 20:13:34	<--	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-17 20:13:44	-->	brainfreeze (~brainfree@2a03:1b20:4:f011::20d) has joined #go-nuts
+2021-10-17 20:16:35	<--	normen (~normen@p200300d717382000d95e86e58ca0e4cb.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2021-10-17 20:17:55	tuskkk____	Able to formulate the problem now, https://play.golang.org/p/0cb7cNuJKQT, how do I get from current raw to expected raw
+2021-10-17 20:18:29	tuskkk____	not able to understand the subtle difference - if I manipulate the strings in the first option, its still not the same as expected
+2021-10-17 20:20:02	foobaz	instead of a comma, use a plus
+2021-10-17 20:22:01	<--	hornhack (~hackingho@user/hackinghorn) has quit (Ping timeout: 264 seconds)
+2021-10-17 20:23:52	tuskkk____	foobaz: how do you mean plus? don't I have to build it? https://play.golang.org/p/H8s8uovlGUE
+2021-10-17 20:24:07	fizzie	tuskkk____: Are you looking for something like this? https://play.golang.org/p/isyaehfLTqB
+2021-10-17 20:27:24	-->	normen (~normen@p200300d7174e83008d6a774881c59ad5.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-17 20:27:34	tuskkk____	wow yes
+2021-10-17 20:28:27	tuskkk____	what's so special about Sscanf?
+2021-10-17 20:29:29	KirkMcDonald	Special?
+2021-10-17 20:30:56	KirkMcDonald	The %q verb corresponds to Go string literal syntax, and it can be used for both output (with fmt.Printf, etc) and input (with fmt.Scanf, etc).
+2021-10-17 20:34:04	tuskkk____	I see, today I learned something new, thanks
+2021-10-17 20:36:30	-->	CoolerZ (~CoolerX@user/coolerx) has joined #go-nuts
+2021-10-17 20:44:14	<--	jjakob (~quassel@2a01:260:8028:10f0::62) has quit (Quit: Either rebooting or something broke.)
+2021-10-17 20:58:28	-->	jjakob (~quassel@2a01:260:8028:10f0::62) has joined #go-nuts
+2021-10-17 21:04:10	<--	fef (~thedawn@user/thedawn) has quit (Ping timeout: 276 seconds)
+2021-10-17 21:05:03	-->	porn (~hentai@2a01:e0a:a5c:a070:9fac:5613:587a:b84a) has joined #go-nuts
+2021-10-17 21:05:03	<--	porn (~hentai@2a01:e0a:a5c:a070:9fac:5613:587a:b84a) has quit (Changing host)
+2021-10-17 21:05:03	-->	porn (~hentai@user/hentai) has joined #go-nuts
+2021-10-17 21:06:25	-->	hornhack (~hackingho@user/hackinghorn) has joined #go-nuts
+2021-10-17 21:09:19	<--	svedrin (~quassel@tiamat.funzt-halt.net) has quit (Quit: https://quassel-irc.org - Komfortabler Chat. Überall.)
+2021-10-17 21:09:28	<--	hentai (~hentai@user/hentai) has quit (Ping timeout: 252 seconds)
+2021-10-17 21:09:33	-->	svedrin (~quassel@tiamat.funzt-halt.net) has joined #go-nuts
+2021-10-17 21:11:41	-->	mikey__ (~mikey__@cpe-167-100-16-236.mt-rushmore.net) has joined #go-nuts
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #go-nuts
+2021-10-30 12:09:24	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-30 12:09:24	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-30 12:09:24	--	Channel #go-nuts: 631 nicks (2 ops, 1 voice, 628 normals)
+2021-10-30 12:09:25	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-30 12:09:25	--	URL for #go-nuts: https://golang.org
+2021-10-30 12:09:54	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-30 12:09:54	<--	pranjal (~pranjal@user/pranjal) has left #go-nuts (WeeChat 3.3)
+2021-10-30 12:10:16	<--	vimal (~vimal@2a02:a210:9600:1600:4fb4:e20f:72bc:9bf8) has quit (Client Quit)
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #go-nuts
+2021-10-30 12:10:54	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-30 12:10:54	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-30 12:10:54	--	Channel #go-nuts: 629 nicks (2 ops, 1 voice, 626 normals)
+2021-10-30 12:10:54	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-30 12:10:54	--	URL for #go-nuts: https://golang.org
+2021-10-30 12:11:25	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:17:38	-->	noxim (~noxim@user/noxim) has joined #go-nuts
+2021-10-30 12:19:59	-->	be3uykpy (~be3uykpy@2a00:a040:19a:b060:a5d1:df99:7445:eeb7) has joined #go-nuts
+2021-10-30 12:27:25	<--	vimal (~vimal@2a02:a210:9600:1600:4fb4:e20f:72bc:9bf8) has quit (Ping timeout: 252 seconds)
+2021-10-30 12:27:46	<--	noxim (~noxim@user/noxim) has quit (Quit: Client closed)
+2021-10-30 12:35:27	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #go-nuts
+2021-10-30 12:40:19	-->	jaca122 (~Thunderbi@89-65-136-254.dynamic.chello.pl) has joined #go-nuts
+2021-10-30 12:45:19	-->	guniberas (~guniberas@42.191.188.121) has joined #go-nuts
+2021-10-30 12:46:00	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 268 seconds)
+2021-10-30 12:47:46	-->	fikran (~fikran@user/fikran) has joined #go-nuts
+2021-10-30 12:49:48	-->	mikoto-chan (~mikoto-ch@ip-83-134-2-136.dsl.scarlet.be) has joined #go-nuts
+2021-10-30 12:52:52	<--	jaca122 (~Thunderbi@89-65-136-254.dynamic.chello.pl) has quit (Read error: Connection reset by peer)
+2021-10-30 13:04:03	-->	Mattiaslndstrm (~Mattiasln@c213-103-137-235.bredband.tele2.se) has joined #go-nuts
+2021-10-30 13:04:26	-->	Atque (~Atque@user/atque) has joined #go-nuts
+2021-10-30 13:05:26	-->	tyson2 (~user@bras-base-toroon0624w-grc-19-70-31-33-162.dsl.bell.ca) has joined #go-nuts
+2021-10-30 13:07:16	-->	burakcank (~burakcank@has.arrived.and.is.ready-to.party) has joined #go-nuts
+2021-10-30 13:15:29	<--	Mattiaslndstrm (~Mattiasln@c213-103-137-235.bredband.tele2.se) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-30 13:17:49	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has joined #go-nuts
+2021-10-30 13:20:45	<--	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:22:00	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has joined #go-nuts
+2021-10-30 13:23:06	-->	Liexei (~Liexei@user/liexei) has joined #go-nuts
+2021-10-30 13:25:17	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:dd79:459d:8214:30ba) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:30:46	-->	me-sudoer-dentne (~me-sudoer@2409:4071:2281:6748:766d:ae06:6724:cf09) has joined #go-nuts
+2021-10-30 13:34:15	-->	Ergo^ (~ergo@91.238.59.144) has joined #go-nuts
+2021-10-30 13:37:03	@Sam	Has anyone used cview (fork of the tview UI library that's more idiomatic Go, is actually tested, has a concurrency story, etc.)? At first glance it looks strictly superior, but I haven't interacted with the author or anything and am curious if it holds up or has other issues I'm not aware of yet.
+2021-10-30 13:39:02	-->	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has joined #go-nuts
+2021-10-30 13:41:43	<--	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:55ef:5d0:c1e8:90b) has quit (Ping timeout: 268 seconds)
+2021-10-30 13:42:43	<--	novns (~novns@user/novns) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-10-30 13:42:59	-->	novns (~novns@user/novns) has joined #go-nuts
+2021-10-30 13:45:20	-->	jjonah (~jjonah@p200300d5d7058900dea632fffeb3342f.dip0.t-ipconnect.de) has joined #go-nuts
+2021-10-30 13:45:23	-->	zer0bitz (~zer0bitz@2a0b:dbc1:2:81c1:d418:453f:8e01:9edf) has joined #go-nuts
+2021-10-30 13:48:05	<--	zer0bitz_ (~zer0bitz@2a0b:dbc1:2:81c1:30bc:a359:39b5:99ae) has quit (Ping timeout: 246 seconds)
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:35	-->	mrmanner (~jmanner@user/mrmanner) has joined #go-nuts
+2021-10-30 17:07:35	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-30 17:07:35	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-30 17:07:35	--	Channel #go-nuts: 641 nicks (2 ops, 1 voice, 638 normals)
+2021-10-30 17:07:36	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-30 17:07:36	--	URL for #go-nuts: https://golang.org
+2021-10-30 17:08:04	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-30 17:08:58	-->	tyson2 (~user@bras-base-toroon0624w-grc-19-70-31-33-162.dsl.bell.ca) has joined #go-nuts
+2021-10-30 17:09:06	-->	zer0bitz (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has joined #go-nuts
+2021-10-30 17:09:36	-->	neurocyte0132889 (~neurocyte@185.117.69.128) has joined #go-nuts
+2021-10-30 17:09:36	<--	neurocyte0132889 (~neurocyte@185.117.69.128) has quit (Changing host)
+2021-10-30 17:09:36	-->	neurocyte0132889 (~neurocyte@user/neurocyte) has joined #go-nuts
+2021-10-30 17:11:46	<--	zer0bitz_ (~zer0bitz@dsl-hkibng31-54fae3-116.dhcp.inet.fi) has quit (Ping timeout: 252 seconds)
+2021-10-30 17:13:42	-->	freakazoid333 (~matt@2603-9000-cf0f-80e3-21d8-f508-23f8-99f8.inf6.spectrum.com) has joined #go-nuts
+2021-10-30 17:24:35	-->	Mattiaslndstrm (~Mattiasln@c213-103-137-235.bredband.tele2.se) has joined #go-nuts
+2021-10-30 17:25:07	-->	tane (~tane@dslb-002-201-234-197.002.201.pools.vodafone-ip.de) has joined #go-nuts
+2021-10-30 17:25:07	<--	tane (~tane@dslb-002-201-234-197.002.201.pools.vodafone-ip.de) has quit (Changing host)
+2021-10-30 17:25:07	-->	tane (~tane@user/tane) has joined #go-nuts
+2021-10-30 17:29:40	-->	crm (~crm@70.120.0.94) has joined #go-nuts
+2021-10-30 17:33:02	-->	dalek-caan (~Thunderbi@109.252.124.86) has joined #go-nuts
+2021-10-30 17:33:06	<--	orthoplex64 (~crm@70.120.0.94) has quit (Ping timeout: 260 seconds)
+2021-10-30 17:38:48	<--	Mattiaslndstrm (~Mattiasln@c213-103-137-235.bredband.tele2.se) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-10-30 17:43:41	<--	lord4163 (~lord4163@90-230-194-205-no86.tbcn.telia.com) has quit (Quit: ZNC 1.7.2+deb3 - https://znc.in)
+2021-10-30 17:45:11	-->	lord4163 (~lord4163@90-230-194-205-no86.tbcn.telia.com) has joined #go-nuts
+2021-10-30 17:45:31	<--	AquaL1te (~AquaL1te@user/aqual1te) has quit (Ping timeout: 245 seconds)
+2021-10-30 17:46:47	<--	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has quit (Ping timeout: 260 seconds)
+2021-10-30 17:52:14	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #go-nuts
+2021-10-30 17:52:23	<--	tyson2 (~user@bras-base-toroon0624w-grc-19-70-31-33-162.dsl.bell.ca) has quit (Ping timeout: 246 seconds)
+2021-10-30 22:21:17	--	irc: disconnected from server
+2021-10-30 22:21:47	-->	mrmanner (~jmanner@user/mrmanner) has joined #go-nuts
+2021-10-30 22:21:47	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-10-30 22:21:47	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-10-30 22:21:48	--	Channel #go-nuts: 640 nicks (2 ops, 1 voice, 637 normals)
+2021-10-30 22:21:48	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-10-30 22:21:48	--	URL for #go-nuts: https://golang.org
+2021-10-30 22:22:13	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-10-30 22:25:57	-->	tebruno994 (~tebruno99@user/tebruno99) has joined #go-nuts
+2021-10-30 22:27:57	<--	ap9 (~ap@68.162.127.208) has quit (Quit: Leaving)
+2021-10-30 22:27:59	<--	tebruno99 (~tebruno99@user/tebruno99) has quit (Ping timeout: 264 seconds)
+2021-10-30 22:27:59	--	tebruno994 is now known as tebruno99
+2021-10-30 22:28:09	foobaz	braxas: how about a second type, like "type ConcealedSecret Secret", with its own Marshall method
+2021-10-30 22:28:32	braxas	yeah, that is the best I could come up with also
+2021-10-30 22:28:50	braxas	I don't see many other options, would be nice if I could dynamically create new types like python or something
+2021-10-30 22:29:04	braxas	but it is what it is, pretty weird thing to do anyway
+2021-10-30 22:29:24	braxas	probably less insane and stupid to have seperate types
+2021-10-30 22:31:20	<--	craekz (~craekz@user/craekz) has quit (Remote host closed the connection)
+2021-12-01 23:20:51	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #go-nuts
+2021-12-01 23:20:51	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-12-01 23:20:51	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-01 23:20:51	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-12-01 23:20:52	--	Channel #go-nuts: 643 nicks (1 op, 2 voices, 640 normals)
+2021-12-01 23:20:51	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-12-01 23:20:52	--	URL for #go-nuts: https://golang.org
+2021-12-01 23:21:30	<--	rendar (~rendar@user/rendar) has quit (Quit: Leaving)
+2021-12-01 23:21:35	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-12-01 23:21:38	joshbaptiste	great the go mod commands did it thx
+2021-12-01 23:21:53	--	Mode #go-nuts [+Ccnt]
+2021-12-01 23:21:53	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #go-nuts
+2021-12-01 23:23:05	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-12-01 23:23:05	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-01 23:23:05	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-12-01 23:23:05	--	Channel #go-nuts: 642 nicks (1 op, 2 voices, 639 normals)
+2021-12-01 23:22:59	--	PvNotice(ChanServ): Please follow the Go Community Code of Conduct when chatting here. See https://golang.org/conduct
+2021-12-01 23:23:13	--	URL for #go-nuts: https://golang.org
+2021-12-01 23:23:14	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-12-01 23:23:11	-->	bpalmer [bpalmer] (unknown) (~user@user/bpalmer) has joined #go-nuts
+2021-12-01 23:23:31	<--	andlabs (~andlabs@2a00:79e1:abc:1a0a:ace0:35d7:981a:a684) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-12-01 23:23:40	--	Mode #go-nuts [+tCcn]
+2021-12-01 23:23:40	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-12-01 23:23:47	<--	rcernin_ (~rcernin@124.190.136.148) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:31:33	-->	LiftLeft [LiftLeft] (googolplexking) (~LiftLeft@gateway/vpn/pia/liftleft) has joined #go-nuts
+2021-12-01 23:35:41	<--	shka (~herr@83.175.151.96.piasta.pl) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:37:05	<--	Batzy (~quassel@user/batzy) has quit (Quit: No Ping reply in 180 seconds.)
+2021-12-01 23:38:21	-->	Batzy [Batzy] (Batz) (~quassel@user/batzy) has joined #go-nuts
+2021-12-01 23:38:37	<--	LiftLeft (~LiftLeft@gateway/vpn/pia/liftleft) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:40:55	<--	alzgh (~alzgh@user/alzgh) has quit (Remote host closed the connection)
+2021-12-01 23:41:05	-->	alzgh [alzgh] ([https://web.libera.chat] alzgh) (~alzgh@user/alzgh) has joined #go-nuts
+2021-12-01 23:47:04	<--	resamvi (~resamvi@user/resamvi) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:47:23	-->	rcernin_ (rcernin) (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has joined #go-nuts
+2021-12-01 23:47:23	--	rcernin_ has identified as rcernin
+2021-12-01 23:47:30	-->	motheki (motheki) (~motheki@192.58.125.4) has joined #go-nuts
+2021-12-01 23:49:05	<--	Guest664 (~savio@177.12.48.155) has quit (Quit: Leaving)
+2021-12-01 23:52:10	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 256 seconds)
+2021-12-01 23:52:48	<--	motheki (~motheki@192.58.125.4) has quit (Remote host closed the connection)
+2021-12-01 23:53:17	<--	rcernin_ (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has quit (Ping timeout: 252 seconds)
+2021-12-01 23:53:30	-->	motheki (motheki) (~motheki@192.58.125.4) has joined #go-nuts
+2021-12-01 23:53:58	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #go-nuts
+2021-12-01 23:58:33	<--	motheki (~motheki@192.58.125.4) has quit (Quit: motheki)
+2021-12-02 00:01:01	-->	Mattiaslndstrm [Mattiaslndstrm] (Textual User) (~Mattiasln@c213-103-137-235.bredband.tele2.se) has joined #go-nuts
+2021-12-02 00:01:18	<--	Mattiaslndstrm (~Mattiasln@c213-103-137-235.bredband.tele2.se) has quit (Client Quit)
+2021-12-02 00:02:38	<--	normen (~normen@p200300d71725d600f4eab571d3776494.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:05:15	<--	bindu (~bindu@user/bindu) has quit (Quit: Leaving)
+2021-12-02 00:05:32	-->	bindu [bindu] (bindu) (~bindu@user/bindu) has joined #go-nuts
+2021-12-02 00:10:10	-->	arinov [arinov] (Ilyas B Arinov) (~arinov@213.194.126.155) has joined #go-nuts
+2021-12-02 00:10:15	-->	rcernin_ (rcernin) (~rcernin@124.190.136.148) has joined #go-nuts
+2021-12-02 00:10:15	--	rcernin_ has identified as rcernin
+2021-12-02 00:12:02	-->	mosen (Mosen) (~mosen@159-196-125-15.9fc47d.syd.static.aussiebb.net) has joined #go-nuts
+2021-12-02 00:14:44	<--	rcernin_ (~rcernin@124.190.136.148) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:16:53	-->	resamvi (resamvi) (~resamvi@p4ff7768d.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-02 00:16:53	--	resamvi has identified as resamvi
+2021-12-02 00:16:53	<--	resamvi (~resamvi@p4ff7768d.dip0.t-ipconnect.de) has quit (Changing host)
+2021-12-02 00:16:53	-->	resamvi [resamvi] (resamvi) (~resamvi@user/resamvi) has joined #go-nuts
+2021-12-02 00:17:53	<--	kupi (uid212005@id-212005.hampstead.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-02 00:18:45	b0nn	How are people building/compressing their lambda files when using terraform
+2021-12-02 00:19:46	b0nn	Is it just a matter of resource "null_resource" "build_stuff" { provisioner "local-exec" {command; command; working_dir}}
+2021-12-02 00:23:22	-->	jjonah (jjonah) (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-02 00:27:20	<--	mrig (~mrig@user/mrig) has quit (Quit: WeeChat 3.0)
+2021-12-02 00:27:41	-->	normen [normen] (Normen Hansen) (~normen@p200300d71725d60065a9ab6e56e19e7c.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-02 00:34:18	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-12-02 00:35:28	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-02 00:49:22	-->	sdfgsdfg [sdfgsdfg] (sdfgsdfg) (~sdfgsdfg@user/sdfgsdfg) has joined #go-nuts
+2021-12-02 00:54:46	<--	Seirdy (~Seirdy@sourcehut/user/seirdy) has quit (Quit: exiting 3.3)
+2021-12-02 00:55:02	-->	rcernin_ (rcernin) (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has joined #go-nuts
+2021-12-02 00:55:03	--	rcernin_ has identified as rcernin
+2021-12-02 00:55:17	-->	Seirdy [Seirdy] (Seirdy) (~Seirdy@sourcehut/user/seirdy) has joined #go-nuts
+2021-12-02 00:56:19	<--	zer0bitz (~zer0bitz@dsl-hkibng32-54fbfb-173.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2021-12-02 00:57:31	<--	krux02 (~krux02@p200300e8170c11004db6e8013ca32c23.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-02 01:00:34	<--	lilgopher (~textual@2601:241:8000:38f0:80d2:5d75:881a:25e6) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-02 01:09:33	<--	rcernin_ (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:17:59	<--	adip (~adip@deq245.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:18:15	<--	rcernin (~rcernin@124.190.136.148) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:21:45	-->	cnf5 [cnf] (cnf) (~cnf@d5152daf0.static.telenet.be) has joined #go-nuts
+2021-12-02 01:22:11	<--	cnf (~cnf@d5152daf0.static.telenet.be) has quit (Read error: Connection reset by peer)
+2021-12-02 01:22:11	--	cnf5 is now known as cnf
+2021-12-02 01:23:00	-->	rcernin (rcernin) (~rcernin@124.190.136.148) has joined #go-nuts
+2021-12-02 01:23:01	--	rcernin has identified as rcernin
+2021-12-02 01:29:35	<--	vimal (~vimal@ip-213-127-89-120.ip.prioritytelecom.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:31:50	-->	burningserenity (burningserenity) (~burningse@2603:9001:f01:ad99::100f) has joined #go-nuts
+2021-12-02 01:31:51	<--	lauraaah (uid156848@id-156848.ilkley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-02 01:46:24	<--	alzgh (~alzgh@user/alzgh) has quit (Remote host closed the connection)
+2021-12-02 01:48:03	<--	arinov (~arinov@213.194.126.155) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:48:36	-->	vimal [vimal] (Vimal) (~vimal@ip-213-127-42-70.ip.prioritytelecom.net) has joined #go-nuts
+2021-12-02 01:49:59	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:55:20	-->	saml [saml] (realname) (~saml@cpe-74-73-80-162.nyc.res.rr.com) has joined #go-nuts
+2021-12-02 01:59:40	-->	Mattiaslndstrm [Mattiaslndstrm] (Textual User) (~Mattiasln@c213-103-137-235.bredband.tele2.se) has joined #go-nuts
+2021-12-02 02:00:39	<--	smeeagle (~smeeagle@2a00:23c8:9611:e600:1401:22a5:674e:d69b) has quit (Quit: smeeagle)
+2021-12-02 02:01:26	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:01:54	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 02:02:44	-->	LiftLeft [LiftLeft] (googolplexking) (~LiftLeft@gateway/vpn/pia/liftleft) has joined #go-nuts
+2021-12-02 02:03:19	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #go-nuts
+2021-12-02 02:03:43	<--	Mattiaslndstrm (~Mattiasln@c213-103-137-235.bredband.tele2.se) has quit (Client Quit)
+2021-12-02 02:06:28	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:09:15	<--	LiftLeft (~LiftLeft@gateway/vpn/pia/liftleft) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:09:19	<--	rcernin (~rcernin@124.190.136.148) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:16:02	<--	predmijat (~predmijat@mail.strogopro.com) has quit (Quit: bye)
+2021-12-02 02:17:10	-->	rcernin (rcernin) (~rcernin@124.190.136.148) has joined #go-nuts
+2021-12-02 02:17:11	--	rcernin has identified as rcernin
+2021-12-02 02:17:38	-->	predmijat (predmijat) (~predmijat@mail.strogopro.com) has joined #go-nuts
+2021-12-02 02:17:38	--	predmijat has identified as predmijat
+2021-12-02 02:34:04	-->	rcernin_ (rcernin) (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has joined #go-nuts
+2021-12-02 02:34:05	--	rcernin_ has identified as rcernin
+2021-12-02 02:34:39	-->	frost [frost] ([https://kiwiirc.com] frost) (~frost@user/frost) has joined #go-nuts
+2021-12-02 02:39:15	<--	rcernin_ (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has quit (Ping timeout: 268 seconds)
+2021-12-02 02:48:09	-->	darkapex [darkapex] (Jai) (~darkapex@user/darkapex) has joined #go-nuts
+2021-12-02 02:49:17	<--	darkapex_ (~darkapex@user/darkapex) has quit (Ping timeout: 252 seconds)
+2021-12-02 02:50:59	<--	burningserenity (~burningse@2603:9001:f01:ad99::100f) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-12-02 02:53:19	<--	rcernin (~rcernin@124.190.136.148) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:04:36	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 03:06:47	<--	kn100 (~kn100@wireguard/tunneler/kn100) has quit (Quit: https://kn100.me :))
+2021-12-02 03:07:21	-->	kn100 [kn100] (kn100) (~kn100@wireguard/tunneler/kn100) has joined #go-nuts
+2021-12-02 03:07:59	<--	whaley (~whaley@2603-6080-a301-33d1-456a-1e4c-dd86-8e17.res6.spectrum.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:09:05	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:11:02	-->	rcernin (rcernin) (~rcernin@2001:8003:6803:db00:bc1c:bbc4:ad37:23e0) has joined #go-nuts
+2021-12-02 03:11:03	--	rcernin has identified as rcernin
+2021-12-02 03:14:14	<--	kn100 (~kn100@wireguard/tunneler/kn100) has quit (Quit: https://kn100.me :))
+2021-12-02 03:14:34	-->	kn100 [kn100] (kn100) (~kn100@wireguard/tunneler/kn100) has joined #go-nuts
+2021-12-02 03:19:11	-->	rcernin_ (rcernin) (~rcernin@124.190.136.148) has joined #go-nuts
+2021-12-02 03:19:11	--	rcernin_ has identified as rcernin
+2021-12-02 03:19:43	<--	sudoforge (~sudoforge@wireguard/tunneler/sudoforge) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:21:11	<--	rcernin (~rcernin@2001:8003:6803:db00:bc1c:bbc4:ad37:23e0) has quit (Ping timeout: 268 seconds)
+2021-12-02 03:29:44	-->	rcernin (rcernin) (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has joined #go-nuts
+2021-12-02 03:29:45	--	rcernin has identified as rcernin
+2021-12-02 03:34:23	<--	rcernin (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:37:18	-->	sudoforge [sudoforge] (sudoforge) (~sudoforge@wireguard/tunneler/sudoforge) has joined #go-nuts
+2021-12-02 03:38:17	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 03:42:38	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:07:07	<--	rcernin_ (~rcernin@124.190.136.148) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:10:31	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:11:03	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 04:12:30	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-12-02 04:12:40	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #go-nuts
+2021-12-02 04:15:27	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:16:24	-->	girafe2 (girafe) (~girafe@176-147-142-235.abo.bbox.fr) has joined #go-nuts
+2021-12-02 04:18:23	<--	girafe (~girafe@176-147-142-235.abo.bbox.fr) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:18:29	<--	sdfgsdfg (~sdfgsdfg@user/sdfgsdfg) has quit (Quit: ZzzZ)
+2021-12-02 04:27:56	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 04:31:29	<--	resamvi (~resamvi@user/resamvi) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:32:37	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:34:09	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 04:38:51	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:42:54	-->	resamvi (resamvi) (~resamvi@p4ff7768d.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-02 04:42:54	--	resamvi has identified as resamvi
+2021-12-02 04:42:54	<--	resamvi (~resamvi@p4ff7768d.dip0.t-ipconnect.de) has quit (Changing host)
+2021-12-02 04:42:54	-->	resamvi [resamvi] (resamvi) (~resamvi@user/resamvi) has joined #go-nuts
+2021-12-02 04:43:26	<--	paulgrmn_ (~paulgrmn@user/paulgrmn) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:53:49	<--	getynge (~getynge@2601:702:80:2fc0::a0a3) has quit (Remote host closed the connection)
+2021-12-02 05:07:42	-->	on^ (...) (~on@68.101.58.90) has joined #go-nuts
+2021-12-02 05:08:53	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 05:13:25	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:17:52	-->	rcernin (rcernin) (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has joined #go-nuts
+2021-12-02 05:17:52	--	rcernin has identified as rcernin
+2021-12-02 05:22:44	<--	rcernin (~rcernin@2001:8003:6803:db00:5c71:3789:3fa4:15a9) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:40:31	<--	pepee (~pepee@user/pepee) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:44:29	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 05:47:55	-->	rcernin (rcernin) (~rcernin@124.190.136.148) has joined #go-nuts
+2021-12-02 05:47:55	--	rcernin has identified as rcernin
+2021-12-02 05:48:13	<--	resamvi (~resamvi@user/resamvi) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:48:57	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:53:16	<--	vimal (~vimal@ip-213-127-42-70.ip.prioritytelecom.net) has quit (Ping timeout: 245 seconds)
+2021-12-02 05:54:09	<--	tyson2 (~user@bras-base-toroon0624w-grc-19-70-31-33-162.dsl.bell.ca) has quit (Remote host closed the connection)
+2021-12-02 05:55:45	<--	TheCoffeMaker (~TheCoffeM@user/thecoffemaker) has quit (Ping timeout: 265 seconds)
+2021-12-02 06:01:17	-->	resamvi (resamvi) (~resamvi@p4ff7768d.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-02 06:01:17	--	resamvi has identified as resamvi
+2021-12-02 06:01:17	<--	resamvi (~resamvi@p4ff7768d.dip0.t-ipconnect.de) has quit (Changing host)
+2021-12-02 06:01:17	-->	resamvi [resamvi] (resamvi) (~resamvi@user/resamvi) has joined #go-nuts
+2021-12-02 06:03:27	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 06:05:26	-->	TheCoffeMaker [TheCoffeMaker] (TheCoffeMaker) (~TheCoffeM@user/thecoffemaker) has joined #go-nuts
+2021-12-02 06:05:38	<--	resamvi (~resamvi@user/resamvi) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:07:49	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:08:19	<--	on^ (~on@68.101.58.90) has quit (Remote host closed the connection)
+2021-12-02 06:12:49	-->	vimal [vimal] (Vimal) (~vimal@ip-213-127-87-89.ip.prioritytelecom.net) has joined #go-nuts
+2021-12-02 06:13:23	-->	dlew^ (...) (~dlew@68.101.58.90) has joined #go-nuts
+2021-12-02 06:16:38	<--	egy (egy@tilde.team) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:18:47	-->	shtirlic [shtirlic] (Serg Podtynnyi) (~shtirlic@178.70.141.25) has joined #go-nuts
+2021-12-02 06:19:56	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:21:07	<--	shtirlic_ (~shtirlic@178.70.141.25) has quit (Ping timeout: 250 seconds)
+2021-12-02 06:22:01	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #go-nuts
+2021-12-02 06:22:19	<--	frost (~frost@user/frost) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:23:49	-->	shtirlic_ [shtirlic] (Serg Podtynnyi) (~shtirlic@178.70.141.25) has joined #go-nuts
+2021-12-02 06:25:46	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 06:25:53	<--	Tv_ (uid62079@user/tv/x-3144562) has quit (Quit: Connection closed for inactivity)
+2021-12-02 06:26:31	<--	shtirlic (~shtirlic@178.70.141.25) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:27:47	<--	salem (~salem@pool-98-111-206-141.pitbpa.fios.verizon.net) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-12-02 06:30:04	-->	salem [salem] (ZNC - https://znc.in) (~salem@pool-98-111-206-141.pitbpa.fios.verizon.net) has joined #go-nuts
+2021-12-02 06:30:23	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:31:38	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 06:32:07	<--	loggingbot (~loggingbo@user/loggingbot) has quit (Read error: Connection reset by peer)
+2021-12-02 06:33:15	-->	loggingbot [loggingbot] (loggingbot) (~loggingbo@user/loggingbot) has joined #go-nuts
+2021-12-02 06:34:09	-->	resamvi (resamvi) (~resamvi@p4ff7768d.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-02 06:34:09	--	resamvi has identified as resamvi
+2021-12-02 06:34:09	<--	resamvi (~resamvi@p4ff7768d.dip0.t-ipconnect.de) has quit (Changing host)
+2021-12-02 06:34:09	-->	resamvi [resamvi] (resamvi) (~resamvi@user/resamvi) has joined #go-nuts
+2021-12-02 06:34:54	<--	b0nn (~shane@user/b0nn) has quit (Ping timeout: 265 seconds)
+2021-12-02 06:35:36	-->	b0nn [b0nn] (shane) (~shane@user/b0nn) has joined #go-nuts
+2021-12-02 06:36:09	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:37:13	-->	andlabs [andlabs] (Pietro Gagliardi) (~andlabs@2604:ca00:179:4a97:2911:d921:e865:6875) has joined #go-nuts
+2021-12-02 06:48:10	-->	egy [egy] (egy) (egy@tilde.team) has joined #go-nuts
+2021-12-02 06:49:38	<--	sudoforge (~sudoforge@wireguard/tunneler/sudoforge) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:50:33	<--	andlabs (~andlabs@2604:ca00:179:4a97:2911:d921:e865:6875) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:57:00	-->	andlabs [andlabs] (Pietro Gagliardi) (~andlabs@2604:ca00:17b:11db:68d8:efcf:5178:dfef) has joined #go-nuts
+2021-12-02 06:58:01	<--	todd (~todd@gateway/tor-sasl/toddf) has quit (Remote host closed the connection)
+2021-12-02 06:59:41	-->	tsujp [tsujp] ([https://web.libera.chat] tsujp) (~tsujp@sourcehut/user/tsujp) has joined #go-nuts
+2021-12-02 07:01:29	<--	resamvi (~resamvi@user/resamvi) has quit (Quit: resamvi)
+2021-12-02 07:02:26	-->	todd [toddf] (Todd Fries) (~todd@gateway/tor-sasl/toddf) has joined #go-nuts
+2021-12-02 07:04:11	-->	sdfgsdfg [sdfgsdfg] (sdfgsdfg) (~sdfgsdfg@user/sdfgsdfg) has joined #go-nuts
+2021-12-02 07:04:44	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 07:05:48	<--	mosen (~mosen@159-196-125-15.9fc47d.syd.static.aussiebb.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-02 07:05:57	-->	andlabs_ [andlabs] (Pietro Gagliardi) (~andlabs@2604:ca00:17b:11db:c9c2:aad1:a25a:8a02) has joined #go-nuts
+2021-12-02 07:06:42	<--	aLeSD (~aLeSD@139.47.114.114) has quit (Remote host closed the connection)
+2021-12-02 07:08:12	-->	andlabs__ [andlabs] (Pietro Gagliardi) (~andlabs@2604:ca00:17b:11db:2cd8:742f:9d75:a3b8) has joined #go-nuts
+2021-12-02 07:09:35	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 07:09:37	<--	andlabs (~andlabs@2604:ca00:17b:11db:68d8:efcf:5178:dfef) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:10:27	-->	muirrum0 [muirrum] (Muirrum) (~muirrum@sourcehut/user/muirrum) has joined #go-nuts
+2021-12-02 07:11:27	<--	andlabs_ (~andlabs@2604:ca00:17b:11db:c9c2:aad1:a25a:8a02) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:13:10	-->	andlabs [andlabs] (Pietro Gagliardi) (~andlabs@2604:ca00:17b:11db:ddd6:55e4:d011:a904) has joined #go-nuts
+2021-12-02 07:14:40	-->	andlabs_ [andlabs] (Pietro Gagliardi) (~andlabs@2604:ca00:17b:11db:cc10:22cd:b3da:11a1) has joined #go-nuts
+2021-12-02 07:16:35	<--	andlabs__ (~andlabs@2604:ca00:17b:11db:2cd8:742f:9d75:a3b8) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:18:03	<--	andlabs (~andlabs@2604:ca00:17b:11db:ddd6:55e4:d011:a904) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:20:37	<--	andlabs_ (~andlabs@2604:ca00:17b:11db:cc10:22cd:b3da:11a1) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:24:38	-->	andlabs [andlabs] (Pietro Gagliardi) (~andlabs@2604:ca00:17b:11db:e07c:1417:6454:ef78) has joined #go-nuts
+2021-12-02 07:31:06	-->	lauraaah (lauraaah) (uid156848@id-156848.ilkley.irccloud.com) has joined #go-nuts
+2021-12-02 07:31:07	--	lauraaah has identified as lauraaah
+2021-12-02 07:34:52	-->	andlabs_ [andlabs] (Pietro Gagliardi) (~andlabs@209.107.190.180) has joined #go-nuts
+2021-12-02 07:38:13	<--	andlabs (~andlabs@2604:ca00:17b:11db:e07c:1417:6454:ef78) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:38:13	<--	andlabs_ (~andlabs@209.107.190.180) has quit (Read error: Connection reset by peer)
+2021-12-02 07:38:16	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 07:38:32	-->	andlabs__ [andlabs] (Pietro Gagliardi) (~andlabs@2604:ca00:17b:11db:505:7e37:fa50:d177) has joined #go-nuts
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:59	-->	mrmanner (mrmanner@98.128.201.128) has joined #go-nuts
+2021-12-02 08:09:59	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-02 08:09:59	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-12-02 08:09:59	--	Channel #go-nuts: 627 nicks (1 op, 2 voices, 624 normals)
+2021-12-02 08:10:10	-->	whaley [whaley] (whaley) (~whaley@2603-6080-a301-33d1-456a-1e4c-dd86-8e17.res6.spectrum.com) has joined #go-nuts
+2021-12-02 08:11:10	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-12-02 08:11:17	-->	mrig [mrig] (mrigashira) (~AdiIRC@user/mrig) has joined #go-nuts
+2021-12-02 08:12:21	-->	neurocyte0132889 (cj) (~neurocyte@45.128.181.202) has joined #go-nuts
+2021-12-02 08:12:22	--	neurocyte0132889 has identified as neurocyte
+2021-12-02 08:12:21	<--	neurocyte0132889 (~neurocyte@45.128.181.202) has quit (Changing host)
+2021-12-02 08:12:21	-->	neurocyte0132889 [neurocyte] (cj) (~neurocyte@user/neurocyte) has joined #go-nuts
+2021-12-02 08:18:06	-->	Atque [Atque] (Atque) (~Atque@user/atque) has joined #go-nuts
+2021-12-02 08:23:49	<--	rcernin (~rcernin@124.190.136.148) has quit (Ping timeout: 256 seconds)
+2021-12-02 08:24:19	<--	GJdan (~quassel@107-190-26-133.cpe.teksavvy.com) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-12-02 08:25:06	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 08:26:11	-->	GJdan (Quassel IRC User) (~quassel@107-190-26-133.cpe.teksavvy.com) has joined #go-nuts
+2021-12-02 08:29:32	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 256 seconds)
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:14	-->	mrmanner (mrmanner@90.235.13.15) has joined #go-nuts
+2021-12-02 21:03:14	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-02 21:03:14	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-12-02 21:03:14	--	Channel #go-nuts: 651 nicks (1 op, 2 voices, 648 normals)
+2021-12-02 21:04:25	--	irc: disconnected from server
+2021-12-02 21:04:43	-->	mrmanner (mrmanner@90.235.13.15) has joined #go-nuts
+2021-12-02 21:04:43	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-02 21:04:43	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-12-02 21:04:43	--	Channel #go-nuts: 649 nicks (1 op, 2 voices, 646 normals)
+2021-12-02 21:03:55	henko	sauce example code: https://pkg.go.dev/golang.org/x/crypto/ssh#Dial
+2021-12-02 21:05:18	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-12-02 21:07:43	<--	lauraaah (uid156848@id-156848.ilkley.irccloud.com) has quit
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:25	-->	mrmanner (mrmanner@90.235.13.15) has joined #go-nuts
+2021-12-02 21:11:25	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-02 21:11:25	--	Topic set by aram (~aram@9front.army) on tor, 20 maj 2021 22:45:22
+2021-12-02 21:11:25	--	Channel #go-nuts: 648 nicks (1 op, 2 voices, 645 normals)
+2021-12-02 21:11:50	--	Channel created on ons, 19 maj 2021 14:25:47
+2021-12-02 21:13:11	<--	sord937 (~sord937@gateway/tor-sasl/sord937) has quit (Quit: sord937)
+2021-12-02 21:14:09	bpalmer	henko: so if you run it on your machine, it connects successfully; when run on the  company machine, it times out? That sounds like your work probably has limits on outgoing network connections or a firewall
+2021-12-02 21:14:49	bpalmer	henko: you'll probably want to check with your work's network administrators and see if you can successfully do this connection "by hand" before you try to automate it
+2021-12-02 21:16:33	henko	when running it on my private machine with localhost ist work. when connecting via putty to the machine with IP 1.2.3.4 it works with user+pass (no ssh key). when doing 'go run' with the same program like on my private machine but with localhost exchanged with IP 1.2.3.4. it just timeouts?
+2021-12-02 21:16:55	henko	ist = it does
+2021-12-02 21:17:19	zsnes	are you expecting go run to somehow know your ssh user/pass?
+2021-12-02 21:17:45	zsnes	or to even negotiate ssh for you automatically?
+2021-12-02 21:19:50	henko	but I changed the user, pass and IP in the code which I posted above
+2021-12-02 21:20:39	henko	I just have massive ??? above my head. Why can I connect via putty to the machine flawlessy, but the go program can't?
+2021-12-02 21:20:55	henko	It should not be a firewall problem
+2021-12-02 21:21:10	henko	and im executing directly in powershell and not WSL2
+2021-12-02 21:22:15	henko	I do 'go run sshrequest.go'
+2021-12-02 21:22:39	henko	and no warnings or errors are displayed in VScode
+2021-12-02 21:23:10	bpalmer	I see. Try to capture a trace of the network traffic and see if they're tryin to connect to the same things.
+2021-12-02 21:23:13	<--	dntreou (~yakiza@inet-2a02-6900-8808-e010--6c.oracle-ocna.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 21:24:20	-->	tyson2 [tyson2] (unknown) (~user@bras-base-toroon0240w-grc-46-64-228-134-62.dsl.bell.ca) has joined #go-nuts
+2021-12-02 21:24:40	<--	girafe2 (~girafe@176-147-142-235.abo.bbox.fr) has quit (Quit: Leaving)
+2021-12-02 21:24:40	<--	zunino (~zunino@2804:7f5:f380:b886:72e9:84b7:c60d:7151) has quit (Ping timeout: 268 seconds)
+2021-12-02 21:25:04	-->	girafe [girafe] (girafe) (~girafe@176-147-142-235.abo.bbox.fr) has joined #go-nuts
+2021-12-02 21:28:50	-->	mrmanner (mrmanner@90.235.13.15) has joined #go-nuts
+2021-12-02 21:28:51	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-02 21:50:39	--	irc: disconnected from server
+2021-12-02 21:50:44	-->	mrmanner (mrmanner@98.128.201.128) has joined #go-nuts
+2021-12-02 21:50:44	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-02 21:50:52	<--	burningserenity (~burningse@142-196-178-216.res.spectrum.com) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-12-02 21:51:57	<--	getynge (~getynge@2601:702:80:2fc0::b76e) has quit (Remote host closed the connection)
+2021-12-02 21:52:05	<--	marlinc (~marlinc@user/marlinc) has quit (Quit: ZNC 1.8.2+deb1+focal2 - https://znc.in)
+2021-12-02 21:52:23	-->	marlinc [marlinc] (Marlin Cremers) (~marlinc@user/marlinc) has joined #go-nuts
+2021-12-02 22:01:12	-->	rcernin (rcernin) (~rcernin@2001:8003:6803:db00:51b7:a4b5:336d:2f64) has joined #go-nuts
+2021-12-02 22:01:12	--	rcernin has identified as rcernin
+2021-12-02 22:04:00	-->	bkircher [bkircher] (Ben Kircher) (~bkircher@2001:a61:250f:2b01:4b96:7ca4:45ee:36d4) has joined #go-nuts
+2021-12-02 22:04:36	<--	mrig (~AdiIRC@user/mrig) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-12-02 22:05:56	<--	rcernin (~rcernin@2001:8003:6803:db00:51b7:a4b5:336d:2f64) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:06:16	<--	tyson2 (~user@bras-base-toroon0240w-grc-46-64-228-134-62.dsl.bell.ca) has quit (Remote host closed the connection)
+2021-12-02 22:07:57	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 22:08:18	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-02 22:10:38	-->	mrig [mrig] (mriga) (~mrig@user/mrig) has joined #go-nuts
+2021-12-02 22:12:06	-->	sdfgsdfg [sdfgsdfg] (sdfgsdfg) (~sdfgsdfg@user/sdfgsdfg) has joined #go-nuts
+2021-12-02 22:13:23	<--	bkircher (~bkircher@2001:a61:250f:2b01:4b96:7ca4:45ee:36d4) has quit (Ping timeout: 268 seconds)
+2021-12-02 22:15:53	<--	davidkrauser (~davidkrau@user/davidkrauser) has quit (Quit: Leaving)
+2021-12-02 22:16:20	-->	converge [converge] (converge) (~converge@user/converge) has joined #go-nuts
+2021-12-02 22:17:02	converge	Is there some good way to organise the declaration of the mocks? Like this one https://github.com/converge/interface-struct-example/blob/main/internal/service/download_test.go#L8
+2021-12-02 22:20:59	-->	SJrX [SJr] (Steve) (~sjr@S0106302303dfb018.vf.shawcable.net) has joined #go-nuts
+2021-12-02 22:22:46	bpalmer	I would probably put those up at the top. (There's a whole can of worms in the naming conventions, but I'd also probably call that a fake rather than a mock)
+2021-12-02 22:25:35	converge	I know, Im quite bad with naming. What do you mean by up at the top..?
+2021-12-02 22:26:06	-->	rcernin (rcernin) (~rcernin@124.190.136.148) has joined #go-nuts
+2021-12-02 22:26:07	--	rcernin has identified as rcernin
+2021-12-02 22:26:17	-->	NCS_One [NCS_One] (NCS_One) (~NCS_One@bl11-90-133.dsl.telepac.pt) has joined #go-nuts
+2021-12-02 22:28:11	Tv_	i'd rather use https://pkg.go.dev/net/http/httptest#Server than a http.Client mock
+2021-12-02 22:31:52	moldorcoder7	hi what is this syntax doing in go : right = [...]string{"test", "bla","foo"}
+2021-12-02 22:31:56	moldorcoder7	why the ...
+2021-12-02 22:33:11	converge	In this httptest wont fit, Im testing the function itself
+2021-12-02 22:33:30	<--	tane (~tane@user/tane) has quit (Quit: Leaving)
+2021-12-02 22:34:19	bpalmer	converge: I mean at the top of the _test.go , I'd have all the fakes and mocks I need (assuming I don't have them in a separate package entirely, like httptest is to http)
+2021-12-02 22:34:19	zsnes	as i recall that makes a fixed size array with the size set to the number of elements you initialized it with.
+2021-12-02 22:34:29	bpalmer	yep, array rather than slice.
+2021-12-02 22:34:36	zsnes	moldorcoder7: whereas []string{...} would be a slice
+2021-12-02 22:35:06	zsnes	moldorcoder7: always helpful to try printing it out and see what go tells us: https://go.dev/play/p/HdyWbo6Lvya
+2021-12-02 22:35:29	converge	bpalmer, tks
+2021-12-02 22:35:51	moldorcoder7	zsnes, thanks
+2021-12-02 22:35:53	ikke	moldorcoder7: "The notation ... specifies an array length equal to the maximum element index plus one. "
+2021-12-02 22:35:57	ikke	https://go.dev/ref/spec#Slice_types
+2021-12-02 22:39:39	converge	Would have a better place to declare this interface that is used for the two services? https://github.com/converge/interface-struct-example/blob/main/internal/service/download.go#L8
+2021-12-02 22:44:19	bpalmer	converge: remember that go interfaces are not declared as something a class implements.
+2021-12-02 22:44:50	bpalmer	converge: so a single Do()  in its method set is not clearly outlining what it's for
+2021-12-02 22:45:31	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-02 22:45:49	bpalmer	but sure, having your package provide the interface that it will be accepting is perfectly reasonable.
+2021-12-02 22:47:15	converge	Got it, Im following that principle to keep the interface as small as possible, I only need to use the Do() from http
+2021-12-02 22:48:30	converge	My concern is that when the package grows, and has many services, it will have only one service that declares the interface, but it doesnt sound right to choose one of the many services to declare the interface
+2021-12-02 22:50:01	bpalmer	there's no one "the interface"
+2021-12-02 22:50:52	bpalmer	if you have two different packages foo  and bar , and foo has type FooDoer interface { Do() }  and bar has type BarDoer interface { Do() } , a type that implements the one implements the other.
+2021-12-02 22:51:25	-->	jchase [jchase] ([https://web.libera.chat] jchase) (~jchase@2601:18b:8200:1f:ced9:acff:fe1f:9997) has joined #go-nuts
+2021-12-02 22:51:58	bpalmer	I think I'm not seeing your extensibility concerns, but I've got to head out anyway.
+2021-12-02 22:53:43	-->	jjonah (jjonah) (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-02 22:55:28	-->	tyson2 [tyson2] (unknown) (~user@bras-base-toroon0624w-grc-19-70-31-33-162.dsl.bell.ca) has joined #go-nuts
+2021-12-02 22:58:31	<--	jchase (~jchase@2601:18b:8200:1f:ced9:acff:fe1f:9997) has quit (Quit: Client closed)
+2021-12-02 22:59:30	converge	I see some projects that declares interfaces like these https://github.com/mattermost/mattermost-server/tree/master/einterfaces , is that ok?
+2021-12-02 23:04:45	<--	sdfgsdfg (~sdfgsdfg@user/sdfgsdfg) has quit (Quit: ZzzZ)
+2021-12-02 23:17:14	-->	paulgrmn__ [paulgrmn] (realname) (~paulgrmn@user/paulgrmn) has joined #go-nuts
+2021-12-02 23:18:56	-->	brainfreeze [brainfreeze] (realname) (~brainfree@2a03:1b20:4:f011::20d) has joined #go-nuts
+2021-12-02 23:27:07	<--	converge (~converge@user/converge) has quit (Quit: Leaving)
+2021-12-02 23:29:32	-->	smeeagle [smeeagle] (Sme Agle) (~smeeagle@2a00:23c8:9611:e600:1401:22a5:674e:d69b) has joined #go-nuts
+2021-12-02 23:29:37	-->	ahappydeath [ahappydeath] (Matt) (~ahappydea@user/ahappydeath) has joined #go-nuts
+2021-12-02 23:29:43	<--	sagax (~sagax_nb@user/sagax) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:35:01	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:35:48	<--	BUSY (~BUSY@user/busy) has quit (Remote host closed the connection)
+2021-12-02 23:36:17	-->	blyat-73 (realname) (~hjgkjhgkj@46.235.96.249) has joined #go-nuts
+2021-12-02 23:36:50	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #go-nuts
+2021-12-02 23:41:49	<--	rcernin (~rcernin@124.190.136.148) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:42:26	<--	veegee (~veegee@ipagstaticip-469c2903-2b07-6dc3-3bc2-98748da5ca77.sdsl.bell.ca) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-02 23:50:15	<--	paulgrmn__ (~paulgrmn@user/paulgrmn) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:50:53	-->	rcernin (rcernin) (~rcernin@2001:8003:6803:db00:29b8:ea54:6815:6f35) has joined #go-nuts
+2021-12-02 23:54:51	--	rcernin has identified as rcernin
+2021-12-02 23:53:14	--	eggsampler is now known as eggsampler_
+2021-12-02 23:53:33	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:53:44	-->	rcernin_ (rcernin) (~rcernin@124.190.136.148) has joined #go-nuts
+2021-12-02 23:54:53	--	rcernin_ has identified as rcernin
+2021-12-02 23:55:20	-->	kupi [kupi] (qp) (uid212005@id-212005.hampstead.irccloud.com) has joined #go-nuts
+2021-12-02 23:56:22	<--	rcernin (~rcernin@2001:8003:6803:db00:29b8:ea54:6815:6f35) has quit (Ping timeout: 268 seconds)
+2021-12-02 23:56:46	Tv_	that is not great code
+2021-12-02 23:59:03	<--	ahappydeath (~ahappydea@user/ahappydeath) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:01:27	<--	mrig (~mrig@user/mrig) has quit (Quit: WeeChat 3.0)
+2021-12-03 00:02:01	-->	Mattiaslndstrm [Mattiaslndstrm] (Textual User) (~Mattiasln@c213-103-137-235.bredband.tele2.se) has joined #go-nuts
+2021-12-03 00:02:10	<--	Mattiaslndstrm (~Mattiasln@c213-103-137-235.bredband.tele2.se) has quit (Client Quit)
+2021-12-03 00:04:59	-->	henry404080 [henry40408] (Henry Wu) (~henry4040@112-104-114-241.adsl.dynamic.seed.net.tw) has joined #go-nuts
+2021-12-03 00:06:56	<--	henry40408 (~henry4040@112-105-247-102.adsl.dynamic.seed.net.tw) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:06:56	--	henry404080 is now known as henry40408
+2021-12-03 00:07:08	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-03 00:07:57	<--	shka (~herr@83.175.151.96.piasta.pl) has quit (Ping timeout: 256 seconds)
+2021-12-03 00:08:19	<--	lilgopher (~textual@2601:241:8000:38f0:8143:8523:7b45:dec8) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-03 00:11:20	<--	normen (~normen@p200300d71725d60065a9ab6e56e19e7c.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:11:53	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:13:43	-->	DogHackit (nathanrenaud) (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has joined #go-nuts
+2021-12-03 00:13:59	<--	tyson2 (~user@bras-base-toroon0624w-grc-19-70-31-33-162.dsl.bell.ca) has quit (Remote host closed the connection)
+2021-12-03 00:18:46	<--	saml (~saml@cpe-74-73-80-162.nyc.res.rr.com) has quit (Quit: Leaving)
+2021-12-03 00:36:03	-->	normen [normen] (Normen Hansen) (~normen@p200300d71725d600f42d9ad09eb3af60.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-03 00:38:28	<--	jaca122 (~Thunderbi@89-65-136-254.dynamic.chello.pl) has quit (Quit: jaca122)
+2021-12-03 00:40:34	<--	krux02 (~krux02@p200300e8170c11004db6e8013ca32c23.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-03 00:42:57	<--	brainfreeze (~brainfree@2a03:1b20:4:f011::20d) has quit (Remote host closed the connection)
+2021-12-03 00:49:46	<--	KDDLB (kevin@user/kddlb) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-12-03 00:50:49	-->	tyson2 [tyson2] (unknown) (~user@bras-base-toroon0624w-grc-19-70-31-33-162.dsl.bell.ca) has joined #go-nuts
+2021-12-03 00:51:36	-->	KDDLB [Ruxnor] (Kevin López) (~Kevin@user/kddlb) has joined #go-nuts
+2021-12-03 00:55:09	<--	theoceaniscool (~theoceani@119.12.232.133) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:04:05	-->	BUSY [BUSY] (realname) (~BUSY@user/busy) has joined #go-nuts
+2021-12-03 01:06:43	<--	clee_ (~clee@tali.t0k.org) has quit (Ping timeout: 250 seconds)
+2021-12-03 01:08:30	LambdaComplex	i'm afraid to click
+2021-12-03 01:08:32	 *	LambdaComplex clicks
+2021-12-03 01:09:38	<--	normen (~normen@p200300d71725d600f42d9ad09eb3af60.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:11:26	LambdaComplex	wow https://github.com/mattermost/mattermost-server/blob/master/einterfaces/metrics.go
+2021-12-03 01:13:29	-->	clee [clee] (Chris Lee) (~clee@tali.t0k.org) has joined #go-nuts
+2021-12-03 01:18:32	bpalmer	(I skimmed mattermost's code a long time ago and, iirc, that's the one that made me decide a models/ directory in go code was an early warning sign. I don't know if it's truly good or bad, but it felt foreign)
+2021-12-03 01:18:59	b0nn	models is right up their with pkg
+2021-12-03 01:19:03	b0nn	there*
+2021-12-03 01:23:15	<--	DogHackit (~nathanren@c-76-27-57-63.hsd1.ut.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:25:13	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-03 01:26:48	<--	rlankfo (~bob@bob.4kb.com) has quit (Remote host closed the connection)
+2021-12-03 01:29:39	<--	smeeagle (~smeeagle@2a00:23c8:9611:e600:1401:22a5:674e:d69b) has quit (Quit: smeeagle)
+2021-12-03 01:33:17	<--	fikran (~fikran@user/fikran) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:35:11	-->	fikran [fikran] (fikran) (~fikran@user/fikran) has joined #go-nuts
+2021-12-03 01:36:55	-->	saml [saml] (realname) (~saml@cpe-74-73-80-162.nyc.res.rr.com) has joined #go-nuts
+2021-12-03 01:37:05	<--	NCS_One (~NCS_One@bl11-90-133.dsl.telepac.pt) has quit (Quit: Lost terminal)
+2021-12-03 01:44:39	<--	adip (~adip@deq245.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:21:16	--	irc: disconnected from server
+2021-12-03 12:21:31	-->	mrmanner (mrmanner@90.235.13.15) has joined #go-nuts
+2021-12-03 12:21:31	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-03 02:16:31	LambdaComplex	my gut is saying this was "okay, we have a struct, but now we need to mock it, so we're just gonna define an interface that's identical to all of that struct's methods"
+2021-12-03 11:43:16	dalan	`for len(x_array) != 1 && len(y_array) != 1 {  }` in the debug console, I can clearly see `len(x_array)` is `3` and yet my for loop is ending. What am I not seeing?
+2021-12-03 11:43:57	dalan	And `len(y_array)` is 1 in this case
+2021-12-03 11:44:44	dalan	Basically, I want to stop looping when both lens are 1
+2021-12-03 11:50:57	dalan	(Narrator: he needed `||` because that actually makes sense)
+2021-12-03 11:53:18	siXy	dalan: for the record, you're almost certainly using slices, not arrays (or len wouldn't make a whole lot of sense...) - and it's good practice not to call slices arrays, or it'll get confusing.
+2021-12-03 11:55:30	bookworm	while O agree the amount of times you see an array outside of packet decoding (network, crypto) approaches 0
+2021-12-03 11:55:34	bookworm	I*
+2021-12-03 11:59:02	dalan	How do I know when I'm using a slice or an array?
+2021-12-03 11:59:29	dalan	[]int{1,2,3} is an array?
+2021-12-03 11:59:34	gsora	that's a slice
+2021-12-03 12:00:06	gsora	[3]int{1,2,3} is an array
+2021-12-03 12:00:09	dalan	[3]int{1,2,3}
+2021-12-03 12:00:11	dalan	Ahh okay
+2021-12-03 12:00:26	gsora	arrays have a fixed size, along other things
+2021-12-03 12:00:26	siXy	dalan: And in practice you basically always want a slice.
+2021-12-03 12:00:47	gsora	agreed
+2021-12-03 12:00:53	siXy	It's fine to keep using them as you have been, just suggesting you use the correct term when referring to them.
+2021-12-03 12:01:31	gsora	most obvious limitation of arrays: https://go.dev/play/p/qEcaznTuJBM
+2021-12-03 12:05:38	dalan	Is this the optimal way to convert within a slice of a type to another slice of a type? https://go.dev/play/p/sn23ELU1iZH
+2021-12-03 12:06:02	dalan	Very much missing list comprehensions
+2021-12-03 12:07:13	gsora	you could also do this (minor change, nothing like comprehensions): https://go.dev/play/p/bBqehMdfOk7
+2021-12-03 12:07:56	gsora	this way you're specifying the initial len() and cap() of the slice, letting you still use append() instead of specifying indexes to do assignment
+2021-12-03 12:08:50	dalan	Isn't that equivalent? In that the append is ultimately just filling the first non-zero space?
+2021-12-03 12:08:55	siXy	dalan: You say "optimal", which is a strange thing to use in this context. Do you think that list comprehensions do anything different under the hood? It's more typing, but not any less optimal in memory/compute time/etc.
+2021-12-03 12:09:13	dalan	I said optimal, but meant idiomatic ✨
+2021-12-03 12:09:43	gsora	see it this way: a for{} cycle is usually obvious to the reader, comprehensions not so much :^)
+2021-12-03 12:10:34	siXy	*nod* in which case, then yes, your example is fine from that perspective. If you're doing something more than just int -> string there might be better ways, though.
+2021-12-03 12:15:44	siXy	dalan: For example, if you have a custom type, and you are just converting to strings so that it can be displayed to humans, you can provide a String() string method, and it'll Just Work(tm): https://go.dev/play/p/_OVfcJWyzlV
+2021-12-03 12:18:44	krux02	™
+2021-12-03 12:19:19	krux02	compose key then T M ... magic of unicode
+2021-12-03 12:19:40	dalan	Is that some sort of interface for Writer?
+2021-12-03 12:20:13	dalan	https://go.dev/play/p/P4CSlZEtlgU - here is the full example of "What I was really trying to do", just annoying to convert each element of the slice to string, then join the string, then convert to int from binary
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:52	-->	mrmanner (mrmanner@90.235.13.15) has joined #go-nuts
+2021-12-03 12:22:52	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-03 12:24:10	dalan	But I admit, I'm a recovering Pythonista
+2021-12-03 12:25:02	rendar	dalan, recovering? why?
+2021-12-03 12:34:43	krux02	he probably got burned by python :P
+2021-12-03 12:42:11	siXy	dalan: That's... I mean you wouldn't normally DO that. But that's because you don't usually start off with a binary value represented as a slice of individual ints. If your input is that mangled you might have to do it that way, but it's a very clunky solution.
+2021-12-03 12:42:11	<--	dntreou (~yakiza@inet-2a02-6900-8808-e010--219.oracle-ocna.com) has quit (Read error: Connection reset by peer)
+2021-12-03 12:43:24	siXy	If you're doing some sort of parsing operation and that's why you have a slice of ints that's really a single binary value, maybe fix the parsing code to not do that.
+2021-12-03 12:46:19	<--	lux0r (~lux0r@65.56.68.34.bc.googleusercontent.com) has quit (Quit: ZNC 1.7.2+deb3 - https://znc.in)
+2021-12-03 12:47:40	-->	dntreou [yakiza] (noname) (~yakiza@178-147-236-189.haap.dm.cosmote.net) has joined #go-nuts
+2021-12-03 12:48:39	-->	jdcain [jdcain] (jdcain) (~jdcain@2600:8804:1b96:4900:c8b2:559a:9f9b:4120) has joined #go-nuts
+2021-12-03 12:52:53	<--	jjonah (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-03 12:53:09	-->	jjonah (jjonah) (~jjonah@p200300d5d70fb600dea632fffeb3342f.dip0.t-ipconnect.de) has joined #go-nuts
+2021-12-03 12:57:37	-->	lux0r [lux0r] (ZNC - https://znc.in) (~lux0r@65.56.68.34.bc.googleusercontent.com) has joined #go-nuts
+2021-12-03 12:58:46	fizzie	Pretty sure that's for today's Advent of Code, where you do quite likely end up with a slice of bits due to the nature of the puzzle. But yeah, it's not a very realistic scenario.
+2021-12-03 12:59:13	<--	yamchah2 (~yamchah2@user/yamchah2) has quit (Remote host closed the connection)
+2021-12-03 12:59:34	-->	yamchah2 [yamchah2] (yamchah2) (~yamchah2@user/yamchah2) has joined #go-nuts
+2021-12-03 12:59:49	fizzie	Honestly at that point it looks _simpler_ just to DIY the conversion from base 2: https://go.dev/play/p/l8YzkVlSq2L
+2021-12-03 12:59:56	deniska	AoC puzzles are well grounded in reality
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:37	-->	mrmanner (mrmanner@98.128.201.128) has joined #go-nuts
+2021-12-03 20:17:37	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-03 14:30:53	adip	I'm trying to create a copy of a []structs but modifying the copy modifies the original.
+2021-12-03 14:31:32	adip	I've tried to use basic = and copy() but I'm still encountering this issue. Is there a proper way to deep copy a slice?
+2021-12-03 14:36:41	fizzie	There's no built-in way to make a really "deep" copy. But `make` + `copy` (or the mostly equivalent `append([]T(nil), src...)`) does make a copy of the data that's in the structs, assuming it's a slice of structs and not pointers.
+2021-12-03 14:50:06	adip	thanks, I manged to get append working.
+2021-12-03 16:24:10	huoy99	i'm having an issue with a query escaped string when i pass it to an html template. it seems to be escaping it twice. for example http%3A%2F%2F127.0.0.1%3A8000 becomes http%253A%252F%252F127.0.0.1%253A8000. does anyone know how i'm supposed to pass this to a template?
+2021-12-03 16:29:33	Cork	huoy99: have you checked the string before you give it to the template? Cause i don't think it should escape it on it's own
+2021-12-03 16:31:33	huoy99	here's a playground example showing the issue: https://go.dev/play/p/usubss4llRi
+2021-12-03 16:31:51	huoy99	Cork ^
+2021-12-03 16:32:22	fizzie	Don't escape it manually and let the template do it? https://go.dev/play/p/5jxx065phsY
+2021-12-03 16:32:40	Cork	huoy99: you need to escape http:// if it is in the query section in an url
+2021-12-03 16:32:44	Cork	that is correct
+2021-12-03 16:33:22	huoy99	okay that makes sense, thanks fizzie and Cork. i didn't realize that the templates were that smart
+2021-12-03 16:33:40	fizzie	huoy99: Or if you have a raw, already-escaped URL from somewhere (rather than you're calling url.QueryEscape), wrap it in the right kind of type: https://go.dev/play/p/GpfbRfXC8FR
+2021-12-03 16:34:06	huoy99	yeah i was wondering if it was already encoded, but it isn't
+2021-12-03 16:34:43	fizzie	With the caveats at https://pkg.go.dev/html/template#URL -- anything inside the template.URL will be treated as trusted and safe, and included verbatim.
+2021-12-03 16:36:39	siXy	huoy99: https://go.dev/play/p/-DwMZYUteah
+2021-12-03 16:37:07	siXy	if you provide a template.URL it won't escape it.
+2021-12-03 16:37:24	huoy99	actually siXy i'd prefer it escaped but only once. thanks though
+2021-12-03 17:49:33	xzr	hey, so there's a library that does "mostly" what I want apart from one function, defined as a part of a struct
+2021-12-03 17:50:00	xzr	is there a good method to override that particular function, if you can offer some key words for googling that would be quite helpful
+2021-12-03 17:51:56	xzr	My first instinct was to make my own version of the struct, embed the library provided struct and implement my own version of the function in my struct. But I seem to be running into some kind of a problem that when the library code executes it doesn't see the data in my struct (instantiated through make)
+2021-12-03 17:59:00	zsnes	make? you shouldn't be using make() to create structures
+2021-12-03 17:59:44	zsnes	you should use new() for that
+2021-12-03 18:01:01	zsnes	embedding and writing your own method is the way to go for sure, if you need to pass the data to the original method you can do something like: mystruct.EmbeddedTypeName.Method()
+2021-12-03 18:01:52	xzr	https://go.dev/play/p/jWntXky3OZX
+2021-12-03 18:02:00	xzr	I think this might be nearing to the root of my problem
+2021-12-03 18:02:35	xzr	ahh yeah the make is for a map that is part of the library structure
+2021-12-03 18:02:56	xzr	sorry for that, I'm slightly wet behind the ears with go still
+2021-12-03 18:04:24	xzr	that thing builds if I add the data field to OverrideBuilder but then the data in BaseBuilder that it's functions see isn't initialized
+2021-12-03 18:08:16	zsnes	xzr: you have to use the embedded struct to initialize the wrapper struct, ie: &OverrideBuilder{BaseBuilder{data: ....}}
+2021-12-03 18:08:42	zsnes	when using a composite literal like that
+2021-12-03 18:09:41	xzr	ahh alright I'll give it a spin
+2021-12-03 18:10:23	zsnes	you could also assign o := &OverrideBuilder{} then do o.data = make([]byte, 8)
+2021-12-03 18:18:37	xzr	I tried that second one and tests fail on "assignment to entry in nil map" as before :/
+2021-12-03 18:22:19	seebs	there's no map in your sample code
+2021-12-03 18:22:34	seebs	if you are writing to a map, you have to create the map, either with make or an explicit initializer
+2021-12-03 18:23:03	seebs	like, there is a line of code in the panic report telling you when you assigned to a map. that map was nil. make it not be nil. :)
+2021-12-03 18:23:24	seebs	> My first instinct was to make my own version of the struct, embed the library provided struct and implement my own version of the function in my struct. But I seem to be running into some kind of a problem that when the library code executes it doesn't see the data in my struct (instantiated through make)
+2021-12-03 18:23:29	seebs	yes this is normal
+2021-12-03 18:23:31	xzr	yeah sorry, it's work code so can't just paste it willy nilly, the example I provided has the make thing which kinda makes it similar :)
+2021-12-03 18:23:43	seebs	you may be thinking that embedding is inheritance-like
+2021-12-03 18:23:52	xzr	it could be yeah
+2021-12-03 18:23:56	seebs	it isn't
+2021-12-03 18:24:03	xzr	(my thinking could be)
+2021-12-03 18:24:09	xzr	:)
+2021-12-03 18:24:15	seebs	so, if you have a struct that has an embedded field, and you call that embedded field's methods, it doesn't get called on your object
+2021-12-03 18:24:23	seebs	it gets called on that one embedded field of your object
+2021-12-03 18:24:38	seebs	the additional data of your object is not visible or accessible
+2021-12-03 18:25:03	seebs	you can sometimes then provide your own method that calls the embedded thing's method, and *your* method will see the stuff, but this only works for some contexts.
+2021-12-03 18:25:40	seebs	in particular, it won't work for anything that's operating on the embedded thing and then calling methods. this isn't an inheritance-like thing where they're getting actually-your-object and treating it temporarily as the embedded thing, but you still have your object's method table.
+2021-12-03 18:25:46	seebs	they're actually getting the embedded object only.
+2021-12-03 18:26:30	seebs	so, in general, you can't really override methods. there's limited cases where you can if what they do is simple and you don't need to deal with other methods working on only the embedded thing, but in general you can't expect it to work.
+2021-12-03 18:27:10	xzr	yeah this case isn't particularly simple
+2021-12-03 18:27:17	xzr	guess I might have to think of some other workaround
+2021-12-03 18:28:23	xzr	the joys of customer having the one obscure use case that none of the available libraries implement without hacking :P
+2021-12-03 18:29:24	xzr	but thanks for the help seebs and zsnes, learned another thing at least
+2021-12-03 18:39:53	zsnes	xzr: if you give a better example we could probably help suggest something else.
+2021-12-03 19:01:42	xzr	zsnes: I think judging by seebs' explanation the kind of overriding I'm looking for in this case it just can't be done
+2021-12-03 19:02:02	xzr	so I've kind of reverted to just reimplementing the set of library functionality I need as a separate thing
+2021-12-03 19:02:23	xzr	not massive amounts of code so it's kinda fine
+2021-12-03 19:05:00	xzr	the problem in this case was the access to the embedded struct's fields
+2021-12-03 19:19:15	zsnes	you can access embedded struct fields
+2021-12-03 19:19:32	zsnes	https://go.dev/play/p/3dLX1L0CcjA maybe this example will make things more clear
+2021-12-03 19:25:29	bpalmer	zsnes: the situation is type A struct { Name string} ; type B struct { *A; Name string } func (a *A) String() string { return a.Name } func main() { b := B{Name: "B"}; fmt.Println(b.String()); }
+2021-12-03 19:25:44	bpalmer	https://go.dev/play/p/bAw-tx0Irv3
+2021-12-03 19:26:22	bpalmer	where the embedded struct's methods don't access the fields from a struct that it's embedded within
+2021-12-03 19:55:10	zsnes	yeah and that makes no sense, so why would yo udo that
+2021-12-03 19:55:50	zsnes	you should initialize the Name field in A not duplicate the field in B
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:45	-->	mrmanner (mrmanner@98.128.201.128) has joined #go-nuts
+2021-12-03 20:19:45	--	Topic for #go-nuts is "register to speak until the spam clears up | golang.org | known issues golang.org/issue | don't ask to ask, just ask | follow the code of conduct golang.org/conduct | use play.golang.org for code samples"
+2021-12-03 20:20:24	<--	tyson2 (~user@cpe688f2ec1f9b3-cm688f2ec1f9b0.cpe.net.cable.rogers.com) has quit (Remote host closed the connection)
+2021-12-03 20:25:37	-->	dntreou [yakiza] (noname) (~yakiza@178-147-236-189.haap.dm.cosmote.net) has joined #go-nuts
+2021-12-03 20:26:28	<--	dntreou (~yakiza@178-147-236-189.haap.dm.cosmote.net) has quit (Client Quit)
+2021-12-03 20:32:32	-->	tane (realname) (~tane@dslb-002-201-234-166.002.201.pools.vodafone-ip.de) has joined #go-nuts
+2021-12-03 20:32:33	--	tane has identified as tane
+2021-12-03 20:32:32	<--	tane (~tane@dslb-002-201-234-166.002.201.pools.vodafone-ip.de) has quit (Changing host)
+2021-12-03 20:32:32	-->	tane [tane] (realname) (~tane@user/tane) has joined #go-nuts
+2021-12-03 20:41:34	<--	henko (~henko@62-178-187-35.cable.dynamic.surfer.at) has quit (Quit: WeeChat 3.3)
+2021-12-03 20:45:58	-->	rvalue [rvalue] (ZNC - https://znc.in) (~rvalue@user/rvalue) has joined #go-nuts
+2021-12-03 20:49:23	ldiamond	Learning go, I was expecting this to work: https://go.dev/play/p/nUhxUJL4Muc
+2021-12-03 20:50:31	fizzie	There's no syntactical shortcut to call methods on a pointer to an interface, possibly because pointers to interfaces are very unusual.
+2021-12-03 20:51:29	fizzie	You would have to write `(*t).MyFunc()` to do the call, though more likely than that the function would instead take a `Test` instead of a `*Test`.
+2021-12-03 20:53:34	fizzie	(The type that _implements_ the interface could still be a pointer type, and often is.)
+2021-12-03 20:54:03	ldiamond	Ok I'll give that a try
+2021-12-03 20:56:09	ldiamond	Yea I'm seeing another issue `cannot call pointer method GetAnnotations on "k8s.io/apimachinery/pkg/apis/meta/v1".ObjectMeta` but if I split it in two lines then it works. Not sure what's happening here.
+2021-12-03 21:00:57	rewt	what's the original line, and what did you split it to?
+2021-12-03 21:01:15	-->	nostalgia (nostalgia) (~nostalgia@2601:243:c600:95f0:22f1:3efe:9b37:299c) has joined #go-nuts
+2021-12-03 21:01:16	--	nostalgia has identified as nostalgia
+2021-12-03 21:04:07	fizzie	That's probably because the thing you wanted to call it on was a non-pointer value, and unaddressable.

@@ -1,0 +1,999 @@
+2021-03-16 11:32:34	Carl	@russ Who has run the backpayments?
+2021-03-16 11:39:32	russ	Just walking the dog, will have a look in a sec [:+1:1]
+2021-03-16 11:39:44	Carl	we really need to create mor layers of admin
+2021-03-16 11:39:54	Carl	super duper admin, mini admin etc :stuck_out_tongue:
+2021-03-16 11:40:39	russ	Yeah or like we planned years ago to remove super admin and attach roles to everything... But that's a pretty big job :grimacing:
+2021-03-16 12:44:35	Carl	Have you found the guilty person? :joy:
+2021-03-16 13:40:23	russ	No... It's not that easy to find out, to be honest... There's no "stamp" on the background tasks to say who started them
+2021-03-16 13:40:37	russ	(Which is kind of stupid really)
+2021-03-16 13:40:55	Carl	ok but can you see when it was started?
+2021-03-16 13:41:06	Carl	and which super admins was logged in then
+2021-03-16 13:41:06	Slackbot	:superruss:
+2021-03-16 13:43:38	russ	2021-03-16 11:07:38
+2021-03-16 13:49:23	russ	Ok, it's not an exact science... but the people who at least logged in some time before that time, are 3303499,3372758,3373198,3371842,3317628
+2021-03-16 13:50:02	russ	``` member_number | first_name |   last_name   
+2021-03-16 13:50:02		---------------+------------+---------------
+2021-03-16 13:50:02		       3303499 | Gabriella  | Airisniemi
+2021-03-16 13:50:02		       3317628 | Hanna      | Bata
+2021-03-16 13:50:02		       3371842 | Agneta     | Bernheim
+2021-03-16 13:50:02		       3372758 | Carl       | Bjelksjö
+2021-03-16 13:50:02		       3373198 | Linnea     | Hansson-Henne```
+2021-03-16 13:50:13	Carl	thank you
+2021-03-16 13:50:31	Carl	I'll call them
+2021-03-16 13:50:41	Carl	because you need to be a super admin for this right?
+2021-03-16 13:50:42	Slackbot	:superruss:
+2021-03-16 13:50:49	russ	I'd have to look at the server logs to see who visited the backpayment page - maybe connect their IP address, if we needed to go that route
+2021-03-16 13:51:04	russ	Pretty sure it's only super admin...?
+2021-03-16 13:51:05	Slackbot	:superruss:
+2021-03-16 13:51:34	Carl	if you could (ie doesn't takes your whole work day) that would be appriciated
+2021-03-16 14:10:42	russ	Looks like the office IP
+2021-03-16 14:10:46	russ	Makes it a bit more tricky
+2021-03-16 14:10:55	russ	Why aren't you people working from home :smile:
+2021-03-16 14:10:55	Carl	ok only Agneta is here
+2021-03-16 14:11:02	Carl	We are five people her
+2021-03-16 14:11:36	russ	Ok, well not 100% sure but she's certainly a good place to start
+2021-03-16 14:12:41	russ	Yep, she's the only one from the above list who logged in with that IP address
+2021-03-16 14:13:08	russ	Really should add a "who started me" column to the task queue
+2021-03-16 14:14:04	russ	I guess the original developer didn't bother because a lot of the time the tasks are triggered in the background so they do not have any concept of logged in users. But it should always be possible to log "started by" for the first one in the chain
+2021-03-16 14:16:02	Carl	she cant remember doing it when I showed her how you do it
+2021-03-16 14:16:07	Carl	so trange :confused:
+2021-03-16 14:39:52	russ	Weird... It's a post request too, so unlikely to be an accidental bookmark load or something like that.
+2021-03-16 14:39:52		```109.104.20.18 - - [16/Mar/2021:11:07:38 +0100] "POST /backpayment/run HTTP/1.1" 200 -```
+2021-03-18 16:14:36	Carl	@russ can you take a look at the statsbidrag for Scoutkåren Finn
+2021-03-18 16:14:36		https://scoutnet.se/organisation/group/home/1025
+2021-03-18 16:14:36		In the list on step 2 we find these members but it seems strange.
+2021-03-18 16:14:36		3217211    Fabian    Svedberg    Späckhuggarna
+2021-03-18 16:14:36		I can't find this member when I search the member number but there is a member 3216883 with the same name.
+2021-03-18 16:14:36		2001828    Algot Johannesson            -
+2021-03-18 16:14:36		2001430 Felix Barck
+2021-03-18 16:14:36		I can't find these members when I search their member numbers.
+2021-03-18 21:15:58	russ	3217211 was deleted ages ago by the looks of it... No idea why they are in that list... Maybe some bug with deleted profiles? Most members get de-activated but not deleted...
+2021-03-18 21:27:54	russ	Looks like the group membership was never cancelled before the member profile deleted (this was way back in like 2011! The Statsbidrag application looks for the "latest version" of a membership record, which in this case is the one from 2011 since it still looks like a "confirmed" membership record. Since it was never cancelled - Statsbidrag assumes the member is still active, but since they have not paid an invoice for the relevant year, they require manual confirmation. (edited)
+2021-03-18 21:30:40	russ	The query should probably check if the profile record is deleted, but it's tricky because they would still be eligible if they were deleted _after_ the Statsbidrag term...
+2021-03-18 21:55:30	Carl	hum yeah or check which year it was deleted if possible?
+2021-03-18 21:55:45	Carl	so only include the ones that were deleted the year we are applying for a grant
+2021-03-18 21:56:45	russ	When the Statsbidrag module was created, it was quite difficult to figure out when a person was deleted (you'd need to check through all the versions) but nowadays we do actually have a "deleted_at" column in there...
+2021-03-18 21:57:54	Carl	ok then I'll write a ticket tomorrow about this :slightly_smiling_face: [:+1::skin-tone-2:1]
+2021-03-19 13:46:18	Carl	Russ I got this regarding the puclic reg form. Have we done any changes lately?
+2021-03-19 13:46:18		Hej Carl, hoppas allt är bra med dig!
+2021-03-19 13:46:18		Jag har inte gjort några större utvecklingsdelar på scouterna på ett tag, men blev uppmärksammad om att intresseanmälningarna inte fungerade längre. När jag testar exempelanropet i dokumentet "API-nycklar intresseanmälan" så får jag nu en 401. Har det gjorts några ändringar där? Är det något du kan kolla upp med er utvecklare?
+2021-03-19 13:53:23	russ	Hmm sounds like API rather than public reg, is this a group using the API for their registrations?
+2021-03-19 13:53:42	Carl	no it's the new http://scouterna.se (scouterna.se)
+2021-03-19 13:53:49	Carl	and yes it's the api
+2021-03-19 13:55:17	russ	This is new development, right? Not in public use yet?
+2021-03-19 13:55:21	Carl	yes
+2021-03-19 13:55:34	Carl	could be that hes using the key for S1 or vice versa
+2021-03-19 13:55:36	Carl	I'll check with him
+2021-03-19 13:55:40	russ	I'll check. It's a while since we changed anything there I think
+2021-03-19 13:56:31	russ	Maybe he doesn't have the right key? If he's connecting to s1 the keys might have changed after a database update, if we loaded a copy from prod
+2021-03-19 13:57:08	russ	401 normally means an authentication problem. Other errors would be 400 or 500
+2021-03-19 13:59:38	Carl	yeah the key was changed probably that
+2021-03-19 14:00:05	Carl	How hard is it for you to create multiple new scout groups from an excel file?
+2021-03-19 14:28:24	russ	Fairly easy I guess
+2021-03-19 14:28:45	Carl	ok because I need to create around 300 new ones :stuck_out_tongue:
+2021-03-19 14:28:54	russ	:flushed:
+2021-03-19 14:29:17	Carl	but I only got 30 at the moment but it would be good to create those so we can test that it works
+2021-03-19 14:29:42	Carl	can we add contact info at the same time? like e-mail, scout hall addresss etc
+2021-03-19 14:30:33	russ	Sure - then we'll probably need to make a task to do it since it crosses over to other database tables, but it's still pretty quick and easy (and useful to have)
+2021-03-19 14:31:03	Carl	I'll make it into a ticket then :stuck_out_tongue: just need some more info [:+1::skin-tone-2:1]
+2021-03-22 14:27:39	Carl	@russ When do you think you will do the next release?
+2021-03-22 14:29:25	russ	Normally Wednesday unless there's a need
+2021-03-22 14:30:24	Carl	wednesday is fine just wondered when because it is soon time to launch police check registration
+2021-03-22 14:36:27	russ	Ok!
+2021-03-22 14:27:39	Carl	@russ When do you think you will do the next release?
+2021-03-22 14:29:25	russ	Normally Wednesday unless there's a need
+2021-03-22 14:30:24	Carl	wednesday is fine just wondered when because it is soon time to launch police check registration
+2021-03-22 14:36:27	russ	Ok!
+2021-03-25 16:25:53	Carl	Scoutnet is down at the moment. Not sure if that is intentional?
+2021-03-25 16:29:44	Edwin	Login page loads for me, is it still down for you?
+2021-03-25 16:31:15	russ	Sorry, that was me... I really thought you were on 3.67 now...
+2021-03-25 16:31:24	russ	Guess not
+2021-03-25 16:39:09	Carl	:stuck_out_tongue:
+2021-03-25 16:40:21	Carl	Got a new e-mail from our web agancy. Please tell me if you need a translation.
+2021-03-25 16:40:21		What can be the problem do we need to activate API on all groups?
+2021-03-25 16:40:21		Hej Carl!
+2021-03-25 16:40:21		Jag provade med den nya nyckeln för intresseanmälan mot testservern och får nedan fel:
+2021-03-25 16:40:21		Då använder jag samma anrop som ni bifogat i dokumentet.
+2021-03-25 16:40:21		Verkar även som att jag fortfarande får 401-fel när jag provar mot en annan scoutkår. I exemplet använder vi id 760 som tillhör Örnsbergs Scoutkår, provar jag däremot 14783 som då tillhör Adelsö Munsö Scoutkår så får jag 401-felet.
+2021-03-25 16:40:21		En sista fråga är om det finns en annan nyckel för intresseanmälan för prod? Eller ska det vara samma?
+2021-03-25 16:40:21		Toppen om ni kunde kika på detta!
+2021-03-25 16:40:21		https://files.slack.com/files-pri/T0R78241W-F01T4JKAPA4/w.png (w.png)
+2021-03-25 16:43:48	russ	Hmm that's just a missing "valid_from" date, possibly introduced as part of the temporary address stuff - if they are trying to add a temporary address then they need to pass the valid_from and valid_to dates too. If they are _not_ trying to set a temporary address, then we have a bug... It's not live on prod yet which would explain why no groups have complained, if it is the case
+2021-03-25 17:10:50	Carl	Ok so what does that mean? Are you saying that they are trying to add the wrong type of address?
+2021-03-25 17:11:40	russ	Maybe, unless there's an issue at our end
+2021-03-25 17:12:09	russ	There's an address_type parameter, with different values for home, billing, etc.
+2021-03-25 17:12:32	russ	If they send the one for temporary address then the validator for valid from/to will kick in (edited)
+2021-03-25 17:12:46	Carl	they might? What should the type be for home?
+2021-03-25 17:13:04	russ	I'm just making food, will check in a few...
+2021-03-25 17:14:05	Carl	sure. What about Adelsö Munsö then they haven't activated API is that why the registration isn't working?
+2021-03-25 17:48:29	russ	Yes possibly - not sure where we landed on that discussion, if the org API should just override that setting, but I feel like it's still a good thing to have
+2021-03-25 17:49:22	russ	Home address is type 0 it seems, temporary is type 1
+2021-03-25 17:49:29	russ	Mailing = 2, Billing = 3
+2021-03-25 17:50:45	russ	The example in the docs uses address type = 1, so that is likely the problem. I'll change the doc - it's a bad default
+2021-03-25 17:51:26	Carl	yeah sounds good
+2021-03-25 17:52:07	russ	Using 0 for one of the types isn't a good idea generally... but the original dev probably thought it would work as a default/empty selection I guess
+2021-03-25 17:52:49	Carl	ok yeah
+2021-03-25 17:57:22	Carl	can you check the API activation thing as well? :slightly_smiling_face:
+2021-03-25 18:00:12	russ	How do you want it to be? Should it override the setting if using an org level key? Or should we just activate them all and allow super admin to turn them off one-by-one?
+2021-03-25 18:00:39	Carl	override I think? what do you say?
+2021-03-25 18:04:11	russ	I guess it makes sense - we may just need to adjust the wording on that page so people know it won't stop the org-level registrations
+2021-03-25 18:04:20	Carl	mm
+2021-03-25 18:04:45	Carl	så I'll tell him to switch from 1 to 0 on adress typ and that we will fix the no activated groups?
+2021-03-25 18:05:57	russ	Sure
+2021-03-25 18:25:26	Carl	Or wait if we override then we can’t turn it off on some groups right?
+2021-03-25 18:25:58	russ	right
+2021-03-25 18:28:01	russ	On the group API (with all the map data) we have a public_registration_enabled flag - should we just add an api_enabled flag too? Then if that is disabled your web people can exclude them?
+2021-03-25 18:29:12	russ	But then that doesn't help if a group wants to enable the api for other things, like reports and stuff, and just wants to disable external registrations... Then we probably need another setting for that instead (edited)
+2021-03-25 18:55:38	Carl	Can we use the same flag for the api as well?
+2021-03-25 19:02:11	russ	We could - if you think people would understand, and if it will always be "all or nothing"
+2021-03-25 19:02:46	russ	Then you can tell your web people to exclude groups with that value set false, and we can block them at this end if they have that disabled too
+2021-03-25 19:39:59	russ	Ok, I think that works quite ok. Have made that change and deployed to s1. Have also tested the register API with address=0 and it works. It's good we added the required dates for temporary addresses, or we would have been adding a bunch of new users with temporary instead of home address!
+2021-03-25 16:25:53	Carl	Scoutnet is down at the moment. Not sure if that is intentional?
+2021-03-25 16:29:44	Edwin	Login page loads for me, is it still down for you?
+2021-03-25 16:31:15	russ	Sorry, that was me... I really thought you were on 3.67 now...
+2021-03-25 16:31:24	russ	Guess not
+2021-03-25 16:39:09	Carl	:stuck_out_tongue:
+2021-03-25 16:40:21	Carl	Got a new e-mail from our web agancy. Please tell me if you need a translation.
+2021-03-25 16:40:21		What can be the problem do we need to activate API on all groups?
+2021-03-25 16:40:21		Hej Carl!
+2021-03-25 16:40:21		Jag provade med den nya nyckeln för intresseanmälan mot testservern och får nedan fel:
+2021-03-25 16:40:21		Då använder jag samma anrop som ni bifogat i dokumentet.
+2021-03-25 16:40:21		Verkar även som att jag fortfarande får 401-fel när jag provar mot en annan scoutkår. I exemplet använder vi id 760 som tillhör Örnsbergs Scoutkår, provar jag däremot 14783 som då tillhör Adelsö Munsö Scoutkår så får jag 401-felet.
+2021-03-25 16:40:21		En sista fråga är om det finns en annan nyckel för intresseanmälan för prod? Eller ska det vara samma?
+2021-03-25 16:40:21		Toppen om ni kunde kika på detta!
+2021-03-25 16:40:21		https://files.slack.com/files-pri/T0R78241W-F01T4JKAPA4/w.png (w.png)
+2021-03-25 16:43:48	russ	Hmm that's just a missing "valid_from" date, possibly introduced as part of the temporary address stuff - if they are trying to add a temporary address then they need to pass the valid_from and valid_to dates too. If they are _not_ trying to set a temporary address, then we have a bug... It's not live on prod yet which would explain why no groups have complained, if it is the case
+2021-03-25 17:10:50	Carl	Ok so what does that mean? Are you saying that they are trying to add the wrong type of address?
+2021-03-25 17:11:40	russ	Maybe, unless there's an issue at our end
+2021-03-25 17:12:09	russ	There's an address_type parameter, with different values for home, billing, etc.
+2021-03-25 17:12:32	russ	If they send the one for temporary address then the validator for valid from/to will kick in (edited)
+2021-03-25 17:12:46	Carl	they might? What should the type be for home?
+2021-03-25 17:13:04	russ	I'm just making food, will check in a few...
+2021-03-25 17:14:05	Carl	sure. What about Adelsö Munsö then they haven't activated API is that why the registration isn't working?
+2021-03-25 17:48:29	russ	Yes possibly - not sure where we landed on that discussion, if the org API should just override that setting, but I feel like it's still a good thing to have
+2021-03-25 17:49:22	russ	Home address is type 0 it seems, temporary is type 1
+2021-03-25 17:49:29	russ	Mailing = 2, Billing = 3
+2021-03-25 17:50:45	russ	The example in the docs uses address type = 1, so that is likely the problem. I'll change the doc - it's a bad default
+2021-03-25 17:51:26	Carl	yeah sounds good
+2021-03-25 17:52:07	russ	Using 0 for one of the types isn't a good idea generally... but the original dev probably thought it would work as a default/empty selection I guess
+2021-03-25 17:52:49	Carl	ok yeah
+2021-03-25 17:57:22	Carl	can you check the API activation thing as well? :slightly_smiling_face:
+2021-03-25 18:00:12	russ	How do you want it to be? Should it override the setting if using an org level key? Or should we just activate them all and allow super admin to turn them off one-by-one?
+2021-03-25 18:00:39	Carl	override I think? what do you say?
+2021-03-25 18:04:11	russ	I guess it makes sense - we may just need to adjust the wording on that page so people know it won't stop the org-level registrations
+2021-03-25 18:04:20	Carl	mm
+2021-03-25 18:04:45	Carl	så I'll tell him to switch from 1 to 0 on adress typ and that we will fix the no activated groups?
+2021-03-25 18:05:57	russ	Sure
+2021-03-25 18:25:26	Carl	Or wait if we override then we can’t turn it off on some groups right?
+2021-03-25 18:25:58	russ	right
+2021-03-25 18:28:01	russ	On the group API (with all the map data) we have a public_registration_enabled flag - should we just add an api_enabled flag too? Then if that is disabled your web people can exclude them?
+2021-03-25 18:29:12	russ	But then that doesn't help if a group wants to enable the api for other things, like reports and stuff, and just wants to disable external registrations... Then we probably need another setting for that instead (edited)
+2021-03-25 18:55:38	Carl	Can we use the same flag for the api as well?
+2021-03-25 19:02:11	russ	We could - if you think people would understand, and if it will always be "all or nothing"
+2021-03-25 19:02:46	russ	Then you can tell your web people to exclude groups with that value set false, and we can block them at this end if they have that disabled too
+2021-03-25 19:39:59	russ	Ok, I think that works quite ok. Have made that change and deployed to s1. Have also tested the register API with address=0 and it works. It's good we added the required dates for temporary addresses, or we would have been adding a bunch of new users with temporary instead of home address!
+2021-03-25 16:25:53	Carl	Scoutnet is down at the moment. Not sure if that is intentional?
+2021-03-25 16:29:44	Edwin	Login page loads for me, is it still down for you?
+2021-03-25 16:31:15	russ	Sorry, that was me... I really thought you were on 3.67 now...
+2021-03-25 16:31:24	russ	Guess not
+2021-03-25 16:39:09	Carl	:stuck_out_tongue:
+2021-03-25 16:40:21	Carl	Got a new e-mail from our web agancy. Please tell me if you need a translation.
+2021-03-25 16:40:21		What can be the problem do we need to activate API on all groups?
+2021-03-25 16:40:21		Hej Carl!
+2021-03-25 16:40:21		Jag provade med den nya nyckeln för intresseanmälan mot testservern och får nedan fel:
+2021-03-25 16:40:21		Då använder jag samma anrop som ni bifogat i dokumentet.
+2021-03-25 16:40:21		Verkar även som att jag fortfarande får 401-fel när jag provar mot en annan scoutkår. I exemplet använder vi id 760 som tillhör Örnsbergs Scoutkår, provar jag däremot 14783 som då tillhör Adelsö Munsö Scoutkår så får jag 401-felet.
+2021-03-25 16:40:21		En sista fråga är om det finns en annan nyckel för intresseanmälan för prod? Eller ska det vara samma?
+2021-03-25 16:40:21		Toppen om ni kunde kika på detta!
+2021-03-25 16:40:21		https://files.slack.com/files-pri/T0R78241W-F01T4JKAPA4/w.png (w.png)
+2021-03-25 16:43:48	russ	Hmm that's just a missing "valid_from" date, possibly introduced as part of the temporary address stuff - if they are trying to add a temporary address then they need to pass the valid_from and valid_to dates too. If they are _not_ trying to set a temporary address, then we have a bug... It's not live on prod yet which would explain why no groups have complained, if it is the case
+2021-03-25 17:10:50	Carl	Ok so what does that mean? Are you saying that they are trying to add the wrong type of address?
+2021-03-25 17:11:40	russ	Maybe, unless there's an issue at our end
+2021-03-25 17:12:09	russ	There's an address_type parameter, with different values for home, billing, etc.
+2021-03-25 17:12:32	russ	If they send the one for temporary address then the validator for valid from/to will kick in (edited)
+2021-03-25 17:12:46	Carl	they might? What should the type be for home?
+2021-03-25 17:13:04	russ	I'm just making food, will check in a few...
+2021-03-25 17:14:05	Carl	sure. What about Adelsö Munsö then they haven't activated API is that why the registration isn't working?
+2021-03-25 17:48:29	russ	Yes possibly - not sure where we landed on that discussion, if the org API should just override that setting, but I feel like it's still a good thing to have
+2021-03-25 17:49:22	russ	Home address is type 0 it seems, temporary is type 1
+2021-03-25 17:49:29	russ	Mailing = 2, Billing = 3
+2021-03-25 17:50:45	russ	The example in the docs uses address type = 1, so that is likely the problem. I'll change the doc - it's a bad default
+2021-03-25 17:51:26	Carl	yeah sounds good
+2021-03-25 17:52:07	russ	Using 0 for one of the types isn't a good idea generally... but the original dev probably thought it would work as a default/empty selection I guess
+2021-03-25 17:52:49	Carl	ok yeah
+2021-03-25 17:57:22	Carl	can you check the API activation thing as well? :slightly_smiling_face:
+2021-03-25 18:00:12	russ	How do you want it to be? Should it override the setting if using an org level key? Or should we just activate them all and allow super admin to turn them off one-by-one?
+2021-03-25 18:00:39	Carl	override I think? what do you say?
+2021-03-25 18:04:11	russ	I guess it makes sense - we may just need to adjust the wording on that page so people know it won't stop the org-level registrations
+2021-03-25 18:04:20	Carl	mm
+2021-03-25 18:04:45	Carl	så I'll tell him to switch from 1 to 0 on adress typ and that we will fix the no activated groups?
+2021-03-25 18:05:57	russ	Sure
+2021-03-25 18:25:26	Carl	Or wait if we override then we can’t turn it off on some groups right?
+2021-03-25 18:25:58	russ	right
+2021-03-25 18:28:01	russ	On the group API (with all the map data) we have a public_registration_enabled flag - should we just add an api_enabled flag too? Then if that is disabled your web people can exclude them?
+2021-03-25 18:29:12	russ	But then that doesn't help if a group wants to enable the api for other things, like reports and stuff, and just wants to disable external registrations... Then we probably need another setting for that instead (edited)
+2021-03-25 18:55:38	Carl	Can we use the same flag for the api as well?
+2021-03-25 19:02:11	russ	We could - if you think people would understand, and if it will always be "all or nothing"
+2021-03-25 19:02:46	russ	Then you can tell your web people to exclude groups with that value set false, and we can block them at this end if they have that disabled too
+2021-03-25 19:39:59	russ	Ok, I think that works quite ok. Have made that change and deployed to s1. Have also tested the register API with address=0 and it works. It's good we added the required dates for temporary addresses, or we would have been adding a bunch of new users with temporary instead of home address!
+2021-03-25 16:25:53	Carl	Scoutnet is down at the moment. Not sure if that is intentional?
+2021-03-25 16:29:44	Edwin	Login page loads for me, is it still down for you?
+2021-03-25 16:31:15	russ	Sorry, that was me... I really thought you were on 3.67 now...
+2021-03-25 16:31:24	russ	Guess not
+2021-03-25 16:39:09	Carl	:stuck_out_tongue:
+2021-03-25 16:40:21	Carl	Got a new e-mail from our web agancy. Please tell me if you need a translation.
+2021-03-25 16:40:21		What can be the problem do we need to activate API on all groups?
+2021-03-25 16:40:21		Hej Carl!
+2021-03-25 16:40:21		Jag provade med den nya nyckeln för intresseanmälan mot testservern och får nedan fel:
+2021-03-25 16:40:21		Då använder jag samma anrop som ni bifogat i dokumentet.
+2021-03-25 16:40:21		Verkar även som att jag fortfarande får 401-fel när jag provar mot en annan scoutkår. I exemplet använder vi id 760 som tillhör Örnsbergs Scoutkår, provar jag däremot 14783 som då tillhör Adelsö Munsö Scoutkår så får jag 401-felet.
+2021-03-25 16:40:21		En sista fråga är om det finns en annan nyckel för intresseanmälan för prod? Eller ska det vara samma?
+2021-03-25 16:40:21		Toppen om ni kunde kika på detta!
+2021-03-25 16:40:21		https://files.slack.com/files-pri/T0R78241W-F01T4JKAPA4/w.png (w.png)
+2021-03-25 16:43:48	russ	Hmm that's just a missing "valid_from" date, possibly introduced as part of the temporary address stuff - if they are trying to add a temporary address then they need to pass the valid_from and valid_to dates too. If they are _not_ trying to set a temporary address, then we have a bug... It's not live on prod yet which would explain why no groups have complained, if it is the case
+2021-03-25 17:10:50	Carl	Ok so what does that mean? Are you saying that they are trying to add the wrong type of address?
+2021-03-25 17:11:40	russ	Maybe, unless there's an issue at our end
+2021-03-25 17:12:09	russ	There's an address_type parameter, with different values for home, billing, etc.
+2021-03-25 17:12:32	russ	If they send the one for temporary address then the validator for valid from/to will kick in (edited)
+2021-03-25 17:12:46	Carl	they might? What should the type be for home?
+2021-03-25 17:13:04	russ	I'm just making food, will check in a few...
+2021-03-25 17:14:05	Carl	sure. What about Adelsö Munsö then they haven't activated API is that why the registration isn't working?
+2021-03-25 17:48:29	russ	Yes possibly - not sure where we landed on that discussion, if the org API should just override that setting, but I feel like it's still a good thing to have
+2021-03-25 17:49:22	russ	Home address is type 0 it seems, temporary is type 1
+2021-03-25 17:49:29	russ	Mailing = 2, Billing = 3
+2021-03-25 17:50:45	russ	The example in the docs uses address type = 1, so that is likely the problem. I'll change the doc - it's a bad default
+2021-03-25 17:51:26	Carl	yeah sounds good
+2021-03-25 17:52:07	russ	Using 0 for one of the types isn't a good idea generally... but the original dev probably thought it would work as a default/empty selection I guess
+2021-03-25 17:52:49	Carl	ok yeah
+2021-03-25 17:57:22	Carl	can you check the API activation thing as well? :slightly_smiling_face:
+2021-03-25 18:00:12	russ	How do you want it to be? Should it override the setting if using an org level key? Or should we just activate them all and allow super admin to turn them off one-by-one?
+2021-03-25 18:00:39	Carl	override I think? what do you say?
+2021-03-25 18:04:11	russ	I guess it makes sense - we may just need to adjust the wording on that page so people know it won't stop the org-level registrations
+2021-03-25 18:04:20	Carl	mm
+2021-03-25 18:04:45	Carl	så I'll tell him to switch from 1 to 0 on adress typ and that we will fix the no activated groups?
+2021-03-25 18:05:57	russ	Sure
+2021-03-25 18:25:26	Carl	Or wait if we override then we can’t turn it off on some groups right?
+2021-03-25 18:25:58	russ	right
+2021-03-25 18:28:01	russ	On the group API (with all the map data) we have a public_registration_enabled flag - should we just add an api_enabled flag too? Then if that is disabled your web people can exclude them?
+2021-03-25 18:29:12	russ	But then that doesn't help if a group wants to enable the api for other things, like reports and stuff, and just wants to disable external registrations... Then we probably need another setting for that instead (edited)
+2021-03-25 18:55:38	Carl	Can we use the same flag for the api as well?
+2021-03-25 19:02:11	russ	We could - if you think people would understand, and if it will always be "all or nothing"
+2021-03-25 19:02:46	russ	Then you can tell your web people to exclude groups with that value set false, and we can block them at this end if they have that disabled too
+2021-03-25 19:39:59	russ	Ok, I think that works quite ok. Have made that change and deployed to s1. Have also tested the register API with address=0 and it works. It's good we added the required dates for temporary addresses, or we would have been adding a bunch of new users with temporary instead of home address!
+2021-03-25 16:25:53	Carl	Scoutnet is down at the moment. Not sure if that is intentional?
+2021-03-25 16:29:44	Edwin	Login page loads for me, is it still down for you?
+2021-03-25 16:31:15	russ	Sorry, that was me... I really thought you were on 3.67 now...
+2021-03-25 16:31:24	russ	Guess not
+2021-03-25 16:39:09	Carl	:stuck_out_tongue:
+2021-03-25 16:40:21	Carl	Got a new e-mail from our web agancy. Please tell me if you need a translation.
+2021-03-25 16:40:21		What can be the problem do we need to activate API on all groups?
+2021-03-25 16:40:21		Hej Carl!
+2021-03-25 16:40:21		Jag provade med den nya nyckeln för intresseanmälan mot testservern och får nedan fel:
+2021-03-25 16:40:21		Då använder jag samma anrop som ni bifogat i dokumentet.
+2021-03-25 16:40:21		Verkar även som att jag fortfarande får 401-fel när jag provar mot en annan scoutkår. I exemplet använder vi id 760 som tillhör Örnsbergs Scoutkår, provar jag däremot 14783 som då tillhör Adelsö Munsö Scoutkår så får jag 401-felet.
+2021-03-25 16:40:21		En sista fråga är om det finns en annan nyckel för intresseanmälan för prod? Eller ska det vara samma?
+2021-03-25 16:40:21		Toppen om ni kunde kika på detta!
+2021-03-25 16:40:21		https://files.slack.com/files-pri/T0R78241W-F01T4JKAPA4/w.png (w.png)
+2021-03-25 16:43:48	russ	Hmm that's just a missing "valid_from" date, possibly introduced as part of the temporary address stuff - if they are trying to add a temporary address then they need to pass the valid_from and valid_to dates too. If they are _not_ trying to set a temporary address, then we have a bug... It's not live on prod yet which would explain why no groups have complained, if it is the case
+2021-03-25 17:10:50	Carl	Ok so what does that mean? Are you saying that they are trying to add the wrong type of address?
+2021-03-25 17:11:40	russ	Maybe, unless there's an issue at our end
+2021-03-25 17:12:09	russ	There's an address_type parameter, with different values for home, billing, etc.
+2021-03-25 17:12:32	russ	If they send the one for temporary address then the validator for valid from/to will kick in (edited)
+2021-03-25 17:12:46	Carl	they might? What should the type be for home?
+2021-03-25 17:13:04	russ	I'm just making food, will check in a few...
+2021-03-25 17:14:05	Carl	sure. What about Adelsö Munsö then they haven't activated API is that why the registration isn't working?
+2021-03-25 17:48:29	russ	Yes possibly - not sure where we landed on that discussion, if the org API should just override that setting, but I feel like it's still a good thing to have
+2021-03-25 17:49:22	russ	Home address is type 0 it seems, temporary is type 1
+2021-03-25 17:49:29	russ	Mailing = 2, Billing = 3
+2021-03-25 17:50:45	russ	The example in the docs uses address type = 1, so that is likely the problem. I'll change the doc - it's a bad default
+2021-03-25 17:51:26	Carl	yeah sounds good
+2021-03-25 17:52:07	russ	Using 0 for one of the types isn't a good idea generally... but the original dev probably thought it would work as a default/empty selection I guess
+2021-03-25 17:52:49	Carl	ok yeah
+2021-03-25 17:57:22	Carl	can you check the API activation thing as well? :slightly_smiling_face:
+2021-03-25 18:00:12	russ	How do you want it to be? Should it override the setting if using an org level key? Or should we just activate them all and allow super admin to turn them off one-by-one?
+2021-03-25 18:00:39	Carl	override I think? what do you say?
+2021-03-25 18:04:11	russ	I guess it makes sense - we may just need to adjust the wording on that page so people know it won't stop the org-level registrations
+2021-03-25 18:04:20	Carl	mm
+2021-03-25 18:04:45	Carl	så I'll tell him to switch from 1 to 0 on adress typ and that we will fix the no activated groups?
+2021-03-25 18:05:57	russ	Sure
+2021-03-25 18:25:26	Carl	Or wait if we override then we can’t turn it off on some groups right?
+2021-03-25 18:25:58	russ	right
+2021-03-25 18:28:01	russ	On the group API (with all the map data) we have a public_registration_enabled flag - should we just add an api_enabled flag too? Then if that is disabled your web people can exclude them?
+2021-03-25 18:29:12	russ	But then that doesn't help if a group wants to enable the api for other things, like reports and stuff, and just wants to disable external registrations... Then we probably need another setting for that instead (edited)
+2021-03-25 18:55:38	Carl	Can we use the same flag for the api as well?
+2021-03-25 19:02:11	russ	We could - if you think people would understand, and if it will always be "all or nothing"
+2021-03-25 19:02:46	russ	Then you can tell your web people to exclude groups with that value set false, and we can block them at this end if they have that disabled too
+2021-03-25 19:39:59	russ	Ok, I think that works quite ok. Have made that change and deployed to s1. Have also tested the register API with address=0 and it works. It's good we added the required dates for temporary addresses, or we would have been adding a bunch of new users with temporary instead of home address!
+2021-03-29 11:28:11	Carl	@russ are you going to activate the april fools thing on for us as well? :stuck_out_tongue:
+2021-03-29 11:28:46	russ	Sure if you want to? I've scraped the Swedish IKEA catalogue too :grin:
+2021-03-29 11:29:02	Carl	maybe should ask Peter first:p
+2021-03-29 11:29:10	russ	:smile:
+2021-03-29 11:29:36	russ	I'll stick it on s1 some time today so you can have a look [:+1:1]
+2021-03-29 13:12:10	Carl	Russ I got a wall of text regarding group registration on projects. It's in Swedish but let me know if you need it translated!
+2021-03-29 13:12:10		Hej,
+2021-03-29 13:12:10		Jag sitter och försöker anmäla våra scouter här, sparade ihop för att anmäla alla eftersläntare på en gång. *Tyvärr verkar jag inte kunna spara extrafrågorna.* Jag har testat på firefox och chromium på Kubuntu 20.04 samt chrome och firefox på Windows 10, och symptomen är desamma överallt: Jag kan av- och påanmäla scouterna utan problem, men när jag väljer "Redigera" för att lägga in den detaljerade informationen kring varje deltagare ovh sedan sparar denna information så får jag en "laddar"-snurra till vänster om knapparna som inte laddar klart (väntat 5 minuter nu på en av konfigurationerna).
+2021-03-29 13:12:10		Kikade i F12-menyn, när jag trycker på knappen "Spara och gå vidare" får jag följande fel i konsolen:
+2021-03-29 13:12:10		XHRPOSThttps://scoutnet.se/activities/activity/1445/update/group_member_info/in/1264/for/user/1365904[HTTP/1.1 400 Bad Request 636ms]
+2021-03-29 13:12:10		Uncaught TypeError: errors is undefined
+2021-03-29 13:12:10		    populateFormErrors https://scoutnet.se/js/source/misc.js?v=3_66_2_10:2708
+2021-03-29 13:12:10		    jQuery 2
+2021-03-29 13:12:10		    populateFormErrors https://scoutnet.se/js/source/misc.js?v=3_66_2_10:2702
+2021-03-29 13:12:10		    error https://scoutnet.se/activities/view/1445/for/group/1264/show/registration:2214
+2021-03-29 13:12:10		    jQuery 6
+2021-03-29 13:12:10		    <anonymous> https://scoutnet.se/activities/view/1445/for/group/1264/show/registration:2176
+2021-03-29 13:12:10		    jQuery 8
+2021-03-29 13:12:10		    <anonymous> https://scoutnet.se/activities/view/1445/for/group/1264/show/registration:2050
+2021-03-29 13:12:10		    jQuery 8
+2021-03-29 13:12:10		Konstigt nog får jag precis samma call stack även på spara och stäng, skiljer inte på linjenumrena heller.
+2021-03-29 13:12:10		Den enda deltagaren som felet inte sker på, som fungerar bra, är mig själv, som jag anmälde för drygt två månader sedan för att få se vad som stod i formuläret. Alla andra har jag anmält idag, så jag vet inte om det är något som kommer slå igenom och börja fungera om ett tag eller om det är någon permission som fungerar annorlunda för folk anmälda efter kåranmälningsdatum.
+2021-03-29 13:12:10		Kikade lite snabbt i den lokala kopian av koden, den krashar ju på en rad i en hjälpfunktion som verkar försöka informera användaren om att de skrivit fel i formuläret, men den koden kallas från error-callbacken för submit-koden (som det står ovan, 400 bad request). Alltså borde det då vara något i formuläret som serversidan protesterar mot som är grundproblemet, som bara råkade avtäcka ett annat fel i felhanteringslogiken. Alltså kan det ju fortfarande vara något permission-aktigt på serversidan som inte accepterar folk som är för nyanmälda som är grundproblemet. Men det där vet ni bättre än jag. Jag är nyfiken på vad det var som var fel, så ni får gärna berätta när ni listat ut det.
+2021-03-29 13:12:10		Är detta något ni kan kika på, Scoutnet? Blev lite lagom stressad när det krånglade nu när det bara är någon dag kvar till anmälningsdatum.
+2021-03-29 13:12:10		Tack på förhand,
+2021-03-29 13:12:10		Gabriel, Säters Scoutkår
+2021-03-29 13:29:54	russ	Definitely a wall of text - but the project URLs and the error "Uncaught TypeError: errors is undefined" will probably get me to the right place to find/fix
+2021-03-29 18:23:02	russ	This is fixed now [:+1:1]
+2021-03-29 18:26:24	Carl	Thank you!
+2021-03-29 21:29:17	Carl	I think we are ready for a deploy to prod :smile:
+2021-03-29 22:04:37	Carl	Is it possible to swap numbers between two corps?
+2021-03-29 22:04:37		The reason I'm asking is that the API is sending 15 and our new website thinks that is corps 1 and 5.
+2021-03-29 22:04:37		And I think it might be easier to change in Scoutnet than our new website...
+2021-03-29 22:04:37		https://scoutnet.se/organisation/corps/home/5
+2021-03-29 22:04:37		with
+2021-03-29 22:04:37		https://scoutnet.se/organisation/corps/home/15
+2021-03-29 22:04:37		and
+2021-03-29 22:04:37		https://scoutnet.se/organisation/corps/home/4
+2021-03-29 22:04:37		with
+2021-03-29 22:04:37		https://scoutnet.se/organisation/corps/home/14
+2021-03-29 22:21:22	russ	Ergh. They are the database IDs so we'd have to flip all references too... Contact info, members, roles, addresses, etc.
+2021-03-29 22:21:41	russ	Where are they getting the list from in the first place, if they have them mixed up? Not from us?
+2021-03-29 22:23:17	russ	15 is the correct - 5 is the one in the guest org... Could they be getting a full list from somewhere that includes guest org groups?
+2021-03-29 22:26:52	Carl	no its partly my fault
+2021-03-29 22:27:03	Carl	I forgot that we hace corps in the guest org
+2021-03-29 22:27:11	Carl	so I assumed that it would be 4 and 5 in the api
+2021-03-29 22:30:17	russ	partyly :stuck_out_tongue:
+2021-03-29 23:34:35	Carl	ok it's my fault
+2021-03-29 23:34:35	Carl	ok it's my fault [:point_up_2::skin-tone-2:1]
+2021-03-30 02:05:16	russ	If you get any messages from a few people having issues with project registration stuff between around 2230 and 0130 there were a couple of issues (I got exception mails) that are fixed now... [:+1:1]
+2021-03-31 12:37:55	Carl	So last day for statsbidrag [23210] Glumslövs Scoutkår
+2021-03-31 12:37:55		Scoutnet says they hav to  few members but when I take a report for 2020 they have 13 youths which should be 61%?
+2021-03-31 13:04:46	russ	Hmm, only one member "Leon Nilsson" shows up in the database for the application
+2021-03-31 13:04:59	russ	Do you have an example of another member that should be included?
+2021-03-31 13:05:45	russ	Could be something to do with the fix we did to remove the (very) old members from the manual confirm screen
+2021-03-31 13:06:16	Carl	3298760
+2021-03-31 13:06:16		3357179
+2021-03-31 13:06:16		3368038
+2021-03-31 13:06:16		3370337
+2021-03-31 13:06:16		3370338
+2021-03-31 13:06:16		3370281
+2021-03-31 13:09:48	russ	Could it be a second group thing? That first member is part of a different group application
+2021-03-31 13:09:56	russ	Can people be in more than one?
+2021-03-31 13:10:09	Carl	yes I'll check
+2021-03-31 13:10:36	Carl	ah they have two members in the right age but they are second group members
+2021-03-31 13:10:38	Carl	that's it
+2021-03-31 13:11:31	Carl	then they are down to 57%
+2021-03-31 13:11:51	russ	What does it need to be?
+2021-03-31 13:11:55	Carl	60%
+2021-03-31 13:11:59	russ	ouch
+2021-03-31 13:12:19	Carl	yep but that so that the grant goes to kids and not adults
+2021-03-31 13:12:32	Carl	from that perspective 60% is fairly genorous
+2021-03-31 13:12:34	russ	Yep, fair enough
+2021-03-31 13:13:52	russ	Just a shame they missed it by a couple... I mean, I guess there are some groups out there that know the rules so add a couple of members to make sure... I guess if the grant is worth more than the fees...
+2021-03-31 13:14:05	Carl	yes for sure
+2021-03-31 13:14:59	russ	Could be an enhancement to show ineligble members on that first page of the application, but I'll leave that with you :smile:
+2021-03-31 13:15:56	Carl	yes thats good but the biggest enhacment we need are to get the confirmation link under Messages on the startspage
+2021-03-31 13:16:14	Carl	so many support questions regarding that each year
+2021-03-31 13:43:45	russ	Ah, that shouldn't be too hard to add?
+2021-03-31 13:44:19	Carl	we have a ticket in low so guess I havent priortized it :stuck_out_tongue: [:upside_down_face:1]
+2021-03-31 13:48:17	Carl	actually if its jus an hour or two to fix we could add it now
+2021-03-31 13:48:38	Carl	that would be neat since Im going to start chasing people that havent confirmed yet
+2021-03-31 13:48:57	russ	Can leave it in low, will just throw into the "week" [:+1:1]
+2021-03-31 13:49:30	russ	Nice to have an "easy" issue to work on when I go braindead with the others - should have more of those on standby [:+1:1]
+2021-03-31 13:49:35	Carl	#29323
+2021-03-31 13:49:59	russ	Often I have a small amount of time before dinner or something, and most prioritised issues are too much brain-work to start on [:+1:1]
+2021-03-31 13:50:19	Carl	you can skip the statsbidrag tab bit of it if that complicates it too much
+2021-03-31 13:51:55	russ	Will see how the confirm process is built, and if it can just be included and triggered from anywhere. Worst case scenario I guess we just link to the same link they got in the email... But would be nice with a cleaner button. [:+1:1]
+2021-04-01 09:33:17	Carl	Question regarding the event api webhook. Does it just ping telling them to resync or does it send everything about the course
+2021-04-01 09:42:07	Edwin	It posts/sends everything about the course. Like /api/project/get/published but for a single course :slightly_smiling_face:
+2021-04-01 09:50:12	Carl	Ok great thanks!
+2021-04-01 09:50:48	Edwin	:+1:
+2021-04-01 11:02:06	Carl	Question from Scouternas folkhögskola's web agency can we increase profile picture size to 420*420? It seems to scale things down to 320*320 at moment (I thought that was only a recommendation but maybe we changed that?).
+2021-04-01 12:24:12	russ	Hmm that might have been a type on our side, yes it's 320 at the moment - can increase it!
+2021-04-01 12:24:48	Carl	do I need to check with the otter web oeople so I dont destroy anything on their side?
+2021-04-01 12:26:48	russ	I mean we could store the images much bigger, it shouldn't be a problem for them, as they can always display them smaller on their end
+2021-04-01 12:27:10	russ	We only use 145px on the profile page, for example
+2021-04-01 12:27:23	Carl	webone thought that they only scale it down with CSS
+2021-04-01 12:27:52	russ	Yes, that's what we do too - so the full image loads, but the browser shrinks it
+2021-04-01 12:28:21	russ	So if the image is 1000px, you could in theory right click the image, open it in a new tab, and see the full picture
+2021-04-01 12:29:46	russ	The 320 thing we do when the image is uploaded, so it is resized on disk, so we are not storing huge high quality images of our members :smile:
+2021-04-01 12:30:09	russ	So that could be 1000px or something, whatever we think is reasonable to store
+2021-04-01 12:30:23	russ	It's just more disk space and bandwidth
+2021-04-01 12:30:25	Carl	Yeah the problem is that folkhögskola want to have 350*350 :smile:
+2021-04-01 12:30:35	Carl	he suggested 420*420 on our side
+2021-04-01 12:31:46	russ	They can scale it up from 320 but will lose a bit of quality. We can store 500 or something - we shrink it for display anyway, so for our purposes we only "need" 145, but it's worth thinking of what we might use them for in future, because you can scale down but not up...
+2021-04-01 12:32:26	Carl	yeah maybe 500*500 is good
+2021-04-01 12:32:29	russ	Can't think what we might need larger images for, but you never know... We have to have a reasonable cause too - GDPR-wise
+2021-04-01 12:32:44	russ	If we store super hi-res images of kids, someone will want to know why :smile:
+2021-04-01 12:33:05	Carl	even more HD-screens in the future I guess?
+2021-04-01 12:35:09	russ	We've pretty much peaked at pixel density now - more HD just tends to mean bigger screens
+2021-04-01 12:35:44	russ	If someone made an 8k resolution mobile phone everything would be impossibly tiny on it
+2021-04-01 12:35:57	russ	Although movies might look super-crisp :smile:
+2021-04-01 12:39:08	Carl	:stuck_out_tongue:
+2021-04-07 10:39:11	Carl	@russ I accidentally added two members to a group and immediately removed them when I realised my error. can you remove the record of that from their profiles?
+2021-04-07 12:25:23	russ	Hmm... I guess. Bit naughty because we'd probably have to nuke the history in the database, but I guess it's ok :smile:
+2021-04-07 13:28:24	Carl	Should I put in as a task?
+2021-04-07 13:35:18	russ	Nah it's ok
+2021-04-07 13:41:49	russ	Need the numbers tho
+2021-04-07 14:08:30	Carl	It's 3290784 and 3252787 in Hallstaviks Scoutkår
+2021-04-12 14:12:41	Carl	What should I answer them on this? I can't find the ID myself?
+2021-04-12 14:12:41		Hej,
+2021-04-12 14:12:41		Tänkte kolla med dig kring detaljer i Intresseanmälan-formuläret på nya http://scouterna.se (scouterna.se).
+2021-04-12 14:12:41		Har kikat i detta dokument, med parametrar längst ned, men förstår inte helt hur jag korrekt ska benämna/skicka in följande (som tillkommit efter önskemål från scouterna):
+2021-04-12 14:12:41		(String) Mobiltelefon
+2021-04-12 14:12:41		(String) Hemtelefon
+2021-04-12 14:12:41		(String) Anhörig 1 namn
+2021-04-12 14:12:41		(String) Anhörig 1 e-post
+2021-04-12 14:12:41		(String) Anhörig 1 mobiltelefon
+2021-04-12 14:12:41		(String) Anhörig 2 namn
+2021-04-12 14:12:41		(String) Anhörig 2 e-post
+2021-04-12 14:12:41		(String) Anhörig 2 mobiltelefon
+2021-04-12 14:12:41		(True/false/checkbox) Jag som vuxen kan hjälpa till
+2021-04-12 14:12:41		Ska detta göras mha “custom_data” eller?
+2021-04-12 15:17:16	russ	I'm not sure if we publish the contact types anywhere in an API friendly format do we? We should probably do that...
+2021-04-12 15:18:38	russ	At least short-term we could display the IDs on the list here: https://scoutnet.se/admin/edit/contactTypeTranslations.html
+2021-04-12 15:19:09	russ	If you hover over the edit link (for example) today, you can see the ID in the URL
+2021-04-12 15:22:09	Carl	So...
+2021-04-12 15:22:09		String) Mobiltelefon = 1
+2021-04-12 15:22:09		(String) Hemtelefon = 2
+2021-04-12 15:22:09		(String) Anhörig 1 namn = 14
+2021-04-12 15:22:09		(String) Anhörig 1 e-post = 33
+2021-04-12 15:22:09		(String) Anhörig 1 mobiltelefon = 38
+2021-04-12 15:22:09		(String) Anhörig 2 namn = 16
+2021-04-12 15:22:09		(String) Anhörig 2 e-post = 34
+2021-04-12 15:22:09		(String) Anhörig 2 mobiltelefon = 39
+2021-04-12 15:22:09		(True/false/checkbox) Jag som vuxen kan hjälpa till = 60
+2021-04-12 15:22:23	russ	```1    Mobiltelefon
+2021-04-12 15:22:23		2    Hemtelefon
+2021-04-12 15:22:23		14    Anhörig 1 namn
+2021-04-12 15:22:23		34    Anhörig 2 e-post
+2021-04-12 15:22:23		44    Anhörig 2 hemtelefon
+2021-04-12 15:22:23		38    Anhörig 1 mobiltelefon
+2021-04-12 15:22:23		39    Anhörig 2 mobiltelefon
+2021-04-12 15:22:23		33    Anhörig 1 e-post
+2021-04-12 15:22:23		9    Alternativ e-post
+2021-04-12 15:22:23		16    Anhörig 2 namn
+2021-04-12 15:22:23		43    Anhörig 1 hemtelefon
+2021-04-12 15:22:23		60    Jag kan hjälpa till!``` (edited)
+2021-04-12 15:22:30	russ	Was just getting that for you :smile: [:heart:1]
+2021-04-21 16:40:14	Carl	Would it be complicted to allow new people to apply to multiple groups from the api?
+2021-04-21 16:40:37	Carl	so if the ssno matches basically just replace contact information or something?
+2021-04-21 16:41:15	Carl	because I just tried with myselft and the website didn't complain so Im just thinking what is the easiest and best sollution to that
+2021-04-21 16:40:14	Carl	Would it be complicted to allow new people to apply to multiple groups from the api?
+2021-04-21 16:40:37	Carl	so if the ssno matches basically just replace contact information or something?
+2021-04-21 16:41:15	Carl	because I just tried with myselft and the website didn't complain so Im just thinking what is the easiest and best sollution to that
+2021-04-21 21:47:43	russ	I guess there are a few different ways to do it - the easiest would just be to allow "extra" group IDs to be passed, so you apply to one group as normal (the API has to authenticate against one group ID) but then we allow another parameter like "group_ids" and we just add them to the waiting list of all of them.
+2021-04-21 21:47:43		Unless you mean you want them to go to each group individually and apply, in which case I guess we should be able to handle that
+2021-04-27 09:27:00	Carl	@russ when can you do the next update? our new website is live (edited)
+2021-04-27 09:36:39	russ	The urgent issue is already deployed. The rest is up to you if you've used it? (3.69)
+2021-04-27 09:37:11	Carl	ok then its no stress :slightly_smiling_face:
+2021-04-27 09:37:27	Carl	I'll have a look at all the issues
+2021-04-27 09:43:20	Carl	@russ Im trying to add 3375853 to another group. Is there some kind of delay? Or should it work immediatly?
+2021-04-27 09:43:44	russ	Via the API? (edited)
+2021-04-27 09:43:49	Carl	yes
+2021-04-27 09:43:58	Carl	https://www.scouterna.se/hitta-scoutkar/stockholms-lan/stockholms-kommun/adolf-fredriks-scoutkar/
+2021-04-27 09:44:15	russ	Should be immediate, do you get any error messages or anything?
+2021-04-27 09:44:31	Carl	dont't know the website doesn't show
+2021-04-27 10:02:27	Carl	ok i think it's somehow something is wrong with the website (edited)
+2021-04-27 10:21:41	Carl	another question is multiple registration only allowed through API or does it work tith the registration form as well?
+2021-04-27 11:25:06	Carl	@russ which are the codes for genders? They have removed the field for some reason so just want to know before I answer them
+2021-04-27 12:08:22	russ	https://teamscoutnet.slack.com/archives/G01LL57D9M1/p1618310357000500?thread_ts=1618233750.003800&cid=G01LL57D9M1
+2021-04-27 12:08:22		| russ: const SEX_UNKNOWN     = 0;
+2021-04-27 12:08:22		| const SEX_MALE                = 1;
+2021-04-27 12:08:22		| const SEX_FEMALE            = 2;
+2021-04-27 12:08:22		| From a thread in #scouterna | Apr 13, 2021
+2021-04-27 12:09:40	russ	Refer to discussion - "Other" needs to be added, and possibly migrated in the database, because currently "unknown" is translated as "Other" so that's what people expect it to be that have set it via the UI
+2021-04-27 12:11:14	russ	Basically how it is today:
+2021-04-27 12:11:14		1 - Male
+2021-04-27 12:11:14		2 - Female
+2021-04-27 12:11:14		x - Other
+2021-04-27 12:11:14		Where "x" is _any other value_
+2021-04-27 12:11:42	russ	So we just need to decide. It's probably best if "other" is 3 and "Unknown" is 0
+2021-04-27 12:11:52	russ	Since "unknown" is more of an "empty" choice
+2021-04-27 12:11:55	Carl	Yes sounds good! [:+1::skin-tone-2:1]
+2021-04-27 12:29:58	russ	Alright, it's updated. Have done it now otherwise we might mistakenly convert some "unknown" to "other" later [:+1:1]
+2021-04-27 13:51:21	Carl	3291892 tried the new registration form (API) on himself and it moved him from active membership to waiting list
+2021-04-27 13:55:33	russ	Whaaa... I thought I'd tested that but come to think of it I may have tested how it affects group A membership when you are register from group B... Not if you apply to the same group twice
+2021-04-27 13:56:08	Carl	should I reopen the ticket? :stuck_out_tongue:
+2021-04-27 13:56:32	Carl	even better he then rejected his own membership [:+1::skin-tone-2:1 :muppet_fozzie:1]
+2021-04-28 16:13:20	russ	Could be part of the address report to show coordinates? Or I can just dig them out for you...
+2021-04-28 16:13:52	Carl	if it's not to hard (too long time) it could be a one time thing?
+2021-04-28 16:25:24	russ	Sure
+2021-04-28 16:40:12	russ	I only get 20 group addresses, are there others you are thinking about?
+2021-04-28 16:40:26	Carl	it might be correct
+2021-04-28 16:40:44	Carl	i just subtracted the data from our new website
+2021-04-28 16:41:25	Carl	607-578= 29
+2021-04-28 16:41:25		https://www.scouterna.se/hitta-scoutkar/
+2021-04-28 16:42:17	russ	2 districts and 8 projects too
+2021-04-28 16:42:36	Carl	send me what you got :slightly_smiling_face:
+2021-04-28 16:42:48	russ	Are they using a specific address type, do you know?
+2021-04-28 16:43:06	Carl	no but it could be groups with multiple addresses maybe?
+2021-04-28 16:44:41	russ	Yeah that's probably it
+2021-04-28 16:45:14	Carl	or some ghosts on the website
+2021-04-28 16:45:32	Carl	our defintition of sync wasn't the same as the web agencys
+2021-04-28 16:45:51	russ	```82161492    Länghems scoutkår
+2021-04-28 16:45:51		920    Kopparbostiftelsen
+2021-04-28 16:45:51		23242    Teckomatorps Scoutkår
+2021-04-28 16:45:51		2024    Västerhaninge Sjöscoutkår
+2021-04-28 16:45:51		3029    Bollstanäs Scoutkår
+2021-04-28 16:45:51		13339    Norra Smålands Scoutdistriktskår
+2021-04-28 16:45:51		23311    Hjärnarps Scoutkår
+2021-04-28 16:45:51		3009    Jakobsbergs Scoutkår
+2021-04-28 16:45:51		992    Scouternas kansli
+2021-04-28 16:45:51		4005    Hallstaviks Scoutkår
+2021-04-28 16:45:51		16004    Sjöscoutkåren af Chapman
+2021-04-28 16:45:51		43019    Malmaberg - Rudbeckius scoutkår
+2021-04-28 16:45:51		3020    Sundbybergs Scoutkår
+2021-04-28 16:45:51		3024    Upplands Väsby Scoutkår
+2021-04-28 16:45:51		44422    Bjursås Scoutkår
+2021-04-28 16:45:51		22236    Burlöv Scoutkår
+2021-04-28 16:45:51		3013    Rosersbergs Scoutkår
+2021-04-28 16:45:51		53024    Bergeforsens scoutkår
+2021-04-28 16:45:51		33113    Gäsene Scoutkår
+2021-04-28 16:45:51		15115    Equmenia Toarp```
+2021-04-28 16:45:51		How do you want the list? Will you be contacting them, or fixing them?
+2021-04-28 16:45:54	Carl	so at the moment we need to manually remove groups, projects etc from the website. exactly what we wanted to avoid
+2021-04-28 16:46:03	Carl	I will fix them myself
+2021-04-28 16:46:14	russ	Fix the addresses?
+2021-04-28 16:46:19	Carl	yes
+2021-04-28 16:48:38	russ	https://scoutnet.se/organisation/group/1244/edit/address/19737
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/15214/edit/address/1341305
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/14769/edit/address/1099018
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/815/edit/address/18838
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/818/edit/address/18844
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/1311/edit/address/19875
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/948/edit/address/19118
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/829/edit/address/18870
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/1397/edit/address/20049
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/1073/edit/address/19378
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/1287/edit/address/19827
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/833/edit/address/18879
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/824/edit/address/18859
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/1080/edit/address/19392
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/773/edit/address/1166755
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/825/edit/address/1166997
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/1359/edit/address/1167150
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/927/edit/address/1182374
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/14814/edit/address/1194573
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/14840/edit/address/1194599
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/14824/edit/address/1194687
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/899/edit/address/19017
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/4539/edit/address/1201555
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/975/edit/address/1220261
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/14928/edit/address/1243437
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/1027/edit/address/19283
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/15115/edit/address/1265943
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/15198/edit/address/1320207
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/788/edit/address/18782
+2021-04-28 16:48:38		https://scouterna.se/organisation/group/1244/edit/address/19737 ( )https://scoutnet.se/organisation/group/1153/edit/address/1360849 (edited)
+2021-04-28 16:49:37	russ	Districts
+2021-04-28 16:49:37		https://scoutnet.se/organisation/district/713/edit/address/18638
+2021-04-28 16:49:37		https://scoutnet.se/organisation/district/703/edit/address/1356678 (edited)
+2021-04-28 16:52:21	russ	Projects if you want those too:
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/780/edit/address/1322926
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/844/edit/address/1327507
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/845/edit/address/1327512
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/447/edit/address/1307638
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/1293/edit/address/1345024
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/1295/edit/address/1346105
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/1460/edit/address/1358293
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/1460/edit/address/1358294
+2021-04-28 16:52:21		 https://scoutnet.se/organisation/project/1556/edit/address/1360842 (edited)
+2021-04-28 16:52:43	Carl	thank you! [:+1::skin-tone-2:1]
+2021-04-28 16:53:44	russ	Oh haha wrong url... should of course be scoutnet not scouterna... whoops
+2021-04-28 16:53:53	Carl	i fixed that :wink: [:+1::skin-tone-2:1]
+2021-04-29 17:12:33	Carl	@russ On the corps we can give them a corps number. Couldn't we change so tha API gives that number instead? (edited)
+2021-04-29 17:47:12	russ	Not sure I follow... Corps numbers are fixed when the corps is created, like 14 for Equmenia... Or do you mean something else?
+2021-04-29 17:47:31	Carl	https://scoutnet.se/organisation/edit/corps/15
+2021-04-29 17:47:31		*Samverkans org. nr.*
+2021-04-29 17:59:01	russ	Ok, but what's that got to do with the API?
+2021-04-29 17:59:30	russ	That's just an editable value, there's no special logic behind it
+2021-04-29 17:59:43	Carl	in the group map api we have a code for which corps a group belong to. we use it to show the corps logo on the new site
+2021-04-29 18:00:13	Carl	for some reason it doesnt like 14 and 15 and just says that the group belongs to KFUM Sverige
+2021-04-29 18:04:17	russ	That must be the people who made the map just using the wrong values I guess... It's not something we can "fix" really... If I check the output for the map API, I can see for example that Alby Scoutkår is in corps 15, and the very same API output has this:
+2021-04-29 18:04:17		```"corps": {
+2021-04-29 18:04:17		            "2": {
+2021-04-29 18:04:17		                "id": 2,
+2021-04-29 18:04:17		                "name": "Fr\u00e4lsningsarm\u00e9ns Scouter"
+2021-04-29 18:04:17		            },
+2021-04-29 18:04:17		            "15": {
+2021-04-29 18:04:17		                "id": 15,
+2021-04-29 18:04:17		                "name": "Nykterhetsr\u00f6relsens Scoutf\u00f6rbund"
+2021-04-29 18:04:17		            },
+2021-04-29 18:04:17		            "3": {
+2021-04-29 18:04:17		                "id": 3,
+2021-04-29 18:04:17		                "name": "Salt Scout"
+2021-04-29 18:04:17		            }```
+2021-04-29 18:04:57	russ	So I don't know how they are connecting 14 and 15 to KFUM Sverige... They must have made a manual list perhaps?
+2021-04-29 18:05:18	Carl	maybe thanks anyway :slightly_smiling_face:
+2021-04-29 21:28:13	Carl	Are the names of invoice export file changed because of a reason?
+2021-04-29 21:28:13		I just to be date and time and now it's Unix(?) time
+2021-04-29 21:28:13		https://s1.test.custard.no/pdf/fetchgenerated
+2021-04-29 21:29:14	russ	Not intentional no - the whole thing got moved to a different exporter (it uses the same one as the normal xls invoices now) so I guess that other one uses a different file name format
+2021-04-29 21:29:59	russ	Quick enough to change to what you want..
+2021-04-29 21:31:54	russ	xls has always been that way, it was just the reminders xls that had the other format
+2021-04-29 21:34:03	Carl	maybe it's good with ordinaty dates and time?
+2021-04-29 21:34:06	Carl	I can put it in a ticket
+2021-04-29 21:34:40	russ	Sure
+2021-04-29 22:00:43	Carl	Does Norway use Nets for their invoicing?
+2021-04-29 22:11:04	russ	For eFaktura + AvtaleGiro yes
+2021-04-29 22:11:12	Carl	hum interesting
+2021-04-29 22:11:23	Carl	so I guess they have all the api things in place already?
+2021-04-29 22:11:34	Carl	we use Nets for our scoutshop and some other things
+2021-04-29 22:11:53	russ	Yep, but I think we looked at this and NETS don't offer those things in Sweden?
+2021-04-29 22:11:58	Carl	okok
+2021-04-29 22:12:18	Carl	We can take another look later :slightly_smiling_face:
+2021-05-28 15:03:38	Carl	@russ did you do something about groups that are removed on the api. How does it work? Do we hanve an example?
+2021-05-28 15:03:38	Carl	@russ did you do something about groups that are removed on the api. How does it work? Do we hanve an example?
+2021-05-28 16:28:07	russ	Not sure if it's released? Think so... It only works when using updated_since. Basically it will show the group is and the value null, if that group was deleted since the last update.
+2021-05-28 16:53:53	Carl	ok so if I try with updated since new years I should find something?
+2021-05-28 16:57:51	russ	If there's a deleted group since new year then yeah
+2021-05-28 17:00:50	Carl	I search for 14856 in the APi and can't find it. The group was closed this year.
+2021-05-28 23:14:04	russ	Ok - I added the stuff to handle deleted groups, but that group isn't deleted, it has just had its status changed from "active" to "closed". I guess we need to treat those the same way...
+2021-06-03 10:59:18	Carl	@russ I got a questions regarding reports and cache. What do you think?
+2021-06-03 10:59:18		tt hämta listan över våra medlemmar tar över 35 sekunder - det
+2021-06-03 10:59:18		verkar inte rimligt. Att hämta våra 69 epostlistor tar över 10
+2021-06-03 10:59:18		sekunder. Att däremot hämta alla medlemmar i en lista tar blott 1
+2021-06-03 10:59:18		sekund, vilket är konstigt eftersom det borde vara en mer komplicerad
+2021-06-03 10:59:18		operation. Är det något fel som är trasigt i systemet?
+2021-06-03 10:59:18		Har ni föresten övervägt att aktivera en cache på scoutnet? Många
+2021-06-03 10:59:18		sökningar går väldigt långsamt och går man tillbaka till samma sida
+2021-06-03 10:59:18		några sekunder senare så verkar den göra om hela jobbet en gång
+2021-06-03 10:59:18		till. En cache på bara 15-30 s på vanlig data hade gjort stor
+2021-06-03 10:59:18		skillnad.
+2021-06-03 13:27:42	russ	There are a lot of layers to this - we do cache, in fact there are several different types of cache in use, but it's not always easy or practical to cache certain things. The biggest problem with caching is invalidation when important things change. Having a 30 second limit is fine in a lot of cases, things like info pages (project home page) etc. but when it comes to member lists, if someone edits (for example) the troop a member is in, would they know they have to wait 30 seconds before it changes in the list? No, so we have to make sure we clear that cache entry if something changes - and that includes secondary effects too, like if admin changes the name of a troop... etc.
+2021-06-03 13:27:42		There would also be no point caching anything downloadable like reports, as most people will expect that data to be "fresh" and willing to wait a few extra seconds for that.
+2021-06-03 13:27:42		I suspect the list he's referring to is one of the displayed lists on the group pages, and if he is clicking back and forth this would be frustrating if it takes 30 seconds each time for sure. The best thing here is for us to look at the specific list he means, and optimise it - there's normally something we can do with the query, or maybe some data that is loaded that doesn't need to be there. I just checked Sollentuna Södra and their list with 659 members loaded in a couple of seconds, so I'd be interested to know exactly which list they are referring to. Maybe it is a downloaded report, but then why is he downloading a member list so often that 30 seconds is a problem?
+2021-06-03 13:27:42		"Att hämta våra 69 epostlistor tar över 10 sekunder" - I don't even understand this one, where is this list? The list of mailing lists on the group page is loaded along with the group, so I don't understand where this 10 second wait is calculated?
+2021-06-03 13:27:42		Bottom line - let us know what the scenario is here, I think this bit is most important: "går man tillbaka till samma sida några sekunder senare så verkar den göra om hela jobbet en gång till" - if we know where this is that he is experiencing it, we can look at that specifically - there could well be a bad query or a specific member that is causing wierdness. Most likely it's the group page itself that is causing problems, as this does do a bit "too much" every time it loads. https://ticket.custard.no/issues/28096
+2021-06-03 13:27:42		| CustardLabs Projects
+2021-06-03 13:27:42		| Redmine
+2021-06-03 15:36:29	mrmanner	For some of those pages, I think the url and tab structure adds to this feeling of slowness. Since the different tabs on e.g group pages aren’t separate pages, the back button in the browser doesn’t work, thus sending the user on an extra click journey to get back to the specific tab they had open. 
+2021-06-03 15:36:29		Would it make sense to explore 
+2021-06-03 15:36:29		a) storing the tab as part of the url, and updating `window.location` when switching tabs, and 
+2021-06-03 15:36:29		b) caching/storing the state for some large and slow tables client-side, with an update button/overscroll to update/something? So when you accidentally switch tabs and switch back, you can reuse the old table that was already downloaded. 
+2021-06-03 15:49:37	russ	We could intercept the back button to do the tab switching, if that's where the problem is coming from
+2021-06-03 15:51:03	Carl	I think it might be part of the solution!
+2021-06-03 15:51:06	russ	We already "keep" the data when you navigate by clicking the tabs. If a form is submitted (any form) then a flag is set to say something might have changed, so the next click will trigger a refresh (edited) [:+1::skin-tone-3:1]
+2021-06-03 15:51:57	russ	This only works when clicking though... The back button doesn't work at the deeper levels in all cases, because the anchor # is the same, so it goes too far back
+2021-06-03 15:52:53	russ	Easiest is just to get an example, and we can address it, probably quite easily to be honest...
+2021-06-04 12:18:02	mrmanner	@Carl This is an interesting question: Getting mailinglist filters for Police check and courses. I think we may have an ancient ticket about those already? :thinking_face:
+2021-06-04 12:18:02		https://www.facebook.com/groups/scouternasetjanster/permalink/1136423653501792/?__cft__[0]=AZXsFwdt3xlegbpRXu5E5ikJth0vytjXtVEhPIgDr0n85N3svGIP0g49jRbtdty8Lvgtqsi-3uf65x1XL1Vyexkt7XpV7pjHzGigUuIV9yCDS2wHK-eZlNxyy4hggYWTeyasJEGXp9JtZ4qdYhiPwEJAfQq3coc7E_TZ_6XrNHFCOl8nddOGYtBF_3bFF7T4WkE&__tn__=%2CO%2CP-R (https://www.facebook.com/groups/scouternasetjanster/permalink/1136423653501792/?__cft[…]Qq3coc7E_TZ_6XrNHFCOl8nddOGYtBF_3bFF7T4WkE&__tn__=%2CO%2CP-R)
+2021-06-04 12:18:02		| Scouternas e-tjänster : Hej! Nu när det finns ett sätt att registrera att vi sett registerutdrag direkt i Scoutnet kan vi äntligen pensionera vårt gamla egenbyggda system
+2021-06-04 12:18:02		| Hej! Nu när det finns ett sätt att registrera att vi sett registerutdrag direkt i Scoutnet kan vi äntligen pensionera vårt gamla egenbyggda system. Men för att kunna hålla koll på våra ledare behöver... [:+1::skin-tone-2:1]
+2021-06-07 14:49:54	Carl	Great job with all fixes today! Do you think you will finish 29946 soon? If so it would be great to do a release :slightly_smiling_face:
+2021-06-07 15:00:31	russ	Yeah I'm looking at it [:+1:1]
+2021-06-07 16:14:24	Carl	Oh right we can deploy the widget as well
+2021-06-07 16:15:34	russ	Right-ho
+2021-06-07 16:16:54	Carl	Beautiful!
+2021-06-08 17:27:18	Carl	Here are som examples that I got regarding load times.
+2021-06-08 17:27:18		Hej!
+2021-06-08 17:27:18		Här är några exempel på långsamma frågor:
+2021-06-08 17:27:18		GET https://www.scoutnet.se/organisation/group/home/14837, 10 s GET https://www.scoutnet.se/organisation/group/home/14837#viewgroup_tabmenu_tab_allmembers_pane,
+2021-06-08 17:27:18		17 s
+2021-06-08 17:27:18		.. sist, men inte minst:
+2021-06-08 17:27:18		GET https://www.scoutnet.se, 12 s
+2021-06-08 17:29:05	russ	Yeah that group page has a slowdown somewhere
+2021-06-08 17:30:00	russ	The second example is probably linked to his user profile (roles/groups/notifications/invoices/etc) because http://scoutnet.se (scoutnet.se) loads pretty fast for me, but then I don't have a lot of "activity" on my profile
+2021-06-08 17:32:21	russ	Looks like mailing list log queries that are causing most of the issues for that group page - could probably do something about that :slightly_smiling_face:
+2021-06-08 17:46:49	russ	I added a few database indexes that have significantly sped up that group page. Could probably squeeze a few more seconds out of it by reducing the number of database queries, or loading more things on-demand, so just throw a ticket in I guess.
+2021-06-08 17:47:18	russ	But for now they might be happy that 17s has gone down to more like 5s :smile:
+2021-06-08 17:47:30	russ	https://thedailywtf.com/articles/The-Speedup-Loop
+2021-06-14 16:54:38	Carl	@russ Do you know why there is a X in the beginning of some group's name in reports?
+2021-06-14 16:56:52	russ	Inactive maybe?
+2021-06-14 16:57:20	Carl	no distritct membership is otherwise my thought
+2021-06-14 17:20:40	russ	If it's before the group name then it is something we have specifically put there
+2021-06-14 17:21:59	russ	In the paid members report it indicates an inactive group... I guess they are in the report because they have paid members, but it's showing that the group is now inactive
+2021-06-14 17:22:08	russ	```$groupName = $group["status"] == Group::STATUS_ACTIVE ? $group["name"] : substr(("X " . $group["name"]), 0, 30);```
+2021-06-16 15:42:55	Carl	@russ can you see if 3371883 registrered interest to Viggbyholms (again) today?
+2021-06-16 15:45:25	russ	We don't specifically log the attempt, so it's quite hard to tell if nothing actually changes in their (waiting) membership record - but I can see that the record was "updated" at 2021-06-16 10:00:25
+2021-06-16 15:46:02	Carl	ok because they registered with another group today but Viggbyholm got an email and thinks its because of the other
+2021-06-16 15:46:11	Carl	I think they registered to two groups today
+2021-06-16 15:46:59	russ	Ah, hmm
+2021-06-16 15:47:23	russ	I can't see any activity on the Viggbyholms record
+2021-06-16 15:48:06	russ	But it's still possible they filled out the form again... If they fill in the exact same details as last time then the email will trigger but nothing else will change
+2021-06-16 15:49:26	russ	It's an interesting scenario - on one hand, we could block the mail and send back an error "This group has already been notified, and you are on their waiting list". On the other hand, it could be handy in some cases to "ping" the group to say "hey, I'm waiting"
+2021-06-16 15:49:48	Carl	yep (edited)
+2021-06-16 15:50:38	russ	I guess in 99.9% of cases it should be enough for the group to just be in touch with them to say "We know you are waiting, chill"
+2021-06-16 15:51:08	Carl	yep
+2021-06-16 15:51:10	Carl	:stuck_out_tongue:
+2021-07-01 12:42:10	Carl	Ok we checked and for an Example Blå Hajken 2020 which sold clothes everything just booked on the account under Inställningar för automatisk bokföring
+2021-07-01 12:42:10		 https://www.scoutnet.se/activities/view/998
+2021-07-01 12:43:26	russ	Ok, then you can change that yourself? Or do you want to split the participation fee and the extra stuff?
+2021-07-01 12:43:42	Carl	yeah exactly
+2021-07-01 12:43:55	Carl	the participant fees is under one account but clothes and transport are two others
+2021-07-01 12:44:14	Carl	If there is no quick fix I will invoice them as is and bookeping will manually change them
+2021-07-01 12:44:19	Carl	and we can add a ticket for this
+2021-07-01 12:45:24	russ	There might be a quick fix to hard code ask the extra purchases with a different number, just in the Hogia export, but it's a bit messy
+2021-07-01 12:46:04	russ	Another way would be to change it in the export files before sending it to Hogia in the first place...
+2021-07-01 12:46:14	russ	But that requires manual work
+2021-07-01 12:46:29	russ	So depends if that is easier than doing it in Hogia after
+2021-07-01 12:46:56	Carl	how long time do you think it would take to do that
+2021-07-01 12:49:17	russ	Change the files? I don't know, depends how many things to change... Would probably just send them to you or something
+2021-07-01 12:51:36	Carl	no i mean the hard code thinkg
+2021-07-01 13:00:42	russ	Oh, I'd have to check the exporter to see if it even "knows" what type of fee it is. It might be dumb invoice lines at that point, but it should be possible to join and look at the original fee... I can have a look, but time is limited today. Could definitely do it this evening... Not so easy with kids holidays and stuff :tired_face:
+2021-07-01 13:00:56	Carl	got it
+2021-07-01 13:01:10	Carl	how about the manual file thing? is that easier?
+2021-07-01 13:01:28	Carl	I would like to invoice today and if you don't have time we will manually change the bookeping on our end
+2021-07-01 13:11:46	russ	Ok, have had a look - should be able to do the hard coded thing... Obviously a bit untested though :smile:
+2021-07-01 13:12:06	Carl	yeah we are aware :stuck_out_tongue:
+2021-07-01 13:18:13	russ	Which number should change, and to what?
+2021-07-01 13:20:49	russ	Although... now I'm confused again. This is Hogia export right? The code here doesn't support project invoices... maybe I'm looking in the wrong place... Do you export project invoices to Hogia?!
+2021-07-01 13:21:18	Carl	yes
+2021-07-01 13:21:33	russ	Yes of course... it comes from the settings... argh where is it
+2021-07-01 13:24:30	russ	Is this for incoming payments, like when someone pays their project fee?
+2021-07-01 13:24:38	Carl	yes
+2021-07-01 13:24:54	russ	That's where I'm going wrong... I knew we didn't export the other way
+2021-07-01 13:26:03	russ	But now I'm wondering do we even split the transaction... like if someone pays their project invoice, does Hogia normally get an entry for the different products?
+2021-07-01 13:26:11	russ	Isn't it all just combined in one`?
+2021-07-01 13:26:25	Carl	I think it might be just combined?
+2021-07-01 13:27:10	russ	So for this to work we need to first split them?
+2021-07-01 13:27:27	Carl	I guess so then it's a bigger job I guess?
+2021-07-01 13:27:30	russ	Ohyes
+2021-07-01 13:28:02	russ	I thought I could just look at the transaction type and change the number - but since it's just one transaction for the entire invoice, that doesn't work
+2021-07-01 13:28:25	russ	We would need to add an entry for each sub-transaction (invoice line) rather than an entry for the entire invoice
+2021-07-01 13:29:01	russ	Or at least one entry per product code (could combine them - so all "transport" types go under one entry, for example)
+2021-07-01 13:29:19	Carl	Yes. I'll put it in a ticket! :slightly_smiling_face:
+2021-07-01 13:29:40	russ	So we can't even do it the manual way by editing the file I'm afraid, because the file will just have one entry per invoice - and it would perhaps be scary to split those up manually
+2021-07-01 13:29:50	Carl	yep
+2021-07-01 14:05:54	Carl	can you restart tasks on S1? they are stuck
+2021-07-01 18:01:16	russ	Sorry, it's done now
+2021-07-01 20:51:36	Carl	No worries! Thank you!
+2021-07-09 13:48:07	Carl	@russ Do you have time to discuss API-connections to our new LMS on tuesday 13:00-14:00?
+2021-08-27 09:24:06	Carl	@russ 3216616 email is unconfirmed. Is that something old or new? can you see?
+2021-08-27 09:33:34	Carl	@russ Any idea how 3382485 maneged to register without providing any info? :stuck_out_tongue:
+2021-08-27 14:16:47	russ	3216616 changed their email address 2021-08-26 20:39:57 (yesterday) so they just haven't confirmed it, if it shows unverified
+2021-08-27 14:24:28	russ	3382485 is a bit trickier to diagnose... My guess is that they registered twice, maybe due to some error or confusion. The second time, since the ssno matched, the system cleared their personal data - but then there was likely an error on the form so the new data they submitted was not saved...
+2021-08-27 14:24:28	    	The new "event" table shows this at least: registered, new membership, pending list, new membership, pending list which strongly suggests they registered twice.
+2021-08-27 14:24:28	    	This is likely to be a rare occurrence, but should probably be handled somehow - like if the form fails then the original data should be restored...
+2021-08-27 14:48:25	Carl	Ok thanks!
+2021-08-27 14:55:47	Carl	And we don't have the old info on 3382485?
+2021-08-27 14:58:15	Carl	@russ Is it possible to see in the log any failed registration attemps? (edited)
+2021-08-27 15:13:58	russ	Yes we have the old info
+2021-08-27 15:15:26	russ	I know what happened - they tried to register twice (for some reason) but now of course we return an error if they are already registered in the group, so on the second attempt, we blocked the info from being re-submitted
+2021-08-27 15:16:02	russ	I've released a fix on s1, don't have time to test it now. I can "un-delete" all the info for 3382485 if you like, save someone some work... [:+1:1]
+2021-08-27 15:18:08	russ	Ah she registered for two groups... That explains the second registration :slightly_smiling_face:
+2021-08-27 15:21:37	russ	I think I've restored the missing stuff now...
+2021-08-27 15:21:46	Carl	yes thank you
+2021-08-27 15:22:11	Carl	I have another question about registration do we log faile attempts or do you need something to search for?
+2021-08-27 15:22:39	russ	Depends what failed really - if the form never gets submitted then there is nothing in the database
+2021-08-27 15:23:10	russ	The only trace we have is maybe in the server logs, that _someone_ visited the form, and submitted it
+2021-08-27 15:24:25	russ	Could be good with a registration log table then we could log everything, including those that didn't make it through (with maybe some limited copy of the data they tried to submit)
+2021-08-27 15:24:37	Carl	yeah I think so!
+2021-08-27 15:24:52	Carl	member registration is kind of like our primary thing
+2021-08-27 15:25:22	russ	Yeah we did add a bunch of logging already, but it only logs when someone actually gets through the first step
+2021-08-27 09:24:06	Carl	@russ 3216616 email is unconfirmed. Is that something old or new? can you see?
+2021-08-27 09:33:34	Carl	@russ Any idea how 3382485 maneged to register without providing any info? :stuck_out_tongue:
+2021-08-27 14:16:47	russ	3216616 changed their email address 2021-08-26 20:39:57 (yesterday) so they just haven't confirmed it, if it shows unverified
+2021-08-27 14:24:28	russ	3382485 is a bit trickier to diagnose... My guess is that they registered twice, maybe due to some error or confusion. The second time, since the ssno matched, the system cleared their personal data - but then there was likely an error on the form so the new data they submitted was not saved...
+2021-08-27 14:24:28	    	The new "event" table shows this at least: registered, new membership, pending list, new membership, pending list which strongly suggests they registered twice.
+2021-08-27 14:24:28	    	This is likely to be a rare occurrence, but should probably be handled somehow - like if the form fails then the original data should be restored...
+2021-08-27 14:48:25	Carl	Ok thanks!
+2021-08-27 14:55:47	Carl	And we don't have the old info on 3382485?
+2021-08-27 14:58:15	Carl	@russ Is it possible to see in the log any failed registration attemps? (edited)
+2021-08-27 15:13:58	russ	Yes we have the old info
+2021-08-27 15:15:26	russ	I know what happened - they tried to register twice (for some reason) but now of course we return an error if they are already registered in the group, so on the second attempt, we blocked the info from being re-submitted
+2021-08-27 15:16:02	russ	I've released a fix on s1, don't have time to test it now. I can "un-delete" all the info for 3382485 if you like, save someone some work... [:+1:1]
+2021-08-27 15:18:08	russ	Ah she registered for two groups... That explains the second registration :slightly_smiling_face:
+2021-08-27 15:21:37	russ	I think I've restored the missing stuff now...
+2021-08-27 15:21:46	Carl	yes thank you
+2021-08-27 15:22:11	Carl	I have another question about registration do we log faile attempts or do you need something to search for?
+2021-08-27 15:22:39	russ	Depends what failed really - if the form never gets submitted then there is nothing in the database
+2021-08-27 15:23:10	russ	The only trace we have is maybe in the server logs, that _someone_ visited the form, and submitted it
+2021-08-27 15:24:25	russ	Could be good with a registration log table then we could log everything, including those that didn't make it through (with maybe some limited copy of the data they tried to submit)
+2021-08-27 15:24:37	Carl	yeah I think so!
+2021-08-27 15:24:52	Carl	member registration is kind of like our primary thing
+2021-08-27 15:25:22	russ	Yeah we did add a bunch of logging already, but it only logs when someone actually gets through the first step
+2021-08-27 09:24:06	Carl	@russ 3216616 email is unconfirmed. Is that something old or new? can you see?
+2021-08-27 09:33:34	Carl	@russ Any idea how 3382485 maneged to register without providing any info? :stuck_out_tongue:
+2021-08-27 14:16:47	russ	3216616 changed their email address 2021-08-26 20:39:57 (yesterday) so they just haven't confirmed it, if it shows unverified
+2021-08-27 14:24:28	russ	3382485 is a bit trickier to diagnose... My guess is that they registered twice, maybe due to some error or confusion. The second time, since the ssno matched, the system cleared their personal data - but then there was likely an error on the form so the new data they submitted was not saved...
+2021-08-27 14:24:28	    	The new "event" table shows this at least: registered, new membership, pending list, new membership, pending list which strongly suggests they registered twice.
+2021-08-27 14:24:28	    	This is likely to be a rare occurrence, but should probably be handled somehow - like if the form fails then the original data should be restored...
+2021-08-27 14:48:25	Carl	Ok thanks!
+2021-08-27 14:55:47	Carl	And we don't have the old info on 3382485?
+2021-08-27 14:58:15	Carl	@russ Is it possible to see in the log any failed registration attemps? (edited)
+2021-08-27 15:13:58	russ	Yes we have the old info
+2021-08-27 15:15:26	russ	I know what happened - they tried to register twice (for some reason) but now of course we return an error if they are already registered in the group, so on the second attempt, we blocked the info from being re-submitted
+2021-08-27 15:16:02	russ	I've released a fix on s1, don't have time to test it now. I can "un-delete" all the info for 3382485 if you like, save someone some work... [:+1:1]
+2021-08-27 15:18:08	russ	Ah she registered for two groups... That explains the second registration :slightly_smiling_face:
+2021-08-27 15:21:37	russ	I think I've restored the missing stuff now...
+2021-08-27 15:21:46	Carl	yes thank you
+2021-08-27 15:22:11	Carl	I have another question about registration do we log faile attempts or do you need something to search for?
+2021-08-27 15:22:39	russ	Depends what failed really - if the form never gets submitted then there is nothing in the database
+2021-08-27 15:23:10	russ	The only trace we have is maybe in the server logs, that _someone_ visited the form, and submitted it
+2021-08-27 15:24:25	russ	Could be good with a registration log table then we could log everything, including those that didn't make it through (with maybe some limited copy of the data they tried to submit)
+2021-08-27 15:24:37	Carl	yeah I think so!
+2021-08-27 15:24:52	Carl	member registration is kind of like our primary thing
+2021-08-27 15:25:22	russ	Yeah we did add a bunch of logging already, but it only logs when someone actually gets through the first step
+2021-08-31 09:33:09	Carl	@russ Can you please start the task Process cancellations
+2021-08-31 13:34:10	russ	Is that the one for removing pending members (waiting to be deleted)?
+2021-08-31 13:34:24	Carl	yeah but I think it started itself :slightly_smiling_face:
+2021-08-31 13:34:37	russ	Yes, it's on the task scheduler, here: https://scoutnet.se/admin/task_scheduler/list/scheduled
+2021-08-31 13:34:49	russ	Runs at 01:30 every day
+2021-08-31 13:34:55	Carl	yes I turned that on today but it ran a little bit later this morning right? (edited)
+2021-08-31 13:35:18	russ	Yeah if you turned it on today then it will have run the first time straight away, since it was "late"
+2021-08-31 13:35:27	Carl	great :slightly_smiling_face:
+2021-08-31 13:35:39	russ	Next time it will run at 0130
+2021-08-31 13:35:48	Carl	i'm gonna do group invoicing today or tomorrow and the big invoicing tomorrow
+2021-08-31 13:35:58	russ	:grimacing: [:smile:1]
+2021-08-31 13:36:15	Carl	:partying_face:
+2021-09-01 10:35:48	Carl	@russ I have started the big invoicing :tada: [:grimacing:1]
+2021-09-01 13:22:12	Carl	ok so it maneged to create an itella file with only 1000 invoices
+2021-09-01 13:22:22	Carl	can you please take a look at both problems?
+2021-09-01 13:22:24	Carl	@russ
+2021-09-01 13:23:12	russ	Could be because of the earlier task that stopped maybe... Normally it just keeps going and appends to the same file, 1000 at a time
+2021-09-01 13:23:32	russ	Now the queue is quiet, I can upload the fix [:+1:1]
+2021-09-01 13:25:35	russ	At least the bit that takes the longest time is done... Just need to fix the export files
+2021-09-01 13:25:46	Carl	yeah should i do them again?
+2021-09-01 13:26:19	russ	Not yet... I'm not sure why the Itella one didn't continue, to be honest... Might be an idea to get a copy and test that here
+2021-09-01 13:26:43	Carl	I can create the group invoices xls file?
+2021-09-01 13:26:52	russ	Yes that you can try
+2021-09-01 13:40:19	russ	Alright, she's flying along now... [:+1:1]
+2021-09-01 13:40:34	Carl	thanks!
+2021-09-01 14:19:56	Carl	@russ I was under the impression that if I update a project template that the changes (permissions/hidden objects) would be updated on current projects. Am I wrong?
+2021-09-01 14:27:28	russ	Not sure any more... Originally it was just a copy, so later changes would not affect anything, but I think later we changed it so later changes would also take affect...
+2021-09-01 14:33:56	russ	Things like which fields are locked/hidden/required should update real-time I think. But other things that are copied, like name/description and initial values for things, or any registration forms, etc. will not update.
+2021-09-01 14:34:28	Carl	ok because I unlocked a couple of fields on one of the templates
+2021-09-01 14:34:39	Carl	https://scoutnet.se/activities/edit/project/1144
+2021-09-01 14:34:44	Carl	*Fakturan kan skickas till*
+2021-09-01 14:35:04	Carl	The one which invoice reciepents a participant can send their invoice to
+2021-09-01 14:35:29	Carl	But this projects doesn't show any of them in the drop down
+2021-09-01 14:35:29	    	https://scoutnet.se/activities/view/1700
+2021-09-01 14:38:42	russ	Ah yes this is one of those kinds of cases. The locked setting is inherited, but the actual values of who can pay the invoice, they are stored in the settings of the new project
+2021-09-01 14:39:12	russ	I would need to add some extra logic there, something like "if it changes to locked, then update all projects using this template, to this value"
+2021-09-01 14:39:49	Carl	mm the main thing is that the settings was hidden but on yes so my collegue was under the impression that the course registration would have the options in the drop down
+2021-09-01 14:39:57	russ	Or maybe I could do that in the new project itself... If locked, get value from template
+2021-09-01 14:40:14	russ	Hmm yes if it was "yes" when created that should be the case
+2021-09-01 14:42:01	russ	Looks like the value has been changed a few times in the template
+2021-09-01 14:42:12	russ	```     updated_at      | invoicable_bodies
+2021-09-01 14:42:12	    	---------------------+-------------------
+2021-09-01 14:42:12	    	 2020-02-13 10:22:10 |                15
+2021-09-01 14:42:12	    	 2020-02-13 10:22:11 |                15
+2021-09-01 14:42:12	    	 2020-02-13 10:22:44 |                 0
+2021-09-01 14:42:12	    	 2020-02-13 10:22:51 |                 0
+2021-09-01 14:42:12	    	 2020-07-14 14:29:36 |                 3
+2021-09-01 14:42:12	    	 2021-04-26 15:24:51 |                 3
+2021-09-01 14:42:12	    	 2021-05-25 16:10:57 |                 3
+2021-09-01 14:42:12	    	 2021-05-25 16:11:33 |                 3
+2021-09-01 14:42:12	    	 2021-06-30 16:54:45 |                 3
+2021-09-01 14:42:12	    	 2021-06-30 16:55:41 |                15
+2021-09-01 14:42:12	    	 2021-06-30 17:15:31 |                47
+2021-09-01 14:42:12	    	 2021-06-30 17:16:13 |                47
+2021-09-01 14:42:12	    	 2021-06-30 17:24:58 |                47
+2021-09-01 14:42:12	    	 2021-08-16 13:58:08 |                47
+2021-09-01 14:42:12	    	 2021-09-01 14:14:08 |                47
+2021-09-01 14:42:12	    	 2021-09-01 14:15:46 |                47```
+2021-09-01 14:42:12	    	 (edited)
+2021-09-01 14:43:58	russ	Although it does look like the value was 47 when the new project was created... Hmm, weird
+2021-09-01 14:44:24	Carl	Do you want me to create a ticket? :slightly_smiling_face:
+2021-09-01 14:45:11	russ	Yeah, I'd better test it... Something weird
+2021-09-01 14:45:16	russ	I've manually fixed 1700
+2021-09-01 14:54:14	Carl	Thank you! We found a couple of other courses with the same problem. I put them in a task ticket
+2021-09-01 15:53:06	russ	All the same options?
+2021-09-01 16:21:00	russ	Hmm having issues connecting... Is your host up to something?
+2021-09-01 16:36:14	Carl	Bor that i know of
+2021-09-01 16:38:15	russ	Can you access Scoutnet?
+2021-09-01 16:41:57	Carl	Yes
+2021-09-01 16:44:49	russ	Weird... must be a broken link somewhere between us and Sweden
+2021-09-01 16:45:27	russ	I can connect via 4G, but not fibre :smile: (edited)
+2021-09-01 18:18:06	Carl	ok I have the same problem from home.
+2021-09-01 18:18:20	Carl	Can't connect through fibre but 4g works fine :-S (edited)
+2021-09-01 18:18:40	russ	Ok then I'll stop trying to diagnose it... messing with router settings and stuff here
+2021-09-01 18:18:54	russ	Could be some DNS changes that haven't made it to all networks
+2021-09-01 18:26:03	Carl	Def DNS
+2021-09-01 18:26:09	Carl	works when i VPN to our work network
+2021-09-01 18:26:44	russ	Weird how it is both our home networks affected... Maybe they are a bit slower to refresh
+2021-09-01 18:26:58	Carl	yeah
+2021-09-01 18:36:00	Carl	@russ do you have any wildcards for term?
+2021-09-01 18:44:55	russ	You mean in general... or? (edited)
+2021-09-01 18:45:13	Carl	I mean in i just realised I sent out 50000+ invoices with the header
+2021-09-01 18:45:18	Carl	Medlemsavgift våren 2021
+2021-09-01 18:45:32	russ	Whoops
+2021-09-01 18:45:41	Carl	Yep. Im to tired at the moment
+2021-09-01 18:49:12	russ	Looks like you can use %term% or %invoice_term%
+2021-09-01 18:49:39	russ	You also have %billing_name% and %%billing_name%% (Prints the name in all caps) (edited)
+2021-09-01 19:04:36	Carl	say what :stuck_out_tongue: why aren't we using them???
+2021-09-01 19:04:41	Carl	what is the difference?
+2021-09-01 19:07:45	russ	You used it back in 2010 :stuck_out_tongue:
+2021-09-01 19:08:13	russ	%term% and %invoice_term% are the same
+2021-09-01 19:08:40	Carl	how does wild card works? are they everywhere in all fields in the system or on specific pages?
+2021-09-01 19:09:03	russ	No they are in specific places, because they have to be replaced in the code when the text is used
+2021-09-01 19:10:01	Carl	ok cool
+2021-09-01 19:10:16	Carl	I'll add them and hopefully this was the first and last time I did this :stuck_out_tongue:
+2021-09-01 19:10:23	russ	:smile:
+2021-09-01 19:11:38	Carl	what billing name? I the the members first name? Like Carl in my case?
+2021-09-01 19:12:02	russ	No it's the full name that appears on the invoice
+2021-09-01 19:12:29	russ	Who the invoice is officially "to"
+2021-09-01 19:12:50	russ	Could add a bunch more wildcards, but those are what are there now
+2021-09-01 20:54:18	russ	I think that could be possible, as long as we can easily find the right group when creating the invoice (and without hurting performance too much)
+2021-09-06 13:48:21	Carl	:stuck_out_tongue: and it's always when we want to send something that we find it :stuck_out_tongue:
+2021-09-06 13:49:19	Carl	@russ Can you see why 3373443  didnt get the family scout discount? Where they in the wrong troop or something?
+2021-09-27 11:34:52	Carl	@russ can you remove the last four digits in the ssno on 3335126 please [:+1::skin-tone-2:1 :heavy_check_mark:1]
+2021-09-27 11:54:45	Carl	@russ can you see how or who the contact fields on 3337334 was updated
+2021-09-27 12:43:32	russ	Anything specific to check? There are a lot of fields, and a lot of changes, most in August...
+2021-09-27 13:03:29	Carl	the parents info is wrong
+2021-09-27 13:03:46	Carl	Is it I who made the mistake or did something else happen?
+2021-09-27 13:34:10	Carl	@russ can you please remove the last digits in the ssno on 3356191
+2021-09-27 13:36:29	russ	It's only you that has changed anything as far as I can tell...
+2021-09-27 13:36:45	Carl	Ok I probably added the wrong info then somehow
+2021-09-27 13:37:11	russ	Wait hang on
+2021-09-27 13:37:29	russ	It's only you that has edited it... But it may have come in via api originally, let me check...
+2021-09-27 13:38:31	russ	Yes whoever entered those in the first place did so via API or public reg, because it was not someone who was logged in
+2021-09-27 13:40:20	russ	Looks like they were status "inactive" and then registered again, probably via public reg form, on 2021-08-19 23:37:11
+2021-09-27 13:41:48	Carl	hum strange
+2021-09-27 13:45:28	russ	The IP address has only ever been used for this one registration, so it's unlikely to be a leader or something that has done it - but weird if it was the member/parent and they entered wrong info
+2021-09-27 13:45:51	Carl	yeah I can be that they added relatives but wrote the wrong number or something [:+1::skin-tone-2:1]
+2021-09-29 11:18:26	Carl	oh when did she do it?
+2021-09-29 11:01:14	Carl	@russ can you see who added lgh 1203 on the street address on 3355543
+2021-09-29 11:17:37	russ	3365149
+2021-09-29 11:18:10	Carl	ok thanks!
+2021-09-29 11:18:26	Carl	oh when did she do it?
+2021-09-29 11:19:54	russ	updated_by |    updated_at     |     address_line1      
+2021-09-29 11:19:54	    	------------+---------------------+-------------------------
+2021-09-29 11:19:54	    	   1353354 | 2021-09-01 19:09:49 | Skogsbacken 16 lgh 1701
+2021-09-29 11:19:54	    	   1362960 | 2021-04-19 07:31:08 | Skogsbacken 16 lgh 1203
+2021-09-29 11:19:54	    	                    | 2020-03-08 12:11:11 | Skogsbacken 16
+2021-09-29 11:19:58	russ	April
+2021-09-29 14:24:29	Carl	@russ how did we think regarding confirming primary email I got a question
+2021-09-29 14:24:29	    	Hej,
+2021-09-29 14:24:29	    	Det verkar som att i senaste versionen av Scoutnet så måste primär e-postadress bekräftas av personen i fråga när jag som medlemsregistrerare ändrar den för någon.
+2021-09-29 14:24:29	    	Är det en bugg eller feature?
+2021-09-29 14:24:29	    	Det händer ju ganska ofta att medlemsregistrerare ändrar e-post för en medlem och jag tror att en del föräldrar skulle vara ganska dåliga på att bekräfta e-postadress om jag uppdaterar den och då därmed gå miste om e-post till den nya e-postadressen.
+2021-09-29 14:24:29	    	Tidigare var det väl bara när man ändrar sin egen e-postadress som den måste bekräftas?
+2021-09-29 14:31:25	russ	Hmm, is that an old(ish) query? This was sort of unintentional in 3.70.1.1 but I reverted it in 3.70.1.2 - at least now there is a verify checkbox that is default checked when editing a profile, and I thought that it would be ok when registering a new member too, but maybe there's still an issue there... I can check
+2021-09-29 14:31:49	Carl	yeah I'm swamped with emails Trying to catch up
+2021-09-29 14:32:55	russ	We should encourage email verification so we don't end up with incorrect info in the system, but I guess some leaders want to manage their members' data without the members ever interacting with Scoutnet...
+2021-09-29 14:33:06	Carl	yep :stuck_out_tongue:
+2021-09-29 14:44:52	russ	Yeah I'm pretty sure they were just unlucky and changed someone's email in that small window between those versions - it should be ok since 3.70.1.2
+2021-09-29 15:32:27	Carl	Ok thanks! :slightly_smiling_face:
+2021-09-29 15:32:50	Carl	Do you know when the three top tickets will be finished? Im getting questions regarding them
+2021-09-29 15:33:59	russ	Looking at them today, I'm in Oslo playing catch-up [:heart:1]
+2021-09-29 15:47:09	Carl	they are breathing down my back and asking when they might be finished so when you have an answer to that that would be great! [:+1::skin-tone-2:1]
+2021-10-07 14:07:59	Carl	-------- Originalmeddelande --------
+2021-10-07 14:07:59	    	Från: Scouterna <mailto:scoutnet@scouterna.se (scoutnet@scouterna.se)>
+2021-10-07 14:07:59	    	Datum: 2021-10-06 10:35 (GMT+01:00)
+2021-10-07 14:07:59	    	Till: Viktoria Wallin <mailto:viktoria.wallin@nsf.scout.se (viktoria.wallin@nsf.scout.se)>
+2021-10-07 14:07:59	    	Ämne: E-postadressen ändrad
+2021-10-07 14:07:59	    	Innan du kan ändra din e-postadress måste du bekräfta att e-postadressen används.
+2021-10-07 14:07:59	    	Klicka på länken nedan för att ändra e-post:
+2021-10-07 14:07:59	    	https://www.scoutnet.se/verify/3387505/2d922e1aaee028c07183a1b086469c46
+2021-10-07 14:07:59	    	Efter att du har ändrat din e-postadress kommer ditt användarnamn att ändras till din nya e-postadress.
+2021-10-07 14:07:59	    	A member is asking what triggered the email above. It should be about 3334533 or 3335525. Can you see if anyone has changed the primary e-mail?
+2021-10-07 14:56:42	russ	The member number this applies to is in the link, 3387505
+2021-10-07 14:57:26	russ	Created 2021-10-04 11:25:31 - not logged in, so via a public form, using her email address
+2021-10-07 14:58:07	russ	That email should probably have the member number in it somewhere so people know which account the activation applies to
+2021-10-07 14:58:19	Carl	hum yes sounds good
+2021-10-07 15:00:03	Carl	ok strange that the email was sent two days later?
+2021-10-07 15:00:06	russ	It's actually already available as %username%
+2021-10-07 15:02:38	russ	Ah the email was added 2 days later
+2021-10-07 15:02:46	russ	2021-10-06 10:34:45
+2021-10-07 15:03:09	russ	By 3316747
+2021-10-07 15:03:53	russ	It was originally empty when they registered
+2021-10-07 15:09:01	russ	Looks like the "verify email" checkbox is not checked by default, so he probably didn't check it... I thought it was, but maybe that was just a super admin thing. I'll fix that so it's checked by default I guess... Would rather email addresses were checked and verified but I know a lot of leaders won't like that so... meh
+2021-10-07 15:10:46	russ	Or what do you think? I kind of like that they have to check a box as a way of confirming the email doesn't need to be verified... Then it's not our fault if someone complains their email was entered wrong later
+2021-10-07 15:42:55	Carl	ah allright! yeah that's tricky lets think about it [:+1::skin-tone-2:1]
+2021-10-11 16:43:51	Carl	@russ* can you please change the ssno on 3378574 to 2009-01-01 without the last four [:heavy_check_mark:1]
+2021-10-11 17:18:00	Carl	@russ* Can you see ig you find any names, contact info etc on this blank profile 3376606
+2021-10-11 17:35:13	russ	Looks like an API registration gone funky:
+2021-10-11 17:35:13	    	Gabriella Bascom
+2021-10-11 17:35:13	    	0739180188
+2021-10-11 17:35:13	    	mailto:gabriellabascom@gmail.com (gabriellabascom@gmail.com)
+2021-10-11 17:36:10	Carl	Can you restore whatever we had on her?
+2021-10-11 17:37:30	russ	Only the contact info - first name/last name is missing for some reason
+2021-10-11 17:37:41	russ	Gabriella Bascom is guardian 1 name I guess
+2021-10-11 17:38:04	Carl	sure we'll take whatever is there
+2021-10-11 17:40:14	russ	Found it, her name is Leona :smile: (edited) [:+1:1]
+2021-10-11 17:41:19	Carl	tell me when you are finished :slightly_smiling_face:
+2021-10-11 17:41:44	russ	Ok I think that's it
+2021-10-11 17:42:03	Carl	the name i still blank
+2021-10-11 17:42:11	Carl	no not now
+2021-10-11 17:42:14	Carl	ok great thanks [:+1::skin-tone-2:1]

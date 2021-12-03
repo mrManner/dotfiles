@@ -1,0 +1,441 @@
+2021-10-13 00:13:09	-->	mrmanner (~jmanner@user/mrmanner) has joined #sway
+2021-10-13 00:13:09	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-13 00:13:09	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-13 00:13:10	--	Channel #sway: 346 nicks (0 ops, 0 voices, 346 normals)
+2021-10-13 00:13:11	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-13 00:13:30	-->	d76d5436757 (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has joined #sway
+2021-10-13 00:15:09	-->	leon-p (~leon-p@2a02:8108:96c0:1810:18c9:72ff:fee1:b070) has joined #sway
+2021-10-13 00:18:26	<--	snakedye (~snakedye@2605:8d80:580:341c:117d:b96c:a93:446) has quit (Ping timeout: 245 seconds)
+2021-10-13 00:23:25	-->	snakedye (~snakedye@modemcable102.232-161-184.mc.videotron.ca) has joined #sway
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:01	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #sway
+2021-10-13 00:42:01	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-13 00:42:01	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-13 00:42:02	--	Channel #sway: 348 nicks (0 ops, 0 voices, 348 normals)
+2021-10-13 00:42:04	<--	baldlizard (~Thunderbi@p200300f0c7075a003ae7859c2d6ac4a0.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2021-10-13 00:42:12	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-13 00:47:57	<--	FluffyMask (~masque@user/fluffymask) has quit (Quit: WeeChat 3.3)
+2021-10-13 00:58:01	<--	taupiqueur (~taupiqueu@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has quit (Ping timeout: 245 seconds)
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:09:23	JamesLawrence[m]	anyone else run into issues with kanhsi not maintaining monitor positioning?
+2021-10-13 01:19:26	<--	quantum5 (~quantum@lookingglass/team/quantum5) has quit (Quit: ZNC - https://znc.in)
+2021-10-13 01:44:57	-->	andril (~andril@2601:586:8400:e4:6abc:4535:850:ceaa) has joined #sway
+2021-10-13 01:53:33	<--	hexa- (~hexa-@juno.lossy.network) has quit (Quit: WeeChat 3.1)
+2021-10-13 01:54:56	-->	hexa- (~hexa-@juno.lossy.network) has joined #sway
+2021-10-13 01:55:35	<--	leon-p (~leon-p@2a02:8108:96c0:1810:18c9:72ff:fee1:b070) has quit (Quit: leon-p)
+2021-10-13 01:56:31	<--	diniwed (~gavron@ool-44c21938.dyn.optonline.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 01:56:36	<--	an3223 (~user@user/an3223) has quit (Ping timeout: 276 seconds)
+2021-10-13 01:56:54	-->	diniwed (~gavron@194.5.53.161) has joined #sway
+2021-10-13 01:58:28	-->	an3223 (~user@user/an3223) has joined #sway
+2021-10-13 02:00:35	<--	c7s (~c7s@user/c7s) has quit (Quit: c7s)
+2021-10-13 02:01:05	<--	vquicksilver (~nobody@user/vquicksilver) has quit (Ping timeout: 260 seconds)
+2021-10-13 02:10:16	<--	columbarius (~columbari@i5E86B36F.versanet.de) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:12:09	-->	columbarius (~columbari@muedsl-82-207-236-170.citykom.de) has joined #sway
+2021-10-13 02:12:53	-->	quantum5 (~quantum@lookingglass/team/quantum5) has joined #sway
+2021-10-13 02:20:43	<--	diniwed (~gavron@194.5.53.161) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:21:14	-->	vquicksilver (~nobody@user/vquicksilver) has joined #sway
+2021-10-13 02:22:32	-->	diniwed (~gavron@ool-44c21938.dyn.optonline.net) has joined #sway
+2021-10-13 02:33:06	<--	diniwed (~gavron@ool-44c21938.dyn.optonline.net) has quit (Ping timeout: 265 seconds)
+2021-10-13 02:36:03	<--	andril (~andril@2601:586:8400:e4:6abc:4535:850:ceaa) has quit (Ping timeout: 250 seconds)
+2021-10-13 02:38:59	-->	diniwed (~gavron@194.5.53.116) has joined #sway
+2021-10-13 02:39:16	<--	vquicksilver (~nobody@user/vquicksilver) has quit (Ping timeout: 245 seconds)
+2021-10-13 02:41:14	-->	c7s (~c7s@user/c7s) has joined #sway
+2021-10-13 02:51:21	<--	gitly (~gitly@85.255.234.91) has quit (Ping timeout: 245 seconds)
+2021-10-13 02:53:26	-->	gitly (~gitly@85.255.237.21) has joined #sway
+2021-10-13 02:53:42	-->	vquicksilver (~nobody@user/vquicksilver) has joined #sway
+2021-10-13 03:15:36	--	simon1 is now known as sim590
+2021-10-13 03:17:13	-->	idkfa (~idkfa@user/idkfa) has joined #sway
+2021-10-13 03:44:09	-->	vaginaldischarge (b9dc66fb@67.205.143.82) has joined #sway
+2021-10-13 03:52:04	<--	vaginaldischarge (b9dc66fb@67.205.143.82) has left #sway (The Lounge - https://thelounge.chat)
+2021-10-13 04:10:30	<--	an3223 (~user@user/an3223) has quit (Ping timeout: 276 seconds)
+2021-10-13 04:14:18	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #sway
+2021-10-13 04:16:09	<--	exondation (~wadii@2a01:e34:eca5:6c30:f84b:26c1:30be:1e1) has quit (Ping timeout: 250 seconds)
+2021-10-13 04:37:48	<--	himmi_jimmy (~Himmi_Jim@a89-183-76-160.net-htp.de) has quit (Ping timeout: 265 seconds)
+2021-10-13 04:39:37	-->	himmi_jimmy (~Himmi_Jim@a89-183-95-134.net-htp.de) has joined #sway
+2021-10-13 04:45:11	<--	nyah (~nyah@bcdcb6e3.skybroadband.com) has quit (Ping timeout: 268 seconds)
+2021-10-13 04:52:28	<--	FinnElija (~finn_elij@user/finn-elija/x-0085643) has quit (Ping timeout: 252 seconds)
+2021-10-13 04:54:04	-->	FinnElija (~finn_elij@user/finn-elija/x-0085643) has joined #sway
+2021-10-13 05:03:13	<--	idkfa (~idkfa@user/idkfa) has quit (Quit: Leaving)
+2021-10-13 05:23:43	<--	diniwed (~gavron@194.5.53.116) has quit (Ping timeout: 265 seconds)
+2021-10-13 05:25:06	<--	snakedye (~snakedye@modemcable102.232-161-184.mc.videotron.ca) has quit (Ping timeout: 245 seconds)
+2021-10-13 05:25:13	-->	diniwed (~gavron@45.134.22.65) has joined #sway
+2021-10-13 05:33:02	chocobo13	Oh, right; so, to whit, I was last wondering whether a bind could execute more than one thing, i.e. exiting the mode it's in once it's triggered
+2021-10-13 05:33:11	chocobo13	I'm open to suggestions
+2021-10-13 05:39:22	<--	yonson (~yonson@ip70-179-26-230.sd.sd.cox.net) has quit (Remote host closed the connection)
+2021-10-13 05:39:30	-->	yonson (~yonson@2600:8801:d900:7bb::d7c) has joined #sway
+2021-10-13 05:49:09	brocellous	chocobo13: you can bind compound commands
+2021-10-13 05:51:46	chocobo13	Oh, nice
+2021-10-13 05:51:51	chocobo13	Just multiple lines?
+2021-10-13 05:52:02	brocellous	separate with a comma or semi-colon
+2021-10-13 05:52:11	chocobo13	Oh, sweet, just like shell scripting
+2021-10-13 05:52:13	chocobo13	Thanks
+2021-10-13 05:53:05	brocellous	chocobo13: e.g. bindsym $mod+key dothing; mode default
+2021-10-13 05:53:44	brocellous	common pattern for making a mode that does one command and exits
+2021-10-13 06:42:36	<--	diniwed (~gavron@45.134.22.65) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:46:46	-->	eoli3n (~eoli3n@82-64-112-150.subs.proxad.net) has joined #sway
+2021-10-13 07:04:58	-->	an3223 (~user@user/an3223) has joined #sway
+2021-10-13 07:14:46	<--	brocellous (~brocellou@2600:8800:1680:17:e65b:47a8:6324:6545) has quit (Read error: Connection reset by peer)
+2021-10-13 07:15:00	-->	brocellous (~brocellou@2600:8800:1680:17:718:f4c2:e123:218) has joined #sway
+2021-10-13 07:16:46	<--	eoli3n (~eoli3n@82-64-112-150.subs.proxad.net) has quit (Ping timeout: 260 seconds)
+2021-10-13 08:30:54	-->	alkino (~quassel@user/alkino) has joined #sway
+2021-10-13 21:22:51	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:19	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #sway
+2021-10-13 21:23:19	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-13 21:23:19	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-13 21:23:19	--	Channel #sway: 353 nicks (0 ops, 0 voices, 353 normals)
+2021-10-13 21:23:30	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-13 21:32:08	<--	gitly2 (~gitly@85.255.234.86) has quit (Ping timeout: 246 seconds)
+2021-10-13 21:34:21	-->	gitly2 (~gitly@85.255.233.120) has joined #sway
+2021-10-13 21:44:00	--	xst4 is now known as xst
+2021-10-13 21:52:52	-->	exondation (~wadii@2a01:e34:eca5:6c30:f0:d8bf:41fe:5880) has joined #sway
+2021-10-13 22:00:41	<--	exondation (~wadii@2a01:e34:eca5:6c30:f0:d8bf:41fe:5880) has quit (Ping timeout: 264 seconds)
+2021-10-13 22:01:03	-->	exondation (~wadii@2a01:e34:eca5:6c30:b2e0:9632:acf3:248b) has joined #sway
+2021-10-13 22:12:55	<--	nirmoy (~nirmoy@p5de5216c.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:32	-->	mrmanner (~jmanner@185.224.57.161) has joined #sway
+2021-10-16 12:32:32	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-16 12:32:32	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-16 12:32:32	--	Channel #sway: 340 nicks (0 ops, 0 voices, 340 normals)
+2021-10-16 12:32:44	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-16 12:38:59	-->	CPurpurea (~quassel@2a00:7c40:c2d0:199:9ff4:1561:725e:617c) has joined #sway
+2021-10-16 12:39:45	-->	sim590 (~simon@modemcable090.207-203-24.mc.videotron.ca) has joined #sway
+2021-10-16 12:43:13	-->	michelesr (~michele@user/michelesr) has joined #sway
+2021-10-16 12:43:46	<--	vyivel (7ed1c72a0a@2604:bf00:710:0:5054:ff:fea7:dc1) has quit (Remote host closed the connection)
+2021-10-16 12:44:09	<--	emersion (16abab341f@sourcehut/staff/emersion) has quit (Remote host closed the connection)
+2021-10-16 12:44:55	<--	michelesr (~michele@user/michelesr) has quit (Quit: WeeChat 3.3)
+2021-10-16 12:44:56	-->	vyivel (7ed1c72a0a@2604:bf00:710:0:5054:ff:fea7:dc1) has joined #sway
+2021-10-16 12:44:59	-->	emersion (16abab341f@sourcehut/staff/emersion) has joined #sway
+2021-10-16 12:47:45	-->	michelesr (~michele@user/michelesr) has joined #sway
+2021-10-16 12:49:13	michelesr	kennylevinsen: I managed to try fullscreen with Xwayland apps offloaded to nvidia on KDE and GNOME and they both work fine, but I have no way to tell whether they do direct scan-out or not (even though it should be supported on paper)
+2021-10-16 12:50:02	michelesr	is there a way to tell whether direct scan-out is used or not, e.g. in the /proc filesystem or whatever?
+2021-10-16 12:51:00	<--	michelesr (~michele@user/michelesr) has quit (Client Quit)
+2021-10-16 12:51:16	-->	michelesr (~michele@user/michelesr) has joined #sway
+2021-10-16 12:51:19	-->	c7s (~c7s@user/c7s) has joined #sway
+2021-10-16 12:51:47	-->	alkino (~quassel@user/alkino) has joined #sway
+2021-10-16 12:52:07	emersion	it's in the debug logs
+2021-10-16 12:52:35	emersion	might also be able to figure out with drm_info, with FB props, but it's trickier
+2021-10-16 12:54:00	michelesr	right
+2021-10-16 12:55:07	<--	sim590 (~simon@modemcable090.207-203-24.mc.videotron.ca) has quit (Ping timeout: 252 seconds)
+2021-10-16 13:03:21	<--	bitblit (~bitblit@gateway/tor-sasl/bitblit) has quit (Remote host closed the connection)
+2021-10-16 13:03:57	-->	bitblit (~bitblit@gateway/tor-sasl/bitblit) has joined #sway
+2021-10-16 13:07:56	-->	sim590 (~simon@modemcable090.207-203-24.mc.videotron.ca) has joined #sway
+2021-10-17 18:14:38	-->	jmanner (~jmanner@185.224.57.161) has joined #sway
+2021-10-17 18:14:38	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-17 18:14:38	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-17 18:14:38	--	Channel #sway: 350 nicks (0 ops, 0 voices, 350 normals)
+2021-10-17 18:14:47	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined #sway
+2021-10-17 18:19:02	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-17 18:19:02	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-17 18:19:02	--	Channel #sway: 350 nicks (0 ops, 0 voices, 350 normals)
+2021-10-17 18:19:12	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-17 18:20:12	<--	bhava (~bhava@d75-156-15-113.bchsia.telus.net) has quit (Ping timeout: 264 seconds)
+2021-10-17 18:30:36	-->	jmanner (~jmanner@user/mrmanner) has joined #sway
+2021-10-17 18:30:36	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-17 18:30:36	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-17 18:30:36	--	Channel #sway: 349 nicks (0 ops, 0 voices, 349 normals)
+2021-10-17 18:30:39	-->	salkin (~salkin@84.211.234.210) has joined #sway
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:44	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-17 18:36:58	-->	bhava (~bhava@89.36.78.10) has joined #sway
+2021-10-17 18:45:05	-->	FluffyMask (~masque@user/fluffymask) has joined #sway
+2021-10-17 18:49:23	-->	boomboxnation (~boomboxna@c-73-63-164-49.hsd1.ca.comcast.net) has joined #sway
+2021-10-17 18:50:00	-->	dec0d3r (~dec0d3r@2001:8003:480a:e00:e07:e7c3:7efc:ed0f) has joined #sway
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:42	-->	mrmanner (~jmanner@user/mrmanner) has joined #sway
+2021-10-17 19:45:42	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-17 19:45:42	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-17 19:45:42	--	Channel #sway: 354 nicks (0 ops, 0 voices, 354 normals)
+2021-10-17 19:45:52	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-17 19:45:59	<--	eoli3n (~eoli3n@pop.92-184-102-160.mobile.abo.orange.fr) has quit (Read error: Connection reset by peer)
+2021-10-17 19:47:39	-->	andril (~andril@2601:586:8400:e4::1003) has joined #sway
+2021-10-17 19:48:42	<--	coder_kalyan (2c72974719@2604:bf00:710:0:5054:ff:feea:5006) has quit (Changing host)
+2021-10-17 19:48:42	-->	coder_kalyan (2c72974719@user/coderkalyan) has joined #sway
+2021-10-17 19:52:53	<--	coder_kalyan (2c72974719@user/coderkalyan) has quit (Remote host closed the connection)
+2021-10-17 19:54:03	jushur	pounce: how is your hardware? aka is it AMD GPU or NVidia? as the later id expect having bad performance.
+2021-10-17 19:54:34	pounce	jushur: again, not a perf issue. I'm using AMD
+2021-10-17 19:54:38	jushur	aye
+2021-10-17 19:54:55	-->	_coderkalyan (2c72974719@user/coderkalyan) has joined #sway
+2021-10-17 20:05:05	<--	boomboxnation (~boomboxna@c-73-63-164-49.hsd1.ca.comcast.net) has quit (Quit: WeeChat 3.3)
+2021-10-17 20:14:29	<--	ppascher (~ppascher@2a02:908:13c7:e762:3b48:2955:33f:ce46) has quit (Ping timeout: 264 seconds)
+2021-10-17 20:16:02	-->	diniwed (~gavron@ool-44c21938.dyn.optonline.net) has joined #sway
+2021-10-17 20:16:03	<--	mathilde (~mathilde@37-136-114-151.rev.dnainternet.fi) has quit (Read error: Connection reset by peer)
+2021-10-17 20:16:23	-->	mathilde (~mathilde@37-136-114-151.rev.dnainternet.fi) has joined #sway
+2021-10-17 20:28:17	-->	ppascher (~ppascher@ip-84-119-184-40.unity-media.net) has joined #sway
+2021-10-17 20:33:34	-->	abraxxa-home (~alex@2a01:100:2000:2500::22) has joined #sway
+2021-10-17 20:37:50	<--	anessen97 (~Anessen97@host-79-21-220-228.retail.telecomitalia.it) has quit (Ping timeout: 268 seconds)
+2021-10-17 20:39:41	<--	andril (~andril@2601:586:8400:e4::1003) has quit (Ping timeout: 245 seconds)
+2021-10-17 20:41:40	obiwahn	is there something that can hold apps like nextcloud or network manager that are usually reachable via small icons?
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #sway
+2021-10-30 12:09:24	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-30 12:09:24	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-30 12:09:24	--	Channel #sway: 343 nicks (0 ops, 0 voices, 343 normals)
+2021-10-30 12:09:34	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #sway
+2021-10-30 12:10:54	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-30 12:10:54	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-30 12:10:54	--	Channel #sway: 343 nicks (0 ops, 0 voices, 343 normals)
+2021-10-30 12:11:04	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:14:17	<--	boucman (~jerros@2a02-8440-3341-8ff3-5091-4ed6-97f3-7af3.rev.sfr.net) has quit (Ping timeout: 246 seconds)
+2021-10-30 12:20:58	<--	indux (~Thunderbi@2a02:2454:4e8:6700:d832:c882:f977:7ff4) has quit (Quit: indux)
+2021-10-30 12:21:17	-->	indux (~Thunderbi@2a02:2454:4e8:6700:d832:c882:f977:7ff4) has joined #sway
+2021-10-30 12:37:16	<--	andril (~andril@c-66-229-99-96.hsd1.fl.comcast.net) has quit (Ping timeout: 265 seconds)
+2021-10-30 12:38:19	WhyNotHugo	There's experiments on porting kwin to use wlroots. I wonder if the KDE guys would want the blur feature on wlroots or kwin itself.
+2021-10-30 12:39:01	WhyNotHugo	FWIW, I only want it for my status bar, which has the bg behind it (e.g.: not windows), so it might be a simpler route -- I wonder if the client can somehow impement it.
+2021-10-30 12:43:24	tiosgz_	blur the background manually and set it to the client :P
+2021-10-30 12:43:55	tiosgz_	or at first commit a fully transparent buffer and screenshot where you think it renders
+2021-10-30 12:44:49	tiosgz_	both bad ideas, i know
+2021-10-30 13:09:04	WhyNotHugo	Not a terrible idea, tbh. For a stats bar that doesn't move and has nothing behind it, it's good to reduce the amount of times the blur is computed.
+2021-10-30 13:16:30	-->	andril (~andril@c-66-229-99-96.hsd1.fl.comcast.net) has joined #sway
+2021-10-30 13:22:09	-->	bibek (~bibek@103.167.233.10) has joined #sway
+2021-10-30 13:32:13	<--	ayush (~pranjhol@user/pranjhol) has quit (Quit: Client closed)
+2021-10-30 13:33:27	-->	legacyjames (~james@c-73-139-195-210.hsd1.fl.comcast.net) has joined #sway
+2021-10-30 13:33:58	<--	andril (~andril@c-66-229-99-96.hsd1.fl.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-10-30 13:39:59	<--	novakane (~novakane@user/novakane) has quit (Quit: WeeChat 3.3)
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:33	-->	mrmanner (~jmanner@user/mrmanner) has joined #sway
+2021-10-30 17:07:33	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-30 17:07:33	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-30 17:07:34	--	Channel #sway: 342 nicks (0 ops, 0 voices, 342 normals)
+2021-10-30 17:07:44	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-30 17:26:11	<--	bibek (~bibek@103.167.233.10) has quit (Ping timeout: 268 seconds)
+2021-10-30 17:36:24	-->	c7s (~c7s@user/c7s) has joined #sway
+2021-10-30 17:46:47	<--	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has quit (Ping timeout: 260 seconds)
+2021-10-30 17:52:14	-->	elastic_dog (~elastic_d@2a01:118f:822:9c00:f583:aa51:9ad4:d4fb) has joined #sway
+2021-10-30 17:53:47	<--	eoli3n_ (~eoli3n@82-64-112-150.subs.proxad.net) has quit (Ping timeout: 264 seconds)
+2021-10-30 18:01:49	-->	novakane (~novakane@user/novakane) has joined #sway
+2021-10-30 22:21:16	--	irc: disconnected from server
+2021-10-30 22:21:46	-->	mrmanner (~jmanner@user/mrmanner) has joined #sway
+2021-10-30 22:21:46	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-10-30 22:21:46	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-10-30 22:21:46	--	Channel #sway: 343 nicks (0 ops, 0 voices, 343 normals)
+2021-10-30 22:21:53	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-10-30 22:22:55	-->	Arnavion (arnavion@user/arnavion) has joined #sway
+2021-10-30 22:29:58	-->	boucman (~jerros@2a02-8440-2140-fdad-ff05-769d-61d7-31bc.rev.sfr.net) has joined #sway
+2021-12-01 23:20:41	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #sway
+2021-12-01 23:20:45	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-12-01 23:20:45	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-01 23:20:45	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-12-01 23:20:45	--	Channel #sway: 380 nicks (0 ops, 0 voices, 380 normals)
+2021-12-01 23:21:13	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #sway
+2021-12-01 23:23:12	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-12-01 23:23:12	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-01 23:23:12	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-12-01 23:23:12	--	Channel #sway: 380 nicks (0 ops, 0 voices, 380 normals)
+2021-12-01 23:23:27	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-12-01 23:24:17	--	Mode #sway [+nt]
+2021-12-01 23:24:17	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-12-01 23:45:06	<--	FinnElija (~finn_elij@user/finn-elija/x-0085643) has quit (Killed (NickServ (Forcing logout FinnElija -> finn_elija)))
+2021-12-01 23:45:06	-->	FinnElija [finn_elija] (Finn Elija) (~finn_elij@user/finn-elija/x-0085643) has joined #sway
+2021-12-01 23:45:35	<--	jerros (~jerros@221.86.207.77.rev.sfr.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:06:28	<--	cvmn (~caveman@gateway/tor-sasl/caveman) has quit (Quit: the #end of the abyss)
+2021-12-02 00:17:53	<--	kupi (uid212005@id-212005.hampstead.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-02 00:23:57	<--	an3223 (~user@user/an3223) has quit (Ping timeout: 276 seconds)
+2021-12-02 00:26:39	<--	a0z1 (~a0z1@185.213.155.166) has quit (Ping timeout: 252 seconds)
+2021-12-02 00:32:37	<--	taupiqueur (~taupiqueu@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2021-12-02 00:35:19	<--	ShinyRice (~shinyrice@197.252.79.188.dynamic.jazztel.es) has quit (Quit: WeeChat 3.3)
+2021-12-02 00:46:13	-->	bhava [bhava] ([https://web.libera.chat] bhava) (~bhava@89.36.78.10) has joined #sway
+2021-12-02 00:51:11	<--	nolan (~nolan@phong.sigbus.net) has quit (Quit: No Ping reply in 180 seconds.)
+2021-12-02 00:52:15	-->	nolan [nolan] (nolan) (~nolan@phong.sigbus.net) has joined #sway
+2021-12-02 00:54:46	<--	Seirdy (~Seirdy@sourcehut/user/seirdy) has quit (Quit: exiting 3.3)
+2021-12-02 00:55:17	-->	Seirdy [Seirdy] (Seirdy) (~Seirdy@sourcehut/user/seirdy) has joined #sway
+2021-12-02 00:56:58	<--	bhava (~bhava@89.36.78.10) has quit (Quit: Client closed)
+2021-12-02 00:57:14	-->	bhava [bhava] ([https://web.libera.chat] bhava) (~bhava@89.36.78.10) has joined #sway
+2021-12-02 01:05:14	<--	mongy (~mongy@user/mongy) has quit (Quit: WeeChat 3.3)
+2021-12-02 01:15:26	<--	baldlizard (~Thunderbi@p57985836.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2021-12-02 01:35:28	-->	an3223 [an3223] (user) (~user@user/an3223) has joined #sway
+2021-12-02 01:39:56	-->	legacyjames [legacyjames] (James) (~james@c-73-139-195-210.hsd1.fl.comcast.net) has joined #sway
+2021-12-02 01:57:20	-->	a0z1 [a0z1] (realname) (~a0z1@cpc158779-hari22-2-0-cust168.20-2.cable.virginm.net) has joined #sway
+2021-12-02 02:06:59	<--	columbarius (~columbari@i5E86B391.versanet.de) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:11:53	-->	columbarius [columbarius] (columbarius) (~columbari@mue-88-130-54-145.dsl.tropolys.de) has joined #sway
+2021-12-02 02:14:16	idkrn[m]	I just added it to /etc/environment
+2021-12-02 02:22:14	<--	jangho (~jangho@121.165.8.28) has quit (Quit: znc)
+2021-12-02 02:27:47	-->	jangho (Jangho Seo) (~jangho@121.165.8.28) has joined #sway
+2021-12-02 02:27:47	--	jangho has identified as jangho
+2021-12-02 02:57:21	<--	vd (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-121.dsl.bell.ca) has quit (Quit: Client closed)
+2021-12-02 02:58:09	-->	vd [vd] ([https://web.libera.chat] vd) (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-121.dsl.bell.ca) has joined #sway
+2021-12-02 03:14:25	<--	legacyjames (~james@c-73-139-195-210.hsd1.fl.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-02 03:20:09	<--	a0z1 (~a0z1@cpc158779-hari22-2-0-cust168.20-2.cable.virginm.net) has quit (Quit: Leaving)
+2021-12-02 03:42:22	<--	zeden (~zeden@user/zeden) has quit (Quit: WeeChat 3.3)
+2021-12-02 03:46:11	<--	d76d5436757 (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has quit (Quit: Bye)
+2021-12-02 03:47:24	-->	d76d5436757 [d76d5] (d76d5) (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has joined #sway
+2021-12-02 04:06:04	-->	pwolf- (Philippe) (~pwolf@24-212-222-165.cable.teksavvy.com) has joined #sway
+2021-12-02 04:06:33	<--	vd (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-121.dsl.bell.ca) has quit (Ping timeout: 256 seconds)
+2021-12-02 04:07:56	<--	pwolf (~pwolf@user/pwolf) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:08:08	<--	pwolf- (~pwolf@24-212-222-165.cable.teksavvy.com) has quit (Client Quit)
+2021-12-02 04:08:41	idkrn[m]	how can I get `nm-applet` in my waybar?
+2021-12-02 04:11:03	<--	nyah (~nyah@94.6.71.219) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:15:19	-->	vd [vd] ([https://web.libera.chat] vd) (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-121.dsl.bell.ca) has joined #sway
+2021-12-02 04:16:44	<--	xantoz (~tewi_inab@c-c0bae255.013-124-73746f25.bbcust.telenor.se) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:20:57	<--	himmi_jimmy (~Himmi_Jim@a89-183-56-100.net-htp.de) has quit (Ping timeout: 252 seconds)
+2021-12-02 04:21:06	-->	xantoz [xantoz] (tewi_inaba) (~tewi_inab@c-c0bae255.013-124-73746f25.bbcust.telenor.se) has joined #sway
+2021-12-02 04:22:44	-->	himmi_jimmy (Himmi Jimmy) (~Himmi_Jim@a89-183-77-156.net-htp.de) has joined #sway
+2021-12-02 04:22:44	--	himmi_jimmy has identified as himmi_jimmy
+2021-12-02 04:36:08	<--	bhava (~bhava@89.36.78.10) has quit (Quit: Client closed)
+2021-12-02 04:36:40	-->	bhava [bhava] ([https://web.libera.chat] bhava) (~bhava@89.36.78.10) has joined #sway
+2021-12-02 04:46:20	<--	d76d5436757 (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has quit (Quit: Bye)
+2021-12-02 04:52:49	-->	d76d5436757 [d76d5] (d76d5) (~d76d5@pool-173-75-21-26.pitbpa.fios.verizon.net) has joined #sway
+2021-12-02 04:55:18	<--	FinnElija (~finn_elij@user/finn-elija/x-0085643) has quit (Killed (NickServ (Forcing logout FinnElija -> finn_elija)))
+2021-12-02 04:55:18	-->	finn_elija [finn_elija] (Finn Elija) (~finn_elij@user/finn-elija/x-0085643) has joined #sway
+2021-12-02 04:55:18	--	finn_elija is now known as FinnElija
+2021-12-02 04:57:31	<--	FluffyMask (~masque@user/fluffymask) has quit (Quit: WeeChat 3.3)
+2021-12-02 05:16:50	<--	vd (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-121.dsl.bell.ca) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:17:03	<--	c7s (~c7s@user/c7s) has quit (Ping timeout: 252 seconds)
+2021-12-02 05:23:53	-->	bhava64 [bhava] ([https://web.libera.chat] bhava) (~bhava@89.36.78.154) has joined #sway
+2021-12-02 05:27:35	<--	bhava (~bhava@89.36.78.10) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:35:34	<--	snakedye (~snakedye@modemcable102.232-161-184.mc.videotron.ca) has quit (Ping timeout: 256 seconds)
+2021-12-02 06:08:56	<--	shum (~shum@0855429509.static.corbina.ru) has quit (Ping timeout: 252 seconds)
+2021-12-02 06:09:32	<--	saucyfox (~saucyfox@user/saucyfox) has quit (Ping timeout: 268 seconds)
+2021-12-02 06:09:55	-->	saucyfox [saucyfox] (saucyfox) (~saucyfox@user/saucyfox) has joined #sway
+2021-12-02 06:15:03	-->	vd [vd] ([https://web.libera.chat] vd) (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-211.dsl.bell.ca) has joined #sway
+2021-12-02 06:17:30	<--	murks (~murks@user/murks) has quit (Quit: Leaving)
+2021-12-02 06:24:38	-->	shum [shum] (shum) (~shum@213.87.138.59) has joined #sway
+2021-12-02 06:33:42	-->	pwolf [pwolf] (Philippe) (~pwolf@user/pwolf) has joined #sway
+2021-12-02 06:37:55	<--	pwolf (~pwolf@user/pwolf) has quit (Client Quit)
+2021-12-02 06:43:30	<--	vd (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-211.dsl.bell.ca) has quit (Quit: Client closed)
+2021-12-02 07:12:20	-->	pwolf [pwolf] (Philippe) (~pwolf@user/pwolf) has joined #sway
+2021-12-02 07:16:35	<--	CPurpurea (~quassel@2a00:7c40:c2d0:199:9ff4:1561:725e:617c) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:19:53	<--	ibrokemypie (~quassel@119-18-30-14.77121e.mel.static.aussiebb.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:26:13	-->	CPurpurea (Quassel IRC User) (~quassel@2a00:7c40:c2d0:199:9ff4:1561:725e:617c) has joined #sway
+2021-12-02 07:26:14	--	CPurpurea has identified as CPurpurea
+2021-12-02 07:39:10	<--	pwolf (~pwolf@user/pwolf) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-12-02 07:39:31	-->	pwolf [pwolf] (Philippe) (~pwolf@user/pwolf) has joined #sway
+2021-12-02 07:44:24	-->	ty1opom2 ([https://web.libera.chat] ty1opom2) (~ty1opom2@2405:6580:8da0:3800:3e84::1000) has joined #sway
+2021-12-02 07:44:42	ty1opom2	how do i start an applicatin in sway?
+2021-12-02 07:45:04	ty1opom2	is ther a dmenu like app, or do i need to set a shortcut command in a config file,
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:51	-->	mrmanner (mrmanner@98.128.201.128) has joined #sway
+2021-12-02 08:09:51	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-02 08:09:52	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-12-02 08:09:52	--	Channel #sway: 368 nicks (0 ops, 0 voices, 368 normals)
+2021-12-02 07:45:28	ty1opom2	also how do i exit
+2021-12-02 08:00:39	w0rm	ty1opom2: hopefully not being too harsh but I feel much more inclined to help answer questions when I see some resemblance of effort on the other. i.e. Have you tried looking up your answer in the man page/FAQ etc?
+2021-12-02 08:10:13	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-12-02 08:13:15	ty1opom2	whenever i try to start an application it doesnt run
+2021-12-02 08:14:00	w0rm	and how do you start it? And what applications have you tried? 
+2021-12-02 08:14:25	w0rm	And ... what errors do you get?
+2021-12-02 08:17:23	-->	baldlizard [baldlizard] (baldlizard) (~Thunderbi@p200300f0c709ea003a418ff867409c19.dip0.t-ipconnect.de) has joined #sway
+2021-12-02 08:29:57	-->	akspecs [akspecs] (ak) (00cc8321af@user/akspecs) has joined #sway
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:17	-->	mrmanner (mrmanner@90.235.13.15) has joined #sway
+2021-12-02 21:03:17	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-02 21:03:17	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-12-02 21:03:17	--	Channel #sway: 383 nicks (0 ops, 0 voices, 383 normals)
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:47	-->	mrmanner (mrmanner@90.235.13.15) has joined #sway
+2021-12-02 21:04:47	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-02 21:04:47	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-12-02 21:04:47	--	Channel #sway: 383 nicks (0 ops, 0 voices, 383 normals)
+2021-12-02 21:05:54	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-12-02 21:06:03	<--	sverv (~quassel@153.9.254.113) has quit (Quit: sverv)
+2021-12-02 21:06:40	puffybuf	I don't think it stores the previous positions. When I take windows out of scratch, and put them back in scratch the position changes
+2021-12-02 21:08:24	<--	abraxxa-home (~alex@smtp.hartmaier.priv.at) has quit (Remote host closed the connection)
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:29	-->	mrmanner (mrmanner@90.235.13.15) has joined #sway
+2021-12-02 21:11:29	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-02 21:11:30	--	Topic set by emersion on ons, 19 maj 2021 16:10:19
+2021-12-02 21:11:30	--	Channel #sway: 381 nicks (0 ops, 0 voices, 381 normals)
+2021-12-02 21:12:27	--	Channel created on ons, 19 maj 2021 14:18:28
+2021-12-02 21:28:45	-->	mrmanner (mrmanner@90.235.13.15) has joined #sway
+2021-12-02 21:28:45	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-02 21:30:19	powerman2206	exit
+2021-12-02 21:30:28	powerman2206	whoops, forgot the /. Apologies
+2021-12-02 21:30:38	<--	powerman2206 (~powerman2@220-199.dsl.iskon.hr) has quit (Quit: WeeChat 3.3)
+2021-12-02 21:50:37	--	irc: disconnected from server
+2021-12-02 21:50:46	-->	mrmanner (mrmanner@98.128.201.128) has joined #sway
+2021-12-02 21:50:46	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-02 21:57:40	<--	g3rp (~user@186.18.228.196) has quit (Remote host closed the connection)
+2021-12-02 22:17:57	<--	snakedye (~snakedye@142.137.177.157) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:20:46	puffybuf	if I accidentally do splitv how do I remove it on a window?
+2021-12-02 22:22:51	puffybuf	I guess I can just make it floating, then non-floating
+2021-12-02 22:23:27	<--	caveman (~caveman@gateway/tor-sasl/caveman) has quit (Ping timeout: 276 seconds)
+2021-12-02 22:23:36	-->	snakedye (snakedye) (~snakedye@2605:8d80:580:c8c:db72:3d42:68dd:755b) has joined #sway
+2021-12-02 22:33:16	<--	Narrat (~omnius@p200300df5f14e29206ea56fffe2e7cdc.dip0.t-ipconnect.de) has quit (Quit: They say a little knowledge is a dangerous thing, but it's not one half so bad as a lot of ignorance.)
+2021-12-02 22:33:23	<--	zeden (~zeden@user/zeden) has quit (Quit: WeeChat 3.3)
+2021-12-02 22:33:43	<--	kraftwerk28 (~kraftwerk@178.62.210.83) has quit (Quit: bruh)
+2021-12-02 22:44:40	fluix	alternatively, I think you can move it left/right
+2021-12-02 22:52:36	-->	kraftwerk28 [kraftwerk28] (Vsevolod) (~kraftwerk@178.62.210.83) has joined #sway
+2021-12-02 22:54:20	<--	pwolf (~pwolf@user/pwolf) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:06:08	<--	vd (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-211.dsl.bell.ca) has quit (Quit: Client closed)
+2021-12-02 23:06:47	-->	vd [vd] ([https://web.libera.chat] vd) (~vd@bras-base-mtrlpq2848w-grc-41-70-53-240-211.dsl.bell.ca) has joined #sway
+2021-12-02 23:17:52	-->	caveman [caveman] (caveman) (~caveman@gateway/tor-sasl/caveman) has joined #sway
+2021-12-02 23:24:35	<--	jerros (~jerros@221.86.207.77.rev.sfr.net) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:27:22	--	kraftwerk28 is now known as kraftwerk28_from
+2021-12-02 23:27:36	--	kraftwerk28_from is now known as kraftwerk28
+2021-12-02 23:31:44	<--	baldlizard (~Thunderbi@p200300f0c709ea003a418ff867409c19.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:46:09	<--	bhava74 (~bhava74@89.36.78.234) has quit (Quit: Client closed)
+2021-12-02 23:46:37	-->	bhava74 [bhava] ([https://web.libera.chat] bhava74) (~bhava74@89.36.78.234) has joined #sway
+2021-12-02 23:55:20	-->	kupi [kupi] (qp) (uid212005@id-212005.hampstead.irccloud.com) has joined #sway
+2021-12-03 00:05:37	<--	Biolunar (~bio@2a02:908:4b24:5000:ba27:ebff:fee0:75a) has quit (Ping timeout: 268 seconds)
+2021-12-03 00:05:46	<--	caveman (~caveman@gateway/tor-sasl/caveman) has quit (Quit: caveman)
+2021-12-03 00:06:45	<--	manio (~manio@skyboo.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 00:07:04	-->	manio [manio] (Mariusz Białończyk) (~manio@skyboo.net) has joined #sway
+2021-12-03 00:07:18	-->	Biolunar [Biolunar] (Biolunar) (~bio@2a02:908:4b24:5000:ba27:ebff:fee0:75a) has joined #sway
+2021-12-03 00:09:41	-->	caveman [caveman] (caveman) (~caveman@gateway/tor-sasl/caveman) has joined #sway
+2021-12-03 00:22:09	<--	snakedye (~snakedye@2605:8d80:580:c8c:db72:3d42:68dd:755b) has quit (Ping timeout: 252 seconds)
+2021-12-03 00:22:34	-->	snakedye (snakedye) (~snakedye@modemcable102.232-161-184.mc.videotron.ca) has joined #sway
+2021-12-03 00:49:59	<--	murks (~murks@user/murks) has quit (Quit: Leaving)
+2021-12-03 00:59:49	<--	bhava74 (~bhava74@89.36.78.234) has quit (Quit: Client closed)
+2021-12-03 01:00:15	-->	bhava74 [bhava] ([https://web.libera.chat] bhava74) (~bhava74@89.36.78.234) has joined #sway
+2021-12-03 01:03:17	-->	legacyjames [legacyjames] (James) (~james@c-73-139-195-210.hsd1.fl.comcast.net) has joined #sway
+2021-12-03 01:10:11	<--	c7s (~c7s@user/c7s) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:16:31	<--	legacyjames (~james@c-73-139-195-210.hsd1.fl.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:22:17	<--	xst (~xst@user/xst) has quit (Ping timeout: 252 seconds)
+2021-12-03 01:25:10	-->	xst [xst] (xst) (~xst@user/xst) has joined #sway
+2021-12-03 01:33:04	<--	an3223 (~user@user/an3223) has quit (Quit: WeeChat 3.3)
+2021-12-03 01:33:21	-->	an3223 [an3223] (user) (~user@user/an3223) has joined #sway
+2021-12-03 01:33:52	-->	boomboxnation [boomboxnation] (boomboxnation) (~boomboxna@c-73-63-164-49.hsd1.ca.comcast.net) has joined #sway
+2021-12-03 12:21:15	--	irc: disconnected from server
+2021-12-03 12:21:32	-->	mrmanner (mrmanner@90.235.13.15) has joined #sway
+2021-12-03 12:21:32	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-03 02:59:22	sunyibo	I'm using blueman-aplet. When it (dis)connects from a device, a gray message appears on the middle of the screen which then stays on the window without disappearing, rendering that window effectively useless. How can I get rid of that?
+2021-12-03 05:33:26	Spawns_Carpeting	Hello. I was wondering about the best method to go about writing a status bar like swaybar. I have been meaning to try this for a while and never got around to doing it. Would it be a bad idea to just use GTK instead of using the wayland client functions directly?
+2021-12-03 05:33:54	Spawns_Carpeting	i see swaybar uses wayland-client.h or whatever and pangocairo
+2021-12-03 06:51:23	cheakoirccloud	https://www.quotes.net/mquote/4439 I had some problems onboarding and the guy in #foot was more interested in having new users experience problems than take any criticism.  Made me switch to alacritty even though I had to build it myself and later think of this quote and the recent LTT reports about Linux being a "developer only" tool.
+2021-12-03 06:52:36	cheakoirccloud	If new sway users also need to be developers, then it's likely I'll join everyone else in using something else.
+2021-12-03 06:59:41	cheakoirccloud	Spawns_Carpeting: I don't know anything about GUI application development I didn't learn in the 90s.  Just thinking about what you'd draw and can't see why you'd not render text mostly by hand...  None of the other controls or widgets would be much use in a bar and it's a lot of baggage for the one thing.  Just guessing though.
+2021-12-03 07:02:01	cheakoirccloud	...I can say in Wayland images are mostly drawn by changing bytes in a file handle, likely memory mapped but that's not necessary, and sending that over to Wayland for drawing.
+2021-12-03 07:03:49	cheakoirccloud	s/drawing/display
+2021-12-03 07:08:58	Spawns_Carpeting	yeah that sounds right, once you get the basic functions setup to talk to wayland its really not that bad anyways
+2021-12-03 07:09:17	Spawns_Carpeting	and drawing is going to be with pango/cairo in my case no matter what
+2021-12-03 10:48:54	WhyNotHugo	I'd like to work on https://github.com/swaywm/sway/issues/5632, and I'm wondering if there's any feedback on which of the proposed solutions would be most acceptable.
+2021-12-03 12:22:37	--	irc: disconnected from server
+2021-12-03 12:22:54	-->	mrmanner (mrmanner@90.235.13.15) has joined #sway
+2021-12-03 12:22:54	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-03 12:25:14	<--	feklee (sid284307@user/feklee) has quit
+2021-12-03 12:42:37	-->	Trieste_ [pilgrim] (T) (T@user/pilgrim) has joined #sway
+2021-12-03 12:43:11	<--	Trieste (T@user/pilgrim) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:46:00	--	Trieste_ is now known as Trieste
+2021-12-03 12:47:47	<--	legacyjames (~james@c-73-139-195-210.hsd1.fl.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 13:02:36	<--	shum (~shum@213.87.139.192) has quit (Read error: Connection reset by peer)
+2021-12-03 13:02:55	-->	shum [shum] (shum) (~shum@213.87.139.192) has joined #sway
+2021-12-03 20:17:22	--	irc: disconnected from server
+2021-12-03 20:17:35	-->	mrmanner (mrmanner@98.128.201.128) has joined #sway
+2021-12-03 20:17:35	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-03 18:08:34	tsm	Hey all, I've got a usb hid device that supports high resolution scrolling. When I run `evtest` I see REL_WHEEL_HI_RES events, but it seems like all applications only see the REL_WHEEL events. I'm unsure if this is a sway issue or an application issue, but since it happens everywhere my guess is sway. I've tried changing `scroll_factor` in my config and it doesn't seem to have any effect.
+2021-12-03 18:11:42	emersion	yeah it's not supported by wlroots
+2021-12-03 18:11:50	emersion	there's a WIP pull request for it
+2021-12-03 18:12:02	tsm	Oh, unfortunate. Could you send a link?
+2021-12-03 18:12:15	tsm	Thanks for the quick answer!
+2021-12-03 18:47:23	kraftwerk28	Is there a way to "freeze" the compositor while making a screenshot w/ grim? I find it useful, i.e. when a notification appears, it will likely disappear till I position a slurp rectangle on it
+2021-12-03 18:52:03	legacyjames	kraftwerk28: I used grimshot with the area selection, and it appears to freeze the screen contents to draw a rectangle on what to capture.
+2021-12-03 19:13:03	kraftwerk28	legacyjames, which command are you using? I use https://github.com/kraftwerk28/dotfiles/blob/master/.config/sway/config#L168, but the screen doesn't freeze.
+2021-12-03 19:32:07	puffybuf	kraftwerk28: just take the whole screen and then edit it or grim that
+2021-12-03 19:33:46	puffybuf	I use slurp combined with grim to take screenshot:
+2021-12-03 19:33:58	puffybuf	slurp | grim -g - $(xdg-user-dir PICTURES)/$(date +'screenshot_%Y-%m-%d-%H:%M:%S.png')
+2021-12-03 20:19:02	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:45	-->	mrmanner (mrmanner@98.128.201.128) has joined #sway
+2021-12-03 20:19:45	--	Topic for #sway is "sway - https://swaywm.org/ - RTFM - Stick around a while, your question might not be answered immediately - Do not paste logs here, use a pastebin like https://paste.sr.ht"
+2021-12-03 20:22:09	-->	zeden [zeden] (zeden) (~zeden@user/zeden) has joined #sway
+2021-12-03 20:32:11	<--	arminweigl (~arminweig@sourcehut/user/arminweigl) has quit (Read error: Connection reset by peer)
+2021-12-03 20:33:33	<--	bongobrown (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has quit (Quit: Leaving)
+2021-12-03 20:33:52	-->	bongobrown [bongobrown] (realname) (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has joined #sway
+2021-12-03 20:34:37	-->	arminweigl [arminweigl] (Armin Weigl) (~arminweig@sourcehut/user/arminweigl) has joined #sway
+2021-12-03 20:37:56	<--	yoshi_jms (~jmissao@user/yoshi-jms/x-9885530) has quit (Quit: Lost terminal)
+2021-12-03 20:44:06	-->	g3rp [g3rp] (German Pacenza) (~user@186.18.228.196) has joined #sway
+2021-12-03 20:59:50	<--	bongobrown (~bongobrow@cpe-76-185-215-2.satx.res.rr.com) has quit (Quit: Leaving)

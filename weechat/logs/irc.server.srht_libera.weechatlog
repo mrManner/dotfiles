@@ -1,0 +1,27 @@
+2021-12-01 23:15:49	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 23:15:50	--	gnutls: receiving 3 certificates
+2021-12-01 23:15:50	--	 - certificate[1] info:
+2021-12-01 23:15:50	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 23:15:50	--	 - certificate[2] info:
+2021-12-01 23:15:50	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 23:15:50	--	 - certificate[3] info:
+2021-12-01 23:15:50	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 23:15:50	--	gnutls: peer's certificate is trusted
+2021-12-01 23:15:50	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 23:15:50	--	irc: client capability, server supports: invite-notify setname draft/chathistory draft/extended-monitor multi-prefix echo-message batch extended-join away-notify message-tags cap-notify server-time soju.im/bouncer-networks-notify sasl=PLAIN,EXTERNAL account-notify soju.im/bouncer-networks account-tag
+2021-12-01 23:15:50	--	irc: client capability, requesting: invite-notify multi-prefix extended-join away-notify cap-notify server-time sasl account-notify soju.im/bouncer-networks
+2021-12-01 23:15:50	--	irc: client capability, enabled: invite-notify multi-prefix extended-join away-notify cap-notify server-time sasl account-notify soju.im/bouncer-networks
+2021-12-01 23:15:51	--	SASL authentication successful
+2021-12-01 23:15:51	--	irc: client capability, removed: draft/extended-monitor
+2021-12-01 23:15:51	--	irc: client capability, now available: sasl=PLAIN
+2021-12-01 23:15:51	--	irc: client capability, now available: draft/event-playback
+2021-12-01 23:15:51	--	Welcome to soju, jmanner
+2021-12-01 23:15:51	--	Your host is chat.sr.ht
+2021-12-01 23:15:51	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-01 23:15:51	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU :are supported
+2021-12-01 23:15:51	--	TOPICLEN=390 CHANTYPES=# TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: CHANNELLEN=50 INVEX MODES=4 NETWORK=Libera.Chat WHOX :are supported
+2021-12-01 23:15:51	--	User mode for jmanner is [+Zi]
+2021-12-01 23:15:51	--	You are now known as mrmanner
+2021-12-01 23:15:51	--	Use /motd to read the message of the day
+2021-12-01 23:15:51	--	on: Not a channel name
+2021-12-01 23:16:56	--	irc: disconnected from server

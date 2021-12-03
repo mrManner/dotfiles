@@ -1,0 +1,749 @@
+2021-10-13 00:20:45	-->	mrmanner (~jmanner@user/mrmanner) has joined ##philosophy
+2021-10-13 00:20:45	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-13 00:20:45	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-13 00:20:45	--	Channel ##philosophy: 149 nicks (1 op, 0 voices, 148 normals)
+2021-10-13 00:20:45	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-13 00:20:47	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-13 00:28:01	-->	_thelion_ (~matthias@93-82-97-211.adsl.highway.telekom.at) has joined ##philosophy
+2021-10-13 00:28:39	<--	_thelion_ (~matthias@93-82-97-211.adsl.highway.telekom.at) has quit (Client Quit)
+2021-10-13 00:35:39	<--	denza242 (~denza242@sapphire/support/denza242) has quit (Ping timeout: 265 seconds)
+2021-10-13 00:39:19	-->	p0indexter (~alpha@user/p0indexter) has joined ##philosophy
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:02	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined ##philosophy
+2021-10-13 00:42:02	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-13 00:42:02	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-13 00:42:02	--	Channel ##philosophy: 149 nicks (1 op, 0 voices, 148 normals)
+2021-10-13 00:42:03	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-13 00:42:28	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-13 00:45:58	-->	dude12312414 (~test@gateway/tor-sasl/dude12312414) has joined ##philosophy
+2021-10-13 00:48:07	<--	piaste (~piaste@host193.181-1-131.telecom.net.ar) has quit (Quit: piaste)
+2021-10-13 00:49:28	-->	piaste (~piaste@host193.181-1-131.telecom.net.ar) has joined ##philosophy
+2021-10-13 00:51:36	<--	piaste (~piaste@host193.181-1-131.telecom.net.ar) has quit (Client Quit)
+2021-10-13 00:52:55	-->	piaste (~piaste@host193.181-1-131.telecom.net.ar) has joined ##philosophy
+2021-10-13 00:54:13	<--	piaste (~piaste@host193.181-1-131.telecom.net.ar) has quit (Remote host closed the connection)
+2021-10-13 00:55:09	-->	piaste (~piaste@host193.181-1-131.telecom.net.ar) has joined ##philosophy
+2021-10-13 00:55:21	-->	lxlldr (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##philosophy
+2021-10-13 00:56:21	<--	piaste (~piaste@host193.181-1-131.telecom.net.ar) has quit (Remote host closed the connection)
+2021-10-13 00:56:49	<--	lxlldr (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Client Quit)
+2021-10-13 00:57:03	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##philosophy
+2021-10-13 00:58:48	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Client Quit)
+2021-10-13 00:59:00	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##philosophy
+2021-10-13 00:59:02	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Client Quit)
+2021-10-13 00:59:15	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##philosophy
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:04:12	-->	piaste (~piaste@host193.181-1-131.telecom.net.ar) has joined ##philosophy
+2021-10-13 01:04:17	<--	kariosfox (~kariosfox@176.221.125.161) has quit (Remote host closed the connection)
+2021-10-13 01:06:35	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Quit: Quit)
+2021-10-13 01:07:25	<--	TheHermann (~TheHerman@gateway/tor-sasl/thehermann) has quit (Quit: Leaving)
+2021-10-13 01:09:55	-->	denza242 (~denza242@sapphire/support/denza242) has joined ##philosophy
+2021-10-13 01:11:05	<--	Treefingers (~Glassbox@108.162.189.80.dyn.plus.net) has quit (Quit: Leaving)
+2021-10-13 01:11:28	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##philosophy
+2021-10-13 01:28:20	<--	grimvar (~grimvar@83.135.110.193) has quit (Ping timeout: 265 seconds)
+2021-10-13 01:28:59	<--	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has quit (Remote host closed the connection)
+2021-10-13 01:30:02	-->	grimvar (~grimvar@87.122.226.102) has joined ##philosophy
+2021-10-13 01:45:21	<--	p0indexter (~alpha@user/p0indexter) has quit (Quit: ars longa vita brevis)
+2021-10-13 01:49:31	<--	arcturus1 (~arcturus@gateway/tor-sasl/arcturus) has quit (Quit: arcturus1)
+2021-10-13 01:51:08	plankster	just finished the satanic verses
+2021-10-13 01:51:29	plankster	all that shit about having to die before you can be born again has me in a contemplative mood
+2021-10-13 01:53:18	-->	arcturus (~arcturus@gateway/tor-sasl/arcturus) has joined ##philosophy
+2021-10-13 02:24:07	-->	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has joined ##philosophy
+2021-10-13 02:29:33	dude12312414	anyone has some creative ideas what I can do with used books that libraries don't want
+2021-10-13 02:42:46	NickMirage	read them
+2021-10-13 02:43:52	<--	mannequin (uid453465@id-453465.helmsley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-13 02:44:58	dude12312414	i did :)
+2021-10-13 03:00:34	<--	I_Am_M00t (uid427178@id-427178.ilkley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-13 03:08:07	manicennui	Some used book stores will take them.
+2021-10-13 03:08:13	manicennui	Might even pay you a bit.
+2021-10-13 03:08:34	manicennui	Several years ago I had to take a bunch of books out to a library in the suburbs.
+2021-10-13 03:12:06	plankster	i sold most of my CD collection the other day
+2021-10-13 03:12:11	plankster	felt kinda good
+2021-10-13 03:12:19	plankster	those were some quality CDs
+2021-10-13 03:18:18	manicennui	I got rid of my CD collection years ago, and now I'm slowly rebuilding it.
+2021-10-13 03:19:46	plankster	yeah. rebuilding it weirder over here
+2021-10-13 03:20:03	plankster	the kinda stuff you cant just find on youtube
+2021-10-13 03:21:37	manicennui	I don't get using YT for music.
+2021-10-13 03:21:47	manicennui	I'll watch a music video once in a while.
+2021-10-13 03:21:51	manicennui	And I have spotify.
+2021-10-13 03:22:07	manicennui	But I hate relying on the Internet for such things and kind of like having physical media.
+2021-10-13 03:22:23	manicennui	There are also things that are difficult to find outside of import CDs.
+2021-10-13 03:34:43	-->	amigojapan (uid86330@id-86330.helmsley.irccloud.com) has joined ##philosophy
+2021-10-13 03:41:10	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Read error: Connection reset by peer)
+2021-10-13 03:47:59	-->	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-10-13 03:50:28	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined ##philosophy
+2021-10-13 04:26:42	<--	kevin-oculus (~tomys@c188-149-14-10.bredband.tele2.se) has quit (Ping timeout: 268 seconds)
+2021-10-13 04:32:33	-->	Atque (~Atque@user/atque) has joined ##philosophy
+2021-10-13 04:40:45	-->	pucara (~i@181.95.206.221) has joined ##philosophy
+2021-10-13 04:53:06	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 04:54:15	<--	amigojapan (uid86330@id-86330.helmsley.irccloud.com) has quit
+2021-10-13 05:02:55	<--	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 05:09:31	-->	mannequin (uid453465@id-453465.helmsley.irccloud.com) has joined ##philosophy
+2021-10-13 05:21:56	-->	delita (~igloo@107.127.24.161) has joined ##philosophy
+2021-10-13 05:27:03	-->	Ungwelian (~everyone@88-113-45-51.elisa-laajakaista.fi) has joined ##philosophy
+2021-10-13 05:43:35	<--	delita (~igloo@107.127.24.161) has quit (Quit: Igloo IRC: https://iglooirc.com)
+2021-10-13 05:44:50	biys	i think it's weird that we still study shakespeare
+2021-10-13 05:45:04	biys	it's like suggesting that throughout time there's never been a better writer
+2021-10-13 05:45:44	biys	but the thing about that is...  if we're forcing people to study old literature to understand the world, they're understanding of the world will be formulated based on their study of that old literature
+2021-10-13 05:47:34	biys	it seems like it's more-so a matter of tradition than anything else at this point
+2021-10-13 05:47:43	causative	yes, we study Shakespeare entirely because of social status considerations
+2021-10-13 05:47:58	biys	there's certains ideas and concepts that are portrayed that we feel deserve to be discussed
+2021-10-13 05:48:21	biys	why?  because they've always been discussed
+2021-10-13 05:48:29	causative	he was revered, in the past, so in the present people gain status by saying they study Shakespeare and revering him
+2021-10-13 05:48:54	causative	high-status individuals result in others wanting to associate with the high-status individuals, raising their status even more, in a feedback cycle
+2021-10-13 05:48:54	biys	that might be part of it
+2021-10-13 05:49:14	biys	i would say that instead there's a particular narrative that's being taught
+2021-10-13 05:49:18	biys	about how to think about the world
+2021-10-13 05:49:20	biys	how to operate in the world
+2021-10-13 05:49:48	biys	if everyone reads the same book and is taught to look at it the same way
+2021-10-13 05:49:49	biys	well...
+2021-10-13 05:49:57	biys	we might as well all just be christians!
+2021-10-13 05:50:02	causative	and it helps that Shakespeare's language is now largely inscrutable, or at least difficult to read, for modern students - "if it's hard to understand it must be very important"
+2021-10-13 05:51:21	causative	all of this is bullshit, of course. The real merit of a work comes from its content, the claims it makes - not the social reverence surrounding it or the level of inscrutability in it
+2021-10-13 05:52:27	biys	sure
+2021-10-13 05:53:16	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined ##philosophy
+2021-10-13 05:54:44	biys	i reject your reality and substitute my own.  it's a conspiracy
+2021-10-13 05:56:14	causative	the inscrutability dynamic goes like - "I understand this because I have studied it long and hard. You don't understand it yet. Therefore, your status is lower than mine, and you can aspire to my status by studying this inscrutable work, until you can claim the same as I do."
+2021-10-13 05:56:33	causative	it's the same thing that cults do when they reserve sacred mysteries for the higher levels of the cult
+2021-10-13 05:56:52	biys	haha
+2021-10-13 05:57:08	biys	i like that
+2021-10-13 05:58:50	causative	it's legitimate if the thing being understood is designed to be understood easily, and understanding it actually lets you do useful or valuable things that you couldn't do before you understood
+2021-10-13 05:58:53	biys	there's more than just reading the text though.  with hamlet i need to understand catholics
+2021-10-13 05:59:22	biys	for example, i would have never know what pergatory was had i not read hamlet
+2021-10-13 05:59:28	causative	it's illegitimate if the thing being understood is difficult to understand because it uses opaque or archaic language
+2021-10-13 05:59:32	biys	actually i didn't know what it was because i read hamlet
+2021-10-13 05:59:38	biys	i had to figure out what it was because i read hamlet
+2021-10-13 06:05:58	causative	I guess you do learn some things about renaissance Europe if you read Shakespeare
+2021-10-13 06:07:26	biys	i wouldn't say only by reading shakespeare
+2021-10-13 06:07:33	biys	you'd likely have to read other sources as well
+2021-10-13 06:07:54	biys	if you were to simply read shakespeare it is unlikely a person would understand simply with that text
+2021-10-13 06:21:48	<--	kish` (~aqua@user/aqua) has quit (Remote host closed the connection)
+2021-10-13 06:22:21	-->	kish` (~aqua@user/aqua) has joined ##philosophy
+2021-10-13 06:29:46	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 06:34:38	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Quit: THE RAM IS TOO DAMN HIGH)
+2021-10-13 06:37:36	<--	bosspotato (~bosspotat@user/bosspotato) has quit (Ping timeout: 245 seconds)
+2021-10-13 06:45:54	-->	amigojapan (uid86330@id-86330.helmsley.irccloud.com) has joined ##philosophy
+2021-10-13 06:48:55	-->	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has joined ##philosophy
+2021-10-13 06:51:55	-->	qu4nt1n|2 (~qu4nt1n@78.198.214.34) has joined ##philosophy
+2021-10-13 06:52:49	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined ##philosophy
+2021-10-13 06:54:33	-->	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has joined ##philosophy
+2021-10-13 07:13:33	-->	b93 (~I@a89-152-175-20.cpe.netcabo.pt) has joined ##philosophy
+2021-10-13 07:22:29	<--	Adiemus (~Maranatha@p5b293d99.dip0.t-ipconnect.de) has quit (Quit: For to me, to live is Christ, and to die is gain. (Philippians 1:21 NKJV))
+2021-10-13 07:27:35	<--	qu4nt1n|2 (~qu4nt1n@78.198.214.34) has quit (Quit: KVIrc 5.0.0 Aria http://www.kvirc.net/)
+2021-10-13 07:40:56	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Ping timeout: 245 seconds)
+2021-10-13 07:44:09	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Remote host closed the connection)
+2021-10-13 07:45:24	-->	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-10-13 07:51:09	<--	ravan__ (~ravan@user/ravan) has quit (Quit: Leaving)
+2021-10-13 07:51:45	-->	ravan__ (~ravan@user/ravan) has joined ##philosophy
+2021-10-13 07:51:51	<--	ravan__ (~ravan@user/ravan) has quit (Read error: Connection reset by peer)
+2021-10-13 08:11:04	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Read error: Connection reset by peer)
+2021-10-13 08:11:48	-->	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-10-13 08:12:12	-->	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has joined ##philosophy
+2021-10-13 08:12:48	<--	Null_A (~null_a@2601:645:8700:2290:cca9:9e4e:f1d8:3489) has quit (Client Quit)
+2021-10-13 08:14:15	<--	mannequin (uid453465@id-453465.helmsley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-13 08:47:19	<--	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:22:52	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:21	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined ##philosophy
+2021-10-13 21:23:22	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-13 21:23:22	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-13 21:23:22	--	Channel ##philosophy: 149 nicks (1 op, 0 voices, 148 normals)
+2021-10-13 21:23:23	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-13 21:23:46	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-13 21:26:38	-->	ben1_ (~ben1@88.236.166.182) has joined ##philosophy
+2021-10-13 21:26:52	<--	ben1_ (~ben1@88.236.166.182) has left ##philosophy
+2021-10-13 21:27:02	<--	wonko (~wjc@62.115.229.50) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:34:08	<--	kish` (~aqua@user/aqua) has quit (Quit: Leaving)
+2021-10-13 21:34:25	-->	kish` (~aqua@user/aqua) has joined ##philosophy
+2021-10-13 21:34:55	-->	dayday (uid520582@id-520582.hampstead.irccloud.com) has joined ##philosophy
+2021-10-13 21:36:04	-->	as2333 (~as2334@host193.181-1-131.telecom.net.ar) has joined ##philosophy
+2021-10-13 21:39:36	<--	Rashad (~textual@2a01:9700:1212:500:b075:7036:2c84:8385) has quit (Ping timeout: 268 seconds)
+2021-10-13 21:43:55	<--	___nick___ (~quassel@cpc68286-cdif17-2-0-cust533.5-1.cable.virginm.net) has quit (Ping timeout: 252 seconds)
+2021-10-13 21:52:19	<--	ravan (~ravan@user/ravan) has quit (Quit: Leaving)
+2021-10-13 22:02:08	<--	kish` (~aqua@user/aqua) has quit (Remote host closed the connection)
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:33	-->	mrmanner (~jmanner@185.224.57.161) has joined ##philosophy
+2021-10-16 12:32:33	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-16 12:32:33	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-16 12:32:33	--	Channel ##philosophy: 148 nicks (1 op, 0 voices, 147 normals)
+2021-10-16 12:32:34	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-16 12:32:51	<--	Atque (~Atque@user/atque) has quit (Ping timeout: 276 seconds)
+2021-10-16 12:33:00	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-16 12:35:30	arryana	haha
+2021-10-16 12:35:42	arryana	that's so melodramatic
+2021-10-16 12:36:24	-->	ravan (~ravan@user/ravan) has joined ##philosophy
+2021-10-16 12:38:57	arryana	you don't know what you'll want in six months, let alone twenty years
+2021-10-16 12:43:07	assan	speak for yourself
+2021-10-16 12:44:57	assan	the question is why not exit now, and the answer is i don't have the resources to do that right now
+2021-10-16 12:45:39	assan	so am still studying the plants to understand the poisons
+2021-10-16 12:46:04	-->	qu4nt1n (~qu4nt1n@78.198.214.34) has joined ##philosophy
+2021-10-16 12:46:07	assan	and am sure 10 years from now my research would be complete
+2021-10-16 12:46:57	assan	there's nothing to be gained in life thus i live to proceed to my demise
+2021-10-16 12:47:02	<--	qu4nt1n (~qu4nt1n@78.198.214.34) has quit (Client Quit)
+2021-10-16 12:47:23	-->	qu4nt1n (~qu4nt1n@78.198.214.34) has joined ##philosophy
+2021-10-16 12:47:48	<--	mannequin (uid453465@helmsley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-16 12:48:29	assan	i know there's the option of snake venom but like i said, i don't have the resources which includes understanding how to extract the snake venom for the use of poison
+2021-10-16 12:49:33	assan	so for now am only alife because of my ignorance on how to end this mortal coil without failure
+2021-10-16 12:54:47	<--	voids (~x@user/voids) has quit (Ping timeout: 268 seconds)
+2021-10-16 12:56:38	arryana	uh huh.  this all sounds like a lot of self pitying attention seeking to me
+2021-10-16 12:58:20	assan	yeah to you
+2021-10-16 12:58:27	assan	am not responsible for your perception
+2021-10-16 13:00:07	arryana	you'll grow up someday.  or you won't
+2021-10-16 13:00:28	assan	sure
+2021-10-16 13:01:20	assan	or probably you are the one that would grow up someday
+2021-10-16 13:01:29	assan	or sometime
+2021-10-16 13:01:57	assan	to finally understand the ultimate goal of life is to exit life
+2021-10-16 13:02:17	assan	like the alchemist at the edge of the dome
+2021-10-16 13:02:57	arryana	hahah
+2021-10-16 13:03:06	<--	urishgirl (~urishgirl@2a02-a44c-7644-1-9d67-a870-97d6-8a7a.fixed6.kpn.net) has quit (Quit: Client closed)
+2021-10-16 13:03:13	assan	she's lafing now
+2021-10-16 13:03:19	arryana	you're talking bollocks.  you don't believe a word of what you're saying.  waste someone else's time, i see through your nonsense.
+2021-10-16 13:03:46	assan	or probably you see what you can see
+2021-10-16 13:04:07	assan	like the buddha would say, you what you are
+2021-10-16 13:04:22	assan	you see what you are*
+2021-10-16 13:05:13	assan	or better put, where you at is what you see
+2021-10-16 13:05:23	arryana	blah, blah, blah.  you're clearly one of those unstable people who emotionally explodes when they aren't babbling insensible silliness.
+2021-10-16 13:06:00	-->	voids (~x@102.209.19.93.rev.sfr.net) has joined ##philosophy
+2021-10-16 13:06:33	assan	and you know it for sure
+2021-10-16 13:06:48	assan	cuz you are arya the wise
+2021-10-16 13:07:51	assan	or probably arya the all knowing
+2021-10-16 13:09:30	assan	the one that sees the horse piss at the top of the pyramid while fools climb out of mare curiosity
+2021-10-16 13:10:00	<--	voids (~x@102.209.19.93.rev.sfr.net) has quit (Changing host)
+2021-10-16 13:10:00	-->	voids (~x@user/voids) has joined ##philosophy
+2021-10-16 13:11:33	arryana	are you -still- babbling?
+2021-10-16 13:21:39	assan	we can have a discussion if you wish
+2021-10-16 13:21:59	assan	no need for the insults
+2021-10-16 13:22:05	arryana	i haven't heard you say anything of any sense yet, why would i believe you'd start now?
+2021-10-16 13:22:23	arryana	i'm not insulting you, it's just the truth
+2021-10-16 13:22:34	arryana	your pseudonihilism isn't much of a discussion
+2021-10-16 13:23:00	assan	we don't have to discus my journey to extinction
+2021-10-16 13:23:21	assan	it came up based on my previous discussion
+2021-10-16 13:23:48	assan	i didn't intend to make it the topic of the day
+2021-10-16 13:24:31	assan	i know some philosophies that support life
+2021-10-16 13:24:49	assan	i might have my will to exit at my own choosing
+2021-10-17 18:14:39	-->	jmanner (~jmanner@185.224.57.161) has joined ##philosophy
+2021-10-17 18:14:39	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-17 18:14:39	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-17 18:14:39	--	Channel ##philosophy: 161 nicks (1 op, 0 voices, 160 normals)
+2021-10-17 18:14:40	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-17 18:15:03	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-17 18:16:24	-->	pucara (~i@181.90.255.235) has joined ##philosophy
+2021-10-17 18:17:38	arryana	yeah, i don't get the extinctionists.
+2021-10-17 18:17:48	arryana	seems like a lot of trouble to me.
+2021-10-17 18:18:13	arryana	either they're shooting the underdog in the foot, or they're wasting effort in destroying the already-doomed
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined ##philosophy
+2021-10-17 18:19:02	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-17 18:19:02	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-17 18:19:02	--	Channel ##philosophy: 162 nicks (1 op, 0 voices, 161 normals)
+2021-10-17 18:19:03	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-17 18:19:28	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-17 18:30:36	-->	jmanner (~jmanner@user/mrmanner) has joined ##philosophy
+2021-10-17 18:30:36	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-17 18:30:36	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-17 18:30:36	--	Channel ##philosophy: 162 nicks (1 op, 0 voices, 161 normals)
+2021-10-17 18:30:39	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:31:00	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-17 18:40:41	<--	megane (~megane@chicken/developer/megane) has left ##philosophy
+2021-10-17 18:42:19	<--	mikey (~mikey@user/mikey) has quit (Remote host closed the connection)
+2021-10-17 18:48:14	-->	mikey (~mikey@user/mikey) has joined ##philosophy
+2021-10-17 18:49:31	<--	TheHermann (~TheHerman@gateway/tor-sasl/thehermann) has quit (Remote host closed the connection)
+2021-10-17 18:49:44	-->	TheHermann (~TheHerman@gateway/tor-sasl/thehermann) has joined ##philosophy
+2021-10-17 18:50:01	<--	mikey (~mikey@user/mikey) has quit (Client Quit)
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:43	-->	mrmanner (~jmanner@user/mrmanner) has joined ##philosophy
+2021-10-17 19:45:43	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-17 19:45:43	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-17 19:45:43	--	Channel ##philosophy: 161 nicks (1 op, 0 voices, 160 normals)
+2021-10-17 19:45:44	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-17 19:46:04	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-17 19:50:22	causative	like, the eye often perceives objects as blurry. Naive realism would seem to imply that this means the real objects are blurry. That doesn't make sense.
+2021-10-17 19:59:42	-->	urishgirl (~urishgirl@2a02-a44c-7644-1-201d-99a3-a061-7443.fixed6.kpn.net) has joined ##philosophy
+2021-10-17 20:02:48	<--	pucara (~i@181.90.255.235) has quit (Ping timeout: 264 seconds)
+2021-10-17 20:03:47	-->	ben1_ (~ben1@88.236.166.182) has joined ##philosophy
+2021-10-17 20:04:07	<--	ben1_ (~ben1@88.236.166.182) has left ##philosophy
+2021-10-17 20:10:22	-->	delita (~igloo@166.205.90.1) has joined ##philosophy
+2021-10-17 20:11:03	-->	urishgirl62 (~urishgirl@2a02-a44c-7644-1-538-b0e9-1b7c-6628.fixed6.kpn.net) has joined ##philosophy
+2021-10-17 20:13:34	<--	betelgeuse (~betelgeus@94-225-47-8.access.telenet.be) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-10-17 20:14:20	<--	delita (~igloo@166.205.90.1) has quit (Client Quit)
+2021-10-17 20:14:26	<--	urishgirl (~urishgirl@2a02-a44c-7644-1-201d-99a3-a061-7443.fixed6.kpn.net) has quit (Ping timeout: 256 seconds)
+2021-10-17 20:20:34	--	urishgirl62 is now known as urishgirl
+2021-10-17 20:29:20	<--	mannequin (uid453465@id-453465.helmsley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-17 20:33:35	-->	PsyZeus (~TheLight@user/psyzeus) has joined ##philosophy
+2021-10-17 20:44:06	-->	ttree (~ttree0@c-73-239-62-159.hsd1.wa.comcast.net) has joined ##philosophy
+2021-10-17 20:44:48	-->	econo (uid147250@user/econo) has joined ##philosophy
+2021-10-17 20:51:12	-->	saufa (~saufa@m91-129-107-138.cust.tele2.ee) has joined ##philosophy
+2021-10-17 21:01:26	<--	dayday (uid520582@id-520582.hampstead.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-17 21:09:53	-->	bosspotato_ (~bosspotat@142.184.100.116) has joined ##philosophy
+2021-10-17 21:09:53	<--	bosspotato_ (~bosspotat@142.184.100.116) has quit (Changing host)
+2021-10-17 21:09:53	-->	bosspotato_ (~bosspotat@user/bosspotato) has joined ##philosophy
+2021-10-17 21:11:46	-->	tr4ns_t3rr0r (~n0b0dy@156.67.18.13) has joined ##philosophy
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined ##philosophy
+2021-10-30 12:09:24	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-30 12:09:24	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-30 12:09:24	--	Channel ##philosophy: 153 nicks (2 ops, 0 voices, 151 normals)
+2021-10-30 12:09:25	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-30 12:09:50	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined ##philosophy
+2021-10-30 12:10:54	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-30 12:10:54	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-30 12:10:54	--	Channel ##philosophy: 153 nicks (2 ops, 0 voices, 151 normals)
+2021-10-30 12:10:54	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-30 12:11:05	chatguy	hey jmanner
+2021-10-30 12:11:21	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:14:44	mrmanner	chatguy: hi! had some issues with my client, hope it's working now
+2021-10-30 12:15:02	chatguy	sure
+2021-10-30 12:23:07	-->	Ungwelian (~everyone@88-113-233-115.elisa-laajakaista.fi) has joined ##philosophy
+2021-10-30 12:28:11	chatguy	hey Ungwelian
+2021-10-30 12:28:17	-->	emmeka (~emmeka@162-251-198-66.dynamic.parolink.net) has joined ##philosophy
+2021-10-30 12:28:18	-->	wootehfoot (~wootehfoo@user/wootehfoot) has joined ##philosophy
+2021-10-30 12:31:46	<--	arcturus (~arcturus@gateway/tor-sasl/arcturus) has quit (Remote host closed the connection)
+2021-10-30 12:32:31	-->	arcturus (~arcturus@gateway/tor-sasl/arcturus) has joined ##philosophy
+2021-10-30 12:43:22	-->	Keter (~Keter@user/keter) has joined ##philosophy
+2021-10-30 12:46:35	<--	urishgirl (~urishgirl@2a02-a44c-7644-1-b5b5-aa2e-d057-98af.fixed6.kpn.net) has quit (Ping timeout: 256 seconds)
+2021-10-30 12:50:17	<--	chatguy (~chatguy@pa49-181-94-76.pa.nsw.optusnet.com.au) has quit (Quit: Client closed)
+2021-10-30 12:54:28	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Read error: Connection reset by peer)
+2021-10-30 12:58:54	-->	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-10-30 12:59:29	-->	ReedK0_ (~Muimi@60.20.221.107) has joined ##philosophy
+2021-10-30 13:02:08	mannequin	https://www.youtube.com/watch?v=stQTFEaHzVI
+2021-10-30 13:02:09	ro-bot-o	[YouTube] ⁨Hexstatic - 'Perfect Bird'⁩ | 4m 4s | Channel: ⁨Ninja Tune⁩ | 103,845 views | 2013-01-22 - 16:27:44
+2021-10-30 13:03:05	<--	Fohsap (~Muimi@2001:19f0:6001:e4d:5400:3ff:fe41:8d5b) has quit (Ping timeout: 264 seconds)
+2021-10-30 13:04:43	-->	urishgirl (~urishgirl@2a02-a44c-7644-1-dcb5-a74-b5d6-ccb4.fixed6.kpn.net) has joined ##philosophy
+2021-10-30 13:05:00	-->	Atque (~Atque@user/atque) has joined ##philosophy
+2021-10-30 13:10:39	 *	arryana pushes crackers, cheese, avocado, and some grapes over to pussipupu
+2021-10-30 13:11:11	 *	pussipupu passes arryana a plate for the buffet
+2021-10-30 13:11:21	pussipupu	it's book fair and buffet day!
+2021-10-30 13:11:30	arryana	woo!
+2021-10-30 13:12:06	arryana	books are lovely things
+2021-10-30 13:12:27	arryana	my friend's 12 year old has een reading the classics, so i've been re-reading them so she can ask questions
+2021-10-30 13:19:32	-->	Brainium (~brainium@user/brainium) has joined ##philosophy
+2021-10-30 13:19:55	arryana	it's odd how different flowers for algernon looks to me as an adult
+2021-10-30 13:26:46	pussipupu	Well, you're a different person now to be fair
+2021-10-30 13:28:04	 *	arryana nods
+2021-10-30 13:28:23	arryana	i think the biggest difference is understanding the adult relationships, his evolving needs.
+2021-10-30 13:29:02	arryana	but man, there's a lot of people in this channel who could learn something reading it.  it's an amazing spotlight on how intelligence doesn't necessarily make someone a better person, a better friend, or more able to connect with fellow human beings,.
+2021-10-30 13:34:39	Ungwelian	I guess it could be worth reading. At 300 pages or so, it's not very long.
+2021-10-30 13:34:47	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Quit: ZNC 1.7.5+deb4 - https://znc.in)
+2021-10-30 13:36:01	Ungwelian	Does it argue for denying medical care from the mentally disabled?
+2021-10-30 13:36:24	-->	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-10-30 13:44:37	<--	ReedK0_ (~Muimi@60.20.221.107) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-10-30 13:44:57	-->	Fohsap (~Muimi@60.20.221.107) has joined ##philosophy
+2021-10-30 13:52:31	<--	emmeka (~emmeka@162-251-198-66.dynamic.parolink.net) has quit (Quit: c'est en se plantant, qu'on devient cultivé)
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:35	-->	mrmanner (~jmanner@user/mrmanner) has joined ##philosophy
+2021-10-30 17:07:35	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-30 17:07:35	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-30 17:07:35	--	Channel ##philosophy: 162 nicks (2 ops, 0 voices, 160 normals)
+2021-10-30 17:07:36	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-30 17:07:39	darklambda	good word? not really a good word.. it's a gassy week
+2021-10-30 17:07:51	darklambda	got another pedal today (2nd hand.. but like brand new)
+2021-10-30 17:08:00	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-30 17:08:05	darklambda	i'll be getting another 2 tomorrow... :-P
+2021-10-30 17:08:27	darklambda	how's your side arryana? onboarded with meta already?
+2021-10-30 17:08:31	<--	tafami (~tafami@103.225.136.98) has quit (Client Quit)
+2021-10-30 17:09:23	arryana	haha
+2021-10-30 17:09:28	arryana	i'm not really a facebook sort of person
+2021-10-30 17:10:02	arryana	or any 'social media'.
+2021-10-30 17:10:48	-->	Toile (~Toile@2a02:c7e:1c3b:200:519a:7efc:32c6:f315) has joined ##philosophy
+2021-10-30 17:10:56	arryana	most of my text chat is in signa
+2021-10-30 17:10:58	arryana	signal
+2021-10-30 17:11:36	darklambda	oh.. it's not facebook anymore.. they renamed to meta
+2021-10-30 17:11:37	darklambda	hehe
+2021-10-30 17:12:06	arryana	eh, it can call itself rumplestiltskin for all i care
+2021-10-30 17:12:10	darklambda	lol
+2021-10-30 17:12:51	arryana	the sociological dynamic on there is too 11-year-old-girl for my taste
+2021-10-30 17:12:51	pussipupu	Facebook is still called Facebook they just renamed the holding company
+2021-10-30 17:12:52	Digit	speaking of social media and names... see what donny drumpf named his social media platform?   (as well as breaching the license agreement of mastodon).  hilariously newspeakish ministry-of-truth sounding name.  n_n
+2021-10-30 17:13:41	Digit	better the fediverse, than fascberk.
+2021-10-30 17:14:22	Digit	https://fediverse.party/ :) healthy options.
+2021-10-30 17:14:23	ro-bot-o	[url] Fediverse.Party - explore federated networks | fediverse.party
+2021-10-30 17:15:22	<--	Toile (~Toile@2a02:c7e:1c3b:200:519a:7efc:32c6:f315) has quit (Client Quit)
+2021-10-30 17:16:07	-->	Toile (~Toile@2a02:c7e:1c3b:200:519a:7efc:32c6:f315) has joined ##philosophy
+2021-10-30 17:16:47	arryana	ta, pussipupu
+2021-10-30 17:16:51	arryana	i don't really follow news of such things
+2021-10-30 17:17:13	<--	Toile (~Toile@2a02:c7e:1c3b:200:519a:7efc:32c6:f315) has quit (Client Quit)
+2021-10-30 17:17:13	arryana	i saw some article headline to that purpose, but didn't read the actual article
+2021-10-30 17:18:04	 *	arryana has read lord of the flies, flowers for algernon, the collector, and saturday night, sunday morning this week
+2021-10-30 17:18:59	arryana	mostly, however, i've been too busy with the real world to have much time
+2021-10-30 17:20:20	<--	thunder (~thunder@user/thunder) has quit (Killed (NickServ (GHOST command used by metasintactic)))
+2021-10-30 17:20:20	-->	metasintactic (~thunder@user/thunder) has joined ##philosophy
+2021-10-30 17:21:36	arryana	my little hacker arrives in a few days, it's the first time this house has seen visitors, so we've been doing a great deal to get it ready
+2021-10-30 17:23:10	<--	amigojapan (uid86330@id-86330.helmsley.irccloud.com) has quit
+2021-10-30 17:24:31	-->	mrdata (~mrdata@user/mrdata) has joined ##philosophy
+2021-10-30 17:32:06	-->	Inline (~Inline@aftr-37-201-241-178.unity-media.net) has joined ##philosophy
+2021-10-30 17:48:59	<--	Awaru (Awaru@gateway/vpn/protonvpn/awaru) has quit (Ping timeout: 264 seconds)
+2021-10-30 17:53:38	-->	ravan (~ravan@user/ravan) has joined ##philosophy
+2021-10-30 17:58:30	<--	choozy (~choozy@75-63-174-82.ftth.glasoperator.nl) has quit (Quit: Konversation terminated!)
+2021-10-30 18:00:25	<--	urishgirl (~urishgirl@2a02-a44c-7644-1-dcb5-a74-b5d6-ccb4.fixed6.kpn.net) has quit (Quit: Client closed)
+2021-10-30 18:02:10	-->	Awaru (Awaru@gateway/vpn/protonvpn/awaru) has joined ##philosophy
+2021-10-30 22:21:17	--	irc: disconnected from server
+2021-10-30 22:21:47	-->	mrmanner (~jmanner@user/mrmanner) has joined ##philosophy
+2021-10-30 22:21:47	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-10-30 22:21:47	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-10-30 22:21:47	--	Channel ##philosophy: 166 nicks (2 ops, 0 voices, 164 normals)
+2021-10-30 22:21:48	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-10-30 22:22:09	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-10-30 22:23:28	-->	chomwitt (~chomwitt@ppp-94-68-249-8.home.otenet.gr) has joined ##philosophy
+2021-10-30 22:24:59	<--	arryana (~arryana@host86-172-131-172.range86-172.btcentralplus.com) has quit (Ping timeout: 264 seconds)
+2021-10-30 22:29:01	-->	shibboleth (~shibbolet@user/shibboleth) has joined ##philosophy
+2021-10-30 22:30:22	<--	Oicifrep (~Perficio@user/perficio) has quit (Ping timeout: 260 seconds)
+2021-12-01 23:20:47	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined ##philosophy
+2021-12-01 23:20:48	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-12-01 23:20:48	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-01 23:20:48	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-12-01 23:20:48	--	Channel ##philosophy: 162 nicks (1 op, 0 voices, 161 normals)
+2021-12-01 23:20:47	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-12-01 23:21:31	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-12-01 23:21:44	--	Mode ##philosophy [+cnt]
+2021-12-01 23:21:44	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined ##philosophy
+2021-12-01 23:23:01	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-12-01 23:23:01	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-01 23:23:01	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-12-01 23:23:02	--	Channel ##philosophy: 162 nicks (1 op, 0 voices, 161 normals)
+2021-12-01 23:23:13	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-12-01 23:22:59	--	PvNotice(ChanServ): You must be registered & logged in with services to speak in this channel. Please type '/ns help register' for instructions how to register.
+2021-12-01 23:23:16	--	Mode ##philosophy [+cnt]
+2021-12-01 23:23:16	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-12-01 23:23:40	<--	saufa (~saufa@m91-129-99-39.cust.tele2.ee) has quit (Quit: Lost terminal)
+2021-12-01 23:38:57	-->	ruzu (realname) (~ruzu@107-179-252-71.cpe.teksavvy.com) has joined ##philosophy
+2021-12-01 23:49:03	-->	shea [Shea] (shea) (~shea@user/shea) has joined ##philosophy
+2021-12-02 00:05:37	<--	choozy (~choozy@75-63-174-82.ftth.glasoperator.nl) has quit (Quit: Konversation terminated!)
+2021-12-02 00:22:40	<--	Treefingers (~Glassbox@34.162.189.80.dyn.plus.net) has quit (Quit: Leaving)
+2021-12-02 00:29:17	-->	arcturus [arcturus] (arcturus) (~arcturus@gateway/tor-sasl/arcturus) has joined ##philosophy
+2021-12-02 00:43:01	<--	arcturus (~arcturus@gateway/tor-sasl/arcturus) has quit (Quit: arcturus)
+2021-12-02 00:46:06	-->	arcturus [arcturus] (arcturus) (~arcturus@gateway/tor-sasl/arcturus) has joined ##philosophy
+2021-12-02 00:47:14	-->	vysn [vysn] (vysn) (~vysn@user/vysn) has joined ##philosophy
+2021-12-02 01:01:51	<--	I_Am_M00t (uid427178@id-427178.ilkley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-02 01:03:19	-->	solveig [solveig] (du vet hvem jeg er) (sid194105@id-194105.uxbridge.irccloud.com) has joined ##philosophy
+2021-12-02 01:03:40	--	solveig is now known as pennylane
+2021-12-02 01:06:21	<--	trbp (~trbp@user/trbp) has quit (Ping timeout: 256 seconds)
+2021-12-02 01:09:28	<--	Ungwelian (Every1@91-154-154-42.elisa-laajakaista.fi) has quit (Quit: Z_z :))
+2021-12-02 01:13:02	<--	skapata (~Skapata@user/skapata) has quit (Ping timeout: 240 seconds)
+2021-12-02 01:17:20	-->	skapata (Skapata Lambda 1337) (~Skapata@2804:14c:87b0:a6f9:e1ca:8d5a:1c5d:18a6) has joined ##philosophy
+2021-12-02 01:17:21	--	skapata has identified as skapata
+2021-12-02 01:17:20	<--	skapata (~Skapata@2804:14c:87b0:a6f9:e1ca:8d5a:1c5d:18a6) has quit (Changing host)
+2021-12-02 01:17:20	-->	skapata [skapata] (Skapata Lambda 1337) (~Skapata@user/skapata) has joined ##philosophy
+2021-12-02 01:40:52	--	Reader is now known as MrReader
+2021-12-02 01:43:50	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-02 01:49:57	<--	pennylane (sid194105@id-194105.uxbridge.irccloud.com) has left ##philosophy
+2021-12-02 01:52:01	<--	omero (~omero@idlerpg/player/omero) has quit (Ping timeout: 250 seconds)
+2021-12-02 01:53:25	-->	omero [omero] (omero) (~omero@idlerpg/player/omero) has joined ##philosophy
+2021-12-02 02:00:39	<--	smeeagle (~smeeagle@2a00:23c8:9611:e600:1401:22a5:674e:d69b) has quit (Quit: smeeagle)
+2021-12-02 02:04:20	-->	zzznilzzz (Will) (~zzznilzzz@160.19.4.85) has joined ##philosophy
+2021-12-02 02:10:03	-->	dude12312414 [dude12312414] (test) (~test@gateway/tor-sasl/dude12312414) has joined ##philosophy
+2021-12-02 02:11:23	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Remote host closed the connection)
+2021-12-02 02:12:42	<--	shea (~shea@user/shea) has quit (Ping timeout: 256 seconds)
+2021-12-02 02:13:08	-->	shea [Shea] (shea) (~shea@user/shea) has joined ##philosophy
+2021-12-02 02:27:50	-->	amigojapan [amigojapan] (Ask Me) (uid86330@id-86330.helmsley.irccloud.com) has joined ##philosophy
+2021-12-02 02:30:06	<--	zzznilzzz (~zzznilzzz@160.19.4.85) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-12-02 02:52:22	-->	tafami (realname) (~tafami_@103.225.136.98) has joined ##philosophy
+2021-12-02 03:02:10	<--	tafami (~tafami_@103.225.136.98) has quit (Quit: Leaving)
+2021-12-02 03:03:35	<--	ruzu (~ruzu@107-179-252-71.cpe.teksavvy.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:30:46	-->	plankster_ [plankers] (plankster) (~plankster@user/plankers) has joined ##philosophy
+2021-12-02 03:31:38	<--	plankster (~plankster@user/plankers) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:31:58	--	plankster_ is now known as plank
+2021-12-02 04:51:51	<--	zicada (~zicada@shell01.copyleft.no) has quit (Ping timeout: 268 seconds)
+2021-12-02 05:00:23	<--	darklambda (~whateverg@111.65.58.16) has quit (Ping timeout: 256 seconds)
+2021-12-02 05:00:38	-->	darklambda (Unknown) (~whateverg@58.185.92.154) has joined ##philosophy
+2021-12-02 05:08:00	-->	Nognosis [Nognosis] (realname) (~Nognosis@198.11.28.72) has joined ##philosophy
+2021-12-02 05:46:35	<--	bosspotato (~bosspotat@user/bosspotato) has quit (Read error: Connection reset by peer)
+2021-12-02 05:50:46	-->	zicada (hurr) (~zicada@shell01.copyleft.no) has joined ##philosophy
+2021-12-02 06:00:54	-->	Redsuit (realname) (~Redsuit@068-186-121-067.biz.spectrum.com) has joined ##philosophy
+2021-12-02 06:00:54	--	Redsuit has identified as Redsuit
+2021-12-02 06:01:18	<--	Redsuit (~Redsuit@068-186-121-067.biz.spectrum.com) has quit (Remote host closed the connection)
+2021-12-02 06:01:18	<--	arcturus (~arcturus@gateway/tor-sasl/arcturus) has quit (Ping timeout: 276 seconds)
+2021-12-02 06:01:41	-->	arcturus [arcturus] (arcturus) (~arcturus@gateway/tor-sasl/arcturus) has joined ##philosophy
+2021-12-02 06:01:55	-->	Redsuit (realname) (~Redsuit@068-186-121-067.biz.spectrum.com) has joined ##philosophy
+2021-12-02 06:01:56	--	Redsuit has identified as Redsuit
+2021-12-02 06:03:08	<--	Redsuit (~Redsuit@068-186-121-067.biz.spectrum.com) has quit (Client Quit)
+2021-12-02 06:03:25	-->	Redsuit (realname) (~Redsuit@068-186-121-067.biz.spectrum.com) has joined ##philosophy
+2021-12-02 06:03:26	--	Redsuit has identified as Redsuit
+2021-12-02 06:06:26	-->	TOB_CyxoB [TOB_CyxoB] (realname) (~TOB_CyxoB@gateway/tor-sasl/tobcyxob/x-83841022) has joined ##philosophy
+2021-12-02 06:45:31	-->	random-jellyfish [random-jellyfish] ([https://web.libera.chat] random-jellyfish) (~random-je@user/random-jellyfish) has joined ##philosophy
+2021-12-02 07:06:28	-->	Redsuit_ (realname) (~Redsuit@068-186-121-067.biz.spectrum.com) has joined ##philosophy
+2021-12-02 07:06:29	--	Redsuit_ has identified as Redsuit
+2021-12-02 07:09:15	<--	Redsuit (~Redsuit@068-186-121-067.biz.spectrum.com) has quit (Ping timeout: 252 seconds)
+2021-12-02 07:17:30	-->	chomwitt [chomwitt] (realname) (~chomwitt@2a02:587:dc0d:6d00:12c3:7bff:fe6d:d374) has joined ##philosophy
+2021-12-02 07:35:08	<--	Nognosis (~Nognosis@198.11.28.72) has quit (Ping timeout: 256 seconds)
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:58	-->	mrmanner (mrmanner@98.128.201.128) has joined ##philosophy
+2021-12-02 08:09:58	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-02 08:09:58	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-12-02 08:09:59	--	Channel ##philosophy: 158 nicks (1 op, 0 voices, 157 normals)
+2021-12-02 08:11:02	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-12-02 08:12:46	-->	darklambda (Unknown) (~whateverg@111.65.58.47) has joined ##philosophy
+2021-12-02 08:18:10	-->	Atque [Atque] (Atque) (~Atque@user/atque) has joined ##philosophy
+2021-12-02 08:25:29	<--	thunder (~thunder@user/thunder) has quit (Ping timeout: 250 seconds)
+2021-12-02 08:28:46	<--	p0indexter (~alpha@user/p0indexter) has quit (Quit: ars longa vita brevis)
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:15	-->	mrmanner (mrmanner@90.235.13.15) has joined ##philosophy
+2021-12-02 21:03:15	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-02 21:03:15	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-12-02 21:03:15	--	Channel ##philosophy: 161 nicks (1 op, 0 voices, 160 normals)
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:44	-->	mrmanner (mrmanner@90.235.13.15) has joined ##philosophy
+2021-12-02 21:04:44	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-02 21:04:44	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-12-02 21:04:44	--	Channel ##philosophy: 162 nicks (1 op, 0 voices, 161 normals)
+2021-12-02 21:05:15	-->	NEYi [NEYi] (realname) (~NEYi@109.251.216.38) has joined ##philosophy
+2021-12-02 21:05:30	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-12-02 21:06:30	<--	NEYi (~NEYi@109.251.216.38) has quit (Remote host closed the connection)
+2021-12-02 21:06:55	-->	NEYi [NEYi] (realname) (~NEYi@109.251.216.38) has joined ##philosophy
+2021-12-02 21:08:33	-->	skapata (Skapata Lambda 1337) (~Skapata@2804:14c:87b0:a6f9:5d0a:d7eb:30c:e02b) has joined ##philosophy
+2021-12-02 21:08:34	--	skapata has identified as skapata
+2021-12-02 21:08:33	<--	skapata (~Skapata@2804:14c:87b0:a6f9:5d0a:d7eb:30c:e02b) has quit (Changing host)
+2021-12-02 21:08:33	-->	skapata [skapata] (Skapata Lambda 1337) (~Skapata@user/skapata) has joined ##philosophy
+2021-12-02 21:08:38	<--	allegorical (~guest@2607:fea8:33e0:65c:c0ed:30a7:66b1:5a90) has quit (Ping timeout: 268 seconds)
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:24	-->	mrmanner (mrmanner@90.235.13.15) has joined ##philosophy
+2021-12-02 21:11:24	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-02 21:11:25	--	Topic set by audrey (~audrey@user/audrey) on ons, 26 maj 2021 19:12:43
+2021-12-02 21:11:25	--	Channel ##philosophy: 163 nicks (1 op, 0 voices, 162 normals)
+2021-12-02 21:11:42	--	Channel created on ons, 19 maj 2021 11:30:44
+2021-12-02 21:24:32	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Read error: Connection reset by peer)
+2021-12-02 21:28:50	-->	mrmanner (mrmanner@90.235.13.15) has joined ##philosophy
+2021-12-02 21:28:50	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-02 21:31:20	-->	lakitu [lakitu] (http://www.joevalentyn.org) (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:44	-->	mrmanner (mrmanner@98.128.201.128) has joined ##philosophy
+2021-12-02 21:50:44	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-02 22:01:51	<--	tercaL (~tercaL@user/tercal) has quit (Quit: halt -p)
+2021-12-02 22:16:40	<--	jess (~jess@libera/staff/jess) has quit
+2021-12-02 22:24:46	-->	Franciman [Franciman] (Franciman) (~Franciman@mx1.fracta.dev) has joined ##philosophy
+2021-12-02 22:24:50	Franciman	hi all
+2021-12-02 22:25:09	Franciman	when they speak about pre-thoretical concepts
+2021-12-02 22:25:13	Franciman	what is usually meant?
+2021-12-02 22:27:12	goli	thoretical or theoretical?
+2021-12-02 22:28:07	Franciman	eheh sorry, typo
+2021-12-02 22:28:10	Franciman	theoretical, indeed
+2021-12-02 22:28:14	goli	okay
+2021-12-02 22:28:19	goli	what do you think?
+2021-12-02 22:28:29	goli	its a new question to me
+2021-12-02 22:28:44	Franciman	my vague idea is that you are speaking to something that is common knowledge
+2021-12-02 22:28:52	Franciman	but has not been philosophically investigated with rigour
+2021-12-02 22:28:54	goli	tho am a man of wisdom so i can explain the words as they are
+2021-12-02 22:29:10	Franciman	but it does not make much sense
+2021-12-02 22:29:10	goli	okay i see
+2021-12-02 22:29:14	Franciman	maybe it just means
+2021-12-02 22:29:18	Franciman	assumptions of the theory
+2021-12-02 22:29:28	Franciman	it surely is something that comes before my theory
+2021-12-02 22:29:30	Franciman	:P
+2021-12-02 22:29:44	goli	well
+2021-12-02 22:29:50	goli	life is a mystery
+2021-12-02 22:30:05	goli	many things we in the experience can't explain
+2021-12-02 22:30:25	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Ping timeout: 256 seconds)
+2021-12-02 22:30:29	goli	somethings are sent from above
+2021-12-02 22:30:36	goli	or the beyond
+2021-12-02 22:31:02	goli	that's how i see pre theory
+2021-12-02 22:31:14	goli	theory is what has been put together
+2021-12-02 22:31:28	goli	an explanation of an already existing concept
+2021-12-02 22:31:39	goli	like the theory of gravity
+2021-12-02 22:32:04	I_Am_M00t	life is a mystery
+2021-12-02 22:32:09	I_Am_M00t	everyone must stand alone
+2021-12-02 22:32:14	goli	the pre-theory of gravity would be gravity itself
+2021-12-02 22:32:54	Franciman	so it's like what makes me want to get a theory
+2021-12-02 22:32:55	goli	the thing that was already there for the observation to occur
+2021-12-02 22:32:57	Franciman	lol
+2021-12-02 22:33:48	Franciman	thanks
+2021-12-02 22:34:59	-->	lakitu [lakitu] (http://www.joevalentyn.org) (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-12-02 22:53:52	<--	Franciman (~Franciman@mx1.fracta.dev) has left ##philosophy (bb)
+2021-12-02 22:57:19	-->	Inline [Inline] (Inline) (~Inline@aftr-37-201-241-35.unity-media.net) has joined ##philosophy
+2021-12-02 23:00:19	causative	counterpoint: life is a highway
+2021-12-02 23:08:04	<--	zicada (~zicada@shell01.copyleft.no) has quit (Remote host closed the connection)
+2021-12-02 23:11:05	-->	plankster_ [plankers] (plankster) (~plankster@user/plankers) has joined ##philosophy
+2021-12-02 23:11:23	<--	plankster (~plankster@user/plankers) has quit (Ping timeout: 252 seconds)
+2021-12-02 23:14:08	--	plankster_ is now known as plank
+2021-12-02 23:16:18	-->	zicada (hurr) (~zicada@shell01.copyleft.no) has joined ##philosophy
+2021-12-02 23:16:18	--	zicada has identified as zicada
+2021-12-02 23:29:22	<--	Rashad (~textual@2a01:9700:15aa:e900:d96:93da:a80a:233) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz…)
+2021-12-02 23:29:49	-->	smeeagle [smeeagle] (Sme Agle) (~smeeagle@2a00:23c8:9611:e600:1401:22a5:674e:d69b) has joined ##philosophy
+2021-12-02 23:31:29	-->	bosspotato (realname) (~bosspotat@lnsm2-montreal02-142-118-210-99.internet.virginmobile.ca) has joined ##philosophy
+2021-12-02 23:31:29	--	bosspotato has identified as bosspotato
+2021-12-02 23:31:29	<--	bosspotato (~bosspotat@lnsm2-montreal02-142-118-210-99.internet.virginmobile.ca) has quit (Changing host)
+2021-12-02 23:31:29	-->	bosspotato [bosspotato] (realname) (~bosspotat@user/bosspotato) has joined ##philosophy
+2021-12-02 23:37:02	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Read error: Connection reset by peer)
+2021-12-02 23:40:04	-->	lakitu [lakitu] (http://www.joevalentyn.org) (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-12-02 23:48:23	-->	ruzu (realname) (~ruzu@107-179-252-71.cpe.teksavvy.com) has joined ##philosophy
+2021-12-02 23:52:52	causative	if you want to know who is in the right in a political struggle, you hardly need to look further than at who is lying and who is telling the truth
+2021-12-02 23:53:16	causative	evil goes with lies simply because if evil were honest, it would be seen for what it is and dismantled
+2021-12-02 23:55:31	dude12312414	what if everyone is lying
+2021-12-02 23:55:56	causative	well, are they lying equally and about things of equal importance?
+2021-12-02 23:56:30	causative	if they're both lying about important things, they may both be bad, just in different ways
+2021-12-02 23:58:48	audrey	Highway to Hell
+2021-12-03 00:02:11	<--	red_owl (~red_owl@p5b2426f5.dip0.t-ipconnect.de) has quit
+2021-12-03 00:07:27	<--	Treefingers (~Glassbox@34.162.189.80.dyn.plus.net) has quit (Quit: Leaving)
+2021-12-03 00:10:33	<--	chomwitt (~chomwitt@2a02:587:dc0d:6d00:12c3:7bff:fe6d:d374) has quit (Ping timeout: 268 seconds)
+2021-12-03 00:14:47	biys	interesting
+2021-12-03 00:14:52	biys	evil and bad and honest
+2021-12-03 00:15:08	biys	some of what you say reminds me of matthieu
+2021-12-03 00:15:15	biys	i imagine you two would get along actually
+2021-12-03 00:16:12	biys	the problems with i have of the realizations of the world is the underpinning
+2021-12-03 00:16:37	biys	it's why i think atheists are such interesting people at this point
+2021-12-03 00:16:54	biys	if it quacks like a duck, smells like a duck, looks like a duck, acts like a duck
+2021-12-03 00:16:57	biys	it's a duck
+2021-12-03 00:17:46	biys	i do wonder how much the sustainable developmnent initiatives are going to cause social change though
+2021-12-03 00:17:54	biys	with regards to the evaluation of wealth, individually
+2021-12-03 00:20:43	-->	shea [Shea] (shea) (~shea@user/shea) has joined ##philosophy
+2021-12-03 00:50:10	<--	shea (~shea@user/shea) has quit (Quit: WeeChat 3.3)
+2021-12-03 00:54:01	causative	blame and anger are only meaningful when they are useful, i.e. when blaming someone or punishing them is a good way to reduce the undesired behavior
+2021-12-03 00:54:51	causative	if the undesired behavior resulted from lack of knowledge, then granting that knowledge is the right way to correct the behavior
+2021-12-03 00:55:22	causative	if the undesired behavior resulted from something they can't change, e.g. a disability, then getting mad will achieve nothing and change nothing
+2021-12-03 00:57:16	<--	choozy (~choozy@75-63-174-82.ftth.glasoperator.nl) has quit (Quit: Konversation terminated!)
+2021-12-03 00:58:51	causative	anger makes sense if the behavior that caused the anger resulted from positive incentives on the part of the offender, with adequate knowledge and choice by the offender, such that a negative incentive resulting from the anger would change the offender's evaluation of that choice in the future
+2021-12-03 00:59:17	causative	impartial reason and compassion makes more sense when these conditions are not met
+2021-12-03 01:00:51	causative	also, of course, an angry response is only good when the person being angry is truly in the right
+2021-12-03 01:01:04	<--	Ungwelian (Every1@91-154-154-42.elisa-laajakaista.fi) has quit (Quit: Z_z :))
+2021-12-03 01:01:22	causative	meaning that the offender's action is legitimately harmful to society
+2021-12-03 01:07:11	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Read error: Connection reset by peer)
+2021-12-03 01:12:01	-->	blkshp_a [blkshp] (blkshp) (~blkshp@about/windows/staff/blkshp) has joined ##philosophy
+2021-12-03 01:13:42	-->	lakitu [lakitu] (http://www.joevalentyn.org) (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-12-03 01:14:41	<--	blkshp (~blkshp@about/windows/staff/blkshp) has quit (Ping timeout: 268 seconds)
+2021-12-03 01:14:48	--	blkshp_a is now known as blkshp
+2021-12-03 01:28:27	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Quit: THE RAM IS TOO DAMN HIGH)
+2021-12-03 01:29:39	<--	smeeagle (~smeeagle@2a00:23c8:9611:e600:1401:22a5:674e:d69b) has quit (Quit: smeeagle)
+2021-12-03 01:31:45	<--	Inline (~Inline@aftr-37-201-241-35.unity-media.net) has quit (Ping timeout: 256 seconds)
+2021-12-03 01:32:00	-->	Inline [Inline] (Inline) (~Inline@aftr-37-201-241-35.unity-media.net) has joined ##philosophy
+2021-12-03 01:43:50	<--	I_Am_M00t (uid427178@id-427178.ilkley.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-12-03 01:46:29	<--	vysn (~vysn@user/vysn) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:21:16	--	irc: disconnected from server
+2021-12-03 12:21:31	-->	mrmanner (mrmanner@90.235.13.15) has joined ##philosophy
+2021-12-03 12:21:31	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:52	-->	mrmanner (mrmanner@90.235.13.15) has joined ##philosophy
+2021-12-03 12:22:52	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-03 12:35:02	<--	lakitu (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has quit (Read error: Connection reset by peer)
+2021-12-03 12:40:47	-->	lakitu [lakitu] (http://www.joevalentyn.org) (~lakitu@192-198-3-9.dhcp.radiolinkinternet.com) has joined ##philosophy
+2021-12-03 12:42:37	-->	Trieste_ [pilgrim] (T) (T@user/pilgrim) has joined ##philosophy
+2021-12-03 12:43:11	<--	Trieste (T@user/pilgrim) has quit (Ping timeout: 252 seconds)
+2021-12-03 12:46:00	--	Trieste_ is now known as Trieste
+2021-12-03 12:56:46	-->	emmeka [emmeka] (realname) (~emmeka@162-251-198-66.dynamic.parolink.net) has joined ##philosophy
+2021-12-03 12:57:19	-->	Fauto_ [Filohuhum] (Fau) (~dante@gateway/tor-sasl/filohuhum) has joined ##philosophy
+2021-12-03 13:03:30	-->	Leonarbro [Leonarbro] (Leonarbro DaVinci) (~Leonet@user/leonarbro) has joined ##philosophy
+2021-12-03 13:09:05	-->	Ungwelian (Ung) (~everyone@91-154-154-42.elisa-laajakaista.fi) has joined ##philosophy
+2021-12-03 13:09:05	--	Ungwelian has identified as Ungwelian
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:37	-->	mrmanner (mrmanner@98.128.201.128) has joined ##philosophy
+2021-12-03 20:17:37	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-03 18:05:44	 *	audrey yawns
+2021-12-03 18:17:21	Delf	causative: Who gets to decide the legitimacy of any such action?
+2021-12-03 18:19:42	I_Am_M00t	me
+2021-12-03 18:22:44	Delf	I do not qualify you
+2021-12-03 18:25:50	I_Am_M00t	i qualify me, and since i get to decide, it goes 👉
+2021-12-03 18:49:36	 *	arryana pushes a tea to audrey
+2021-12-03 18:50:27	audrey	Is it a bad sign when a doctor needs to call you to deliver news about a medical test (instead of sending it through an online portal)?
+2021-12-03 18:51:26	arryana	not necessarily
+2021-12-03 18:51:45	arryana	sometimes they just want to be particularly clear about something
+2021-12-03 18:51:59	arryana	or something unexpected but not serious came up
+2021-12-03 18:52:05	arryana	or something needs re-testing
+2021-12-03 18:52:10	 *	arryana has had all of those happen
+2021-12-03 18:56:50	Delf	I_Am_M00t: But I get to decide too.. so it's majority vote?
+2021-12-03 19:00:00	I_Am_M00t	wait, according to my decision only i get to vote
+2021-12-03 19:02:09	Delf	hmm... do you not ever need to delegate power of decision?
+2021-12-03 19:03:12	I_Am_M00t	i have decided to make that decision when it comes up
+2021-12-03 19:03:23	I_Am_M00t	:D
+2021-12-03 19:04:11	Delf	Good. That means you're aware that others may have more accurate info and are more suitable for the decision making, given they're not malevolent
+2021-12-03 19:04:59	I_Am_M00t	now now, don't reach too far, or i might have to practice democracy
+2021-12-03 19:05:38	darklambda	she used to have wings
+2021-12-03 19:05:48	darklambda	oh.. sorry.. that was maleficent
+2021-12-03 19:06:08	arryana	heya lambda
+2021-12-03 19:06:34	darklambda	heya arryana
+2021-12-03 19:06:41	arryana	what's the good word
+2021-12-03 19:07:43	darklambda	delay... shared about delay pedals in today's learning day... music stuff to non-music audience... and did a demo how the fx was used in u2's 404 song
+2021-12-03 19:07:53	darklambda	:-)
+2021-12-03 19:08:31	darklambda	what's your good word today? :-)
+2021-12-03 19:10:36	arryana	christmas!
+2021-12-03 19:11:47	darklambda	oooh... got decors? or food plans?
+2021-12-03 19:12:58	I_Am_M00t	deeelaay
+2021-12-03 19:13:08	I_Am_M00t	delay delay delay
+2021-12-03 19:13:28	darklambda	2nd one is more accurate :-)
+2021-12-03 19:13:40	darklambda	they should have called it echo
+2021-12-03 19:13:52	darklambda	and attack (in adsr) as delay
+2021-12-03 19:14:27	darklambda	oh well.. i wasn't there when they were conceived... i guess i'll just have to roll with it :-P
+2021-12-03 19:14:53	I_Am_M00t	heh
+2021-12-03 19:15:36	I_Am_M00t	would like a delay where  you can set the number of delays
+2021-12-03 19:17:01	darklambda	i think there's a vst for that...
+2021-12-03 19:17:11	I_Am_M00t	ye, hmm
+2021-12-03 19:17:23	darklambda	up to 8 if i remember correctly
+2021-12-03 19:17:57	I_Am_M00t	i tried echoboy, didn't have it
+2021-12-03 19:18:12	darklambda	echoboy i want but not free
+2021-12-03 19:18:16	I_Am_M00t	there was a number option, but for something else
+2021-12-03 19:18:35	darklambda	i used delay from deadduck audio in the demo today
+2021-12-03 19:21:25	arryana	both.  decorating, mostly
+2021-12-03 19:21:52	darklambda	ooooh.
+2021-12-03 19:22:00	darklambda	including your VR space?
+2021-12-03 19:22:26	arryana	so far there's only window 'candles' in here
+2021-12-03 19:22:38	arryana	but there will probably be a string of christmas lights tomorrow
+2021-12-03 19:23:09	darklambda	nice
+2021-12-03 19:23:18	arryana	i've still got to go up in the loft for the rest of the things
+2021-12-03 19:23:53	causative	Delf, each person has the burden of judging for themselves what is right and what is wrong, what is true and what is false
+2021-12-03 19:24:13	causative	they may rely on the judgments of others - but the decision to rely on the judgments of others is also a judgment itself
+2021-12-03 19:24:22	causative	ultimately the burden is theirs alone
+2021-12-03 19:29:23	darklambda	anthony burden himself when judging food perhaps
+2021-12-03 19:35:02	Delf	causative: Damn right
+2021-12-03 19:37:37	Delf	Some judge it to be right, to put others at disadvantage and use their lack of understanding against them. What is right/wrong, true/false is not the same as legitimate and not, not when you consider structures of authority.
+2021-12-03 19:37:52	causative	but we should not take from this that truth or morality is relative
+2021-12-03 19:38:08	causative	our judgment of it is always up to the individual, but the individual can still be right or wrong
+2021-12-03 19:38:35	Delf	Can they be right or wrong without any judgment?
+2021-12-03 19:38:48	causative	whether they are right or wrong does not depend on what other people think
+2021-12-03 19:38:53	causative	it's a question of the actual state of affairs in the world
+2021-12-03 19:39:26	Delf	So they're right/wrong according to what?
+2021-12-03 19:39:40	causative	according to the world
+2021-12-03 19:40:05	Delf	The world!?
+2021-12-03 19:40:18	causative	if you think a tree fell, but it did not fall, then you were wrong regardless of how many people agree with you
+2021-12-03 19:40:52	causative	the tree itself is what makes you wrong, not other people
+2021-12-03 19:40:59	Delf	Ok, not the actual planet but rather the environment, whatever it may be
+2021-12-03 19:41:17	darklambda	someone can always twist it to make it right.. like figuratively, etc... :-)
+2021-12-03 19:41:41	Delf	That's politics, another subject!
+2021-12-03 19:41:47	darklambda	lol
+2021-12-03 19:43:03	Delf	That f***ing tree makes me in the wrong, what have I ever done to wrong that tree.
+2021-12-03 19:49:45	arryana	that reminds me of a thing, have you seen 'after the dark'
+2021-12-03 19:49:46	arryana	?
+2021-12-03 19:50:33	arryana	sociologically fascinating film, involving philosophy students
+2021-12-03 19:52:56	Delf	causative: It's me making the thinking that it fell that does myself wrong, not the tree. The tree is innocent
+2021-12-03 19:52:58	darklambda	i haven't yet.. but thanks for mentioning.. will try to cehck out
+2021-12-03 19:53:15	causative	it's the combination of the two, Delf
+2021-12-03 19:53:20	causative	the state of affairs and what you think about it
+2021-12-03 19:53:27	arryana	it has issues, it isn't a perfect film.  but it's a great spotlight on why philosophers aren't always the best suited to make decisions.
+2021-12-03 19:53:31	darklambda	the tree wants you to think that :-P
+2021-12-03 19:53:37	darklambda	:-D
+2021-12-03 19:53:48	Delf	causative: So the tree being innocent and my lack of accuracy in what I think? I thought only the latter was it, not the former.
+2021-12-03 19:54:14	causative	"accuracy" is a relationship between what you think and what is real
+2021-12-03 19:54:18	causative	it involves both
+2021-12-03 19:54:41	darklambda	what is real? :-)
+2021-12-03 19:55:00	Delf	But I must realize that I was in the wrong, otherwise I'll think I'm right
+2021-12-03 19:55:22	Delf	And that's something I rather not do
+2021-12-03 19:55:57	Delf	The tree will not tell me that I'm wrong, only I can notice it (if I'm unlucky)
+2021-12-03 19:56:00	causative	you may think you're right and not be right
+2021-12-03 19:56:31	Delf	By that proposition I'm always wrong, no matter what as accuracy will always be short... since there can always be more accuracy
+2021-12-03 19:56:56	Delf	Unless I develop rules... that intentionally limit the accuracy as a consequence
+2021-12-03 19:57:13	causative	well, that's a different subject, and yes, you're almost always slightly inaccurate, accuracy is usually not a binary thing
+2021-12-03 19:57:19	causative	you can be mostly right and slightly wrong
+2021-12-03 19:57:33	causative	and you can also *think* you're mostly right, but be mostly wrong
+2021-12-03 19:57:34	Delf	So.. less wrong is the ideal, totally right
+2021-12-03 19:57:47	arryana	tough question.  i'm not sure there's an easy answer for 'what is real'
+2021-12-03 19:57:53	Delf	s/totally/not totally/
+2021-12-03 19:57:53	ro-bot-o	Delf meant to say: So.. less wrong is the ideal, not totally right
+2021-12-03 19:57:56	darklambda	less wrong.. there's an irc channel for that :-)
+2021-12-03 19:58:04	darklambda	join ##lesswrong
+2021-12-03 19:58:10	arryana	haha
+2021-12-03 19:58:16	darklambda	hmmm..
+2021-12-03 19:58:21	darklambda	they haven't migrated?
+2021-12-03 19:58:31	darklambda	they used to be in freenode
+2021-12-03 19:58:41	darklambda	ah
+2021-12-03 19:58:42	arryana	dunno, thought you were kidding
+2021-12-03 19:58:45	darklambda	1 hash
+2021-12-03 19:58:54	Delf	They were not less wrong enough to migrate
+2021-12-03 19:58:57	darklambda	#lesswrong
+2021-12-03 19:59:13	darklambda	it's a chat room for rationalists... hehe
+2021-12-03 19:59:14	arryana	in my experience, most things are too conditional to be defined that simply
+2021-12-03 20:00:57	darklambda	we're humans... and to err is us... hehe
+2021-12-03 20:01:31	Delf	causative: If you increase the requirement for accuracy then I'm no good at all
+2021-12-03 20:01:48	Delf	So please, don't. It'll make me even less useful
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:45	-->	mrmanner (mrmanner@98.128.201.128) has joined ##philosophy
+2021-12-03 20:19:45	--	Topic for ##philosophy is "CHANNEL RULES: https://pastebin.com/raw/a8FVrqQL | Resources: https://tinyurl.com/phil-basics | Research Index: https://philpapers.org | Social and off-topic: ##philosophy-off"
+2021-12-03 20:22:09	-->	tomathy [quetzl] (realname) (~jenova@user/quetzl) has joined ##philosophy
+2021-12-03 20:23:51	--	kish` is now known as Tesla
+2021-12-03 20:33:52	-->	sklm (realname) (~sklm@p200300e96f3793017a631238ce5fb68d.dip0.t-ipconnect.de) has joined ##philosophy

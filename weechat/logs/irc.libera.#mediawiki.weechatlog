@@ -1,0 +1,260 @@
+2021-10-13 00:17:01	-->	mrmanner (~jmanner@user/mrmanner) has joined #mediawiki
+2021-10-13 00:17:01	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-13 00:17:01	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-13 00:17:01	--	Channel #mediawiki: 189 nicks (1 op, 0 voices, 188 normals)
+2021-10-13 00:17:03	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-13 00:25:02	-->	ircuser-1 (~Johnny@71.63.241.168) has joined #mediawiki
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:42:02	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #mediawiki
+2021-10-13 00:42:02	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-13 00:42:02	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-13 00:42:02	--	Channel #mediawiki: 190 nicks (1 op, 0 voices, 189 normals)
+2021-10-13 00:42:16	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-13 01:01:10		[mrmanner away: zzz]
+2021-10-13 01:37:58	-->	ubuntourist (~kjcole@pool-108-51-151-26.washdc.fios.verizon.net) has joined #mediawiki
+2021-10-13 02:07:14	<--	zabe (~Zabe@wikimedia/Zabe) has quit (Quit: Leaving)
+2021-10-13 02:21:44	<--	njoseph (~quassel@2a01:4f9:c010:16d1::1) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-10-13 02:22:05	-->	njoseph (~quassel@2a01:4f9:c010:16d1::1) has joined #mediawiki
+2021-10-13 02:22:56	-->	bawolff (~bawolff@user/bawolff) has joined #mediawiki
+2021-10-13 02:26:35	-->	Guest6997 (~Guest69@5.124.161.119) has joined #mediawiki
+2021-10-13 02:28:41	<--	ubuntourist (~kjcole@pool-108-51-151-26.washdc.fios.verizon.net) has quit (Quit: Leaving)
+2021-10-13 02:37:18	--	tgr|away is now known as tgr
+2021-10-13 02:40:33	<--	Guest6997 (~Guest69@5.124.161.119) has quit (Quit: Client closed)
+2021-10-13 02:50:58	<--	akaWolf (~akaWolf@akawolf.org) has quit (Ping timeout: 252 seconds)
+2021-10-13 02:52:09	-->	akaWolf (~akaWolf@akawolf.org) has joined #mediawiki
+2021-10-13 03:10:39	<--	MatmaRex (~MatmaRex@wikipedia/matma-rex) has quit (Quit: Miranda NG)
+2021-10-13 04:00:56	-->	vaginaldischarge (b9dc66fb@67.205.143.82) has joined #mediawiki
+2021-10-13 04:01:27	--	Mode #mediawiki [+o Waggie] by ChanServ
+2021-10-13 04:01:33	--	Mode #mediawiki [+b *!*@67.205.143.*] by Waggie
+2021-10-13 04:01:34	<--	Waggie has kicked vaginaldischarge (vaginaldischarge)
+2021-10-13 04:14:59	<--	JJMC89 (~JJMC89@wikimedia/JJMC89) has quit (Quit: Bye)
+2021-10-13 05:01:46	-->	JJMC89 (~JJMC89@wikimedia/JJMC89) has joined #mediawiki
+2021-10-13 05:14:02	<--	bawolff (~bawolff@user/bawolff) has quit (Quit: leaving)
+2021-10-13 05:17:06	<--	hexmode (~hexmode@h135.183.130.40.static.ip.windstream.net) has quit (Quit: hexmode)
+2021-10-13 05:54:11	--	tgr is now known as tgr|away
+2021-10-13 07:03:22	<--	Bedivere (uid507693@wikimedia/Bedivere) has quit (Quit: Connection closed for inactivity)
+2021-10-13 07:10:34	-->	Reception123 (uid96626@miraheze/Reception123) has joined #mediawiki
+2021-10-13 08:01:13	-->	Guest9554 (~Guest95@61-216-32-127.hinet-ip.hinet.net) has joined #mediawiki
+2021-10-13 08:32:42	<--	Guest9554 (~Guest95@61-216-32-127.hinet-ip.hinet.net) has quit (Quit: Client closed)
+2021-10-13 21:22:51	--	irc: disconnected from server
+2021-10-13 21:23:09		[mrmanner away: zzz]
+2021-10-13 21:23:20	-->	mrmanner (~jmanner@h-98-128-201-128.A785.priv.bahnhof.se) has joined #mediawiki
+2021-10-13 21:23:20	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-13 21:23:20	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-13 21:23:20	--	Channel #mediawiki: 185 nicks (2 ops, 0 voices, 183 normals)
+2021-10-13 21:23:34	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-13 21:26:22	-->	p858snake|L (~p858snake@user/p858snake) has joined #mediawiki
+2021-10-13 21:28:25	-->	hexmode (~hexmode@2607:fb90:6094:e633:4e87:27a1:f020:987c) has joined #mediawiki
+2021-10-13 21:36:19	<--	hexmode (~hexmode@2607:fb90:6094:e633:4e87:27a1:f020:987c) has quit (Ping timeout: 265 seconds)
+2021-10-13 21:36:28	-->	hexmode (~hexmode@172.58.204.222) has joined #mediawiki
+2021-10-13 21:43:25	<--	njoseph (~quassel@2a01:4f9:c010:16d1::1) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-10-13 21:43:31	-->	njoseph (~quassel@2a01:4f9:c010:16d1::1) has joined #mediawiki
+2021-10-13 21:53:20	-->	Vulpix (~Ciencia@user/ciencia-al-poder) has joined #mediawiki
+2021-10-13 22:04:50	<--	hexmode (~hexmode@172.58.204.222) has quit (Ping timeout: 265 seconds)
+2021-10-13 22:05:28	-->	hexmode (~hexmode@2607:fb90:602e:5450:b0ec:96e0:4bfc:e739) has joined #mediawiki
+2021-10-13 22:13:46	<--	musikanimal (sid64512@2a03:5180:f:4::fc00) has quit (Changing host)
+2021-10-13 22:13:46	-->	musikanimal (sid64512@wikipedia/MusikAnimal) has joined #mediawiki
+2021-10-16 12:32:06	--	irc: disconnected from server
+2021-10-16 12:32:24		[mrmanner away: zzz]
+2021-10-16 12:32:32	-->	mrmanner (~jmanner@185.224.57.161) has joined #mediawiki
+2021-10-16 12:32:32	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-16 12:32:32	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-16 12:32:32	--	Channel #mediawiki: 190 nicks (2 ops, 0 voices, 188 normals)
+2021-10-16 12:32:48	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-16 13:02:05	<--	lind{at}yahoo (uid486956@tinside.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-10-16 13:07:31	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Quit: Laa shay'a waqi'un moutlaq bale kouloun moumkine)
+2021-10-16 13:11:52	-->	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has joined #mediawiki
+2021-10-16 13:14:58	-->	Lord_of_Life_ (~Lord@user/lord-of-life/x-2819915) has joined #mediawiki
+2021-10-16 13:16:21	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Ping timeout: 245 seconds)
+2021-10-16 13:16:22	--	Lord_of_Life_ is now known as Lord_of_Life
+2021-10-16 13:22:30	-->	Lord_of_Life_ (~Lord@user/lord-of-life/x-2819915) has joined #mediawiki
+2021-10-16 13:23:11	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Ping timeout: 264 seconds)
+2021-10-17 18:14:38	-->	jmanner (~jmanner@185.224.57.161) has joined #mediawiki
+2021-10-17 18:14:38	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-17 18:14:38	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:46:05
+2021-10-17 18:14:38	--	Channel #mediawiki: 182 nicks (2 ops, 0 voices, 180 normals)
+2021-10-17 18:14:51	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-17 18:19:02	-->	jmanner (~jmanner@user/mrmanner) has joined #mediawiki
+2021-10-17 18:19:02	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-17 18:19:02	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-17 18:19:02	--	Channel #mediawiki: 182 nicks (2 ops, 0 voices, 180 normals)
+2021-10-17 18:19:17	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-17 18:30:36	-->	jmanner (~jmanner@user/mrmanner) has joined #mediawiki
+2021-10-17 18:30:36	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-17 18:30:36	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-17 18:30:36	--	Channel #mediawiki: 182 nicks (2 ops, 0 voices, 180 normals)
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:30:47	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:43	-->	mrmanner (~jmanner@user/mrmanner) has joined #mediawiki
+2021-10-17 19:45:43	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-17 19:45:43	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-17 19:45:43	--	Channel #mediawiki: 183 nicks (2 ops, 0 voices, 181 normals)
+2021-10-17 19:45:56	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-17 19:47:05	<--	v3d3 (~v3d3@116.74.102.140) has quit (Client Quit)
+2021-10-17 19:59:18	-->	Guest57 (~Guest57@116.74.102.140) has joined #mediawiki
+2021-10-17 20:02:57	Guest57	Hello! I'm new to Mediawiki, and found some problems in an extension which wasn't working at all that I've fixed in my copy, how can I submit these changes for review so others can use the extension?
+2021-10-17 20:05:36	majavah	Guest57: hi! most extensions use Wikimedia's Gerrit instance for code review, we have a tutorial on https://www.mediawiki.org/wiki/Gerrit/Tutorial
+2021-10-17 20:06:50	majavah	gerrit is a powerful tool but might be a little difficult to use if you're not used to it, but this channel is usually helpful for figuring things out
+2021-10-17 20:07:37	Guest57	thank you! I'll check the guide out
+2021-10-17 20:08:46	-->	Nact (~l@host-85-27-120-251.dynamic.voo.be) has joined #mediawiki
+2021-10-17 20:31:54	-->	zabe (~Zabe@wikimedia/Zabe) has joined #mediawiki
+2021-10-17 20:44:30	<--	Guest57 (~Guest57@116.74.102.140) has quit (Quit: Client closed)
+2021-10-17 21:05:02	-->	porn (~hentai@2a01:e0a:a5c:a070:9fac:5613:587a:b84a) has joined #mediawiki
+2021-10-17 21:05:03	<--	porn (~hentai@2a01:e0a:a5c:a070:9fac:5613:587a:b84a) has quit (Changing host)
+2021-10-17 21:05:03	-->	porn (~hentai@user/hentai) has joined #mediawiki
+2021-10-17 21:06:39	<--	zabe (~Zabe@wikimedia/Zabe) has quit (Quit: Leaving)
+2021-10-17 21:09:28	<--	hentai (~hentai@user/hentai) has quit (Ping timeout: 252 seconds)
+2021-10-30 12:09:24	-->	jmanner (~jmanner@user/mrmanner) has joined #mediawiki
+2021-10-30 12:09:24	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-30 12:09:24	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-30 12:09:24	--	Channel #mediawiki: 185 nicks (1 op, 0 voices, 184 normals)
+2021-10-30 12:09:38	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-30 12:10:54	-->	jmanner (~jmanner@user/mrmanner) has joined #mediawiki
+2021-10-30 12:10:54	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-30 12:10:54	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-30 12:10:54	--	Channel #mediawiki: 185 nicks (1 op, 0 voices, 184 normals)
+2021-10-30 12:11:09	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 12:49:20	<--	TimStarling (~TimStarli@user/timstarling) has quit (Ping timeout: 260 seconds)
+2021-10-30 13:11:13	-->	hexmode (~hexmode@172.58.207.104) has joined #mediawiki
+2021-10-30 13:18:09	-->	Raymond (~chatzilla@pd4b9ea9c.dip0.t-ipconnect.de) has joined #mediawiki
+2021-10-30 13:40:55	<--	hexmode (~hexmode@172.58.207.104) has quit (Quit: hexmode)
+2021-10-30 13:54:22	-->	hexmode (~hexmode@172.58.207.104) has joined #mediawiki
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:34	-->	mrmanner (~jmanner@user/mrmanner) has joined #mediawiki
+2021-10-30 17:07:34	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-30 17:07:34	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-30 17:07:34	--	Channel #mediawiki: 185 nicks (1 op, 0 voices, 184 normals)
+2021-10-30 17:07:48	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-10-30 17:14:34	<--	hexmode_ (~hexmode@pool-71-112-163-11.pitbpa.fios.verizon.net) has quit (Quit: hexmode_)
+2021-10-30 17:40:35	<--	Raymond (~chatzilla@pd4b9ea9c.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2021-10-30 18:00:36	-->	JJMC89 (~JJMC89@wikimedia/JJMC89) has joined #mediawiki
+2021-10-30 22:21:16	--	irc: disconnected from server
+2021-10-30 22:21:46	-->	mrmanner (~jmanner@user/mrmanner) has joined #mediawiki
+2021-10-30 22:21:46	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-10-30 22:21:46	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 30 sep 2021 19:42:00
+2021-10-30 22:21:46	--	Channel #mediawiki: 184 nicks (1 op, 0 voices, 183 normals)
+2021-10-30 22:21:57	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-12-01 23:20:42	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #mediawiki
+2021-12-01 23:20:46	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 18 nov 2021 16:34:17
+2021-12-01 23:20:46	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-01 23:20:46	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 18 nov 2021 16:34:17
+2021-12-01 23:20:46	--	Channel #mediawiki: 204 nicks (2 ops, 0 voices, 202 normals)
+2021-12-01 23:21:17	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-12-01 23:21:18	--	Mode #mediawiki [+nt]
+2021-12-01 23:21:18	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-12-01 23:22:49	-->	TimStarling [TimStarling] (Tim Starling) (~TimStarli@user/timstarling) has joined #mediawiki
+2021-12-01 23:22:59	-->	mrmanner [mrmanner] (mrmanner) (mrmanner@98.128.201.128) has joined #mediawiki
+2021-12-01 23:23:09	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 18 nov 2021 16:34:17
+2021-12-01 23:23:09	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-01 23:23:09	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 18 nov 2021 16:34:17
+2021-12-01 23:23:09	--	Channel #mediawiki: 205 nicks (2 ops, 0 voices, 203 normals)
+2021-12-01 23:23:17	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-12-01 23:23:56	--	Mode #mediawiki [+nt]
+2021-12-01 23:23:56	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-12-01 23:50:40	<--	Knaxius (~Knaxius@herzlichweise.de) has quit (Quit: bye)
+2021-12-01 23:58:23	-->	Vova ([https://web.libera.chat] Vova) (~Vova@2400:4150:8840:7d00:8126:d188:8a62:9e44) has joined #mediawiki
+2021-12-01 23:59:29	<--	Vova (~Vova@2400:4150:8840:7d00:8126:d188:8a62:9e44) has quit (Client Quit)
+2021-12-01 23:59:40	-->	Vova ([https://web.libera.chat] Vova) (~Vova@2400:4150:8840:7d00:8126:d188:8a62:9e44) has joined #mediawiki
+2021-12-02 00:02:17	<--	Vova (~Vova@2400:4150:8840:7d00:8126:d188:8a62:9e44) has quit (Client Quit)
+2021-12-02 00:02:49	<--	MatmaRex (~MatmaRex@wikipedia/matma-rex) has quit (Quit: Miranda NG)
+2021-12-02 00:03:55	-->	Vova ([https://web.libera.chat] Vova) (~Vova@2400:4150:8840:7d00:8126:d188:8a62:9e44) has joined #mediawiki
+2021-12-02 00:04:17	<--	Vova (~Vova@2400:4150:8840:7d00:8126:d188:8a62:9e44) has quit (Client Quit)
+2021-12-02 00:15:28	<--	Vulpix (~Ciencia@user/ciencia-al-poder) has quit (Quit: wikidex.net)
+2021-12-02 00:31:22	<--	Bongo-Cat (uid508994@miraheze/Bukkit) has quit (Quit: Connection closed for inactivity)
+2021-12-02 00:36:55	<--	se-sm-ca (~sean@user/se-sm-ca) has quit (Quit: WeeChat 3.3)
+2021-12-02 00:52:16	<--	zabe (~Zabe@wikimedia/Zabe) has quit (Quit: Leaving)
+2021-12-02 01:17:14	<--	jfaxdora (~jfaxdora@2a00:23c6:a89a:2c01:b22f:63ab:b495:b398) has quit (Remote host closed the connection)
+2021-12-02 01:42:48	<--	subbu (~subbu@user/subbu) has quit (Quit: Leaving)
+2021-12-02 02:06:32	<--	ircservserv-wm (~wm-ircser@wikimedia/bot/ircservserv-wm) has quit (Remote host closed the connection)
+2021-12-02 02:06:46	-->	ircservserv-wm [ircservserv-wm] (Hmmmmm) (~wm-ircser@wikimedia/bot/ircservserv-wm) has joined #mediawiki
+2021-12-02 02:17:18	<--	njoseph (~quassel@2a01:4f9:c010:16d1::1) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-12-02 02:17:40	-->	njoseph [njoseph] (Joseph Nuthalapati) (~quassel@2a01:4f9:c010:16d1::1) has joined #mediawiki
+2021-12-02 02:18:15	-->	subbu [subbu] (realname) (~subbu@user/subbu) has joined #mediawiki
+2021-12-02 02:33:53	<--	subbu (~subbu@user/subbu) has quit (Ping timeout: 252 seconds)
+2021-12-02 03:00:10	<--	RhinosF1 (uid339563@miraheze/RhinosF1) has quit (Quit: Connection closed for inactivity)
+2021-12-02 03:35:27	-->	subbu [subbu] (realname) (~subbu@user/subbu) has joined #mediawiki
+2021-12-02 03:52:52	-->	computist [computist] (computist) (~computist@user/computist) has joined #mediawiki
+2021-12-02 04:04:46	<--	subbu (~subbu@user/subbu) has quit (Quit: Leaving)
+2021-12-02 04:24:05	-->	Sir_Bedivere [Kuatrero] (Bedivere) (uid507693@wikimedia/Bedivere) has joined #mediawiki
+2021-12-02 06:40:08	-->	Knaxius [Knaxius] (please respect privacy) (~Knaxius@herzlichweise.de) has joined #mediawiki
+2021-12-02 07:18:41	-->	Raymond (New Now Know How) (~chatzilla@p5ddddefb.dip0.t-ipconnect.de) has joined #mediawiki
+2021-12-02 07:18:42	--	Raymond has identified as Raymond
+2021-12-02 07:33:41	<--	Sir_Bedivere (uid507693@wikimedia/Bedivere) has quit (Quit: Connection closed for inactivity)
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:54	-->	mrmanner (mrmanner@98.128.201.128) has joined #mediawiki
+2021-12-02 08:09:54	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-02 08:09:54	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 18 nov 2021 16:34:17
+2021-12-02 08:09:54	--	Channel #mediawiki: 199 nicks (2 ops, 0 voices, 197 normals)
+2021-12-02 08:10:16	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-12-02 08:21:17	-->	Mirghon ([https://web.libera.chat] Mirghon) (~Mirghon@dslb-088-066-205-099.088.066.pools.vodafone-ip.de) has joined #mediawiki
+2021-12-02 08:24:49	<--	Mirghon (~Mirghon@dslb-088-066-205-099.088.066.pools.vodafone-ip.de) has quit (Client Quit)
+2021-12-02 08:27:03	-->	RhinosF1 [RhinosF1] (RhinosF1) (uid339563@miraheze/RhinosF1) has joined #mediawiki
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:03:17	-->	mrmanner (mrmanner@90.235.13.15) has joined #mediawiki
+2021-12-02 21:03:17	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-02 21:03:17	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 18 nov 2021 16:34:17
+2021-12-02 21:03:17	--	Channel #mediawiki: 202 nicks (2 ops, 0 voices, 200 normals)
+2021-12-02 17:04:36	RhinosF1	Reedy: do you have any idea why php7.4 would OOM every like few minutes on our production servers
+2021-12-02 17:05:17	RhinosF1	Test and maint work fine but test is very low traffic and maint doesn't get external traffic except from deployment checks
+2021-12-02 21:04:24	--	irc: disconnected from server
+2021-12-02 21:04:46	-->	mrmanner (mrmanner@90.235.13.15) has joined #mediawiki
+2021-12-02 21:04:46	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-02 21:04:46	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 18 nov 2021 16:34:17
+2021-12-02 21:04:46	--	Channel #mediawiki: 202 nicks (2 ops, 0 voices, 200 normals)
+2021-12-02 21:05:46	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:29	-->	mrmanner (mrmanner@90.235.13.15) has joined #mediawiki
+2021-12-02 21:11:29	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-02 21:11:29	--	Topic set by Reedy (~quassel@wikimedia/reedy) on tor, 18 nov 2021 16:34:17
+2021-12-02 21:11:29	--	Channel #mediawiki: 202 nicks (2 ops, 0 voices, 200 normals)
+2021-12-02 21:12:19	--	Channel created on ons, 19 maj 2021 15:51:53
+2021-12-02 21:12:52	--	Sir_Bedivere is now known as traudctor
+2021-12-02 21:13:29	--	jgleeson|dinner is now known as jgleeson
+2021-12-02 21:28:47	-->	mrmanner (mrmanner@90.235.13.15) has joined #mediawiki
+2021-12-02 21:28:47	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-02 21:50:38	--	irc: disconnected from server
+2021-12-02 21:50:46	-->	mrmanner (mrmanner@98.128.201.128) has joined #mediawiki
+2021-12-02 21:50:46	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-02 21:51:08	-->	Raymond (New Now Know How) (~chatzilla@p5ddddefb.dip0.t-ipconnect.de) has joined #mediawiki
+2021-12-02 21:51:08	--	Raymond has identified as Raymond
+2021-12-02 22:14:58	<--	jfaxdora (~jfaxdora@2a00:23c6:a89a:2c01:b22f:63ab:b495:b398) has quit (Remote host closed the connection)
+2021-12-02 22:53:37	-->	Iamthehuman1 [Iamthehuman] (jukeboksid) (~noname@user/iamthehuman) has joined #mediawiki
+2021-12-02 22:54:09	<--	subbu (~subbu@user/subbu) has quit (Quit: Leaving)
+2021-12-02 22:59:08	--	jgleeson is now known as jgleeson|away
+2021-12-02 23:05:33	<--	p858snake (~p858snake@user/p858snake) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:06:45	<--	Raymond (~chatzilla@p5ddddefb.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2021-12-02 23:33:52	<--	traudctor (uid507693@wikimedia/Bedivere) has quit (Quit: Connection closed for inactivity)
+2021-12-02 23:34:02	<--	MatmaRex (~MatmaRex@wikipedia/matma-rex) has quit (Quit: Miranda NG)
+2021-12-02 23:56:13	<--	Vulpix (~Ciencia@user/ciencia-al-poder) has quit (Quit: wikidex.net)
+2021-12-03 01:00:20	--	tgr|away is now known as tgr
+2021-12-03 01:05:26	-->	traudctor [Kuatrero] (Bedivere) (uid507693@wikimedia/Bedivere) has joined #mediawiki
+2021-12-03 01:29:17	<--	Sario (uid356235@fosshost/cdo/Sario) has quit (Quit: Connection closed for inactivity)
+2021-12-03 01:33:10	-->	Guest79 ([https://web.libera.chat] Guest79) (~Guest79@192.82-130-182.dynamic.clientes.euskaltel.es) has joined #mediawiki
+2021-12-03 01:35:51	<--	Guest79 (~Guest79@192.82-130-182.dynamic.clientes.euskaltel.es) has quit (Client Quit)
+2021-12-03 01:36:21	-->	Guest79 ([https://web.libera.chat] Guest79) (~Guest79@192.82-130-182.dynamic.clientes.euskaltel.es) has joined #mediawiki
+2021-12-03 01:37:11	--	traudctor is now known as Bedivere_
+2021-12-03 01:39:28	-->	SeriousFun01[m] (@serious_fun:matrix.org) (~seriousfu@2001:470:69fc:105::1:1573) has joined #mediawiki
+2021-12-03 01:39:43	--	Guest79 is now known as S
+2021-12-03 01:40:13	--	S is now known as Guest3469
+2021-12-03 12:21:15	--	irc: disconnected from server
+2021-12-03 12:21:33	-->	mrmanner (mrmanner@90.235.13.15) has joined #mediawiki
+2021-12-03 12:21:33	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-03 12:22:37	--	irc: disconnected from server
+2021-12-03 12:22:55	-->	mrmanner (mrmanner@90.235.13.15) has joined #mediawiki
+2021-12-03 12:22:55	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-03 12:59:07	<--	Iamthehuman1 (~noname@user/iamthehuman) has quit (Quit: Konversation terminated!)
+2021-12-03 20:17:22	--	irc: disconnected from server
+2021-12-03 20:17:35	-->	mrmanner (mrmanner@98.128.201.128) has joined #mediawiki
+2021-12-03 20:17:35	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-03 20:19:02	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:45	-->	mrmanner (mrmanner@98.128.201.128) has joined #mediawiki
+2021-12-03 20:19:45	--	Topic for #mediawiki is "MediaWiki support | https://www.mediawiki.org | FAQ: https://bit.ly/mwFAQ | Stable release: 1.37.0, 1.36.2, 1.35.4 (LTS) | Bugs: https://bugs.mediawiki.org | Don't flood, use https://dpaste.de | Channel logs: https://wm-bot.wmflabs.org/libera_logs/%23mediawiki/"
+2021-12-03 20:24:52	--	damilare|brb is now known as damilare
+2021-12-03 20:33:32	-->	hgolden [hgolden] (Howard B. Golden) (~hgolden2@cpe-172-114-81-123.socal.res.rr.com) has joined #mediawiki
+2021-12-03 20:38:00	--	tgr|away is now known as tgr
+2021-12-03 20:46:59	<--	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has quit (Quit: Laa shay'a waqi'un moutlaq bale kouloun moumkine)
+2021-12-03 20:50:28	<--	Vulpix (~Ciencia@user/ciencia-al-poder) has quit (Quit: wikidex.net)
+2021-12-03 21:01:51	<--	Raymond (~chatzilla@p5ddddd62.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)

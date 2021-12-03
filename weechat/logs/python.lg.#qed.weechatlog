@@ -1,0 +1,206 @@
+2021-10-12 22:40:13	widforss	Har ni detta?
+2021-10-12 22:40:13	        	https://files.slack.com/files-pri/TB8DBRHGB-F02H42RN3KR/image_from_ios.jpg (Image from iOS)
+2021-10-12 22:40:13	widforss	Har ni detta?
+2021-10-12 22:40:13	        	https://files.slack.com/files-pri/TB8DBRHGB-F02H42RN3KR/image_from_ios.jpg (Image from iOS)
+2021-10-13 06:19:43	EmilTullstedt	Varför ser den ut som Apples ladda ner ikon?
+2021-10-13 06:22:55	EmilTullstedt	(Har inte sett det, men jag använder bara m.twitter.com och Tweetdeck. De bästa gränssnitten är nästan alltid de som inte har en hög med karriärlystna hängande över sig)
+2021-10-13 06:23:09	EmilTullstedt	Iofs så ser det där ut som m.twitter.com?
+2021-10-13 06:19:43	EmilTullstedt	Varför ser den ut som Apples ladda ner ikon?
+2021-10-13 06:22:55	EmilTullstedt	(Har inte sett det, men jag använder bara m.twitter.com och Tweetdeck. De bästa gränssnitten är nästan alltid de som inte har en hög med karriärlystna hängande över sig)
+2021-10-13 06:23:09	EmilTullstedt	Iofs så ser det där ut som m.twitter.com?
+2021-10-13 16:06:35	mrmannerur	det här kommer absolut inte att orsaka några buggar någonstans
+2021-10-13 16:06:35	          	https://files.slack.com/files-pri/TB8DBRHGB-F02HMTWA4QJ/image.png (image.png)
+2021-10-13 16:07:27	Wilhelm	wtf am I looking at
+2021-10-13 16:08:25	mrmannerur	PHP kallar inte sitt typsystem för "type juggling" for no reason
+2021-10-13 16:11:01	widforss	wtf? Så värdena som jämförs castas olika beroende på innehållet i strängen? Det är ju  galenskap
+2021-10-13 16:11:58	widforss	Över huvud taget, varför skulle ett tal någonsin vara lika med en sträng?
+2021-10-13 16:12:44	mrmannerur	:php:
+2021-10-13 16:14:08	mrmannerur	Men hur PHP 7 kom fram till att  `0 == 'foobar'`  övergår mitt förstånd. `0 == '0'` är logiskt, även om det är puckat. [ Thread: 4f9 Replies: 7 Subscribed ]
+2021-10-13 16:14:41	widforss	'foobar' parsear inte, dvs det är falsy?
+2021-10-13 16:15:39	mrmannerur	men finns det _någon_ sträng som är truthy enligt PHP?
+2021-10-13 16:15:54	widforss	'true'? [ Thread: 7fd Replies: 1 Subscribed ]
+2021-10-13 16:16:10	mrmannerur	`"rasmus_lerdorf_is_god"` ?
+2021-10-13 16:17:39	mrmannerur	[+ 7fd] ah, makes sense. eller nej, men okej.
+2021-10-13 16:17:58	Wilhelm	min favorit i PHP är annars när man plötsligt får en `expecting T_PAAMAYIM_NEKUDOTAYIM`
+2021-10-13 16:18:09	Wilhelm	helt plötsligt börjar tolken prata hebreiska med en
+2021-10-13 16:20:01	mrmannerur	`T_PAAMAYIM_NEKUDOTAYIM`
+2021-10-13 16:20:01	          	https://media3.giphy.com/media/3oz8xvoMI6gJ6rySVW/giphy.gif?cid=6104955e16cf2d2fe82e9b83f9a85adf30df03e58a4de1c3&rid=giphy.gif&ct=g (`T_PAAMAYIM_NEKUDOTAYIM`)
+2021-10-13 16:20:01	          	https://a.slack-edge.com/dc483/img/plugins/giphy/service_32.png (giphy logo) | Posted using /giphy | GIF by https://giphy.com/gongif/ (Gonçalo)
+2021-10-13 16:20:29	mrmannerur	allt giphy hittar när man söker `T_PAAMAYIM_NEKUDOTAYIM`  är, passande nog, helt bisarrt
+2021-10-13 23:29:30	widforss	https://twitter.com/oplundgren/status/1447571162591006721?s=20
+2021-10-13 23:29:30	        	| Olof Lundgren: • gaydar = bögonmått
+2021-10-13 23:29:30	        	| • woop woop, that’s the sound of the police = tut tut, det är ljudet av en snut
+2021-10-13 23:29:30	        	| • mancave = gubbskrubb / mannagryt
+2021-10-13 23:29:30	        	| • Netflix and chill = SVT Play och ståhej
+2021-10-13 23:29:30	        	| Twitter | Okt 11, 2021
+2021-10-14 11:02:25	TobiasSkarhed	SVT Play och sill var en annan idé [:fish:(@mrmannerur)]
+2021-10-14 13:20:37	Wilhelm	"Jag vet inte riktigt vem jag ska vända mig till, men jag har blivit erbjuden 400 Lack-bord från IKEA" [:stuck_out_tongue:(@mrmannerur)]
+2021-10-14 13:21:11	Wilhelm	lär finnas bord på jamboreen iaf :stuck_out_tongue:
+2021-10-14 13:21:44	widforss	Gah, jag har en ryggsäck som jag vet att jag får ta med mig på flyget. Men nu har Norwegian startat en "utredning" för att ta reda på om det är ok att ta med den enligt reglementet.
+2021-10-14 13:22:02	Wilhelm	har du ingen flight bag så den ser mer diskret ut?
+2021-10-14 13:22:10	Wilhelm	mindre risk att skada remmar också
+2021-10-14 13:22:48	widforss	Den har ett batteri på 57 Wh och en airbag i sig. Den ser inte diskret ut i röntgen hur många flight bags jag än stoppar den i.
+2021-10-14 13:23:40	Wilhelm	Berätta mer om den här ryggsäcken
+2021-10-14 13:23:44	Wilhelm	verkar spännande :stuck_out_tongue:
+2021-10-14 13:24:16	widforss	Sånt vi använder när vi ska ut på fält med jobbet.
+2021-10-14 13:24:16	        	https://www.blackdiamondequipment.com/en_US/product/jetforce-pro-avalanche-airbag-pack-35l/
+2021-10-14 13:26:30	widforss	Det finns ganska mycket regler kring traditionella ballongsäckar, men de är gasdrivna. Batteridrivna är inte ett problem på flyg pga inga gaspatroner, men frånvaron av regler gör flygbolagen nervösa.
+2021-10-14 13:27:04	Wilhelm	cool, visste inte att det var en grej
+2021-10-14 13:27:55	widforss	Är stort bland alla som har en arbetsgivare pga arbetsmiljöregler. Men det kommer fler och fler vanliga skidåkare som har det också.
+2021-10-14 13:30:49	Wilhelm	men är det så man inte kvävs i en snödriva?
+2021-10-14 13:33:05	widforss	Främst har det med flödesdynamik att göra. Stora saker med låg densitet hamnar nära ytan. Sen läcker de ju luft efter någon minut (min vänder på fläkten och tömmer sig själv aktivt), så man får ju en luftficka på några 200 l på köpet. Och det är tämligen bra, för utandningsluften brukar bilda en ishinna framför munnen som hindrar ventilation av CO2.
+2021-10-14 13:34:58	widforss	Finns ganska mycket kul teknik inom snöbranschen som är ganska exotisk om man inte är insatt. Transceiversena är galet avancerade nuförtiden, och det kommer skidmonterade radarenheter och grejer också.
+2021-10-14 13:38:53	widforss	Min transceiver skickar t.ex. ut data om puls och rörelser för att hjälpa räddare med triage. Och har man slagit av den under räddning och sedan själv blir meddragen slår den på automatiskt när den inser att man har blivit begravd.
+2021-10-14 13:43:16	Wilhelm	aha
+2021-10-14 15:31:44	TobiasSkarhed	Aaaaah buffer overflows, jag vet inte vad jag gör?!?!?!?
+2021-10-14 15:33:48	widforss	använder du `gets()` ?
+2021-10-14 15:34:26	TobiasSkarhed	Nej, alltså jag ska göra en buffer overflow-attack
+2021-10-14 15:34:49	TobiasSkarhed	Någonting med Shellcodes jag inte förstår (edited)
+2021-10-14 15:34:54	widforss	ahaaa
+2021-10-14 15:35:15	TobiasSkarhed	Vettefan vad det är för register de syftar på
+2021-10-14 15:38:35	TobiasSkarhed	Hur/när executas koden egentligen?
+2021-10-14 15:41:04	widforss	strängen du skickar in är för lång och skriver över minne som du vet att du kommer exekvera senare. Det du skriver över med är en instruktion att starta ett shell, som interpreterar ditt elaka skript.
+2021-10-14 15:51:10	widforss	När man får den här reviewen från sin akademiska mentor:
+2021-10-14 15:51:10	        	> Umiddelbar reaksjon er: "For mye tekst" 
+2021-10-14 15:51:10	        	> Prøv å bygge inn noen bilder? F.eks. i stedet for å liste opp input data - bruk bilder av observatør, værkart fra modell og skjermdump fra et snøskredvarsel.
+2021-10-14 15:51:10	        	> Sleng på et bilde av et snøskred på toppen for å vekke interesse...
+2021-10-14 15:51:10	        	> Snakkes i morgen.
+2021-10-14 16:09:21	TobiasSkarhed	Du får rita lite bilder i paint
+2021-10-14 16:10:17	TobiasSkarhed	Nu stod det faktiskt lite bra saker i boken...
+2021-10-14 16:10:25	TobiasSkarhed	Även fast jag köpte fel bok
+2021-10-14 20:16:35	TobiasSkarhed	Hjälper inte när man får segmentation faults'
+2021-10-14 20:16:42	TobiasSkarhed	Jag hatar det här
+2021-10-14 20:16:53	TobiasSkarhed	Fuck manuell redigering av bytes
+2021-10-14 20:20:14	TobiasSkarhed	FUCK
+2021-10-14 20:20:14	             	https://media1.giphy.com/media/11RIDouEyKZ116/giphy.gif?cid=6104955e31e6ce2ada5058f126a63db225db441ac960e856&rid=giphy.gif&ct=g (FUCK)
+2021-10-14 20:20:14	             	https://a.slack-edge.com/dc483/img/plugins/giphy/service_32.png (giphy logo) | Posted using /giphy
+2021-10-14 20:28:58	TobiasSkarhed	Äckelhelvete
+2021-10-14 20:29:34	TobiasSkarhed	Äsch, jag tar en promenad, här görs ändå inga barn
+2021-10-14 20:49:49	TobiasSkarhed	Wtf
+2021-10-14 20:49:59	TobiasSkarhed	Jag fick debug-varianten att köra
+2021-10-14 21:32:50	EmilTullstedt	Det kan vara så att du saknar en flagga som avaktiverar säkerhetsfunktioner i din kompilator?
+2021-10-14 22:02:06	TobiasSkarhed	Nä, använde samma flaggor, bara att jag la till -g... Vilket kanske inaktiverar något?
+2021-10-14 22:02:19	TobiasSkarhed	Minnesadresserna blev finare
+2021-10-14 22:02:48	TobiasSkarhed	Han får klaga på det imorgon, när jag fick det fungera jag allt annat som smort
+2021-10-14 22:50:21	TobiasSkarhed	Är det lagligt med pyramidspel om det säljs som det och man får fejkpengar? Eller typ en oanvändbar kryptovaluta
+2021-10-14 22:51:44	widforss	Ska du starta en MLM? [ Thread: 9c5 Replies: 2 ]
+2021-10-14 23:02:01	widforss	Det hoppas jag verkligen inte.
+2021-10-14 23:02:01	        	https://files.slack.com/files-pri/TB8DBRHGB-F02HV4RR70A/ssl.png (ssl.png) [:sweat_smile:(@EmilTullstedt)]
+2021-10-14 23:37:10	TobiasSkarhed	Jag e en h4xxz0r https://twitter.com/GovParsonMO/status/1448697768311132160?t=l6TFK_SrUZ9dRxdIbeGeYg&s=19
+2021-10-14 23:37:10	             	| Governor Mike Parson: Through a multi-step process, an individual took the records of at least three educators, decoded the HTML source code, and viewed the SSN of those specific educators.
+2021-10-14 23:37:10	             	| We notified the Cole County prosecutor and the Highway Patrol’s Digital Forensic Unit will investigate. https://pbs.twimg.com/media/FBrO79GWYAYSmzH.jpg
+2021-10-14 23:37:10	             	| https://pbs.twimg.com/media/FBrO79GWYAYSmzH.jpg
+2021-10-14 23:37:10	             	| Twitter | Okt 14, 2021
+2021-10-15 08:14:00	widforss	Åh, Stockholms vänort i USA! [:stockholm:(@mrmannerur)]
+2021-10-15 09:00:11	EmilTullstedt	När Grön Ungdoms språkrör säger ”tänk på jobben” i Cementafrågan— undrar varför hela det jävla partiet är på väg under.
+2021-10-15 09:03:52	widforss	Jo, de vaskar ju sitt existensberättigande
+2021-10-15 09:06:16	widforss	Men i den frågan är jag mest oroad över hanterandet av rättsstatens principer egentligen.
+2021-10-15 09:07:41	EmilTullstedt	Regeringen säger ”fuck off” till domstolen upprepade gånger? Typ som de jävlarna gjort med LEK i flera vändor hos Europadomstolen?
+2021-10-15 09:08:16	widforss	LEK?
+2021-10-15 09:08:20	EmilTullstedt	Mitt förtroende för Sveriges känsla för demokrati är något över Polen och Ukraina.
+2021-10-15 09:08:33	EmilTullstedt	DLD
+2021-10-15 09:08:44	widforss	Tänkte precis dra en parallell till Polen, ja
+2021-10-15 09:09:24	widforss	Jaha, den där historien. Fan alltså
+2021-10-15 09:10:42	EmilTullstedt	Mmm. Blev plötsligt något osäker om det var specifikt LEK det gällde. Men datalagringsdirektivet föll ju. Och regeringen har ignorerat det åtminstone tre gånger.
+2021-10-15 10:40:04	Wilhelm	Vad är det som är så hemskt med demokratin i Ukraina? (edited)
+2021-10-15 10:40:15	Wilhelm	korruption sure, men mil bättre än före 2014
+2021-10-15 10:44:23	EmilTullstedt	Ungern*
+2021-10-15 10:44:41	EmilTullstedt	https://twitter.com/graphcrimes/status/1448330475874013192
+2021-10-15 10:44:41	             	| Graph Crimes: https://pbs.twimg.com/media/FBmA5HoXoAMPgLc.jpg
+2021-10-15 10:44:41	             	| https://pbs.twimg.com/media/FBmA5HoXoAMPgLc.jpg
+2021-10-15 10:44:41	             	| Twitter | Okt 13, 2021
+2021-10-15 10:46:44	EmilTullstedt	Det enda rimliga tolkningen av den här grafen är att det finns 128% amerikaner och alla har nångång i sitt liv testat marijuana, 51% senast idag, 43% nångång under föregående år och 34% någongång 1997.
+2021-10-15 10:46:44	             	Och 128% > 50%
+2021-10-15 10:47:51	EmilTullstedt	Det är något oklart om de som gjorde grafen ingår i de 51%en som använt marijuana idag. Men det finns anledningar till att misstänka det.
+2021-10-15 10:49:15	Wilhelm	eller att grafen är från 1998
+2021-10-15 10:49:31	Wilhelm	men det går fortfarande inte ihop :smile:
+2021-10-15 10:51:13	widforss	Typiskt "släng data på praktikanten, få diagram tillbaka"
+2021-10-15 12:48:57	widforss	Analytics kraschar vår app
+2021-10-15 13:29:36	EmilTullstedt	Hm, som i Google Analytics?
+2021-10-15 14:09:11	EmilTullstedt	https://www.justice.gov/usao-ndtx/pr/former-boeing-737-max-chief-technical-pilot-indicted-fraud
+2021-10-15 14:09:11	             	| Former Boeing 737 MAX Chief Technical Pilot Indicted for Fraud
+2021-10-15 14:09:11	             	| https://www.justice.gov/sites/all/modules/features/doj_sharing/images/doj-seal-fb.jpg
+2021-10-15 15:55:04	EmilTullstedt	https://www.bbc.com/news/world-us-canada-58879469
+2021-10-15 15:55:04	             	| Texas Governor Greg Abbott bans mandatory vaccination in state
+2021-10-15 15:55:04	             	| The latest order by the Republican governor applies to all organisations, including private businesses.
+2021-10-15 15:55:04	             	| https://ichef.bbci.co.uk/news/1024/branded_news/10ED5/production/_121033396_gettyimages-1213516943.jpg
+2021-10-15 16:04:44	widforss	Bra!
+2021-10-15 16:05:32	EmilTullstedt	@widforss ?
+2021-10-15 16:05:32	Slackbot	`/* */`
+2021-10-15 16:05:49	widforss	Att hålla vaccin frivilligt
+2021-10-15 16:06:47	EmilTullstedt	Ja, jo, men borde inte en restaurang kunna säga att du vara vaccinerad för att få äta där?
+2021-10-15 16:22:33	widforss	Fast Demokraterna har gått över ganska många gränser med vaccinet. De vägrar ju låte ovaccinerade jobba. Det här är en rimlig reakrion
+2021-10-15 16:24:37	EmilTullstedt	Mmm, där har du en poäng
+2021-10-16 00:26:26	TobiasSkarhed	Ska jag klippa mig? Jag är sjukt osäker på det
+2021-10-16 08:56:58	EmilTullstedt	Delvis?
+2021-10-16 08:56:58	             	https://files.slack.com/files-pri/TB8DBRHGB-F02J0AZGANP/image_from_ios.jpg (Image from iOS)
+2021-10-16 12:42:51	mrmannerur	ta med kontanter, du kan bara betala 80% av vad du köpt med kort
+2021-10-30 18:22:47	TobiasSkarhed	https://twitter.com/leftoblique/status/1454184429249646592?t=oWXRMghpJO4oMCtXVrnogw&s=19
+2021-10-30 18:22:47	             	| Dana Fried: Nobody hates Rust because nobody uses Rust
+2021-10-30 18:22:47	             	| Twitter | Yesterday at 22:32
+2021-10-30 18:22:58	TobiasSkarhed	:relaxed:
+2021-10-30 18:28:09	widforss	not true
+2021-10-30 18:22:47	TobiasSkarhed	https://twitter.com/leftoblique/status/1454184429249646592?t=oWXRMghpJO4oMCtXVrnogw&s=19
+2021-10-30 18:22:47	             	| Dana Fried: Nobody hates Rust because nobody uses Rust
+2021-10-30 18:22:47	             	| Twitter | Yesterday at 22:32
+2021-10-30 18:22:58	TobiasSkarhed	:relaxed:
+2021-10-30 18:28:09	widforss	not true
+2021-12-02 09:41:20	widforss	Vill också kunna springa ifatt ett tåg.
+2021-12-02 09:41:20	        	https://twitter.com/filodxxn/status/1465850060235751425?s=21
+2021-12-02 09:41:20	        	| Filo: Why did I expect it to start flying
+2021-12-02 09:41:20	        	| Twitter | Yesterday at 02:07
+2021-12-02 09:42:21	EmilTullstedt	De körde tågen mellan Knivsta och Uppsala i 10 km/h för ett tag sen
+2021-12-02 09:43:44	EmilTullstedt	Varför har ingen berättat för mig att Foundation är baserad på ”The History of the Decline and Fall of the Roman Empire”?
+2021-12-02 09:43:44	             	Trodde bara det var standard tråkscifi [ Thread: 1b8 Replies: 1 ]
+2021-12-02 09:45:29	widforss	Lyssnat på Sean Carrolls avsnitt om det?
+2021-12-02 09:45:51	EmilTullstedt	Nä
+2021-12-02 09:46:14	widforss	Otippad potentiell vändning i min karriär: Min farsa erbjuder potentiell finansiering av min arbetsgivare, en norsk myndighet.
+2021-12-02 09:46:24	EmilTullstedt	Uh
+2021-12-02 09:47:10	widforss	Han bildar ett litet forskningskonsortium och vill ha med oss.
+2021-12-02 09:48:32	EmilTullstedt	Ah, spännande
+2021-12-02 09:48:42	EmilTullstedt	Är inte din pappa präst?
+2021-12-02 09:49:05	widforss	Jo, det är ett sätt att se på saken.
+2021-12-02 09:49:24	widforss	Ett annat sätt är:
+2021-12-02 09:49:24	        	http://www.es.mdh.se/staff/148-Gunnar_Widforss
+2021-12-02 09:50:21	EmilTullstedt	Ah. Cajos motsats?
+2021-12-02 09:50:29	widforss	Precis så.
+2021-12-02 09:51:02	widforss	Han "slutade få jobb" inom SvK 99/00 då han började förespråka smågrupper inom kyrkan.
+2021-12-02 09:51:36	EmilTullstedt	Smågrupper som inte leddes av anställda? :scream:
+2021-12-02 09:51:49	widforss	Med amerikanska hemkyrkor som förebild.
+2021-12-02 09:52:22	EmilTullstedt	https://youtu.be/6QzM8XdIlcE
+2021-12-02 09:52:22	             	| Various Artists - Topic: Överheten
+2021-12-02 09:53:11	widforss	Men han slutade 31 december 1999, så jag föredrar att säga att han valde staten framför kyrkan.
+2021-12-02 09:54:40	EmilTullstedt	Kaxigt ändå. Nytt millenium. Ny karriär
+2021-12-02 09:55:07	EmilTullstedt	Kan du fråga honom om han byter karriär på sekelskiften eller millenieskiften?
+2021-12-02 09:56:34	widforss	Iom att han timeade det så bra (exakt när SvK slutade vara statligt) fick han nyligen För Nit och Redlighet i rikets tjänst.
+2021-12-02 09:57:01	EmilTullstedt	Åh. Det fick mamma för något år sen!
+2021-12-02 09:57:02	widforss	Trots att Arbetsgivarverket tidigare har sagt att tid i SvK innan år 2000 inte ska räknas.
+2021-12-02 09:57:18	EmilTullstedt	Kmr inte alls ihåg vad hon valde för nåt. Typ en ljusstake eller ngt?
+2021-12-02 09:58:36	widforss	Nu har Polisen jagat någon av isen med hänvisning till att vi har sagt något vi inte har sagt.
+2021-12-02 09:59:48	widforss	https://files.slack.com/files-pri/TB8DBRHGB-F02NUM8RY79/jagd-av-isa.png (jagd-av-isa.png)
+2021-12-02 10:19:22	widforss	Den något bättre versionen är när jag faktiskt har skrivit något, och det citeras för att rättfärdiga att jaga folk av isen.
+2021-12-02 10:28:36	EmilTullstedt	Poliser :face_with_rolling_eyes:
+2021-12-02 10:38:37	EmilTullstedt	Försöker Svenskt näringsliv återinföra barnarbete? För det ser väldigt mycket ut som att Svenskt näringsliv klagar på att det är för lite barnarbete.
+2021-12-02 10:38:37	             	https://files.slack.com/files-pri/TB8DBRHGB-F02P9FR10H1/image_from_ios.png (Image from iOS)
+2021-12-02 10:55:58	Wilhelm	[+ 1b8] "standard tråkscifi"
+2021-12-02 10:55:58	       	Låter som du läst fel böcker om det är ditt generella intryck :)
+2021-12-02 14:07:59	EmilTullstedt	@Wilhelm Haha, jag tycker inte om fiktion generellt sett :stuck_out_tongue:
+2021-12-02 22:12:19	TobiasSkarhed	https://youtu.be/pD-f45TbvEw
+2021-12-02 22:12:19	TobiasSkarhed	https://youtu.be/pD-f45TbvEw
+2021-12-02 22:12:19	             	| Rådet for Sikker Trafik: A helmet has always been a good idea
+2021-12-03 09:37:25	widforss	https://twitter.com/xssfox/status/1466178398414245891?s=21
+2021-12-03 09:37:25	        	| xssfox: You might not like it but this is the most optimum layout for programming https://pbs.twimg.com/media/FFjpdflVcAMBK0L.jpg
+2021-12-03 09:37:25	        	| https://pbs.twimg.com/media/FFjpdflVcAMBK0L.jpg
+2021-12-03 09:37:25	        	| Twitter | Dec 01, 2021
+2021-12-03 10:45:03	EmilTullstedt	https://twitter.com/johncarlosbaez/status/1466236963082719236?s=21
+2021-12-03 10:45:03	             	| John Carlos Baez: Sometimes you just try to blend in and hope nobody notices. https://pbs.twimg.com/media/FFkenN6XIAo8E8a.jpg
+2021-12-03 10:45:03	             	| https://pbs.twimg.com/media/FFkenN6XIAo8E8a.jpg
+2021-12-03 10:45:03	             	| Twitter | Yesterday at 03:45 [:tö:(@mrmannerur,@EmilTullstedt)]
+2021-12-03 10:45:25	widforss	Kung
+2021-12-03 13:30:09	mrmannerur	https://twitter.com/hanno/status/1466667993954357249?s=21
+2021-12-03 13:30:09	          	| hanno pro Impfpflicht 💉💉: Hey https://twitter.com/TheParanoids (@TheParanoids) if you're wondering why some of your TLS certificates just got revoked, I tried reporting it to you via https://twitter.com/Hacker0x01 (@Hacker0x01) but they believe that a compromised key does not qualify, as it's just a "best practice" not to have compromised keys...
+2021-12-03 13:30:09	          	| Twitter | Today at 08:17
+2021-12-03 15:13:56	TobiasSkarhed	If this bothers you, you should have been a math major (edited)
+2021-12-03 15:13:56	             	https://files.slack.com/files-pri/TB8DBRHGB-F02PHEBMZHS/img_20211203_151321.jpg (IMG_20211203_151321.jpg)
+2021-12-03 17:21:25	EmilTullstedt	_That_ bothers me
+2021-12-03 17:23:14	Wilhelm	lack of context bothers me :stuck_out_tongue:

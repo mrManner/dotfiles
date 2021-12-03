@@ -1,0 +1,1331 @@
+2021-10-12 23:07:11	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-12 23:07:11	--	gnutls: receiving 2 certificates
+2021-10-12 23:07:11	--	 - certificate[1] info:
+2021-10-12 23:07:11	--	   - subject `CN=copper.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x035727066a14920c2fdd99c217cb734ea256, EC/ECDSA key 384 bits, signed using RSA-SHA256, activated `2021-10-04 05:09:21 UTC', expires `2022-01-02 05:09:20 UTC', pin-sha256="cv0ltiCs10HTzVfQHP1Q+epOs2pxCyhg3vW4b1kLU8E="
+2021-10-12 23:07:11	--	 - certificate[2] info:
+2021-10-12 23:07:11	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-12 23:07:11	--	gnutls: peer's certificate is trusted
+2021-10-12 23:07:11	--	irc: connected to irc.libera.chat/6697 (130.185.232.126)
+2021-10-12 23:07:12	--	copper.libera.chat: *** Checking Ident
+2021-10-12 23:07:12	--	copper.libera.chat: *** Looking up your hostname...
+2021-10-12 23:07:12	--	copper.libera.chat: *** Found your hostname: h-98-128-201-128.A785.priv.bahnhof.se
+2021-10-12 23:07:17	--	copper.libera.chat: *** No Ident response
+2021-10-12 23:07:17	--	Welcome to the Libera.Chat Internet Relay Chat Network jmanner
+2021-10-12 23:07:17	--	Your host is copper.libera.chat[130.185.232.126/6697], running version solanum-1.0-dev
+2021-10-12 23:07:17	--	This server was created Tue Sep 7 2021 at 04:54:26 UTC
+2021-10-12 23:07:17	--	copper.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-12 23:07:17	--	CALLERID=g SAFELIST ELIST=CTU ETRACE KNOCK MONITOR=100 WHOX FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-12 23:07:17	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-12 23:07:17	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-12 23:07:17	--	There are 64 users and 46876 invisible on 26 servers
+2021-10-12 23:07:17	--	40 :IRC Operators online
+2021-10-12 23:07:17	--	6 :unknown connection(s)
+2021-10-12 23:07:17	--	20921 :channels formed
+2021-10-12 23:07:17	--	I have 3012 clients and 1 servers
+2021-10-12 23:07:17	--	3012 3313 :Current local users 3012, max 3313
+2021-10-12 23:07:17	--	46940 50734 :Current global users 46940, max 50734
+2021-10-12 23:07:17	--	Highest connection count: 3314 (3313 clients) (119977 connections received)
+2021-10-12 23:07:17	--	- copper.libera.chat Message of the Day -
+2021-10-12 23:07:18	--	- Welcome to Libera Chat, the IRC network for
+2021-10-12 23:07:18	--	- free & open-source software and peer directed projects.
+2021-10-12 23:07:18	--	-
+2021-10-12 23:07:18	--	- Use of Libera Chat is governed by our network policies.
+2021-10-12 23:07:18	--	-
+2021-10-12 23:07:18	--	- Please visit us in #libera for questions and support.
+2021-10-12 23:07:18	--	-
+2021-10-12 23:07:18	--	- Website and documentation:  https://libera.chat
+2021-10-12 23:07:18	--	- Webchat:                    https://web.libera.chat
+2021-10-12 23:07:18	--	- Network policies:           https://libera.chat/policies
+2021-10-12 23:07:18	--	- Email:                      support@libera.chat
+2021-10-12 23:07:18	--	End of /MOTD command.
+2021-10-12 23:07:18	--	User mode [+Zi] by jmanner
+2021-10-12 23:09:13	--	You are now known as mrmanner
+2021-10-12 23:10:38	--	MSG(NickServ): REGISTER ****************************************
+2021-10-12 23:10:38	--	NickServ (NickServ@services.libera.chat): An email containing nickname activation instructions has been sent to irc@mrmanner.eu.
+2021-10-12 23:10:38	--	NickServ (NickServ@services.libera.chat): Please check the address if you don't receive it. If it is incorrect, DROP then REGISTER again.
+2021-10-12 23:10:38	--	NickServ (NickServ@services.libera.chat): If you do not complete registration within one day, your nickname will expire.
+2021-10-12 23:10:38	--	NickServ (NickServ@services.libera.chat): mrmanner is now registered to irc@mrmanner.eu.
+2021-10-12 23:33:59	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-12 23:34:00	--	gnutls: receiving 2 certificates
+2021-10-12 23:34:00	--	 - certificate[1] info:
+2021-10-12 23:34:00	--	   - subject `CN=molybdenum.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04906dede1c835b04ad2ba69aee7e7cf9001, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-04 05:03:21 UTC', expires `2022-01-02 05:03:20 UTC', pin-sha256="y8HvDqqB5Blr5m+L6+HlfYg2e9oV3KhZEHVYwwh7rTo="
+2021-10-12 23:34:00	--	 - certificate[2] info:
+2021-10-12 23:34:00	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-12 23:34:00	--	gnutls: peer's certificate is trusted
+2021-10-12 23:34:00	--	irc: connected to irc.libera.chat/6697 (51.161.82.214)
+2021-10-12 23:34:00	--	molybdenum.libera.chat: *** Checking Ident
+2021-10-12 23:34:00	--	molybdenum.libera.chat: *** Looking up your hostname...
+2021-10-12 23:34:00	--	molybdenum.libera.chat: *** Found your hostname: h-98-128-201-128.A785.priv.bahnhof.se
+2021-10-12 23:34:06	--	molybdenum.libera.chat: *** No Ident response
+2021-10-12 23:34:06	--	Welcome to the Libera.Chat Internet Relay Chat Network jmanner
+2021-10-12 23:34:06	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-10-12 23:34:06	--	This server was created Tue Aug 31 2021 at 04:30:18 UTC
+2021-10-12 23:34:06	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-12 23:34:06	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-12 23:34:06	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-12 23:34:06	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-12 23:34:06	--	There are 64 users and 46787 invisible on 26 servers
+2021-10-12 23:34:06	--	40 :IRC Operators online
+2021-10-12 23:34:06	--	7 :unknown connection(s)
+2021-10-12 23:34:06	--	20879 :channels formed
+2021-10-12 23:34:06	--	I have 3020 clients and 1 servers
+2021-10-12 23:34:06	--	3020 3747 :Current local users 3020, max 3747
+2021-10-12 23:34:06	--	46851 50734 :Current global users 46851, max 50734
+2021-10-12 23:34:06	--	Highest connection count: 3748 (3747 clients) (85999 connections received)
+2021-10-12 23:34:06	--	- molybdenum.libera.chat Message of the Day -
+2021-10-12 23:34:06	--	- Welcome to Libera Chat, the IRC network for
+2021-10-12 23:34:06	--	- free & open-source software and peer directed projects.
+2021-10-12 23:34:06	--	-
+2021-10-12 23:34:06	--	- Use of Libera Chat is governed by our network policies.
+2021-10-12 23:34:06	--	-
+2021-10-12 23:34:06	--	- Please visit us in #libera for questions and support.
+2021-10-12 23:34:06	--	-
+2021-10-12 23:34:06	--	- Website and documentation:  https://libera.chat
+2021-10-12 23:34:06	--	- Webchat:                    https://web.libera.chat
+2021-10-12 23:34:06	--	- Network policies:           https://libera.chat/policies
+2021-10-12 23:34:06	--	- Email:                      support@libera.chat
+2021-10-12 23:34:06	--	End of /MOTD command.
+2021-10-12 23:34:06	--	User mode [+Zi] by jmanner
+2021-10-12 23:34:54	--	You are now known as mrmanner
+2021-10-12 23:34:54	--	NickServ (NickServ@services.libera.chat): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ IDENTIFY mrmanner <password>
+2021-10-12 23:35:47	--	MSG(NickServ): IDENTIFY ************************
+2021-10-12 23:35:47	--	NickServ (NickServ@services.libera.chat): You are now identified for mrmanner.
+2021-10-12 23:35:48	--	NickServ (NickServ@services.libera.chat): Last login from: ~jmanner@h-98-128-201-128.A785.priv.bahnhof.se on Oct 12 21:33:56 2021 +0000.
+2021-10-12 23:35:48	--	NickServ (NickServ@services.libera.chat): You have NOT COMPLETED registration verification.
+2021-10-12 23:35:48	--	NickServ (NickServ@services.libera.chat): An email containing nickname activation instructions was sent to irc@mrmanner.eu.
+2021-10-12 23:35:48	--	NickServ (NickServ@services.libera.chat): If you do not complete registration within one day, your nickname will expire.
+2021-10-12 23:36:13	--	MSG(NickServ): VERIFY REGISTER *************************
+2021-10-12 23:36:13	--	NickServ (NickServ@services.libera.chat): mrmanner has now been verified.
+2021-10-12 23:36:13	--	NickServ (NickServ@services.libera.chat): Thank you for verifying your e-mail address! You have taken steps in ensuring that your registrations are not exploited.
+2021-10-12 23:59:31	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-12 23:59:32	--	gnutls: receiving 2 certificates
+2021-10-12 23:59:32	--	 - certificate[1] info:
+2021-10-12 23:59:32	--	   - subject `CN=cadmium.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04617e1db01c94a57c52777daefc5a02e61d, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-11 05:01:16 UTC', expires `2022-01-09 05:01:15 UTC', pin-sha256="Dh0U4ue0mRk6Iq5x7I0IH+tnAOX8V42Eb0PC0p3/M/A="
+2021-10-12 23:59:32	--	 - certificate[2] info:
+2021-10-12 23:59:32	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-12 23:59:32	--	gnutls: peer's certificate is trusted
+2021-10-12 23:59:32	--	irc: connected to irc.libera.chat/6697 (103.196.36.38)
+2021-10-12 23:59:33	--	cadmium.libera.chat: *** Checking Ident
+2021-10-12 23:59:33	--	cadmium.libera.chat: *** Looking up your hostname...
+2021-10-12 23:59:33	--	cadmium.libera.chat: *** Found your hostname: h-98-128-201-128.a785.priv.bahnhof.se
+2021-10-12 23:59:38	--	cadmium.libera.chat: *** No Ident response
+2021-10-12 23:59:38	--	Welcome to the Libera.Chat Internet Relay Chat Network jmanner
+2021-10-12 23:59:38	--	Your host is cadmium.libera.chat[103.196.36.38/6697], running version solanum-1.0-dev
+2021-10-12 23:59:38	--	This server was created Mon Aug 16 2021 at 15:58:33 UTC
+2021-10-12 23:59:38	--	cadmium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-12 23:59:38	--	WHOX ETRACE KNOCK MONITOR=100 SAFELIST ELIST=CTU CALLERID=g FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-12 23:59:38	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-12 23:59:38	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-12 23:59:38	--	There are 64 users and 46672 invisible on 26 servers
+2021-10-12 23:59:38	--	40 :IRC Operators online
+2021-10-12 23:59:38	--	8 :unknown connection(s)
+2021-10-12 23:59:38	--	20921 :channels formed
+2021-10-12 23:59:38	--	I have 3005 clients and 1 servers
+2021-10-12 23:59:38	--	3005 4013 :Current local users 3005, max 4013
+2021-10-12 23:59:38	--	46736 50734 :Current global users 46736, max 50734
+2021-10-12 23:59:38	--	Highest connection count: 4014 (4013 clients) (157327 connections received)
+2021-10-12 23:59:38	--	- cadmium.libera.chat Message of the Day -
+2021-10-12 23:59:38	--	- This server kindly provided by Mach Dilemma (www.m-d.net)
+2021-10-12 23:59:38	--	- Welcome to Libera Chat, the IRC network for
+2021-10-12 23:59:38	--	- free & open-source software and peer directed projects.
+2021-10-12 23:59:38	--	-
+2021-10-12 23:59:38	--	- Use of Libera Chat is governed by our network policies.
+2021-10-12 23:59:38	--	-
+2021-10-12 23:59:38	--	- Please visit us in #libera for questions and support.
+2021-10-12 23:59:38	--	-
+2021-10-12 23:59:38	--	- Website and documentation:  https://libera.chat
+2021-10-12 23:59:38	--	- Webchat:                    https://web.libera.chat
+2021-10-12 23:59:38	--	- Network policies:           https://libera.chat/policies
+2021-10-12 23:59:38	--	- Email:                      support@libera.chat
+2021-10-12 23:59:38	--	End of /MOTD command.
+2021-10-12 23:59:38	--	User mode [+Zi] by jmanner
+2021-10-13 00:01:04	--	MSG(alis): LIST sweden
+2021-10-13 00:01:04	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*sweden*'
+2021-10-13 00:01:04	--	alis (alis@services.libera.chat): #sweden                                            19 :Welcome to #Sweden. We use Swedish and English. And remember, if you at first don't succeed, then sky diving isn't for you! 
+2021-10-13 00:01:04	--	alis (alis@services.libera.chat): End of output.
+2021-10-13 00:01:34	--	You are now known as mrmanner
+2021-10-13 00:01:34	--	NickServ (NickServ@services.libera.chat): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ IDENTIFY mrmanner <password>
+2021-10-13 00:02:07	--	MSG(NickServ): IDENTIFY ************************
+2021-10-13 00:02:08	--	NickServ (NickServ@services.libera.chat): You are now identified for mrmanner.
+2021-10-13 00:02:08	--	NickServ (NickServ@services.libera.chat): Last login from: ~jmanner@h-98-128-201-128.A785.priv.bahnhof.se on Oct 12 21:59:29 2021 +0000.
+2021-10-13 00:02:28	--	MSG(alis): LIST golang
+2021-10-13 00:02:29	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*golang*'
+2021-10-13 00:02:29	--	alis (alis@services.libera.chat): ##golang-fr                                         2 
+2021-10-13 00:02:29	--	alis (alis@services.libera.chat): #fedora-golang                                     15 :Welcome to Fedora's go-sig channel 
+2021-10-13 00:02:29	--	alis (alis@services.libera.chat): #golang                                             1 
+2021-10-13 00:02:29	--	alis (alis@services.libera.chat): #golang-fr                                          7 
+2021-10-13 00:02:29	--	alis (alis@services.libera.chat): #golangbr                                           1 
+2021-10-13 00:02:29	--	alis (alis@services.libera.chat): End of output.
+2021-10-13 00:03:04	--	MSG(alis): LIST sweden*
+2021-10-13 00:03:05	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching 'sweden*'
+2021-10-13 00:03:05	--	alis (alis@services.libera.chat): End of output.
+2021-10-13 00:03:29	--	MSG(alis): LIST -topic sweden
+2021-10-13 00:03:29	--	alis (alis@services.libera.chat): Invalid option sweden
+2021-10-13 00:03:45	--	MSG(alis): LIST sweden -topic
+2021-10-13 00:03:46	--	alis (alis@services.libera.chat): Invalid option for -topic
+2021-10-13 00:04:04	--	MSG(alis): LIST sweden -topic sweden
+2021-10-13 00:04:05	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*sweden*'
+2021-10-13 00:04:05	--	alis (alis@services.libera.chat): #sweden                                            20 :Welcome to #Sweden. We use Swedish and English. And remember, if you at first don't succeed, then sky diving isn't for you! 
+2021-10-13 00:04:05	--	alis (alis@services.libera.chat): End of output.
+2021-10-13 00:04:13	--	MSG(alis): LIST * -topic sweden
+2021-10-13 00:04:13	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*'
+2021-10-13 00:04:13	--	alis (alis@services.libera.chat): #Sverige                                            2 :Denna kanal kommer stängas på sikt, och vi hänvisar till #Sweden :) 
+2021-10-13 00:04:13	--	alis (alis@services.libera.chat): #sweden                                            20 :Welcome to #Sweden. We use Swedish and English. And remember, if you at first don't succeed, then sky diving isn't for you! 
+2021-10-13 00:04:13	--	alis (alis@services.libera.chat): End of output.
+2021-10-13 00:04:22	--	MSG(alis): LIST *
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*'
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #                                                  68 :#, because who needs a channel with any name? #-offtopic for messages with content. 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #!/bin/mksh                                         5 :The MirBSD Korn Shell | http://www.mirbsd.org/mksh.htm R59c (2020-10-31) | mksh/Win32 Beta 14 || dev version: $ CVS_RSH=ssh cvs -d _anoncvs@anoncvs.mirbsd.org:/cvs co -PA mksh | see website for docs || we’re on OFTC for now || https://paypal.me/mirabilos to support my work 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #!/bin/sh                                           9 :sh — shell, the standard command language interpreter. Can you even su?! 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #!/bin/zsh                                          2 :There is no SH like ZSH 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #!social                                            2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #!sXe                                               2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##                                                102 :[##] Coolest Chat On Libera | Cooler than #, ###, and even #### | Join the revolut##n 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##!                                                 2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###                                                 4 :Any Topic Preference Is Welcome. We Only Ask for Respect. 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ####                                                6 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #####                                               1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #######                                             2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ########                                            2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #########                                           2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #######################################             2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #################################################    2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##################################################    5 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ####################################math            2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###########math                                     2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ######freenode                                      2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): #####freenode                                       2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ####freenode                                        2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ####perl                                            2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ####truth                                           1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###biology                                          2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###chunt                                            2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###freenode                                         8 :for when ##freenode gets closed 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###guitar                                           2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###kline                                            2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###libera                                           2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###math                                             1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###music                                            4 :Audionauts in Cyberia | Newly released Bespoke Synth! Get yours here: https://www.bespokesynth.com/ | Ennio Morricone: A Master Jewel Thief 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###palemoon                                         1 :Welcome to crazy. 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###perl                                             2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###regex                                            2 :Because why not? :) 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###research                                         3 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###tejr                                             2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###test                                             3 :Test Channel. Feel free to test stuff. Use Chanserv to get op/voice 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###truth                                            1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ###virology                                         4 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##%                                                 2 :The IRC Lord Sanctuary (AKA: The Secret Society of 3l1t3z). Baked, not fried, since 2005. Moofspeak's underground, now on Libera Chat! 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##*                                                 1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##-##                                               2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##.                                                 1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##/dev/random                                       2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##/lang/                                            2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##0                                                 2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##0swhj                                             3 :No-one here, just 🍆 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##0xdeadbeef                                        8 :☃ The deadbeef(デッドビーフ) SaaS - Saufen as a Service — where SCHEISSE matters — PI=42/13.37 — 1/0=Ξ — YOU SHOULD DROP PANTS! — Paronomasia factory, watch out! — FREENODE FLÜCHTLINGE! — Happy జ్ఞ‌ా! — MITTWOCH!!!!1 — certified scenepoints partner — http://ircz.de/p/1107026 — ／人◕﻿ ‿‿ ◕人＼ — <EvilBot> Keks ist Fortschritt! 🐸 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##13                                                2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##1911techtalk                                      1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##1char                                             3 :A channel for people with short nicks. Users with short nicks are auto-voiced. 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##2afreedom                                         5 :PRO-GUN and PRO-FREEDOM 24/7 - SHALL NOT BE INFRINGED - FOSS GUN COMMUNITY || ...:::|||>>>Join us on OuchNet! irc.ouch.chat be there!<<<|||:::... 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##2chars                                           15 :2 character nicks, or GTFO | Bots: py (BitBot, owner: id), |^ (owner: dg), gh (https://github.com/BradleyShaw/IssueBot, owner: bs), hb (modified hackbot, owner: cd) 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##37726                                             1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##3chars                                            1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##3cx                                               5 :Unofficial 3CX Channel | Admin Guide: https://3cx.com/docs/manual | User Guide: https://3cx.com/user-manual | Other Guides: https://www.3cx.com/docs | Discord: https://discord.gg/xBZE8MwNWP | 3CX likes to censor people (via their forums, reddit, etc...), but luckily we're not 3CX :) | If running on Windows still (WhY!?) try our sister channel... ##windowsnorules 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##3DPrinting                                        4 :Welcome to the home of 3D Printing on Libera, a place for people who use 3D Printing as a hobby or work, share your stories and advice for beginners... Show/Share your work, pics of your printer, what filaments you like best and most of all please be kind to each other and help create a home for 3D Printer users, a place for advice and sharing 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##3xrien                                            4 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##42                                                1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##80486                                             1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##8051                                              1 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##999                                               2 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): ##9fans                                             7 
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): Maximum channel output reached
+2021-10-13 00:04:22	--	alis (alis@services.libera.chat): End of output.
+2021-10-13 00:04:36	--	MSG(alis): LIST * -topic stockholm
+2021-10-13 00:04:37	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*'
+2021-10-13 00:04:37	--	alis (alis@services.libera.chat): End of output.
+2021-10-13 00:05:45	--	user/mrmanner :is now your hidden host (set by services.)
+2021-10-13 00:10:03	--	lobsters: No such channel
+2021-10-13 00:41:37	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2021-10-13 00:41:37	--	irc: disconnecting from server...
+2021-10-13 00:41:38	--	irc: disconnected from server
+2021-10-13 00:41:38	--	irc: reconnecting to server in 10 seconds
+2021-10-13 00:41:48	--	irc: reconnecting to server...
+2021-10-13 00:41:48	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-13 00:41:48	--	gnutls: receiving 2 certificates
+2021-10-13 00:41:48	--	 - certificate[1] info:
+2021-10-13 00:41:48	--	   - subject `CN=calcium.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03d47ca092f00e5480ae733d3c74a8b03efa, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-08-30 14:52:10 UTC', expires `2021-11-28 14:52:09 UTC', pin-sha256="1brbvhJlv/rKhfoaH6c/JEe99UpoEL6HKeHocOpB0rA="
+2021-10-13 00:41:48	--	 - certificate[2] info:
+2021-10-13 00:41:48	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-13 00:41:48	--	gnutls: peer's certificate is trusted
+2021-10-13 00:41:48	--	irc: connected to irc.libera.chat/6697 (64.86.243.186)
+2021-10-13 00:41:49	--	calcium.libera.chat: *** Checking Ident
+2021-10-13 00:41:49	--	calcium.libera.chat: *** Looking up your hostname...
+2021-10-13 00:41:49	--	calcium.libera.chat: *** Found your hostname: h-98-128-201-128.A785.priv.bahnhof.se
+2021-10-13 00:41:54	--	calcium.libera.chat: *** No Ident response
+2021-10-13 00:41:54	--	Welcome to the Libera.Chat Internet Relay Chat Network mrmanner
+2021-10-13 00:41:54	--	Your host is calcium.libera.chat[64.86.243.186/6697], running version solanum-1.0-dev
+2021-10-13 00:41:54	--	This server was created Mon Aug 30 2021 at 04:05:23 UTC
+2021-10-13 00:41:54	--	calcium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-13 00:41:54	--	ETRACE SAFELIST ELIST=CTU MONITOR=100 CALLERID=g FNC WHOX KNOCK CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-13 00:41:54	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-13 00:41:54	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-13 00:41:54	--	There are 63 users and 46457 invisible on 26 servers
+2021-10-13 00:41:54	--	40 :IRC Operators online
+2021-10-13 00:41:54	--	8 :unknown connection(s)
+2021-10-13 00:41:54	--	20901 :channels formed
+2021-10-13 00:41:54	--	I have 3014 clients and 1 servers
+2021-10-13 00:41:54	--	3014 4397 :Current local users 3014, max 4397
+2021-10-13 00:41:54	--	46520 50734 :Current global users 46520, max 50734
+2021-10-13 00:41:54	--	Highest connection count: 4398 (4397 clients) (123313 connections received)
+2021-10-13 00:41:54	--	- calcium.libera.chat Message of the Day -
+2021-10-13 00:41:54	--	- Welcome to Libera Chat, the IRC network for
+2021-10-13 00:41:54	--	- free & open-source software and peer directed projects.
+2021-10-13 00:41:54	--	-
+2021-10-13 00:41:54	--	- Use of Libera Chat is governed by our network policies.
+2021-10-13 00:41:54	--	-
+2021-10-13 00:41:54	--	- Please visit us in #libera for questions and support.
+2021-10-13 00:41:54	--	-
+2021-10-13 00:41:54	--	- Website and documentation:  https://libera.chat
+2021-10-13 00:41:54	--	- Webchat:                    https://web.libera.chat
+2021-10-13 00:41:54	--	- Network policies:           https://libera.chat/policies
+2021-10-13 00:41:54	--	- Email:                      support@libera.chat
+2021-10-13 00:41:54	--	End of /MOTD command.
+2021-10-13 00:41:54	--	User mode [+Zi] by mrmanner
+2021-10-13 00:41:54	--	NickServ (NickServ@services.libera.chat): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ IDENTIFY mrmanner <password>
+2021-10-13 00:53:48	--	#libera-cloak: Cannot join channel (+r) - you need to be logged into your NickServ account
+2021-10-13 00:54:35	--	MSG(NickServ): IDENTIFY ************************
+2021-10-13 00:54:35	--	NickServ (NickServ@services.libera.chat): You are now identified for mrmanner.
+2021-10-13 00:54:35	--	NickServ (NickServ@services.libera.chat): Last login from: ~jmanner@h-98-128-201-128.a785.priv.bahnhof.se on Oct 12 22:41:38 2021 +0000.
+2021-10-13 00:54:36	--	user/mrmanner :is now your hidden host (set by services.)
+2021-10-13 01:01:10	--	You have been marked as being away
+2021-10-13 21:22:50	--	irc: lag is high, reconnecting to server libera
+2021-10-13 21:22:52	--	irc: disconnected from server
+2021-10-13 21:22:52	--	irc: reconnecting to server in 10 seconds
+2021-10-13 21:23:02	--	irc: reconnecting to server...
+2021-10-13 21:23:02	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-13 21:23:03	--	gnutls: receiving 2 certificates
+2021-10-13 21:23:03	--	 - certificate[1] info:
+2021-10-13 21:23:03	--	   - subject `CN=silver.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04aab062ba8ab1af9e189a54ede682e93d63, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-11 05:03:17 UTC', expires `2022-01-09 05:03:16 UTC', pin-sha256="shW04Qi+Th8ZZqDNH8Wf8BziJTMLO00ezPPP3eTkm7A="
+2021-10-13 21:23:03	--	 - certificate[2] info:
+2021-10-13 21:23:03	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-13 21:23:03	--	gnutls: peer's certificate is trusted
+2021-10-13 21:23:03	--	irc: connected to irc.libera.chat/6697 (172.106.11.86)
+2021-10-13 21:23:03	--	silver.libera.chat: *** Checking Ident
+2021-10-13 21:23:03	--	silver.libera.chat: *** Looking up your hostname...
+2021-10-13 21:23:03	--	silver.libera.chat: *** Found your hostname: h-98-128-201-128.A785.priv.bahnhof.se
+2021-10-13 21:23:09	--	silver.libera.chat: *** No Ident response
+2021-10-13 21:23:09	--	Welcome to the Libera.Chat Internet Relay Chat Network mrmanner
+2021-10-13 21:23:09	--	Your host is silver.libera.chat[172.106.11.86/6697], running version solanum-1.0-dev
+2021-10-13 21:23:09	--	This server was created Mon Sep 27 2021 at 05:52:00 UTC
+2021-10-13 21:23:09	--	silver.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-13 21:23:09	--	ETRACE FNC SAFELIST ELIST=CTU CALLERID=g MONITOR=100 KNOCK WHOX CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-13 21:23:09	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-13 21:23:09	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-13 21:23:10	--	There are 63 users and 48280 invisible on 25 servers
+2021-10-13 21:23:10	--	39 :IRC Operators online
+2021-10-13 21:23:10	--	8 :unknown connection(s)
+2021-10-13 21:23:10	--	20875 :channels formed
+2021-10-13 21:23:10	--	I have 3436 clients and 1 servers
+2021-10-13 21:23:10	--	3436 3901 :Current local users 3436, max 3901
+2021-10-13 21:23:10	--	48343 50734 :Current global users 48343, max 50734
+2021-10-13 21:23:10	--	Highest connection count: 3902 (3901 clients) (59240 connections received)
+2021-10-13 21:23:10	--	- silver.libera.chat Message of the Day -
+2021-10-13 21:23:10	--	- This server is provided by Psychz Networks.
+2021-10-13 21:23:10	--	-
+2021-10-13 21:23:10	--	- Welcome to Libera Chat, the IRC network for
+2021-10-13 21:23:10	--	- free & open-source software and peer directed projects.
+2021-10-13 21:23:10	--	-
+2021-10-13 21:23:10	--	- Use of Libera Chat is governed by our network policies.
+2021-10-13 21:23:10	--	-
+2021-10-13 21:23:11	--	- Please visit us in #libera for questions and support.
+2021-10-13 21:23:11	--	-
+2021-10-13 21:23:11	--	- Website and documentation:  https://libera.chat
+2021-10-13 21:23:11	--	- Webchat:                    https://web.libera.chat
+2021-10-13 21:23:11	--	- Network policies:           https://libera.chat/policies
+2021-10-13 21:23:11	--	- Email:                      support@libera.chat
+2021-10-13 21:23:11	--	End of /MOTD command.
+2021-10-13 21:23:11	--	User mode [+Zi] by mrmanner
+2021-10-13 21:23:11	--	NickServ (NickServ@services.libera.chat): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ IDENTIFY mrmanner <password>
+2021-10-13 21:23:15	--	You have been marked as being away
+2021-10-13 21:34:50	--	MSG(NickServ): IDENTIFY ************************
+2021-10-13 21:34:50	--	NickServ (NickServ@services.libera.chat): You are now identified for mrmanner.
+2021-10-13 21:34:50	--	NickServ (NickServ@services.libera.chat): Last login from: ~jmanner@h-98-128-201-128.A785.priv.bahnhof.se on Oct 13 06:52:52 2021 +0000.
+2021-10-13 21:34:50	--	user/mrmanner :is now your hidden host (set by services.)
+2021-10-16 12:32:05	--	irc: lag is high, reconnecting to server libera
+2021-10-16 12:32:07	--	irc: disconnected from server
+2021-10-16 12:32:07	--	irc: reconnecting to server in 10 seconds
+2021-10-16 12:32:17	--	irc: reconnecting to server...
+2021-10-16 12:32:17	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-16 12:32:18	--	gnutls: receiving 2 certificates
+2021-10-16 12:32:18	--	 - certificate[1] info:
+2021-10-16 12:32:18	--	   - subject `CN=molybdenum.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04906dede1c835b04ad2ba69aee7e7cf9001, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-04 05:03:21 UTC', expires `2022-01-02 05:03:20 UTC', pin-sha256="y8HvDqqB5Blr5m+L6+HlfYg2e9oV3KhZEHVYwwh7rTo="
+2021-10-16 12:32:18	--	 - certificate[2] info:
+2021-10-16 12:32:18	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-16 12:32:18	--	gnutls: peer's certificate is trusted
+2021-10-16 12:32:18	--	irc: connected to irc.libera.chat/6697 (51.161.82.214)
+2021-10-16 12:32:19	--	molybdenum.libera.chat: *** Checking Ident
+2021-10-16 12:32:19	--	molybdenum.libera.chat: *** Looking up your hostname...
+2021-10-16 12:32:19	--	molybdenum.libera.chat: *** Couldn't look up your hostname
+2021-10-16 12:32:24	--	molybdenum.libera.chat: *** No Ident response
+2021-10-16 12:32:24	--	Welcome to the Libera.Chat Internet Relay Chat Network mrmanner
+2021-10-16 12:32:24	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-10-16 12:32:24	--	This server was created Wed Oct 13 2021 at 14:42:49 UTC
+2021-10-16 12:32:24	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-16 12:32:24	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-16 12:32:24	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-16 12:32:24	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-16 12:32:24	--	There are 61 users and 46367 invisible on 26 servers
+2021-10-16 12:32:24	--	40 :IRC Operators online
+2021-10-16 12:32:24	--	14 :unknown connection(s)
+2021-10-16 12:32:24	--	20893 :channels formed
+2021-10-16 12:32:24	--	I have 1426 clients and 1 servers
+2021-10-16 12:32:24	--	1426 1427 :Current local users 1426, max 1427
+2021-10-16 12:32:24	--	46428 48200 :Current global users 46428, max 48200
+2021-10-16 12:32:24	--	Highest connection count: 1428 (1427 clients) (5119 connections received)
+2021-10-16 12:32:24	--	- molybdenum.libera.chat Message of the Day -
+2021-10-16 12:32:24	--	- Welcome to Libera Chat, the IRC network for
+2021-10-16 12:32:24	--	- free & open-source software and peer directed projects.
+2021-10-16 12:32:24	--	-
+2021-10-16 12:32:24	--	- Use of Libera Chat is governed by our network policies.
+2021-10-16 12:32:24	--	-
+2021-10-16 12:32:24	--	- Please visit us in #libera for questions and support.
+2021-10-16 12:32:24	--	-
+2021-10-16 12:32:24	--	- Website and documentation:  https://libera.chat
+2021-10-16 12:32:24	--	- Webchat:                    https://web.libera.chat
+2021-10-16 12:32:24	--	- Network policies:           https://libera.chat/policies
+2021-10-16 12:32:24	--	- Email:                      support@libera.chat
+2021-10-16 12:32:24	--	End of /MOTD command.
+2021-10-16 12:32:24	--	User mode [+Zi] by mrmanner
+2021-10-16 12:32:25	--	NickServ (NickServ@services.libera.chat): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ IDENTIFY mrmanner <password>
+2021-10-16 12:32:30	--	You have been marked as being away
+2021-10-16 12:33:36	--	MSG(NickServ): IDENTIFY ************************
+2021-10-16 12:33:36	--	NickServ (NickServ@services.libera.chat): You are now identified for mrmanner.
+2021-10-16 12:33:38	--	NickServ (NickServ@services.libera.chat): Last login from: ~jmanner@h-98-128-201-128.A785.priv.bahnhof.se on Oct 13 20:19:16 2021 +0000.
+2021-10-16 12:33:38	--	user/mrmanner :is now your hidden host (set by services.)
+2021-10-17 18:14:21	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-17 18:14:22	--	gnutls: receiving 2 certificates
+2021-10-17 18:14:22	--	 - certificate[1] info:
+2021-10-17 18:14:22	--	   - subject `CN=copper.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x035727066a14920c2fdd99c217cb734ea256, EC/ECDSA key 384 bits, signed using RSA-SHA256, activated `2021-10-04 05:09:21 UTC', expires `2022-01-02 05:09:20 UTC', pin-sha256="cv0ltiCs10HTzVfQHP1Q+epOs2pxCyhg3vW4b1kLU8E="
+2021-10-17 18:14:22	--	 - certificate[2] info:
+2021-10-17 18:14:22	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-17 18:14:22	--	gnutls: peer's certificate is trusted
+2021-10-17 18:14:22	--	irc: connected to irc.libera.chat/6697 (130.185.232.126)
+2021-10-17 18:14:22	--	copper.libera.chat: *** Checking Ident
+2021-10-17 18:14:22	--	copper.libera.chat: *** Looking up your hostname...
+2021-10-17 18:14:22	--	copper.libera.chat: *** Couldn't look up your hostname
+2021-10-17 18:14:28	--	copper.libera.chat: *** No Ident response
+2021-10-17 18:14:28	--	Welcome to the Libera.Chat Internet Relay Chat Network jmanner
+2021-10-17 18:14:28	--	Your host is copper.libera.chat[130.185.232.126/6697], running version solanum-1.0-dev
+2021-10-17 18:14:28	--	This server was created Tue Sep 7 2021 at 04:54:26 UTC
+2021-10-17 18:14:28	--	copper.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-17 18:14:28	--	CALLERID=g SAFELIST ELIST=CTU ETRACE KNOCK MONITOR=100 WHOX FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-17 18:14:29	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-17 18:14:29	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-17 18:14:29	--	There are 61 users and 45926 invisible on 26 servers
+2021-10-17 18:14:29	--	39 :IRC Operators online
+2021-10-17 18:14:29	--	7 :unknown connection(s)
+2021-10-17 18:14:29	--	20947 :channels formed
+2021-10-17 18:14:29	--	I have 3291 clients and 1 servers
+2021-10-17 18:14:29	--	3291 3583 :Current local users 3291, max 3583
+2021-10-17 18:14:29	--	45987 50734 :Current global users 45987, max 50734
+2021-10-17 18:14:29	--	Highest connection count: 3584 (3583 clients) (138764 connections received)
+2021-10-17 18:14:29	--	- copper.libera.chat Message of the Day -
+2021-10-17 18:14:29	--	- Welcome to Libera Chat, the IRC network for
+2021-10-17 18:14:29	--	- free & open-source software and peer directed projects.
+2021-10-17 18:14:29	--	-
+2021-10-17 18:14:29	--	- Use of Libera Chat is governed by our network policies.
+2021-10-17 18:14:29	--	-
+2021-10-17 18:14:29	--	- Please visit us in #libera for questions and support.
+2021-10-17 18:14:29	--	-
+2021-10-17 18:14:29	--	- Website and documentation:  https://libera.chat
+2021-10-17 18:14:29	--	- Webchat:                    https://web.libera.chat
+2021-10-17 18:14:29	--	- Network policies:           https://libera.chat/policies
+2021-10-17 18:14:29	--	- Email:                      support@libera.chat
+2021-10-17 18:14:29	--	End of /MOTD command.
+2021-10-17 18:14:29	--	User mode [+Zi] by jmanner
+2021-10-17 18:18:40	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-17 18:18:46	--	gnutls: receiving 2 certificates
+2021-10-17 18:18:46	--	 - certificate[1] info:
+2021-10-17 18:18:46	--	   - subject `CN=zinc.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x046995695f47854eec6a138bd41b1b45e6ff, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-04 05:02:05 UTC', expires `2022-01-02 05:02:04 UTC', pin-sha256="aLSyqHVU7IzxX7A0h/D0CZ0wh/poViLIoXdMNUTm1sg="
+2021-10-17 18:18:46	--	 - certificate[2] info:
+2021-10-17 18:18:46	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-17 18:18:46	--	gnutls: peer's certificate is trusted
+2021-10-17 18:18:46	--	irc: connected to irc.libera.chat/6697 (195.148.124.80)
+2021-10-17 18:18:47	--	zinc.libera.chat: *** Checking Ident
+2021-10-17 18:18:47	--	zinc.libera.chat: *** Looking up your hostname...
+2021-10-17 18:18:47	--	zinc.libera.chat: *** Couldn't look up your hostname
+2021-10-17 18:18:52	--	zinc.libera.chat: *** No Ident response
+2021-10-17 18:18:52	--	irc: client capability, server supports: account-notify away-notify chghost extended-join multi-prefix sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL tls account-tag cap-notify echo-message solanum.chat/identify-msg solanum.chat/oper solanum.chat/realhost
+2021-10-17 18:18:52	--	irc: client capability, requesting: sasl
+2021-10-17 18:18:52	--	irc: client capability, enabled: sasl
+2021-10-17 18:18:53	--	You are now logged in as mrmanner (jmanner!jmanner@user/mrmanner)
+2021-10-17 18:18:53	--	SASL authentication successful
+2021-10-17 18:18:54	--	Welcome to the Libera.Chat Internet Relay Chat Network jmanner
+2021-10-17 18:18:54	--	Your host is zinc.libera.chat[195.148.124.80/6697], running version solanum-1.0-dev
+2021-10-17 18:18:54	--	This server was created Mon Sep 27 2021 at 05:51:07 UTC
+2021-10-17 18:18:54	--	zinc.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-17 18:18:54	--	WHOX CALLERID=g SAFELIST ELIST=CTU MONITOR=100 ETRACE FNC KNOCK CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-17 18:18:54	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-17 18:18:54	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-17 18:18:54	--	There are 61 users and 45931 invisible on 26 servers
+2021-10-17 18:18:54	--	39 :IRC Operators online
+2021-10-17 18:18:54	--	8 :unknown connection(s)
+2021-10-17 18:18:54	--	20946 :channels formed
+2021-10-17 18:18:54	--	I have 3214 clients and 1 servers
+2021-10-17 18:18:54	--	3214 4280 :Current local users 3214, max 4280
+2021-10-17 18:18:54	--	45992 50734 :Current global users 45992, max 50734
+2021-10-17 18:18:54	--	Highest connection count: 4281 (4280 clients) (41047 connections received)
+2021-10-17 18:18:54	--	- zinc.libera.chat Message of the Day -
+2021-10-17 18:18:54	--	- Welcome to Libera Chat, the IRC network for
+2021-10-17 18:18:54	--	- free & open-source software and peer directed projects.
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- Use of Libera Chat is governed by our network policies.
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- Please visit us in #libera for questions and support.
+2021-10-17 18:18:54	--	-
+2021-10-17 18:18:54	--	- Website and documentation:  https://libera.chat
+2021-10-17 18:18:54	--	- Webchat:                    https://web.libera.chat
+2021-10-17 18:18:55	--	- Network policies:           https://libera.chat/policies
+2021-10-17 18:18:55	--	- Email:                      support@libera.chat
+2021-10-17 18:18:55	--	End of /MOTD command.
+2021-10-17 18:18:55	--	User mode [+Zi] by jmanner
+2021-10-17 18:18:55	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~jmanner@185.224.57.161 on Oct 16 11:29:11 2021 +0000.
+2021-10-17 18:30:10	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-17 18:30:13	--	gnutls: receiving 2 certificates
+2021-10-17 18:30:13	--	 - certificate[1] info:
+2021-10-17 18:30:13	--	   - subject `CN=platinum.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04b8068259ee1f4b0d1ab0dd82b1a939f459, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-04 05:08:02 UTC', expires `2022-01-02 05:08:01 UTC', pin-sha256="CjG3uN/L+mRmm1+cXGy3HZNLyBqym0LZxoTlk+dzd9c="
+2021-10-17 18:30:13	--	 - certificate[2] info:
+2021-10-17 18:30:13	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-17 18:30:13	--	gnutls: peer's certificate is trusted
+2021-10-17 18:30:13	--	irc: connected to irc.libera.chat/6697 (188.240.145.102)
+2021-10-17 18:30:14	--	platinum.libera.chat: *** Checking Ident
+2021-10-17 18:30:14	--	platinum.libera.chat: *** Looking up your hostname...
+2021-10-17 18:30:14	--	platinum.libera.chat: *** Couldn't look up your hostname
+2021-10-17 18:30:20	--	platinum.libera.chat: *** No Ident response
+2021-10-17 18:30:20	--	irc: client capability, server supports: account-notify away-notify chghost extended-join multi-prefix sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL tls account-tag cap-notify echo-message solanum.chat/identify-msg solanum.chat/oper solanum.chat/realhost
+2021-10-17 18:30:20	--	irc: client capability, requesting: sasl
+2021-10-17 18:30:21	--	irc: client capability, enabled: sasl
+2021-10-17 18:30:23	--	You are now logged in as mrmanner (jmanner!jmanner@user/mrmanner)
+2021-10-17 18:30:23	--	SASL authentication successful
+2021-10-17 18:30:23	--	Welcome to the Libera.Chat Internet Relay Chat Network jmanner
+2021-10-17 18:30:23	--	Your host is platinum.libera.chat[188.240.145.102/6697], running version solanum-1.0-dev
+2021-10-17 18:30:23	--	This server was created Mon Sep 20 2021 at 04:07:40 UTC
+2021-10-17 18:30:23	--	platinum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-17 18:30:23	--	SAFELIST ELIST=CTU FNC WHOX CALLERID=g KNOCK MONITOR=100 ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-17 18:30:23	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-17 18:30:24	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-17 18:30:24	--	There are 62 users and 45957 invisible on 26 servers
+2021-10-17 18:30:24	--	39 :IRC Operators online
+2021-10-17 18:30:24	--	3 :unknown connection(s)
+2021-10-17 18:30:24	--	20952 :channels formed
+2021-10-17 18:30:24	--	I have 3225 clients and 1 servers
+2021-10-17 18:30:24	--	3225 4616 :Current local users 3225, max 4616
+2021-10-17 18:30:24	--	46019 50734 :Current global users 46019, max 50734
+2021-10-17 18:30:24	--	Highest connection count: 4617 (4616 clients) (51045 connections received)
+2021-10-17 18:30:24	--	- platinum.libera.chat Message of the Day -
+2021-10-17 18:30:24	--	- This server provided by NORDUnet/SUNET
+2021-10-17 18:30:24	--	- Welcome to Libera Chat, the IRC network for
+2021-10-17 18:30:24	--	- free & open-source software and peer directed projects.
+2021-10-17 18:30:24	--	-
+2021-10-17 18:30:24	--	- Use of Libera Chat is governed by our network policies.
+2021-10-17 18:30:24	--	-
+2021-10-17 18:30:24	--	- Please visit us in #libera for questions and support.
+2021-10-17 18:30:24	--	-
+2021-10-17 18:30:24	--	- Website and documentation:  https://libera.chat
+2021-10-17 18:30:24	--	- Webchat:                    https://web.libera.chat
+2021-10-17 18:30:24	--	- Network policies:           https://libera.chat/policies
+2021-10-17 18:30:24	--	- Email:                      support@libera.chat
+2021-10-17 18:30:24	--	End of /MOTD command.
+2021-10-17 18:30:24	--	User mode [+Zi] by jmanner
+2021-10-17 18:30:24	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~jmanner@185.224.57.161 on Oct 17 16:23:35 2021 +0000.
+2021-10-17 18:30:39	--	You are now known as mrmanner
+2021-10-17 18:31:40	--	[mrmanner] (~jmanner@user/mrmanner): jmanner
+2021-10-17 18:31:40	--	[mrmanner] ##covid-19 ##econometrics ##news ##news-chat ##philosophy #algorithms #borgbackup #clojure #fedora #finance #go-nuts #linux #lobsters #matrix #mediawiki #qutebrowser #remarkable #security #sway #sweden
+2021-10-17 18:31:40	--	[mrmanner] platinum.libera.chat (Stockholm, SE)
+2021-10-17 18:31:40	--	[mrmanner] is using a secure connection [TLSv1.3, TLS_AES_256_GCM_SHA384]
+2021-10-17 18:31:40	--	[mrmanner] is connecting from *@185.224.57.161 185.224.57.161
+2021-10-17 18:31:40	--	[mrmanner] idle: 00 hours 01 minute 17 seconds, signon at: sön, 17 okt 2021 18:30:23
+2021-10-17 18:31:40	--	[mrmanner] is logged in as mrmanner
+2021-10-17 18:31:40	--	[mrmanner] End of /WHOIS list.
+2021-10-17 19:45:04	--	irc: lag is high, reconnecting to server libera
+2021-10-17 19:45:05	--	irc: disconnected from server
+2021-10-17 19:45:05	--	irc: reconnecting to server in 10 seconds
+2021-10-17 19:45:15	--	irc: reconnecting to server...
+2021-10-17 19:45:15	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-17 19:45:21	--	gnutls: receiving 2 certificates
+2021-10-17 19:45:21	--	 - certificate[1] info:
+2021-10-17 19:45:21	--	   - subject `CN=molybdenum.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04906dede1c835b04ad2ba69aee7e7cf9001, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-04 05:03:21 UTC', expires `2022-01-02 05:03:20 UTC', pin-sha256="y8HvDqqB5Blr5m+L6+HlfYg2e9oV3KhZEHVYwwh7rTo="
+2021-10-17 19:45:21	--	 - certificate[2] info:
+2021-10-17 19:45:21	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-17 19:45:21	--	gnutls: peer's certificate is trusted
+2021-10-17 19:45:21	--	irc: connected to irc.libera.chat/6697 (51.161.82.214)
+2021-10-17 19:45:24	--	molybdenum.libera.chat: *** Checking Ident
+2021-10-17 19:45:24	--	molybdenum.libera.chat: *** Looking up your hostname...
+2021-10-17 19:45:24	--	molybdenum.libera.chat: *** Couldn't look up your hostname
+2021-10-17 19:45:27	--	molybdenum.libera.chat: *** No Ident response
+2021-10-17 19:45:28	--	irc: client capability, server supports: account-notify away-notify chghost extended-join multi-prefix sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL tls account-tag cap-notify echo-message solanum.chat/identify-msg solanum.chat/oper solanum.chat/realhost
+2021-10-17 19:45:28	--	irc: client capability, requesting: sasl
+2021-10-17 19:45:28	--	irc: client capability, enabled: sasl
+2021-10-17 19:45:30	--	You are now logged in as mrmanner (mrmanner!jmanner@user/mrmanner)
+2021-10-17 19:45:30	--	SASL authentication successful
+2021-10-17 19:45:32	--	Welcome to the Libera.Chat Internet Relay Chat Network mrmanner
+2021-10-17 19:45:32	--	Your host is molybdenum.libera.chat[51.161.82.214/6697], running version solanum-1.0-dev
+2021-10-17 19:45:32	--	This server was created Wed Oct 13 2021 at 14:42:49 UTC
+2021-10-17 19:45:32	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-17 19:45:32	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-17 19:45:32	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-17 19:45:37	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-17 19:45:37	--	There are 63 users and 46099 invisible on 26 servers
+2021-10-17 19:45:37	--	39 :IRC Operators online
+2021-10-17 19:45:37	--	13 :unknown connection(s)
+2021-10-17 19:45:37	--	20972 :channels formed
+2021-10-17 19:45:37	--	I have 2363 clients and 1 servers
+2021-10-17 19:45:37	--	2363 2370 :Current local users 2363, max 2370
+2021-10-17 19:45:37	--	46162 48200 :Current global users 46162, max 48200
+2021-10-17 19:45:37	--	Highest connection count: 2371 (2370 clients) (13032 connections received)
+2021-10-17 19:45:37	--	- molybdenum.libera.chat Message of the Day -
+2021-10-17 19:45:37	--	- Welcome to Libera Chat, the IRC network for
+2021-10-17 19:45:37	--	- free & open-source software and peer directed projects.
+2021-10-17 19:45:37	--	-
+2021-10-17 19:45:37	--	- Use of Libera Chat is governed by our network policies.
+2021-10-17 19:45:37	--	-
+2021-10-17 19:45:37	--	- Please visit us in #libera for questions and support.
+2021-10-17 19:45:37	--	-
+2021-10-17 19:45:37	--	- Website and documentation:  https://libera.chat
+2021-10-17 19:45:37	--	- Webchat:                    https://web.libera.chat
+2021-10-17 19:45:37	--	- Network policies:           https://libera.chat/policies
+2021-10-17 19:45:37	--	- Email:                      support@libera.chat
+2021-10-17 19:45:37	--	End of /MOTD command.
+2021-10-17 19:45:37	--	User mode [+Zi] by mrmanner
+2021-10-17 19:45:37	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~jmanner@185.224.57.161 on Oct 17 16:56:29 2021 +0000.
+2021-10-30 12:09:08	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-30 12:09:08	--	gnutls: receiving 2 certificates
+2021-10-30 12:09:08	--	 - certificate[1] info:
+2021-10-30 12:09:08	--	   - subject `CN=erbium.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0440a6460997c15c3b44889fb26259594aec, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-09-20 05:00:42 UTC', expires `2021-12-19 05:00:41 UTC', pin-sha256="HxcYP1f/vTConFI+5TphkBEJ2Nyt8YO3ls7lXAFHsZ0="
+2021-10-30 12:09:08	--	 - certificate[2] info:
+2021-10-30 12:09:08	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 12:09:08	--	gnutls: peer's certificate is trusted
+2021-10-30 12:09:08	--	irc: connected to irc.libera.chat/6697 (82.96.96.60)
+2021-10-30 12:09:08	--	erbium.libera.chat: *** Checking Ident
+2021-10-30 12:09:08	--	erbium.libera.chat: *** Looking up your hostname...
+2021-10-30 12:09:08	--	erbium.libera.chat: *** Found your hostname: h-98-128-201-128.A785.priv.bahnhof.se
+2021-10-30 12:09:14	--	erbium.libera.chat: *** No Ident response
+2021-10-30 12:09:14	--	irc: client capability, server supports: account-notify away-notify chghost extended-join multi-prefix sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL tls account-tag cap-notify echo-message solanum.chat/identify-msg solanum.chat/oper solanum.chat/realhost
+2021-10-30 12:09:14	--	irc: client capability, requesting: sasl
+2021-10-30 12:09:14	--	irc: client capability, enabled: sasl
+2021-10-30 12:09:15	--	You are now logged in as mrmanner (jmanner!jmanner@user/mrmanner)
+2021-10-30 12:09:15	--	SASL authentication successful
+2021-10-30 12:09:16	--	Welcome to the Libera.Chat Internet Relay Chat Network jmanner
+2021-10-30 12:09:16	--	Your host is erbium.libera.chat[82.96.96.60/6697], running version solanum-1.0-dev
+2021-10-30 12:09:16	--	This server was created Tue Sep 7 2021 at 04:39:21 UTC
+2021-10-30 12:09:16	--	erbium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-30 12:09:16	--	SAFELIST ELIST=CTU MONITOR=100 FNC WHOX ETRACE KNOCK CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-30 12:09:16	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-30 12:09:16	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-30 12:09:16	--	There are 62 users and 46404 invisible on 23 servers
+2021-10-30 12:09:16	--	39 :IRC Operators online
+2021-10-30 12:09:16	--	8 :unknown connection(s)
+2021-10-30 12:09:16	--	21058 :channels formed
+2021-10-30 12:09:16	--	I have 3869 clients and 1 servers
+2021-10-30 12:09:16	--	3869 4578 :Current local users 3869, max 4578
+2021-10-30 12:09:16	--	46466 50734 :Current global users 46466, max 50734
+2021-10-30 12:09:16	--	Highest connection count: 4579 (4578 clients) (68855 connections received)
+2021-10-30 12:09:16	--	- erbium.libera.chat Message of the Day -
+2021-10-30 12:09:16	--	- Welcome to Libera Chat, the IRC network for
+2021-10-30 12:09:16	--	- free & open-source software and peer directed projects.
+2021-10-30 12:09:16	--	-
+2021-10-30 12:09:16	--	- Use of Libera Chat is governed by our network policies.
+2021-10-30 12:09:16	--	-
+2021-10-30 12:09:16	--	- Please visit us in #libera for questions and support.
+2021-10-30 12:09:16	--	-
+2021-10-30 12:09:16	--	- Website and documentation:  https://libera.chat
+2021-10-30 12:09:16	--	- Webchat:                    https://web.libera.chat
+2021-10-30 12:09:16	--	- Network policies:           https://libera.chat/policies
+2021-10-30 12:09:16	--	- Email:                      support@libera.chat
+2021-10-30 12:09:16	--	End of /MOTD command.
+2021-10-30 12:09:16	--	User mode [+Zi] by jmanner
+2021-10-30 12:09:16	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~jmanner@185.224.57.161 on Oct 17 19:13:11 2021 +0000.
+2021-10-30 12:10:38	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-30 12:10:39	--	gnutls: receiving 2 certificates
+2021-10-30 12:10:39	--	 - certificate[1] info:
+2021-10-30 12:10:39	--	   - subject `CN=erbium.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0440a6460997c15c3b44889fb26259594aec, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-09-20 05:00:42 UTC', expires `2021-12-19 05:00:41 UTC', pin-sha256="HxcYP1f/vTConFI+5TphkBEJ2Nyt8YO3ls7lXAFHsZ0="
+2021-10-30 12:10:39	--	 - certificate[2] info:
+2021-10-30 12:10:39	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 12:10:39	--	gnutls: peer's certificate is trusted
+2021-10-30 12:10:39	--	irc: connected to irc.libera.chat/6697 (82.96.96.60)
+2021-10-30 12:10:39	--	erbium.libera.chat: *** Checking Ident
+2021-10-30 12:10:39	--	erbium.libera.chat: *** Looking up your hostname...
+2021-10-30 12:10:39	--	erbium.libera.chat: *** Found your hostname: h-98-128-201-128.A785.priv.bahnhof.se
+2021-10-30 12:10:45	--	erbium.libera.chat: *** No Ident response
+2021-10-30 12:10:45	--	irc: client capability, server supports: account-notify away-notify chghost extended-join multi-prefix sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL tls account-tag cap-notify echo-message solanum.chat/identify-msg solanum.chat/oper solanum.chat/realhost
+2021-10-30 12:10:45	--	irc: client capability, requesting: sasl
+2021-10-30 12:10:45	--	irc: client capability, enabled: sasl
+2021-10-30 12:10:45	--	You are now logged in as mrmanner (jmanner!jmanner@user/mrmanner)
+2021-10-30 12:10:45	--	SASL authentication successful
+2021-10-30 12:10:47	--	Welcome to the Libera.Chat Internet Relay Chat Network jmanner
+2021-10-30 12:10:47	--	Your host is erbium.libera.chat[82.96.96.60/6697], running version solanum-1.0-dev
+2021-10-30 12:10:47	--	This server was created Tue Sep 7 2021 at 04:39:21 UTC
+2021-10-30 12:10:47	--	erbium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-30 12:10:47	--	SAFELIST ELIST=CTU MONITOR=100 FNC WHOX ETRACE KNOCK CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-30 12:10:47	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-30 12:10:47	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-30 12:10:47	--	There are 62 users and 46398 invisible on 23 servers
+2021-10-30 12:10:47	--	39 :IRC Operators online
+2021-10-30 12:10:47	--	8 :unknown connection(s)
+2021-10-30 12:10:47	--	21058 :channels formed
+2021-10-30 12:10:47	--	I have 3876 clients and 1 servers
+2021-10-30 12:10:47	--	3876 4578 :Current local users 3876, max 4578
+2021-10-30 12:10:47	--	46460 50734 :Current global users 46460, max 50734
+2021-10-30 12:10:47	--	Highest connection count: 4579 (4578 clients) (68863 connections received)
+2021-10-30 12:10:47	--	- erbium.libera.chat Message of the Day -
+2021-10-30 12:10:47	--	- Welcome to Libera Chat, the IRC network for
+2021-10-30 12:10:47	--	- free & open-source software and peer directed projects.
+2021-10-30 12:10:47	--	-
+2021-10-30 12:10:47	--	- Use of Libera Chat is governed by our network policies.
+2021-10-30 12:10:47	--	-
+2021-10-30 12:10:47	--	- Please visit us in #libera for questions and support.
+2021-10-30 12:10:47	--	-
+2021-10-30 12:10:47	--	- Website and documentation:  https://libera.chat
+2021-10-30 12:10:47	--	- Webchat:                    https://web.libera.chat
+2021-10-30 12:10:47	--	- Network policies:           https://libera.chat/policies
+2021-10-30 12:10:47	--	- Email:                      support@libera.chat
+2021-10-30 12:10:47	--	End of /MOTD command.
+2021-10-30 12:10:47	--	User mode [+Zi] by jmanner
+2021-10-30 12:10:47	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~jmanner@h-98-128-201-128.A785.priv.bahnhof.se on Oct 30 10:10:33 2021 +0000.
+2021-10-30 12:12:06	--	You are now known as mrmanner
+2021-10-30 17:07:04	--	irc: lag is high, reconnecting to server libera
+2021-10-30 17:07:06	--	irc: disconnected from server
+2021-10-30 17:07:06	--	irc: reconnecting to server in 10 seconds
+2021-10-30 17:07:16	--	irc: reconnecting to server...
+2021-10-30 17:07:16	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-30 17:07:17	--	gnutls: receiving 2 certificates
+2021-10-30 17:07:17	--	 - certificate[1] info:
+2021-10-30 17:07:17	--	   - subject `CN=osmium.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04e4882a511e6db4bfbc3c71ef2b3d81e537, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-04 05:00:41 UTC', expires `2022-01-02 05:00:40 UTC', pin-sha256="7kTzKq60q2Aan6TD7yTHDTyWFH8aPD00xuHZoZgfUDg="
+2021-10-30 17:07:17	--	 - certificate[2] info:
+2021-10-30 17:07:17	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 17:07:17	--	gnutls: peer's certificate is trusted
+2021-10-30 17:07:17	--	irc: connected to irc.libera.chat/6697 (188.240.145.101)
+2021-10-30 17:07:17	--	osmium.libera.chat: *** Checking Ident
+2021-10-30 17:07:17	--	osmium.libera.chat: *** Looking up your hostname...
+2021-10-30 17:07:17	--	osmium.libera.chat: *** Found your hostname: h-98-128-201-128.A785.priv.bahnhof.se
+2021-10-30 17:07:23	--	osmium.libera.chat: *** No Ident response
+2021-10-30 17:07:23	--	irc: client capability, server supports: account-notify away-notify chghost extended-join multi-prefix sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL tls account-tag cap-notify echo-message solanum.chat/identify-msg solanum.chat/oper solanum.chat/realhost
+2021-10-30 17:07:23	--	irc: client capability, requesting: sasl
+2021-10-30 17:07:23	--	irc: client capability, enabled: sasl
+2021-10-30 17:07:24	--	You are now logged in as mrmanner (mrmanner!jmanner@user/mrmanner)
+2021-10-30 17:07:24	--	SASL authentication successful
+2021-10-30 17:07:25	--	Welcome to the Libera.Chat Internet Relay Chat Network mrmanner
+2021-10-30 17:07:25	--	Your host is osmium.libera.chat[188.240.145.101/6697], running version solanum-1.0-dev
+2021-10-30 17:07:25	--	This server was created Mon Sep 20 2021 at 04:05:38 UTC
+2021-10-30 17:07:25	--	osmium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-30 17:07:25	--	WHOX FNC KNOCK SAFELIST ELIST=CTU CALLERID=g MONITOR=100 ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-30 17:07:25	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-30 17:07:25	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-30 17:07:25	--	There are 63 users and 46890 invisible on 23 servers
+2021-10-30 17:07:25	--	39 :IRC Operators online
+2021-10-30 17:07:25	--	14 :unknown connection(s)
+2021-10-30 17:07:25	--	21119 :channels formed
+2021-10-30 17:07:25	--	I have 3947 clients and 1 servers
+2021-10-30 17:07:25	--	3947 4266 :Current local users 3947, max 4266
+2021-10-30 17:07:25	--	46953 50734 :Current global users 46953, max 50734
+2021-10-30 17:07:25	--	Highest connection count: 4267 (4266 clients) (55956 connections received)
+2021-10-30 17:07:25	--	- osmium.libera.chat Message of the Day -
+2021-10-30 17:07:25	--	- This server provided by NORDUnet/SUNET
+2021-10-30 17:07:25	--	- Welcome to Libera Chat, the IRC network for
+2021-10-30 17:07:25	--	- free & open-source software and peer directed projects.
+2021-10-30 17:07:25	--	-
+2021-10-30 17:07:25	--	- Use of Libera Chat is governed by our network policies.
+2021-10-30 17:07:25	--	-
+2021-10-30 17:07:25	--	- Please visit us in #libera for questions and support.
+2021-10-30 17:07:25	--	-
+2021-10-30 17:07:25	--	- Website and documentation:  https://libera.chat
+2021-10-30 17:07:25	--	- Webchat:                    https://web.libera.chat
+2021-10-30 17:07:25	--	- Network policies:           https://libera.chat/policies
+2021-10-30 17:07:25	--	- Email:                      support@libera.chat
+2021-10-30 17:07:25	--	End of /MOTD command.
+2021-10-30 17:07:25	--	User mode [+Zi] by mrmanner
+2021-10-30 17:07:25	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~jmanner@h-98-128-201-128.A785.priv.bahnhof.se on Oct 30 12:00:22 2021 +0000.
+2021-10-30 22:21:15	--	irc: lag is high, reconnecting to server libera
+2021-10-30 22:21:17	--	irc: disconnected from server
+2021-10-30 22:21:17	--	irc: reconnecting to server in 10 seconds
+2021-10-30 22:21:27	--	irc: reconnecting to server...
+2021-10-30 22:21:27	--	irc: connecting to server irc.libera.chat/6697 (SSL)...
+2021-10-30 22:21:27	--	gnutls: receiving 2 certificates
+2021-10-30 22:21:27	--	 - certificate[1] info:
+2021-10-30 22:21:27	--	   - subject `CN=tungsten.libera.chat', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0436fadd6374a85f1aeb4e59b61aa3b97708, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-10-04 05:08:40 UTC', expires `2022-01-02 05:08:39 UTC', pin-sha256="1aNnmMrE54RjDr/+w6NiT1Bwailqi8/9WYvlqEzKh2o="
+2021-10-30 22:21:27	--	 - certificate[2] info:
+2021-10-30 22:21:27	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-10-30 22:21:27	--	gnutls: peer's certificate is trusted
+2021-10-30 22:21:27	--	irc: connected to irc.libera.chat/6697 (130.239.18.120)
+2021-10-30 22:21:27	--	tungsten.libera.chat: *** Checking Ident
+2021-10-30 22:21:27	--	tungsten.libera.chat: *** Looking up your hostname...
+2021-10-30 22:21:28	--	tungsten.libera.chat: *** Found your hostname: h-98-128-201-128.A785.priv.bahnhof.se
+2021-10-30 22:21:33	--	tungsten.libera.chat: *** No Ident response
+2021-10-30 22:21:33	--	irc: client capability, server supports: account-notify away-notify chghost extended-join multi-prefix sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL tls account-tag cap-notify echo-message solanum.chat/identify-msg solanum.chat/oper solanum.chat/realhost
+2021-10-30 22:21:33	--	irc: client capability, requesting: sasl
+2021-10-30 22:21:33	--	irc: client capability, enabled: sasl
+2021-10-30 22:21:34	--	You are now logged in as mrmanner (mrmanner!jmanner@user/mrmanner)
+2021-10-30 22:21:34	--	SASL authentication successful
+2021-10-30 22:21:35	--	Welcome to the Libera.Chat Internet Relay Chat Network mrmanner
+2021-10-30 22:21:35	--	Your host is tungsten.libera.chat[130.239.18.120/6697], running version solanum-1.0-dev
+2021-10-30 22:21:35	--	This server was created Sat Oct 30 2021 at 18:01:19 UTC
+2021-10-30 22:21:35	--	tungsten.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-10-30 22:21:35	--	FNC MONITOR=100 KNOCK WHOX CALLERID=g ETRACE SAFELIST ELIST=CMNTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-10-30 22:21:35	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-10-30 22:21:35	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-10-30 22:21:35	--	There are 63 users and 47554 invisible on 25 servers
+2021-10-30 22:21:35	--	39 :IRC Operators online
+2021-10-30 22:21:35	--	7 :unknown connection(s)
+2021-10-30 22:21:35	--	21161 :channels formed
+2021-10-30 22:21:35	--	I have 289 clients and 1 servers
+2021-10-30 22:21:35	--	289 292 :Current local users 289, max 292
+2021-10-30 22:21:36	--	47617 47669 :Current global users 47617, max 47669
+2021-10-30 22:21:36	--	Highest connection count: 293 (292 clients) (611 connections received)
+2021-10-30 22:21:36	--	- tungsten.libera.chat Message of the Day -
+2021-10-30 22:21:36	--	- Welcome to Libera Chat, the IRC network for
+2021-10-30 22:21:36	--	- free & open-source software and peer directed projects.
+2021-10-30 22:21:36	--	-
+2021-10-30 22:21:36	--	- Use of Libera Chat is governed by our network policies.
+2021-10-30 22:21:36	--	-
+2021-10-30 22:21:36	--	- Please visit us in #libera for questions and support.
+2021-10-30 22:21:36	--	-
+2021-10-30 22:21:36	--	- Website and documentation:  https://libera.chat
+2021-10-30 22:21:36	--	- Webchat:                    https://web.libera.chat
+2021-10-30 22:21:36	--	- Network policies:           https://libera.chat/policies
+2021-10-30 22:21:37	--	- Email:                      support@libera.chat
+2021-10-30 22:21:37	--	End of /MOTD command.
+2021-10-30 22:21:37	--	User mode [+Zi] by mrmanner
+2021-10-30 22:21:37	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~jmanner@h-98-128-201-128.A785.priv.bahnhof.se on Oct 30 16:07:47 2021 +0000.
+2021-12-01 23:19:30	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 23:19:31	--	gnutls: receiving 3 certificates
+2021-12-01 23:19:31	--	 - certificate[1] info:
+2021-12-01 23:19:31	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 23:19:31	--	 - certificate[2] info:
+2021-12-01 23:19:31	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 23:19:31	--	 - certificate[3] info:
+2021-12-01 23:19:31	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 23:19:31	--	gnutls: peer's certificate is trusted
+2021-12-01 23:19:31	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 23:19:31	--	irc: client capability, server supports: setname away-notify soju.im/bouncer-networks-notify cap-notify account-tag multi-prefix draft/extended-monitor message-tags server-time echo-message account-notify invite-notify soju.im/bouncer-networks batch sasl=PLAIN,EXTERNAL draft/chathistory extended-join
+2021-12-01 23:19:31	--	irc: client capability, requesting: away-notify cap-notify multi-prefix server-time account-notify invite-notify soju.im/bouncer-networks sasl extended-join
+2021-12-01 23:19:31	--	irc: client capability, enabled: away-notify cap-notify multi-prefix server-time account-notify invite-notify soju.im/bouncer-networks sasl extended-join
+2021-12-01 23:19:32	--	SASL authentication successful
+2021-12-01 23:19:32	--	Welcome to soju, mrmanner
+2021-12-01 23:19:32	--	Your host is chat.sr.ht
+2021-12-01 23:19:32	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-01 23:19:32	--	CHATHISTORY=1000 CASEMAPPING=ascii NETWORK=chat.sr.ht WHOX :are supported
+2021-12-01 23:19:32	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-01 23:19:32	--	- Message of the Day -
+2021-12-01 23:19:32	--	                           ┌─┐┬ ┬┌─┐┌┬┐┌─┐┬─┐ ┬ ┬┌┬┐
+2021-12-01 23:19:32	--	                           │  ├─┤├─┤ │ └─┐├┬┘ ├─┤ │
+2021-12-01 23:19:32	--	                           └─┘┴ ┴┴ ┴ ┴o└─┘┴└─o┴ ┴ ┴
+2021-12-01 23:19:32	--	Welcome to chat.sr.ht!
+2021-12-01 23:19:33	--	This is a hosted Internet Relay Chat (IRC) bouncer service for SourceHut users.
+2021-12-01 23:19:33	--	Documentation for this service is available online:
+2021-12-01 23:19:33	--	Introduction to chat.sr.ht		https://man.sr.ht/chat.sr.ht
+2021-12-01 23:19:33	--	Setting up a channel for your project	https://man.sr.ht/chat.sr.ht/channels.md
+2021-12-01 23:19:33	--	Using the soju bouncer			https://man.sr.ht/chat.sr.ht/bouncer-usage.md
+2021-12-01 23:19:33	--	Introduction to IRC etiquette		https://man.sr.ht/chat.sr.ht/etiquette.md
+2021-12-01 23:19:33	--	In order to chat with other users, you must configure an IRC network.
+2021-12-01 23:19:33	--	IRC networks are independent entities which are not affiliated with SourceHut.
+2021-12-01 23:19:33	--	The recommended network for SourceHut users is Libera Chat: https://libera.chat
+2021-12-01 23:19:34	--	To connect to Libera Chat now, click this link: irc://irc.libera.chat/#sr.ht
+2021-12-01 23:19:34	--	Once connected, it is recommended to register an account with the network.
+2021-12-01 23:19:34	--	Type "/msg NickServ help register" to send a message to the Libera Chat account
+2021-12-01 23:19:34	--	registration system for details.
+2021-12-01 23:19:34	--	End of /MOTD command.
+2021-12-01 23:19:34	--	#sweden: Missing network suffix in name
+2021-12-01 23:20:03	--	irc: disconnected from server
+2021-12-01 23:20:38	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-01 23:20:39	--	gnutls: receiving 3 certificates
+2021-12-01 23:20:39	--	 - certificate[1] info:
+2021-12-01 23:20:39	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-01 23:20:39	--	 - certificate[2] info:
+2021-12-01 23:20:39	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-01 23:20:39	--	 - certificate[3] info:
+2021-12-01 23:20:39	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-01 23:20:39	--	gnutls: peer's certificate is trusted
+2021-12-01 23:20:39	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-01 23:20:39	--	irc: client capability, server supports: message-tags echo-message setname sasl=PLAIN,EXTERNAL account-notify batch server-time soju.im/bouncer-networks cap-notify soju.im/bouncer-networks-notify draft/chathistory away-notify invite-notify extended-join multi-prefix draft/extended-monitor account-tag
+2021-12-01 23:20:39	--	irc: client capability, requesting: sasl account-notify server-time soju.im/bouncer-networks cap-notify away-notify invite-notify extended-join multi-prefix
+2021-12-01 23:20:39	--	irc: client capability, enabled: sasl account-notify server-time soju.im/bouncer-networks cap-notify away-notify invite-notify extended-join multi-prefix
+2021-12-01 23:20:39	--	SASL authentication successful
+2021-12-01 23:20:40	--	irc: client capability, removed: draft/extended-monitor
+2021-12-01 23:20:40	--	irc: client capability, now available: sasl=PLAIN
+2021-12-01 23:20:40	--	irc: client capability, now available: draft/event-playback
+2021-12-01 23:20:40	--	Welcome to soju, mrmanner
+2021-12-01 23:20:40	--	Your host is chat.sr.ht
+2021-12-01 23:20:40	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-01 23:20:40	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 CHANTYPES=# CHANNELLEN=50 INVEX MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: NETWORK=Libera.Chat WHOX SAFELIST EXCEPTS MAXLIST=bqeI:100 :are supported
+2021-12-01 23:20:40	--	MONITOR=100 NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU TOPICLEN=390 :are supported
+2021-12-01 23:20:40	--	User mode for mrmanner is [+Zi]
+2021-12-01 23:20:40	--	Use /motd to read the message of the day
+2021-12-01 23:21:31	--	MSG(NickServ): help
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): ***** NickServ Help *****
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):  
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): NickServ allows users to 'register' a nickname, and stop
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): others from using that nick. NickServ allows the owner of a
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): nickname to disconnect a user from the network that is using
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): their nickname.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):  
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): The following commands are available:
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):  
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   ACCESS          Changes and shows your nickname access list.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   CERT            Changes and shows your nickname CertFP authentication list.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   DROP            Drops an account registration.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   GHOST           Reclaims use of a nickname.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   GROUP           Adds a nickname to your account.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   IDENTIFY        Identifies to services for a nickname.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   INFO            Displays information on registrations.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   LISTCHANS       Lists channels that you have access to.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   LISTLOGINS      Lists details of clients authenticated as you.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   LISTOWNMAIL     Lists accounts registered to your e-mail address.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   LOGOUT          Logs your services session out.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   REGAIN          Regain usage of a nickname.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   REGISTER        Registers a nickname.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   RELEASE         Releases a services enforcer.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   SENDPASS        Email registration passwords.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   SET             Sets various control flags.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   UNGROUP         Removes a nickname from your account.
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):  
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): The following additional commands are available:
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):  
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   ACC, HELP, SETPASS, STATUS, TAXONOMY, VACATION,
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):   VERIFY
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):  
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): For more information on a NickServ command, type:
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): /msg NickServ HELP <command>
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):  
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): For a verbose listing of all NickServ commands, type:
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): /msg NickServ HELP COMMANDS
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat):  
+2021-12-01 23:21:45	--	NickServ (NickServ@services.libera.chat): ***** End of Help *****
+2021-12-01 23:22:51	--	irc: client capability, now available: draft/extended-monitor
+2021-12-01 23:22:51	--	irc: client capability, removed: sasl
+2021-12-01 23:22:51	--	molybdenum.libera.chat: *** Checking Ident
+2021-12-01 23:22:51	--	molybdenum.libera.chat: *** Looking up your hostname...
+2021-12-01 23:22:51	--	molybdenum.libera.chat: *** Got Ident response
+2021-12-01 23:22:51	--	molybdenum.libera.chat: *** Couldn't look up your hostname
+2021-12-01 23:22:53	--	irc: client capability, removed: draft/extended-monitor
+2021-12-01 23:22:53	--	irc: client capability, now available: sasl=PLAIN
+2021-12-01 23:22:53	--	WHOX MONITOR=100 SAFELIST ELIST=CMNTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported
+2021-12-01 23:22:53	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 :are supported
+2021-12-01 23:22:53	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported
+2021-12-01 23:22:53	--	User mode [+Zi] by mrmanner
+2021-12-01 23:22:53	--	SaslServ (SaslServ@services.libera.chat): Last login from: 29a724a13e@2604:bf00:561:2000::19a on Dec 01 22:22:51 2021 +0000.
+2021-12-02 08:09:35	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2021-12-02 08:09:35	--	irc: disconnecting from server...
+2021-12-02 08:09:37	--	irc: disconnected from server
+2021-12-02 08:09:37	--	irc: reconnecting to server in 10 seconds
+2021-12-02 08:09:47	--	irc: reconnecting to server...
+2021-12-02 08:09:47	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 08:09:48	--	gnutls: receiving 3 certificates
+2021-12-02 08:09:48	--	 - certificate[1] info:
+2021-12-02 08:09:48	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 08:09:48	--	 - certificate[2] info:
+2021-12-02 08:09:48	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 08:09:48	--	 - certificate[3] info:
+2021-12-02 08:09:48	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 08:09:48	--	gnutls: peer's certificate is trusted
+2021-12-02 08:09:48	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 08:09:48	--	irc: client capability, server supports: setname soju.im/bouncer-networks draft/extended-monitor account-notify soju.im/bouncer-networks-notify multi-prefix account-tag echo-message cap-notify server-time invite-notify message-tags away-notify batch draft/chathistory extended-join sasl=PLAIN,EXTERNAL
+2021-12-02 08:09:48	--	irc: client capability, requesting: soju.im/bouncer-networks account-notify multi-prefix cap-notify server-time invite-notify away-notify extended-join sasl
+2021-12-02 08:09:48	--	irc: client capability, enabled: soju.im/bouncer-networks account-notify multi-prefix cap-notify server-time invite-notify away-notify extended-join sasl
+2021-12-02 08:09:48	--	SASL authentication successful
+2021-12-02 08:09:49	--	irc: client capability, removed: draft/extended-monitor
+2021-12-02 08:09:49	--	irc: client capability, now available: sasl=PLAIN
+2021-12-02 08:09:49	--	irc: client capability, now available: draft/event-playback
+2021-12-02 08:09:49	--	Welcome to soju, mrmanner
+2021-12-02 08:09:49	--	Your host is chat.sr.ht
+2021-12-02 08:09:49	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 08:09:49	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU :are supported
+2021-12-02 08:09:49	--	TOPICLEN=390 CHANTYPES=# CHANNELLEN=50 INVEX MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: NETWORK=Libera.Chat WHOX :are supported
+2021-12-02 08:09:49	--	User mode for mrmanner is [+Zi]
+2021-12-02 08:09:49	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-02 08:09:51	--	Use /motd to read the message of the day
+2021-12-02 08:10:17	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 08:10:19	--	[#finance] mrmanner (29a724a13e@user/mrmanner) H 1 (mrmanner)
+2021-12-02 08:10:19	--	[#finance] dustinm` (~dustinm@static.38.6.217.95.clients.your-server.de) H 1 (dustinm)
+2021-12-02 08:10:19	--	[#finance] merpnderp (sid16744@id-16744.hampstead.irccloud.com) G 1 (merpnderp)
+2021-12-02 08:10:19	--	[#finance] ghostbuster (~admin@user/ghostbuster) H 1 (admin)
+2021-12-02 08:10:19	--	[#finance] synthmeat (~synthmeat@user/synthmeat) H 1 (synthmeat)
+2021-12-02 08:10:20	--	[#finance] himcesjf (uid409730@id-409730.tinside.irccloud.com) H 1 (himcesjf)
+2021-12-02 08:10:20	--	[#finance] Quokka (~Soliloquy@user/quokka) G 1 (Soliloquy)
+2021-12-02 08:10:20	--	[#finance] dartmouthed (~blackunsp@li761-35.members.linode.com) G 1 (blackunspell)
+2021-12-02 08:10:44	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 08:11:16	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:02:56	--	irc: lag is high, reconnecting to server libera
+2021-12-02 21:02:58	--	irc: disconnected from server
+2021-12-02 21:02:58	--	irc: reconnecting to server in 10 seconds
+2021-12-02 21:03:08	--	irc: reconnecting to server...
+2021-12-02 21:03:08	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:03:09	--	gnutls: receiving 3 certificates
+2021-12-02 21:03:09	--	 - certificate[1] info:
+2021-12-02 21:03:09	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:03:09	--	 - certificate[2] info:
+2021-12-02 21:03:09	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:03:09	--	 - certificate[3] info:
+2021-12-02 21:03:09	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:03:09	--	gnutls: peer's certificate is trusted
+2021-12-02 21:03:09	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:03:09	--	irc: client capability, server supports: sasl=PLAIN,EXTERNAL draft/extended-monitor message-tags soju.im/bouncer-networks echo-message batch cap-notify account-notify multi-prefix setname draft/chathistory extended-join account-tag away-notify invite-notify server-time soju.im/bouncer-networks-notify
+2021-12-02 21:03:09	--	irc: client capability, requesting: sasl soju.im/bouncer-networks cap-notify account-notify multi-prefix extended-join away-notify invite-notify server-time
+2021-12-02 21:03:10	--	irc: client capability, enabled: sasl soju.im/bouncer-networks cap-notify account-notify multi-prefix extended-join away-notify invite-notify server-time
+2021-12-02 21:03:10	--	SASL authentication successful
+2021-12-02 21:03:10	--	irc: client capability, removed: draft/extended-monitor
+2021-12-02 21:03:10	--	irc: client capability, now available: sasl=PLAIN
+2021-12-02 21:03:10	--	irc: client capability, now available: draft/event-playback
+2021-12-02 21:03:10	--	Welcome to soju, mrmanner
+2021-12-02 21:03:10	--	Your host is chat.sr.ht
+2021-12-02 21:03:10	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:03:11	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 NETWORK=Libera.Chat WHOX SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz :are supported
+2021-12-02 21:03:11	--	CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU TOPICLEN=390 CHANTYPES=# TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: CHANNELLEN=50 INVEX MODES=4 :are supported
+2021-12-02 21:03:11	--	User mode for mrmanner is [+Zi]
+2021-12-02 21:03:11	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-02 21:03:11	--	Use /motd to read the message of the day
+2021-12-02 21:03:32	=!=	irc: sending data to server: error -110 The TLS connection was non-properly terminated.
+2021-12-02 21:03:35	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:37	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:39	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:41	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:44	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:46	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:48	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:50	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:52	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:54	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:56	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:03:58	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:00	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:03	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:05	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:07	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:09	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:11	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:11	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:13	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:16	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:18	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:20	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:23	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-02 21:04:23	=!=	irc: reading data on socket: error -9 Error decoding the received TLS packet.
+2021-12-02 21:04:23	--	irc: disconnecting from server...
+2021-12-02 21:04:25	--	irc: disconnected from server
+2021-12-02 21:04:25	--	irc: reconnecting to server in 10 seconds
+2021-12-02 21:04:35	--	irc: reconnecting to server...
+2021-12-02 21:04:35	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:04:36	--	gnutls: receiving 3 certificates
+2021-12-02 21:04:36	--	 - certificate[1] info:
+2021-12-02 21:04:36	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:04:36	--	 - certificate[2] info:
+2021-12-02 21:04:36	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:04:36	--	 - certificate[3] info:
+2021-12-02 21:04:36	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:04:36	--	gnutls: peer's certificate is trusted
+2021-12-02 21:04:36	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:04:37	--	irc: client capability, server supports: message-tags server-time soju.im/bouncer-networks-notify away-notify draft/extended-monitor cap-notify echo-message sasl=PLAIN,EXTERNAL multi-prefix invite-notify setname draft/chathistory extended-join account-notify soju.im/bouncer-networks batch account-tag
+2021-12-02 21:04:37	--	irc: client capability, requesting: server-time away-notify cap-notify sasl multi-prefix invite-notify extended-join account-notify soju.im/bouncer-networks
+2021-12-02 21:04:37	--	irc: client capability, enabled: server-time away-notify cap-notify sasl multi-prefix invite-notify extended-join account-notify soju.im/bouncer-networks
+2021-12-02 21:04:37	--	SASL authentication successful
+2021-12-02 21:04:38	--	irc: client capability, removed: draft/extended-monitor
+2021-12-02 21:04:38	--	irc: client capability, now available: sasl=PLAIN
+2021-12-02 21:04:38	--	irc: client capability, now available: draft/event-playback
+2021-12-02 21:04:38	--	Welcome to soju, mrmanner
+2021-12-02 21:04:38	--	Your host is chat.sr.ht
+2021-12-02 21:04:38	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:04:38	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 EXTBAN=$,ajrxz CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU TOPICLEN=390 CHANTYPES=# CHANNELLEN=50 INVEX MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: NETWORK=Libera.Chat :are supported
+2021-12-02 21:04:38	--	WHOX SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ :are supported
+2021-12-02 21:04:38	--	User mode for mrmanner is [+Zi]
+2021-12-02 21:04:38	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-02 21:04:38	--	Use /motd to read the message of the day
+2021-12-02 21:05:09	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:05:20	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:05:24	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:05:40	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:11:15	--	irc: disconnected from server
+2021-12-02 21:11:19	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:11:20	--	gnutls: receiving 3 certificates
+2021-12-02 21:11:20	--	 - certificate[1] info:
+2021-12-02 21:11:20	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:11:20	--	 - certificate[2] info:
+2021-12-02 21:11:20	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:11:20	--	 - certificate[3] info:
+2021-12-02 21:11:20	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:11:20	--	gnutls: peer's certificate is trusted
+2021-12-02 21:11:20	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:11:20	--	irc: client capability, server supports: cap-notify echo-message away-notify server-time soju.im/bouncer-networks-notify sasl=PLAIN,EXTERNAL account-notify extended-join multi-prefix soju.im/bouncer-networks batch invite-notify draft/chathistory draft/extended-monitor account-tag setname message-tags
+2021-12-02 21:11:20	--	irc: client capability, requesting: cap-notify away-notify server-time sasl account-notify extended-join multi-prefix soju.im/bouncer-networks invite-notify
+2021-12-02 21:11:20	--	irc: client capability, enabled: cap-notify away-notify server-time sasl account-notify extended-join multi-prefix soju.im/bouncer-networks invite-notify
+2021-12-02 21:11:21	--	SASL authentication successful
+2021-12-02 21:11:21	--	irc: client capability, removed: draft/extended-monitor
+2021-12-02 21:11:21	--	irc: client capability, now available: sasl=PLAIN
+2021-12-02 21:11:21	--	irc: client capability, now available: draft/event-playback
+2021-12-02 21:11:21	--	Welcome to soju, mrmanner
+2021-12-02 21:11:21	--	Your host is chat.sr.ht
+2021-12-02 21:11:21	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:11:21	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 CHANNELLEN=50 INVEX MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: NETWORK=Libera.Chat WHOX SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 :are supported
+2021-12-02 21:11:22	--	NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU TOPICLEN=390 CHANTYPES=# :are supported
+2021-12-02 21:11:22	--	User mode for mrmanner is [+Zi]
+2021-12-02 21:11:22	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-02 21:11:22	--	Use /motd to read the message of the day
+2021-12-02 21:11:45	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:11:47	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:11:53	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:11:56	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:12:13	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:28:42	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:28:43	--	gnutls: receiving 3 certificates
+2021-12-02 21:28:43	--	 - certificate[1] info:
+2021-12-02 21:28:43	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:28:43	--	 - certificate[2] info:
+2021-12-02 21:28:43	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:28:43	--	 - certificate[3] info:
+2021-12-02 21:28:43	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:28:43	--	gnutls: peer's certificate is trusted
+2021-12-02 21:28:43	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:28:43	--	irc: client capability, server supports: setname account-tag account-notify server-time message-tags sasl=PLAIN,EXTERNAL extended-join multi-prefix batch cap-notify invite-notify draft/chathistory draft/extended-monitor away-notify echo-message soju.im/bouncer-networks soju.im/bouncer-networks-notify
+2021-12-02 21:28:43	--	irc: client capability, requesting: account-notify server-time sasl extended-join multi-prefix cap-notify invite-notify away-notify soju.im/bouncer-networks
+2021-12-02 21:28:43	--	irc: client capability, enabled: account-notify server-time sasl extended-join multi-prefix cap-notify invite-notify away-notify soju.im/bouncer-networks
+2021-12-02 21:28:44	--	SASL authentication successful
+2021-12-02 21:28:44	--	irc: client capability, removed: draft/extended-monitor
+2021-12-02 21:28:44	--	irc: client capability, now available: sasl=PLAIN
+2021-12-02 21:28:44	--	irc: client capability, now available: draft/event-playback
+2021-12-02 21:28:44	--	Welcome to soju, mrmanner
+2021-12-02 21:28:44	--	Your host is chat.sr.ht
+2021-12-02 21:28:44	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:28:44	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 NETWORK=Libera.Chat WHOX SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz :are supported
+2021-12-02 21:28:44	--	CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU TOPICLEN=390 CHANTYPES=# CHANNELLEN=50 INVEX MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported
+2021-12-02 21:28:44	--	User mode for mrmanner is [+Zi]
+2021-12-02 21:28:44	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-02 21:28:45	--	Use /motd to read the message of the day
+2021-12-02 21:29:07	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:29:09	--	[#finance] lsrtl_ [lsrtl] (~lsrtl@user/lsrtl) H 0 (realname)
+2021-12-02 21:29:09	--	[#finance] mrmanner [mrmanner] (29a724a13e@user/mrmanner) H 0 (mrmanner)
+2021-12-02 21:29:09	--	[#finance] dustinm` (~dustinm@static.38.6.217.95.clients.your-server.de) H 0 (dustinm)
+2021-12-02 21:29:09	--	[#finance] merpnderp [merpnderp] (sid16744@id-16744.hampstead.irccloud.com) H 0 (merpnderp)
+2021-12-02 21:29:09	--	[#finance] ghostbuster [ghostbuster] (~admin@user/ghostbuster) H 0 (admin)
+2021-12-02 21:29:09	--	[#finance] synthmeat [synthmeat] (~synthmeat@user/synthmeat) H 0 (synthmeat)
+2021-12-02 21:29:09	--	[#finance] himcesjf [himcesjf] (uid409730@id-409730.tinside.irccloud.com) H 0 (himcesjf)
+2021-12-02 21:29:09	--	[#finance] Quokka [Quokka] (~Soliloquy@user/quokka) G 0 (Soliloquy)
+2021-12-02 21:29:09	--	[#finance] dartmouthed (~blackunsp@li761-35.members.linode.com) G 0 (blackunspell)
+2021-12-02 21:29:34	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:30:02	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:30:06	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:50:39	--	irc: disconnected from server
+2021-12-02 21:50:41	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-02 21:50:42	--	gnutls: receiving 3 certificates
+2021-12-02 21:50:42	--	 - certificate[1] info:
+2021-12-02 21:50:42	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-02 21:50:42	--	 - certificate[2] info:
+2021-12-02 21:50:42	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-02 21:50:42	--	 - certificate[3] info:
+2021-12-02 21:50:42	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-02 21:50:42	--	gnutls: peer's certificate is trusted
+2021-12-02 21:50:42	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-02 21:50:42	--	irc: client capability, server supports: draft/chathistory soju.im/bouncer-networks-notify multi-prefix setname invite-notify message-tags account-notify account-tag away-notify draft/extended-monitor batch cap-notify echo-message server-time sasl=PLAIN,EXTERNAL extended-join soju.im/bouncer-networks
+2021-12-02 21:50:42	--	irc: client capability, requesting: multi-prefix invite-notify account-notify away-notify cap-notify server-time sasl extended-join soju.im/bouncer-networks
+2021-12-02 21:50:43	--	irc: client capability, enabled: multi-prefix invite-notify account-notify away-notify cap-notify server-time sasl extended-join soju.im/bouncer-networks
+2021-12-02 21:50:43	--	SASL authentication successful
+2021-12-02 21:50:43	--	irc: client capability, removed: draft/extended-monitor
+2021-12-02 21:50:43	--	irc: client capability, now available: sasl=PLAIN
+2021-12-02 21:50:43	--	irc: client capability, now available: draft/event-playback
+2021-12-02 21:50:43	--	Welcome to soju, mrmanner
+2021-12-02 21:50:43	--	Your host is chat.sr.ht
+2021-12-02 21:50:43	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-02 21:50:43	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 EXTBAN=$,ajrxz TOPICLEN=390 CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU CHANTYPES=# MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: CHANNELLEN=50 INVEX NETWORK=Libera.Chat :are supported
+2021-12-02 21:50:43	--	WHOX SAFELIST MONITOR=100 NICKLEN=16 EXCEPTS MAXLIST=bqeI:100 CHANLIMIT=#:250 PREFIX=(ov)@+ :are supported
+2021-12-02 21:50:43	--	User mode for mrmanner is [+Zi]
+2021-12-02 21:50:43	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-02 21:50:43	--	Use /motd to read the message of the day
+2021-12-02 21:51:11	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:51:13	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:51:16	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:51:35	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:51:39	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-02 21:51:56	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 12:21:17	--	irc: disconnected from server
+2021-12-03 12:21:24	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-03 12:21:28	--	gnutls: receiving 3 certificates
+2021-12-03 12:21:28	--	 - certificate[1] info:
+2021-12-03 12:21:28	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-03 12:21:28	--	 - certificate[2] info:
+2021-12-03 12:21:28	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-03 12:21:28	--	 - certificate[3] info:
+2021-12-03 12:21:28	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-03 12:21:28	--	gnutls: peer's certificate is trusted
+2021-12-03 12:21:28	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-03 12:21:28	--	irc: client capability, server supports: cap-notify soju.im/bouncer-networks-notify away-notify extended-join account-notify server-time soju.im/bouncer-networks message-tags account-tag multi-prefix draft/extended-monitor echo-message setname batch invite-notify sasl=PLAIN,EXTERNAL draft/chathistory
+2021-12-03 12:21:28	--	irc: client capability, requesting: cap-notify away-notify extended-join account-notify server-time soju.im/bouncer-networks multi-prefix invite-notify sasl
+2021-12-03 12:21:28	--	irc: client capability, enabled: cap-notify away-notify extended-join account-notify server-time soju.im/bouncer-networks multi-prefix invite-notify sasl
+2021-12-03 12:21:29	--	SASL authentication successful
+2021-12-03 12:21:29	--	irc: client capability, removed: draft/extended-monitor
+2021-12-03 12:21:29	--	irc: client capability, now available: sasl=PLAIN
+2021-12-03 12:21:29	--	irc: client capability, now available: draft/event-playback
+2021-12-03 12:21:29	--	Welcome to soju, mrmanner
+2021-12-03 12:21:29	--	Your host is chat.sr.ht
+2021-12-03 12:21:29	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-03 12:21:29	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU TOPICLEN=390 CHANTYPES=# CHANNELLEN=50 INVEX MODES=4 :are supported
+2021-12-03 12:21:29	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: NETWORK=Libera.Chat WHOX SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 NICKLEN=16 :are supported
+2021-12-03 12:21:29	--	User mode for mrmanner is [+Zi]
+2021-12-03 12:21:29	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-03 12:21:29	--	Use /motd to read the message of the day
+2021-12-03 12:22:13	=!=	irc: sending data to server: error -110 The TLS connection was non-properly terminated.
+2021-12-03 12:22:15	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:17	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:19	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:21	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:23	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:25	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:27	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:29	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:29	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:31	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:33	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:35	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 12:22:37	=!=	irc: reading data on socket: error -9 Error decoding the received TLS packet.
+2021-12-03 12:22:37	--	irc: disconnecting from server...
+2021-12-03 12:22:38	--	irc: disconnected from server
+2021-12-03 12:22:38	--	irc: reconnecting to server in 10 seconds
+2021-12-03 12:22:48	--	irc: reconnecting to server...
+2021-12-03 12:22:48	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-03 12:22:49	--	gnutls: receiving 3 certificates
+2021-12-03 12:22:49	--	 - certificate[1] info:
+2021-12-03 12:22:49	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-03 12:22:49	--	 - certificate[2] info:
+2021-12-03 12:22:49	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-03 12:22:49	--	 - certificate[3] info:
+2021-12-03 12:22:49	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-03 12:22:49	--	gnutls: peer's certificate is trusted
+2021-12-03 12:22:49	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-03 12:22:49	--	irc: client capability, server supports: batch message-tags invite-notify away-notify draft/extended-monitor server-time setname account-tag multi-prefix echo-message soju.im/bouncer-networks sasl=PLAIN,EXTERNAL draft/chathistory extended-join cap-notify soju.im/bouncer-networks-notify account-notify
+2021-12-03 12:22:49	--	irc: client capability, requesting: invite-notify away-notify server-time multi-prefix soju.im/bouncer-networks sasl extended-join cap-notify account-notify
+2021-12-03 12:22:50	--	irc: client capability, enabled: invite-notify away-notify server-time multi-prefix soju.im/bouncer-networks sasl extended-join cap-notify account-notify
+2021-12-03 12:22:50	--	SASL authentication successful
+2021-12-03 12:22:50	--	irc: client capability, removed: draft/extended-monitor
+2021-12-03 12:22:50	--	irc: client capability, now available: sasl=PLAIN
+2021-12-03 12:22:50	--	irc: client capability, now available: draft/event-playback
+2021-12-03 12:22:50	--	Welcome to soju, mrmanner
+2021-12-03 12:22:50	--	Your host is chat.sr.ht
+2021-12-03 12:22:50	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-03 12:22:50	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: CHANNELLEN=50 INVEX MODES=4 NETWORK=Libera.Chat WHOX SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 :are supported
+2021-12-03 12:22:50	--	NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU TOPICLEN=390 CHANTYPES=# :are supported
+2021-12-03 12:22:50	--	User mode for mrmanner is [+Zi]
+2021-12-03 12:22:50	--	You are logged in as mrmanner (mrmanner!mrmanner@90.235.13.15)
+2021-12-03 12:22:50	--	Use /motd to read the message of the day
+2021-12-03 12:23:22	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 12:23:22	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 12:23:23	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 12:23:43	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 12:23:47	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 12:24:03	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 20:17:22	--	irc: lag is high, reconnecting to server libera
+2021-12-03 20:17:23	--	irc: disconnected from server
+2021-12-03 20:17:23	--	irc: reconnecting to server in 10 seconds
+2021-12-03 20:17:33	--	irc: reconnecting to server...
+2021-12-03 20:17:33	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-03 20:17:33	--	gnutls: receiving 3 certificates
+2021-12-03 20:17:33	--	 - certificate[1] info:
+2021-12-03 20:17:33	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-03 20:17:33	--	 - certificate[2] info:
+2021-12-03 20:17:33	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-03 20:17:33	--	 - certificate[3] info:
+2021-12-03 20:17:33	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-03 20:17:33	--	gnutls: peer's certificate is trusted
+2021-12-03 20:17:33	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-03 20:17:34	--	irc: client capability, server supports: invite-notify message-tags batch cap-notify draft/chathistory soju.im/bouncer-networks sasl=PLAIN,EXTERNAL away-notify draft/extended-monitor account-notify echo-message server-time setname soju.im/bouncer-networks-notify extended-join multi-prefix account-tag
+2021-12-03 20:17:34	--	irc: client capability, requesting: invite-notify cap-notify soju.im/bouncer-networks sasl away-notify account-notify server-time extended-join multi-prefix
+2021-12-03 20:17:34	--	irc: client capability, enabled: invite-notify cap-notify soju.im/bouncer-networks sasl away-notify account-notify server-time extended-join multi-prefix
+2021-12-03 20:17:34	--	SASL authentication successful
+2021-12-03 20:17:34	--	irc: client capability, removed: draft/extended-monitor
+2021-12-03 20:17:34	--	irc: client capability, now available: sasl=PLAIN
+2021-12-03 20:17:34	--	irc: client capability, now available: draft/event-playback
+2021-12-03 20:17:34	--	Welcome to soju, mrmanner
+2021-12-03 20:17:34	--	Your host is chat.sr.ht
+2021-12-03 20:17:34	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-03 20:17:34	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 MONITOR=100 NICKLEN=16 EXCEPTS MAXLIST=bqeI:100 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz TOPICLEN=390 CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU :are supported
+2021-12-03 20:17:34	--	CHANTYPES=# MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: CHANNELLEN=50 INVEX NETWORK=Libera.Chat WHOX SAFELIST :are supported
+2021-12-03 20:17:34	--	User mode for mrmanner is [+Zi]
+2021-12-03 20:17:34	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-03 20:17:34	--	Use /motd to read the message of the day
+2021-12-03 20:18:48	=!=	irc: sending data to server: error -110 The TLS connection was non-properly terminated.
+2021-12-03 20:18:50	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 20:18:52	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 20:18:54	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 20:19:01	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 20:19:01	=!=	irc: sending data to server: error -10 The specified session has been invalidated for some reason.
+2021-12-03 20:19:02	=!=	irc: reading data on socket: error -9 Error decoding the received TLS packet.
+2021-12-03 20:19:02	--	irc: disconnecting from server...
+2021-12-03 20:19:03	--	irc: disconnected from server
+2021-12-03 20:19:03	--	irc: reconnecting to server in 10 seconds
+2021-12-03 20:19:13	--	irc: reconnecting to server...
+2021-12-03 20:19:13	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-03 20:19:18	--	gnutls: receiving 3 certificates
+2021-12-03 20:19:18	--	 - certificate[1] info:
+2021-12-03 20:19:18	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-03 20:19:18	--	 - certificate[2] info:
+2021-12-03 20:19:18	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-03 20:19:18	--	 - certificate[3] info:
+2021-12-03 20:19:18	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-03 20:19:18	--	gnutls: peer's certificate is trusted
+2021-12-03 20:19:18	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-03 20:19:18	--	irc: client capability, server supports: invite-notify draft/chathistory multi-prefix draft/extended-monitor setname batch account-notify echo-message message-tags cap-notify away-notify soju.im/bouncer-networks-notify sasl=PLAIN,EXTERNAL extended-join account-tag server-time soju.im/bouncer-networks
+2021-12-03 20:19:18	--	irc: client capability, requesting: invite-notify multi-prefix account-notify cap-notify away-notify sasl extended-join server-time soju.im/bouncer-networks
+2021-12-03 20:19:18	--	irc: client capability, enabled: invite-notify multi-prefix account-notify cap-notify away-notify sasl extended-join server-time soju.im/bouncer-networks
+2021-12-03 20:19:19	--	SASL authentication successful
+2021-12-03 20:19:19	--	irc: client capability, removed: draft/extended-monitor
+2021-12-03 20:19:19	--	irc: client capability, now available: sasl=PLAIN
+2021-12-03 20:19:19	--	irc: client capability, now available: draft/event-playback
+2021-12-03 20:19:19	--	Welcome to soju, mrmanner
+2021-12-03 20:19:19	--	Your host is chat.sr.ht
+2021-12-03 20:19:19	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-03 20:19:19	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 ELIST=CMNTU TOPICLEN=390 CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz CHANTYPES=# INVEX MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: CHANNELLEN=50 WHOX NETWORK=Libera.Chat :are supported
+2021-12-03 20:19:19	--	SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 NICKLEN=16 PREFIX=(ov)@+ CHANLIMIT=#:250 EXTBAN=$,ajrxz :are supported
+2021-12-03 20:19:19	--	User mode for mrmanner is [+Zi]
+2021-12-03 20:19:19	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-03 20:19:19	--	Use /motd to read the message of the day
+2021-12-03 20:19:32	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2021-12-03 20:19:32	--	irc: disconnecting from server...
+2021-12-03 20:19:32	--	irc: disconnected from server
+2021-12-03 20:19:32	--	irc: reconnecting to server in 10 seconds
+2021-12-03 20:19:42	--	irc: reconnecting to server...
+2021-12-03 20:19:42	--	irc: connecting to server chat.sr.ht/6697 (SSL)...
+2021-12-03 20:19:42	--	gnutls: receiving 3 certificates
+2021-12-03 20:19:42	--	 - certificate[1] info:
+2021-12-03 20:19:42	--	   - subject `CN=chat.sr.ht', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0442e102f2395f181f14431f368c7c2bf137, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-10-12 12:41:00 UTC', expires `2022-01-10 12:40:59 UTC', pin-sha256="XzhpbeezpPAwjM6CZsQhaX3ktC4lhveH9q73KC1g/ik="
+2021-12-03 20:19:42	--	 - certificate[2] info:
+2021-12-03 20:19:42	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-12-03 20:19:42	--	 - certificate[3] info:
+2021-12-03 20:19:42	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-12-03 20:19:42	--	gnutls: peer's certificate is trusted
+2021-12-03 20:19:42	--	irc: connected to chat.sr.ht/6697 (173.195.146.155)
+2021-12-03 20:19:42	--	irc: client capability, server supports: invite-notify server-time batch draft/extended-monitor away-notify extended-join message-tags sasl=PLAIN,EXTERNAL account-tag echo-message setname soju.im/bouncer-networks draft/chathistory multi-prefix cap-notify soju.im/bouncer-networks-notify account-notify
+2021-12-03 20:19:42	--	irc: client capability, requesting: invite-notify server-time away-notify extended-join sasl soju.im/bouncer-networks multi-prefix cap-notify account-notify
+2021-12-03 20:19:43	--	irc: client capability, enabled: invite-notify server-time away-notify extended-join sasl soju.im/bouncer-networks multi-prefix cap-notify account-notify
+2021-12-03 20:19:43	--	SASL authentication successful
+2021-12-03 20:19:43	--	irc: client capability, removed: draft/extended-monitor
+2021-12-03 20:19:43	--	irc: client capability, now available: sasl=PLAIN
+2021-12-03 20:19:43	--	irc: client capability, now available: draft/event-playback
+2021-12-03 20:19:43	--	Welcome to soju, mrmanner
+2021-12-03 20:19:43	--	Your host is chat.sr.ht
+2021-12-03 20:19:43	--	chat.sr.ht soju aiwroO OovaimnqpsrtklbeI
+2021-12-03 20:19:43	--	CHATHISTORY=1000 CASEMAPPING=ascii BOUNCER_NETID=546 SAFELIST EXCEPTS MAXLIST=bqeI:100 MONITOR=100 NICKLEN=16 CHANLIMIT=#:250 PREFIX=(ov)@+ EXTBAN=$,ajrxz CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz ELIST=CMNTU :are supported
+2021-12-03 20:19:43	--	TOPICLEN=390 CHANTYPES=# CHANNELLEN=50 INVEX MODES=4 TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: NETWORK=Libera.Chat WHOX :are supported
+2021-12-03 20:19:43	--	User mode for mrmanner is [+Zi]
+2021-12-03 20:19:43	--	You are logged in as mrmanner (mrmanner!mrmanner@98.128.201.128)
+2021-12-03 20:19:43	--	Use /motd to read the message of the day
+2021-12-03 20:20:27	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 20:20:29	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 20:20:31	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 20:20:33	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 20:20:41	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 20:20:43	--	[#finance] lsrtl__ (~lsrtl@user/lsrtl) H 1 (realname)
+2021-12-03 20:20:43	--	[#finance] mrmanner (29a724a13e@user/mrmanner) H 1 (mrmanner)
+2021-12-03 20:20:43	--	[#finance] dustinm` (~dustinm@static.38.6.217.95.clients.your-server.de) H 1 (dustinm)
+2021-12-03 20:20:43	--	[#finance] merpnderp (sid16744@id-16744.hampstead.irccloud.com) H 1 (merpnderp)
+2021-12-03 20:20:43	--	[#finance] ghostbuster (~admin@user/ghostbuster) H 1 (admin)
+2021-12-03 20:20:43	--	[#finance] synthmeat (~synthmeat@user/synthmeat) H 1 (synthmeat)
+2021-12-03 20:20:43	--	[#finance] himcesjf (uid409730@id-409730.tinside.irccloud.com) H 1 (himcesjf)
+2021-12-03 20:20:43	--	[#finance] Quokka (~Soliloquy@user/quokka) G 1 (Soliloquy)
+2021-12-03 20:20:43	--	[#finance] dartmouthed (~blackunsp@li761-35.members.linode.com) G 1 (blackunspell)
+2021-12-03 20:20:51	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
+2021-12-03 20:21:03	--	WHO :This command could not be completed because it has been used recently, and is rate-limited.
