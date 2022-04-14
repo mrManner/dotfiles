@@ -33,6 +33,8 @@ Plugin 'vim-autoformat/vim-autoformat'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'neomake/neomake'
 " Misc syntax
 Plugin 'vim-syntastic/syntastic'
