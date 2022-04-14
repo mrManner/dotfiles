@@ -117,6 +117,7 @@ set showcmd		        " show command in bottom bar
 set wildmenu		    " visual autocompletion of commands
 set lazyredraw		    " less drawing, more speed
 set scrolloff=12        " I hate looking at the last rows of the window...
+set conceallevel=1
 let g:solarized_termtrans =   1
 
 set term=screen
