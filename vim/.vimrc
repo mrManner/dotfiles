@@ -331,6 +331,8 @@ let g:sqlfmt_command = "sqlformat"
 let g:sqlfmt_options = "-r -k upper --indent_width 2 --indent_columns"
 let g:sql_type_default = 'pgsql'
 
+" vim-go
+au FileType go set foldmethod=syntax
 
 " ================================ FUNCTIONS ================================
 
