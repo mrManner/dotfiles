@@ -3,7 +3,8 @@ fish_add_path /usr/local/bin
 fish_add_path /home/jmanner/go/bin
 
 fundle plugin 'danhper/fish-ssh-agent'
-fundle plugin 'jorgebucaran/nvm.fish'
+fundle plugin 'brigand/fast-nvm-fish'
+
 fundle init
 
 # I like sudo !!
