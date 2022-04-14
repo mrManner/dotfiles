@@ -264,6 +264,10 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_mode_map = {
+    \ "mode": "active",
+    \ "passive_filetypes": ["go", "python"] }
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
@@ -273,11 +277,10 @@ let g:syntastic_enable_highlighting = 1
 let g:syntastic_c_checkers = ["clang_check", "clang_tidy", "flawfinder", "sparse", "mixedindentlint"]
 let g:syntastic_css_checkers = ["mixedindentlint"]
 let g:syntastic_dockerfile_checkers = ["hadolint"]
-let g:syntastic_go_checkers = ["golint", "go"]
 let g:syntastic_javascript_checkers = ["standard", "mixedindentlint"]
+let g:syntastic_go_checkers = []
 let g:syntastic_json_checkers = ["jsonlint", "mixedindentlint"]
-let g:syntastic_python_checkers = ["bandit", "flake8"]
-let g:syntastic_python_bandit_args = '-r'
+let g:syntastic_python_checkers = []
 let g:syntastic_sh_checkers = ["shellcheck", "shfmt"]
 let g:syntastic_yaml_checkers = ["yamllint"]
 
