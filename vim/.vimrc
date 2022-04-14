@@ -121,6 +121,7 @@ set scrolloff=12        " I hate looking at the last rows of the window...
 set conceallevel=1
 let g:solarized_termtrans =   1
 
+set cursorline
 
 set term=xterm-256color-italic
 set t_Co=256
