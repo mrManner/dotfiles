@@ -121,13 +121,48 @@ set conceallevel=1
 let g:solarized_termtrans =   1
 
 set term=screen
-set t_Co=16
-
-colo solarized
 
 au VimEnter * NoMatchParen
 
 "  Rainbow parenthesis
+set t_Co=256
+
+colors pencil
+hi Comment			ctermfg=none cterm=italic
+hi Constant			ctermfg=5
+hi Error			ctermbg=1
+hi FoldColumn		ctermfg=green ctermbg=black
+hi Folded			ctermfg=1 ctermbg=none
+
+hi GitGutterAdd							term=standout ctermfg=10
+hi GitGutterAddIntraLine				term=standout ctermfg=10
+hi GitGutterAddInvisible				term=standout ctermfg=10
+hi GitGutterAddLine						term=standout ctermfg=10
+hi GitGutterAddLineNr					term=standout ctermfg=10
+hi GitGutterChange						term=standout ctermfg=10
+hi GitGutterChangeDelete				term=standout ctermfg=10
+hi GitGutterChangeDeleteInvisible		term=standout ctermfg=10
+hi GitGutterChangeDeleteLine			term=standout ctermfg=10
+hi GitGutterChangeDeleteLineNr			term=standout ctermfg=10
+hi GitGutterChangeInvisible				term=standout ctermfg=10
+hi GitGutterChangeLine					term=standout ctermfg=10
+hi GitGutterChangeLineNr				term=standout ctermfg=10
+hi GitGutterDelete						term=standout ctermfg=10
+hi GitGutterDeleteIntraLine				term=standout ctermfg=10
+hi GitGutterDeleteInvisible				term=standout ctermfg=10
+hi GitGutterDeleteLine					term=standout ctermfg=10
+hi GitGutterDeleteLineNr				term=standout ctermfg=10
+
+hi QuickFixLine		ctermbg=black
+hi Search			ctermbg=4
+hi SignColumn		term=standout ctermfg=10 ctermbg=none
+hi Statement		ctermfg=none
+hi String			ctermfg=5
+hi Type				ctermfg=none
+
+hi link CtrlPBufferHid Normal
+hi link CtrlPBufferPath Normal
+hi link CtrlPPrtBase Normal
 
 let g:rbpt_loadcmd_toggle = 0
 
