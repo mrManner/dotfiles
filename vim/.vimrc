@@ -59,7 +59,7 @@ Plugin 'git@github.com:pangloss/vim-javascript.git'
 Plugin 'evanleck/vim-svelte'
 Plugin 'git@github.com:kchmck/vim-coffee-script.git'
 " Python
-Plugin 'nvie/vim-flake8'
+Plugin 'ambv/black'
 " Haskell
 Plugin 'git@github.com:raichoo/haskell-vim.git'
 Plugin 'Twinside/vim-haskellFold'
