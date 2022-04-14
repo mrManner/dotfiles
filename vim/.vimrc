@@ -110,6 +110,7 @@ set tags=./tags;,tags;
 
 " ==================================== UI =====================================
 
+set noequalalways		" don't resize splits
 set number              " even smarter
 set relativenumber		" show smart line numbers
 set showcmd		        " show command in bottom bar
