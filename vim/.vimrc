@@ -120,11 +120,11 @@ set scrolloff=12        " I hate looking at the last rows of the window...
 set conceallevel=1
 let g:solarized_termtrans =   1
 
-set term=screen
 
 au VimEnter * NoMatchParen
 
 "  Rainbow parenthesis
+set term=xterm-256color-italic
 set t_Co=256
 
 colors pencil
@@ -377,3 +377,4 @@ au FileType vimwiki set nowrap
 let g:vim_markdown_fenced_languages = ['python', 'coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
 let g:vim_markdown_conceal_code_blocks = 0
 
+let g:pencil_terminal_italics = 1
