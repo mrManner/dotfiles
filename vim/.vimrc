@@ -30,6 +30,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 " Utils
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
+Plugin 'vim-autoformat/vim-autoformat'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-abolish'
@@ -157,6 +158,12 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 set grepprg=ag\ --vimgrep\ $*
 set grepformat=%f:%l:%c:%m
+
+" ================================= FORMAT ====================================
+map gq :Autoformat<CR>
+"let g:formatdef_sql = '"sqlformat --reindent_aligned --keywords upper --identifiers lower -"'
+"let g:formatters_sql = ['sql']
+
 
 " ================================ KEYMAPPING =================================
 
