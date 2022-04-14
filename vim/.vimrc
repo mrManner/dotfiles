@@ -329,8 +329,6 @@ let g:syntastic_yaml_checkers = ["yamllint"]
 " sqlformat
 let g:sqlfmt_command = "sqlformat"
 let g:sqlfmt_options = "-r -k upper --indent_width 2 --indent_columns"
-
-" postgres
 let g:sql_type_default = 'pgsql'
 
 
