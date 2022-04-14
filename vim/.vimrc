@@ -121,9 +121,6 @@ set conceallevel=1
 let g:solarized_termtrans =   1
 
 
-au VimEnter * NoMatchParen
-
-"  Rainbow parenthesis
 set term=xterm-256color-italic
 set t_Co=256
 
@@ -165,11 +162,6 @@ hi link CtrlPBufferPath Normal
 hi link CtrlPPrtBase Normal
 
 let g:rbpt_loadcmd_toggle = 0
-
-au VimEnter * RainbowParenthesesActivate
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
 
 
 set completeopt+=menuone
