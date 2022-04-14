@@ -333,6 +333,8 @@ let g:sql_type_default = 'pgsql'
 
 " vim-go
 au FileType go set foldmethod=syntax
+au FileType go map <leader>l :GoLint<CR>
+au FileType go map <leader>r :GoRename<CR>
 
 " ================================ FUNCTIONS ================================
 
