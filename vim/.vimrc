@@ -29,7 +29,6 @@ Plugin 'bazelbuild/vim-bazel'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 " Utils
-Plugin 'noahfrederick/vim-skeleton'
 Plugin 'vim-scripts/characterize.vim'								" Info on characters
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-commentary'
