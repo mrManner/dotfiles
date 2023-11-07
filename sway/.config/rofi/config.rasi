@@ -1,0 +1,6 @@
+configuration {
+	modes: "combi";
+	combi-modes: "drun,run,window,file-browser";
+}
+@theme "/usr/share/rofi/themes/Paper.rasi"
+
