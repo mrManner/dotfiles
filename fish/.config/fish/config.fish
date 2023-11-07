@@ -19,3 +19,5 @@ end
 
 set -x YVM_DIR /home/jmanner/.yvm
 [ -r $YVM_DIR/yvm.fish ]; and source $YVM_DIR/yvm.fish
+
+pyenv init - | source
