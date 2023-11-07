@@ -10,93 +10,92 @@ filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-call plug#begin()
+call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plug 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 " UI
-Plug 'git@github.com:vim-airline/vim-airline'
-Plug 'git@github.com:vim-airline/vim-airline-themes'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'lifepillar/vim-mucomplete'
+Plugin 'git@github.com:vim-airline/vim-airline'
+Plugin 'git@github.com:vim-airline/vim-airline-themes'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'lifepillar/vim-mucomplete'
 " Find files fuzzily
-Plug 'kien/rainbow_parentheses.vim'
-Plug 'roblillack/vim-bufferlist'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'roblillack/vim-bufferlist'
 " Bazel
-Plug 'google/vim-maktaba'
-Plug 'bazelbuild/vim-bazel'
+Plugin 'google/vim-maktaba'
+Plugin 'bazelbuild/vim-bazel'
 " Git
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 " Utils
-Plug 'vim-autoformat/vim-autoformat'
-Plug 'mileszs/ack.vim'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'neomake/neomake'
+Plugin 'vim-autoformat/vim-autoformat'
+Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'neomake/neomake'
 " Misc syntax
-Plug 'vim-syntastic/syntastic'
-Plug 'vim-scripts/tex-syntax'
-Plug 'adimit/prolog.vim'
-Plug 'git@github.com:mrk21/yaml-vim.git'
-Plug 'hashivim/vim-terraform'
-Plug 'earthly/earthly.vim'
-Plug 'lifepillar/pgsql.vim'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-scripts/tex-syntax'
+Plugin 'adimit/prolog.vim'
+Plugin 'git@github.com:mrk21/yaml-vim.git'
+Plugin 'hashivim/vim-terraform'
+Plugin 'earthly/earthly.vim'
+Plugin 'lifepillar/pgsql.vim'
 " Go
-Plug 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 " HTML
-Plug 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
-Plug 'git@github.com:othree/html5.vim.git'
-Plug 'hail2u/vim-css3-syntax'
+Plugin 'git@github.com:mattn/emmet-vim.git'							" Write html the lazy way
+Plugin 'git@github.com:othree/html5.vim.git'
+Plugin 'hail2u/vim-css3-syntax'
 " Mail
-Plug 'neomutt/neomutt.vim' " Make vim work with neomutt (like with mutt)
-Plug 'adborden/vim-notmuch-address'
+Plugin 'neomutt/neomutt.vim' " Make vim work with neomutt (like with mutt)
+Plugin 'adborden/vim-notmuch-address'
 " C
-Plug 'https://github.com/justmao945/vim-clang.git'
+Plugin 'https://github.com/justmao945/vim-clang.git'
 " Javascript
-Plug 'git@github.com:pangloss/vim-javascript.git'
-Plug 'evanleck/vim-svelte'
-Plug 'git@github.com:kchmck/vim-coffee-script.git'
+Plugin 'git@github.com:pangloss/vim-javascript.git'
+Plugin 'evanleck/vim-svelte'
+Plugin 'git@github.com:kchmck/vim-coffee-script.git'
 " Python
-Plug 'ambv/black'
+Plugin 'ambv/black'
 " Haskell
-Plug 'git@github.com:raichoo/haskell-vim.git'
-Plug 'Twinside/vim-haskellFold'
-Plug 'git@github.com:eagletmt/neco-ghc.git'
-Plug 'git@github.com:enomsg/vim-haskellConcealPlus.git'
-Plug 'git@github.com:Shougo/vimproc.vim.git'
+Plugin 'git@github.com:raichoo/haskell-vim.git'
+Plugin 'Twinside/vim-haskellFold'
+Plugin 'git@github.com:eagletmt/neco-ghc.git'
+Plugin 'git@github.com:enomsg/vim-haskellConcealPlus.git'
+Plugin 'git@github.com:Shougo/vimproc.vim.git'
 " PHP
-Plug 'StanAngeloff/php.vim'
-Plug 'stephpy/vim-php-cs-fixer'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'stephpy/vim-php-cs-fixer'
 " Writing
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-Plug 'junegunn/goyo.vim'
-Plug 'reedes/vim-pencil'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'junegunn/goyo.vim'
+Plugin 'reedes/vim-pencil'
 " Colors
-Plug 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
-Plug 'altercation/vim-colors-solarized'
-Plug 'git@github.com:zeis/vim-kolor.git'
-Plug 'git@github.com:pgdouyon/vim-yin-yang.git'
-Plug 'git@github.com:vim-scripts/bw.vim.git'
-Plug 'LuRsT/austere.vim'
-Plug 'chriskempson/base16-vim'
-Plug 'pbrisbin/vim-colors-off'
-Plug 'reedes/vim-colors-pencil'
-Plug 'fxn/vim-monochrome'
-Plug 'Lokaltog/vim-monotone'
-Plug 'YorickPeterse/vim-paper'
-Plug 'hardselius/warlock'
-Plug 'cideM/yui'
+Plugin 'git@github.com:ujihisa/tabpagecolorscheme.git' " colors per tab
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'git@github.com:zeis/vim-kolor.git'
+Plugin 'git@github.com:pgdouyon/vim-yin-yang.git'
+Plugin 'git@github.com:vim-scripts/bw.vim.git'
+Plugin 'LuRsT/austere.vim'
+Plugin 'chriskempson/base16-vim'
+Plugin 'pbrisbin/vim-colors-off'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'fxn/vim-monochrome'
+Plugin 'Lokaltog/vim-monotone'
+Plugin 'bdd/noclown.vim'
+Plugin 'YorickPeterse/vim-paper'
+Plugin 'hardselius/warlock'
+Plugin 'cideM/yui'
 " wiki
-Plug 'vimwiki/vimwiki'
-Plug 'mattn/calendar-vim'
+Plugin 'vimwiki/vimwiki'
+Plugin 'mattn/calendar-vim'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-call plug#end()            " required
+call vundle#end()            " required
 
 " ============================= SYNTAX & FILE TYPES ===========================
 set ffs=unix,mac,dos
@@ -124,8 +123,10 @@ let g:solarized_termtrans =   1
 
 set cursorline
 
-"set term=xterm-256color-italic
+set term=xterm-256color-italic
+set t_Co=256
 
+colors pencil
 hi Comment			ctermfg=none cterm=italic
 hi Constant			ctermfg=5
 hi Error			ctermbg=1
@@ -299,13 +300,6 @@ cnoreabbrev AG Ack
 
 command! Q bdelete
 :cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Q' : 'q')<CR>
-
-" CoC
-" GoTo code navigation
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 " syntastic
 set statusline+=%#warningmsg#
