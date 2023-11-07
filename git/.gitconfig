@@ -1,5 +1,5 @@
 [core]
-	editor = vim
+	editor = nvim
 	pager = less -iNQ --shift 3
 	excludesfile = ~/.gitignore
 
