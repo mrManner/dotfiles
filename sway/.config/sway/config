@@ -237,14 +237,6 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 
-
-
-#
-# Screen brightness
-#
-bindsym XF86MonBrightnessUp exec light -A 5
-bindsym XF86MonBrightnessDown exec light -U 5
-
 input type:keyboard {
     xkb_layout se(us)
     xkb_options altwin:menu_win
