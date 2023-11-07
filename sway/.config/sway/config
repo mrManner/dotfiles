@@ -209,7 +209,7 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while /home/jmanner/.config/sway/status.sh; do sleep 1; done
+    status_command while /home/johan/.config/sway/status.sh; do sleep 1; done
 	separator_symbol |
     font Source Sans Pro 10 @wght=200
     colors {
