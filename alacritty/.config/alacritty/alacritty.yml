@@ -187,7 +187,7 @@ font:
     bold:
         family: Source Code Pro
         style: Bold
-    size: 11
+    size: 9
 
 schemes:
   pencil: &pencil
