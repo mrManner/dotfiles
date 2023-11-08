@@ -11,12 +11,15 @@ user=$(whoami)
 host=$(hostnamectl hostname)
 
 # Returns the battery status: "Full", "Discharging", or "Charging".
-#battery_charge=$(cat /sys/class/power_supply/BAT0/charge_now)
-#battery_chargea=$(( 100 * battery_charge))
-#battery_full=$(cat /sys/class/power_supply/BAT0/charge_full)
-#battery=$((battery_chargea / battery_full))
+bat0_charge=$(cat /sys/class/power_supply/BAT0/energy_now)
+bat1_charge=$(cat /sys/class/power_supply/BAT1/energy_now)
+bat0_full=$(cat /sys/class/power_supply/BAT0/energy_full)
+bat1_full=$(cat /sys/class/power_supply/BAT1/energy_full)
+battery_charge=$((bat0_charge + bat1_charge))
+battery_full=$((bat0_full + bat1_full))
+battery=$((100 * battery_charge / battery_full))
 
 # Emojis and characters for the status bar
 # 💎 💻 💡 🔌 ⚡ 📁 \|
-echo "$user@$host | $uptime | $date_formatted"
+echo "$user@$host | $uptime | $battery % | $date_formatted"
 
