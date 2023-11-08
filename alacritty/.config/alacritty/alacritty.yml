@@ -187,6 +187,9 @@ font:
     bold:
         family: Source Code Pro
         style: Bold
+    italic:
+        family: Source Code Pro
+        style: Italic
     size: 9
 
 schemes:
