@@ -4,6 +4,8 @@
 # Vim things
 .vim/bundle
 *.swp
+*.luarc.json
+lazy-lock.json
 
 # Compiled source #
 ###################
