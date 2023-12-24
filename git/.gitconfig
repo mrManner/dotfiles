@@ -14,11 +14,12 @@
 [user]
 	email = johan@mrmanner.eu
 	name = mrmanner
+	signingkey = 01AB26D16F3A1713
 [push]
 	default = matching
 
 [commit]
-	gpgsign = false
+	gpgsign = true
 [merge]
 	conflictstyle = diff3
 
