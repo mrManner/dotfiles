@@ -306,7 +306,7 @@ schemes:
     #
     indexed_colors: []
 
-colors: *dracula
+colors: *pencil
 
 # Visual Bell
 #

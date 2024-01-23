@@ -153,12 +153,18 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    'Mofiqul/dracula.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'dracula'
-    end,
+    -- pencil color theme
+    'mcookly/pencil-colors.nvim',
+    opts = {
+      options = {
+        higher_contrast_ui = false,
+        neutral_code_bg = false,
+        neutral_headings = false,
+        terminal_italics = false,
+        spell_undercurl = true,
+        gutter_color = false,
+      }
+    },
   },
 
   {
@@ -168,7 +174,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
@@ -181,7 +187,11 @@ require('lazy').setup({
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help ibl`
     main = 'ibl',
-    opts = {},
+    opts = {
+      scope = {
+        enabled = false
+      },
+    },
   },
 
   -- "gc" to comment visual regions/lines
@@ -272,6 +282,12 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- Background color
+vim.o.background = 'light'
+
+-- color scheme
+vim.cmd.colorscheme 'pencil'
 
 -- [[ Basic Keymaps ]]
 
@@ -386,7 +402,9 @@ vim.defer_fn(function()
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = false,
-
+    sync_install = false,
+    ignore_install = {},
+    modules = {},
     highlight = { enable = true },
     indent = { enable = true },
     incremental_selection = {
@@ -559,6 +577,11 @@ mason_lspconfig.setup_handlers {
       filetypes = (servers[server_name] or {}).filetypes,
     }
   end,
+}
+
+-- separate config for racket_langserver because not supported in mason-lspconfig
+require'lspconfig'.racket_langserver.setup{
+  on_attach = on_attach
 }
 
 -- [[ Configure nvim-cmp ]]
