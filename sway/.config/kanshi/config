@@ -1,15 +1,20 @@
 profile {
-        output eDP-1 mode 1920x1200@60.003Hz position 0,0
+        output eDP-1 enable mode 1920x1200@60.003Hz position 0,0
 }
 
 profile {
-        output DP-6 mode 1920x1080@60.000Hz position 0,0 transform 270
-        output DP-5 mode 1920x1080@60.000Hz position 1080,420 transform normal
+        output DP-6 enable mode 1920x1080@60.000Hz position 0,0 transform 270 scale 0.85
+        output DP-5 enable mode 1920x1080@60.000Hz position 1271,420 transform normal scale 0.85
 	output eDP-1 disable
 }
 
 profile {
-        output DP-8 mode 1920x1080@60.000Hz position 0,0 transform 270
-        output DP-7 mode 1920x1080@60.000Hz position 1080,420 transform normal
+        output DP-8 enable mode 1920x1080@60.000Hz position 0,0 transform 270
+        output DP-7 enable mode 1920x1080@60.000Hz position 1080,420 transform normal
+	output eDP-1 disable
+}
+
+profile {
+        output DP-3 enable scale 1.5
 	output eDP-1 disable
 }
