@@ -191,6 +191,7 @@ bar {
     # The default just shows the current date and time.
     status_command while /home/johan/.config/sway/status.sh; do sleep 1; done
     separator_symbol |
+    strip_workspace_numbers no
     font Source Sans Pro 10 @wght=200
     colors {
         background #282A36
