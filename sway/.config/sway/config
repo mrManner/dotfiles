@@ -125,6 +125,9 @@ bindsym {
 	# Make the current focus fullscreen
 	$mod+f fullscreen
 
+	# Toggle the border state of current window
+	$mod+g border toggle
+
 	# Toggle the current focus between tiling and floating mode
 	$mod+Shift+space floating toggle
 
@@ -148,6 +151,9 @@ bindsym {
 
 	# Show floating window everywhere
 	$mod+equal sticky toggle
+
+	# Show properties of active window
+	$mod+question exec 'swaymsg -t get_tree | xargs -0 notify-send swayprop'
  }
 #
 # Resizing containers:
